@@ -314,6 +314,33 @@
     background:var(--goose-soft); border:2px solid var(--goose-border); border-radius:12px;
     padding:8px 12px; margin-top:8px; color:var(--ink);
   }
+  .speak-connection{
+    display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;
+    background:var(--mint-soft); border:2px solid var(--mint); border-radius:16px;
+    padding:12px 14px; margin:0 0 18px;
+  }
+  .speak-connection.is-unconfigured{background:var(--yellow-soft); border-color:var(--goose-border);}
+  .speak-connection-copy{font-size:12.5px; line-height:1.5; color:var(--ink-soft); font-weight:600;}
+  .speak-connection-title{font-family:var(--font-display); color:var(--ink); font-size:15px; margin-bottom:2px;}
+  .speak-setup{max-width:580px; margin:0 auto;}
+  .speak-setup h2{font-family:var(--font-display); margin:0 0 6px; font-size:23px; color:var(--ink);}
+  .speak-setup-lead{margin:0 0 18px; color:var(--ink-soft); font-size:13px; line-height:1.6; font-weight:600;}
+  .speak-setup-card{border:2px solid var(--rule-strong); border-radius:20px; background:var(--panel-alt); padding:16px; margin:12px 0;}
+  .speak-provider-row{display:grid; grid-template-columns:1fr 1fr; gap:10px;}
+  .speak-provider-btn{background:#fff; border:2px solid var(--rule-strong); border-radius:14px; padding:11px; color:var(--ink-soft); cursor:pointer; font-family:var(--font-display); font-size:14px;}
+  .speak-provider-btn.active{background:var(--blue); border-color:var(--blue); color:#fff;}
+  .speak-setup label{display:block; font-family:var(--font-mono); font-size:11px; color:var(--ink-soft); margin:12px 0 5px; font-weight:600;}
+  .speak-setup input{width:100%; border:2px solid var(--rule-strong); border-radius:12px; padding:10px 12px; color:var(--ink); font:600 13px var(--font-body); background:#fff;}
+  .speak-setup input:focus{outline:none; border-color:var(--blue);}
+  .speak-setup-actions{display:flex; gap:8px; margin-top:14px; flex-wrap:wrap; align-items:center;}
+  .speak-setup-result{font-size:12px; font-weight:700; color:var(--ink-soft);}
+  .speak-setup-guide{font-size:12px; line-height:1.6; color:var(--ink-soft); margin:10px 0 0;}
+  .speak-setup-guide code{font-family:var(--font-mono); font-size:11px; background:#fff; padding:1px 4px; border-radius:4px;}
+  .speak-setup-steps{display:grid; gap:8px; margin:14px 0 4px;}
+  .speak-setup-step{display:flex; gap:10px; align-items:flex-start; background:#fff; border:1.5px solid var(--rule-strong); border-radius:12px; padding:9px 10px; font-size:12px; color:var(--ink-soft); line-height:1.5; font-weight:600;}
+  .speak-setup-step-num{background:var(--blue); color:#fff; width:22px; height:22px; border-radius:999px; display:inline-flex; justify-content:center; align-items:center; flex:none; font-family:var(--font-mono); font-size:11px;}
+  .speak-setup-step strong{color:var(--ink);}
+  .speak-deploy-link{display:inline-flex; align-items:center; justify-content:center; text-decoration:none;}
   .speak-topic-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:14px;}
   .speak-topic-card{
     border:2px solid var(--rule-strong); border-radius:20px; padding:18px 16px; background:var(--panel-alt);
@@ -4154,6 +4181,182 @@
   var speakLoading = false;
   var speakRecognition = null;
   var speakListening = false;
+  var SPEAK_RELAY_STORAGE_KEY = "vocab-speak-relay-v1";
+  var speakRelay = loadSpeakRelay();
+  var speakPendingScenario = null;
+  var speakSetupProvider = (speakRelay && speakRelay.provider) || "openai";
+
+  function normalizeRelayUrl(value){
+    return String(value || "").trim().replace(/\/+$/, "");
+  }
+
+  function loadSpeakRelay(){
+    try{
+      var raw = window.localStorage.getItem(SPEAK_RELAY_STORAGE_KEY);
+      if(!raw) return null;
+      var saved = JSON.parse(raw);
+      if(!saved || !/^https:\/\//i.test(saved.url || "")) return null;
+      return {
+        url: normalizeRelayUrl(saved.url),
+        provider: saved.provider === "anthropic" ? "anthropic" : "openai",
+        accessToken: typeof saved.accessToken === "string" ? saved.accessToken : ""
+      };
+    }catch(e){
+      return null;
+    }
+  }
+
+  function saveSpeakRelay(config){
+    speakRelay = config;
+    try{
+      window.localStorage.setItem(SPEAK_RELAY_STORAGE_KEY, JSON.stringify(config));
+    }catch(e){}
+  }
+
+  function forgetSpeakRelay(){
+    speakRelay = null;
+    try{ window.localStorage.removeItem(SPEAK_RELAY_STORAGE_KEY); }catch(e){}
+  }
+
+  function hasSpeakRelay(){
+    return !!(speakRelay && /^https:\/\//i.test(speakRelay.url || ""));
+  }
+
+  function speakProviderLabel(provider){
+    return provider === "anthropic" ? "Claude" : "GPT";
+  }
+
+  function setSpeakSetupProvider(provider){
+    speakSetupProvider = provider === "anthropic" ? "anthropic" : "openai";
+    renderSpeakSetup();
+  }
+
+  function openSpeakSetup(pendingScenario){
+    speakPendingScenario = pendingScenario || null;
+    renderSpeakSetup();
+  }
+
+  function manualSpeakPrompt(scenario){
+    return "Please role-play as " + scenario.role + " in a spoken English practice conversation with a Traditional-Chinese-speaking English learner. " +
+      "Start with this opener: \"" + scenario.opener + "\"\n\n" +
+      "Keep each reply natural, warm, and short (1–3 sentences) for a B1–B2 learner. After each learner reply, provide: " +
+      "(1) your English role-play reply, (2) its Traditional Chinese translation, and (3) a brief correction only when needed, including a more natural English version and a Traditional Chinese explanation. " +
+      "Continue the conversation by asking a relevant follow-up question.";
+  }
+
+  function copyText(text){
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      return navigator.clipboard.writeText(text);
+    }
+    var textarea = document.createElement("textarea");
+    textarea.value = text;
+    textarea.setAttribute("readonly", "");
+    textarea.style.position = "fixed";
+    textarea.style.opacity = "0";
+    document.body.appendChild(textarea);
+    textarea.select();
+    try{ document.execCommand("copy"); }finally{ textarea.remove(); }
+    return Promise.resolve();
+  }
+
+  function renderSpeakSetup(){
+    var existing = speakRelay || {};
+    var provider = speakSetupProvider;
+    var pending = speakPendingScenario ? SPEAK_SCENARIOS[speakPendingScenario] : null;
+    var apiKeyUrl = provider === "anthropic" ? "https://console.anthropic.com/" : "https://platform.openai.com/api-keys";
+    var deployUrl = "https://deploy.workers.cloudflare.com/?url=" + encodeURIComponent("https://github.com/jhen-1993/my-vocab-app/tree/main/ai-relay-worker");
+    var providerHelp = provider === "anthropic"
+      ? "在你的 Relay 設定 <code>AI_PROVIDER=anthropic</code> 與 Anthropic API key。"
+      : "在你的 Relay 設定 <code>AI_PROVIDER=openai</code> 與 OpenAI API key。";
+
+    speakEl.innerHTML =
+      '<div class="speak-setup">' +
+        '<button class="ghost" id="speak-setup-back">← 返回口說情境</button>' +
+        '<div class="speak-setup-card">' +
+          '<h2>連接我的 AI</h2>' +
+          '<p class="speak-setup-lead">跟著三步完成一次設定；之後只要按「開始口說」。這個網站不會接收或儲存 API key。</p>' +
+          '<p class="form-hint speak-api-notice">💳 口說練習的每次 AI 回覆都會使用你自己的 API 帳號額度／token，並由 OpenAI 或 Anthropic 依你的帳號方案計費。開始前請自行設定使用額度與支出上限。</p>' +
+          '<div class="speak-provider-row">' +
+            '<button class="speak-provider-btn' + (provider === "openai" ? ' active' : '') + '" data-provider="openai">GPT / OpenAI</button>' +
+            '<button class="speak-provider-btn' + (provider === "anthropic" ? ' active' : '') + '" data-provider="anthropic">Claude / Anthropic</button>' +
+          '</div>' +
+          '<div class="speak-setup-steps">' +
+            '<div class="speak-setup-step"><span class="speak-setup-step-num">1</span><div><strong>取得自己的 API key</strong><br>這是 AI 供應商用來計算你個人額度的金鑰。<a href="' + apiKeyUrl + '" target="_blank" rel="noopener">前往 ' + speakProviderLabel(provider) + ' 建立 API key ↗</a></div></div>' +
+            '<div class="speak-setup-step"><span class="speak-setup-step-num">2</span><div><strong>一鍵建立你的私有連線</strong><br>會部署到你自己的 Cloudflare 帳號，API key 不會交給這個單字網站。</div></div>' +
+            '<a class="primary speak-deploy-link" href="' + deployUrl + '" target="_blank" rel="noopener">在 Cloudflare 一鍵部署 →</a>' +
+            '<div class="speak-setup-step"><span class="speak-setup-step-num">3</span><div><strong>貼回 Cloudflare 給你的網址</strong><br>部署完成會得到 <code>https://...workers.dev</code>，貼到下方並按測試。</div></div>' +
+          '</div>' +
+          '<label for="speak-relay-url">我的 AI Relay 網址</label>' +
+          '<input id="speak-relay-url" type="url" inputmode="url" placeholder="https://my-speaking-relay.workers.dev" value="' + escapeHtml(existing.url || "") + '">' +
+          '<label for="speak-relay-token">個人連線密碼（如果你的 Relay 有設定）</label>' +
+          '<input id="speak-relay-token" type="password" autocomplete="off" placeholder="選填：Relay access token" value="' + escapeHtml(existing.accessToken || "") + '">' +
+          '<div class="speak-setup-actions">' +
+            '<button class="primary" id="speak-relay-connect">測試並連接</button>' +
+            (hasSpeakRelay() ? '<button class="ghost" id="speak-relay-forget">移除這個連線</button>' : '') +
+            '<span class="speak-setup-result" id="speak-setup-result"></span>' +
+          '</div>' +
+          '<p class="speak-setup-guide">' + providerHelp + ' 還沒有 Relay？請使用交付的 <code>ai-relay-worker</code> 範本部署到你自己的 Cloudflare Workers，然後把網址貼到這裡。</p>' +
+        '</div>' +
+        '<div class="speak-setup-card">' +
+          '<div class="speak-connection-title">不想設定 AI？</div>' +
+          '<p class="speak-setup-guide">你仍可複製專屬提示詞，再貼到自己的 ChatGPT 或 Claude 對話。這種模式不會自動把 AI 回覆帶回網站。</p>' +
+          (pending ? '<button class="ghost" id="speak-copy-prompt">複製「' + escapeHtml(pending.title) + '」提示詞</button>' : '') +
+        '</div>' +
+      '</div>';
+
+    document.getElementById("speak-setup-back").onclick = function(){
+      speakPendingScenario = null;
+      renderSpeakTopics();
+    };
+    Array.prototype.forEach.call(document.querySelectorAll(".speak-provider-btn"), function(button){
+      button.onclick = function(){ setSpeakSetupProvider(button.getAttribute("data-provider")); };
+    });
+    var copyBtn = document.getElementById("speak-copy-prompt");
+    if(copyBtn && pending){
+      copyBtn.onclick = function(){
+        copyText(manualSpeakPrompt(pending)).then(function(){
+          copyBtn.textContent = "已複製，可貼到你的 AI 對話";
+        }).catch(function(){ alert("無法自動複製，請確認瀏覽器允許剪貼簿權限。"); });
+      };
+    }
+    var forgetBtn = document.getElementById("speak-relay-forget");
+    if(forgetBtn){
+      forgetBtn.onclick = function(){
+        forgetSpeakRelay();
+        speakSetupProvider = "openai";
+        renderSpeakSetup();
+      };
+    }
+    document.getElementById("speak-relay-connect").onclick = async function(){
+      var result = document.getElementById("speak-setup-result");
+      var url = normalizeRelayUrl(document.getElementById("speak-relay-url").value);
+      var accessToken = document.getElementById("speak-relay-token").value.trim();
+      if(!/^https:\/\//i.test(url)){
+        result.textContent = "請輸入以 https:// 開頭的 Relay 網址。";
+        return;
+      }
+      result.textContent = "正在測試連線…";
+      try{
+        var health = await fetch(url + "/health", { cache: "no-store" });
+        if(!health.ok) throw new Error("Relay 沒有回應健康檢查（HTTP " + health.status + "）。");
+        var info = await health.json();
+        var detectedProvider = info && info.provider === "anthropic" ? "anthropic" : provider;
+        saveSpeakRelay({ url: url, provider: detectedProvider, accessToken: accessToken });
+        result.textContent = "已連接 " + speakProviderLabel(detectedProvider) + "。";
+        setTimeout(function(){
+          if(speakPendingScenario){
+            var target = speakPendingScenario;
+            speakPendingScenario = null;
+            startSpeakScenario(target);
+          } else {
+            renderSpeakTopics();
+          }
+        }, 450);
+      }catch(error){
+        result.textContent = error && error.message ? error.message : "連線失敗，請確認網址與 Relay 設定。";
+      }
+    };
+  }
 
   function renderSpeak(){
     if(!speakScenarioKey){
@@ -4164,6 +4367,15 @@
   }
 
   function renderSpeakTopics(){
+    var connectionStatus = hasSpeakRelay()
+      ? '<div class="speak-connection">' +
+          '<div class="speak-connection-copy"><div class="speak-connection-title">✓ 已連接我的 ' + speakProviderLabel(speakRelay.provider) + '</div>口說對話會使用你的個人 AI Relay；API key 不會存到這個網站。</div>' +
+          '<button class="ghost" id="speak-change-connection">AI 設定</button>' +
+        '</div>'
+      : '<div class="speak-connection is-unconfigured">' +
+          '<div class="speak-connection-copy"><div class="speak-connection-title">先連接自己的 AI，再開始自動口說</div>只要設定一次；之後直接選情境即可。也可以使用提示詞模式。</div>' +
+          '<button class="primary" id="speak-connect-ai">連接我的 AI</button>' +
+        '</div>';
     var cards = Object.keys(SPEAK_SCENARIOS).map(function(key){
       var s = SPEAK_SCENARIOS[key];
       return '<div class="speak-topic-card">' +
@@ -4174,13 +4386,13 @@
       '</div>';
     }).join("");
 
-    var apiNotice = hasRealStorage() ? "" :
-      '<p class="form-hint speak-api-notice">⚠️ 這個功能需要透過 Claude.ai 呼叫 AI 對話，目前偵測到你可能是在 Claude.ai 以外的地方開啟（例如 GitHub Pages），口說練習可能無法使用。</p>';
+    var apiNotice = "";
 
     speakEl.innerHTML =
       '<div class="speak-intro">' +
         '<div class="chart-title">口說練習 · 挑一個情境開始對話</div>' +
         '<p class="form-hint">我會用英文扮演情境裡的角色跟你對話。你可以用打字或按 🎤 說話回覆，每次回覆後我都會給你一個更自然、更正確的說法建議。</p>' +
+        connectionStatus +
         apiNotice +
       '</div>' +
       '<div class="speak-topic-grid">' + cards + '</div>';
@@ -4188,9 +4400,17 @@
     Array.prototype.forEach.call(document.querySelectorAll(".speak-start-btn"), function(btn){
       btn.onclick = function(){ startSpeakScenario(btn.getAttribute("data-scenario")); };
     });
+    var connectBtn = document.getElementById("speak-connect-ai");
+    if(connectBtn) connectBtn.onclick = function(){ openSpeakSetup(); };
+    var changeBtn = document.getElementById("speak-change-connection");
+    if(changeBtn) changeBtn.onclick = function(){ openSpeakSetup(); };
   }
 
   function startSpeakScenario(key){
+    if(!hasSpeakRelay()){
+      openSpeakSetup(key);
+      return;
+    }
     speakScenarioKey = key;
     speakHistory = [];
     speakTurns = [];
@@ -4248,6 +4468,7 @@
     speakEl.innerHTML =
       '<div class="speak-header">' +
         '<div class="speak-header-title">' + scenario.icon + ' ' + scenario.title + '</div>' +
+        '<button class="ghost" id="speak-settings-btn">AI 設定</button>' +
         '<button class="ghost" id="speak-end-btn">結束對話 ×</button>' +
       '</div>' +
       '<div class="speak-messages" id="speak-messages">' + bubbles + '</div>' +
@@ -4259,6 +4480,11 @@
       '<p class="form-hint speak-mic-hint" id="speak-mic-hint"></p>';
 
     document.getElementById("speak-end-btn").onclick = endSpeakConversation;
+    document.getElementById("speak-settings-btn").onclick = function(){
+      speakPendingScenario = speakScenarioKey;
+      speakScenarioKey = null;
+      renderSpeakSetup();
+    };
 
     var msgArea = document.getElementById("speak-messages");
     msgArea.scrollTop = msgArea.scrollHeight;
@@ -4392,7 +4618,7 @@
       speakHistory.push({ role: "user", text: userText });
       speakHistory.push({ role: "assistant", text: turn.reply || "..." });
     }catch(e){
-      turn.reply = "(抱歉，暫時無法取得回覆。這個口說練習功能需要透過 Claude.ai 才能呼叫 AI 對話，如果你是在 Claude.ai 以外的地方開啟這個網頁（例如 GitHub Pages），這個功能無法使用；如果是在 Claude.ai 裡，請稍後再試一次。)";
+      turn.reply = "（暫時無法取得 AI 回覆：" + ((e && e.message) || "請確認個人 AI Relay 設定") + "）";
       turn.replyZh = "";
     }
 
@@ -4419,23 +4645,32 @@
     });
     messages.push({ role: "user", content: userText });
 
-    var response = await fetch("https://api.anthropic.com/v1/messages", {
+    if(!hasSpeakRelay()){
+      throw new Error("尚未連接個人 AI。請先完成 AI 設定。");
+    }
+
+    var headers = { "Content-Type": "application/json" };
+    if(speakRelay.accessToken){
+      headers.Authorization = "Bearer " + speakRelay.accessToken;
+    }
+    var response = await fetch(speakRelay.url + "/speak", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: headers,
       body: JSON.stringify({
-        model: "claude-sonnet-4-6",
-        max_tokens: 500,
         system: systemPrompt,
         messages: messages
       })
     });
-    var data = await response.json();
-    var textOut = (data.content || [])
-      .filter(function(b){ return b.type === "text"; })
-      .map(function(b){ return b.text; })
-      .join("");
-    var cleaned = textOut.replace(/```json|```/g, "").trim();
-    return JSON.parse(cleaned);
+    var raw = await response.text();
+    var data;
+    try{ data = raw ? JSON.parse(raw) : {}; }catch(e){ data = {}; }
+    if(!response.ok){
+      throw new Error((data && data.error) || ("Relay 回應失敗（HTTP " + response.status + "）。"));
+    }
+    if(!data || typeof data.reply !== "string"){
+      throw new Error("Relay 回傳的口說資料格式不正確。");
+    }
+    return data;
   }
 
   // ---------------- render: stats tab ----------------
