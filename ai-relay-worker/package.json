@@ -1,0 +1,30 @@
+{
+  "name": "personal-speaking-relay",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "deploy": "npx wrangler deploy"
+  },
+  "cloudflare": {
+    "bindings": {
+      "AI_PROVIDER": {
+        "description": "Choose `openai` for GPT or `anthropic` for Claude."
+      },
+      "AI_MODEL": {
+        "description": "Use a chat model available to your own API account. The default is `gpt-5-mini`."
+      },
+      "ALLOWED_ORIGIN": {
+        "description": "Leave as `https://jhen-1993.github.io` so only this vocabulary site can call the Relay from a browser."
+      },
+      "OPENAI_API_KEY": {
+        "description": "Required only for GPT / OpenAI. Create it in the OpenAI API dashboard. Never paste it into the vocabulary site."
+      },
+      "ANTHROPIC_API_KEY": {
+        "description": "Required only for Claude / Anthropic. Create it in Anthropic Console. Never paste it into the vocabulary site."
+      },
+      "RELAY_ACCESS_TOKEN": {
+        "description": "Optional but strongly recommended: a long personal password that protects this Relay URL."
+      }
+    }
+  }
+}
