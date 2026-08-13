@@ -550,6 +550,7 @@
   .study-flip-hint{font-family:var(--font-ui); font-size:11.5px; color:var(--ink-soft); font-weight:600;}
   .study-zh{font-family:var(--font-display); font-size:22px; color:var(--ink); font-weight:600;}
   .study-example{font-size:14px; color:var(--ink-soft); line-height:1.6; font-weight:600;}
+  .study-example-pos{font-size:11.5px; color:var(--blue-deep); font-family:var(--font-mono); font-weight:700; margin-top:5px;}
   .study-example-zh{font-size:12.5px; color:var(--ink-faint); line-height:1.5;}
   .study-example-empty{color:var(--ink-faint); font-weight:400;}
 
@@ -624,20 +625,56 @@
 </div>
 
 <!-- 先載入所有字庫與集中例句，再由 decks.js 合併、去重並套用例句；主程式最後才讀取 DECKS。 -->
-<script src="data/advanced-expansion.js"></script>
-<script src="data/advanced-expansion-2.js"></script>
-<script src="data/toeic-700-expansion.js"></script>
-<script src="data/card-examples.js"></script>
-<script src="data/decks.js"></script>
-<script src="data/parts-of-speech.js"></script>
+<!-- 字庫依程度分成三個檔案，便於日後直接維護。 -->
+<script src="data/beginner.js"></script>
+<script src="data/intermediate.js"></script>
+<script src="data/advanced.js"></script>
 <script>
 (function(){
   "use strict";
 
+  // 詞性資料已隨三個字庫檔載入；下列函式供畫面顯示與詞性篩選共用。
+  function normalizePartOfSpeech(posText){
+    var aliases = {
+      "n":"n.", "noun":"n.", "v":"v.", "verb":"v.", "adj":"adj.", "adjective":"adj.",
+      "adv":"adv.", "adverb":"adv.", "prep":"prep.", "preposition":"prep.", "conj":"conj.",
+      "conjunction":"conj.", "pron":"pron.", "pronoun":"pron.", "quant":"quant.",
+      "quantifier":"quant.", "phrasal verb":"phr.v.", "phrasal-verb":"phr.v.", "phr.v":"phr.v."
+    };
+    return String(posText || "").split(/[／/]/).map(function(part){
+      var key = part.trim().toLowerCase();
+      return aliases[key] || part.trim();
+    }).filter(Boolean).join("／");
+  }
+
+  function getPartOfSpeech(en, explicitPos){
+    var normalized = normalizePartOfSpeech(explicitPos);
+    var key = String(en || "").trim().toLowerCase().replace(/／/g, "/");
+    return POS_LABEL_OVERRIDES[key] || normalized || PARTS_OF_SPEECH[key] || "未標註";
+  }
+
+  function hasPartOfSpeech(posText, requestedPos){
+    if(requestedPos === "all") return true;
+    return String(posText || "").split(/[／/]/).indexOf(requestedPos) !== -1;
+  }
+
   // ---------------- 全域常數：所有模組共用的固定設定 ----------------
   var STORAGE_KEY = "vocab-notebook-data";
-  // Vocabulary data is maintained in data/decks.js and data/advanced-expansion.js.
-  // Current total: beginner (1204) + intermediate (1628) + advanced (1168) = 4000 words.
+  // 詞性稽核表：保留字典的全部詞性，並另外標記例句中的實際詞性。
+  // 先收錄已由上下文人工判定的跨詞性卡片；其餘會在後續批次加入。
+  // The audited metadata is defined in data/advanced.js, after all three decks load.
+  // The fallbacks keep custom cards usable even if that data file is unavailable.
+  // Use window.* here because this main script is wrapped in a function scope,
+  // while the three deck files intentionally publish their audited data globally.
+  var EXAMPLE_POS_AUDIT = (typeof window !== "undefined" && window.EXAMPLE_POS_AUDIT && typeof window.EXAMPLE_POS_AUDIT === "object")
+    ? window.EXAMPLE_POS_AUDIT : Object.create(null);
+  var POS_LABEL_OVERRIDES = (typeof window !== "undefined" && window.POS_LABEL_OVERRIDES && typeof window.POS_LABEL_OVERRIDES === "object")
+    ? window.POS_LABEL_OVERRIDES : Object.create(null);
+  function getExamplePartOfSpeech(word){
+    return EXAMPLE_POS_AUDIT[String(word || "").trim().toLowerCase()] || "";
+  }
+  // Vocabulary is maintained in data/beginner.js, data/intermediate.js, and data/advanced.js.
+  // Current total: beginner (2204) + intermediate (3128) + advanced (1668) = 7000 words.
   // A correctly recalled word is maintained every two weeks.  An incorrect
   // answer starts the recovery sequence: day 1 -> 2 -> 4 -> 7 -> 15 -> 30.
   // Values are gaps between reviews after the initial incorrect answer.
@@ -760,6 +797,38 @@
     if(!Array.isArray(data.reviewLog)) data.reviewLog = [];
     if(!data.importedDecks || typeof data.importedDecks !== "object") data.importedDecks = {};
     if(typeof data.studyCompletedDate !== "string") data.studyCompletedDate = "";
+    // Correct an earlier spelling error in locally saved cards without touching review data.
+    data.words.forEach(function(word){
+      if(word.en === "custommade"){
+        word.en = "custom-made";
+        word.zh = "訂製的";
+        word.example = "He wears a custom-made suit for important meetings.";
+        word.exampleZh = "他重要會議都穿訂製西裝。";
+        word.pos = "adj.";
+      }
+      if(word.en === "automatic"){
+        word.zh = "自動的";
+        word.example = "The doors have an automatic sensor.";
+        word.exampleZh = "這扇門有自動感應器。";
+        word.pos = "adj.";
+      }
+    });
+    // Correct an earlier spelling error in locally saved cards without touching review data.
+    data.words.forEach(function(word){
+      if(word.en === "custommade"){
+        word.en = "custom-made";
+        word.zh = "訂製的";
+        word.example = "He wears a custom-made suit for important meetings.";
+        word.exampleZh = "他重要會議都穿訂製西裝。";
+        word.pos = "adj.";
+      }
+      if(word.en === "automatic"){
+        word.zh = "自動的";
+        word.example = "The doors have an automatic sensor.";
+        word.exampleZh = "這扇門有自動感應器。";
+        word.pos = "adj.";
+      }
+    });
   }
 
   // 依可用性載入資料；雲端失敗時自動改用本機或記憶體暫存。
@@ -1350,8 +1419,10 @@
         var helpBadge = w.helpCount ? '<span class="fc-help">💡×' + w.helpCount + '</span>' : "";
         /* 只有真的使用過提示時才建立頁尾，避免空白區塊佔用字卡空間。 */
         var frontFooter = helpBadge ? '<div class="fc-bottom-row">' + helpBadge + '</div>' : "";
+        var examplePos = getExamplePartOfSpeech(w.en);
         var backExample = w.example
           ? '<div class="fc-example">' + highlightWord(w.example, w.en) + '</div>' +
+            (examplePos ? '<div class="fc-example-zh">本句詞性：' + escapeHtml(examplePos) + '</div>' : "") +
             (w.exampleZh ? '<div class="fc-example-zh">' + escapeHtml(w.exampleZh) + '</div>' : "")
           : '<div class="fc-example fc-example-empty">還沒有例句</div>';
         return '<div class="flip-card ' + statusClass + '" data-id="' + w.id + '">' +
@@ -2352,6 +2423,9 @@
   // and this never touches words that are already due for scheduled review.
   // 尚未學過的字庫最低保有量；不足時才從外部 DECKS 隨機補入。
   var TOP_UP_TARGET = 30;
+  // 每日 30 張新字的固定分配：以初、中階為主，高階字維持少量穿插。
+  // 這個設定只影響「尚未加入學習清單的新字」，不會變更任何既有卡片的複習排程。
+  var DAILY_LEVEL_QUOTA = { beginner: 12, intermediate: 14, advanced: 4 };
   // 逐次少量補入新字，避免一次寫入數千筆資料而造成儲存 API 失敗。
   async function topUpNewWordsIfNeeded(){
     var newCount = data.words.filter(function(w){ return w.box === 0; }).length;
@@ -2361,18 +2435,37 @@
     var owned = {};
     data.words.forEach(function(w){ owned[w.en.toLowerCase()] = true; });
 
-    var pool = [];
+    // 先依程度建立可用字池，避免原本「全部混在一起隨機抽」時高階字集中出現。
+    var pools = { beginner: [], intermediate: [], advanced: [] };
     Object.keys(DECKS).forEach(function(key){
       DECKS[key].forEach(function(item){
         if(!owned[item[0].toLowerCase()]){
-          pool.push({ key: key, item: item });
+          if(pools[key]) pools[key].push({ key: key, item: item });
         }
       });
     });
-    if(pool.length === 0) return;
+    var availableCount = Object.keys(pools).reduce(function(total, key){
+      return total + pools[key].length;
+    }, 0);
+    if(availableCount === 0) return;
 
-    shuffle(pool);
-    var picks = pool.slice(0, needed);
+    Object.keys(pools).forEach(function(key){ shuffle(pools[key]); });
+    var picks = [];
+
+    // 依固定比例取字；若今天只需補部分新字，比例也會等比例縮小。
+    Object.keys(DAILY_LEVEL_QUOTA).forEach(function(key){
+      var quota = Math.round(needed * DAILY_LEVEL_QUOTA[key] / TOP_UP_TARGET);
+      quota = Math.min(quota, pools[key].length);
+      picks = picks.concat(pools[key].splice(0, quota));
+    });
+
+    // 四捨五入或某程度字庫不足時，把剩餘名額從其他程度的可用字補滿。
+    if(picks.length < needed){
+      var fallbackPool = [];
+      Object.keys(pools).forEach(function(key){ fallbackPool = fallbackPool.concat(pools[key]); });
+      shuffle(fallbackPool);
+      picks = picks.concat(fallbackPool.slice(0, needed - picks.length));
+    }
     var t = todayStr();
     picks.forEach(function(p){
       data.words.push(makeWord(p.item[0], p.item[1], p.item[2], t, p.key, p.item[3]));
@@ -2432,8 +2525,10 @@
     var catLabel = (DECK_META[w.category] || DECK_META.custom).label;
     var posLabel = getPartOfSpeech(w.en, w.pos);
     var posClass = posLabel === "未標註" ? " pending" : "";
+    var examplePos = getExamplePartOfSpeech(w.en);
     var backContent = w.example
       ? '<div class="study-example">' + highlightWord(w.example, w.en) + '</div>' +
+        (examplePos ? '<div class="study-example-pos">本句詞性：' + escapeHtml(examplePos) + '</div>' : "") +
         (w.exampleZh ? '<div class="study-example-zh">' + escapeHtml(w.exampleZh) + '</div>' : "")
       : '<div class="study-example study-example-empty">還沒有例句</div>';
 
