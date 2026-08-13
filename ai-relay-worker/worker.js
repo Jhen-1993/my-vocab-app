@@ -1,12 +1,14 @@
-// Personal AI Relay for the vocabulary app.
-// Deploy one copy to each user's own Cloudflare Workers account.
+// 個人口說 AI Relay：前端只呼叫此 Worker，AI 供應商的 API key 永遠留在 Cloudflare Secret。
+// 每位使用者可部署自己的 Worker；本檔不保存學習單字或複習進度。
 
+// 安全與流量上限：可由 Cloudflare 環境變數覆寫；限制可降低濫用與意外的 API 成本。
 const DEFAULT_ALLOWED_ORIGIN = "https://jhen-1993.github.io";
 const MAX_SYSTEM_CHARS = 6000;
 const MAX_MESSAGE_CHARS = 2400;
 const MAX_TOTAL_MESSAGE_CHARS = 12000;
 const MAX_MESSAGES = 24;
 
+// OpenAI Structured Outputs 使用的回覆格式；前端依這五個欄位顯示英文回覆與修正建議。
 const TURN_SCHEMA = {
   type: "object",
   additionalProperties: false,
@@ -20,6 +22,7 @@ const TURN_SCHEMA = {
   required: ["reply", "replyZh", "hasIssues", "better", "note"]
 };
 
+// 將逗號分隔的 ALLOWED_ORIGIN 環境變數轉為可比對的來源清單。
 function allowedOrigins(env) {
   return String(env.ALLOWED_ORIGIN || DEFAULT_ALLOWED_ORIGIN)
     .split(",")
@@ -27,6 +30,7 @@ function allowedOrigins(env) {
     .filter(Boolean);
 }
 
+// 建立 CORS 標頭；不在允許清單中的瀏覽器來源一律拒絕。
 function corsHeaders(request, env) {
   const origin = request.headers.get("Origin");
   if (origin && !allowedOrigins(env).includes(origin)) return null;
@@ -41,6 +45,7 @@ function corsHeaders(request, env) {
   return headers;
 }
 
+// 統一輸出不快取的 JSON 回應，同時套用來源限制。
 function json(request, env, body, status = 200) {
   const headers = corsHeaders(request, env);
   if (!headers) {
@@ -54,6 +59,7 @@ function json(request, env, body, status = 200) {
   return new Response(JSON.stringify(body), { status, headers });
 }
 
+// 驗證並截斷前端傳來的對話歷史，避免過長提示詞造成 API 成本與錯誤。
 function cleanMessages(value) {
   if (!Array.isArray(value) || value.length === 0 || value.length > MAX_MESSAGES) {
     throw new Error("messages must contain between 1 and " + MAX_MESSAGES + " items.");
@@ -76,6 +82,7 @@ function cleanMessages(value) {
   });
 }
 
+// 驗證並限制 AI 回傳欄位的長度，確保前端能安全顯示。
 function cleanTurn(value) {
   if (!value || typeof value !== "object" || typeof value.reply !== "string") {
     throw new Error("The model did not return the expected speaking-practice format.");
@@ -89,6 +96,7 @@ function cleanTurn(value) {
   };
 }
 
+// 移除模型偶爾附上的 Markdown 程式碼圍欄，再解析預期的 JSON 回覆。
 function parseModelJson(text) {
   const cleaned = String(text || "").replace(/```json|```/gi, "").trim();
   try {
@@ -98,6 +106,7 @@ function parseModelJson(text) {
   }
 }
 
+// 將 OpenAI／Anthropic 的 HTTP 錯誤轉換為可讀訊息，成功時回傳解析後 JSON。
 async function upstreamJson(response) {
   const raw = await response.text();
   let parsed = {};
@@ -109,6 +118,7 @@ async function upstreamJson(response) {
   return parsed;
 }
 
+// 呼叫 OpenAI Chat Completions，並強制模型依 TURN_SCHEMA 回傳 JSON。
 async function callOpenAI(env, system, messages) {
   if (!env.OPENAI_API_KEY) throw new Error("OPENAI_API_KEY is not configured in this Relay.");
   if (!env.AI_MODEL) throw new Error("AI_MODEL is not configured in this Relay.");
@@ -139,6 +149,7 @@ async function callOpenAI(env, system, messages) {
   return parseModelJson(message && message.content);
 }
 
+// 呼叫 Anthropic Messages API；回覆文字仍須解析為前端統一格式。
 async function callAnthropic(env, system, messages) {
   if (!env.ANTHROPIC_API_KEY) throw new Error("ANTHROPIC_API_KEY is not configured in this Relay.");
   if (!env.AI_MODEL) throw new Error("AI_MODEL is not configured in this Relay.");
@@ -166,6 +177,7 @@ async function callAnthropic(env, system, messages) {
   return parseModelJson(text);
 }
 
+// Worker 路由：GET /health 供檢查設定，POST /speak 處理一次口說對話。
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
@@ -187,6 +199,7 @@ export default {
       return json(request, env, { error: "Not found." }, 404);
     }
 
+    // 若設定 Relay token，前端必須帶 Bearer token 才能使用付費 AI Relay。
     if (env.RELAY_ACCESS_TOKEN) {
       const expected = "Bearer " + env.RELAY_ACCESS_TOKEN;
       if (request.headers.get("Authorization") !== expected) {
@@ -195,6 +208,7 @@ export default {
     }
 
     try {
+      // 驗證輸入後依供應商轉送；任何錯誤都轉為 JSON，方便前端顯示。
       const payload = await request.json();
       const system = typeof payload.system === "string" ? payload.system.trim() : "";
       if (!system || system.length > MAX_SYSTEM_CHARS) {
