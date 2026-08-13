@@ -469,10 +469,50 @@
     border:none; padding:6px 14px; border-radius:999px; cursor:pointer; flex:none;
   }
 
-  @media (max-width:560px){
-    .add-form{grid-template-columns:1fr;}
+  @media (max-width:640px){
+    /* 手機優先：把桌面雙欄與長控制列轉為單欄或可換行，避免按鈕與輸入框被壓縮。 */
+    .app{padding:20px 14px 32px;}
+    header.drawer{align-items:flex-start; gap:10px; margin-bottom:14px;}
+    h1{font-size:clamp(23px,7vw,28px);}
+    nav.tabs{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:7px; margin-bottom:16px;}
+    nav.tabs button{width:100%; min-height:42px; padding:7px 8px; font-size:12px; line-height:1.2;}
+    section.panel{padding:18px 14px; border-radius:22px; min-height:0;}
+    .stat-strip{grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; margin-bottom:16px;}
+    .stat-box{padding:10px 11px;}
     .lib-card-body{padding:20px 16px;}
-    .mascot-banner{padding:12px;}
+    .lib-card-head{padding:9px 13px; font-size:10px;}
+    .sentence{font-size:17px; line-height:1.65;}
+    .answer-row{display:grid; grid-template-columns:1fr; gap:8px;}
+    .answer-row input{min-width:0; width:100%; min-height:44px; font-size:16px;}
+    button.primary,button.ghost{min-height:42px; padding:9px 14px; line-height:1.25; white-space:normal;}
+    .add-form{grid-template-columns:1fr; gap:10px;}
+    .add-form input,.add-form textarea{font-size:16px; min-height:42px;}
+    .form-actions{align-items:stretch;}
+    .form-actions button,.bulk-upload-label{min-height:40px; justify-content:center;}
+    .deck-grid{grid-template-columns:1fr;}
+    .bank-list-head{align-items:stretch; gap:8px;}
+    .bank-controls{width:100%; justify-content:space-between;}
+    .bank-controls .status-row{flex:1; min-width:0;}
+    .bank-controls .status-row .filter-btn{flex:1; padding:7px 5px; font-size:10.5px;}
+    .filter-toggle{min-height:38px;}
+    .filter-panel{padding:12px;}
+    .filter-panel .filter-btn{min-height:34px; padding:5px 8px;}
+    .word-grid{grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px;}
+    .flip-card{height:174px;}
+    .flip-card-front,.flip-card-back{padding:10px;}
+    .fc-word{font-size:18px;}
+    .fc-zh{font-size:14px;}
+    .fc-example{font-size:10.5px;}
+    .speak-provider-row{grid-template-columns:1fr;}
+    .speak-provider-btn{min-height:43px;}
+    .speak-setup-card{padding:14px;}
+    .speak-setup input{font-size:16px; min-height:42px;}
+    .speak-topic-grid{grid-template-columns:1fr;}
+    .speak-bubble,.speak-correction{max-width:94%;}
+    .speak-input-row{align-items:stretch; flex-wrap:wrap;}
+    .speak-input-row input{min-width:0; min-height:44px; font-size:16px;}
+    .speak-input-row .primary{flex:1;}
+    .mascot-banner{padding:12px; gap:12px;}
     footer.note{grid-template-columns:1fr; gap:10px;}
     .footer-meta,.footer-copy{text-align:left; margin-left:0;}
     .footer-tool{margin-left:0;}
@@ -523,6 +563,24 @@
   }
   .study-complete-big{font-family:var(--font-display); font-size:20px; color:var(--ink); margin-bottom:8px;}
   .study-complete-sub{font-size:13px; color:var(--ink-soft); margin-bottom:20px; font-weight:600; line-height:1.6;}
+
+  /* 預習覆蓋層另設手機規則，確保第一個接觸到的字卡畫面也容易單手操作。 */
+  @media (max-width:640px){
+    .study-screen{padding:16px 14px; align-items:flex-start; overflow-y:auto;}
+    .study-wrap{padding:6px 0 18px;}
+    .study-progress-row{align-items:flex-start;}
+    .study-progress-label{padding-top:5px;}
+    .study-skip{font-size:11px; padding:6px 9px;}
+    .study-card{height:262px; margin:12px 0 16px;}
+    .study-card-front,.study-card-back{padding:20px 16px; gap:10px;}
+    .study-word{font-size:28px;}
+    .study-zh{font-size:20px;}
+    .study-example{font-size:13px;}
+    .study-example-zh{font-size:12px;}
+    .study-nav{gap:8px;}
+    .study-nav button{min-height:44px; padding:8px 10px; font-size:12px;}
+    .study-complete{padding:28px 18px;}
+  }
 </style>
 </head>
 <body>
