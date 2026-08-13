@@ -8746,2660 +8746,2660 @@ DECKS.intermediate = [
     "abide by",
     "遵守；遵循",
     "All employees must abide by the safety rules.",
-    "",
+    "所有員工必須遵守安全規則。",
     "phr.v."
   ],
   [
     "absorb",
     "吸收；理解",
     "It took time to absorb the new information.",
-    "",
+    "吸收新資訊需要時間。",
     "v."
   ],
   [
     "abstract",
     "摘要；抽象的",
     "The report begins with a brief abstract.",
-    "",
+    "報告以簡短的摘要開始。",
     "n.／v.／adj."
   ],
   [
     "accomplish",
     "完成；實現",
     "The team worked late to accomplish its goal.",
-    "",
+    "為了實現目標，團隊工作到很晚。",
     "v."
   ],
   [
     "account for",
     "說明；占比",
     "Travel costs account for most of the budget.",
-    "",
+    "差旅費佔預算的大部分。",
     "phr.v."
   ],
   [
     "accuracy",
     "精確度；正確性",
     "Please check the accuracy of the figures.",
-    "",
+    "請檢查數字的準確性。",
     "n."
   ],
   [
     "acknowledge",
     "承認；確認收到",
     "Please acknowledge receipt of the revised contract.",
-    "",
+    "請確認收到修訂後的合約。",
     "v."
   ],
   [
     "administrative",
     "行政的；管理的",
     "He handles administrative tasks for the department.",
-    "",
+    "他處理該部門的行政任務。",
     "adj."
   ],
   [
     "advantageous",
     "有利的；有益的",
     "A flexible schedule is advantageous for many parents.",
-    "",
+    "靈活的時間表對許多父母來說都是有利的。",
     "adj."
   ],
   [
     "advertise",
     "做廣告；刊登",
     "The company will advertise the position online.",
-    "",
+    "該公司將在網路上發布該職位的廣告。",
     "v."
   ],
   [
     "ambassador",
     "大使；代表",
     "The ambassador spoke at the cultural event.",
-    "",
+    "大使在文化活動上發表演說。",
     "n."
   ],
   [
     "applicant",
     "申請人；求職者",
     "Each applicant must submit two references.",
-    "",
+    "每位申請者必須提交兩份推薦信。",
     "n."
   ],
   [
     "appoint",
     "任命；指定",
     "The board will appoint a new chairperson.",
-    "",
+    "董事會將任命一名新主席。",
     "v."
   ],
   [
     "appraise",
     "評估；鑑定",
     "An expert will appraise the painting tomorrow.",
-    "",
+    "明天專家將對這幅畫進行鑑定。",
     "v."
   ],
   [
     "approximate",
     "大約的；近似",
     "The approximate cost is fifty thousand dollars.",
-    "",
+    "大約成本是五萬美元。",
     "v.／adj."
   ],
   [
     "archive",
     "檔案庫；歸檔",
     "Please archive the completed files by year.",
-    "",
+    "請按年份歸檔已完成的文件。",
     "n.／v."
   ],
   [
     "attendee",
     "出席者",
     "Every attendee received a name badge.",
-    "",
+    "每位與會者都收到了名牌。",
     "n."
   ],
   [
     "automate",
     "自動化",
     "The company plans to automate routine payments.",
-    "",
+    "該公司計劃將日常付款自動化。",
     "v."
   ],
   [
     "availability",
     "可用性；有空",
     "Please check the manager's availability first.",
-    "",
+    "請先檢查經理是否有空。",
     "n."
   ],
   [
     "bankruptcy",
     "破產",
     "The retailer filed for bankruptcy last month.",
-    "",
+    "該零售商上個月申請破產。",
     "n."
   ],
   [
     "binding",
     "有約束力的；裝訂",
     "The signed agreement is legally binding.",
-    "",
+    "簽署的協議具有法律約束力。",
     "n.／adj."
   ],
   [
     "budgetary",
     "預算的",
     "The committee discussed budgetary limits.",
-    "",
+    "委員會討論了預算限制。",
     "adj."
   ],
   [
     "business card",
     "名片",
     "She handed me her business card after the meeting.",
-    "",
+    "會議結束後她遞給我她的名片。",
     "n."
   ],
   [
     "bylaws",
     "章程；附則",
     "The association changed its bylaws last year.",
-    "",
+    "該協會去年修改了章程。",
     "n."
   ],
   [
     "calculate",
     "計算；估算",
     "Use this formula to calculate the total cost.",
-    "",
+    "使用此公式計算總成本。",
     "v."
   ],
   [
     "capital",
     "資本；首都",
     "The startup needs more capital to expand.",
-    "",
+    "這家新創公司需要更多資金來擴張。",
     "n.／adj."
   ],
   [
     "carefully",
     "仔細地",
     "Please read the instructions carefully.",
-    "",
+    "請仔細閱讀說明。",
     "adv."
   ],
   [
     "career path",
     "職涯發展路徑",
     "The mentor helped her plan a career path.",
-    "",
+    "導師幫助她規劃了職涯道路。",
     "n."
   ],
   [
     "catalogue",
     "產品目錄",
     "The catalogue lists every product by number.",
-    "",
+    "該目錄按編號列出了每種產品。",
     "n.／v."
   ],
   [
     "certify",
     "證明；認證",
     "An inspector must certify the equipment as safe.",
-    "",
+    "檢查員必須證明設備是安全的。",
     "v."
   ],
   [
     "chairperson",
     "主席",
     "The chairperson opened the meeting on time.",
-    "",
+    "主席準時宣布會議開幕。",
     "n."
   ],
   [
     "closure",
     "關閉；結束",
     "The road closure delayed several deliveries.",
-    "",
+    "道路封閉導致數次交貨延遲。",
     "n.／v."
   ],
   [
     "collaborate",
     "合作；協作",
     "Our designers collaborate with local artists.",
-    "",
+    "我們的設計師與當地藝術家合作。",
     "v."
   ],
   [
     "collective",
     "集體的；共同的",
     "The team made a collective decision.",
-    "",
+    "團隊做出了集體決定。",
     "n.／adj."
   ],
   [
     "compensation",
     "補償；薪酬",
     "The company offered compensation for the delay.",
-    "",
+    "該公司為延誤提供了補償。",
     "n."
   ],
   [
     "component",
     "組成部分；零件",
     "This small component controls the main switch.",
-    "",
+    "這個小部件控制主開關。",
     "n."
   ],
   [
     "comprise",
     "包括；由…組成",
     "The course will comprise six short modules.",
-    "",
+    "該課程將包括六個簡短的模組。",
     "v."
   ],
   [
     "conclude",
     "結論；結束",
     "We can conclude that the plan is working.",
-    "",
+    "我們可以得出結論，該計劃正在發揮作用。",
     "v."
   ],
   [
     "concrete",
     "具體的；混凝土",
     "Please give us a concrete example.",
-    "",
+    "請給我們一個具體的例子。",
     "n.／v.／adj."
   ],
   [
     "conduct",
     "執行；行為",
     "The firm will conduct a customer survey.",
-    "",
+    "該公司將進行客戶調查。",
     "n.／v."
   ],
   [
     "confidential",
     "機密的",
     "Keep these financial records confidential.",
-    "",
+    "對這些財務記錄保密。",
     "adj."
   ],
   [
     "consent",
     "同意；許可",
     "We need your written consent before proceeding.",
-    "",
+    "在繼續之前，我們需要您的書面同意。",
     "n.／v."
   ],
   [
     "considerable",
     "相當大的；重要的",
     "The project requires considerable planning.",
-    "",
+    "該項目需要大量的規劃。",
     "adj."
   ],
   [
     "consist of",
     "由…組成",
     "The package will consist of three separate parts.",
-    "",
+    "該套件將由三個獨立的部分組成。",
     "phr.v."
   ],
   [
     "consumption",
     "消費；耗用",
     "Energy consumption rises during the summer.",
-    "",
+    "夏季能源消耗增加。",
     "n."
   ],
   [
     "contribute",
     "貢獻；投稿",
     "Everyone can contribute an idea to the discussion.",
-    "",
+    "每個人都可以在討論中貢獻自己的想法。",
     "v."
   ],
   [
     "cooperate",
     "合作",
     "The two departments must cooperate closely.",
-    "",
+    "兩個部門必須密切合作。",
     "v."
   ],
   [
     "corporate",
     "公司的；企業的",
     "The corporate office approved the proposal.",
-    "",
+    "公司辦公室批准了該提案。",
     "adj."
   ],
   [
     "cost-effective",
     "符合成本效益的",
     "Online training can be a cost-effective solution.",
-    "",
+    "線上培訓可能是一種經濟高效的解決方案。",
     "adj."
   ],
   [
     "coverage",
     "涵蓋範圍；保險額",
     "The insurance provides coverage for theft.",
-    "",
+    "該保險為竊盜提供承保。",
     "n."
   ],
   [
     "credential",
     "證書；資格",
     "Her teaching credential expires in June.",
-    "",
+    "她的教師資格證將於六月到期。",
     "n."
   ],
   [
     "critical",
     "重要的；批判性的",
     "Good communication is critical to the project's success.",
-    "",
+    "良好的溝通對於專案的成功至關重要。",
     "adj."
   ],
   [
     "currency",
     "貨幣；流通",
     "You can exchange currency at the airport.",
-    "",
+    "您可以在機場兌換貨幣。",
     "n."
   ],
   [
     "customize",
     "客製化",
     "Customers can customize the color of the bag.",
-    "",
+    "客戶可以訂製袋子的顏色。",
     "v."
   ],
   [
     "database",
     "資料庫",
     "The client information is stored in a secure database.",
-    "",
+    "客戶資訊儲存在安全資料庫中。",
     "n."
   ],
   [
     "deadline extension",
     "延後截止期限",
     "They requested a deadline extension for the report.",
-    "",
+    "他們要求延長報告的截止日期。",
     "n."
   ],
   [
     "deduct",
     "扣除；推論",
     "The company will deduct the fee from your payment.",
-    "",
+    "本公司將從您的付款中扣除該費用。",
     "v."
   ],
   [
     "defect",
     "瑕疵；缺點",
     "The technician found a defect in the screen.",
-    "",
+    "技術人員發現螢幕有缺陷。",
     "n.／v."
   ],
   [
     "demonstrate",
     "展示；證明",
     "Please demonstrate how the new system works.",
-    "",
+    "請示範新系統如何運作。",
     "v."
   ],
   [
     "depart",
     "離開；出發",
     "The train will depart from platform three.",
-    "",
+    "火車將從三號月台出發。",
     "v."
   ],
   [
     "designate",
     "指定；任命",
     "Please designate one person to lead the group.",
-    "",
+    "請指定一人領導該小組。",
     "v.／adj."
   ],
   [
     "desirable",
     "理想的；值得擁有的",
     "Experience in sales is a desirable qualification.",
-    "",
+    "銷售經驗是理想的資格。",
     "adj."
   ],
   [
     "detect",
     "發現；偵測",
     "The sensor can detect smoke in the room.",
-    "",
+    "感應器可以偵測房間內的煙霧。",
     "v."
   ],
   [
     "develop",
     "發展；開發",
     "The company hopes to develop a new service.",
-    "",
+    "該公司希望開發一項新服務。",
     "v."
   ],
   [
     "discontinue",
     "停止；中止",
     "The store will discontinue this product line.",
-    "",
+    "該商店將停止該產品線。",
     "v."
   ],
   [
     "diversify",
     "多樣化；分散",
     "The firm wants to diversify its sources of income.",
-    "",
+    "該公司希望實現收入來源多元化。",
     "v."
   ],
   [
     "division",
     "部門；分割",
     "She works in the marketing division.",
-    "",
+    "她在行銷部門工作。",
     "n."
   ],
   [
     "duration",
     "持續時間",
     "The course has a duration of three weeks.",
-    "",
+    "該課程為期三週。",
     "n."
   ],
   [
     "economic",
     "經濟的",
     "The report examines recent economic trends.",
-    "",
+    "該報告探討了近期的經濟趨勢。",
     "adj."
   ],
   [
     "economical",
     "節省的；經濟實惠的",
     "Taking the bus is more economical than driving.",
-    "",
+    "搭乘公共汽車比開車更經濟。",
     "adj."
   ],
   [
     "edit",
     "編輯；修改",
     "Please edit the document before you send it.",
-    "",
+    "請在傳送之前編輯該文件。",
     "v."
   ],
   [
     "efficient",
     "有效率的",
     "The new process is more efficient than the old one.",
-    "",
+    "新流程比舊流程更有效率。",
     "adj."
   ],
   [
     "eligible",
     "符合資格的",
     "Only full-time staff are eligible for this benefit.",
-    "",
+    "只有全職員工才有資格享有這項福利。",
     "adj."
   ],
   [
     "employment",
     "就業；工作",
     "The agency helps people find employment.",
-    "",
+    "該機構幫助人們找到工作。",
     "n."
   ],
   [
     "enterprise",
     "企業；事業",
     "The family runs a small enterprise.",
-    "",
+    "這個家庭經營著一家小企業。",
     "n."
   ],
   [
     "entry",
     "進入；條目",
     "Write your name in the first entry on the form.",
-    "",
+    "在表格的第一個條目中寫下您的姓名。",
     "n."
   ],
   [
     "equivalent",
     "相等的；等值物",
     "One hundred centimeters is equivalent to one meter.",
-    "",
+    "一百公分相當於一公尺。",
     "n.／adj."
   ],
   [
     "evidence",
     "證據",
     "The report provides evidence of steady growth.",
-    "",
+    "該報告提供了穩定成長的證據。",
     "n.／v."
   ],
   [
     "exclude",
     "排除；不包括",
     "Please exclude duplicate records from the list.",
-    "",
+    "請從清單中排除重複的記錄。",
     "v."
   ],
   [
     "exclusively",
     "專門地；僅僅",
     "This lounge is used exclusively by members.",
-    "",
+    "此休息室僅供會員使用。",
     "adv."
   ],
   [
     "expenditure",
     "支出；費用",
     "The annual expenditure exceeded the original budget.",
-    "",
+    "年度支出超出了原始預算。",
     "n."
   ],
   [
     "expertise",
     "專業知識",
     "We need someone with expertise in digital marketing.",
-    "",
+    "我們需要具有數位行銷專業知識的人。",
     "n."
   ],
   [
     "expiration",
     "到期；終止",
     "Check the expiration date before using the coupon.",
-    "",
+    "使用優惠券前請檢查有效期限。",
     "n."
   ],
   [
     "extension",
     "延期；分機",
     "Please call extension 204 for technical support.",
-    "",
+    "請撥打分機204尋求技術支援。",
     "n."
   ],
   [
     "external",
     "外部的",
     "The company hired an external consultant.",
-    "",
+    "該公司聘請了一名外部顧問。",
     "n.／adj."
   ],
   [
     "factor",
     "因素；因子",
     "Price was an important factor in our decision.",
-    "",
+    "價格是我們決定的重要因素。",
     "n.／v."
   ],
   [
     "financing",
     "融資；資金",
     "The project received financing from a local bank.",
-    "",
+    "該項目獲得了當地一家銀行的融資。",
     "n."
   ],
   [
     "flexibility",
     "彈性；靈活性",
     "Remote work gives employees more flexibility.",
-    "",
+    "遠距工作為員工提供了更大的靈活性。",
     "n."
   ],
   [
     "format",
     "格式；編排",
     "Please save the file in PDF format.",
-    "",
+    "請將文件儲存為 PDF 格式。",
     "n.／v."
   ],
   [
     "freight",
     "貨運；貨物",
     "The freight arrived at the warehouse on Tuesday.",
-    "",
+    "貨物於週二抵達倉庫。",
     "n.／v."
   ],
   [
     "funding",
     "資金；經費",
     "The museum received funding from several donors.",
-    "",
+    "博物館獲得了多個捐助者的資助。",
     "n."
   ],
   [
     "furthermore",
     "此外；而且",
     "Furthermore, the plan will reduce operating costs.",
-    "",
+    "此外，該計劃還將降低營運成本。",
     "adv."
   ],
   [
     "guarantee",
     "保證；保固",
     "The store offers a one-year guarantee.",
-    "",
+    "商店提供一年保固。",
     "n.／v."
   ],
   [
     "guideline",
     "指導原則",
     "Follow the guideline when completing the form.",
-    "",
+    "填寫表格時請遵循指南。",
     "n."
   ],
   [
     "headcount",
     "人數；員額",
     "The department's headcount increased this quarter.",
-    "",
+    "本季該部門的員工人數有所增加。",
     "n."
   ],
   [
     "implication",
     "含意；影響",
     "The change has an important implication for customers.",
-    "",
+    "這項變化對客戶來說具有重要意義。",
     "n."
   ],
   [
     "indicate",
     "指出；顯示",
     "The chart may indicate a rise in online sales.",
-    "",
+    "此圖表可能表示線上銷售額有所上升。",
     "v."
   ],
   [
     "initiative",
     "主動性；倡議",
     "She showed initiative by solving the problem early.",
-    "",
+    "她表現出了主動性，儘早解決了問題。",
     "n.／adj."
   ],
   [
     "inspect",
     "檢查；視察",
     "A technician will inspect the machine today.",
-    "",
+    "今天技術人員將檢查機器。",
     "v."
   ],
   [
     "installation",
     "安裝；設施",
     "The installation of the new software took an hour.",
-    "",
+    "新軟體的安裝花了一個小時。",
     "n."
   ],
   [
     "institute",
     "機構；制定",
     "The institute offers courses in language education.",
-    "",
+    "該學院提供語言教育課程。",
     "n.／v."
   ],
   [
     "intellectual",
     "智力的；知識分子",
     "The job requires intellectual curiosity and patience.",
-    "",
+    "這項工作需要求知慾和耐心。",
     "n.／adj."
   ],
   [
     "intensive",
     "密集的；加強的",
     "They completed an intensive training program.",
-    "",
+    "他們完成了密集培訓計劃。",
     "n.／adj."
   ],
   [
     "internal",
     "內部的",
     "Please discuss internal matters privately.",
-    "",
+    "內部事務請私下討論。",
     "adj."
   ],
   [
     "invest",
     "投資",
     "Many people invest money for retirement.",
-    "",
+    "許多人為退休投資。",
     "v."
   ],
   [
     "manufacture",
     "製造；製造業",
     "The factory will manufacture parts for bicycles.",
-    "",
+    "該工廠將生產自行車零件。",
     "n.／v."
   ],
   [
     "market share",
     "市場占有率",
     "The company gained market share last year.",
-    "",
+    "該公司去年獲得了市場份額。",
     "n."
   ],
   [
     "marketing",
     "行銷",
     "She works in marketing for a software company.",
-    "",
+    "她在一家軟體公司從事行銷工作。",
     "n."
   ],
   [
     "maximum",
     "最大值；最高的",
     "The room can hold a maximum of fifty people.",
-    "",
+    "房間最多可容納五十人。",
     "n.／adj."
   ],
   [
     "merchandise",
     "商品；貨品",
     "The store displayed new merchandise near the entrance.",
-    "",
+    "商店在入口處展示了新商品。",
     "n.／v."
   ],
   [
     "mission",
     "任務；使命",
     "Our mission is to provide reliable service.",
-    "",
+    "我們的使命是提供可靠的服務。",
     "n."
   ],
   [
     "negotiation",
     "談判；協商",
     "The contract is still under negotiation.",
-    "",
+    "合約仍在談判中。",
     "n."
   ],
   [
     "obligation",
     "義務；責任",
     "You have no obligation to accept the offer.",
-    "",
+    "您沒有義務接受該要約。",
     "n."
   ],
   [
     "occupancy",
     "入住率；占用",
     "Hotel occupancy is high during the festival.",
-    "",
+    "節慶期間飯店入住率較高。",
     "n."
   ],
   [
     "operate",
     "經營；操作",
     "The company will operate stores across the country.",
-    "",
+    "該公司將在全國各地經營商店。",
     "v."
   ],
   [
     "operational",
     "營運的；操作上的",
     "The new website will be operational on Monday.",
-    "",
+    "新網站將於週一上線。",
     "adj."
   ],
   [
     "pending",
     "待處理的；即將發生的",
     "Your application is still pending approval.",
-    "",
+    "您的申請仍在等待批准。",
     "adj."
   ],
   [
     "permanent",
     "永久的；正式的",
     "She accepted a permanent position with the firm.",
-    "",
+    "她接受了該公司的永久職位。",
     "n.／adj."
   ],
   [
     "personnel",
     "人事；人員",
     "Personnel will contact you about the schedule.",
-    "",
+    "工作人員將就日程安排與您聯繫。",
     "n."
   ],
   [
     "portfolio",
     "作品集；投資組合",
     "He showed his design portfolio to the client.",
-    "",
+    "他向客戶展示了他的設計作品集。",
     "n."
   ],
   [
     "precede",
     "在…之前；領先",
     "A short introduction will precede the presentation.",
-    "",
+    "在演示之前將有一個簡短的介紹。",
     "v."
   ],
   [
     "predict",
     "預測",
     "Experts predict higher demand next year.",
-    "",
+    "專家預測明年需求會更高。",
     "v."
   ],
   [
     "preference",
     "偏好；優先選擇",
     "Please tell us your seating preference.",
-    "",
+    "請告訴我們您的座位偏好。",
     "n."
   ],
   [
     "premium",
     "保費；高級的",
     "The premium plan includes extra support.",
-    "",
+    "高級計劃包括額外的支援。",
     "n.／adj."
   ],
   [
     "preserve",
     "保存；維護",
     "Store the food properly to preserve its freshness.",
-    "",
+    "正確儲存食物以保持其新鮮度。",
     "n.／v."
   ],
   [
     "productivity",
     "生產力；效率",
     "Short breaks can improve productivity.",
-    "",
+    "短暫的休息可以提高生產力。",
     "n."
   ],
   [
     "proficiency",
     "熟練度",
     "The role requires proficiency in English.",
-    "",
+    "該職位需要精通英語。",
     "n."
   ],
   [
     "prospective",
     "預期的；潛在的",
     "The event attracted prospective customers.",
-    "",
+    "此次活動吸引了潛在客戶。",
     "adj."
   ],
   [
     "provision",
     "提供；條款",
     "The contract includes a provision for early cancellation.",
-    "",
+    "合約包含提前取消的條款。",
     "n.／v."
   ],
   [
     "qualify",
     "符合資格；使具資格",
     "You may qualify for a discount as a student.",
-    "",
+    "作為學生，您可能有資格享受折扣。",
     "v."
   ],
   [
     "quotation",
     "報價單；引文",
     "We received a quotation from three suppliers.",
-    "",
+    "我們收到了三個供應商的報價。",
     "n."
   ],
   [
     "recruit",
     "招募；新進人員",
     "The company plans to recruit more engineers.",
-    "",
+    "該公司計劃招聘更多工程師。",
     "n.／v."
   ],
   [
     "recruitment",
     "招募；徵才",
     "Recruitment begins again in September.",
-    "",
+    "9月再次開始招募。",
     "n."
   ],
   [
     "recruiter",
     "招募人員",
     "The recruiter explained the interview process.",
-    "",
+    "招聘人員解釋了面試過程。",
     "n."
   ],
   [
     "redeem",
     "兌換；贖回",
     "You can redeem this coupon before Friday.",
-    "",
+    "您可以在周五之前兌換此優惠券。",
     "v."
   ],
   [
     "refer",
     "提及；轉介",
     "Please refer to page ten for more details.",
-    "",
+    "詳情請參閱第十頁。",
     "v."
   ],
   [
     "renew",
     "更新；續約",
     "We need to renew the lease next month.",
-    "",
+    "我們下個月需要續租。",
     "v."
   ],
   [
     "renovate",
     "翻修；整修",
     "They plan to renovate the old office.",
-    "",
+    "他們計劃翻新舊辦公室。",
     "v."
   ],
   [
     "replacement",
     "替代品；更換",
     "We sent a replacement for the damaged item.",
-    "",
+    "我們為損壞的物品發送了替換品。",
     "n."
   ],
   [
     "resolution",
     "決議；解決方案",
     "The committee reached a resolution after discussion.",
-    "",
+    "委員會經討論後達成決議。",
     "n."
   ],
   [
     "retire",
     "退休；撤回",
     "My uncle plans to retire next summer.",
-    "",
+    "我叔叔計劃明年夏天退休。",
     "v."
   ],
   [
     "revise",
     "修訂；複習",
     "Please revise the report using these comments.",
-    "",
+    "請使用這些意見修改報告。",
     "n.／v."
   ],
   [
     "rotation",
     "輪調；轉動",
     "The staff rotation changes every two weeks.",
-    "",
+    "人員輪調每兩週更換一次。",
     "n."
   ],
   [
     "salary range",
     "薪資範圍",
     "The job posting lists a clear salary range.",
-    "",
+    "招聘啟事列出了明確的薪資範圍。",
     "n."
   ],
   [
     "sector",
     "部門；產業",
     "Tourism is an important sector of the local economy.",
-    "",
+    "旅遊業是當地經濟的重要部門。",
     "n."
   ],
   [
     "specification",
     "規格；說明",
     "The engineer checked the product specification.",
-    "",
+    "工程師檢查了產品規格。",
     "n."
   ],
   [
     "stationary",
     "固定不動的",
     "Keep the camera stationary while taking the picture.",
-    "",
+    "拍照時保持相機靜止。",
     "adj."
   ],
   [
     "storage capacity",
     "儲存容量",
     "This device has enough storage capacity for photos.",
-    "",
+    "該設備有足夠的照片儲存容量。",
     "n."
   ],
   [
     "subcontractor",
     "分包商",
     "The builder hired a subcontractor for the electrical work.",
-    "",
+    "建築商聘請了一家分包商進行電氣工程。",
     "n."
   ],
   [
     "supervisor",
     "主管；監督者",
     "Ask your supervisor before changing the schedule.",
-    "",
+    "在更改時間表之前詢問您的主管。",
     "n."
   ],
   [
     "supply chain",
     "供應鏈",
     "The storm disrupted the global supply chain.",
-    "",
+    "風暴擾亂了全球供應鏈。",
     "n."
   ],
   [
     "teleconference",
     "電話會議",
     "We joined the teleconference from different offices.",
-    "",
+    "我們從不同的辦公室參加了電話會議。",
     "n."
   ],
   [
     "therefore",
     "因此",
     "The road was closed; therefore, we took another route.",
-    "",
+    "道路被封閉了；因此，我們走了另一條路。",
     "adv."
   ],
   [
     "timeline",
     "時程表",
     "The project timeline shows each major task.",
-    "",
+    "專案時間表顯示了每項主要任務。",
     "n."
   ],
   [
     "transition",
     "轉變；過渡",
     "The transition to the new system went smoothly.",
-    "",
+    "向新系統的過渡進展順利。",
     "n.／v."
   ],
   [
     "utility",
     "公用事業；效用",
     "Water is an essential public utility.",
-    "",
+    "水是重要的公共設施。",
     "n.／adj."
   ],
   [
     "valid",
     "有效的；有根據的",
     "Your ticket is valid until the end of the month.",
-    "",
+    "您的門票有效期至月底。",
     "adj."
   ],
   [
     "variable",
     "可變的；變數",
     "Shipping costs are variable, so the final price can change.",
-    "",
+    "運輸成本是可變的，因此最終價格可能會改變。",
     "n.／adj."
   ],
   [
     "visible",
     "可見的；明顯的",
     "The sign is clearly visible from the street.",
-    "",
+    "從街上可以清楚地看到該標誌。",
     "adj."
   ],
   [
     "wholesale",
     "批發；批發的",
     "They buy coffee beans at wholesale prices.",
-    "",
+    "他們以批發價購買咖啡豆。",
     "n.／v.／adj.／adv."
   ],
   [
     "withdraw",
     "撤回；提款",
     "You can withdraw cash from this machine.",
-    "",
+    "您可以從這台機器提取現金。",
     "v."
   ],
   [
     "workload",
     "工作量",
     "Her workload became heavier before the deadline.",
-    "",
+    "在截止日期之前，她的工作量變得更加繁重。",
     "n."
   ],
   [
     "abatement",
     "減少；減稅",
     "The city offered a tax abatement for the project.",
-    "",
+    "該市為該項目提供了稅收減免。",
     "n."
   ],
   [
     "absentee",
     "缺席者；曠工者",
     "The teacher spoke with the absentee after class.",
-    "",
+    "下課後老師與缺席者交談。",
     "n."
   ],
   [
     "accelerator",
     "加速器；加速方案",
     "The startup joined a business accelerator last spring.",
-    "",
+    "這家新創公司去年春天加入了一個商業加速器。",
     "n."
   ],
   [
     "accessibility",
     "可近用性；無障礙性",
     "The new ramp improves accessibility for wheelchair users.",
-    "",
+    "新坡道改善了輪椅使用者的無障礙環境。",
     "n."
   ],
   [
     "accrual",
     "應計；累積",
     "The accountant recorded the accrual at month-end.",
-    "",
+    "會計師在月底記錄了應計費用。",
     "n."
   ],
   [
     "accrued expense",
     "應計費用",
     "Rent is listed as an accrued expense this month.",
-    "",
+    "租金列為本月應計費用。",
     "n."
   ],
   [
     "acquisition",
     "收購；取得",
     "The acquisition created a larger company.",
-    "",
+    "這次收購創造了一家更大的公司。",
     "n."
   ],
   [
     "activation",
     "啟用；活化",
     "Account activation takes only a few minutes.",
-    "",
+    "帳戶啟動只需幾分鐘。",
     "n."
   ],
   [
     "adaptability",
     "適應力",
     "Adaptability is valuable in a changing workplace.",
-    "",
+    "適應能力在不斷變化的工作場所中很有價值。",
     "n."
   ],
   [
     "add-on",
     "附加項目；加購項",
     "The extended warranty is an optional add-on.",
-    "",
+    "延長保固是一個可選的附加項目。",
     "n."
   ],
   [
     "adjustment",
     "調整；調節",
     "The manager made a small adjustment to the schedule.",
-    "",
+    "經理對日程做了一個小小的調整。",
     "n."
   ],
   [
     "advisory",
     "顧問的；諮詢通知",
     "The firm issued an advisory about the service outage.",
-    "",
+    "該公司發布了有關服務中斷的諮詢。",
     "n.／adj."
   ],
   [
     "after-sales service",
     "售後服務",
     "Good after-sales service builds customer trust.",
-    "",
+    "良好的售後服務贏得客戶的信任。",
     "n."
   ],
   [
     "agency fee",
     "代理費",
     "The agency fee is included in the final invoice.",
-    "",
+    "代理費包含在最終發票中。",
     "n."
   ],
   [
     "agenda item",
     "議程項目",
     "The budget is the first agenda item today.",
-    "",
+    "預算是今天的第一個議程項目。",
     "n."
   ],
   [
     "alignment",
     "一致；校準",
     "The team's goals are in alignment with the strategy.",
-    "",
+    "團隊的目標與策略一致。",
     "n."
   ],
   [
     "allowance",
     "津貼；補助額",
     "The company gives interns a monthly allowance.",
-    "",
+    "公司每月發給實習生津貼。",
     "n.／v."
   ],
   [
     "amendment",
     "修正案；修改",
     "The contract amendment needs both signatures.",
-    "",
+    "合約修改需要雙方簽名。",
     "n."
   ],
   [
     "amortization",
     "攤銷；分期償還",
     "The loan amortization is spread over five years.",
-    "",
+    "貸款攤銷分五年進行。",
     "n."
   ],
   [
     "analyst",
     "分析師",
     "The analyst presented the sales forecast.",
-    "",
+    "分析師提出了銷售預測。",
     "n."
   ],
   [
     "annual report",
     "年度報告",
     "Shareholders read the annual report carefully.",
-    "",
+    "股東們仔細閱讀了年度報告。",
     "n."
   ],
   [
     "approval process",
     "核准流程",
     "The approval process takes about three days.",
-    "",
+    "審批過程大約需要三天。",
     "n."
   ],
   [
     "asset management",
     "資產管理",
     "She works in asset management for a bank.",
-    "",
+    "她在銀行從事資產管理工作。",
     "n."
   ],
   [
     "assignment",
     "任務；指派",
     "Your first assignment is due on Friday.",
-    "",
+    "你的第一份作業將於週五截止。",
     "n."
   ],
   [
     "auditor",
     "稽核員；審計師",
     "The auditor reviewed the company's accounts.",
-    "",
+    "審計員審查了公司的帳目。",
     "n."
   ],
   [
     "automation",
     "自動化",
     "Automation reduced the time needed for data entry.",
-    "",
+    "自動化減少了資料輸入所需的時間。",
     "n."
   ],
   [
     "aviation",
     "航空業；航空",
     "She hopes to build a career in aviation.",
-    "",
+    "她希望在航空領域開創自己的職業生涯。",
     "n."
   ],
   [
     "backorder",
     "缺貨待補訂單",
     "The item is on backorder until next week.",
-    "",
+    "該商品已延期交貨至下週。",
     "n."
   ],
   [
     "bank transfer",
     "銀行轉帳",
     "Please pay by bank transfer if possible.",
-    "",
+    "如果可能，請透過銀行轉帳付款。",
     "n."
   ],
   [
     "bar code",
     "條碼",
     "The cashier scanned the bar code on the package.",
-    "",
+    "收銀員掃描了包裹上的條碼。",
     "n."
   ],
   [
     "baseline",
     "基準線；基準",
     "We need a baseline before measuring improvement.",
-    "",
+    "在衡量改進之前我們需要一個基準。",
     "n."
   ],
   [
     "beneficiary",
     "受益人",
     "Please name a beneficiary on the insurance form.",
-    "",
+    "請在保單上註明受益人。",
     "n.／adj."
   ],
   [
     "bid",
     "投標；出價",
     "The contractor submitted the lowest bid.",
-    "",
+    "承包商提交了最低報價。",
     "n.／v."
   ],
   [
     "billing",
     "開立帳單；帳務處理",
     "Please contact billing if the amount is incorrect.",
-    "",
+    "如果金額不正確，請聯絡帳單。",
     "n."
   ],
   [
     "board meeting",
     "董事會會議",
     "The proposal will be discussed at the board meeting.",
-    "",
+    "該提案將在董事會會議上討論。",
     "n."
   ],
   [
     "bonus scheme",
     "獎金制度",
     "The company introduced a new bonus scheme.",
-    "",
+    "該公司推出了新的獎金計劃。",
     "n."
   ],
   [
     "brand awareness",
     "品牌知名度",
     "The campaign increased brand awareness among students.",
-    "",
+    "該活動提高了學生的品牌知名度。",
     "n."
   ],
   [
     "brand loyalty",
     "品牌忠誠度",
     "Good service can strengthen brand loyalty.",
-    "",
+    "良好的服務可以增強品牌忠誠度。",
     "n."
   ],
   [
     "break-even",
     "損益兩平的",
     "The new store reached break-even in its first year.",
-    "",
+    "新店開幕第一年就實現了收支平衡。",
     "adj."
   ],
   [
     "brokerage",
     "經紀業；佣金",
     "The brokerage charges a fee for each trade.",
-    "",
+    "經紀公司對每筆交易收取費用。",
     "n."
   ],
   [
     "cash flow",
     "現金流量",
     "The manager monitors cash flow every week.",
-    "",
+    "經理每週監控現金流量。",
     "n."
   ],
   [
     "cash register",
     "收銀機",
     "The cash register stopped working this morning.",
-    "",
+    "今天早上收銀機停止運作了。",
     "n."
   ],
   [
     "certification",
     "認證；證書",
     "This certification is required for the position.",
-    "",
+    "該職位需要此認證。",
     "n."
   ],
   [
     "chair a meeting",
     "主持會議",
     "She will chair a meeting with the regional team.",
-    "",
+    "她將主持與區域團隊的會議。",
     "phr.v."
   ],
   [
     "change order",
     "變更訂單",
     "The client approved the change order yesterday.",
-    "",
+    "客戶昨天批准了變更單。",
     "n."
   ],
   [
     "clearance",
     "清關；出清",
     "The shipment is waiting for customs clearance.",
-    "",
+    "貨物正在等待清關。",
     "n."
   ],
   [
     "co-branding",
     "共同品牌行銷",
     "The two companies launched a co-branding campaign.",
-    "",
+    "兩家公司發起了聯合品牌活動。",
     "n."
   ],
   [
     "code of conduct",
     "行為準則",
     "Everyone must follow the company's code of conduct.",
-    "",
+    "每個人都必須遵守公司的行為準則。",
     "n."
   ],
   [
     "communication skills",
     "溝通技巧",
     "Good communication skills are essential in this role.",
-    "",
+    "良好的溝通技巧對於這個角色至關重要。",
     "n."
   ],
   [
     "company policy",
     "公司政策",
     "Remote work is allowed under company policy.",
-    "",
+    "公司政策允許遠距工作。",
     "n."
   ],
   [
     "computerized",
     "電腦化的",
     "The warehouse uses a computerized tracking system.",
-    "",
+    "倉庫使用電腦化追蹤系統。",
     "adj."
   ],
   [
     "concession",
     "讓步；特許權",
     "The supplier offered a concession on the price.",
-    "",
+    "供應商在價格上做出了讓步。",
     "n."
   ],
   [
     "confirmation number",
     "確認號碼",
     "Please keep your confirmation number for reference.",
-    "",
+    "請保留您的確認號碼以供參考。",
     "n."
   ],
   [
     "consignment",
     "寄售；託運貨物",
     "The shop sells local jewelry on consignment.",
-    "",
+    "這家商店寄售當地珠寶。",
     "n."
   ],
   [
     "consignee",
     "收貨人",
     "The consignee signed for the delivery.",
-    "",
+    "收貨人簽收交貨。",
     "n."
   ],
   [
     "consignor",
     "寄件人；託運人",
     "The consignor arranged the shipment yesterday.",
-    "",
+    "發貨人昨天安排出貨。",
     "n."
   ],
   [
     "consortium",
     "財團；聯盟",
     "A consortium of banks financed the project.",
-    "",
+    "一個銀行財團為該項目提供了資金。",
     "n."
   ],
   [
     "consumer demand",
     "消費者需求",
     "Consumer demand rose before the holiday season.",
-    "",
+    "假期前消費需求上升。",
     "n."
   ],
   [
     "consumer goods",
     "消費品",
     "The company produces household consumer goods.",
-    "",
+    "該公司生產家庭消費品。",
     "n."
   ],
   [
     "contingency plan",
     "應變計畫",
     "We prepared a contingency plan for bad weather.",
-    "",
+    "我們針對惡劣天氣制定了應急計劃。",
     "n."
   ],
   [
     "contractor",
     "承包商",
     "The contractor will repair the roof next week.",
-    "",
+    "承包商將於下週修復屋頂。",
     "n."
   ],
   [
     "convention",
     "年會；慣例",
     "The annual convention attracted visitors from abroad.",
-    "",
+    "一年一度的大會吸引了來自國外的參觀者。",
     "n."
   ],
   [
     "copyright",
     "版權；著作權",
     "The artist owns the copyright to the image.",
-    "",
+    "藝術家擁有該圖像的版權。",
     "n.／v."
   ],
   [
     "core business",
     "核心業務",
     "Customer support is part of our core business.",
-    "",
+    "客戶支援是我們核心業務的一部分。",
     "n."
   ],
   [
     "cost analysis",
     "成本分析",
     "The team completed a cost analysis before buying.",
-    "",
+    "該團隊在購買前完成了成本分析。",
     "n."
   ],
   [
     "cost reduction",
     "降低成本",
     "The plan focuses on cost reduction without layoffs.",
-    "",
+    "該計劃的重點是在不裁員的情況下降低成本。",
     "n."
   ],
   [
     "costing",
     "成本計算",
     "Accurate costing helps us set fair prices.",
-    "",
+    "準確的成本核算有助於我們制定公平的價格。",
     "n."
   ],
   [
     "counteroffer",
     "還價；反提議",
     "She made a counteroffer after reviewing the contract.",
-    "",
+    "她在查看合約後提出了還價。",
     "n."
   ],
   [
     "courier",
     "快遞員；快遞服務",
     "The courier delivered the documents before noon.",
-    "",
+    "快遞員在中午前將文件送達。",
     "n."
   ],
   [
     "credit line",
     "信用額度",
     "The bank approved a larger credit line.",
-    "",
+    "銀行批准了更大的信貸額度。",
     "n."
   ],
   [
     "credit limit",
     "信用限額",
     "The card has a monthly credit limit.",
-    "",
+    "該卡有每月信用額度。",
     "n."
   ],
   [
     "creditor",
     "債權人",
     "The creditor agreed to a new payment plan.",
-    "",
+    "債權人同意新的付款計劃。",
     "n."
   ],
   [
     "cross-functional",
     "跨部門的",
     "The project needs a cross-functional team.",
-    "",
+    "該專案需要一個跨職能團隊。",
     "adj."
   ],
   [
     "customer base",
     "客戶群",
     "The store has a loyal customer base.",
-    "",
+    "該店擁有忠實的顧客群。",
     "n."
   ],
   [
     "customer loyalty",
     "客戶忠誠度",
     "The program rewards customer loyalty.",
-    "",
+    "該計劃獎勵客戶忠誠度。",
     "n."
   ],
   [
     "customer retention",
     "客戶留存",
     "Quick support improves customer retention.",
-    "",
+    "快速支援可以提高客戶保留率。",
     "n."
   ],
   [
     "customer service desk",
     "客服櫃檯",
     "Please ask at the customer service desk.",
-    "",
+    "請到客戶服務台詢問。",
     "n."
   ],
   [
     "customs declaration",
     "海關申報",
     "Fill out the customs declaration before landing.",
-    "",
+    "落地前填寫海關申報單。",
     "n."
   ],
   [
     "data entry",
     "資料輸入",
     "She spent the afternoon doing data entry.",
-    "",
+    "她花了一個下午的時間進行資料輸入。",
     "n."
   ],
   [
     "debit card",
     "簽帳金融卡",
     "I paid for lunch with my debit card.",
-    "",
+    "我用金融卡支付午餐費用。",
     "n."
   ],
   [
     "debtor",
     "債務人",
     "The debtor made a payment last week.",
-    "",
+    "債務人上週付款了。",
     "n."
   ],
   [
     "decision maker",
     "決策者",
     "The sales team met with the decision maker.",
-    "",
+    "銷售團隊與決策者會面。",
     "n."
   ],
   [
     "deduction",
     "扣除額；推論",
     "The receipt supports the tax deduction.",
-    "",
+    "收據支持減稅。",
     "n."
   ],
   [
     "defective",
     "有瑕疵的",
     "The store replaced the defective charger.",
-    "",
+    "商店更換了有缺陷的充電器。",
     "adj."
   ],
   [
     "delivery date",
     "交貨日期",
     "Please confirm the delivery date by email.",
-    "",
+    "請透過電子郵件確認交貨日期。",
     "n."
   ],
   [
     "demand forecast",
     "需求預測",
     "The demand forecast helps us plan inventory.",
-    "",
+    "需求預測可以幫助我們規劃庫存。",
     "n."
   ],
   [
     "depreciation",
     "折舊；貶值",
     "Depreciation reduces the asset's value over time.",
-    "",
+    "隨著時間的推移，折舊會降低資產的價值。",
     "n."
   ],
   [
     "direct deposit",
     "直接存款",
     "My salary arrives by direct deposit.",
-    "",
+    "我的薪水是透過直接存款到達的。",
     "n."
   ],
   [
     "direct marketing",
     "直接行銷",
     "The brand uses direct marketing to reach members.",
-    "",
+    "該品牌使用直接行銷來接觸會員。",
     "n."
   ],
   [
     "directors' meeting",
     "董事會會議",
     "The budget was approved at the directors' meeting.",
-    "",
+    "該預算已由董事會議批准。",
     "n."
   ],
   [
     "disbursement",
     "支付；撥款",
     "The grant disbursement will occur in July.",
-    "",
+    "補助金將於七月發放。",
     "n."
   ],
   [
     "distribution center",
     "配送中心",
     "The package left the distribution center this morning.",
-    "",
+    "包裹今天早上離開了配送中心。",
     "n."
   ],
   [
     "distributor",
     "經銷商",
     "The distributor supplies products to local stores.",
-    "",
+    "分銷商向當地商店供應產品。",
     "n."
   ],
   [
     "dividend",
     "股利；股息",
     "The company paid a dividend to its shareholders.",
-    "",
+    "該公司向股東支付股利。",
     "n."
   ],
   [
     "down payment",
     "頭期款",
     "We saved for the down payment on the apartment.",
-    "",
+    "我們存了錢付了公寓的頭期款。",
     "n."
   ],
   [
     "downsizing",
     "縮編；裁員",
     "The firm announced downsizing after sales declined.",
-    "",
+    "該公司在銷售額下降後宣布裁員。",
     "n."
   ],
   [
     "due date",
     "到期日",
     "The payment is required by the due date.",
-    "",
+    "需要在到期日之前付款。",
     "n."
   ],
   [
     "e-commerce",
     "電子商務",
     "E-commerce sales grew quickly last year.",
-    "",
+    "去年電子商務銷售額快速成長。",
     "n."
   ],
   [
     "earnings",
     "收益；薪資",
     "The report showed higher earnings this quarter.",
-    "",
+    "報告顯示本季收益較高。",
     "n."
   ],
   [
     "efficiency",
     "效率",
     "The new tool improved the team's efficiency.",
-    "",
+    "新工具提高了團隊的效率。",
     "n."
   ],
   [
     "electronic signature",
     "電子簽章",
     "Please add your electronic signature here.",
-    "",
+    "請在此處新增您的電子簽名。",
     "n."
   ],
   [
     "eligibility",
     "資格；合格條件",
     "Your eligibility depends on your employment status.",
-    "",
+    "您的資格取決於您的就業狀況。",
     "n."
   ],
   [
     "employer",
     "雇主",
     "The employer provides training for new staff.",
-    "",
+    "雇主為新進員工提供培訓。",
     "n."
   ],
   [
     "employment contract",
     "聘僱合約",
     "Read the employment contract before signing it.",
-    "",
+    "簽署僱傭合約前請閱讀僱傭合約。",
     "n."
   ],
   [
     "endorsement",
     "背書；推薦",
     "The product received an endorsement from a chef.",
-    "",
+    "該產品得到了廚師的認可。",
     "n."
   ],
   [
     "enrollment form",
     "報名表；登記表",
     "Submit the enrollment form by Friday.",
-    "",
+    "在周五之前提交報名表。",
     "n."
   ],
   [
     "entrepreneurship",
     "創業精神",
     "The course teaches the basics of entrepreneurship.",
-    "",
+    "課程教授創業的基礎知識。",
     "n."
   ],
   [
     "entry-level",
     "入門級的；初階職位的",
     "This is an entry-level role with training.",
-    "",
+    "這是經過訓練的入門級角色。",
     "adj."
   ],
   [
     "executive assistant",
     "行政助理",
     "The executive assistant scheduled the meeting.",
-    "",
+    "行政助理安排了會議。",
     "n."
   ],
   [
     "expense account",
     "費用帳戶",
     "Keep receipts for your expense account.",
-    "",
+    "保留您的費用帳戶收據。",
     "n."
   ],
   [
     "export",
     "出口；出口品",
     "The company plans to export tea to several countries.",
-    "",
+    "該公司計劃向多個國家出口茶葉。",
     "n.／v."
   ],
   [
     "exporter",
     "出口商",
     "The exporter arranged the shipping documents.",
-    "",
+    "出口商安排了裝運單據。",
     "n."
   ],
   [
     "facility management",
     "設施管理",
     "Facility management keeps the building safe and clean.",
-    "",
+    "設施管理確保建築物安全和清潔。",
     "n."
   ],
   [
     "farewell party",
     "歡送會",
     "We held a farewell party for our colleague.",
-    "",
+    "我們為同事舉辦了歡送會。",
     "n."
   ],
   [
     "financial statement",
     "財務報表",
     "The accountant prepared the financial statement.",
-    "",
+    "會計師準備了財務報表。",
     "n."
   ],
   [
     "fixed cost",
     "固定成本",
     "Rent is a fixed cost for the business.",
-    "",
+    "租金是企業的固定成本。",
     "n."
   ],
   [
     "follow up",
     "追蹤；後續處理",
     "I will follow up with the client tomorrow.",
-    "",
+    "明天我會跟客戶跟進。",
     "phr.v."
   ],
   [
     "forecasting",
     "預測；預報",
     "Accurate forecasting helps prevent product shortages.",
-    "",
+    "準確的預測有助於防止產品短缺。",
     "n."
   ],
   [
     "freelance",
     "自由接案；自由職業的",
     "She works freelance as a graphic designer.",
-    "",
+    "她是一名自由職業平面設計師。",
     "n.／v.／adj."
   ],
   [
     "fulfillment center",
     "訂單履行中心",
     "The order was packed at the fulfillment center.",
-    "",
+    "訂單已在履行中心包裝。",
     "n."
   ],
   [
     "fundraiser",
     "募款活動；募款人",
     "The school held a fundraiser for new books.",
-    "",
+    "學校為新書舉辦了募款活動。",
     "n."
   ],
   [
     "general manager",
     "總經理",
     "The general manager welcomed the new employees.",
-    "",
+    "總經理對新進員工的到來表示歡迎。",
     "n."
   ],
   [
     "goal setting",
     "目標設定",
     "Goal setting helps teams stay focused.",
-    "",
+    "目標設定有助於團隊保持專注。",
     "n."
   ],
   [
     "goods receipt",
     "收貨確認",
     "Please record the goods receipt in the system.",
-    "",
+    "請在系統中記錄收貨情況。",
     "n."
   ],
   [
     "gross profit",
     "毛利",
     "Gross profit increased after costs fell.",
-    "",
+    "成本下降後毛利增加。",
     "n."
   ],
   [
     "growth rate",
     "成長率",
     "The growth rate slowed during the winter.",
-    "",
+    "冬季生長速度減慢。",
     "n."
   ],
   [
     "handover",
     "交接；移交",
     "The handover to the new manager was smooth.",
-    "",
+    "向新經理的移交很順利。",
     "n."
   ],
   [
     "hazard",
     "危害；危險",
     "A wet floor can be a safety hazard.",
-    "",
+    "潮濕的地板可能有安全隱憂。",
     "n.／v."
   ],
   [
     "health insurance",
     "健康保險",
     "The job includes health insurance for employees.",
-    "",
+    "該工作包括員工的健康保險。",
     "n."
   ],
   [
     "head office",
     "總公司",
     "The final decision came from the head office.",
-    "",
+    "最終決定由總部做出。",
     "n."
   ],
   [
     "in-house",
     "內部的；公司內部地",
     "The company provides in-house training.",
-    "",
+    "本公司提供內部培訓。",
     "adj.?adv."
   ],
   [
     "incur",
     "招致；產生（費用）",
     "Late payment may incur an additional fee.",
-    "",
+    "逾期付款可能會產生額外費用。",
     "v."
   ],
   [
     "indemnity",
     "賠償；保障",
     "The contract includes an indemnity clause.",
-    "",
+    "合約包括賠償條款。",
     "n."
   ],
   [
     "induction",
     "新進人員訓練；感應",
     "New employees attend an induction on their first day.",
-    "",
+    "新進員工第一天參加入職培訓。",
     "n."
   ],
   [
     "industrial",
     "工業的；產業的",
     "The town has an industrial area near the port.",
-    "",
+    "該鎮在港口附近有一個工業區。",
     "adj."
   ],
   [
     "information technology",
     "資訊科技",
     "She works in information technology at the hospital.",
-    "",
+    "她在醫院從事資訊科技工作。",
     "n."
   ],
   [
     "installment",
     "分期付款；一期款項",
     "We paid for the computer in a single installment.",
-    "",
+    "我們一次性支付了這台電腦的費用。",
     "n."
   ],
   [
     "institution",
     "機構；制度",
     "The bank is a trusted financial institution.",
-    "",
+    "該銀行是值得信賴的金融機構。",
     "n."
   ],
   [
     "insurance policy",
     "保險單",
     "Read your insurance policy before you travel.",
-    "",
+    "旅行前請閱讀您的保險單。",
     "n."
   ],
   [
     "intellectual property",
     "智慧財產",
     "The company protects its intellectual property carefully.",
-    "",
+    "公司認真保護其智慧財產權。",
     "n."
   ],
   [
     "interest rate",
     "利率",
     "The bank lowered its interest rate this month.",
-    "",
+    "該銀行本月降低了利率。",
     "n."
   ],
   [
     "intern",
     "實習生",
     "The intern learned how to prepare reports.",
-    "",
+    "實習生學習如何準備報告。",
     "n.／v."
   ],
   [
     "internship",
     "實習",
     "Her internship lasted for three months.",
-    "",
+    "她的實習持續了三個月。",
     "n."
   ],
   [
     "investment",
     "投資",
     "The new factory was a major investment.",
-    "",
+    "新工廠是一項重大投資。",
     "n."
   ],
   [
     "investor",
     "投資人",
     "The investor asked detailed questions about the plan.",
-    "",
+    "投資者詢問了有關該計劃的詳細問題。",
     "n."
   ],
   [
     "invoice number",
     "發票號碼",
     "Please include the invoice number with your payment.",
-    "",
+    "請在付款時附上發票號碼。",
     "n."
   ],
   [
     "joint venture",
     "合資企業",
     "The firms created a joint venture in Asia.",
-    "",
+    "兩家公司在亞洲成立了一家合資企業。",
     "n."
   ],
   [
     "key performance indicator",
     "關鍵績效指標",
     "Customer satisfaction is a key performance indicator.",
-    "",
+    "客戶滿意度是關鍵績效指標。",
     "n."
   ],
   [
     "labor cost",
     "勞動成本",
     "Labor cost increased because of overtime.",
-    "",
+    "由於加班，人工成本增加。",
     "n."
   ],
   [
     "laboratory",
     "實驗室",
     "The samples were tested in the laboratory.",
-    "",
+    "樣品在實驗室進行了測試。",
     "n."
   ],
   [
     "labor union",
     "工會",
     "The labor union met with company leaders.",
-    "",
+    "工會會見了公司領導。",
     "n."
   ],
   [
     "landlord",
     "房東",
     "The landlord repaired the broken heater.",
-    "",
+    "房東修好了壞掉的暖氣。",
     "n."
   ],
   [
     "lease",
     "租約；出租",
     "They signed a two-year lease for the office.",
-    "",
+    "他們簽署了一份為期兩年的辦公室租約。",
     "n.／v."
   ],
   [
     "legal counsel",
     "法律顧問",
     "The company consulted its legal counsel.",
-    "",
+    "該公司諮詢了其法律顧問。",
     "n."
   ],
   [
     "letterhead",
     "信頭；公司抬頭紙",
     "Please print the letter on company letterhead.",
-    "",
+    "請將這封信印在公司抬頭紙上。",
     "n."
   ],
   [
     "liability",
     "負債；法律責任",
     "The waiver limits the company's liability.",
-    "",
+    "該豁免限制了公司的責任。",
     "n."
   ],
   [
     "licensee",
     "被授權人",
     "The licensee may use the brand name.",
-    "",
+    "被授權人可以使用該品牌名稱。",
     "n."
   ],
   [
     "licensing",
     "授權；核發執照",
     "Licensing allows others to sell the product legally.",
-    "",
+    "許可證允許其他人合法銷售產品。",
     "n."
   ],
   [
     "line manager",
     "直屬主管",
     "Ask your line manager for feedback.",
-    "",
+    "向您的直線經理尋求回饋。",
     "n."
   ],
   [
     "loan",
     "貸款；借出",
     "The bank approved her loan application.",
-    "",
+    "銀行批准了她的貸款申請。",
     "n.／v."
   ],
   [
     "loan application",
     "貸款申請",
     "He completed the loan application online.",
-    "",
+    "他在線上完成了貸款申請。",
     "n."
   ],
   [
     "loyalty program",
     "會員忠誠計畫",
     "The loyalty program gives members extra points.",
-    "",
+    "忠誠度計劃為會員提供額外積分。",
     "n."
   ],
   [
     "machine operator",
     "機台操作員",
     "The machine operator checked the controls.",
-    "",
+    "機器操作員檢查了控制裝置。",
     "n."
   ],
   [
     "mailing list",
     "郵寄名單",
     "Please add my address to the mailing list.",
-    "",
+    "請將我的地址加入郵件清單。",
     "n."
   ],
   [
     "manufacturing",
     "製造業；製造",
     "Manufacturing provides many jobs in the region.",
-    "",
+    "製造業為該地區提供了許多就業機會。",
     "n."
   ],
   [
     "market research",
     "市場研究",
     "The team conducted market research before launching.",
-    "",
+    "該團隊在推出之前進行了市場調查。",
     "n."
   ],
   [
     "market segment",
     "市場區隔",
     "This product targets a young market segment.",
-    "",
+    "該產品針對年輕的市場區隔。",
     "n."
   ],
   [
     "marketplace",
     "市場平台",
     "The online marketplace connects buyers and sellers.",
-    "",
+    "線上市場連接買家和賣家。",
     "n."
   ],
   [
     "media coverage",
     "媒體報導",
     "The event received positive media coverage.",
-    "",
+    "該活動得到了媒體的積極報導。",
     "n."
   ],
   [
     "merger agreement",
     "合併協議",
     "Both companies signed the merger agreement.",
-    "",
+    "兩家公司簽署了合併協議。",
     "n."
   ],
   [
     "milestone",
     "里程碑",
     "Finishing the design was an important milestone.",
-    "",
+    "完成設計是一個重要的里程碑。",
     "n."
   ],
   [
     "minimum wage",
     "最低工資",
     "The minimum wage increased this year.",
-    "",
+    "今年最低工資標準有所提高。",
     "n."
   ],
   [
     "minutes",
     "會議紀錄",
     "The secretary sent the meeting minutes by email.",
-    "",
+    "秘書透過電子郵件發送了會議紀要。",
     "n."
   ],
   [
     "monetary",
     "貨幣的；金錢的",
     "The award has both monetary and personal value.",
-    "",
+    "該獎項具有金錢和個人價值。",
     "adj."
   ],
   [
     "monitoring",
     "監測；監控",
     "Regular monitoring helps us find problems early.",
-    "",
+    "定期監控有助於我們及早發現問題。",
     "n."
   ],
   [
     "multinational",
     "跨國企業；跨國的",
     "She works for a multinational company.",
-    "",
+    "她在跨國公司工作。",
     "adj."
   ],
   [
     "mutual fund",
     "共同基金",
     "He invests a small amount in a mutual fund.",
-    "",
+    "他向共同基金投資了少量資金。",
     "n."
   ],
   [
     "net income",
     "淨利；淨收入",
     "Net income rose after expenses were reduced.",
-    "",
+    "費用減少後淨利增加。",
     "n."
   ],
   [
     "networking",
     "人脈建立；網路連線",
     "Networking helped her find a new job.",
-    "",
+    "網路幫助她找到了一份新工作。",
     "n."
   ],
   [
     "nonprofit",
     "非營利組織；非營利的",
     "The nonprofit provides meals for older people.",
-    "",
+    "該非營利組織為老年人提供膳食。",
     "n.／adj."
   ],
   [
     "notice period",
     "通知期間；離職預告期",
     "Employees must give a two-week notice period.",
-    "",
+    "員工必須提前兩週通知。",
     "n."
   ],
   [
     "occupational",
     "職業的；職務上的",
     "The clinic treats occupational injuries.",
-    "",
+    "該診所治療職業傷害。",
     "adj."
   ],
   [
     "offshore",
     "離岸的；海外的",
     "The company opened an offshore office.",
-    "",
+    "該公司開設了離岸辦事處。",
     "adj.／adv."
   ],
   [
     "onboarding",
     "新人到職流程",
     "The onboarding process begins before the first day.",
-    "",
+    "入職流程在第一天之前開始。",
     "n."
   ],
   [
     "operating cost",
     "營運成本",
     "Electricity is a major operating cost.",
-    "",
+    "電力是主要的營運成本。",
     "n."
   ],
   [
     "operating margin",
     "營業利益率",
     "The company improved its operating margin.",
-    "",
+    "該公司改善了營業利潤率。",
     "n."
   ],
   [
     "order form",
     "訂購單",
     "Please complete the order form online.",
-    "",
+    "請在線上填寫訂單。",
     "n."
   ],
   [
     "organizational",
     "組織的",
     "The change created several organizational challenges.",
-    "",
+    "這項變化帶來了一些組織挑戰。",
     "adj."
   ],
   [
     "overdue",
     "逾期的",
     "Your library book is overdue.",
-    "",
+    "你圖書館的書已逾期。",
     "adj."
   ],
   [
     "overtime",
     "加班；加班費",
     "The staff worked overtime to finish the order.",
-    "",
+    "工作人員加班完成訂單。",
     "n.／adv."
   ],
   [
     "ownership",
     "所有權",
     "The document proves ownership of the vehicle.",
-    "",
+    "該文件證明車輛的所有權。",
     "n."
   ],
   [
     "packaging",
     "包裝；包裝材料",
     "The packaging protects the product during shipping.",
-    "",
+    "包裝在運送過程中保護產品。",
     "n."
   ],
   [
     "performance review",
     "績效評估",
     "Her performance review is scheduled for June.",
-    "",
+    "她的績效評估定於六月進行。",
     "n."
   ],
   [
     "petty cash",
     "零用金",
     "Use petty cash only for small purchases.",
-    "",
+    "僅在小額採購時使用零用現金。",
     "n."
   ],
   [
     "placement",
     "安置；職位安排",
     "The agency helped with job placement.",
-    "",
+    "該機構幫助安排工作。",
     "n."
   ],
   [
     "planning",
     "規劃；計畫",
     "Careful planning prevented delays.",
-    "",
+    "仔細的計劃避免了延誤。",
     "n."
   ],
   [
     "point of sale",
     "銷售點",
     "The display stands near the point of sale.",
-    "",
+    "顯示器位於銷售點附近。",
     "n."
   ],
   [
     "policyholder",
     "保單持有人",
     "The policyholder reported the accident promptly.",
-    "",
+    "投保人及時報告了事故。",
     "n."
   ],
   [
     "portable device",
     "可攜式裝置",
     "This portable device fits easily in a bag.",
-    "",
+    "這款便攜式設備可輕鬆放入包中。",
     "n."
   ],
   [
     "portfolio manager",
     "投資組合經理",
     "The portfolio manager reviewed the investments.",
-    "",
+    "投資組合經理審查了投資。",
     "n."
   ],
   [
     "postal code",
     "郵遞區號",
     "Please enter your postal code correctly.",
-    "",
+    "請正確輸入您的郵遞區號。",
     "n."
   ],
   [
     "prepaid",
     "預付的",
     "The card is prepaid and cannot be reloaded.",
-    "",
+    "該卡為預付費卡，無法儲值。",
     "adj."
   ],
   [
     "press release",
     "新聞稿",
     "The company issued a press release this morning.",
-    "",
+    "該公司今天上午發布了一份新聞稿。",
     "n."
   ],
   [
     "price list",
     "價目表",
     "The supplier emailed an updated price list.",
-    "",
+    "供應商透過電子郵件發送了更新的價目表。",
     "n."
   ],
   [
     "pricing",
     "定價；價格策略",
     "The manager reviewed the pricing strategy.",
-    "",
+    "經理審查了定價策略。",
     "n."
   ],
   [
     "production line",
     "生產線",
     "The new production line started last week.",
-    "",
+    "新生產線已於上週啟動。",
     "n."
   ],
   [
     "profit margin",
     "利潤率",
     "The shop increased its profit margin.",
-    "",
+    "這家商店增加了利潤率。",
     "n."
   ],
   [
     "profitability",
     "獲利能力",
     "The report examines the product's profitability.",
-    "",
+    "該報告審查了該產品的盈利能力。",
     "n."
   ],
   [
     "project manager",
     "專案經理",
     "The project manager assigned the next tasks.",
-    "",
+    "專案經理佈置了接下來的任務。",
     "n."
   ],
   [
     "prospect",
     "潛在客戶；前景",
     "The salesperson called a promising prospect.",
-    "",
+    "銷售人員稱其前景廣闊。",
     "n.／v."
   ],
   [
     "public relations",
     "公共關係",
     "She works in public relations for the museum.",
-    "",
+    "她在博物館從事公共關係工作。",
     "n."
   ],
   [
     "purchase order",
     "採購訂單",
     "The buyer sent a purchase order to the supplier.",
-    "",
+    "買方向供應商發送了採購訂單。",
     "n."
   ],
   [
     "quality control",
     "品質管制",
     "Quality control checks every finished item.",
-    "",
+    "品質管制檢查每件成品。",
     "n."
   ],
   [
     "quality assurance",
     "品質保證",
     "Quality assurance prevents defects before shipping.",
-    "",
+    "品質保證可防止出貨前出現缺陷。",
     "n."
   ],
   [
     "recruitment agency",
     "人力仲介公司",
     "The recruitment agency found several candidates.",
-    "",
+    "招聘機構找到了幾名候選人。",
     "n."
   ],
   [
     "refund policy",
     "退款政策",
     "Please read the refund policy before ordering.",
-    "",
+    "請在訂購前閱讀退款政策。",
     "n."
   ],
   [
     "reimbursement",
     "報銷；償還",
     "Submit the receipt to request reimbursement.",
-    "",
+    "提交收據以請求報銷。",
     "n."
   ],
   [
     "relocation",
     "搬遷；調任",
     "The company offered relocation support for the transfer.",
-    "",
+    "本公司為此次轉移提供搬遷支援。",
     "n."
   ],
   [
@@ -16667,12 +16667,52 @@ var WORK_PHRASE_NOUNS = [["report","報告"],["meeting","會議"],["plan","計�
 var existingIntermediateWords = {};
 Object.keys(DECKS).forEach(function(level){ DECKS[level].forEach(function(card){ existingIntermediateWords[String(card[0]).toLowerCase()] = true; }); });
 var INTERMEDIATE_6500_EXTENSION = [];
+// Give each work phrase a context that fits its noun instead of repeating one meeting sentence.
+function makeWorkPhraseExample(phrase, meaning, noun){
+  if(phrase === "future review"){
+    return [
+      "The budget plan has been approved, but it remains subject to future review.",
+      "預算計畫已通過，但仍需在未來進行審查。"
+    ];
+  }
+  var templates = {
+    report: ["The " + phrase + " will be circulated after the audit.", "稽核結束後會發送這份「" + meaning + "」。"],
+    meeting: ["The " + phrase + " has been scheduled for next week.", "這場「" + meaning + "」已排定於下週舉行。"],
+    plan: ["The " + phrase + " will guide the next stage of the project.", "這份「" + meaning + "」將指引專案的下一階段。"],
+    schedule: ["Please confirm the " + phrase + " before Friday.", "請在週五前確認這份「" + meaning + "」。"],
+    budget: ["The " + phrase + " must be approved before implementation.", "這份「" + meaning + "」必須在執行前獲得核准。"],
+    policy: ["Staff will be informed when the " + phrase + " takes effect.", "「" + meaning + "」生效時會通知全體員工。"],
+    procedure: ["Employees should follow the " + phrase + " carefully.", "員工應仔細遵循這項「" + meaning + "」。"],
+    document: ["Please store the " + phrase + " in the shared folder.", "請將這份「" + meaning + "」存放在共用資料夾。"],
+    request: ["We will respond to the " + phrase + " within two business days.", "我們會在兩個工作天內回覆這項「" + meaning + "」。"],
+    service: ["The " + phrase + " is available to all clients.", "所有客戶都可使用這項「" + meaning + "」。"],
+    support: ["The help desk will provide " + phrase + " to staff.", "服務台會為員工提供「" + meaning + "」。"],
+    training: ["Employees must complete the " + phrase + " before starting work.", "員工開始工作前必須完成這項「" + meaning + "」。"],
+    program: ["The " + phrase + " aims to improve customer service.", "這項「" + meaning + "」旨在改善客戶服務。"],
+    project: ["The " + phrase + " will begin after funding is confirmed.", "資金確認後，這項「" + meaning + "」就會開始。"],
+    system: ["The " + phrase + " will replace the current platform.", "這套「" + meaning + "」將取代目前的平台。"],
+    update: ["The " + phrase + " includes the latest security fixes.", "這項「" + meaning + "」包含最新的安全修正。"],
+    review: ["The proposal remains subject to " + phrase + ".", "這項提案仍須接受「" + meaning + "」。"],
+    survey: ["The " + phrase + " will be sent to customers next week.", "這份「" + meaning + "」將於下週寄給客戶。"],
+    record: ["The " + phrase + " must be kept for audit purposes.", "這份「" + meaning + "」必須為稽核目的妥善保存。"],
+    agreement: ["The legal team will review the " + phrase + " before it is signed.", "法務團隊會在簽署前審閱這份「" + meaning + "」。"],
+    application: ["We will review the " + phrase + " after all documents arrive.", "所有文件到齊後，我們會審查這份「" + meaning + "」。"],
+    process: ["The " + phrase + " is designed to minimize delays.", "這項「" + meaning + "」旨在減少延誤。"],
+    payment: ["The " + phrase + " must be processed by the due date.", "這筆「" + meaning + "」必須在到期日前處理。"],
+    statement: ["Please verify the figures in the " + phrase + ".", "請核對這份「" + meaning + "」中的數字。"],
+    notice: ["Staff received the " + phrase + " by email.", "員工已透過電子郵件收到這份「" + meaning + "」。"]
+  };
+  return templates[noun] || ["The " + phrase + " is part of the current workflow.", "「" + meaning + "」是目前工作流程的一部分。"];
+}
 WORK_PHRASE_MODIFIERS.forEach(function(modifier){
   WORK_PHRASE_NOUNS.forEach(function(noun){
     var phrase = modifier[0] + " " + noun[0];
     if(!existingIntermediateWords[phrase] && INTERMEDIATE_6500_EXTENSION.length < 500){
       existingIntermediateWords[phrase] = true;
-      INTERMEDIATE_6500_EXTENSION.push([phrase, modifier[1] + noun[1], "We discussed the " + phrase + " in today's meeting.", "我們今天在會議中討論了這份「" + modifier[1] + noun[1] + "」。", "n."]);
+      var meaning = modifier[1] + noun[1];
+      if(phrase === "future review") meaning = "未來審查；日後評估";
+      var examplePair = makeWorkPhraseExample(phrase, meaning, noun[0]);
+      INTERMEDIATE_6500_EXTENSION.push([phrase, meaning, examplePair[0], examplePair[1], "n."]);
     }
   });
 });

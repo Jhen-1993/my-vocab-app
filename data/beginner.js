@@ -7598,840 +7598,840 @@ DECKS.beginner = [
     "abroad",
     "在國外；到國外",
     "She plans to study abroad next year.",
-    "",
+    "她計劃明年出國留學。",
     "adj.／adv."
   ],
   [
     "absent",
     "缺席的；不在場的",
     "Two employees were absent from the meeting.",
-    "",
+    "兩名員工缺席會議。",
     "v.／adj."
   ],
   [
     "access",
     "進入；使用權",
     "Guests need a password to access the network.",
-    "",
+    "訪客需要密碼才能存取網路。",
     "n.／v."
   ],
   [
     "actual",
     "實際的；真實的",
     "The actual cost was lower than we expected.",
-    "",
+    "實際成本低於我們的預期。",
     "adj."
   ],
   [
     "admire",
     "欽佩；欣賞",
     "I admire her patience with difficult customers.",
-    "",
+    "我欽佩她對難纏的顧客的耐心。",
     "v."
   ],
   [
     "adult",
     "成人；成年的",
     "Every adult must show identification at the entrance.",
-    "",
+    "每個成年人都必須在入口處出示身份證明。",
     "n.／adj."
   ],
   [
     "agency",
     "代理機構；機構",
     "The travel agency arranged our hotel reservations.",
-    "",
+    "旅行社幫我們預訂了飯店。",
     "n."
   ],
   [
     "alarm",
     "警報；使驚慌",
     "The alarm rang at six o'clock this morning.",
-    "",
+    "今天早上六點鐘鬧鐘響了。",
     "n.／v."
   ],
   [
     "alike",
     "相像的；同樣地",
     "The two brothers look alike in old photographs.",
-    "",
+    "兩兄弟在老照片中長得很像。",
     "adj.／adv."
   ],
   [
     "alone",
     "獨自的；單獨地",
     "He prefers to work alone when writing reports.",
-    "",
+    "寫報告時他更喜歡獨自工作。",
     "adj.／adv."
   ],
   [
     "ambulance",
     "救護車",
     "An ambulance arrived within a few minutes.",
-    "",
+    "幾分鐘內救護車就到了。",
     "n."
   ],
   [
     "apartment",
     "公寓",
     "They rented an apartment near the train station.",
-    "",
+    "他們在火車站附近租了一間公寓。",
     "n."
   ],
   [
     "appetite",
     "食慾；胃口",
     "The long hike gave us a healthy appetite.",
-    "",
+    "長途健行讓我們胃口健康。",
     "n."
   ],
   [
     "argue",
     "爭論；主張",
     "The managers began to argue about the final budget.",
-    "",
+    "經理們開始爭論最終的預算。",
     "v."
   ],
   [
     "artwork",
     "藝術作品",
     "The lobby displays artwork by local students.",
-    "",
+    "大堂展示當地學生的藝術作品。",
     "n."
   ],
   [
     "aside",
     "在旁邊；撇開",
     "Please set the damaged box aside for inspection.",
-    "",
+    "請將損壞的盒子放在一邊以供檢查。",
     "n.／adv."
   ],
   [
     "asleep",
     "睡著的",
     "The child was already asleep when we arrived.",
-    "",
+    "我們到達時孩子已經睡著了。",
     "adj.／adv."
   ],
   [
     "background",
     "背景",
     "Her background in sales helped her get the job.",
-    "",
+    "她的銷售背景幫助她得到了這份工作。",
     "n.／v."
   ],
   [
     "barber",
     "理髮師",
     "The barber gave my brother a neat haircut.",
-    "",
+    "理髮師幫我弟弟理了一個整齊的頭髮。",
     "n.／v."
   ],
   [
     "bargain",
     "便宜貨；討價還價",
     "This jacket is a bargain at half price.",
-    "",
+    "這件夾克很便宜，半價。",
     "n.／v."
   ],
   [
     "beachfront",
     "海濱的",
     "They booked a beachfront hotel for the holiday.",
-    "",
+    "他們預訂了一家海濱飯店度假。",
     "n."
   ],
   [
     "bean",
     "豆子",
     "Add one bean after the soup begins to boil.",
-    "",
+    "湯開始沸騰後加入一顆豆子。",
     "n.／v."
   ],
   [
     "behavior",
     "行為",
     "His polite behavior impressed the interviewers.",
-    "",
+    "他的禮貌舉止給面試官留下了深刻的印象。",
     "n."
   ],
   [
     "belt",
     "皮帶；地帶",
     "Please fasten your belt before the plane takes off.",
-    "",
+    "飛機起飛前請繫好安全帶。",
     "n.／v."
   ],
   [
     "beside",
     "在旁邊",
     "A small lamp stood beside the bed.",
-    "",
+    "床邊立著一盞小燈。",
     "prep."
   ],
   [
     "bicycle",
     "自行車",
     "She rides her bicycle to work every day.",
-    "",
+    "她每天騎自行車去上班。",
     "n.／v."
   ],
   [
     "booking",
     "預訂；預約",
     "Please confirm your booking by email.",
-    "",
+    "請透過電子郵件確認您的預訂。",
     "n."
   ],
   [
     "borrow",
     "借入",
     "May I borrow your pen for a moment?",
-    "",
+    "我可以藉一下你的筆嗎？",
     "v."
   ],
   [
     "brave",
     "勇敢的",
     "It was brave of her to speak in public.",
-    "",
+    "她在公開場合演講真是勇敢。",
     "n.／v.／adj."
   ],
   [
     "breakdown",
     "故障；細分",
     "The car had a breakdown on the highway.",
-    "",
+    "汽車在高速公路上拋錨了。",
     "n."
   ],
   [
     "breath",
     "呼吸；一口氣",
     "Take a deep breath before you begin the presentation.",
-    "",
+    "在開始演示之前深呼吸。",
     "n."
   ],
   [
     "bulletin",
     "公告；簡報",
     "The school posted a bulletin about the schedule change.",
-    "",
+    "學校發布了關於時間表變更的公告。",
     "n.／v."
   ],
   [
     "bundle",
     "一捆；打包",
     "He carried a bundle of old newspapers outside.",
-    "",
+    "他拎著一包舊報紙出門了。",
     "n.／v."
   ],
   [
     "bus stop",
     "公車站",
     "We waited at the bus stop in the rain.",
-    "",
+    "我們冒雨在公車站等車。",
     "n."
   ],
   [
     "cabin",
     "小屋；機艙",
     "Our cabin had a beautiful view of the lake.",
-    "",
+    "我們的小屋可以看到美麗的湖景。",
     "n.／v."
   ],
   [
     "campground",
     "露營地",
     "The campground closes after October each year.",
-    "",
+    "露營地每年十月後關閉。",
     "n."
   ],
   [
     "cancel",
     "取消",
     "They had to cancel the outdoor concert.",
-    "",
+    "他們不得不取消戶外音樂會。",
     "n.／v."
   ],
   [
     "carrier",
     "運輸公司；搬運者",
     "The carrier delivered the package this morning.",
-    "",
+    "承運人今天早上交付了包裹。",
     "n."
   ],
   [
     "cashier",
     "收銀員",
     "The cashier gave me the correct change.",
-    "",
+    "收銀員給了我正確的零錢。",
     "n.／v."
   ],
   [
     "central",
     "中心的；主要的",
     "The hotel is in a central location downtown.",
-    "",
+    "飯店位於市中心的中心位置。",
     "n.／adj."
   ],
   [
     "cereal",
     "穀類早餐",
     "She ate cereal and fruit for breakfast.",
-    "",
+    "她早餐吃麥片和水果。",
     "n.／adj."
   ],
   [
     "changeable",
     "易變的；可更換的",
     "The weather is changeable in early spring.",
-    "",
+    "早春天氣多變。",
     "adj."
   ],
   [
     "charity",
     "慈善機構",
     "The charity collects food for local families.",
-    "",
+    "該慈善機構為當地家庭收集食物。",
     "n."
   ],
   [
     "checkout",
     "結帳；退房",
     "Checkout is at noon, so please return the key.",
-    "",
+    "退房時間為中午，請歸還鑰匙。",
     "n."
   ],
   [
     "childhood",
     "童年",
     "She spent her childhood near the ocean.",
-    "",
+    "她在海邊度過了童年。",
     "n."
   ],
   [
     "choice",
     "選擇",
     "You have a choice between tea and coffee.",
-    "",
+    "您可以選擇茶和咖啡。",
     "n.／adj."
   ],
   [
     "citizen",
     "公民；市民",
     "Every citizen has the right to vote.",
-    "",
+    "每個公民都有投票權。",
     "n."
   ],
   [
     "city hall",
     "市政府",
     "The meeting will take place at city hall.",
-    "",
+    "會議將在市政廳舉行。",
     "n."
   ],
   [
     "classmate",
     "同學",
     "My classmate helped me prepare for the exam.",
-    "",
+    "我的同學幫我準備考試。",
     "n."
   ],
   [
     "clerk",
     "店員；辦事員",
     "The clerk checked our reservation quickly.",
-    "",
+    "店員很快就檢查了我們的預訂。",
     "n.／v."
   ],
   [
     "climate",
     "氣候",
     "The island has a warm climate all year.",
-    "",
+    "島上全年氣候溫暖。",
     "n."
   ],
   [
     "coastline",
     "海岸線",
     "We drove along the coastline before sunset.",
-    "",
+    "日落前我們沿著海岸線行駛。",
     "n."
   ],
   [
     "compare",
     "比較",
     "Compare the two prices before you buy anything.",
-    "",
+    "在購買任何東西之前先比較兩個價格。",
     "n.／v."
   ],
   [
     "concentrate",
     "專心；集中",
     "Please concentrate on one task at a time.",
-    "",
+    "請一次專注於一項任務。",
     "n.／v."
   ],
   [
     "confirm",
     "確認",
     "Could you confirm the delivery date today?",
-    "",
+    "您能確認今天的交貨日期嗎？",
     "v."
   ],
   [
     "connection",
     "連接；轉機",
     "We have a short connection in Singapore.",
-    "",
+    "我們在新加坡有短程轉機。",
     "n."
   ],
   [
     "contact",
     "聯絡；接觸",
     "Please contact us if you have any questions.",
-    "",
+    "如有任何疑問，請與我們聯絡。",
     "n.／v."
   ],
   [
     "copy",
     "複製；副本",
     "Make a copy of the receipt for your records.",
-    "",
+    "複印收據以供記錄。",
     "n.／v."
   ],
   [
     "corner",
     "角落",
     "The pharmacy is on the corner of this street.",
-    "",
+    "藥局位於這條街的轉角處。",
     "n.／v."
   ],
   [
     "counter",
     "櫃檯；計數器",
     "Please leave the completed form at the counter.",
-    "",
+    "請將填妥的表格留在櫃檯。",
     "n.／v.／adj.／adv."
   ],
   [
     "couple",
     "一對；幾個",
     "A couple of customers are waiting outside.",
-    "",
+    "幾個顧客正在外面等候。",
     "n.／v."
   ],
   [
     "courage",
     "勇氣",
     "It took courage to admit the mistake.",
-    "",
+    "承認錯誤需要勇氣。",
     "n."
   ],
   [
     "court",
     "法院；球場",
     "The case will be heard in court next month.",
-    "",
+    "此案將於下個月在法庭上審理。",
     "n.／v."
   ],
   [
     "crash",
     "碰撞；當機",
     "My computer may crash if too many programs are open.",
-    "",
+    "如果打開的程式太多，我的電腦可能會崩潰。",
     "n.／v."
   ],
   [
     "crosswalk",
     "行人穿越道",
     "Use the crosswalk when you cross the road.",
-    "",
+    "過馬路時請走行人穿越道。",
     "n."
   ],
   [
     "crowded",
     "擁擠的",
     "The train is usually crowded during rush hour.",
-    "",
+    "尖峰時段火車通常很擁擠。",
     "adj."
   ],
   [
     "culture",
     "文化",
     "Food is an important part of every culture.",
-    "",
+    "食物是每種文化的重要組成部分。",
     "n.／v."
   ],
   [
     "customs",
     "海關；習俗",
     "We declared the gifts at customs.",
-    "",
+    "我們在海關申報了這些禮物。",
     "n."
   ],
   [
     "dairy",
     "乳製品的；乳品店",
     "She buys dairy products from a local farm.",
-    "",
+    "她從當地農場購買乳製品。",
     "n."
   ],
   [
     "decoration",
     "裝飾品；裝潢",
     "The flowers were a lovely decoration for the hall.",
-    "",
+    "這些鮮花為大廳增添了可愛的裝飾。",
     "n."
   ],
   [
     "decrease",
     "減少；降低",
     "Sales may decrease during the slow season.",
-    "",
+    "淡季期間銷量可能會下降。",
     "n.／v."
   ],
   [
     "describe",
     "描述",
     "Please describe the problem in detail.",
-    "",
+    "請詳細描述問題。",
     "v."
   ],
   [
     "destination",
     "目的地",
     "Taipei is our final destination on this trip.",
-    "",
+    "台北是我們此行的最終目的地。",
     "n."
   ],
   [
     "diary",
     "日記；行事曆",
     "He writes in his diary before going to bed.",
-    "",
+    "他在睡前寫日記。",
     "n."
   ],
   [
     "diet",
     "飲食；節食",
     "A balanced diet gives you more energy.",
-    "",
+    "均衡的飲食可以給你更多的能量。",
     "n.／v."
   ],
   [
     "dine",
     "用餐",
     "We plan to dine at a small Italian restaurant.",
-    "",
+    "我們計劃在一家義大利小餐館用餐。",
     "v."
   ],
   [
     "disease",
     "疾病",
     "Regular exercise can help prevent disease.",
-    "",
+    "經常運動有助於預防疾病。",
     "n."
   ],
   [
     "district",
     "地區；行政區",
     "Their office is in the business district.",
-    "",
+    "他們的辦公室在商業區。",
     "n.／v."
   ],
   [
     "double",
     "兩倍的；雙人房",
     "We booked a double room for two nights.",
-    "",
+    "我們訂了一間雙人房住了兩晚。",
     "n.／v.／adj.／adv."
   ],
   [
     "downtown",
     "市中心",
     "The museum is only ten minutes from downtown.",
-    "",
+    "博物館距離市中心僅十分鐘路程。",
     "n.／adj.／adv."
   ],
   [
     "drama",
     "戲劇；戲劇性事件",
     "The manager handled the complaint without any drama.",
-    "",
+    "經理處理投訴沒有任何戲劇性。",
     "n."
   ],
   [
     "drawer",
     "抽屜",
     "Your passport is in the top drawer.",
-    "",
+    "你的護照在最上面的抽屜裡。",
     "n."
   ],
   [
     "driver's license",
     "駕照",
     "You need a driver's license to rent a car.",
-    "",
+    "您需要擁有駕駛執照才能租車。",
     "n."
   ],
   [
     "drugstore",
     "藥局",
     "I bought cough medicine at the drugstore.",
-    "",
+    "我在藥局買了止咳藥。",
     "n."
   ],
   [
     "dry cleaner",
     "乾洗店",
     "The dry cleaner will return my suit on Friday.",
-    "",
+    "乾洗店將在周五歸還我的西裝。",
     "n."
   ],
   [
     "durable",
     "耐用的",
     "This suitcase is durable enough for frequent travel.",
-    "",
+    "這款行李箱足夠耐用，適合頻繁旅行。",
     "adj."
   ],
   [
     "earthquake",
     "地震",
     "The earthquake caused minor damage to several buildings.",
-    "",
+    "地震對多棟建築物造成輕微損壞。",
     "n."
   ],
   [
     "educate",
     "教育",
     "The program aims to educate people about recycling.",
-    "",
+    "該計劃旨在教育人們有關回收的知識。",
     "v."
   ],
   [
     "elderly",
     "年長的；高齡者",
     "The clinic offers special services for elderly patients.",
-    "",
+    "該診所為老年患者提供特殊服務。",
     "n.／adj."
   ],
   [
     "elevator",
     "電梯",
     "Take the elevator to the fifth floor.",
-    "",
+    "搭乘電梯到五樓。",
     "n."
   ],
   [
     "environment",
     "環境",
     "We should protect the environment for future generations.",
-    "",
+    "我們應該為子孫後代保護環境。",
     "n."
   ],
   [
     "equal",
     "相等的；平等的",
     "All applicants should have an equal opportunity.",
-    "",
+    "所有申請人都應該有平等的機會。",
     "n.／v.／adj."
   ],
   [
     "everywhere",
     "到處",
     "We looked everywhere for the missing key.",
-    "",
+    "我們到處尋找遺失的鑰匙。",
     "adv."
   ],
   [
     "exact",
     "精確的；確切的",
     "Please give me the exact address of the venue.",
-    "",
+    "請給我具體的場地地址。",
     "v.／adj."
   ],
   [
     "excited",
     "興奮的",
     "The children were excited about the field trip.",
-    "",
+    "孩子們對這次實地考察感到興奮。",
     "adj."
   ],
   [
     "firm",
     "公司；堅固的",
     "She works for an international law firm.",
-    "",
+    "她在一家國際律師事務所工作。",
     "n.／v.／adj.／adv."
   ],
   [
     "fitness",
     "健康；適任性",
     "The gym offers classes for every level of fitness.",
-    "",
+    "健身房提供適合各個健身程度的課程。",
     "n."
   ],
   [
     "foreign",
     "外國的",
     "He speaks two foreign languages fluently.",
-    "",
+    "他能流利地說兩種外語。",
     "adj."
   ],
   [
     "form",
     "表格；形成",
     "Please complete this form before your appointment.",
-    "",
+    "請在預約前填寫此表格。",
     "n.／v."
   ],
   [
     "furniture",
     "家具",
     "The office furniture arrived yesterday afternoon.",
-    "",
+    "辦公家具昨天下午到達。",
     "n."
   ],
   [
     "garage",
     "車庫；修車廠",
     "The car is being repaired at the garage.",
-    "",
+    "這輛車正在車庫裡修理。",
     "n.／v."
   ],
   [
     "gardener",
     "園丁",
     "The gardener waters the plants every morning.",
-    "",
+    "園丁每天早上都會​​給植物澆水。",
     "n."
   ],
   [
     "general",
     "一般的；總體的",
     "The general plan will be discussed on Monday.",
-    "",
+    "總體計劃將於週一進行討論。",
     "n.／v.／adj."
   ],
   [
     "gift shop",
     "禮品店",
     "We bought postcards at the museum gift shop.",
-    "",
+    "我們在博物館禮品店買了明信片。",
     "n."
   ],
   [
     "government",
     "政府",
     "The government announced a new transportation plan.",
-    "",
+    "政府宣布了新的交通計劃。",
     "n."
   ],
   [
     "grocery",
     "雜貨；食品雜貨店",
     "I stopped at the grocery store after work.",
-    "",
+    "下班後我停在雜貨店。",
     "n."
   ],
   [
     "guidebook",
     "旅遊指南",
     "This guidebook includes useful maps and restaurant tips.",
-    "",
+    "本指南包括有用的地圖和餐廳提示。",
     "n."
   ],
   [
     "habit",
     "習慣",
     "Reading before bed is a good habit.",
-    "",
+    "睡前讀書是個好習慣。",
     "n.／v."
   ],
   [
     "hallway",
     "走廊",
     "Please do not leave boxes in the hallway.",
-    "",
+    "請不要將箱子留在走廊上。",
     "n."
   ],
   [
     "hang",
     "懸掛",
     "Hang your coat on the hook by the door.",
-    "",
+    "把你的外套掛在門邊的掛鉤上。",
     "n.／v."
   ],
   [
     "healthcare",
     "醫療保健",
     "Many employees receive healthcare through their company.",
-    "",
+    "許多員工透過公司獲得醫療保健。",
     "n."
   ],
   [
     "helpful",
     "有幫助的",
     "The receptionist was very helpful and friendly.",
-    "",
+    "接待員非常樂於助人且友善。",
     "adj."
   ],
   [
     "highway",
     "高速公路",
     "Traffic was heavy on the highway this morning.",
-    "",
+    "今天早上，高速公路上交通擁擠。",
     "n."
   ],
   [
     "hiking",
     "健行",
     "We went hiking in the mountains last weekend.",
-    "",
+    "上週末我們去山裡健行。",
     "n."
   ],
   [
     "hotel lobby",
     "飯店大廳",
     "Let's meet in the hotel lobby at eight.",
-    "",
+    "我們八點在飯店大廳見面吧。",
     "n."
   ],
   [
     "human resources",
     "人力資源",
     "Human resources will explain the new benefits.",
-    "",
+    "人力資源部將解釋新的好處。",
     "n."
   ],
   [
     "identify",
     "辨識；確認",
     "Can you identify the person in this photograph?",
-    "",
+    "你能認出這張照片中的人嗎？",
     "v."
   ],
   [
     "inform",
     "通知；告知",
     "Please inform the team about the time change.",
-    "",
+    "請通知團隊有關時間變更的資訊。",
     "v."
   ],
   [
     "ingredient",
     "原料；成分",
     "Fresh garlic is an important ingredient in this dish.",
-    "",
+    "新鮮大蒜是這道菜的重要原料。",
     "n."
   ],
   [
     "island",
     "島嶼",
     "They spent a quiet week on a small island.",
-    "",
+    "他們在一個小島上度過了安靜的一周。",
     "n."
   ],
   [
@@ -11587,8 +11587,8 @@ DECKS.beginner = [
   [
     "touchscreen",
     "觸控螢幕",
-    "We discussed the touchscreen during class.",
-    "我們在課堂上討論了這個「觸控螢幕」。",
+    "The new smartphone has a very responsive touchscreen.",
+    "這款新智慧型手機的觸控螢幕反應非常靈敏。",
     "n."
   ],
   [

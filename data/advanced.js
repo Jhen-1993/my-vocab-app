@@ -3286,4900 +3286,4900 @@ DECKS.advanced = [
     "aberration",
     "異常；偏離常態",
     "The sudden drop in sales was an aberration, not a trend.",
-    "",
+    "銷售額的突然下降是一種異常現象，而不是一種趨勢。",
     "n."
   ],
   [
     "abjure",
     "正式放棄；誓言拋棄",
     "He chose to abjure violence in his public statement.",
-    "",
+    "他在公開聲明中選擇放棄暴力。",
     "v."
   ],
   [
     "abrogate",
     "廢除；撤銷",
     "The court may abrogate the rule if it is unconstitutional.",
-    "",
+    "如果該規則違憲，法院可以廢除該規則。",
     "v."
   ],
   [
     "abscond",
     "潛逃；逃匿",
     "The suspect tried to abscond before the trial.",
-    "",
+    "嫌疑人在審判前試圖潛逃。",
     "v."
   ],
   [
     "abstain",
     "克制；棄權",
     "Several members chose to abstain from the vote.",
-    "",
+    "多名成員選擇棄權。",
     "v."
   ],
   [
     "adamant",
     "堅決的；固執的",
     "She was adamant that the records be corrected.",
-    "",
+    "她堅決要求更正這些記錄。",
     "n.／adj."
   ],
   [
     "aesthetic",
     "美學的；審美的",
     "The designer created a simple, modern aesthetic.",
-    "",
+    "設計師創造了一種簡單、現代的美感。",
     "n.／adj."
   ],
   [
     "affinity",
     "親和力；密切關係",
     "She has a strong affinity for classical music.",
-    "",
+    "她對古典音樂有著濃厚的興趣。",
     "n."
   ],
   [
     "aggrandize",
     "擴張權勢；吹捧",
     "The report seemed designed to aggrandize its author.",
-    "",
+    "這份報告似乎是為了誇大其作者的功勞。",
     "v."
   ],
   [
     "alleviate",
     "減輕；緩和",
     "The new policy should alleviate pressure on small firms.",
-    "",
+    "新政策應該會減輕小企業的壓力。",
     "v."
   ],
   [
     "allay",
     "減輕；消除憂慮",
     "The explanation helped allay the customers' concerns.",
-    "",
+    "這樣的解釋，打消了顧客的顧慮。",
     "v."
   ],
   [
     "aloof",
     "冷淡疏離的",
     "He seemed aloof at first but became friendly later.",
-    "",
+    "起初他看起來很冷漠，但後來變得友善。",
     "adj.／adv."
   ],
   [
     "ambivalent",
     "矛盾的；喜憂參半的",
     "She felt ambivalent about moving abroad.",
-    "",
+    "她對於移居國外感到矛盾。",
     "adj."
   ],
   [
     "anachronism",
     "時代錯置；過時之物",
     "A smartphone in that historical film was an anachronism.",
-    "",
+    "這部歷史電影中的智慧型手機已經不合時宜了。",
     "n."
   ],
   [
     "anecdotal",
     "軼聞式的；非系統證據的",
     "Anecdotal stories cannot replace careful research.",
-    "",
+    "軼事故事不能代替仔細的研究。",
     "adj."
   ],
   [
     "antecedent",
     "前因；先例",
     "The earlier agreement was an antecedent to the dispute.",
-    "",
+    "先前的協議是爭議的先決條件。",
     "n.／adj."
   ],
   [
     "apathetic",
     "冷漠的；缺乏興趣的",
     "The audience became apathetic after the long speech.",
-    "",
+    "冗長的演講結束後，觀眾變得冷漠。",
     "adj."
   ],
   [
     "appease",
     "安撫；平息",
     "The manager tried to appease the angry customer.",
-    "",
+    "經理試圖安撫憤怒的顧客。",
     "v."
   ],
   [
     "aversion",
     "厭惡；反感",
     "He has a strong aversion to unnecessary risk.",
-    "",
+    "他強烈厭惡不必要的風險。",
     "n."
   ],
   [
     "boisterous",
     "喧鬧活潑的",
     "The children grew boisterous after lunch.",
-    "",
+    "午餐後，孩子們變得熱鬧起來。",
     "adj."
   ],
   [
     "caustic",
     "尖刻的；腐蝕性的",
     "Her caustic comment made the room uncomfortable.",
-    "",
+    "她尖刻的評論讓房間裡感到不舒服。",
     "n.／adj."
   ],
   [
     "condescending",
     "居高臨下的；傲慢的",
     "His condescending tone upset the new employee.",
-    "",
+    "他居高臨下的語氣使新進員工感到不安。",
     "adj."
   ],
   [
     "conjecture",
     "推測；臆測",
     "Any answer without data is only conjecture.",
-    "",
+    "任何沒有數據的答案都只是猜測。",
     "n.／v."
   ],
   [
     "conscientious",
     "認真的；盡責的",
     "She is conscientious about checking every detail.",
-    "",
+    "她認真檢查每一個細節。",
     "adj."
   ],
   [
     "culpable",
     "有罪責的；應受責備的",
     "The investigation found no one clearly culpable.",
-    "",
+    "調查發現沒有人明顯有罪。",
     "adj."
   ],
   [
     "cynical",
     "憤世嫉俗的；懷疑動機的",
     "The cynical reviewer doubted the company's promise.",
-    "",
+    "憤世嫉俗的審稿人對公司的承諾表示懷疑。",
     "adj."
   ],
   [
     "debilitate",
     "使衰弱；削弱",
     "The long illness continued to debilitate him.",
-    "",
+    "長期的疾病使他變得越來越虛弱。",
     "v."
   ],
   [
     "decorum",
     "得體；禮節",
     "Please maintain decorum during the formal ceremony.",
-    "",
+    "請在正式儀式期間保持禮儀。",
     "n."
   ],
   [
     "deference",
     "尊重；順從",
     "Out of deference to her experience, we listened first.",
-    "",
+    "出於對她經歷的尊重，我們先傾聽。",
     "n."
   ],
   [
     "demur",
     "表示異議；提出保留",
     "He did not demur when asked to lead the project.",
-    "",
+    "當被要求領導該項目時，他沒有提出異議。",
     "n.／v."
   ],
   [
     "denigrate",
     "貶低；詆毀",
     "Do not denigrate colleagues to gain an advantage.",
-    "",
+    "不要為了獲得優勢而誹謗同事。",
     "v."
   ],
   [
     "despot",
     "專制統治者",
     "The novel describes a despot who ruled by fear.",
-    "",
+    "小說描述了一個靠恐懼統治的暴君。",
     "n."
   ],
   [
     "deterrent",
     "嚇阻物；威懾因素",
     "Visible cameras can be a deterrent to theft.",
-    "",
+    "可見攝影機可以起到震懾盜竊的作用。",
     "n.／adj."
   ],
   [
     "dichotomy",
     "二分法；兩分對立",
     "The debate presents a false dichotomy between cost and quality.",
-    "",
+    "這場爭論提出了成本和品質之間錯誤的二分法。",
     "n."
   ],
   [
     "diffuse",
     "分散；瀰漫的",
     "The supervisor tried to diffuse the tense situation.",
-    "",
+    "主管試圖緩和緊張的局勢。",
     "v.／adj."
   ],
   [
     "digress",
     "離題；岔開話題",
     "Please do not digress from the main topic.",
-    "",
+    "請不要偏離主題。",
     "v."
   ],
   [
     "disavow",
     "否認；拒絕承認",
     "The company chose to disavow the unauthorized advertisement.",
-    "",
+    "該公司選擇否認未經授權的廣告。",
     "v."
   ],
   [
     "discord",
     "不和；衝突",
     "The proposal caused discord within the committee.",
-    "",
+    "該提案引起了委員會內部的不和。",
     "n.／v."
   ],
   [
     "disdain",
     "輕蔑；鄙視",
     "She looked at the cheap imitation with disdain.",
-    "",
+    "她鄙視地看著這個廉價的仿製品。",
     "n.／v."
   ],
   [
     "dispassionate",
     "冷靜客觀的",
     "A dispassionate review is needed before we decide.",
-    "",
+    "在我們做出決定之前，需要進行冷靜的審查。",
     "adj."
   ],
   [
     "dogmatic",
     "教條的；武斷的",
     "His dogmatic approach left no room for discussion.",
-    "",
+    "他的教條主義做法沒有留下任何討論的空間。",
     "adj."
   ],
   [
     "dormant",
     "休眠的；暫時不活躍的",
     "The account remained dormant for several years.",
-    "",
+    "該帳戶多年來一直處於休眠狀態。",
     "adj."
   ],
   [
     "dubious",
     "可疑的；不確定的",
     "The website made several dubious claims.",
-    "",
+    "該網站提出了一些可疑的說法。",
     "adj."
   ],
   [
     "eclectic",
     "兼收並蓄的；多元的",
     "Her playlist has an eclectic mix of music.",
-    "",
+    "她的播放清單包含了不拘一格的音樂組合。",
     "n.／adj."
   ],
   [
     "efficacy",
     "效力；功效",
     "The study measured the efficacy of the new treatment.",
-    "",
+    "該研究測量了新療法的療效。",
     "n."
   ],
   [
     "elusive",
     "難以捉摸的；難達成的",
     "A clear answer remained elusive after the meeting.",
-    "",
+    "會議結束後仍然沒有明確的答案。",
     "adj."
   ],
   [
     "embezzle",
     "侵占；挪用",
     "The accountant was accused of trying to embezzle funds.",
-    "",
+    "該會計師被指控試圖挪用資金。",
     "v."
   ],
   [
     "emulate",
     "效法；仿效",
     "Young designers often emulate successful brands.",
-    "",
+    "年輕設計師經常模仿成功的品牌。",
     "v."
   ],
   [
     "enervate",
     "使精疲力竭；削弱",
     "The humid weather can enervate even experienced hikers.",
-    "",
+    "潮濕的天氣即使是經驗豐富的徒步旅行者也會變得虛弱。",
     "v."
   ],
   [
     "engender",
     "產生；引起",
     "Clear rules engender trust among employees.",
-    "",
+    "明確的規則可以在員工之間建立信任。",
     "v."
   ],
   [
     "eradicate",
     "根除；消滅",
     "The program aims to eradicate the disease.",
-    "",
+    "該計劃旨在根除這種疾病。",
     "v."
   ],
   [
     "esoteric",
     "深奧難懂的；少數人知曉的",
     "The lecture was too esoteric for most visitors.",
-    "",
+    "對於大多數參觀者來說，講座太深奧了。",
     "adj."
   ],
   [
     "ethereal",
     "飄渺的；超凡的",
     "Soft light gave the room an ethereal appearance.",
-    "",
+    "柔和的光線為房間帶來了一種空靈的感覺。",
     "adj."
   ],
   [
     "evasive",
     "迴避的；閃爍其詞的",
     "His evasive answers raised more questions.",
-    "",
+    "他迴避的回答引發了更多問題。",
     "adj."
   ],
   [
     "exemplary",
     "模範的；典範性的",
     "Her exemplary service earned praise from customers.",
-    "",
+    "她的模範服務贏得了客戶的好評。",
     "adj."
   ],
   [
     "expeditious",
     "迅速有效的；敏捷的",
     "We need an expeditious solution to the delay.",
-    "",
+    "我們需要快速解決延誤問題。",
     "adj."
   ],
   [
     "explicit",
     "明確的；清楚表達的",
     "The instructions were explicit and easy to follow.",
-    "",
+    "說明非常明確且易於遵循。",
     "adj."
   ],
   [
     "extricate",
     "使脫離；解救",
     "The team worked to extricate the project from debt.",
-    "",
+    "該團隊致力於使該項目擺脫債務。",
     "v."
   ],
   [
     "fallacious",
     "謬誤的；不合理的",
     "The argument is fallacious because it ignores the evidence.",
-    "",
+    "這個論點是錯的，因為它忽略了證據。",
     "adj."
   ],
   [
     "fickle",
     "善變的；反覆無常的",
     "Customer demand can be fickle during holiday seasons.",
-    "",
+    "假期期間，客戶需求可能會變化無常。",
     "adj."
   ],
   [
     "florid",
     "華麗繁複的；過度修飾的",
     "The writer used florid language in a simple report.",
-    "",
+    "作者在一篇簡單的報告中使用了華麗的語言。",
     "adj."
   ],
   [
     "flounder",
     "掙扎；舉步維艱",
     "Without guidance, the new team began to flounder.",
-    "",
+    "沒有指導，新團隊開始陷入困境。",
     "n.／v."
   ],
   [
     "frugal",
     "節儉的",
     "They are frugal and avoid unnecessary purchases.",
-    "",
+    "他們很節儉，避免不必要的購買。",
     "adj."
   ],
   [
     "furtive",
     "鬼祟的；偷偷摸摸的",
     "He gave a furtive glance at the answer sheet.",
-    "",
+    "他偷偷地看了一眼答題卡。",
     "adj."
   ],
   [
     "genial",
     "親切友善的",
     "Our genial host welcomed everyone warmly.",
-    "",
+    "我們和藹可親的主人熱情地歡迎大家。",
     "adj."
   ],
   [
     "gratuitous",
     "無端的；不必要的",
     "The film included gratuitous violence that added nothing.",
-    "",
+    "這部電影包含無端的暴力，沒有任何增加。",
     "adj."
   ],
   [
     "heedless",
     "不注意的；不顧後果的",
     "Heedless driving can endanger other people.",
-    "",
+    "不小心駕駛可能會危及他人。",
     "adj."
   ],
   [
     "heterodox",
     "非正統的；異端的",
     "Her heterodox theory challenged traditional assumptions.",
-    "",
+    "她的異端理論挑戰了傳統假設。",
     "adj."
   ],
   [
     "homogeneous",
     "同質的；均一的",
     "The sample was too homogeneous for comparison.",
-    "",
+    "樣品太均勻，無法比較。",
     "adj."
   ],
   [
     "hyperbole",
     "誇張法；誇張的說法",
     "Calling it a disaster was obvious hyperbole.",
-    "",
+    "稱其為一場災難顯然有些誇張。",
     "n."
   ],
   [
     "hypothetical",
     "假設的；假想的",
     "Let us consider a hypothetical situation first.",
-    "",
+    "讓我們先考慮一個假設的情況。",
     "n.／adj."
   ],
   [
     "idiosyncrasy",
     "特質；個人習性",
     "Each software system has its own idiosyncrasy.",
-    "",
+    "每個軟體系統都有自己的特性。",
     "n."
   ],
   [
     "immutable",
     "不可改變的；不變的",
     "The dates are not immutable and may change.",
-    "",
+    "日期並非一成不變，可能會有所變動。",
     "adj."
   ],
   [
     "impudent",
     "無禮的；厚顏的",
     "It was impudent to interrupt the speaker repeatedly.",
-    "",
+    "反覆打斷說話者是不禮貌的。",
     "adj."
   ],
   [
     "inchoate",
     "初步形成的；未成熟的",
     "The idea was still inchoate when we first discussed it.",
-    "",
+    "當我們第一次討論這個想法時，這個想法還處於萌芽階段。",
     "adj."
   ],
   [
     "incongruous",
     "不協調的；不相稱的",
     "The bright sign looked incongruous in the old library.",
-    "",
+    "明亮的標誌與舊圖書館顯得格格不入。",
     "adj."
   ],
   [
     "indict",
     "起訴；控告",
     "A grand jury may indict the suspect.",
-    "",
+    "大陪審團可能會起訴嫌疑人。",
     "v."
   ],
   [
     "indolent",
     "懶散的；懶惰的",
     "His indolent habits made deadlines difficult to meet.",
-    "",
+    "他懶惰的習慣使他很難準時完成任務。",
     "adj."
   ],
   [
     "ineffable",
     "難以言喻的",
     "The view from the mountain was almost ineffable.",
-    "",
+    "山上的景色幾乎是難以形容的。",
     "adj."
   ],
   [
     "inept",
     "笨拙無能的",
     "The inept response made the complaint worse.",
-    "",
+    "無能的回應使投訴變得更糟。",
     "adj."
   ],
   [
     "ingenuous",
     "天真的；坦率的",
     "Her ingenuous question revealed genuine curiosity.",
-    "",
+    "她天真無邪的問題揭示了真正的好奇心。",
     "adj."
   ],
   [
     "inhibit",
     "抑制；阻礙",
     "Fear can inhibit people from sharing ideas.",
-    "",
+    "恐懼會阻止人們分享想法。",
     "v."
   ],
   [
     "insatiable",
     "無法滿足的；貪得無厭的",
     "The company has an insatiable demand for data.",
-    "",
+    "該公司對數據有著無法滿足的需求。",
     "adj."
   ],
   [
     "intuitive",
     "直覺的；易理解的",
     "The new app has an intuitive design.",
-    "",
+    "新應用程式具有直覺的設計。",
     "adj."
   ],
   [
     "inundate",
     "淹沒；大量湧入",
     "A major outage could inundate the support team with requests.",
-    "",
+    "嚴重中斷可能會導致支援團隊收到大量請求。",
     "v."
   ],
   [
     "irascible",
     "易怒的；脾氣暴躁的",
     "The irascible customer complained about every detail.",
-    "",
+    "脾氣暴躁的顧客對每一個細節都提出了抱怨。",
     "adj."
   ],
   [
     "irrevocable",
     "不可撤銷的；無法挽回的",
     "Once signed, the decision became irrevocable.",
-    "",
+    "一旦簽署，該決定就不可撤銷。",
     "adj."
   ],
   [
     "kinship",
     "親屬關係；親近感",
     "They felt a kinship through their shared experience.",
-    "",
+    "他們透過共同的經驗感到親切。",
     "n."
   ],
   [
     "lament",
     "哀悼；惋惜",
     "Many residents lament the loss of the old theater.",
-    "",
+    "許多居民對老劇場的消失感到惋惜。",
     "n.／v."
   ],
   [
     "languid",
     "倦怠的；無精打采的",
     "The heat made everyone feel languid after lunch.",
-    "",
+    "午餐後，炎熱的天氣讓大家都感到疲倦。",
     "adj."
   ],
   [
     "latent",
     "潛在的；潛伏的",
     "The audit uncovered a latent problem in the process.",
-    "",
+    "審計發現過程中存在潛在問題。",
     "adj."
   ],
   [
     "lethargic",
     "無精打采的；遲緩的",
     "The market was lethargic during the holiday week.",
-    "",
+    "假期期間市場表現低迷。",
     "adj."
   ],
   [
     "malevolent",
     "惡意的；懷有惡意的",
     "The email contained a malevolent threat.",
-    "",
+    "該電子郵件包含惡意威脅。",
     "adj."
   ],
   [
     "meticulous",
     "一絲不苟的；細心的",
     "She is meticulous about filing every document.",
-    "",
+    "她認真歸檔每一份文件。",
     "adj."
   ],
   [
     "negligible",
     "微不足道的；可忽略的",
     "The difference in cost was negligible.",
-    "",
+    "成本差異可以忽略不計。",
     "adj."
   ],
   [
     "notorious",
     "臭名昭著的",
     "The crossing is notorious for heavy traffic.",
-    "",
+    "該十字路口因交通擁堵而臭名昭著。",
     "adj."
   ],
   [
     "nuanced",
     "細緻微妙的；具層次的",
     "The article offers a nuanced view of the issue.",
-    "",
+    "這篇文章對這個問題提供了細緻的看法。",
     "adj."
   ],
   [
     "ominous",
     "不祥的；不好的預兆",
     "Dark clouds gave the afternoon an ominous feeling.",
-    "",
+    "烏雲密布，給下午一種不祥的感覺。",
     "adj."
   ],
   [
     "opulent",
     "富麗堂皇的；奢華的",
     "They held the event in an opulent ballroom.",
-    "",
+    "他們在一個豪華的宴會廳舉行了這次活動。",
     "adj."
   ],
   [
     "ornate",
     "華麗裝飾的",
     "The hotel lobby has an ornate ceiling.",
-    "",
+    "飯店大廳擁有華麗的天花板。",
     "adj."
   ],
   [
     "orthodox",
     "正統的；傳統的",
     "The firm follows an orthodox investment strategy.",
-    "",
+    "該公司遵循正統的投資策略。",
     "adj."
   ],
   [
     "ostracize",
     "排斥；孤立",
     "No team should ostracize a member for asking questions.",
-    "",
+    "任何團隊都不應該因為提出問題而排斥成員。",
     "v."
   ],
   [
     "palpable",
     "明顯可感的；可觸知的",
     "The tension in the room was palpable.",
-    "",
+    "房間裡的緊張氣氛顯而易見。",
     "adj."
   ],
   [
     "parochial",
     "狹隘的；地方性的",
     "A parochial view can limit international growth.",
-    "",
+    "狹隘的觀點可能會限制國際成長。",
     "adj."
   ],
   [
     "paucity",
     "缺乏；少量",
     "A paucity of evidence delayed the decision.",
-    "",
+    "缺乏證據推遲了決定。",
     "n."
   ],
   [
     "philanthropy",
     "慈善事業；博愛",
     "Her philanthropy supports scholarships for students.",
-    "",
+    "她的慈善事業為學生提供獎學金。",
     "n."
   ],
   [
     "placate",
     "安撫；平息",
     "The refund did little to placate the disappointed buyer.",
-    "",
+    "退款並沒有安撫失望的買家。",
     "v."
   ],
   [
     "pragmatic",
     "務實的；講求實際的",
     "We need a pragmatic solution that fits the budget.",
-    "",
+    "我們需要一個符合預算的務實解決方案。",
     "n.／adj."
   ],
   [
     "precarious",
     "不穩定的；危險的",
     "The ladder looked precarious in the strong wind.",
-    "",
+    "梯子在強風中顯得搖搖欲墜。",
     "adj."
   ],
   [
     "precedent",
     "先例",
     "The ruling may set a precedent for future cases.",
-    "",
+    "該裁決可能為未來案件樹立先例。",
     "n.／adj."
   ],
   [
     "presumptuous",
     "冒昧的；自以為是的",
     "It was presumptuous to assume everyone agreed.",
-    "",
+    "假設每個人都同意是自以為是的。",
     "adj."
   ],
   [
     "prolific",
     "多產的；大量的",
     "She is a prolific writer of short stories.",
-    "",
+    "她是一位多產的短篇小說作家。",
     "adj."
   ],
   [
     "profound",
     "深刻的；深遠的",
     "The loss had a profound effect on the community.",
-    "",
+    "這次損失對社區產生了深遠的影響。",
     "adj."
   ],
   [
     "propitious",
     "有利的；吉祥的",
     "The sunny weather was propitious for the event.",
-    "",
+    "晴朗的天氣對這次活動來說是有利的。",
     "adj."
   ],
   [
     "prosaic",
     "平淡乏味的；散文的",
     "The report was useful but rather prosaic.",
-    "",
+    "報告很有用，但相當平淡。",
     "adj."
   ],
   [
     "prudent",
     "審慎的；明智的",
     "It is prudent to save money for emergencies.",
-    "",
+    "存錢以備不時之需是謹慎的做法。",
     "adj."
   ],
   [
     "punctilious",
     "拘泥細節的；一絲不苟的",
     "He is punctilious about arriving on time.",
-    "",
+    "他一絲不苟地準時到達。",
     "adj."
   ],
   [
     "reconcile",
     "使和解；協調一致",
     "The accountant must reconcile the two accounts.",
-    "",
+    "會計師必須核對兩個帳戶。",
     "v."
   ],
   [
     "remorse",
     "悔恨；自責",
     "He expressed deep remorse for the mistake.",
-    "",
+    "他對這個錯誤表示深深的悔恨。",
     "n."
   ],
   [
     "resilient",
     "有韌性的；能復原的",
     "The small business proved resilient after the storm.",
-    "",
+    "風暴過後，這家小企業展現了韌性。",
     "adj."
   ],
   [
     "resolute",
     "堅定的；果斷的",
     "She remained resolute despite the criticism.",
-    "",
+    "儘管受到批評，她仍然態度堅決。",
     "adj."
   ],
   [
     "reverent",
     "恭敬的；虔敬的",
     "Visitors spoke in reverent tones inside the memorial.",
-    "",
+    "參觀者在紀念館內用虔誠的語氣交談。",
     "adj."
   ],
   [
     "rigorous",
     "嚴謹的；嚴格的",
     "The study used a rigorous method.",
-    "",
+    "該研究採用了嚴格的方法。",
     "adj."
   ],
   [
     "rudimentary",
     "基礎的；初步的",
     "He has only rudimentary knowledge of coding.",
-    "",
+    "他只有基本的編碼知識。",
     "adj."
   ],
   [
     "salient",
     "最顯著的；突出的",
     "The most salient point was the cost increase.",
-    "",
+    "最突出的一點是成本增加。",
     "n.／adj."
   ],
   [
     "satiate",
     "充分滿足；使飽足",
     "A light meal did not satiate the hungry hikers.",
-    "",
+    "一頓簡單的飯菜並不能滿足飢餓的徒步旅行者。",
     "v.／adj."
   ],
   [
     "scrupulous",
     "嚴謹正直的；細心的",
     "The editor is scrupulous about factual accuracy.",
-    "",
+    "編輯非常注重事實的準確性。",
     "adj."
   ],
   [
     "shrewd",
     "精明的；敏銳的",
     "It was a shrewd investment at the time.",
-    "",
+    "這在當時是一項精明的投資。",
     "adj."
   ],
   [
     "solicitous",
     "關切的；體貼的",
     "The nurse was solicitous about the patient's comfort.",
-    "",
+    "護士很關心病人的舒適度。",
     "adj."
   ],
   [
     "spurious",
     "虛假的；不真實的",
     "The website was removed for making spurious claims.",
-    "",
+    "該網站因發布虛假聲明而被刪除。",
     "adj."
   ],
   [
     "stoic",
     "堅忍的；不露感情的",
     "She remained stoic during the difficult interview.",
-    "",
+    "在艱難的採訪中，她仍然保持堅忍。",
     "n.／adj."
   ],
   [
     "stringent",
     "嚴格的；嚴厲的",
     "The lab follows stringent safety standards.",
-    "",
+    "該實驗室遵循嚴格的安全標準。",
     "adj."
   ],
   [
     "subtle",
     "微妙的；不明顯的",
     "There was a subtle change in his tone.",
-    "",
+    "他的語氣發生了微妙的變化。",
     "adj."
   ],
   [
     "succinct",
     "簡潔的；言簡意賅的",
     "Please keep your answer succinct.",
-    "",
+    "請保持您的回答簡潔。",
     "adj."
   ],
   [
     "susceptible",
     "易受影響的；易罹患的",
     "Young plants are susceptible to frost.",
-    "",
+    "幼小的植物容易受到霜凍的影響。",
     "adj."
   ],
   [
     "tentative",
     "暫定的；不確定的",
     "We made a tentative plan for next week.",
-    "",
+    "我們為下週制定了一個暫定計畫。",
     "adj."
   ],
   [
     "thorough",
     "徹底的；周詳的",
     "The inspector completed a thorough review.",
-    "",
+    "檢查員完成了徹底的審查。",
     "adj."
   ],
   [
     "tolerant",
     "寬容的；能忍受的",
     "The plant is tolerant of dry conditions.",
-    "",
+    "該植物能夠耐受乾燥條件。",
     "adj."
   ],
   [
     "treacherous",
     "危險的；背叛的",
     "The mountain path became treacherous after rain.",
-    "",
+    "雨後的山路變得險峻。",
     "adj."
   ],
   [
     "ubiquitous",
     "無所不在的；普遍存在的",
     "Smartphones are ubiquitous in modern life.",
-    "",
+    "智慧型手機在現代生活中無所不在。",
     "adj."
   ],
   [
     "unanimous",
     "一致同意的",
     "The vote was unanimous in favor of the proposal.",
-    "",
+    "投票結果一致贊成該提案。",
     "adj."
   ],
   [
     "unequivocal",
     "明確無誤的；毫不含糊的",
     "She gave an unequivocal answer: no.",
-    "",
+    "她給了明確的答案：不。",
     "adj."
   ],
   [
     "utilitarian",
     "功利實用的",
     "The office has a utilitarian design.",
-    "",
+    "辦公室的設計很實用。",
     "n.／adj."
   ],
   [
     "vacillate",
     "猶豫不決；搖擺",
     "Do not vacillate when a quick decision is needed.",
-    "",
+    "當需要快速做出決定時不要猶豫。",
     "v."
   ],
   [
     "vehement",
     "強烈的；激烈的",
     "Several residents voiced vehement opposition to the plan.",
-    "",
+    "一些居民對該計劃表示強烈反對。",
     "adj."
   ],
   [
     "venerable",
     "受尊敬的；歷史悠久的",
     "The museum occupies a venerable old building.",
-    "",
+    "博物館坐落在一棟古老的建築中。",
     "adj."
   ],
   [
     "verbose",
     "冗長的；囉唆的",
     "His verbose explanation confused the audience.",
-    "",
+    "他冗長的解釋讓觀眾感到困惑。",
     "adj."
   ],
   [
     "vigilant",
     "警覺的；警惕的",
     "Staff must remain vigilant for safety hazards.",
-    "",
+    "工作人員必須隨時警惕安全隱憂。",
     "adj."
   ],
   [
     "virtuous",
     "有德行的；高尚的",
     "The story praises a virtuous and honest leader.",
-    "",
+    "這個故事歌頌了一位有德行、誠實的領袖。",
     "adj."
   ],
   [
     "volatile",
     "易變的；不穩定的",
     "Fuel prices are volatile this year.",
-    "",
+    "今年燃油價格波動較大。",
     "n.／adj."
   ],
   [
     "wither",
     "枯萎；衰退",
     "The flowers will wither without water.",
-    "",
+    "沒有水，花就會枯萎。",
     "v."
   ],
   [
     "abnegation",
     "自我否定；自我犧牲",
     "Her abnegation of personal comfort impressed the team.",
-    "",
+    "她對個人舒適的放棄給團隊留下了深刻的印象。",
     "n."
   ],
   [
     "adulterate",
     "摻雜；使變質",
     "Do not adulterate the product with cheap materials.",
-    "",
+    "不要用廉價材料摻假產品。",
     "v.／adj."
   ],
   [
     "aggrieved",
     "感到受委屈的；受侵害的",
     "The aggrieved customer requested a formal review.",
-    "",
+    "憤憤不平的客戶要求正式審查。",
     "adj."
   ],
   [
     "amorphous",
     "無定形的；模糊的",
     "The plan was still amorphous and lacked details.",
-    "",
+    "該計劃仍不明確，缺乏細節。",
     "adj."
   ],
   [
     "animosity",
     "敵意；仇恨",
     "Years of animosity divided the two groups.",
-    "",
+    "多年的敵意使這兩個群體產生了分歧。",
     "n."
   ],
   [
     "annul",
     "宣告無效；廢止",
     "The court may annul the contract.",
-    "",
+    "法院可以撤銷合約。",
     "v."
   ],
   [
     "antipathy",
     "強烈反感；厭惡",
     "He felt immediate antipathy toward the unfair rule.",
-    "",
+    "他立刻對不公平的規則感到反感。",
     "n."
   ],
   [
     "apposite",
     "適切的；恰當的",
     "Her example was apposite to the discussion.",
-    "",
+    "她的例子與討論相符。",
     "adj."
   ],
   [
     "arrogate",
     "僭取；冒稱擁有",
     "No manager should arrogate all credit for a team's work.",
-    "",
+    "任何管理者都不應該將團隊的工作全部歸功於自己。",
     "v."
   ],
   [
     "ascribe",
     "歸因於；認為是",
     "People often ascribe the success to good timing.",
-    "",
+    "人們常常將成功歸因於時機把握得好。",
     "v."
   ],
   [
     "aspersion",
     "詆毀；中傷",
     "The article cast an aspersion on his reputation.",
-    "",
+    "這篇文章誹謗了他的聲譽。",
     "n."
   ],
   [
     "assent",
     "同意；贊成",
     "The board gave its assent to the proposal.",
-    "",
+    "董事會同意了該提議。",
     "n.／v."
   ],
   [
     "astute",
     "精明的；敏銳的",
     "She made an astute observation about the market.",
-    "",
+    "她對市場進行了敏銳的觀察。",
     "adj."
   ],
   [
     "atrophy",
     "萎縮；退化",
     "Unused skills can atrophy over time.",
-    "",
+    "未使用的技能會隨著時間的推移而萎縮。",
     "n.／v."
   ],
   [
     "attenuate",
     "減弱；使變薄",
     "Distance can attenuate the strength of a signal.",
-    "",
+    "距離會減弱訊號的強度。",
     "v.／adj."
   ],
   [
     "attrition",
     "逐漸耗損；自然流失",
     "The company reduced staff through natural attrition.",
-    "",
+    "公司透過自然減員的方式減少員工。",
     "n."
   ],
   [
     "avow",
     "公開聲明；承認",
     "She chose to avow her support for the new policy.",
-    "",
+    "她選擇公開表示支持新政策。",
     "v."
   ],
   [
     "banal",
     "平庸的；陳腐的",
     "The speech relied on banal phrases.",
-    "",
+    "演講使用的是陳腔濫調。",
     "adj."
   ],
   [
     "blatant",
     "明目張膽的；顯而易見的",
     "It was a blatant violation of the rules.",
-    "",
+    "這是公然違反規則的行為。",
     "adj."
   ],
   [
     "blithe",
     "漫不經心的；輕率快樂的",
     "His blithe response ignored serious concerns.",
-    "",
+    "他的愉快反應忽略了嚴重的擔憂。",
     "adj."
   ],
   [
     "broach",
     "提出；開始討論",
     "She decided to broach the subject gently.",
-    "",
+    "她決定溫和地提出這個話題。",
     "n.／v."
   ],
   [
     "calumny",
     "誹謗；惡意中傷",
     "The lawyer denied the calumny in the article.",
-    "",
+    "律師否認了文章中的誹謗。",
     "n."
   ],
   [
     "camaraderie",
     "同志情誼；友愛",
     "The trip built camaraderie among the new staff.",
-    "",
+    "這次旅行增進了新員工之間的友誼。",
     "n."
   ],
   [
     "censure",
     "嚴厲批評；譴責",
     "The official received public censure for the remarks.",
-    "",
+    "該官員的言論遭到公眾譴責。",
     "n.／v."
   ],
   [
     "chastise",
     "嚴厲責備；懲戒",
     "The coach did not chastise the team after one loss.",
-    "",
+    "球隊輸掉一場比賽後，教練並沒有對球隊進行懲罰。",
     "v."
   ],
   [
     "commensurate",
     "相稱的；相當的",
     "Pay should be commensurate with experience.",
-    "",
+    "薪酬應與經驗相稱。",
     "adj."
   ],
   [
     "compendium",
     "綜覽；彙編",
     "The guide is a useful compendium of local resources.",
-    "",
+    "該指南是當地資源的有用摘要。",
     "n."
   ],
   [
     "complicit",
     "共謀的；有共犯關係的",
     "The investigation found him complicit in the fraud.",
-    "",
+    "調查發現他參與了這起詐騙案。",
     "adj."
   ],
   [
     "concomitant",
     "伴隨發生的；相伴的",
     "Fatigue is a concomitant effect of the illness.",
-    "",
+    "疲勞是疾病的伴隨效應。",
     "n.／adj."
   ],
   [
     "conflagration",
     "大火；激烈衝突",
     "Firefighters contained the conflagration before dawn.",
-    "",
+    "消防隊員在黎明前控制住了火勢。",
     "n."
   ],
   [
     "conflate",
     "混為一談；合併",
     "Do not conflate personal opinion with evidence.",
-    "",
+    "不要將個人觀點與證據混為一談。",
     "v."
   ],
   [
     "conspicuous",
     "顯眼的；明顯的",
     "Her bright coat was conspicuous in the crowd.",
-    "",
+    "她那件鮮豔的外套在人群中很顯眼。",
     "adj."
   ],
   [
     "construe",
     "解釋；理解為",
     "Do not construe silence as agreement.",
-    "",
+    "不要將沉默視為同意。",
     "v."
   ],
   [
     "consummate",
     "完成；圓滿的；精通的",
     "She is a consummate professional under pressure.",
-    "",
+    "她是一位在壓力下表現出色的專業人士。",
     "v.／adj."
   ],
   [
     "contemptuous",
     "輕蔑的；鄙視的",
     "His contemptuous reply ended the discussion.",
-    "",
+    "他輕蔑的回答結束了討論。",
     "adj."
   ],
   [
     "contravene",
     "違反；牴觸",
     "The proposal would contravene current regulations.",
-    "",
+    "該提案將違反現行法規。",
     "v."
   ],
   [
     "convivial",
     "歡樂友善的；適合交際的",
     "The café has a convivial atmosphere.",
-    "",
+    "咖啡廳充滿歡樂的氣氛。",
     "adj."
   ],
   [
     "credence",
     "可信度；相信",
     "The new evidence gives credence to her account.",
-    "",
+    "新的證據證實了她的說法。",
     "n."
   ],
   [
     "decry",
     "公開譴責；抨擊",
     "Many groups decry the proposed cuts.",
-    "",
+    "許多團體譴責擬議的削減。",
     "v."
   ],
   [
     "defunct",
     "不再存在的；停止運作的",
     "The defunct factory is being turned into housing.",
-    "",
+    "廢棄的工廠正在改建為住宅。",
     "adj."
   ],
   [
     "deluge",
     "洪水；大量湧入",
     "A deluge of emails followed the announcement.",
-    "",
+    "公告發布後，收到了大量電子郵件。",
     "n.／v."
   ],
   [
     "demise",
     "死亡；終止；消亡",
     "The newspaper reported the demise of the old brand.",
-    "",
+    "報紙報道了老品牌的消亡。",
     "n.／v."
   ],
   [
     "deplete",
     "耗盡；大量減少",
     "The repairs will deplete our emergency fund.",
-    "",
+    "維修工作將耗盡我們的緊急預備金。",
     "v."
   ],
   [
     "depravity",
     "墮落；邪惡",
     "The novel explores the depravity of a corrupt ruler.",
-    "",
+    "小說探討了腐敗統治者的墮落。",
     "n."
   ],
   [
     "derivative",
     "衍生的；缺乏創意的",
     "The sequel felt derivative of the first film.",
-    "",
+    "續集感覺是第一部電影的衍生性商品。",
     "n.／adj."
   ],
   [
     "desiccate",
     "使乾燥；脫水",
     "Hot winds can desiccate the soil quickly.",
-    "",
+    "熱風會使土壤迅速乾燥。",
     "v.／adj."
   ],
   [
     "diatribe",
     "長篇激烈抨擊",
     "His speech became a diatribe against the media.",
-    "",
+    "他的講話變成了對媒體的謾罵。",
     "n."
   ],
   [
     "dilapidated",
     "破舊失修的",
     "They bought a dilapidated house and restored it.",
-    "",
+    "他們買了一棟破舊的房子並修復了它。",
     "adj."
   ],
   [
     "diminutive",
     "極小的；小巧的",
     "The diminutive device fits in a pocket.",
-    "",
+    "這個小型設備可以放入口袋中。",
     "n.／adj."
   ],
   [
     "accede",
     "同意；應允",
     "The board agreed to accede to the request.",
-    "",
+    "董事會同意接受該請求。",
     "v."
   ],
   [
     "acclimate",
     "適應新環境；使適應",
     "New employees need time to acclimate to the workplace.",
-    "",
+    "新員工需要時間適應工作場所。",
     "v."
   ],
   [
     "accolade",
     "讚揚；榮譽",
     "The scientist received an accolade for her research.",
-    "",
+    "這位科學家因其研究而獲得了榮譽。",
     "n."
   ],
   [
     "accretion",
     "逐漸增加；累積",
     "The reef grew through the slow accretion of coral.",
-    "",
+    "珊瑚礁是透過珊瑚的緩慢增生而生長的。",
     "n."
   ],
   [
     "acrimony",
     "尖刻；激烈敵意",
     "The debate ended with unnecessary acrimony.",
-    "",
+    "這場辯論以不必要的尖刻聲結束。",
     "n."
   ],
   [
     "acrid",
     "辛辣刺鼻的；尖刻的",
     "An acrid smell came from the burning plastic.",
-    "",
+    "燃燒的塑膠散發出刺鼻的氣味。",
     "adj."
   ],
   [
     "acuity",
     "敏銳；敏銳度",
     "Her mental acuity helped her solve the puzzle.",
-    "",
+    "她的敏銳思維幫助她解決了這個難題。",
     "n."
   ],
   [
     "adjourn",
     "休會；延期",
     "The chair decided to adjourn the meeting early.",
-    "",
+    "主席決定提前休會。",
     "v."
   ],
   [
     "adjudicate",
     "裁決；判定",
     "An independent panel will adjudicate the dispute.",
-    "",
+    "一個獨立小組將對爭議進行裁決。",
     "v."
   ],
   [
     "adjunct",
     "附屬物；兼任的",
     "The online course is an adjunct to classroom teaching.",
-    "",
+    "線上課程是課堂教學的輔助手段。",
     "n.／adj."
   ],
   [
     "admonition",
     "告誡；勸告",
     "His admonition reminded us to protect customer data.",
-    "",
+    "他的警告提醒我們要保護客戶資料。",
     "n."
   ],
   [
     "adversarial",
     "對抗性的；敵對的",
     "The negotiation became adversarial after the accusation.",
-    "",
+    "指控後，談判變得對抗性。",
     "adj."
   ],
   [
     "advocacy",
     "倡議；擁護",
     "Her advocacy helped secure funding for the clinic.",
-    "",
+    "她的倡導幫助確保了診所的資金。",
     "n."
   ],
   [
     "affliction",
     "苦難；疾病",
     "The medication eased his chronic affliction.",
-    "",
+    "這種藥物緩解了他的慢性病痛。",
     "n."
   ],
   [
     "affront",
     "冒犯；侮辱",
     "The rude remark was an affront to the host.",
-    "",
+    "這種粗魯的言論是對主人的侮辱。",
     "n.／v."
   ],
   [
     "agitate",
     "煽動；使不安",
     "The rumor continued to agitate the workforce.",
-    "",
+    "該謠言繼續激怒員工。",
     "v."
   ],
   [
     "allegory",
     "寓言；諷喻",
     "The novel uses an allegory to discuss power.",
-    "",
+    "小說用寓言來討論權力。",
     "n."
   ],
   [
     "alleviation",
     "減輕；緩解",
     "The aid provided some alleviation of their hardship.",
-    "",
+    "這些援助在一定程度上緩解了他們的困難。",
     "n."
   ],
   [
     "alliance",
     "聯盟；結盟",
     "The two companies formed an alliance.",
-    "",
+    "兩家公司結盟。",
     "n."
   ],
   [
     "allude",
     "暗指；間接提及",
     "The speaker chose to allude to a problem without naming it.",
-    "",
+    "演講者選擇暗示一個問題而不具體指出它。",
     "v."
   ],
   [
     "altercation",
     "爭吵；口角",
     "A brief altercation broke out near the entrance.",
-    "",
+    "入口處附近爆發了一場短暫的爭吵。",
     "n."
   ],
   [
     "altruism",
     "利他主義；無私",
     "Her altruism inspired others to volunteer.",
-    "",
+    "她的無私精神激勵其他人成為志工。",
     "n."
   ],
   [
     "amalgamate",
     "合併；混合",
     "The merger will amalgamate the two departments.",
-    "",
+    "此次合併將合併這兩個部門。",
     "v.／adj."
   ],
   [
     "amenable",
     "願意接受的；順從的",
     "The manager was amenable to a flexible schedule.",
-    "",
+    "經理能夠適應靈活的日程安排。",
     "adj."
   ],
   [
     "amnesty",
     "大赦；特赦",
     "The government declared an amnesty for minor offenses.",
-    "",
+    "政府宣布對輕微罪行實施特赦。",
     "n.／v."
   ],
   [
     "analogue",
     "相似物；類比物",
     "This device is a modern analogue of the old tool.",
-    "",
+    "該設備是舊工具的現代類似物。",
     "n.／adj."
   ],
   [
     "animus",
     "敵意；意圖",
     "The decision seemed motivated by personal animus.",
-    "",
+    "這項決定似乎是出於個人敵意。",
     "n."
   ],
   [
     "annihilate",
     "殲滅；徹底摧毀",
     "The storm could annihilate unprotected crops.",
-    "",
+    "風暴可能會摧毀未受保護的農作物。",
     "v."
   ],
   [
     "anodyne",
     "止痛的；無刺激性的",
     "His anodyne remarks did not address the real problem.",
-    "",
+    "他的平淡言論並沒有解決真正的問題。",
     "n.／adj."
   ],
   [
     "antagonism",
     "對立；敵意",
     "Open communication reduced antagonism between the teams.",
-    "",
+    "開放的溝通減少了團隊之間的對抗。",
     "n."
   ],
   [
     "antiquated",
     "過時的；陳舊的",
     "The office still uses an antiquated filing system.",
-    "",
+    "該辦公室仍然使用過時的歸檔系統。",
     "adj."
   ],
   [
     "appeasement",
     "安撫；姑息",
     "The policy of appeasement failed to stop the conflict.",
-    "",
+    "綏靖政策未能阻止衝突。",
     "n."
   ],
   [
     "arbitration",
     "仲裁",
     "The contract requires arbitration before a lawsuit.",
-    "",
+    "該合約要求在訴訟前進行仲裁。",
     "n."
   ],
   [
     "arcane",
     "神祕難懂的；深奧的",
     "The manual is full of arcane technical terms.",
-    "",
+    "手冊充滿了晦澀難懂的技術術語。",
     "adj."
   ],
   [
     "ardor",
     "熱情；激情",
     "She spoke about the project with great ardor.",
-    "",
+    "她滿懷熱情地談論這個計畫。",
     "n."
   ],
   [
     "artifice",
     "巧計；人為技巧",
     "The painting's beauty came from skill, not artifice.",
-    "",
+    "這幅畫的美來自技巧，而不是技巧。",
     "n."
   ],
   [
     "ascendancy",
     "支配地位；優勢",
     "The brand gained ascendancy in the local market.",
-    "",
+    "該品牌在當地市場取得了一定的優勢。",
     "n."
   ],
   [
     "asperity",
     "嚴厲；粗糙",
     "He answered the question with unexpected asperity.",
-    "",
+    "他以出人意料的嚴厲回答了這個問題。",
     "n."
   ],
   [
     "assiduity",
     "勤勉；刻苦",
     "Her assiduity made the research team more productive.",
-    "",
+    "她的勤奮使研究團隊更加有成效。",
     "n."
   ],
   [
     "asymmetry",
     "不對稱；不均衡",
     "The designer noticed an asymmetry in the layout.",
-    "",
+    "設計師注意到佈局的不對稱。",
     "n."
   ],
   [
     "atonement",
     "贖罪；補償",
     "He offered an apology as atonement for the error.",
-    "",
+    "他道歉以彌補錯誤。",
     "n."
   ],
   [
     "authenticity",
     "真實性；可靠性",
     "Experts questioned the authenticity of the document.",
-    "",
+    "專家質疑該文件的真實性。",
     "n."
   ],
   [
     "autocracy",
     "專制政治",
     "The country was ruled by an autocracy for decades.",
-    "",
+    "這個國家被獨裁統治了幾十年。",
     "n."
   ],
   [
     "avowal",
     "公開承認；宣告",
     "Her avowal of support encouraged the volunteers.",
-    "",
+    "她的支持鼓勵了志工。",
     "n."
   ],
   [
     "axiom",
     "公理；不證自明的原則",
     "The principle is treated as an axiom in the field.",
-    "",
+    "該原理在該領域被視為公理。",
     "n."
   ],
   [
     "baleful",
     "有害的；惡意的",
     "The dark, baleful look alarmed the children.",
-    "",
+    "那陰暗、惡毒的表情讓孩子們驚慌失措。",
     "adj."
   ],
   [
     "bellicose",
     "好戰的；好鬥的",
     "His bellicose language made compromise difficult.",
-    "",
+    "他的好戰語言使妥協變得困難。",
     "adj."
   ],
   [
     "bereft",
     "被剝奪的；失去的",
     "They felt bereft after the community center closed.",
-    "",
+    "社區中心關閉後，他們感到失落。",
     "adj."
   ],
   [
     "beset",
     "困擾；包圍",
     "The project was beset by delays and rising costs.",
-    "",
+    "該項目受到延誤和成本上升的困擾。",
     "v."
   ],
   [
     "blandishment",
     "甜言蜜語；奉承",
     "The salesman used blandishment to win the client.",
-    "",
+    "推銷員用花言巧語贏得了客戶。",
     "n."
   ],
   [
     "bravado",
     "虛張聲勢的勇敢",
     "His bravado disappeared when the test began.",
-    "",
+    "當測試開始時，他的虛張聲勢消失了。",
     "n."
   ],
   [
     "burgeon",
     "迅速成長；萌芽",
     "Interest in electric bikes continues to burgeon.",
-    "",
+    "人們對電動自行車的興趣持續高漲。",
     "v."
   ],
   [
     "byproduct",
     "副產品；附帶結果",
     "Heat is a byproduct of this process.",
-    "",
+    "熱量是這個過程的副產品。",
     "n."
   ],
   [
     "calibrate",
     "校準；調整",
     "Please calibrate the scale before weighing the samples.",
-    "",
+    "稱量樣品前請先校準秤。",
     "v."
   ],
   [
     "cardinal",
     "最重要的；基本的",
     "Safety is a cardinal concern for the company.",
-    "",
+    "安全是公司的首要關注點。",
     "n.／adj."
   ],
   [
     "catalyze",
     "催化；促進",
     "The grant could catalyze new research.",
-    "",
+    "這筆贈款可以促進新的研究。",
     "v."
   ],
   [
     "catharsis",
     "宣洩；情緒淨化",
     "Writing the letter gave her a sense of catharsis.",
-    "",
+    "寫這封信給了她一種宣洩的感覺。",
     "n."
   ],
   [
     "causticity",
     "尖刻；腐蝕性",
     "The causticity of his remarks surprised the team.",
-    "",
+    "他言論的尖刻讓團隊感到驚訝。",
     "n."
   ],
   [
     "caveat",
     "警告；附帶條件",
     "One caveat is that the data are incomplete.",
-    "",
+    "需要注意的是，數據不完整。",
     "n."
   ],
   [
     "celerity",
     "迅速；敏捷",
     "The team responded with impressive celerity.",
-    "",
+    "該團隊的反應速度令人印象深刻。",
     "n."
   ],
   [
     "centralize",
     "集中；集權化",
     "The company plans to centralize its customer records.",
-    "",
+    "該公司計劃集中其客戶記錄。",
     "v."
   ],
   [
     "chronicity",
     "慢性狀態；長期性",
     "The chronicity of the problem requires long-term care.",
-    "",
+    "此問題的長期性需要長期照護。",
     "n."
   ],
   [
     "circumspect",
     "審慎周到的",
     "Be circumspect when sharing confidential information.",
-    "",
+    "分享機密資訊時要小心謹慎。",
     "adj."
   ],
   [
     "circumstantial",
     "間接的；情況上的",
     "The case relied on circumstantial evidence.",
-    "",
+    "該案依賴間接證據。",
     "adj."
   ],
   [
     "clamor",
     "喧鬧；強烈要求",
     "A clamor of voices filled the hallway.",
-    "",
+    "走廊裡充滿了喧鬧的聲音。",
     "n.／v."
   ],
   [
     "coercion",
     "強制；脅迫",
     "The agreement was invalid because of coercion.",
-    "",
+    "由於脅迫，該協議無效。",
     "n."
   ],
   [
     "collate",
     "整理；校對比對",
     "Please collate the survey responses by region.",
-    "",
+    "請按地區整理調查回覆。",
     "v."
   ],
   [
     "colloquial",
     "口語的；通俗的",
     "Avoid colloquial language in a formal report.",
-    "",
+    "正式報告中避免使用口語。",
     "adj."
   ],
   [
     "commemorate",
     "紀念；慶祝",
     "The town will commemorate its founding this weekend.",
-    "",
+    "該鎮將於本週末紀念其成立。",
     "v."
   ],
   [
     "commiserate",
     "同情；憐憫",
     "Friends gathered to commiserate after the loss.",
-    "",
+    "朋友們在失去親人後聚集在一起表示哀悼。",
     "v."
   ],
   [
     "commodify",
     "商品化",
     "Some critics fear the platform will commodify art.",
-    "",
+    "一些批評家擔心該平台將使藝術商品化。",
     "v."
   ],
   [
     "compassionate",
     "有同情心的",
     "The nurse gave compassionate care to every patient.",
-    "",
+    "護士對每一位病人都給予了貼心的照顧。",
     "v.／adj."
   ],
   [
     "compel",
     "迫使；強迫",
     "The evidence may compel the company to act.",
-    "",
+    "證據可能會迫使公司採取行動。",
     "v."
   ],
   [
     "compensatory",
     "補償性的",
     "The payment was compensatory, not punitive.",
-    "",
+    "這筆款項是補償性的，而不是懲罰性的。",
     "adj."
   ],
   [
     "complacency",
     "自滿；自鳴得意",
     "Complacency can lead to preventable mistakes.",
-    "",
+    "自滿可能會導致可預防的錯誤。",
     "n."
   ],
   [
     "complementary",
     "互補的；補充的",
     "The two services are complementary rather than competing.",
-    "",
+    "這兩種服務是互補的而不是競爭的。",
     "n.／adj."
   ],
   [
     "composure",
     "鎮定；沉著",
     "She kept her composure during the difficult call.",
-    "",
+    "在艱難的通話中，她保持鎮定。",
     "n."
   ],
   [
     "conceit",
     "自負；巧妙比喻",
     "The poem uses an unusual conceit about time.",
-    "",
+    "這首詩對時間使用了一種不同尋常的自負。",
     "n."
   ],
   [
     "conciliate",
     "調和；安撫",
     "The mediator tried to conciliate both sides.",
-    "",
+    "調解員試圖安撫雙方。",
     "v."
   ],
   [
     "concurrent",
     "同時發生的；一致的",
     "Two concurrent sessions will begin at ten.",
-    "",
+    "兩場同時舉行的會議將於十點開始。",
     "adj."
   ],
   [
     "conducive",
     "有助於…的",
     "A quiet room is conducive to careful study.",
-    "",
+    "安靜的房間有助於認真學習。",
     "adj."
   ],
   [
     "confound",
     "使困惑；混淆",
     "The unexpected result continued to confound researchers.",
-    "",
+    "這個意想不到的結果繼續讓研究人員感到困惑。",
     "v."
   ],
   [
     "connoisseur",
     "鑑賞家；行家",
     "He is a connoisseur of rare teas.",
-    "",
+    "他是名貴茶鑑賞家。",
     "n."
   ],
   [
     "conscientiousness",
     "認真盡責",
     "Her conscientiousness made her a trusted colleague.",
-    "",
+    "她的盡職盡責使她成為一位值得信賴的同事。",
     "n."
   ],
   [
     "conspicuity",
     "顯眼；引人注目",
     "The bright sign improved the shop's conspicuity.",
-    "",
+    "明亮的招牌提高了商店的顯眼度。",
     "n."
   ],
   [
     "consternation",
     "驚愕；不安",
     "To our consternation, the flight was canceled.",
-    "",
+    "令我們驚愕的是，航班被取消了。",
     "n."
   ],
   [
     "constriction",
     "壓縮；收縮",
     "The pipe's constriction reduced the water flow.",
-    "",
+    "管道的收縮減少了水流量。",
     "n."
   ],
   [
     "contagion",
     "傳染；蔓延",
     "The team acted quickly to limit contagion.",
-    "",
+    "團隊迅速採取行動限制傳染。",
     "n."
   ],
   [
     "contempt",
     "輕蔑；鄙視",
     "She spoke about the unfair rule with contempt.",
-    "",
+    "她輕蔑地談到不公平的規則。",
     "n."
   ],
   [
     "contend",
     "競爭；主張",
     "Several firms contend for the same contract.",
-    "",
+    "幾家公司爭奪同一份合約。",
     "v."
   ],
   [
     "contention",
     "爭論；主張",
     "The main contention is that the policy is unfair.",
-    "",
+    "主要爭論點是該政策不公平。",
     "n."
   ],
   [
     "contrivance",
     "巧妙裝置；計策",
     "The device is a clever contrivance for saving space.",
-    "",
+    "該設備是節省空間的巧妙設計。",
     "n."
   ],
   [
     "conviction",
     "信念；定罪",
     "He spoke with conviction about the proposal.",
-    "",
+    "他對這個提議充滿信心。",
     "n."
   ],
   [
     "corollary",
     "推論；必然結果",
     "A corollary of growth is greater demand for staff.",
-    "",
+    "成長的必然結果是對員工的需求增加。",
     "n."
   ],
   [
     "corporeal",
     "肉體的；有形的",
     "The exhibition explores the relationship between mind and corporeal form.",
-    "",
+    "展覽探討了心靈與物質形式之間的關係。",
     "adj."
   ],
   [
     "corrosive",
     "腐蝕性的；傷害性的",
     "Salt water has a corrosive effect on metal.",
-    "",
+    "鹽水對金屬有腐蝕作用。",
     "n.／adj."
   ],
   [
     "cosmopolitan",
     "世界性的；國際化的",
     "The city has a cosmopolitan population.",
-    "",
+    "這個城市擁有國際化的人口。",
     "n.／adj."
   ],
   [
     "counterfeit",
     "偽造品；偽造的",
     "The store refused to accept the counterfeit bill.",
-    "",
+    "該商店拒絕接受假鈔。",
     "n.／v.／adj."
   ],
   [
     "covet",
     "覬覦；渴望得到",
     "Do not covet what you cannot afford.",
-    "",
+    "不要貪圖你買不起的東西。",
     "v."
   ],
   [
     "credulity",
     "輕信；易受騙",
     "The scam succeeded because of public credulity.",
-    "",
+    "由於公眾的輕信，騙局得以成功。",
     "n."
   ],
   [
     "criterion",
     "標準；準則",
     "Cost is one criterion for selecting a vendor.",
-    "",
+    "成本是選擇供應商的標準之一。",
     "n."
   ],
   [
     "cumulative",
     "累積的；漸增的",
     "The cumulative effect of small changes was significant.",
-    "",
+    "小變化的累積效應是顯著的。",
     "adj."
   ],
   [
     "daunt",
     "使畏縮；嚇阻",
     "The steep climb did not daunt the hikers.",
-    "",
+    "陡峭的攀登並沒有嚇倒徒步旅行者。",
     "v."
   ],
   [
     "debilitation",
     "衰弱；削弱",
     "Prolonged stress can cause physical debilitation.",
-    "",
+    "長期的壓力會導致身體虛弱。",
     "n."
   ],
   [
     "deceitful",
     "欺騙的；不誠實的",
     "The advertisement was deceitful and misleading.",
-    "",
+    "該廣告具有欺騙性和誤導性。",
     "adj."
   ],
   [
     "decentralize",
     "分散；去中心化",
     "The agency plans to decentralize decision-making.",
-    "",
+    "該機構計劃下放決策權。",
     "v."
   ],
   [
     "definitive",
     "決定性的；權威性的",
     "This is the definitive guide to the collection.",
-    "",
+    "這是系列的權威指南。",
     "adj."
   ],
   [
     "degrade",
     "貶低；使惡化",
     "Sunlight can degrade the quality of the material.",
-    "",
+    "陽光會降低材料的品質。",
     "v."
   ],
   [
     "dehydrate",
     "脫水；使失水",
     "Drink water so that you do not dehydrate.",
-    "",
+    "喝水，以免脫水。",
     "v."
   ],
   [
     "deliberate",
     "深思熟慮的；故意的",
     "She made a deliberate choice to wait.",
-    "",
+    "她刻意選擇了等待。",
     "v.／adj."
   ],
   [
     "demarcate",
     "劃定界線；區分",
     "The fence helps demarcate the two properties.",
-    "",
+    "柵欄有助於劃分兩處房產。",
     "v."
   ],
   [
     "demonstrable",
     "可證明的；明顯的",
     "The training produced demonstrable improvement.",
-    "",
+    "培訓取得了明顯的進步。",
     "adj."
   ],
   [
     "demote",
     "降職；降低地位",
     "The firm may demote managers who ignore policy.",
-    "",
+    "公司可能會降職忽視政策的經理。",
     "v."
   ],
   [
     "denouement",
     "結局；結果",
     "The novel's denouement surprised the readers.",
-    "",
+    "小說的結局讓讀者大吃一驚。",
     "n."
   ],
   [
     "deprecate",
     "反對；貶低",
     "The board voted to deprecate the outdated system.",
-    "",
+    "董事會投票決定棄用過過時的系統。",
     "v."
   ],
   [
     "deprivation",
     "剝奪；匱乏",
     "Sleep deprivation reduces concentration.",
-    "",
+    "睡眠不足會降低注意力。",
     "n."
   ],
   [
     "derogatory",
     "貶義的；詆毀的",
     "The review contained derogatory remarks.",
-    "",
+    "該評論包含貶義言論。",
     "adj."
   ],
   [
     "despondent",
     "沮喪的；失望的",
     "He felt despondent after the rejection.",
-    "",
+    "被拒絕後，他感到沮喪。",
     "adj."
   ],
   [
     "destitute",
     "貧困潦倒的；缺乏的",
     "The charity supports destitute families.",
-    "",
+    "該慈善機構為貧困家庭提供支持。",
     "adj."
   ],
   [
     "determinant",
     "決定因素",
     "Price is a key determinant of demand.",
-    "",
+    "價格是需求的關鍵決定因素。",
     "n.／adj."
   ],
   [
     "detest",
     "厭惡；憎恨",
     "I detest wasting food.",
-    "",
+    "我討厭浪費食物。",
     "v."
   ],
   [
     "detour",
     "繞道；迂迴方法",
     "A detour added twenty minutes to the trip.",
-    "",
+    "繞了一趟路，行程增加了二十分鐘。",
     "n.／v."
   ],
   [
     "disarray",
     "混亂；失序",
     "The office was in disarray after the move.",
-    "",
+    "搬家後，辦公室一片混亂。",
     "n.／v."
   ],
   [
     "disavowal",
     "否認；拒絕承認",
     "Her disavowal of the message was immediate.",
-    "",
+    "她立即​​否認了這一消息。",
     "n."
   ],
   [
     "discernible",
     "可辨識的；明顯的",
     "There was no discernible difference between the samples.",
-    "",
+    "樣品之間沒有明顯的差異。",
     "adj."
   ],
   [
     "disconcerting",
     "令人不安的；使困惑的",
     "The sudden silence was disconcerting.",
-    "",
+    "突然的寂靜令人不安。",
     "adj."
   ],
   [
     "discretion",
     "審慎；自行決定權",
     "Use your discretion when handling private information.",
-    "",
+    "處理私人資訊時請謹慎行事。",
     "n."
   ],
   [
     "discriminate",
     "區分；歧視",
     "The policy must not discriminate against any group.",
-    "",
+    "該政策不得歧視任何群體。",
     "v.／adj."
   ],
   [
     "disdainful",
     "輕蔑的；鄙視的",
     "He gave a disdainful look at the cheap product.",
-    "",
+    "他鄙視地看了一眼這個廉價產品。",
     "adj."
   ],
   [
     "disentangle",
     "解開；釐清",
     "We need to disentangle fact from rumor.",
-    "",
+    "我們需要區分事實和謠言。",
     "v."
   ],
   [
     "disparate",
     "截然不同的；不相同的",
     "The report combines disparate sources of information.",
-    "",
+    "該報告綜合了不同的資訊來源。",
     "adj."
   ],
   [
     "dispel",
     "驅散；消除",
     "The manager's explanation helped dispel doubts.",
-    "",
+    "經理的解釋幫助打消了疑慮。",
     "v."
   ],
   [
     "disposition",
     "性情；處置",
     "Her calm disposition helped during the crisis.",
-    "",
+    "她冷靜的性格在危機期間發揮了作用。",
     "n."
   ],
   [
     "dissemination",
     "傳播；散布",
     "The dissemination of accurate news is essential.",
-    "",
+    "準確的新聞傳播至關重要。",
     "n."
   ],
   [
     "dissent",
     "異議；不同意",
     "One member expressed dissent during the vote.",
-    "",
+    "一名成員在投票時表達了不同意見。",
     "n.／v."
   ],
   [
     "distill",
     "蒸餾；提煉",
     "The editor helped distill the report into key points.",
-    "",
+    "編輯幫助將報告提煉成要點。",
     "v."
   ],
   [
     "divest",
     "剝奪；出售資產",
     "The firm plans to divest its overseas unit.",
-    "",
+    "該公司計劃剝離其海外部門。",
     "v."
   ],
   [
     "docility",
     "順從；溫順",
     "The trainer valued the dog's docility.",
-    "",
+    "訓練師很重視這隻狗的溫順。",
     "n."
   ],
   [
     "dogma",
     "教條；信條",
     "Good research should question dogma.",
-    "",
+    "好的研究應該質疑教條。",
     "n."
   ],
   [
     "draconian",
     "嚴酷的；苛刻的",
     "The rule seemed draconian to many employees.",
-    "",
+    "對許多員工來說，這條規則似乎很嚴格。",
     "adj."
   ],
   [
     "duress",
     "脅迫；強制",
     "He signed the document under duress.",
-    "",
+    "他在脅迫下簽署了這份文件。",
     "n."
   ],
   [
     "ebullience",
     "熱情洋溢；興高采烈",
     "Her ebullience lifted everyone's mood.",
-    "",
+    "她的熱情洋溢鼓舞了每個人的情緒。",
     "n."
   ],
   [
     "eccentricity",
     "古怪；偏心",
     "His eccentricity made him memorable, not unreliable.",
-    "",
+    "他的古怪讓他令人難忘，但並非不可靠。",
     "n."
   ],
   [
     "ecology",
     "生態學；生態環境",
     "The project studies the ecology of coastal wetlands.",
-    "",
+    "本計畫研究沿海濕地的生態。",
     "n."
   ],
   [
     "efface",
     "抹去；使不明顯",
     "Time may efface the writing on the stone.",
-    "",
+    "時間可能會抹去石頭上的文字。",
     "v."
   ],
   [
     "effrontery",
     "厚顏無恥；放肆",
     "She had the effrontery to blame others for her error.",
-    "",
+    "她居然厚顏無恥地將自己的錯誤歸咎於別人。",
     "n."
   ],
   [
     "egregious",
     "極其嚴重的；駭人的",
     "The report identified an egregious accounting error.",
-    "",
+    "該報告發現了一個嚴重的會計錯誤。",
     "adj."
   ],
   [
     "elude",
     "逃避；使無法理解",
     "The answer continued to elude the investigators.",
-    "",
+    "調查人員仍然沒有找到答案。",
     "v."
   ],
   [
     "embellish",
     "美化；裝飾",
     "Do not embellish the story with false details.",
-    "",
+    "不要用虛假的細節來修飾故事。",
     "v."
   ],
   [
     "eminent",
     "傑出的；顯赫的",
     "An eminent scholar gave the opening lecture.",
-    "",
+    "一位著名學者做了開幕演講。",
     "adj."
   ],
   [
     "empathy",
     "同理心；共感",
     "Good managers show empathy toward their staff.",
-    "",
+    "優秀的管理者會對員工表現出同理心。",
     "n."
   ],
   [
     "empower",
     "授權；使有能力",
     "Training can empower employees to solve problems.",
-    "",
+    "培訓可以賦予員工解決問題的能力。",
     "v."
   ],
   [
     "encomium",
     "讚辭；頌詞",
     "The retiring teacher received an encomium from students.",
-    "",
+    "這位即將退休的老師受到了學生們的讚揚。",
     "n."
   ],
   [
     "endemic",
     "地方性的；特有的",
     "Malaria is endemic in some tropical regions.",
-    "",
+    "瘧疾在一些熱帶地區流行。",
     "n.／adj."
   ],
   [
     "enforce",
     "執行；強制實施",
     "The agency will enforce the new regulation.",
-    "",
+    "該機構將執行新規定。",
     "v."
   ],
   [
     "engross",
     "使全神貫注；佔據",
     "A good mystery novel can engross readers for hours.",
-    "",
+    "一本好的懸疑小說可以讓讀者全神貫注好幾個小時。",
     "v."
   ],
   [
     "enumerate",
     "列舉；逐一說明",
     "Please enumerate the reasons for your decision.",
-    "",
+    "請列舉您做出決定的原因。",
     "v."
   ],
   [
     "erratic",
     "不規則的；反覆無常的",
     "The machine's erratic behavior needs investigation.",
-    "",
+    "機器的不穩定行為需要調查。",
     "adj."
   ],
   [
     "estranged",
     "疏遠的；分離的",
     "The estranged friends spoke again after many years.",
-    "",
+    "疏遠多年的好友再次開口說話。",
     "adj."
   ],
   [
     "evince",
     "表現出；顯示",
     "Her careful questions evince real interest.",
-    "",
+    "她仔細的問題表現出真正的興趣。",
     "v."
   ],
   [
     "exalt",
     "讚揚；提升",
     "The speech seemed designed to exalt one person.",
-    "",
+    "這篇演講似乎是為了頌揚一個人。",
     "v."
   ],
   [
     "exasperate",
     "使惱怒；使惡化",
     "Repeated delays can exasperate passengers.",
-    "",
+    "反覆延誤可能會激怒乘客。",
     "v."
   ],
   [
     "exhort",
     "敦促；力勸",
     "The coach will exhort the team to stay focused.",
-    "",
+    "教練會勸告球隊保持專注。",
     "v."
   ],
   [
     "exigency",
     "緊急情況；迫切需要",
     "The storm created an exigency that required quick action.",
-    "",
+    "風暴造成了需要迅速採取行動的緊急情況。",
     "n."
   ],
   [
     "expedite",
     "加快；促進",
     "Please expedite the shipment if possible.",
-    "",
+    "如果可能，請加快出貨。",
     "v."
   ],
   [
     "expound",
     "詳述；闡釋",
     "The speaker will expound on the new policy.",
-    "",
+    "發言人將闡述新政策。",
     "v."
   ],
   [
     "extant",
     "現存的；仍存在的",
     "Only two extant copies of the book remain.",
-    "",
+    "該書僅存兩本。",
     "adj."
   ],
   [
     "extenuate",
     "減輕罪責；使情有可原",
     "Nothing can extenuate the harm caused by fraud.",
-    "",
+    "沒有什麼可以減輕詐欺造成的危害。",
     "v."
   ],
   [
     "fabricate",
     "捏造；製造",
     "Do not fabricate data to support a claim.",
-    "",
+    "請勿捏造資料來支持主張。",
     "v."
   ],
   [
     "faction",
     "派系；小集團",
     "A small faction opposed the proposal.",
-    "",
+    "一小部分人反對該提議。",
     "n."
   ],
   [
     "fallow",
     "休耕的；暫時閒置的",
     "The farmer left the field fallow for a season.",
-    "",
+    "農夫讓田地休耕一個季節。",
     "n.／adj."
   ],
   [
     "fathom",
     "理解；測量深度",
     "I cannot fathom why the files disappeared.",
-    "",
+    "我無法理解為什麼文件消失了。",
     "n.／v."
   ],
   [
     "fatuous",
     "愚蠢自滿的；空洞的",
     "His fatuous remark added nothing to the debate.",
-    "",
+    "他的愚蠢言論對爭論沒有任何影響。",
     "adj."
   ],
   [
     "feign",
     "假裝；佯裝",
     "She tried to feign surprise at the news.",
-    "",
+    "她試圖假裝對這個消息感到驚訝。",
     "v."
   ],
   [
     "feral",
     "野生的；兇猛的",
     "Feral cats live near the abandoned building.",
-    "",
+    "野貓住在廢棄建築附近。",
     "adj."
   ],
   [
     "fervid",
     "熱烈的；熱情的",
     "He gave a fervid speech about climate action.",
-    "",
+    "他就氣候行動發表了熱情洋溢的演講。",
     "adj."
   ],
   [
     "finesse",
     "技巧；精巧處理",
     "She handled the negotiation with finesse.",
-    "",
+    "她巧妙地處理了談判。",
     "n."
   ],
   [
     "forbearance",
     "克制；寬容",
     "The customer showed forbearance during the delay.",
-    "",
+    "客戶在延誤期間表現出了忍耐。",
     "n."
   ],
   [
     "foreboding",
     "不祥預感",
     "The strange silence filled her with foreboding.",
-    "",
+    "奇怪的沉默讓她心中充滿了不祥的預感。",
     "n.／adj."
   ],
   [
     "formidable",
     "令人敬畏的；難以克服的",
     "The exam was formidable but fair.",
-    "",
+    "考試很艱鉅，但很公平。",
     "adj."
   ],
   [
     "forsake",
     "拋棄；遺棄",
     "They refused to forsake their original values.",
-    "",
+    "他們拒絕放棄自己最初的價值觀。",
     "v."
   ],
   [
     "fulsome",
     "過分的；矯揉造作的",
     "The review offered fulsome praise for the team.",
-    "",
+    "評論對團隊給予了充分的讚揚。",
     "adj."
   ],
   [
     "functionary",
     "官員；公務員",
     "A government functionary processed the permit.",
-    "",
+    "一名政府官員辦理了許可證。",
     "n."
   ],
   [
     "galvanic",
     "激勵的；電流的",
     "The announcement had a galvanic effect on the team.",
-    "",
+    "該公告對團隊產生了強烈的影響。",
     "adj."
   ],
   [
     "genteel",
     "文雅的；有教養的",
     "The restaurant has a genteel atmosphere.",
-    "",
+    "餐廳氣氛優雅。",
     "adj."
   ],
   [
     "germane",
     "密切相關的；適切的",
     "Please keep your comments germane to the topic.",
-    "",
+    "請保持您的評論與主題密切相關。",
     "adj."
   ],
   [
     "glib",
     "油嘴滑舌的；不真誠的",
     "His glib answer failed to address the concern.",
-    "",
+    "他油嘴滑舌的回答未能解決這個問題。",
     "adj."
   ],
   [
     "goad",
     "刺激；激勵",
     "The criticism seemed to goad him into working harder.",
-    "",
+    "這些批評似乎促使他更加努力工作。",
     "n.／v."
   ],
   [
     "guile",
     "狡詐；詭計",
     "She won the negotiation through patience, not guile.",
-    "",
+    "她透過耐心而不是詭計贏得了談判。",
     "n."
   ],
   [
     "halcyon",
     "平靜愉快的；繁榮的",
     "They remembered the halcyon days of their childhood.",
-    "",
+    "他們回憶起童年美好的時光。",
     "n.／adj."
   ],
   [
     "harbinger",
     "先兆；預示者",
     "The first frost is a harbinger of winter.",
-    "",
+    "第一場霜是冬天來臨的預兆。",
     "n.／v."
   ],
   [
     "harrowing",
     "痛苦難忘的；折磨人的",
     "The rescue was a harrowing experience for everyone.",
-    "",
+    "這次救援對每個人來說都是痛苦的經驗。",
     "adj."
   ],
   [
     "hedonistic",
     "享樂主義的",
     "The novel criticizes a hedonistic lifestyle.",
-    "",
+    "小說批判了享樂主義的生活方式。",
     "adj."
   ],
   [
     "heretical",
     "異端的；與正統相悖的",
     "His heretical idea challenged established practice.",
-    "",
+    "他的異端思想挑戰了既定慣例。",
     "adj."
   ],
   [
     "hubris",
     "傲慢自大",
     "Hubris can make leaders ignore useful advice.",
-    "",
+    "傲慢會讓領導者忽略有用的建議。",
     "n."
   ],
   [
     "humdrum",
     "單調乏味的",
     "She wanted a job less humdrum than data entry.",
-    "",
+    "她想要一份比資料輸入更簡單的工作。",
     "n.／adj."
   ],
   [
     "hypocrisy",
     "偽善；虛偽",
     "The public criticized the company's hypocrisy.",
-    "",
+    "公眾批評該公司的虛偽。",
     "n."
   ],
   [
     "iconoclast",
     "反傳統的人；偶像破壞者",
     "The artist was known as an iconoclast.",
-    "",
+    "這位藝術家被稱為反傳統者。",
     "n."
   ],
   [
     "idealize",
     "理想化；過度美化",
     "Do not idealize the past without remembering its problems.",
-    "",
+    "不要將過去理想化而不記住它的問題。",
     "v."
   ],
   [
     "illicit",
     "非法的；不正當的",
     "The officers found illicit goods in the shipment.",
-    "",
+    "海關人員在這批貨物中發現了非法物品。",
     "adj."
   ],
   [
     "illuminate",
     "闡明；照亮",
     "The chart helps illuminate the main trend.",
-    "",
+    "此圖表有助於闡明主要趨勢。",
     "v."
   ],
   [
     "illusory",
     "虛幻的；不真實的",
     "The apparent savings were illusory.",
-    "",
+    "表面上的節省是虛幻的。",
     "adj."
   ],
   [
     "imminent",
     "即將發生的；迫近的",
     "A decision is imminent after months of discussion.",
-    "",
+    "經過數月的討論後，即將做出決定。",
     "adj."
   ],
   [
     "immoderate",
     "過度的；無節制的",
     "The report criticized his immoderate spending.",
-    "",
+    "報告批評他的開支不節制。",
     "adj."
   ],
   [
     "impair",
     "損害；削弱",
     "Lack of sleep can impair judgment.",
-    "",
+    "睡眠不足會影響判斷力。",
     "v."
   ],
   [
     "impeach",
     "彈劾；質疑",
     "The legislature voted to impeach the official.",
-    "",
+    "立法機關投票彈劾該官員。",
     "v."
   ],
   [
     "imperious",
     "專橫的；傲慢的",
     "Her imperious manner discouraged questions.",
-    "",
+    "她專橫的態度阻止了提問。",
     "adj."
   ],
   [
     "impertinent",
     "無禮的；不相干的",
     "That is an impertinent question for this meeting.",
-    "",
+    "這是本次會議提出的一個不恰當的問題。",
     "adj."
   ],
   [
     "improvise",
     "即興創作；臨時應變",
     "We had to improvise when the projector failed.",
-    "",
+    "當投影機故障時，我們不得不即興發揮。",
     "v."
   ],
   [
     "incendiary",
     "煽動性的；易燃的",
     "The article used incendiary language.",
-    "",
+    "文章使用了煽動性語言。",
     "n.／adj."
   ],
   [
     "incessant",
     "不停的；持續不斷的",
     "The incessant noise made concentration difficult.",
-    "",
+    "持續不斷的噪音使人難以集中註意力。",
     "adj."
   ],
   [
     "inclement",
     "惡劣的；嚴酷的",
     "The match was delayed by inclement weather.",
-    "",
+    "比賽因惡劣天氣而延後。",
     "adj."
   ],
   [
     "incoherent",
     "不連貫的；不合邏輯的",
     "His explanation was incoherent and incomplete.",
-    "",
+    "他的解釋不連貫且不完整。",
     "adj."
   ],
   [
     "incompatible",
     "不相容的；不合的",
     "The two systems are incompatible.",
-    "",
+    "這兩個系統不相容。",
     "adj."
   ],
   [
     "inconsequential",
     "不重要的；不合邏輯的",
     "The error was inconsequential to the final result.",
-    "",
+    "該錯誤對最終結果無關。",
     "adj."
   ],
   [
     "indignant",
     "憤慨的；憤怒的",
     "She was indignant about the unfair charge.",
-    "",
+    "她對這種不公平的指控感到憤慨。",
     "adj."
   ],
   [
     "inequity",
     "不公平；不平等",
     "The study revealed inequity in access to care.",
-    "",
+    "該研究揭示了獲得護理方面的不平等。",
     "n."
   ],
   [
     "infallible",
     "絕對可靠的；不會錯的",
     "No method is infallible.",
-    "",
+    "沒有一種方法是萬無一失的。",
     "adj."
   ],
   [
     "infamous",
     "臭名昭著的",
     "The street is infamous for traffic jams.",
-    "",
+    "這條街因交通擁堵而臭名昭著。",
     "adj."
   ],
   [
     "ingratiate",
     "討好；逢迎",
     "He tried to ingratiate himself with the director.",
-    "",
+    "他試著討好導演。",
     "v."
   ],
   [
     "inimical",
     "有害的；敵對的",
     "Poor communication is inimical to teamwork.",
-    "",
+    "溝通不良不利於團隊合作。",
     "adj."
   ],
   [
     "insidious",
     "隱伏有害的；陰險的",
     "The problem was insidious and hard to detect.",
-    "",
+    "這個問題很陰險而且很難被發現。",
     "adj."
   ],
   [
     "intransigent",
     "不妥協的；固執的",
     "The intransigent side refused to compromise.",
-    "",
+    "頑固的一方拒絕妥協。",
     "adj."
   ],
   [
     "intrinsic",
     "固有的；本質的",
     "Curiosity has intrinsic value in learning.",
-    "",
+    "好奇心在學習上具有內在價值。",
     "adj."
   ],
   [
     "inveigh",
     "猛烈抨擊；痛罵",
     "Several speakers continued to inveigh against the proposed cuts.",
-    "",
+    "幾位發言者繼續猛烈反對擬議的削減。",
     "v."
   ],
   [
     "inveterate",
     "根深蒂固的；積習的",
     "He is an inveterate collector of old maps.",
-    "",
+    "他是一位狂熱的舊地圖收藏家。",
     "adj.／adv."
   ],
   [
     "irony",
     "諷刺；反諷",
     "There is irony in solving the problem with more rules.",
-    "",
+    "用更多的規則來解決問題是有諷刺意味的。",
     "n."
   ],
   [
     "itinerant",
     "巡迴的；流動的",
     "The itinerant worker moved between several towns.",
-    "",
+    "這位流動工人在幾個城鎮之間流動。",
     "n.／adj."
   ],
   [
     "jargon",
     "專業術語；行話",
     "Avoid jargon when speaking to new customers.",
-    "",
+    "與新客戶交談時避免使用行話。",
     "n."
   ],
   [
     "jovial",
     "快樂友善的",
     "Our jovial guide made the tour enjoyable.",
-    "",
+    "我們愉快的導遊讓這次旅行變得愉快。",
     "adj."
   ],
   [
     "knell",
     "喪鐘；不祥信號",
     "The closure sounded the knell for the small business.",
-    "",
+    "關閉為小企業敲響了喪鐘。",
     "n.／v."
   ],
   [
     "labyrinthine",
     "錯綜複雜的；迷宮般的",
     "The building's labyrinthine hallways confused visitors.",
-    "",
+    "建築迷宮般的走廊讓遊客感到困惑。",
     "adj."
   ],
   [
     "lackluster",
     "無光澤的；缺乏活力的",
     "The product launch received a lackluster response.",
-    "",
+    "產品推出反應平淡。",
     "adj."
   ],
   [
     "languish",
     "衰弱；受苦",
     "Without funding, the project may languish.",
-    "",
+    "如果沒有資金，該項目可能會陷入困境。",
     "v."
   ],
   [
     "lassitude",
     "疲倦；無精打采",
     "After the long flight, she felt deep lassitude.",
-    "",
+    "經過長途飛行，她感到深深的倦怠。",
     "n."
   ],
   [
     "leeway",
     "餘地；彈性",
     "The supervisor gave us some leeway on the deadline.",
-    "",
+    "主管在截止日期上給了我們一些空間。",
     "n."
   ],
   [
     "lenient",
     "寬大的；仁慈的",
     "The teacher was lenient about the late homework.",
-    "",
+    "對於遲交的作業，老師很寬容。",
     "adj."
   ],
   [
     "levity",
     "輕浮；輕鬆態度",
     "A little levity eased the tense meeting.",
-    "",
+    "一點點的輕鬆緩和了緊張的會議。",
     "n."
   ],
   [
     "libel",
     "誹謗；文字毀謗",
     "The newspaper removed the statement to avoid libel.",
-    "",
+    "該報刪除了該聲明以避免誹謗。",
     "n.／v."
   ],
   [
     "limpid",
     "清澈的；明晰的",
     "The lake was limpid in the early morning.",
-    "",
+    "清晨的湖水清澈見底。",
     "adj."
   ],
   [
     "ludicrous",
     "荒謬可笑的",
     "The proposed price was ludicrous.",
-    "",
+    "提議的價格是荒謬的。",
     "adj."
   ],
   [
     "maladroit",
     "笨拙的；不靈巧的",
     "His maladroit comment offended the guest.",
-    "",
+    "他的拙劣評論冒犯了客人。",
     "adj."
   ],
   [
     "malady",
     "疾病；弊病",
     "The clinic specializes in treating chronic malady.",
-    "",
+    "該診所專門治療慢性疾病。",
     "n."
   ],
   [
     "malice",
     "惡意；怨恨",
     "The message was written with clear malice.",
-    "",
+    "這訊息的寫法帶有明顯的惡意。",
     "n."
   ],
   [
     "marginal",
     "邊緣的；微小的",
     "The change produced only marginal improvement.",
-    "",
+    "這項改變僅帶來了微小的改善。",
     "adj."
   ],
   [
     "martial",
     "軍事的；戰爭的",
     "The museum displayed martial artifacts from the era.",
-    "",
+    "博物館展示了那個時代的武術文物。",
     "n.／adj."
   ],
   [
     "meager",
     "貧乏的；不足的",
     "The small shop earned a meager profit.",
-    "",
+    "小店利潤微薄。",
     "adj."
   ],
   [
     "mercenary",
     "唯利是圖的；傭兵",
     "The mercenary leader fought for money, not loyalty.",
-    "",
+    "僱傭軍首領為金錢而戰，而不是忠誠。",
     "n.／adj."
   ],
   [
     "militant",
     "好戰的；激進的",
     "A militant group claimed responsibility for the attack.",
-    "",
+    "一個激進組織聲稱對這起攻擊負責。",
     "n.／adj."
   ],
   [
     "misconstrue",
     "誤解；曲解",
     "Do not misconstrue my silence as approval.",
-    "",
+    "不要把我的沉默誤解為認可。",
     "v."
   ],
   [
     "miserly",
     "吝嗇的；小氣的",
     "The miserly owner refused to replace the broken chairs.",
-    "",
+    "吝嗇的老闆拒絕更換壞掉的椅子。",
     "adj."
   ],
   [
     "misnomer",
     "用詞不當；名稱錯誤",
     "Calling the small pond a lake is a misnomer.",
-    "",
+    "將小池塘稱為湖泊是用詞不當。",
     "n."
   ],
   [
     "multifaceted",
     "多面的；多元的",
     "The issue requires a multifaceted solution.",
-    "",
+    "這個問題需要多方面的解決方案。",
     "adj."
   ],
   [
     "myopic",
     "短視的；近視的",
     "A myopic strategy can harm long-term growth.",
-    "",
+    "短視的策略可能會損害長期成長。",
     "adj."
   ],
   [
     "nefarious",
     "邪惡的；罪惡的",
     "The police investigated a nefarious scheme.",
-    "",
+    "警方調查了一個邪惡的計劃。",
     "adj."
   ],
   [
     "nonchalant",
     "漠不關心的；若無其事的",
     "He gave a nonchalant shrug when asked.",
-    "",
+    "當被問及時，他漫不經心地聳聳肩。",
     "adj."
   ],
   [
     "nostalgia",
     "懷舊；鄉愁",
     "The old song filled her with nostalgia.",
-    "",
+    "這首老歌讓她充滿懷舊之情。",
     "n."
   ],
   [
     "noxious",
     "有毒的；有害的",
     "Noxious fumes forced everyone to leave the room.",
-    "",
+    "有毒煙霧迫使所有人離開房間。",
     "adj."
   ],
   [
     "obdurate",
     "頑固的；冷酷的",
     "The obdurate manager would not change his mind.",
-    "",
+    "固執的經理不會改變主意。",
     "adj."
   ],
   [
     "obligatory",
     "強制的；義務性的",
     "Safety training is obligatory for all staff.",
-    "",
+    "所有員工都必須接受安全訓練。",
     "adj."
   ],
   [
     "oblivious",
     "未察覺的；健忘的",
     "She was oblivious to the noise around her.",
-    "",
+    "她對周遭的喧囂渾然不覺。",
     "adj."
   ],
   [
     "obsequious",
     "諂媚的；順從的",
     "His obsequious praise made the manager uncomfortable.",
-    "",
+    "他的諂媚的讚揚讓經理感到不舒服。",
     "adj."
   ],
   [
     "obviate",
     "排除；避免",
     "Careful planning can obviate many delays.",
-    "",
+    "仔細的計劃可以避免許多延誤。",
     "v."
   ],
   [
     "opaque",
     "不透明的；難理解的",
     "The rules are opaque to new employees.",
-    "",
+    "這些規則對新員工來說是不透明的。",
     "adj."
   ],
   [
     "opportunistic",
     "投機取巧的",
     "The company made an opportunistic purchase during the downturn.",
-    "",
+    "該公司在經濟低迷時期進行了一次機會主義收購。",
     "adj."
   ],
   [
     "opprobrium",
     "辱罵；惡名",
     "The decision brought public opprobrium.",
-    "",
+    "這項決定招致了公眾的譴責。",
     "n."
   ],
   [
     "outlandish",
     "古怪的；異國風格的",
     "He arrived wearing an outlandish hat.",
-    "",
+    "他來時戴著一頂奇特的帽子。",
     "adj."
   ],
   [
     "overarching",
     "首要的；包羅萬象的",
     "The overarching goal is better customer service.",
-    "",
+    "整體目標是更好的客戶服務。",
     "adj."
   ],
   [
     "overstate",
     "誇大；言過其實",
     "Do not overstate the benefits of the product.",
-    "",
+    "不要誇大產品的好處。",
     "v."
   ],
   [
     "paltry",
     "微不足道的；可鄙的",
     "The refund was a paltry amount.",
-    "",
+    "退款金額微不足道。",
     "adj."
   ],
   [
     "panacea",
     "萬靈丹；萬全之策",
     "Technology is not a panacea for every problem.",
-    "",
+    "科技並不是解決所有問題的靈丹妙藥。",
     "n."
   ],
   [
     "pathos",
     "悲憫；感染力",
     "The speech had great pathos and moved the audience.",
-    "",
+    "演講充滿悲情，感動了聽眾。",
     "n."
   ],
   [
     "pedantic",
     "迂腐的；賣弄學問的",
     "His pedantic corrections slowed the discussion.",
-    "",
+    "他迂腐的糾正減慢了討論的速度。",
     "adj."
   ],
   [
     "penchant",
     "嗜好；傾向",
     "She has a penchant for solving difficult puzzles.",
-    "",
+    "她熱衷於解決困難的謎題。",
     "n."
   ],
   [
     "penitent",
     "懺悔的；悔過的",
     "The penitent employee apologized sincerely.",
-    "",
+    "這名悔改的員工真誠地道歉。",
     "n.／adj."
   ],
   [
     "perceptive",
     "有洞察力的；敏銳的",
     "Her perceptive question identified the real issue.",
-    "",
+    "她敏銳的問題找出了真正的問題。",
     "adj."
   ],
   [
     "perilous",
     "危險的；險惡的",
     "The road was perilous during the storm.",
-    "",
+    "暴風雨期間，道路十分危險。",
     "adj."
   ],
   [
     "perpetual",
     "永久的；不斷的",
     "The machine's perpetual noise annoyed the staff.",
-    "",
+    "機器無休無止的噪音讓工作人員很惱火。",
     "adj."
   ],
   [
     "perplex",
     "使困惑；使為難",
     "The conflicting instructions may perplex a new hire.",
-    "",
+    "相互矛盾的指示可能會讓新員工感到困惑。",
     "v."
   ],
   [
     "pertinent",
     "相關的；切題的",
     "Please provide only pertinent details.",
-    "",
+    "請僅提供相關詳細資訊。",
     "adj."
   ],
   [
     "peruse",
     "仔細閱讀；審閱",
     "Take time to peruse the agreement before signing.",
-    "",
+    "在簽署之前花點時間仔細閱讀協議。",
     "v."
   ],
   [
     "pessimistic",
     "悲觀的",
     "He is pessimistic about sales next quarter.",
-    "",
+    "他對下個季度的銷售感到悲觀。",
     "adj."
   ],
   [
     "piety",
     "虔誠；孝敬",
     "The ceremony was marked by quiet piety.",
-    "",
+    "儀式充滿了安靜的虔誠。",
     "n."
   ],
   [
     "pinnacle",
     "頂峰；最高點",
     "Winning the award was the pinnacle of her career.",
-    "",
+    "獲得該獎項是她職業生涯的頂峰。",
     "n.／v."
   ],
   [
     "plethora",
     "過多；大量",
     "The report contains a plethora of unnecessary charts.",
-    "",
+    "該報告包含大量不必要的圖表。",
     "n."
   ],
   [
     "ponder",
     "仔細考慮；沉思",
     "We need time to ponder the consequences.",
-    "",
+    "我們需要時間來思考後果。",
     "v."
   ],
   [
     "precipitate",
     "促成；倉促的",
     "One careless email can precipitate a crisis.",
-    "",
+    "一封不小心的電子郵件可能會引發危機。",
     "n.／v.／adj."
   ],
   [
     "preclude",
     "阻止；排除",
     "Poor timing may preclude a successful launch.",
-    "",
+    "時機不當可能會妨礙發射的成功。",
     "v."
   ],
   [
     "predicament",
     "困境；窘境",
     "The missed train left us in a difficult predicament.",
-    "",
+    "誤了火車使我們陷入了困境。",
     "n."
   ],
   [
     "preempt",
     "先發制人；預先取代",
     "The company acted early to preempt a shortage.",
-    "",
+    "該公司很早就採取了行動，以防止短缺。",
     "n.／v."
   ],
   [
     "prevalent",
     "普遍的；盛行的",
     "Online payments are prevalent in this city.",
-    "",
+    "線上支付在這個城市很受歡迎。",
     "adj."
   ],
   [
     "primeval",
     "原始的；遠古的",
     "The trail passes through a primeval forest.",
-    "",
+    "步道穿過一片原始森林。",
     "adj."
   ],
   [
     "procrastinate",
     "拖延；延遲",
     "Do not procrastinate on important tasks.",
-    "",
+    "不要拖延重要的任務。",
     "v."
   ],
   [
     "prodigal",
     "揮霍的；浪子",
     "His prodigal spending worried his family.",
-    "",
+    "他的揮霍無度令他的家人擔心。",
     "n.／adj."
   ],
   [
     "prodigious",
     "巨大的；驚人的",
     "The team made a prodigious effort to finish.",
-    "",
+    "該團隊付出了巨大的努力才完成了任務。",
     "adj."
   ],
   [
     "proliferate",
     "迅速增加；繁殖",
     "False rumors can proliferate online quickly.",
-    "",
+    "虛假謠言可以在網路上迅速傳播。",
     "v."
   ],
   [
     "prologue",
     "序言；開場",
     "The author read the prologue at the event.",
-    "",
+    "筆者在活動中宣讀了序言。",
     "n."
   ],
   [
     "propensity",
     "傾向；習性",
     "She has a propensity to ask careful questions.",
-    "",
+    "她有提出謹慎問題的傾向。",
     "n."
   ],
   [
     "proscribe",
     "禁止；排斥",
     "The law will proscribe the sale of unsafe goods.",
-    "",
+    "法律將禁止銷售不安全的商品。",
     "v."
   ],
   [
     "prosperity",
     "繁榮；昌盛",
     "The port brought prosperity to the town.",
-    "",
+    "港口為小鎮帶來了繁榮。",
     "n."
   ],
   [
     "provincial",
     "地方性的；狹隘的",
     "His provincial assumptions limited the discussion.",
-    "",
+    "他的省級假設限制了討論。",
     "n.／adj."
   ],
   [
     "pugnacious",
     "好鬥的；好爭吵的",
     "The pugnacious customer argued with everyone.",
-    "",
+    "好鬥的顧客與大家吵架。",
     "adj."
   ],
   [
     "quell",
     "鎮壓；平息",
     "The announcement helped quell public concern.",
-    "",
+    "該公告有助於平息公眾的擔憂。",
     "v."
   ],
   [
     "querulous",
     "愛抱怨的；易怒的",
     "The querulous caller complained about every detail.",
-    "",
+    "愛發牢騷的來電者抱怨每一個細節。",
     "adj."
   ],
   [
     "quiescent",
     "靜止的；暫時不活躍的",
     "The volcano has been quiescent for many years.",
-    "",
+    "這座火山多年來一直處於靜止狀態。",
     "adj."
   ],
   [
     "rancor",
     "深仇；怨恨",
     "They settled the dispute without rancor.",
-    "",
+    "他們毫無怨恨地解決了爭端。",
     "n."
   ],
   [
     "ravenous",
     "非常飢餓的；貪婪的",
     "After the hike, we were ravenous.",
-    "",
+    "健行結束後，我們都餓了。",
     "adj."
   ],
   [
     "rebuke",
     "責備；斥責",
     "The supervisor gave him a quiet rebuke.",
-    "",
+    "主管輕聲斥責了他。",
     "n.／v."
   ],
   [
     "reclusive",
     "隱居的；離群的",
     "The reclusive author rarely gives interviews.",
-    "",
+    "這位隱居的作家很少接受訪問。",
     "adj."
   ],
   [
     "recount",
     "敘述；重新計算",
     "She asked him to recount what happened.",
-    "",
+    "她請他講述發生的事。",
     "n.／v."
   ],
   [
     "redress",
     "補償；糾正",
     "The company offered redress for the faulty product.",
-    "",
+    "該公司對有缺陷的產品提供了補救措施。",
     "n.／v."
   ],
   [
     "regale",
     "款待；娛樂",
     "The host loves to regale guests with stories from his travels.",
-    "",
+    "主人喜歡向客人講述他的旅行故事。",
     "v."
   ],
   [
     "reinstate",
     "恢復職位；使復原",
     "The board voted to reinstate the employee.",
-    "",
+    "董事會投票決定讓該員工復職。",
     "v."
   ],
   [
     "reiterate",
     "重申；重複說明",
     "Let me reiterate the main safety rule.",
-    "",
+    "讓我重申一下主要的安全規則。",
     "v."
   ],
   [
     "rejuvenate",
     "使恢復活力；使年輕",
     "A short holiday can rejuvenate a tired team.",
-    "",
+    "一個短暫的假期可以讓疲憊的團隊重新煥發活力。",
     "v."
   ],
   [
     "remedial",
     "補救的；矯正的",
     "She attended remedial classes to improve her writing.",
-    "",
+    "她參加補習班以提高寫作水平。",
     "adj."
   ],
   [
     "renounce",
     "放棄；宣布斷絕",
     "He chose to renounce his claim to the property.",
-    "",
+    "他選擇放棄對該財產的所有權。",
     "v."
   ],
   [
     "replete",
     "充滿的；飽足的",
     "The report is replete with useful examples.",
-    "",
+    "該報告充滿了有用的例子。",
     "v.／adj."
   ],
   [
     "reprehensible",
     "應受譴責的",
     "Fraud is reprehensible in any profession.",
-    "",
+    "在任何職業中，欺詐都是應受譴責的。",
     "adj."
   ],
   [
     "reprieve",
     "暫緩；緩刑",
     "The extension gave us a brief reprieve.",
-    "",
+    "延期讓我們得到了短暫的喘息。",
     "n.／v."
   ],
   [
     "reproach",
     "責備；恥辱",
     "She spoke without reproach or anger.",
-    "",
+    "她說話時沒有責備或憤怒。",
     "n.／v."
   ],
   [
     "repudiate",
     "拒絕接受；否認",
     "The company chose to repudiate the false statement.",
-    "",
+    "該公司選擇否認這項虛假陳述。",
     "v."
   ],
   [
     "reserved",
     "保留的；矜持的",
     "He is reserved around people he does not know.",
-    "",
+    "他對不認識的人很保守。",
     "adj."
   ],
   [
     "respite",
     "暫時緩解；喘息",
     "The quiet weekend provided a welcome respite.",
-    "",
+    "安靜的週末提供了一個令人愉快的休息時間。",
     "n.／v."
   ],
   [
     "restrain",
     "抑制；限制",
     "Please restrain the urge to interrupt.",
-    "",
+    "請克制一下打斷的衝動。",
     "v."
   ],
   [
     "retaliate",
     "報復；反擊",
     "The company may not retaliate against a whistleblower.",
-    "",
+    "公司不得對檢舉人進行報復。",
     "v."
   ],
   [
     "retract",
     "撤回；縮回",
     "The newspaper agreed to retract the inaccurate claim.",
-    "",
+    "該報同意撤回不準確的說法。",
     "v."
   ],
   [
     "revere",
     "尊敬；崇敬",
     "Many people revere her for her charity work.",
-    "",
+    "許多人因她的慈善工作而尊敬她。",
     "n.／v."
   ],
   [
     "rhetoric",
     "修辭；華而不實的言詞",
     "We need practical action, not empty rhetoric.",
-    "",
+    "我們需要實際行動，而不是空洞的說辭。",
     "n."
   ],
   [
     "rife",
     "盛行的；充滿的",
     "Rumors were rife after the announcement.",
-    "",
+    "消息公佈後，謠言四起。",
     "adj."
   ],
   [
     "robust",
     "強健的；強勁的",
     "The company reported robust demand for its services.",
-    "",
+    "該公司報告稱其服務需求強勁。",
     "adj."
   ],
   [
     "ruthless",
     "無情的；殘酷的",
     "The ruthless competitor cut prices drastically.",
-    "",
+    "無情的競爭對手大幅降價。",
     "adj."
   ],
   [
     "sacrosanct",
     "神聖不可侵犯的",
     "Patient privacy is sacrosanct at this clinic.",
-    "",
+    "在這家診所，病人的隱私是神聖不可侵犯的。",
     "adj."
   ],
   [
     "sanctimonious",
     "假裝虔誠的；假道學的",
     "His sanctimonious speech annoyed the audience.",
-    "",
+    "他道貌岸然的講話激怒了聽眾。",
     "adj."
   ],
   [
     "sardonic",
     "嘲諷的；冷嘲的",
     "She replied with a sardonic smile.",
-    "",
+    "她帶著諷刺的微笑回答。",
     "adj."
   ],
   [
     "scant",
     "不足的；很少的",
     "We had scant information before the meeting.",
-    "",
+    "會議之前我們掌握的資訊很少。",
     "v.／adj."
   ],
   [
     "scathing",
     "嚴厲批評的；尖刻的",
     "The critic wrote a scathing review of the film.",
-    "",
+    "這位影評人對這部電影寫了一篇嚴厲的評論。",
     "adj."
   ],
   [
     "seclusion",
     "隱居；隔離",
     "He enjoys the seclusion of his mountain cabin.",
-    "",
+    "他享受山間小屋的幽靜。",
     "n."
   ],
   [
     "semblance",
     "外表；表象",
     "The office returned to a semblance of order.",
-    "",
+    "辦公室表面上恢復了秩序。",
     "n."
   ],
   [
     "sensory",
     "感官的",
     "The exhibit offers a rich sensory experience.",
-    "",
+    "展覽提供了豐富的感官體驗。",
     "adj."
   ],
   [
     "sentimental",
     "感情用事的；多愁善感的",
     "She kept the old ticket for sentimental reasons.",
-    "",
+    "出於情感原因，她保留了舊票。",
     "adj."
   ],
   [
     "serendipity",
     "意外發現美好事物的運氣",
     "By serendipity, we found the perfect venue.",
-    "",
+    "機緣巧合，我們找到了完美的場地。",
     "n."
   ],
   [
     "shun",
     "避開；迴避",
     "The company tries to shun risky investments.",
-    "",
+    "該公司試圖避免風險投資。",
     "v."
   ],
   [
     "skittish",
     "易受驚的；輕率的",
     "The skittish horse moved away from the noise.",
-    "",
+    "那匹受驚的馬避開了喧鬧聲。",
     "adj."
   ],
   [
     "sluggish",
     "遲緩的；不活躍的",
     "Sales were sluggish during the rainy month.",
-    "",
+    "雨月期間銷售低迷。",
     "adj."
   ],
   [
     "sober",
     "清醒的；嚴肅的",
     "He gave a sober assessment of the risks.",
-    "",
+    "他對風險做出了冷靜的評估。",
     "v.／adj."
   ],
   [
     "sordid",
     "骯髒的；卑劣的",
     "The article exposed the sordid details of the scam.",
-    "",
+    "這篇文章揭露了這場騙局的骯髒細節。",
     "adj."
   ],
   [
     "sporadic",
     "零星的；偶發的",
     "We experienced sporadic internet outages.",
-    "",
+    "我們經歷了零星的網路中斷。",
     "adj."
   ],
   [
     "staunch",
     "堅定的；忠實的",
     "She is a staunch supporter of public libraries.",
-    "",
+    "她是公共圖書館的堅定支持者。",
     "v.／adj."
   ],
   [
     "stern",
     "嚴厲的；嚴肅的",
     "The teacher gave the class a stern warning.",
-    "",
+    "老師對全班同學進行了嚴厲警告。",
     "n.／adj."
   ],
   [
     "stifle",
     "壓抑；使窒息",
     "Do not stifle useful criticism.",
-    "",
+    "不要扼殺有用的批評。",
     "n.／v."
   ],
   [
     "strident",
     "刺耳的；強硬的",
     "The debate grew strident and unproductive.",
-    "",
+    "爭論變得激烈且毫無成果。",
     "adj."
   ],
   [
     "stupor",
     "昏迷；麻木狀態",
     "The medication left him in a stupor.",
-    "",
+    "藥物使他陷入昏迷。",
     "n."
   ],
   [
     "subjugate",
     "征服；使屈服",
     "The empire tried to subjugate its neighbors.",
-    "",
+    "帝國試圖征服鄰國。",
     "v."
   ],
   [
     "subservient",
     "屈從的；卑躬屈膝的",
     "The contract made the smaller firm subservient.",
-    "",
+    "這份合約讓小公司屈服了。",
     "adj."
   ],
   [
     "subversive",
     "顛覆性的",
     "The book was once considered subversive.",
-    "",
+    "這本書一度被認為具有顛覆性。",
     "n.／adj."
   ],
   [
     "suffice",
     "足夠；足以",
     "A short explanation will suffice.",
-    "",
+    "一個簡短的解釋就足夠了。",
     "v."
   ],
   [
     "sullen",
     "鬱鬱寡歡的；陰沉的",
     "He remained sullen after the argument.",
-    "",
+    "爭吵後他仍然悶悶不樂。",
     "adj."
   ],
   [
     "supercilious",
     "傲慢的；目中無人的",
     "Her supercilious manner alienated the team.",
-    "",
+    "她傲慢的態度使團隊疏遠了。",
     "adj."
   ],
   [
     "supplant",
     "取代；代替",
     "Digital records may supplant paper files.",
-    "",
+    "數位記錄可能會取代紙本文件。",
     "v."
   ],
   [
     "surfeit",
     "過量；過度供給",
     "A surfeit of choices can confuse customers.",
-    "",
+    "過多的選擇可能會讓顧客感到困惑。",
     "n.／v."
   ],
   [
     "surmise",
     "推測；猜想",
     "We can only surmise why the order was canceled.",
-    "",
+    "我們只能猜測訂單被取消的原因。",
     "n.／v."
   ],
   [
     "surrogate",
     "代理人；替代品",
     "The assistant served as a surrogate for the manager.",
-    "",
+    "助理充當經理的代理人。",
     "n.／adj."
   ],
   [
     "swindle",
     "詐騙；騙取",
     "The police warned residents about the swindle.",
-    "",
+    "警方就這項騙局向居民發出警告。",
     "n.／v."
   ],
   [
     "sycophant",
     "諂媚者；馬屁精",
     "A good leader does not need a sycophant.",
-    "",
+    "一個好的領導者不需要阿諛奉承。",
     "n."
   ],
   [
     "symbiotic",
     "共生的；互利的",
     "The two businesses have a symbiotic relationship.",
-    "",
+    "這兩項業務具有共生關係。",
     "adj."
   ],
   [
     "tactile",
     "觸覺的；可觸摸的",
     "The museum has a tactile display for children.",
-    "",
+    "博物館設有兒童觸覺展覽。",
     "adj."
   ],
   [
     "temperate",
     "溫和的；有節制的",
     "The region has a temperate climate.",
-    "",
+    "該地區氣候溫和。",
     "adj."
   ],
   [
     "tenable",
     "站得住腳的；可維持的",
     "Her argument is tenable if the data are correct.",
-    "",
+    "如果數據正確的話，她的論點是站得住腳的。",
     "adj."
   ],
   [
     "thwart",
     "阻撓；挫敗",
     "Bad weather could thwart our travel plans.",
-    "",
+    "惡劣的天氣可能會阻礙我們的旅行計劃。",
     "n.／v."
   ],
   [
     "timorous",
     "膽怯的；羞怯的",
     "The timorous child stayed close to her parent.",
-    "",
+    "這個膽怯的孩子一直靠近她的父母。",
     "adj."
   ],
   [
     "tirade",
     "長篇激烈的批評",
     "The customer launched into a long tirade.",
-    "",
+    "顧客開始長篇大論。",
     "n."
   ],
   [
     "torpid",
     "遲鈍的；不活躍的",
     "The market was torpid after the holiday.",
-    "",
+    "節後市場低迷。",
     "adj."
   ],
   [
     "tractable",
     "易處理的；溫順的",
     "The problem became more tractable after we simplified it.",
-    "",
+    "我們簡化之後，問題就變得更容易處理了。",
     "adj."
   ],
   [
     "trivial",
     "瑣碎的；不重要的",
     "Do not spend all day on trivial details.",
-    "",
+    "不要把一整天的時間花在瑣碎的細節上。",
     "adj."
   ],
   [
     "turmoil",
     "混亂；騷動",
     "The sudden change caused turmoil in the office.",
-    "",
+    "突如其來的變故，讓辦公室裡一片混亂。",
     "n."
   ],
   [
     "unassailable",
     "無懈可擊的；不可攻破的",
     "The report presents an unassailable case for action.",
-    "",
+    "該報告提出了無可辯駁的行動理由。",
     "adj."
   ],
   [
     "unbiased",
     "無偏見的；公正的",
     "We need an unbiased review of the complaint.",
-    "",
+    "我們需要對投訴進行公正的審查。",
     "adj."
   ],
   [
     "unconventional",
     "非傳統的；不拘一格的",
     "She proposed an unconventional but effective solution.",
-    "",
+    "她提出了一個非常規但有效的解決方案。",
     "adj."
   ],
   [
     "underscore",
     "強調；在下方劃線",
     "The results underscore the need for training.",
-    "",
+    "結果強調了培訓的必要性。",
     "n.／v."
   ],
   [
     "undulate",
     "波動；起伏",
     "The hills undulate across the horizon.",
-    "",
+    "山丘在地平線上起伏。",
     "v.／adj."
   ],
   [
     "unfounded",
     "沒有根據的",
     "The rumor was unfounded and quickly denied.",
-    "",
+    "該傳聞毫無根據，很快就被否認。",
     "adj."
   ],
   [
     "unify",
     "統一；使一致",
     "The shared goal helped unify the two teams.",
-    "",
+    "共同的目標幫助兩支球隊團結起來。",
     "v."
   ],
   [
     "unravel",
     "解開；釐清",
     "The analyst helped unravel the complex problem.",
-    "",
+    "分析師幫助解決了這個複雜的問題。",
     "v."
   ],
   [
     "unrelenting",
     "不屈不撓的；持續的",
     "The unrelenting rain flooded several streets.",
-    "",
+    "持續不斷的大雨淹沒了幾條街道。",
     "adj."
   ],
   [
     "unscrupulous",
     "不擇手段的；不道德的",
     "An unscrupulous seller may hide product defects.",
-    "",
+    "不道德的賣家可能會隱瞞產品缺陷。",
     "adj."
   ],
   [
     "unseemly",
     "不得體的；不合宜的",
     "The public argument was unseemly at the ceremony.",
-    "",
+    "儀式上的公開爭論是不合時宜的。",
     "adj."
   ],
   [
     "unwieldy",
     "笨重難操作的",
     "The old software is unwieldy and hard to update.",
-    "",
+    "舊軟體笨重且難以更新。",
     "adj."
   ],
   [
     "upbraid",
     "責罵；嚴厲指責",
     "She did not upbraid him for the honest mistake.",
-    "",
+    "她並沒有因為他無心的錯誤而責備他。",
     "v."
   ],
   [
     "upright",
     "正直的；垂直的",
     "He is known as an upright and fair manager.",
-    "",
+    "他被認為是一位正直公正的管理者。",
     "n.／adj."
   ],
   [
     "usurp",
     "篡奪；僭取",
     "No one may usurp the board's authority.",
-    "",
+    "任何人不得篡奪董事會的權力。",
     "v."
   ],
   [
     "vacant",
     "空的；茫然的",
     "The office has been vacant since January.",
-    "",
+    "該辦公室自一月份以來一直空置。",
     "adj."
   ],
   [
     "vague",
     "模糊的；不明確的",
     "The instructions were too vague to follow.",
-    "",
+    "這些指示太模糊，難以遵循。",
     "adj."
   ],
   [
     "vanquish",
     "征服；徹底擊敗",
     "The team worked hard to vanquish its strongest rival.",
-    "",
+    "該團隊努力擊敗最強大的對手。",
     "v."
   ],
   [
     "vapid",
     "乏味的；無生氣的",
     "The conversation became vapid after a few minutes.",
-    "",
+    "幾分鐘後談話變得無聊。",
     "adj."
   ],
   [
     "variance",
     "差異；變異",
     "There is a small variance between the two totals.",
-    "",
+    "兩個總數之間存在微小差異。",
     "n."
   ],
   [
     "veneer",
     "薄飾面；虛假的外表",
     "The friendly smile was only a veneer.",
-    "",
+    "友善的微笑只是表面的。",
     "n.／v."
   ],
   [
     "venomous",
     "有毒的；惡毒的",
     "The venomous snake was removed safely.",
-    "",
+    "毒蛇已安全取出。",
     "adj."
   ],
   [
     "veracity",
     "真實性；誠實",
     "The editor checked the veracity of every claim.",
-    "",
+    "編輯檢查了每項說法的真實性。",
     "n."
   ],
   [
     "versatile",
     "多才多藝的；多用途的",
     "This versatile tool can cut, drill, and sand.",
-    "",
+    "這種多功能工具可以切割、鑽孔和打磨。",
     "adj."
   ],
   [
     "vex",
     "使惱怒；使困擾",
     "The repeated error continued to vex the staff.",
-    "",
+    "重複出現的錯誤繼續讓工作人員煩惱不已。",
     "v."
   ],
   [
     "vindictive",
     "報復心強的",
     "A vindictive response would only worsen the conflict.",
-    "",
+    "報復性反應只會加劇衝突。",
     "adj."
   ],
   [
     "virulent",
     "劇毒的；惡性的",
     "The hospital prepared for a virulent strain of flu.",
-    "",
+    "醫院為應對致命的流感病毒做好了準備。",
     "adj."
   ],
   [
     "viscous",
     "黏稠的",
     "The sauce becomes viscous as it cools.",
-    "",
+    "醬汁冷卻後會變得黏稠。",
     "adj."
   ],
   [
     "vivid",
     "生動的；鮮明的",
     "She gave a vivid description of the accident.",
-    "",
+    "她生動地描述了這次事故。",
     "adj."
   ],
   [
     "weary",
     "疲倦的；使疲倦",
     "The weary travelers finally reached the hotel.",
-    "",
+    "疲憊的旅客終於到達酒店了。",
     "v.／adj."
   ],
   [
     "wield",
     "揮舞；行使",
     "The director can wield considerable influence.",
-    "",
+    "導演可以發揮相當大的影響力。",
     "v."
   ],
   [
     "wrath",
     "憤怒；震怒",
     "The decision drew the wrath of local residents.",
-    "",
+    "這項決定引起了當地居民的憤怒。",
     "n."
   ],
   [
     "aberrant",
     "異常的；偏離常態的",
     "The aberrant reading was removed from the data.",
-    "",
+    "異常讀數已從數據中刪除。",
     "n.／adj."
   ],
   [
     "abeyance",
     "暫停；擱置狀態",
     "The project is in abeyance until funding arrives.",
-    "",
+    "該項目暫時擱置，直到資金到位。",
     "n."
   ],
   [
     "absolution",
     "赦免；免除罪責",
     "He sought absolution for his past mistakes.",
-    "",
+    "他為過去的錯誤尋求寬恕。",
     "n."
   ],
   [
     "acclivity",
     "上坡；向上傾斜",
     "The cyclists slowed on the steep acclivity.",
-    "",
+    "騎自行車的人在陡峭的斜坡上放慢了速度。",
     "n."
   ],
   [
     "adduce",
     "舉出；引用作證",
     "The lawyer will adduce evidence at the hearing.",
-    "",
+    "律師將在聽證會上提出證據。",
     "v."
   ],
   [
     "adherent",
     "擁護者；黏附的",
     "She is a longtime adherent of the method.",
-    "",
+    "她是這種方法的長期堅持者。",
     "n.／adj."
   ],
   [
     "adumbrate",
     "勾勒；預示",
     "The report seeks to adumbrate a possible future strategy.",
-    "",
+    "該報告試圖勾勒出未來可能的策略。",
     "v."
   ],
   [
     "aegis",
     "保護；贊助",
     "The program operates under the aegis of the university.",
-    "",
+    "該計劃在大學的支持下運作。",
     "n."
   ],
   [
     "afferent",
     "傳入的；向心的",
     "The study measured afferent nerve signals.",
-    "",
+    "該研究測量了傳入神經訊號。",
     "n.／adj."
   ],
   [
     "agnostic",
     "不可知論者；不確定的",
     "The team remains agnostic about the final platform.",
-    "",
+    "該團隊對最終平台仍不可知。",
     "n.／adj."
   ],
   [
     "alchemy",
     "煉金術；神祕轉化",
     "The exhibit explains the history of alchemy.",
-    "",
+    "展覽解釋了煉金術的歷史。",
     "n."
   ],
   [
     "alimentary",
     "營養的；消化道的",
     "The doctor examined the patient's alimentary system.",
-    "",
+    "醫生檢查了病人的消化系統。",
     "adj."
   ],
   [
     "alluvial",
     "沖積的",
     "The farm sits on rich alluvial soil.",
-    "",
+    "農場坐落在肥沃的沖積土上。",
     "adj."
   ],
   [
     "amalgam",
     "混合物；汞合金",
     "The course is an amalgam of theory and practice.",
-    "",
+    "該課程是理論與實踐的結合。",
     "n."
   ],
   [
     "ambidextrous",
     "左右手都靈巧的",
     "The surgeon is ambidextrous and works with either hand.",
-    "",
+    "外科醫生雙手靈巧，可以用任何一隻手進行手術。",
     "adj."
   ],
   [
     "ambivalence",
     "矛盾心理；愛憎交織",
     "Her ambivalence about the offer was understandable.",
-    "",
+    "她對這個提議的矛盾是可以理解的。",
     "n."
   ],
   [
     "ameliorative",
     "改善性的；緩解性的",
     "The new measures had an ameliorative effect.",
-    "",
+    "新措施起到了一定的改善作用。",
     "adj."
   ],
   [
     "amoral",
     "與道德無關的；不分善惡的",
     "The story presents an amoral character without judgment.",
-    "",
+    "這個故事呈現了一個不帶判斷力的不道德的角色。",
     "adj."
   ],
   [
     "anathema",
     "深惡痛絕之物；詛咒",
     "Dishonesty is anathema to the organization.",
-    "",
+    "不誠實的行為為該組織所深惡痛絕。",
     "n."
   ],
   [
     "ancillary",
     "輔助的；附屬的",
     "The clinic provides ancillary services for patients.",
-    "",
+    "該診所為患者提供輔助服務。",
     "adj."
   ],
   [
     "antecedence",
     "在先；優先性",
     "The records establish the antecedence of the earlier claim.",
-    "",
+    "這些記錄確定了先前主張的前因。",
     "n."
   ],
   [
     "anthropogenic",
     "人為造成的",
     "The report examines anthropogenic climate change.",
-    "",
+    "該報告探討了人為氣候變遷。",
     "adj."
   ],
   [
     "anthropomorphism",
     "擬人化",
     "Giving the robot feelings is an example of anthropomorphism.",
-    "",
+    "賦予機器人感情是擬人化的例子。",
     "n."
   ],
   [
     "antipodal",
     "對跖的；完全相反的",
     "Their antipodal views made agreement difficult.",
-    "",
+    "他們的相反觀點使得達成一致變得困難。",
     "n.／adj."
   ],
   [
     "apolitical",
     "不涉政治的",
     "The charity remains apolitical in public debates.",
-    "",
+    "該慈善機構在公開辯論中仍然不涉及政治。",
     "adj."
   ],
   [
     "apotheosis",
     "神化；最高典範",
     "The final concert was the apotheosis of her career.",
-    "",
+    "最後一場音樂會是她職業生涯的巔峰。",
     "n."
   ],
   [
     "apportion",
     "分配；分攤",
     "The committee will apportion the funds fairly.",
-    "",
+    "委員會將公平分配資金。",
     "v."
   ],
   [
     "apprehend",
     "理解；逮捕",
     "Police were able to apprehend the suspect near the station.",
-    "",
+    "警方在車站附近逮捕了嫌疑犯。",
     "v."
   ],
   [
     "archetype",
     "原型；典型",
     "The character is an archetype of the reluctant hero.",
-    "",
+    "這個角色是不情願的英雄的原型。",
     "n."
   ],
   [
     "archipelago",
     "群島",
     "Indonesia is a large archipelago of islands.",
-    "",
+    "印度尼西亞是一個大群島。",
     "n."
   ],
   [
     "ardent",
     "熱情的；熱心的",
     "She is an ardent supporter of science education.",
-    "",
+    "她是科學教育的熱心支持者。",
     "adj."
   ],
   [
     "armistice",
     "停戰協定",
     "The leaders signed an armistice after the conflict.",
-    "",
+    "衝突結束後，兩國領導人簽署了停戰協議。",
     "n."
   ],
   [
     "asocial",
     "不合群的；缺乏社交性的",
     "His asocial behavior made group work difficult.",
-    "",
+    "他的反社會行為使團隊合作變得困難。",
     "adj."
   ],
   [
     "aspirant",
     "有志者；追求者",
     "Each aspirant submitted a detailed application.",
-    "",
+    "每個有志者都提交了一份詳細的申請。",
     "n.／adj."
   ],
   [
     "assimilation",
     "同化；吸收",
     "Language classes can support cultural assimilation.",
-    "",
+    "語言課程可以支持文化同化。",
     "n."
   ],
   [
     "attenuated",
     "減弱的；變薄的",
     "The signal was attenuated by the thick walls.",
-    "",
+    "訊號因厚牆而減弱。",
     "adj."
   ],
   [
     "augmentative",
     "增強性的；擴大的",
     "The device has an augmentative feature for low vision.",
-    "",
+    "該設備具有針對低視力的增強功能。",
     "adj."
   ],
   [
     "auroral",
     "極光的；黎明的",
     "We watched an auroral display in the northern sky.",
-    "",
+    "我們在北方天空觀看了極光錶演。",
     "adj."
   ],
   [
     "avaricious",
     "貪婪的；貪財的",
     "The avaricious owner raised prices without reason.",
-    "",
+    "貪婪的業主無故提高價格。",
     "adj."
   ],
   [
     "avuncular",
     "像伯叔般慈祥的",
     "Her avuncular mentor gave calm, practical advice.",
-    "",
+    "她慈祥的導師給了冷靜而實用的建議。",
     "adj."
   ],
   [
     "axiomatic",
     "不證自明的；公理性的",
     "It is axiomatic that clear goals improve planning.",
-    "",
+    "明確的目標可以改善規劃，這是不言而喻的。",
     "adj."
   ],
   [
     "baneful",
     "有害的；惡毒的",
     "The baneful effects of pollution are well documented.",
-    "",
+    "污染的有害影響是有據可查的。",
     "adj."
   ],
   [
     "beatific",
     "極樂的；幸福的",
     "She wore a beatific smile after hearing the news.",
-    "",
+    "聽到這個消息後，她露出了幸福的笑容。",
     "adj."
   ],
   [
     "beneficence",
     "行善；慈善",
     "The foundation's beneficence supports rural schools.",
-    "",
+    "基金會的慈善事業支持農村學校。",
     "n."
   ],
   [
     "bibliography",
     "參考書目",
     "The paper includes a complete bibliography.",
-    "",
+    "論文包括完整的參考書目。",
     "n."
   ],
   [
     "bilateral",
     "雙方的；雙邊的",
     "The two countries signed a bilateral agreement.",
-    "",
+    "兩國簽署了雙邊協議。",
     "adj."
   ],
   [
     "biodegradable",
     "可生物分解的",
     "Choose biodegradable packaging whenever possible.",
-    "",
+    "盡可能選擇可生物降解的包裝。",
     "adj."
   ],
   [
     "biomimicry",
     "仿生學；模仿生物設計",
     "The design uses biomimicry to reduce energy use.",
-    "",
+    "該設計利用仿生學來減少能源使用。",
     "n."
   ],
   [
     "boorish",
     "粗魯無禮的",
     "His boorish behavior embarrassed his friends.",
-    "",
+    "他的粗魯行為使他的朋友感到尷尬。",
     "adj."
   ],
   [
     "brackish",
     "微鹹的；半鹹水的",
     "The river water becomes brackish near the sea.",
-    "",
+    "靠近大海的河水變得微鹹。",
     "adj."
   ],
   [
     "bulwark",
     "堡壘；防護壁",
     "Strong passwords are a bulwark against simple attacks.",
-    "",
+    "強密碼是抵禦簡單攻擊的堡壘。",
     "n.／v."
   ],
   [
     "cadence",
     "節奏；韻律",
     "The speaker's calm cadence held the audience's attention.",
-    "",
+    "演講者平靜的語調吸引了聽眾的注意。",
     "n."
   ],
   [
     "calligraphy",
     "書法",
     "She practices calligraphy every weekend.",
-    "",
+    "她每個週末都會練習書法。",
     "n."
   ],
   [
     "canonical",
     "經典的；權威性的",
     "The article is a canonical text in the field.",
-    "",
+    "這篇文章是該領域的規範文本。",
     "adj."
   ],
   [
     "capitulation",
     "投降；屈服",
     "The agreement was seen as a capitulation to pressure.",
-    "",
+    "該協議被視為對壓力的屈服。",
     "n."
   ],
   [
     "cartography",
     "地圖製作學",
     "He studies cartography and digital mapping.",
-    "",
+    "他研究製圖學和數位測繪。",
     "n."
   ],
   [
     "causal",
     "因果的",
     "The researchers found no causal link.",
-    "",
+    "研究人員發現沒有因果關係。",
     "adj."
   ],
   [
     "cerebellar",
     "小腦的",
     "The scan showed activity in the cerebellar region.",
-    "",
+    "掃描顯示小腦區域有活動。",
     "adj."
   ],
   [
     "cerebration",
     "思考；腦力活動",
     "The puzzle required several hours of cerebration.",
-    "",
+    "這個謎題需要幾個小時的思考。",
     "n."
   ],
   [
     "ceremonial",
     "儀式的；正式的",
     "They wore ceremonial clothing for the occasion.",
-    "",
+    "他們在這個場合穿著禮服。",
     "n.／adj."
   ],
   [
     "chimerical",
     "異想天開的；不切實際的",
     "His plan to finish overnight was chimerical.",
-    "",
+    "他連夜完成的計劃純屬癡心妄想。",
     "adj."
   ],
   [
     "circuity",
     "迂迴；曲折",
     "The circuity of the route added time to the trip.",
-    "",
+    "路線迂迴，增加了行程時間。",
     "n."
   ],
   [
     "citadel",
     "城堡；堡壘",
     "The ancient citadel overlooks the city.",
-    "",
+    "古老的城堡俯瞰著城市。",
     "n."
   ],
   [
     "clique",
     "小團體；派系",
     "A small clique controlled the conversation.",
-    "",
+    "一個小集團控制了談話。",
     "n."
   ],
   [
     "codify",
     "編纂成法典；系統化",
     "The agency will codify the new procedures.",
-    "",
+    "該機構將編纂新程序。",
     "v."
   ],
   [
     "coercive",
     "強制性的",
     "The court rejected the coercive agreement.",
-    "",
+    "法院駁回了強制協議。",
     "adj."
   ],
   [
     "coeval",
     "同時代的；同齡的",
     "The two writers were coeval and often compared.",
-    "",
+    "這兩位作家是同時代的，經常被比較。",
     "n.／adj."
   ],
   [
     "cohesion",
     "凝聚力；內聚",
     "Clear goals can improve team cohesion.",
-    "",
+    "明確的目標可以提高團隊凝聚力。",
     "n."
   ],
   [
     "collegial",
     "同事間友好的；協作的",
     "The office maintains a collegial working environment.",
-    "",
+    "辦公室保持著學院式的工作環境。",
     "adj."
   ],
   [
     "commensurability",
     "可比較性；相稱性",
     "The study examined the commensurability of the measures.",
-    "",
+    "該研究檢驗了這些措施的可通約性。",
     "n."
   ],
   [
     "communal",
     "共同的；社區的",
     "The building has a communal kitchen.",
-    "",
+    "大樓設有公用廚房。",
     "adj."
   ],
   [
     "compliant",
     "順從的；符合規定的",
     "The product is compliant with safety standards.",
-    "",
+    "該產品符合安全標準。",
     "adj."
   ],
   [
     "concatenation",
     "連鎖；一連串",
     "A concatenation of small errors caused the failure.",
-    "",
+    "一連串的小錯誤導致了失敗。",
     "n."
   ],
   [
     "concordance",
     "一致；符合",
     "The results showed concordance between the two tests.",
-    "",
+    "結果顯示兩次測試之間的一致性。",
     "n."
   ],
   [
     "confluent",
     "匯流的；交匯的",
     "The rivers are confluent near the old bridge.",
-    "",
+    "河流在老橋附近匯合。",
     "n.／adj."
   ],
   [
     "congenital",
     "先天的；天生的",
     "The doctor explained the congenital condition clearly.",
-    "",
+    "醫生把先天狀況解釋得很清楚。",
     "adj."
   ],
   [
     "conjectural",
     "推測的；假定的",
     "The early estimate remains conjectural.",
-    "",
+    "早期的估計仍然是推測。",
     "adj."
   ],
   [
     "conjugal",
     "婚姻的；夫妻的",
     "The clinic offers counseling for conjugal problems.",
-    "",
+    "該診所提供婚姻問題諮詢。",
     "adj."
   ],
   [
     "consonant",
     "一致的；輔音",
     "Her actions are consonant with the stated values.",
-    "",
+    "她的行為符合既定的價值觀。",
     "n.／adj."
   ],
   [
     "consort",
     "夥伴；結交",
     "The two companies consort on several research projects.",
-    "",
+    "兩家公司聯合開展多個研究項目。",
     "n.／v."
   ],
   [
     "conspicuousness",
     "顯著性；醒目",
     "The new color increases the bicycle's conspicuousness.",
-    "",
+    "新顏色增加了自行車的引人注目度。",
     "n."
   ],
   [
     "constitutional",
     "憲法的；體質的",
     "The court considered the law's constitutional basis.",
-    "",
+    "法院考慮了該法律的憲法基礎。",
     "n.／adj."
   ],
   [
     "contemplative",
     "沉思的；冥想的",
     "He spent a contemplative afternoon by the lake.",
-    "",
+    "他在湖邊沉思了一個下午。",
     "n.／adj."
   ],
   [
     "contextualize",
     "放入脈絡理解",
     "The teacher helped students contextualize the speech.",
-    "",
+    "老師幫助學生了解演講的背景。",
     "v."
   ],
   [
     "contiguous",
     "相鄰的；接壤的",
     "The two offices are contiguous on the same floor.",
-    "",
+    "兩間辦公室位於同一樓層，相鄰。",
     "adj."
   ],
   [
     "contrapuntal",
     "對位法的；對照的",
     "The composer used a contrapuntal melody.",
-    "",
+    "作曲家使用了對位旋律。",
     "adj."
   ],
   [
     "controvert",
     "反駁；質疑",
     "New evidence may controvert the earlier conclusion.",
-    "",
+    "新的證據可能會反駁先前的結論。",
     "v."
   ],
   [
     "conviviality",
     "歡樂友善的氣氛",
     "The host's warmth created a sense of conviviality.",
-    "",
+    "主人的熱情營造了一種歡樂的氛圍。",
     "n."
   ],
   [
     "copacetic",
     "極好的；令人滿意的",
     "Everything is copacetic after the update.",
-    "",
+    "更新後一切都很順利。",
     "adj."
   ],
   [
     "copula",
     "連繫動詞；連結物",
     "In grammar, a copula links the subject and complement.",
-    "",
+    "在文法中，係詞連接主詞和補語。",
     "n."
   ],
   [
     "corroborative",
     "佐證性的；證實性的",
     "The witness gave corroborative evidence.",
-    "",
+    "證人提供了確鑿的證據。",
     "adj."
   ],
   [
     "coterie",
     "小圈子；親信集團",
     "A small coterie of advisors met privately.",
-    "",
+    "一小群顧問私下會面。",
     "n."
   ]
 ];
@@ -8187,7 +8187,7 @@ DECKS.advanced = [
 // 7,000 字版：多益約 700–800 分常見的進階商務詞組。
 // 先檢查全字庫，再加入 500 筆不重複的專業名詞片語。
 var ADVANCED_BUSINESS_MODIFIERS = [["strategic","策略性"],["regulatory","監管性"],["contractual","合約性"],["operational","營運性"],["financial","財務性"],["corporate","企業"],["executive","高階主管"],["confidential","機密"],["international","國際"],["competitive","競爭性"],["sustainable","永續"],["comprehensive","全面性"],["preliminary","初步"],["prospective","未來潛在"],["mandatory","強制"],["alternative","替代"],["commercial","商業"],["administrative","行政"],["analytical","分析"],["technological","技術"],["organizational","組織"],["legislative","立法"]];
-var ADVANCED_BUSINESS_NOUNS = [["initiative","倡議"],["compliance","遵循"],["framework","架構"],["negotiation","談判"],["assessment","評估"],["proposal","提案"],["allocation","分配"],["expenditure","支出"],["acquisition","收購"],["expansion","擴張"],["implementation","執行"],["collaboration","合作"],["infrastructure","基礎設施"],["regulation","規範"],["liability","責任"],["contingency","應變方案"],["compensation","補償"],["productivity","生產力"],["procurement","採購"],["investment","投資"],["forecast","預測"],["evaluation","評量"],["documentation","文件化"],["transaction","交易"],["distribution","配送"]];
+var ADVANCED_BUSINESS_NOUNS = [["initiative","倡議"],["compliance","遵循"],["framework","架構"],["negotiation","談判"],["assessment","評估"],["proposal","提案"],["allocation","分配"],["expenditure","支出"],["acquisition","收購"],["expansion","擴張"],["implementation","執行"],["collaboration","合作"],["infrastructure","基礎設施"],["regulation","規範"],["liability","責任"],["contingency","應變方案"],["compensation","補償"],["productivity","生產力"],["procurement","採購"],["investment","投資"],["forecast","預測"],["evaluation","評量"],["documentation","文件"],["transaction","交易"],["distribution","配送"]];
 var advancedKnownWords = {};
 Object.keys(DECKS).forEach(function(level){ DECKS[level].forEach(function(card){ advancedKnownWords[String(card[0]).toLowerCase()] = true; }); });
 var ADVANCED_7000_EXTENSION = [];
