@@ -835,15 +835,27 @@
   // Add newly supplied Chinese example translations to cards that were saved
   // before this version, without touching their review dates or answer history.
   data.words.forEach(function(word){
-    if(String(word.exampleZh || "").trim()) return;
+    var needsExampleZh = !String(word.exampleZh || "").trim();
     var deck = DECKS[word.category];
     if(!deck) return;
     var target = String(word.en || "").toLowerCase();
     var match = deck.find(function(card){
       return String(card[0] || "").toLowerCase() === target;
     });
-    if(match && String(match[3] || "").trim()){
+    if(needsExampleZh && match && String(match[3] || "").trim()){
       word.exampleZh = match[3];
+    }
+    // Replace only the earlier generated work-phrase template. User-created cards
+    // and all scheduling fields remain untouched.
+    var isLegacyFillerExample = /^(We discussed the .+ in today's meeting\.|We discussed the .+ during class\.|We discussed the .+ during today's lesson\.|We discussed the topic of .+ in class today\.|We learned how to .+ during today's lesson\.|The lesson included an? .+ example\.|The report includes information about the .+\.)$/.test(String(word.example || ""));
+    if(word.category !== "custom" && isLegacyFillerExample && match && match[2] !== word.example){
+      word.zh = match[1];
+      word.example = match[2];
+      word.exampleZh = match[3];
+      word.pos = match[4] || word.pos;
+    }
+    if(target.endsWith(" documentation") && match && String(word.zh || "").endsWith("\u6587\u4ef6\u5316")){
+      word.zh = match[1];
     }
   });
 
