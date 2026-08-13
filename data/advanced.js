@@ -8201,6 +8201,315 @@ ADVANCED_BUSINESS_MODIFIERS.forEach(function(modifier){
   });
 });
 DECKS.advanced.push.apply(DECKS.advanced, ADVANCED_7000_EXTENSION);
+
+// Example-quality pass ------------------------------------------------------
+// Earlier expansion batches used a few repeated filler sentences (for example,
+// "We discussed ... during class").  This pass replaces only those generated
+// sentences.  It leaves hand-written examples and all card scheduling data alone.
+var EXAMPLE_QUALITY_VERSION = "2026-08-14-context-v2";
+var QUALITY_LEGACY_EXAMPLE_PATTERNS = [
+  /^We discussed the .+ during class\.$/,
+  /^We discussed the .+ during today's lesson\.$/,
+  /^We discussed the .+ in today's meeting\.$/,
+  /^We discussed the topic of .+ in class today\.$/,
+  /^We learned how to .+ during today's lesson\.$/,
+  /^The lesson included an? .+ example\.$/,
+  /^The report includes an? .+ example\.$/,
+  /^The report includes information about the .+\.$/,
+  /^The report was .+ reviewed\.$/,
+  /^The team reviewed the .+ during the meeting\.$/
+];
+
+function isQualityLegacyFillerExample(example){
+  return QUALITY_LEGACY_EXAMPLE_PATTERNS.some(function(pattern){ return pattern.test(String(example || "")); });
+}
+
+function qualityHash(value){
+  // FNV-1a gives a well-spread, stable selection for similarly spelled words.
+  var hash = 2166136261;
+  String(value).toLowerCase().split("").forEach(function(character){
+    hash ^= character.charCodeAt(0);
+    hash = Math.imul(hash, 16777619);
+  });
+  return hash >>> 0;
+}
+
+function qualityFormat(template, word, meaning){
+  return template.replace(/\{word\}/g, word).replace(/\{meaning\}/g, meaning);
+}
+
+// Carefully written examples for every generated verb, adverb, and adjective
+// that previously had a classroom/report filler sentence.
+var QUALITY_WORD_EXAMPLES = {
+  "abandon": ["The company decided to abandon the outdated plan.", "公司決定放棄那項過時的計畫。"],
+  "activate": ["Press this button to activate the security system.", "按下這個按鈕即可啟動保全系統。"],
+  "approve": ["The director approved the revised budget yesterday.", "主管昨天核准了修訂後的預算。"],
+  "classify": ["Scientists classify the samples by their chemical properties.", "科學家依化學性質將樣本分類。"],
+  "disagree": ["Several members disagreed with the final recommendation.", "幾位成員不同意最後的建議。"],
+  "execute": ["The team executed the plan on schedule.", "團隊如期執行了計畫。"],
+  "maximize": ["The new layout maximizes the available space.", "新的配置能將可用空間發揮到最大。"],
+  "occupy": ["The boxes occupy most of the storage room.", "這些箱子占據了儲藏室的大部分空間。"],
+  "persuade": ["She persuaded the client to accept the offer.", "她說服客戶接受這項提案。"],
+  "prioritize": ["We must prioritize urgent customer requests.", "我們必須優先處理緊急的客戶需求。"],
+  "propose": ["The committee proposed a new policy for remote work.", "委員會提出了一項新的遠端工作政策。"],
+  "reflect": ["Take time to reflect on the feedback you received.", "花些時間仔細思考你收到的回饋。"],
+  "regulate": ["The agency regulates safety standards for food products.", "該機關規範食品的安全標準。"],
+  "reject": ["The manager rejected the incomplete application.", "經理退回了資料不完整的申請。"],
+  "relate": ["These figures relate to last quarter's sales.", "這些數字與上一季的銷售有關。"],
+  "simplify": ["The update simplifies the payment process.", "這次更新簡化了付款流程。"],
+  "specify": ["Please specify the delivery address in the form.", "請在表格中明確填寫送貨地址。"],
+  "supervise": ["A senior engineer supervises the installation.", "一位資深工程師監督這項安裝作業。"],
+  "vary": ["Prices vary according to demand and season.", "價格會依需求與季節而有所不同。"],
+  "actively": ["The company actively seeks feedback from its customers.", "公司積極蒐集客戶的回饋。"],
+  "actually": ["The actual cost was lower than we expected.", "實際成本比我們預期的低。"],
+  "additionally": ["Additionally, the report includes a risk assessment.", "此外，報告還包含風險評估。"],
+  "appropriately": ["The personal data was appropriately protected.", "個人資料受到適當保護。"],
+  "certainly": ["The change will certainly affect the schedule.", "這項變更肯定會影響時程。"],
+  "clearly": ["Please clearly explain the next steps to the team.", "請向團隊清楚說明下一步。"],
+  "commonly": ["This method is commonly used in practice.", "這個方法在實務上很常使用。"],
+  "constantly": ["The system is constantly monitored for errors.", "系統持續受到監控，以偵測錯誤。"],
+  "currently": ["The team is currently reviewing the application.", "團隊目前正在審查這份申請。"],
+  "directly": ["Please contact the manager directly for assistance.", "如需協助，請直接聯絡經理。"],
+  "finally": ["The issue was finally resolved after several tests.", "經過多次測試後，這個問題終於解決了。"],
+  "globally": ["The brand is recognized globally for its quality.", "這個品牌因品質優良而享譽全球。"],
+  "independently": ["Each branch operates independently within the group.", "集團內各分公司獨立運作。"],
+  "initially": ["The project was initially planned for June.", "這個專案最初計畫在六月進行。"],
+  "internationally": ["The product is sold internationally through distributors.", "這項產品透過經銷商在國際市場銷售。"],
+  "locally": ["The ingredients are sourced locally whenever possible.", "只要可行，食材都在當地採購。"],
+  "mainly": ["The workshop mainly focuses on customer service.", "這場工作坊主要聚焦於客戶服務。"],
+  "normally": ["Orders are normally processed within two days.", "訂單通常會在兩天內處理。"],
+  "originally": ["The building was originally a railway station.", "這棟建築原本是一座火車站。"],
+  "particularly": ["This guideline is particularly useful for new staff.", "這份指引對新進員工特別有用。"],
+  "personally": ["I personally checked the final figures.", "我親自核對了最後的數字。"],
+  "previously": ["The issue had been previously reported to the team.", "這個問題先前已向團隊回報。"],
+  "primarily": ["The course is primarily designed for beginners.", "這門課主要為初學者設計。"],
+  "professionally": ["She handled the complaint professionally.", "她以專業的方式處理這起客訴。"],
+  "promptly": ["Please reply promptly to the client's email.", "請迅速回覆客戶的電子郵件。"],
+  "quickly": ["The technician quickly identified the problem.", "技術人員很快找出了問題。"],
+  "recently": ["The company recently opened a new office.", "公司最近開設了一間新辦公室。"],
+  "regularly": ["We regularly back up the project files.", "我們定期備份專案檔案。"],
+  "remotely": ["The consultant works remotely from another city.", "這位顧問從另一座城市遠端工作。"],
+  "separately": ["Please submit the two forms separately.", "請分開提交這兩份表格。"],
+  "seriously": ["The company takes safety concerns seriously.", "公司認真看待安全疑慮。"],
+  "significantly": ["The new process significantly reduced waiting time.", "新流程大幅縮短了等候時間。"],
+  "similarly": ["The two departments responded similarly to the change.", "兩個部門對這項改變的反應相似。"],
+  "specifically": ["The email specifically mentions the payment deadline.", "電子郵件特別提到付款截止日。"],
+  "successfully": ["The team successfully completed the installation.", "團隊成功完成了安裝。"],
+  "traditionally": ["This dish is traditionally served at festivals.", "這道菜傳統上在節慶時供應。"],
+  "typically": ["The process typically takes three business days.", "這個流程通常需要三個工作天。"],
+  "urgently": ["The client urgently needs the revised contract.", "客戶急需修訂後的合約。"],
+  "virtually": ["The entire team can work virtually when needed.", "有需要時，整個團隊幾乎都能以線上方式工作。"],
+  "widely": ["The software is widely used by small businesses.", "這套軟體被許多小型企業廣泛使用。"],
+  "absolute": ["There is no absolute guarantee that a plan will succeed.", "沒有任何計畫能保證絕對成功。"],
+  "acceptable": ["The proposed delivery date is acceptable to the client.", "客戶可以接受所提的交貨日期。"],
+  "advanced": ["The laboratory uses advanced equipment for testing.", "實驗室使用先進設備進行測試。"],
+  "applicable": ["This rule is applicable to all new applications.", "這項規則適用於所有新申請。"],
+  "common": ["It is common for prices to change during busy seasons.", "在旺季價格變動很常見。"],
+  "consistent": ["The team delivered consistent results throughout the year.", "團隊全年都交出一致的成果。"],
+  "constant": ["The machine needs constant attention during operation.", "這台機器運轉時需要持續注意。"],
+  "current": ["Please use the current version of the form.", "請使用目前版本的表格。"],
+  "custom": ["The client ordered a custom design for the lobby.", "客戶為大廳訂製了一套設計。"],
+  "electronic": ["Keep an electronic copy of every signed document.", "每份已簽署的文件都要保留電子副本。"],
+  "estimated": ["The estimated completion date is next Friday.", "預估完成日期是下週五。"],
+  "experienced": ["An experienced technician inspected the equipment.", "一位有經驗的技術人員檢查了設備。"],
+  "frequent": ["Frequent updates help prevent security problems.", "頻繁更新有助於防止安全問題。"],
+  "functional": ["The new website is fully functional on mobile devices.", "新網站在行動裝置上功能完整。"],
+  "governmental": ["The company follows all governmental safety requirements.", "公司遵循所有政府的安全要求。"],
+  "immediate": ["Please report any immediate safety risk.", "請立即回報任何迫在眉睫的安全風險。"],
+  "individual": ["Each individual employee has a separate account.", "每位員工都有各自的帳號。"],
+  "manual": ["Read the manual before operating the machine.", "操作機器前請先閱讀手冊。"],
+  "national": ["The campaign reached a national audience.", "這項活動觸及全國的受眾。"],
+  "negative": ["The survey received negative feedback about the delay.", "調查收到對延誤的負面回饋。"],
+  "official": ["Wait for the official announcement before sharing the news.", "分享消息前請等待正式公告。"],
+  "optional": ["Attendance at the workshop is optional.", "這場工作坊可自由選擇是否參加。"],
+  "rapid": ["The company responded rapidly to the system failure.", "公司迅速回應系統故障。"],
+  "regional": ["The regional office coordinates local deliveries.", "區域辦公室協調當地的配送。"],
+  "relevant": ["Please include only relevant information in the report.", "請在報告中只納入相關資訊。"],
+  "required": ["A valid ID is required for registration.", "註冊時需要有效的身分證明文件。"],
+  "residential": ["The store is located in a quiet residential area.", "這家店位於安靜的住宅區。"],
+  "secure": ["Use a secure password to protect your account.", "請使用安全的密碼保護帳號。"],
+  "stable": ["The network connection remained stable during the call.", "通話期間網路連線保持穩定。"],
+  "successful": ["The event was successful because of careful planning.", "這場活動因周密規劃而成功。"],
+  "sufficient": ["We have sufficient time to finish the report.", "我們有足夠的時間完成報告。"],
+  "academic": ["She published an academic article on climate change.", "她發表了一篇關於氣候變遷的學術文章。"],
+  "appreciative": ["The team was appreciative of the client's patience.", "團隊很感謝客戶的耐心。"],
+  "civil": ["Please keep the discussion civil and respectful.", "請讓討論保持理性且彼此尊重。"],
+  "clinical": ["The medicine was tested in a clinical trial.", "這種藥物在臨床試驗中接受測試。"],
+  "decent": ["The hotel offered decent service at a fair price.", "這家飯店以合理價格提供不錯的服務。"],
+  "defensive": ["The player adopted a defensive position near the goal.", "那名球員在球門附近採取防守位置。"],
+  "dramatic": ["The new policy led to a dramatic decrease in waste.", "新政策使廢棄物大幅減少。"],
+  "ethical": ["Researchers must follow ethical guidelines.", "研究人員必須遵循倫理準則。"],
+  "experimental": ["The team tested an experimental feature with volunteers.", "團隊與志願者測試了一項實驗性功能。"],
+  "virtual": ["The class meets in a virtual room every Thursday.", "這門課每週四在虛擬教室上課。"],
+  "criminal": ["The police are investigating a criminal case.", "警方正在調查一宗刑事案件。"],
+  "electoral": ["The electoral commission announced the voting schedule.", "選舉委員會公布了投票時程。"],
+  "acoustic": ["The hall has acoustic panels to reduce echo.", "大廳設有吸音板以減少回音。"],
+  "touchscreen": ["The new smartphone has a very responsive touchscreen.", "這款新智慧型手機的觸控螢幕反應非常靈敏。"],
+  "future review": ["The budget plan has been approved, but it remains subject to future review.", "預算計畫已通過，但仍需在未來進行審查。"],
+  "final project": ["The final project will begin after funding is confirmed.", "資金確認後，這項最終專案就會開始。"],
+  "international documentation": ["The company prepared the international documentation for its overseas partners.", "公司為海外合作夥伴準備了國際文件。"]
+};
+
+// These pairs give ordinary nouns varied, grammatical contexts.  The second
+// sentence varies as well, so a daily study set does not repeat one frame.
+var QUALITY_NOUN_CONTEXTS = [
+  ["The report provides details about the {word}.", "報告提供了「{meaning}」的詳細資訊。"],
+  ["The team gathered information about the {word}.", "團隊蒐集了與「{meaning}」相關的資料。"],
+  ["The guide explains the role of the {word}.", "指南說明了「{meaning}」的作用。"],
+  ["The manager asked for an update on the {word}.", "經理要求取得「{meaning}」的最新進度。"],
+  ["The project included a review of the {word}.", "這個專案包含對「{meaning}」的檢視。"],
+  ["The team compared the available information about the {word}.", "團隊比較了與「{meaning}」有關的現有資料。"],
+  ["The briefing covered the {word} in detail.", "簡報詳細說明了「{meaning}」。"],
+  ["The study focused on the {word}.", "這項研究聚焦於「{meaning}」。"],
+  ["The staff kept a record of the {word}.", "員工保存了「{meaning}」的紀錄。"],
+  ["The plan takes the {word} into account.", "這份計畫已將「{meaning}」納入考量。"],
+  ["The team identified the {word} as an important factor.", "團隊將「{meaning}」視為重要因素。"],
+  ["The next step depends on the {word}.", "下一步取決於「{meaning}」。"]
+];
+var QUALITY_NOUN_FOLLOW_UPS = [
+  ["It helped the team make an informed decision.", "這有助於團隊做出周全的決定。"],
+  ["The information was shared with the project team.", "相關資訊已與專案團隊分享。"],
+  ["Everyone involved received the latest information.", "所有相關人員都收到最新資訊。"],
+  ["This reduced the chance of delays later on.", "這降低了日後發生延誤的可能性。"],
+  ["The result was recorded for future reference.", "結果已記錄下來，供日後參考。"],
+  ["The team will check it again before implementation.", "團隊會在執行前再次確認。"],
+  ["It will be reviewed again when new data is available.", "有新的資料時，會再次檢視。"],
+  ["This made the following discussion more productive.", "這讓後續討論更有效率。"],
+  ["The team noted it in the meeting summary.", "團隊將此記錄在會議摘要中。"],
+  ["It was included in the next action list.", "它已列入下一步行動清單。"],
+  ["The details will be checked with the relevant people.", "相關細節會與有關人員確認。"],
+  ["This information supports the next round of planning.", "這些資訊有助於下一輪規劃。"],
+  ["The responsible staff member was notified.", "已通知負責的員工。"],
+  ["It was added to the working record.", "它已加入工作紀錄。"],
+  ["The team compared it with earlier information.", "團隊將它與先前資料進行比較。"],
+  ["A short summary was sent to those involved.", "已將簡短摘要傳送給相關人員。"],
+  ["The project lead will monitor any changes.", "專案負責人會追蹤任何變更。"],
+  ["The team will use it when setting priorities.", "團隊設定優先順序時會使用這些資訊。"],
+  ["It was retained to support a later review.", "它被保留下來，以支援日後檢視。"],
+  ["The team confirmed the facts before moving forward.", "團隊在繼續前確認了事實。"],
+  ["This made the next action clearer.", "這讓下一步行動更明確。"],
+  ["The details were verified against the source.", "細節已與原始資料核對。"],
+  ["It was considered alongside the available evidence.", "它與現有證據一併納入考量。"],
+  ["A follow-up was scheduled where necessary.", "必要時已安排後續追蹤。"],
+  ["The outcome was communicated to the relevant team.", "結果已傳達給相關團隊。"],
+  ["This created a useful reference for future work.", "這為日後工作建立了有用的參考。"],
+  ["The team used it to decide what to do next.", "團隊運用它決定下一步該做什麼。"],
+  ["Any changes will be recorded in the project file.", "任何變更都會記錄在專案檔案中。"],
+  ["It was reviewed with the people responsible.", "已與負責人員一同檢視。"],
+  ["The main points were documented for later use.", "主要重點已記錄供日後使用。"],
+  ["This information will guide the next step.", "這些資訊會引導下一步。"],
+  ["The team raised it early to avoid surprises.", "團隊及早提出這個議題，以避免意外。"]
+];
+
+function qualityGenericNounExample(word, meaning){
+  var hash = qualityHash(word);
+  var context = QUALITY_NOUN_CONTEXTS[hash % QUALITY_NOUN_CONTEXTS.length];
+  var followUpHash = ((hash >>> 16) ^ Math.imul(hash, 2246822519)) >>> 0;
+  var followUp = QUALITY_NOUN_FOLLOW_UPS[followUpHash % QUALITY_NOUN_FOLLOW_UPS.length];
+  return [qualityFormat(context[0], word, meaning) + " " + followUp[0], qualityFormat(context[1], word, meaning) + followUp[1]];
+}
+
+var QUALITY_WORK_MODIFIER_CONTEXTS = {
+  annual: ["The {word} is prepared once a year to support long-term planning.", "這份「{meaning}」每年準備一次，以支援長期規劃。"],
+  monthly: ["The {word} is prepared at the end of each month.", "這份「{meaning}」會在每個月底準備完成。"],
+  quarterly: ["The {word} is reviewed at the close of every quarter.", "這份「{meaning}」會在每季結束時檢視。"],
+  revised: ["The {word} incorporates the latest changes from the team.", "這份「{meaning}」已納入團隊最新的變更。"],
+  detailed: ["The {word} provides the information needed for a decision.", "這份「{meaning}」提供作出決定所需的資訊。"],
+  official: ["The {word} was issued by the company.", "這份「{meaning}」由公司正式發布。"],
+  internal: ["The {word} is intended for employees and is not shared outside.", "這份「{meaning}」供內部員工使用，不對外分享。"],
+  external: ["The {word} is shared with clients and partner organizations.", "這份「{meaning}」會與客戶及合作機構分享。"],
+  current: ["The {word} reflects the situation at this time.", "這份「{meaning}」反映目前的情況。"],
+  future: ["The {word} will be considered when more information is available.", "有更多資訊時，會再考慮這份「{meaning}」。"],
+  regular: ["The {word} follows a fixed routine.", "這份「{meaning}」依固定週期進行。"],
+  urgent: ["The {word} requires immediate attention from the responsible team.", "這份「{meaning}」需要負責團隊立即處理。"],
+  important: ["The {word} plays a key role in daily operations.", "這份「{meaning}」在日常運作中扮演關鍵角色。"],
+  final: ["The {word} is ready for approval after all revisions.", "所有修訂完成後，這份「{meaning}」已可送審。"],
+  draft: ["The {word} can still be changed before approval.", "這份「{meaning}」在核准前仍可修改。"],
+  digital: ["The {word} can be accessed securely online.", "這份「{meaning}」可安全地在線上存取。"],
+  shared: ["Authorized team members can view the {word} together.", "獲授權的團隊成員可共同查看這份「{meaning}」。"],
+  available: ["The {word} can be used whenever staff need it.", "員工有需要時都可使用這份「{meaning}」。"],
+  scheduled: ["The {word} is planned for a specific date.", "這份「{meaning}」已安排在特定日期進行。"],
+  requested: ["The {word} was submitted by a department that needs it.", "這份「{meaning}」由有需要的部門提出。"],
+  updated: ["The {word} reflects the most recent information.", "這份「{meaning}」反映最新資訊。"],
+  required: ["The {word} must be completed before work can continue.", "工作繼續前必須完成這份「{meaning}」。"]
+};
+
+var QUALITY_ADVANCED_MODIFIER_CONTEXTS = {
+  strategic: ["The {word} supports the company's long-term goals.", "「{meaning}」有助於支持公司的長期目標。"],
+  regulatory: ["The company checked the {word} for compliance with applicable regulations.", "公司檢查「{meaning}」是否符合適用法規。"],
+  contractual: ["The {word} was reviewed before the contract was signed.", "合約簽署前已檢視「{meaning}」。"],
+  operational: ["The {word} was updated to improve daily operations.", "為改善日常營運，團隊更新了「{meaning}」。"],
+  financial: ["The finance team reviewed the {word} before setting the budget.", "財務團隊在編列預算前檢視了「{meaning}」。"],
+  corporate: ["The company shared the {word} with senior management.", "公司與高階管理層分享了「{meaning}」。"],
+  executive: ["Senior leaders considered the {word} at their monthly briefing.", "高階主管在每月簡報中研議了「{meaning}」。"],
+  confidential: ["Access to the {word} is limited to authorized staff.", "只有獲授權的員工可存取「{meaning}」。"],
+  international: ["The company prepared the {word} for its overseas partners.", "公司為海外合作夥伴準備了「{meaning}」。"],
+  competitive: ["The team used the {word} to strengthen its position in the market.", "團隊運用「{meaning}」來強化市場地位。"],
+  sustainable: ["The company adopted the {word} to reduce its environmental impact.", "公司採用「{meaning}」以降低對環境的影響。"],
+  comprehensive: ["The report contains the {word} across all major areas.", "報告涵蓋所有主要領域的「{meaning}」。"],
+  preliminary: ["The team used the {word} to plan the next steps.", "團隊運用「{meaning}」規劃下一步。"],
+  prospective: ["The organization used the {word} to assess future opportunities.", "組織運用「{meaning}」評估未來機會。"],
+  mandatory: ["Staff must complete the {word} before work can continue.", "工作繼續前，員工必須完成「{meaning}」。"],
+  alternative: ["The team considered the {word} after the original option failed.", "原方案不可行後，團隊考慮了「{meaning}」。"],
+  commercial: ["The company used the {word} in its business operations.", "公司在商業營運中使用「{meaning}」。"],
+  administrative: ["The office processed the {word} before the deadline.", "辦公室在截止日前處理了「{meaning}」。"],
+  analytical: ["The team used the {word} to understand the results.", "團隊運用「{meaning}」理解結果。"],
+  technological: ["The company invested in the {word} to improve its systems.", "公司投資「{meaning}」以改善系統。"],
+  organizational: ["The team revised the {word} after changing the company structure.", "公司結構調整後，團隊修訂了「{meaning}」。"],
+  legislative: ["The agency prepared the {word} to support a proposed law.", "該機關準備了「{meaning}」以支持擬議法案。"]
+};
+
+// A short, varied second sentence prevents modifier-based phrase sets from
+// reading like a single fill-in-the-blank template.
+var QUALITY_MODIFIER_FOLLOW_UPS = [
+  ["The team will review it again before the next step.", "團隊會在下一步前再次檢視。"],
+  ["It gives everyone a clear point of reference.", "它讓所有人都有清楚的參考依據。"],
+  ["The latest version is stored in the shared workspace.", "最新版本已存放在共用工作區。"],
+  ["This helps the team avoid unnecessary delays.", "這有助於團隊避免不必要的延誤。"],
+  ["Any changes must be recorded before implementation.", "執行前必須記錄所有變更。"],
+  ["The responsible manager will confirm the details.", "負責經理會確認細節。"],
+  ["It will be used as a reference for future decisions.", "它會作為日後決策的參考。"],
+  ["Staff can raise questions through the usual channel.", "員工可透過既有管道提出問題。"]
+];
+
+function qualityModifierExample(word, meaning, modifier, contexts){
+  var pair = contexts[modifier];
+  if(!pair) return null;
+  var followUp = QUALITY_MODIFIER_FOLLOW_UPS[qualityHash(word) % QUALITY_MODIFIER_FOLLOW_UPS.length];
+  return [
+    qualityFormat(pair[0], word, meaning) + " " + followUp[0],
+    qualityFormat(pair[1], word, meaning) + followUp[1]
+  ];
+}
+
+function qualityFindModifier(word, modifiers){
+  for(var index = 0; index < modifiers.length; index++){
+    if(word.indexOf(modifiers[index] + " ") === 0) return modifiers[index];
+  }
+  return "";
+}
+
+function applyExampleQualityPass(){
+  var workModifiers = (typeof WORK_PHRASE_MODIFIERS !== "undefined") ? WORK_PHRASE_MODIFIERS.map(function(item){ return item[0]; }) : [];
+  var advancedModifiers = ADVANCED_BUSINESS_MODIFIERS.map(function(item){ return item[0]; });
+  Object.keys(DECKS).forEach(function(level){
+    DECKS[level].forEach(function(card){
+      var word = String(card[0] || "").toLowerCase();
+      var replacement = QUALITY_WORD_EXAMPLES[word];
+      var workModifier = qualityFindModifier(word, workModifiers);
+      var advancedModifier = qualityFindModifier(word, advancedModifiers);
+      if(!replacement && workModifier && level === "intermediate") replacement = qualityModifierExample(card[0], card[1], workModifier, QUALITY_WORK_MODIFIER_CONTEXTS);
+      if(!replacement && advancedModifier && level === "advanced" && isQualityLegacyFillerExample(card[2])) replacement = qualityModifierExample(card[0], card[1], advancedModifier, QUALITY_ADVANCED_MODIFIER_CONTEXTS);
+      if(!replacement && isQualityLegacyFillerExample(card[2])) replacement = qualityGenericNounExample(card[0], card[1]);
+      if(replacement){
+        card[2] = replacement[0];
+        card[3] = replacement[1];
+      }
+    });
+  });
+}
+applyExampleQualityPass();
+
 DECKS.advanced.forEach(function(card){
   PARTS_OF_SPEECH[String(card[0]).trim().toLowerCase()] = card[4];
 });
