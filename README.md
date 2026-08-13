@@ -1,7 +1,4 @@
 # 單字複習網站：GitHub 上傳版
-
-這個資料夾可直接作為 GitHub repository 的根目錄使用。
-
 ## 檔案結構
 
 - `index.html`：網站介面、複習排程與本機學習紀錄。
@@ -22,18 +19,10 @@
 
 自訂或批次匯入單字時，原有 `英文|中文|例句|例句翻譯` 格式維持相容；若要自行指定詞性，可在第 5 欄加入，例如 `ambiguous|模稜兩可的|Her answer was ambiguous.|她的回答模稜兩可。|adj.`。
 
-## 上傳到 GitHub Pages
-
-1. 將本資料夾內的所有檔案與資料夾上傳到 GitHub repository 根目錄。
-2. 在 GitHub repository 的 **Settings → Pages**，選擇 `main` branch 與 `/(root)` 後儲存。
-3. 等待 GitHub Pages 發布後開啟網站連結。
-
-請保留完整 `data/` 資料夾；`index.html` 會在開啟時依序載入字庫與例句檔案。
-
 ## 複習規則
 
 - 答對：14 天後維護複習。
-- 答錯或使用提示／答案：當日可加強重練，後續依第 2、4、7、15、30 天進行鞏固；完成後回到 14 天維護。
+- 答錯或使用提示／答案：當日可加強重練，後續依第 2、4、7、15、30 天進行鞏固；完成後回到 14 天維護。 參考 The Ebbinghaus Forgetting Curve 的 Spaced Repetition 法，能大幅提升大腦的記憶效率。
 
 ## 口說 AI（可選）
 
