@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>字卡圖書館 · Word Card Library</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- 英文保留圓潤閱讀感；Noto Sans TC 專責繁體中文，避免不同裝置自動替補的字形不一致。 -->
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Noto+Sans+TC:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
     --bg: #F0F6FE;
@@ -31,9 +32,10 @@
     --rule-strong: #B4D0F6;
     --shadow: 0 10px 24px -12px rgba(46,99,209,0.3);
     --shadow-sm: 0 4px 10px -4px rgba(46,99,209,0.24);
-    --font-display: 'Fredoka', sans-serif;
-    --font-body: 'Nunito', sans-serif;
-    --font-mono: 'IBM Plex Mono', monospace;
+    --font-display: 'Fredoka', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+    --font-body: 'Nunito', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+    --font-ui: 'Noto Sans TC', 'Microsoft JhengHei', 'Nunito', sans-serif;
+    --font-mono: 'IBM Plex Mono', 'Noto Sans TC', 'Microsoft JhengHei', monospace;
   }
   *{box-sizing:border-box;}
   body{
@@ -47,7 +49,8 @@
     font-family:var(--font-body);
     -webkit-font-smoothing:antialiased;
   }
-  .app{max-width:920px;margin:0 auto;padding:26px 18px 80px;}
+  /* 讓頁尾在短頁面時自然貼近視窗底部，長頁面時則接在內容下方。 */
+  .app{max-width:920px;min-height:100vh;margin:0 auto;padding:26px 18px 36px;display:flex;flex-direction:column;}
 
   /* ---------- header ---------- */
   header.drawer{
@@ -75,7 +78,7 @@
   .mascot-info{flex:1; min-width:180px;}
   .mascot-name{font-family:var(--font-display); font-size:16px; color:var(--ink); display:flex; align-items:center; gap:8px; flex-wrap:wrap;}
   .mascot-stage-pill{
-    font-family:var(--font-mono); font-size:10.5px; background:var(--blue); color:#fff;
+    font-family:var(--font-ui); font-size:10.5px; background:var(--blue); color:#fff;
     padding:2px 10px; border-radius:999px; letter-spacing:.03em;
   }
   .mascot-progress-track{
@@ -136,7 +139,7 @@
   .lib-card-head{
     display:flex; justify-content:space-between; align-items:center;
     background:var(--panel-alt); padding:10px 18px;
-    font-family:var(--font-mono); font-size:11px; color:var(--blue-deep); letter-spacing:.04em; font-weight:600;
+    font-family:var(--font-ui); font-size:11px; color:var(--blue-deep); letter-spacing:.025em; font-weight:600;
   }
   .lib-card-body{padding:24px 22px 22px;}
   .prompt-kind{font-family:var(--font-mono); font-size:10.5px; text-transform:uppercase; letter-spacing:.12em; color:var(--amber); margin-bottom:10px; font-weight:600;}
@@ -147,7 +150,7 @@
     display:inline-block; min-width:90px; border-bottom:3px dashed var(--blue); text-align:center; font-weight:700;
   }
   .meaning-line{font-size:21px; margin-bottom:6px; font-weight:700; font-family:var(--font-display);}
-  .hint-line{font-family:var(--font-mono); font-size:13px; color:var(--ink-faint); letter-spacing:.18em;}
+  .hint-line{font-family:var(--font-ui); font-size:13px; color:var(--ink-faint); letter-spacing:.08em;}
 
   .help-row{display:flex; gap:8px; margin-top:12px; flex-wrap:wrap;}
   .help-row button{font-size:12.5px; padding:7px 14px;}
@@ -179,7 +182,7 @@
   }
   .feedback.correct .stamp{background:var(--mint);}
   .feedback.wrong .stamp{background:var(--coral);}
-  .queue-note{margin-top:14px; font-size:12px; color:var(--ink-faint); font-family:var(--font-mono);}
+  .queue-note{margin-top:14px; font-size:12px; color:var(--ink-faint); font-family:var(--font-ui);}
 
   /* ---------- word bank ---------- */
   .add-form{
@@ -187,7 +190,7 @@
     border-bottom:2px dashed var(--rule-strong); padding-bottom:20px;
   }
   .add-form .full{grid-column:1/-1;}
-  .add-form label{font-family:var(--font-mono); font-size:11px; color:var(--ink-soft); display:block; margin-bottom:4px; letter-spacing:.03em; font-weight:600;}
+  .add-form label{font-family:var(--font-ui); font-size:11px; color:var(--ink-soft); display:block; margin-bottom:4px; letter-spacing:.02em; font-weight:600;}
   .add-form input, .add-form textarea{
     width:100%; font-family:var(--font-body); font-size:14.5px; padding:9px 14px;
     border:2px solid var(--rule-strong); border-radius:14px; background:#fff; color:var(--ink);
@@ -195,7 +198,7 @@
   .add-form input:focus, .add-form textarea:focus{outline:none; border-color:var(--blue);}
   .add-form textarea{resize:vertical; min-height:44px;}
   .form-actions{grid-column:1/-1; display:flex; gap:10px; align-items:center; flex-wrap:wrap;}
-  .form-hint{font-size:11.5px; color:var(--ink-faint); font-family:var(--font-mono);}
+  .form-hint{font-size:11.5px; color:var(--ink-faint); font-family:var(--font-ui);}
 
   .word-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(168px,1fr)); gap:14px;}
   .flip-card{height:168px; perspective:1200px; cursor:pointer;}
@@ -217,9 +220,11 @@
   .status-filter-btn.active[data-status="new"]{background:var(--goose-border); color:var(--ink); border-color:var(--goose-border);}
   .status-filter-btn.active[data-status="known"]{background:var(--mint); color:#fff; border-color:var(--mint);}
   .fc-top-row{display:flex; justify-content:space-between; align-items:flex-start; gap:6px;}
-  .fc-word{font-family:var(--font-display); font-size:18px; color:var(--ink); font-weight:600; line-height:1.2; word-break:break-word;}
+  /* 左上角把難度與學習狀態視為同一組標籤，避免 NEW 漂在卡片內容區。 */
+  .fc-label-group{display:flex; align-items:center; gap:6px; min-width:0;}
+  .fc-word{font-family:var(--font-display); font-size:20px; color:var(--ink); font-weight:600; line-height:1.2; word-break:break-word;}
   .fc-bottom-row{display:flex; justify-content:space-between; align-items:center; gap:6px; flex-wrap:wrap;}
-  .fc-hint{font-size:10px; color:var(--ink-faint); text-align:center; font-family:var(--font-mono);}
+  .fc-hint{font-size:11px; color:var(--ink-soft); text-align:center; font-family:var(--font-ui); font-weight:600;}
   .fc-help{font-family:var(--font-mono); font-size:10px; color:var(--ink-faint);}
   .speak-btn{
     background:#fff; border:2px solid var(--rule-strong); border-radius:999px; width:28px; height:28px;
@@ -227,11 +232,11 @@
   }
   .speak-btn:hover{border-color:var(--blue); background:var(--blue); }
   .fc-del{
-    font-family:var(--font-mono); font-size:10px; color:var(--ink-faint); background:none; border:none;
+    font-family:var(--font-ui); font-size:10px; color:var(--ink-faint); background:none; border:none;
     cursor:pointer; text-decoration:underline; flex:none;
   }
   .fc-del:hover{color:var(--coral);}
-  .fc-zh{font-family:var(--font-display); font-size:15px; color:var(--ink); font-weight:600; margin:2px 0 4px;}
+  .fc-zh{font-family:var(--font-ui); font-size:15.5px; color:var(--ink); font-weight:700; margin:2px 0 4px;}
   .fc-example{font-size:11.5px; color:var(--ink-soft); line-height:1.5; font-weight:600;}
   .fc-example-zh{font-size:10.5px; color:var(--ink-faint); line-height:1.4; margin-top:3px;}
   .fc-example-empty{color:var(--ink-faint); font-weight:400;}
@@ -240,9 +245,11 @@
     font-family:var(--font-display); font-size:11px; padding:3px 11px; border-radius:999px;
     border:none; color:#fff; white-space:nowrap;
   }
+  /* 放在程度標籤旁時維持相近的視覺高度，並保留 NEW 的醒目黃色。 */
+  .fc-label-group .box-badge{font-size:10px; line-height:1.2; padding:3px 9px;}
   .box-badge.new{background:var(--yellow); color:var(--ink);}
   .box-badge.cycle{background:var(--mint);}
-  .due-date{font-family:var(--font-mono); font-size:10.5px; color:var(--ink-faint); white-space:nowrap;}
+  .due-date{font-family:var(--font-ui); font-size:10.5px; color:var(--ink-faint); white-space:nowrap; font-variant-numeric:tabular-nums;}
 
   .deck-grid-wrap{margin-bottom:24px;}
   .sync-row{margin-top:12px;}
@@ -269,32 +276,58 @@
   .deck-card.imported{background:var(--mint-soft); border-color:var(--mint);}
   .deck-card-top{display:flex; justify-content:space-between; align-items:baseline;}
   .deck-name{font-family:var(--font-display); font-size:15px; color:var(--ink);}
-  .deck-count{font-family:var(--font-mono); font-size:11px; color:var(--ink-faint);}
+  .deck-count{font-family:var(--font-ui); font-size:11px; color:var(--ink-faint); font-variant-numeric:tabular-nums;}
   .deck-desc{font-size:12.5px; color:var(--ink-soft); margin:0; line-height:1.5; flex:1; font-weight:600;}
-  .deck-done{font-family:var(--font-mono); font-size:12px; color:var(--mint);}
+  .deck-done{font-family:var(--font-ui); font-size:12px; color:var(--mint);}
 
-  .bank-list-head{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:10px;}
+  .bank-list-head{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px;}
+  .bank-controls{display:flex; align-items:center; gap:7px; flex-wrap:wrap;}
   .filter-row{display:flex; gap:6px; flex-wrap:wrap;}
   .filter-btn{
-    font-family:var(--font-mono); font-size:11.5px; background:#fff; color:var(--ink-soft);
+    font-family:var(--font-ui); font-size:11.5px; background:#fff; color:var(--ink-soft);
     border:2px solid var(--rule-strong); padding:5px 12px; border-radius:999px; cursor:pointer;
   }
   .filter-btn.active{background:var(--blue); color:#fff; border-color:var(--blue);}
+  /* 最常用的三種學習狀態改成單一分段控制，減少按鈕堆疊的感覺。 */
+  .bank-controls .status-row{gap:0; margin:0; overflow:hidden; border:2px solid var(--rule-strong); border-radius:999px; background:#fff;}
+  .bank-controls .status-row .filter-btn{border:0; border-radius:0; padding:6px 10px;}
+  .bank-controls .status-row .filter-btn + .filter-btn{border-left:1px solid var(--rule-strong);}
+  .bank-controls .status-row .filter-btn.active{background:var(--blue); color:#fff;}
+  .bank-controls .status-row .status-filter-btn.active[data-status="new"]{background:var(--goose-border); color:var(--ink);}
+  .bank-controls .status-row .status-filter-btn.active[data-status="known"]{background:var(--mint); color:#fff;}
+  /* 進階條件收進面板，保留所有篩選能力而不讓單字庫一開始就塞滿按鈕。 */
+  .filter-toggle{display:inline-flex; align-items:center; gap:6px;}
+  .filter-toggle.active{background:var(--blue-soft); color:var(--blue-deep); border-color:var(--blue);}
+  .filter-count{display:inline-grid; place-items:center; min-width:16px; height:16px; padding:0 4px; border-radius:999px; background:var(--blue); color:#fff; font-size:9px;}
+  .filter-summary{font-family:var(--font-ui); font-size:10.5px; color:var(--ink-faint); width:100%;}
+  .filter-panel{margin:0 0 16px; padding:13px 14px; border:1.5px solid var(--rule-strong); border-radius:17px; background:var(--panel-alt);}
+  .filter-panel[hidden]{display:none;}
+  .filter-section + .filter-section{margin-top:10px; padding-top:10px; border-top:1px solid var(--rule);}
+  .filter-section-label{display:block; margin-bottom:6px; font-family:var(--font-ui); font-size:10px; color:var(--ink-faint); font-weight:700; letter-spacing:.03em;}
+  .filter-panel .filter-btn{font-size:10.5px; padding:4px 9px;}
+  .filter-reset{margin-top:12px; color:var(--ink-faint); border-color:transparent; background:transparent; text-decoration:underline;}
+  .filter-reset:hover{color:var(--coral); border-color:transparent;}
+  /* 難度標籤採中性石灰色；醒目的黃色只保留給 NEW 的學習狀態。 */
   .cat-tag{
-    font-family:var(--font-mono); font-size:10px; color:var(--amber); border:1.5px solid var(--amber);
-    border-radius:999px; padding:2px 9px; white-space:nowrap; font-weight:600;
+    font-family:var(--font-ui); font-size:10px; color:#667085; border:1.5px solid #cbd3df; background:#f7f8fa;
+    border-radius:999px; padding:2px 9px; white-space:nowrap; font-weight:700;
   }
-  /* 詞性獨立於程度標籤：保留多詞性（例如 n.／v.），並可作為字庫篩選條件。 */
+  /* 詞性獨立於程度標籤：以小貼紙呈現多詞性（例如 n.／v.），也可作為字庫篩選條件。 */
   .pos-tag{
-    display:inline-block; font-family:var(--font-mono); font-size:10px; color:var(--blue-deep);
-    border:1.5px solid var(--blue); background:var(--blue-soft); border-radius:999px;
-    padding:2px 8px; white-space:nowrap; font-weight:600; margin-top:5px;
+    display:inline-flex; align-items:center; gap:4px; width:fit-content;
+    font-family:var(--font-mono); font-size:10px; color:var(--blue-deep);
+    border:1.5px solid #a9c4f1; background:#eaf2ff; border-radius:8px 11px 11px 8px;
+    box-shadow:1px 1.5px 0 #a9c4f1; padding:3px 8px; white-space:nowrap;
+    font-weight:700; letter-spacing:.01em; margin-top:6px;
   }
-  .pos-tag.pending{color:var(--ink-faint); border-color:var(--rule-strong); background:var(--panel-alt);}
+  /* 小星點讓詞性標籤更容易辨識，但不會搶走英文單字的視覺焦點。 */
+  .pos-tag::before{content:"✦"; color:var(--amber); font-size:8px; line-height:1;}
+  .pos-tag.pending{color:var(--ink-faint); border-color:var(--rule-strong); background:var(--panel-alt); box-shadow:1px 1.5px 0 var(--rule-strong);}
+  .pos-tag.pending::before{content:"?"; color:var(--ink-faint);}
 
   /* ---------- stats ---------- */
   .chart-block{margin-bottom:26px;}
-  .chart-title{font-family:var(--font-mono); font-size:12px; letter-spacing:.04em; color:var(--ink-soft); margin-bottom:10px; font-weight:600;}
+  .chart-title{font-family:var(--font-ui); font-size:12px; letter-spacing:.025em; color:var(--ink-soft); margin-bottom:10px; font-weight:600;}
   .bar-row{display:flex; align-items:flex-end; gap:5px; height:120px; border-bottom:2px solid var(--rule-strong); padding-bottom:2px;}
   .bar{
     flex:1; background:var(--yellow); border-radius:6px 6px 2px 2px; min-height:2px; position:relative;
@@ -336,7 +369,7 @@
   .speak-provider-row{display:grid; grid-template-columns:1fr 1fr; gap:10px;}
   .speak-provider-btn{background:#fff; border:2px solid var(--rule-strong); border-radius:14px; padding:11px; color:var(--ink-soft); cursor:pointer; font-family:var(--font-display); font-size:14px;}
   .speak-provider-btn.active{background:var(--blue); border-color:var(--blue); color:#fff;}
-  .speak-setup label{display:block; font-family:var(--font-mono); font-size:11px; color:var(--ink-soft); margin:12px 0 5px; font-weight:600;}
+  .speak-setup label{display:block; font-family:var(--font-ui); font-size:11px; color:var(--ink-soft); margin:12px 0 5px; font-weight:600;}
   .speak-setup input{width:100%; border:2px solid var(--rule-strong); border-radius:12px; padding:10px 12px; color:var(--ink); font:600 13px var(--font-body); background:#fff;}
   .speak-setup input:focus{outline:none; border-color:var(--blue);}
   .speak-setup-actions{display:flex; gap:8px; margin-top:14px; flex-wrap:wrap; align-items:center;}
@@ -369,7 +402,7 @@
     align-self:flex-start; background:var(--panel-alt); border:2px solid var(--rule-strong);
     border-bottom-left-radius:4px;
   }
-  .speak-bubble-role{font-family:var(--font-mono); font-size:10.5px; color:var(--blue-deep); font-weight:600; margin-bottom:4px;}
+  .speak-bubble-role{font-family:var(--font-ui); font-size:10.5px; color:var(--blue-deep); font-weight:600; margin-bottom:4px;}
   .speak-bubble-zh{font-size:12px; color:var(--ink-soft); margin-top:4px;}
   .speak-bubble-user{
     align-self:flex-end; background:var(--blue); color:#fff; border-bottom-right-radius:4px;
@@ -379,7 +412,7 @@
     align-self:flex-end; max-width:80%; background:var(--goose-soft); border:2px solid var(--goose-border);
     border-radius:14px; padding:9px 13px; font-size:12.5px; line-height:1.5;
   }
-  .speak-correction-label{font-family:var(--font-mono); font-size:10.5px; color:var(--amber); font-weight:600; margin-bottom:3px;}
+  .speak-correction-label{font-family:var(--font-ui); font-size:10.5px; color:var(--amber); font-weight:600; margin-bottom:3px;}
   .speak-correction-better{font-weight:700; color:var(--ink);}
   .speak-correction-note{color:var(--ink-soft); margin-top:3px;}
 
@@ -402,7 +435,28 @@
   .backup-actions{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-top:10px;}
   .backup-import-label{display:inline-flex; align-items:center; cursor:pointer;}
 
-  footer.note{text-align:center; margin-top:22px; font-size:11.5px; color:var(--ink-faint); font-family:var(--font-mono);}
+  /* 頁尾使用低彩度圓角資訊卡，讓儲存提示自然融入整體視覺。 */
+  footer.note{
+    display:grid; grid-template-columns:minmax(180px, .8fr) minmax(260px, 1.4fr); align-items:center; gap:18px;
+    margin:auto 4px 0; padding:15px 16px; border:1.5px solid rgba(156,180,222,.42); border-radius:18px;
+    background:linear-gradient(105deg, rgba(232,240,255,.8), rgba(255,248,223,.72));
+    box-shadow:0 8px 22px rgba(39,71,122,.055);
+    font-size:11px; line-height:1.65; color:var(--ink-faint); font-family:var(--font-ui);
+  }
+  .footer-brand{display:flex; align-items:center; gap:8px; min-width:0;}
+  .footer-seal{display:grid; place-items:center; width:24px; height:24px; border-radius:9px; background:var(--yellow-soft); color:var(--amber); font-size:12px; flex:none;}
+  .footer-title{display:block; color:var(--ink); font-family:var(--font-display); font-size:13px; font-weight:700; letter-spacing:.02em;}
+  .footer-tagline{display:block; margin-top:1px; font-size:9.5px; color:var(--ink-faint); letter-spacing:.025em;}
+  .footer-meta{text-align:right; min-width:0;}
+  /* 其他工具採用小型外連入口，不佔用主導覽列，也能維持學習工具群的一致感。 */
+  .footer-tool{
+    display:inline-flex; align-items:center; gap:5px; margin:0 0 7px auto; padding:3px 8px;
+    border:1.5px solid var(--rule-strong); border-radius:999px; background:#fff; color:var(--blue-deep);
+    text-decoration:none; font-size:10px; font-weight:700; transition:transform .15s ease, border-color .15s ease, background .15s ease;
+  }
+  .footer-tool:hover{transform:translateY(-1px); border-color:var(--blue); background:var(--blue-soft);}
+  .footer-copy{display:block; max-width:600px; margin-left:auto;}
+  .footer-copyright{display:block; margin-top:4px; color:var(--ink-faint); font-size:9.5px;}
 
   .save-error-banner{
     position:fixed; left:12px; right:12px; bottom:12px; z-index:200;
@@ -419,6 +473,9 @@
     .add-form{grid-template-columns:1fr;}
     .lib-card-body{padding:20px 16px;}
     .mascot-banner{padding:12px;}
+    footer.note{grid-template-columns:1fr; gap:10px;}
+    .footer-meta,.footer-copy{text-align:left; margin-left:0;}
+    .footer-tool{margin-left:0;}
   }
 
   /* ---------- daily flashcard study screen ---------- */
@@ -433,7 +490,7 @@
   .study-screen[hidden]{display:none;}
   .study-wrap{width:100%; max-width:480px;}
   .study-progress-row{display:flex; justify-content:space-between; align-items:center; gap:10px; margin-bottom:8px; flex-wrap:wrap;}
-  .study-progress-label{font-family:var(--font-mono); font-size:12px; color:var(--ink-soft); font-weight:600;}
+  .study-progress-label{font-family:var(--font-ui); font-size:12px; color:var(--ink-soft); font-weight:600; font-variant-numeric:tabular-nums;}
   .study-skip{font-size:11.5px; padding:6px 12px;}
 
   .study-card{height:280px; perspective:1400px; cursor:pointer; margin:14px 0 20px;}
@@ -450,7 +507,7 @@
   }
   .study-card-back{background:var(--yellow-soft); transform:rotateY(180deg); overflow:auto;}
   .study-word{font-family:var(--font-display); font-size:30px; color:var(--ink); font-weight:600;}
-  .study-flip-hint{font-family:var(--font-mono); font-size:11px; color:var(--ink-faint);}
+  .study-flip-hint{font-family:var(--font-ui); font-size:11.5px; color:var(--ink-soft); font-weight:600;}
   .study-zh{font-family:var(--font-display); font-size:22px; color:var(--ink); font-weight:600;}
   .study-example{font-size:14px; color:var(--ink-soft); line-height:1.6; font-weight:600;}
   .study-example-zh{font-size:12.5px; color:var(--ink-faint); line-height:1.5;}
@@ -491,7 +548,21 @@
   <section class="panel" id="panel-speak" hidden></section>
   <section class="panel" id="panel-stats" hidden></section>
 
-  <footer class="note">資料只儲存在你自己的帳號下，僅你可見（personal storage）。</footer>
+  <!-- 頁尾保留品牌、工具連結與版權資訊；程式只更新 .footer-copy 的儲存提示。 -->
+  <footer class="note" aria-live="polite">
+    <div class="footer-brand">
+      <span class="footer-seal" aria-hidden="true">✦</span>
+      <div>
+        <span class="footer-title">Word Card Library</span>
+        <span class="footer-tagline">study steadily · remember longer</span>
+      </div>
+    </div>
+    <div class="footer-meta">
+      <a class="footer-tool" href="https://jhen-1993.github.io/CramGoose/" target="_blank" rel="noopener noreferrer" title="開啟溫書鵝讀書計畫工具">🦢 溫書鵝 · Study Companion <span aria-hidden="true">↗</span></a>
+      <span class="footer-copy">資料只儲存在你自己的帳號下，僅你可見（personal storage）。</span>
+      <span class="footer-copyright">© 2026 Jhen-1993 · Personal vocabulary project</span>
+    </div>
+  </footer>
 </div>
 
 <!-- 先載入所有字庫與集中例句，再由 decks.js 合併、去重並套用例句；主程式最後才讀取 DECKS。 -->
@@ -532,6 +603,7 @@
   var bankFilter = "all";
   var bankStatusFilter = "all"; // all | new | known
   var bankPosFilter = "all"; // all | n. | v. | adj. | adv. | prep. | conj. | pron. | quant. | phr.v. | idiom
+  var bankFiltersOpen = false; // 控制詞性與難度的進階篩選面板，避免首頁過多按鈕。
   var bankOrderIds = null; // custom shuffle order for the word-bank flip cards
   var session = null;   // { queue: [...ids], pos, correctCount, wrongCount, currentWord }
   var studyWords = [];  // today's flashcard preview queue, shown before the main app
@@ -1168,6 +1240,28 @@
       return '<button class="filter-btn' + active + '" data-pos="' + option.key + '">' + option.label + '</button>';
     }).join("");
 
+    // 將正在使用的進階條件濃縮成一行，面板收起時仍能清楚知道目前篩了什麼。
+    var activeFilterLabels = [];
+    if(bankStatusFilter !== "all"){
+      var activeStatus = statusOptions.filter(function(option){ return option.key === bankStatusFilter; })[0];
+      if(activeStatus) activeFilterLabels.push(activeStatus.label);
+    }
+    if(bankPosFilter !== "all"){
+      var activePos = posOptions.filter(function(option){ return option.key === bankPosFilter; })[0];
+      if(activePos) activeFilterLabels.push(activePos.label);
+    }
+    if(bankFilter !== "all") activeFilterLabels.push(DECK_META[bankFilter].label);
+    var activeFilterCount = activeFilterLabels.length;
+    var filterSummary = activeFilterCount
+      ? '<span class="filter-summary">目前篩選：' + activeFilterLabels.join(' · ') + '</span>'
+      : '';
+    var filterPanel =
+      '<div class="filter-panel"' + (bankFiltersOpen ? '' : ' hidden') + '>' +
+        '<div class="filter-section"><span class="filter-section-label">詞性</span><div class="filter-row">' + posBtns + '</div></div>' +
+        '<div class="filter-section"><span class="filter-section-label">分類</span><div class="filter-row">' + filterBtns + '</div></div>' +
+        (activeFilterCount ? '<button class="filter-btn filter-reset" id="filter-reset-btn">清除所有篩選</button>' : '') +
+      '</div>';
+
     var visibleWords = data.words.filter(function(w){
       var catOk = bankFilter === "all" || (w.category || "custom") === bankFilter;
       var statusOk = bankStatusFilter === "all" ||
@@ -1196,6 +1290,8 @@
         var posLabel = getPartOfSpeech(w.en, w.pos);
         var posClass = posLabel === "未標註" ? " pending" : "";
         var helpBadge = w.helpCount ? '<span class="fc-help">💡×' + w.helpCount + '</span>' : "";
+        /* 只有真的使用過提示時才建立頁尾，避免空白區塊佔用字卡空間。 */
+        var frontFooter = helpBadge ? '<div class="fc-bottom-row">' + helpBadge + '</div>' : "";
         var backExample = w.example
           ? '<div class="fc-example">' + highlightWord(w.example, w.en) + '</div>' +
             (w.exampleZh ? '<div class="fc-example-zh">' + escapeHtml(w.exampleZh) + '</div>' : "")
@@ -1204,15 +1300,15 @@
           '<div class="flip-card-inner">' +
             '<div class="flip-card-front">' +
               '<div class="fc-top-row">' +
-                '<span class="cat-tag">' + catLabel + '</span>' +
+                '<div class="fc-label-group">' +
+                  '<span class="cat-tag">' + catLabel + '</span>' +
+                  '<span class="box-badge ' + badgeClass + '">' + badgeText + '</span>' +
+                '</div>' +
                 '<button class="speak-btn" data-speak="' + escapeHtml(w.en) + '" title="播放發音">🔊</button>' +
               '</div>' +
               '<div class="fc-word">' + escapeHtml(w.en) + '</div>' +
               '<span class="pos-tag' + posClass + '">' + escapeHtml(posLabel) + '</span>' +
-              '<div class="fc-bottom-row">' +
-                '<span class="box-badge ' + badgeClass + '">' + badgeText + '</span>' +
-                helpBadge +
-              '</div>' +
+              frontFooter +
               '<div class="fc-hint">點卡片看意思</div>' +
             '</div>' +
             '<div class="flip-card-back">' +
@@ -1245,10 +1341,14 @@
       '</form>' +
       '<div class="bank-list-head">' +
         '<div class="chart-title">我的單字卡（' + visibleWords.length + ' / ' + data.words.length + '）· 點卡片翻面、按 🔊 聽發音</div>' +
-        '<div class="filter-row status-row">' + statusBtns + '</div>' +
-        '<div class="filter-row">' + posBtns + '</div>' +
-        '<div class="filter-row">' + filterBtns + '<button class="filter-btn" id="shuffle-btn">🔀 打亂順序</button></div>' +
+        '<div class="bank-controls">' +
+          '<div class="filter-row status-row">' + statusBtns + '</div>' +
+          '<button class="filter-btn filter-toggle' + (bankFiltersOpen ? ' active' : '') + '" id="filter-toggle-btn">篩選' + (activeFilterCount ? '<span class="filter-count">' + activeFilterCount + '</span>' : '') + '</button>' +
+          '<button class="filter-btn" id="shuffle-btn" title="打亂卡片順序">🔀</button>' +
+        '</div>' +
+        filterSummary +
       '</div>' +
+      filterPanel +
       '<div class="word-grid">' + (cards || '<p class="form-hint">這個條件下沒有符合的單字。</p>') + '</div>';
 
     var shuffleBtn = document.getElementById("shuffle-btn");
@@ -1257,6 +1357,26 @@
         var ids = orderedWords.map(function(w){ return w.id; });
         shuffle(ids);
         bankOrderIds = ids;
+        renderBank();
+      };
+    }
+
+    // 展開或收起詞性與分類，不改變已選條件；使用者可放心查看其他篩選項目。
+    var filterToggleBtn = document.getElementById("filter-toggle-btn");
+    if(filterToggleBtn){
+      filterToggleBtn.onclick = function(){
+        bankFiltersOpen = !bankFiltersOpen;
+        renderBank();
+      };
+    }
+
+    // 一鍵回到完整單字庫，同時保留目前的卡片排序，避免不必要的畫面跳動。
+    var filterResetBtn = document.getElementById("filter-reset-btn");
+    if(filterResetBtn){
+      filterResetBtn.onclick = function(){
+        bankFilter = "all";
+        bankStatusFilter = "all";
+        bankPosFilter = "all";
         renderBank();
       };
     }
@@ -2207,14 +2327,14 @@
     document.getElementById("study-screen").hidden = true;
     document.getElementById("main-app").hidden = false;
     renderAll();
-    var footer = document.querySelector("footer.note");
-    if(footer){
+    var footerCopy = document.querySelector("footer.note .footer-copy");
+    if(footerCopy){
       if(storageBackend === "local"){
-        footer.innerHTML = "資料儲存在這個瀏覽器裡（localStorage），只有這台裝置、這個瀏覽器看得到，換裝置或清除瀏覽器資料會遺失，建議定期到「學習紀錄」分頁匯出備份。";
+        footerCopy.textContent = "資料儲存在這個瀏覽器裡（localStorage），只有這台裝置、這個瀏覽器看得到，換裝置或清除瀏覽器資料會遺失，建議定期到「學習紀錄」分頁匯出備份。";
       } else if(storageBackend === "memory"){
-        footer.innerHTML = "⚠️ 目前偵測不到任何可用的儲存功能，這次的學習進度只會保留在這個分頁裡，重新整理或關閉分頁就會消失。強烈建議到「學習紀錄」分頁匯出備份檔。";
+        footerCopy.textContent = "⚠️ 目前偵測不到任何可用的儲存功能，這次的學習進度只會保留在這個分頁裡，重新整理或關閉分頁就會消失。強烈建議到「學習紀錄」分頁匯出備份檔。";
       } else {
-        footer.innerHTML = "資料只儲存在你自己的帳號下，僅你可見（personal storage）。";
+        footerCopy.textContent = "資料只儲存在你自己的帳號下，僅你可見（personal storage）。";
       }
     }
   }
