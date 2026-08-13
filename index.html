@@ -832,6 +832,21 @@
   }
 
   // 依可用性載入資料；雲端失敗時自動改用本機或記憶體暫存。
+  // Add newly supplied Chinese example translations to cards that were saved
+  // before this version, without touching their review dates or answer history.
+  data.words.forEach(function(word){
+    if(String(word.exampleZh || "").trim()) return;
+    var deck = DECKS[word.category];
+    if(!deck) return;
+    var target = String(word.en || "").toLowerCase();
+    var match = deck.find(function(card){
+      return String(card[0] || "").toLowerCase() === target;
+    });
+    if(match && String(match[3] || "").trim()){
+      word.exampleZh = match[3];
+    }
+  });
+
   async function loadData(){
     if(hasRealStorage()){
       storageBackend = "claude";
