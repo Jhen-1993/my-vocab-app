@@ -797,7 +797,7 @@
     if(!Array.isArray(data.reviewLog)) data.reviewLog = [];
     if(!data.importedDecks || typeof data.importedDecks !== "object") data.importedDecks = {};
     if(typeof data.studyCompletedDate !== "string") data.studyCompletedDate = "";
-    // Correct an earlier spelling error in locally saved cards without touching review data.
+    // Correct earlier card data without touching review dates or answer history.
     data.words.forEach(function(word){
       if(word.en === "custommade"){
         word.en = "custom-made";
@@ -813,51 +813,35 @@
         word.pos = "adj.";
       }
     });
-    // Correct an earlier spelling error in locally saved cards without touching review data.
+    // Update only generated filler examples and missing Chinese translations.
+    // User-created cards keep their wording; all review scheduling fields remain intact.
     data.words.forEach(function(word){
-      if(word.en === "custommade"){
-        word.en = "custom-made";
-        word.zh = "訂製的";
-        word.example = "He wears a custom-made suit for important meetings.";
-        word.exampleZh = "他重要會議都穿訂製西裝。";
-        word.pos = "adj.";
+      var deck = DECKS[word.category];
+      if(!deck) return;
+      var target = String(word.en || "").toLowerCase();
+      var match = deck.find(function(card){
+        return String(card[0] || "").toLowerCase() === target;
+      });
+      if(!match) return;
+      if(!String(word.exampleZh || "").trim() && String(match[3] || "").trim()){
+        word.exampleZh = match[3];
       }
-      if(word.en === "automatic"){
-        word.zh = "自動的";
-        word.example = "The doors have an automatic sensor.";
-        word.exampleZh = "這扇門有自動感應器。";
-        word.pos = "adj.";
+      var isLegacyFillerExample = (typeof isQualityLegacyFillerExample === "function")
+        ? isQualityLegacyFillerExample(word.example)
+        : /^(We discussed the .+ in today's meeting\.|We discussed the .+ during class\.|We discussed the .+ during today's lesson\.|We discussed the topic of .+ in class today\.|We learned how to .+ during today's lesson\.|The lesson included an? .+ example\.|The report includes information about the .+\.)$/.test(String(word.example || ""));
+      if(word.category !== "custom" && isLegacyFillerExample && match[2] !== word.example){
+        word.zh = match[1];
+        word.example = match[2];
+        word.exampleZh = match[3];
+        word.pos = match[4] || word.pos;
+      }
+      if(target.endsWith(" documentation") && String(word.zh || "").endsWith("\u6587\u4ef6\u5316")){
+        word.zh = match[1];
       }
     });
   }
 
   // 依可用性載入資料；雲端失敗時自動改用本機或記憶體暫存。
-  // Add newly supplied Chinese example translations to cards that were saved
-  // before this version, without touching their review dates or answer history.
-  data.words.forEach(function(word){
-    var needsExampleZh = !String(word.exampleZh || "").trim();
-    var deck = DECKS[word.category];
-    if(!deck) return;
-    var target = String(word.en || "").toLowerCase();
-    var match = deck.find(function(card){
-      return String(card[0] || "").toLowerCase() === target;
-    });
-    if(needsExampleZh && match && String(match[3] || "").trim()){
-      word.exampleZh = match[3];
-    }
-    // Replace only the earlier generated work-phrase template. User-created cards
-    // and all scheduling fields remain untouched.
-    var isLegacyFillerExample = /^(We discussed the .+ in today's meeting\.|We discussed the .+ during class\.|We discussed the .+ during today's lesson\.|We discussed the topic of .+ in class today\.|We learned how to .+ during today's lesson\.|The lesson included an? .+ example\.|The report includes information about the .+\.)$/.test(String(word.example || ""));
-    if(word.category !== "custom" && isLegacyFillerExample && match && match[2] !== word.example){
-      word.zh = match[1];
-      word.example = match[2];
-      word.exampleZh = match[3];
-      word.pos = match[4] || word.pos;
-    }
-    if(target.endsWith(" documentation") && match && String(word.zh || "").endsWith("\u6587\u4ef6\u5316")){
-      word.zh = match[1];
-    }
-  });
 
   async function loadData(){
     if(hasRealStorage()){
