@@ -979,7 +979,11 @@
       // resetting their review history or touching their own custom cards.
       var hasCuratedVariants = !!EXAMPLE_VARIANTS[target];
       var hasCuratedExampleUpdate = !!CURATED_EXAMPLE_UPDATES[target];
-      if(word.category !== "custom" && (isLegacyFillerExample || hasCuratedVariants || hasCuratedExampleUpdate) && match[2] !== word.example){
+      // A curated correction may change only the Chinese meaning or part of
+      // speech (for example, some: 「若干」→「一些」).  Apply it even when
+      // the English example itself is unchanged; review scheduling is kept.
+      var needsCuratedRefresh = isLegacyFillerExample || hasCuratedVariants || hasCuratedExampleUpdate;
+      if(word.category !== "custom" && needsCuratedRefresh && (match[2] !== word.example || hasCuratedExampleUpdate)){
         word.zh = match[1];
         word.example = match[2];
         word.exampleZh = match[3];
