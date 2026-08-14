@@ -562,8 +562,10 @@
     box-shadow:var(--shadow); padding:26px 24px; display:flex; flex-direction:column;
     align-items:center; justify-content:center; text-align:center; gap:12px;
   }
-  /* 預習卡一次只呈現主例句；其他備用句留給後續複習隨機使用，避免卡片內捲動。 */
+  /* 多義字在預習卡完整並列；卡片會依內容加高，捲動只作極長內容的保險。 */
   .study-card-back{background:var(--yellow-soft); transform:rotateY(180deg); overflow:hidden;}
+  .study-card.multi-sense-study-card{height:var(--study-sense-card-height,360px);}
+  .study-card.multi-sense-study-card .study-card-back{justify-content:flex-start; overflow:auto; padding:20px 22px;}
   .study-word{font-family:var(--font-display); font-size:30px; color:var(--ink); font-weight:600;}
   .study-flip-hint{font-family:var(--font-ui); font-size:11.5px; color:var(--ink-soft); font-weight:600;}
   .study-zh{font-family:var(--font-display); font-size:22px; color:var(--ink); font-weight:600;}
@@ -593,6 +595,8 @@
     .study-progress-label{padding-top:5px;}
     .study-skip{font-size:11px; padding:6px 9px;}
     .study-card{height:262px; margin:12px 0 16px;}
+    .study-card.multi-sense-study-card{height:var(--study-sense-card-height,340px);}
+    .study-card.multi-sense-study-card .study-card-back{padding:18px 15px; gap:9px;}
     .study-card-front,.study-card-back{padding:20px 16px; gap:10px;}
     .study-word{font-size:28px;}
     .study-zh{font-size:20px;}
@@ -652,8 +656,15 @@
 <script src="data/real-word-extension.js"></script>
 <!-- Free, attribution-tracked bilingual examples that replace eligible old template sentences. -->
 <script src="data/tatoeba-examples.js?v=20260814-tatoeba-v1"></script>
+<!-- 分批補寫的自然例句；須在 quality gate 執行前載入。 -->
+<script src="data/natural-examples-batch-01.js?v=20260814-natural-b01"></script>
+<script src="data/natural-examples-batch-02.js?v=20260814-natural-b02"></script>
+<script src="data/natural-examples-batch-03.js?v=20260814-natural-b03"></script>
+<script src="data/natural-examples-batch-04.js?v=20260814-natural-b04"></script>
+<!-- 從使用者保留的初階備份還原 489 組非模板例句。 -->
+<script src="data/natural-examples-beginner-restored.js?v=20260814-beginner-restored-v1"></script>
 <!-- 版本參數可避免 GitHub Pages 或瀏覽器繼續使用舊的例句資料快取。 -->
-<script src="data/advanced.js?v=20260814-context-v45"></script>
+<script src="data/advanced.js?v=20260814-quality-gate-v48"></script>
 <script>
 (function(){
   "use strict";
@@ -790,9 +801,9 @@
     var exampleClass = isStudy ? "study-example" : "fc-example";
     var posClass = isStudy ? "study-example-pos" : "fc-example-zh";
     var zhClass = isStudy ? "study-example-zh" : "fc-example-zh";
-    // 預習字卡只顯示主例句，讓單字、中文意思與一句自然英文保持清楚。
-    // 其他備用句仍保留在資料中，複習題會在之後的循環隨機選用它們。
-    var visibleExamples = isStudy ? examples.slice(0, 1) : examples;
+    // 不同義項必須在卡片上並列；同義的備用句只由 getReviewExamples
+    // 加入後續循環複習，不會使預習卡重複堆疊相同意思。
+    var visibleExamples = examples;
     return visibleExamples.map(function(item){
       return '<div class="' + groupClass + '">' +
         (item.sense ? '<div class="' + senseClass + '">' + escapeHtml(item.sense) + '</div>' : "") +
@@ -804,7 +815,9 @@
   }
   // Vocabulary is maintained in data/beginner.js, data/intermediate.js,
   // data/real-word-extension.js, and data/advanced.js.
-  // Current total: beginner (2204) + intermediate (3120) + advanced (1676) = 7000 words.
+  // The displayed count is calculated from the active decks below.  Some
+  // imported expansion cards are intentionally held back by the quality gate
+  // until they have a natural example sentence, so never hard-code this total.
   // A correctly recalled word is maintained every two weeks.  An incorrect
   // answer starts the recovery sequence: day 1 -> 2 -> 4 -> 7 -> 15 -> 30.
   // Values are gaps between reviews after the initial incorrect answer.
@@ -2738,6 +2751,12 @@
     var catLabel = (DECK_META[w.category] || DECK_META.custom).label;
     var posLabel = getPartOfSpeech(w.en, w.pos);
     var posClass = posLabel === "未標註" ? " pending" : "";
+    var studyExamples = getCardExamples(w);
+    var hasMultipleSenses = studyExamples.length > 1;
+    var studyCardClass = hasMultipleSenses ? " multi-sense-study-card" : "";
+    var studyCardStyle = hasMultipleSenses
+      ? ' style="--study-sense-card-height:' + Math.max(340, getMultiSenseCardHeight(studyExamples) + 42) + 'px"'
+      : "";
     var backContent = renderCardExamples(w, "study");
 
     screen.innerHTML =
@@ -2747,7 +2766,7 @@
           '<button class="ghost study-skip" id="study-skip">跳過，直接複習 →</button>' +
         '</div>' +
         '<div class="mascot-progress-track"><div class="mascot-progress-fill" style="width:' + pct + '%"></div></div>' +
-        '<div class="study-card' + (studyFlipped ? ' flipped' : '') + '" id="study-card">' +
+        '<div class="study-card' + studyCardClass + (studyFlipped ? ' flipped' : '') + '" id="study-card"' + studyCardStyle + '>' +
           '<div class="study-card-inner">' +
             '<div class="study-card-front">' +
               '<span class="cat-tag">' + catLabel + '</span>' +
