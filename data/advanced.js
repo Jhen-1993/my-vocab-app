@@ -8255,11 +8255,34 @@ Object.keys(DECKS).forEach(function(level){
   });
 });
 
+// Restore the total to 7,000 with actual single-word cards, not automatically
+// combined adjective+noun strings.  The data file is deliberately separate so
+// future vocabulary updates do not require editing this quality-check logic.
+var REAL_WORD_EXTENSION_CONTEXTS = {};
+if(typeof REAL_WORD_EXTENSION !== "undefined" && Array.isArray(REAL_WORD_EXTENSION)){
+  var realWordExtensionKnown = {};
+  Object.keys(DECKS).forEach(function(level){
+    DECKS[level].forEach(function(card){
+      realWordExtensionKnown[String(card[0] || "").trim().toLowerCase()] = true;
+    });
+  });
+  REAL_WORD_EXTENSION.forEach(function(entry){
+    var word = String(entry[0] || "").trim();
+    var normalizedWord = word.toLowerCase();
+    if(word && !realWordExtensionKnown[normalizedWord]){
+      realWordExtensionKnown[normalizedWord] = true;
+      REAL_WORD_EXTENSION_CONTEXTS[normalizedWord] = entry[3] || "thing";
+      // The marker is replaced by a context-appropriate example below.
+      DECKS.advanced.push([word, entry[1], "__REAL_WORD_EXTENSION__", "", entry[2] || "n."]);
+    }
+  });
+}
+
 // Example-quality pass ------------------------------------------------------
 // Earlier expansion batches used a few repeated filler sentences (for example,
 // "We discussed ... during class").  This pass replaces only those generated
 // sentences.  It leaves hand-written examples and all card scheduling data alone.
-var EXAMPLE_QUALITY_VERSION = "2026-08-14-context-v3";
+var EXAMPLE_QUALITY_VERSION = "2026-08-14-context-v7";
 var QUALITY_LEGACY_EXAMPLE_PATTERNS = [
   /^We discussed the .+ during class\.$/,
   /^We discussed the .+ during today's lesson\.$/,
@@ -8283,8 +8306,38 @@ var QUALITY_LEGACY_EXAMPLE_PATTERNS = [
   /^The .+ was kept in a safe place\.?/
 ];
 
+// These longer frames came from an older automatic batch.  They read like a
+// project report rather than an example a learner would naturally hear or use.
+// Keep them in the detector even when a second generic follow-up sentence was
+// attached, so saved cards are refreshed without touching their review dates.
+var QUALITY_MODULAR_EXAMPLE_PATTERNS = [
+  /^The project included a review of the .+\.?/,
+  /^The team compared the available information about the .+\.?/,
+  /^The guide explains the role of the .+\.?/,
+  /^The report provides details about the .+\.?/,
+  /^The manager asked for an update on the .+\.?/,
+  /^The staff kept a record of the .+\.?/,
+  /^The study focused on the .+\.?/,
+  /^The team identified the .+ as an important factor\.?/,
+  /^The next step depends on the .+\.?/,
+  /^The briefing covered the .+ in detail\.?/,
+  /^The plan takes the .+ into account\.?/,
+  /^Students learned about .+ in class\.?/,
+  /^The lesson used .+ to explain the topic\.?/,
+  /^The textbook gives a clear example of .+\.?/,
+  /^The .+ follows a fixed routine\.?/,
+  /^The .+ requires immediate attention from the responsible team\.?/,
+  /^The .+ plays a key role in daily operations\.?/,
+  /^The .+ is ready for approval after all revisions\.?/,
+  /^The .+ can still be changed before approval\.?/,
+  /^The .+ can be accessed securely online\.?/,
+  /^Authorized team members can view the .+ together\.?/
+];
+
 function isQualityLegacyFillerExample(example){
-  return QUALITY_LEGACY_EXAMPLE_PATTERNS.some(function(pattern){ return pattern.test(String(example || "")); });
+  var text = String(example || "");
+  return QUALITY_LEGACY_EXAMPLE_PATTERNS.some(function(pattern){ return pattern.test(text); }) ||
+    QUALITY_MODULAR_EXAMPLE_PATTERNS.some(function(pattern){ return pattern.test(text); });
 }
 
 function qualityHash(value){
@@ -8316,9 +8369,35 @@ var QUALITY_WORD_MEANINGS = {
 };
 var QUALITY_WORD_POS = {
   "cognitive": "adj.",
-  "spring": "n.／v."
+  "spring": "n.／v.",
+  "sandpaper": "n.／v."
 };
 var QUALITY_WORD_EXAMPLES = {
+  "absence": ["Her absence from the meeting was noticed by everyone.", "大家都注意到她沒有出席會議。"],
+  "atom": ["An atom is the smallest unit of a chemical element.", "原子是化學元素的最小單位。"],
+  "census": ["The census revealed a declining birth rate.", "人口普查結果顯示出生率正在下降。"],
+  "ideology": ["The politician's ideology greatly influenced his new policies.", "那位政治家的意識形態大大影響了他的新政策。"],
+  "melody": ["The melody of this song is very beautiful.", "這首歌的旋律很美。"],
+  "sandpaper": ["Take a piece of sandpaper and round off the edges.", "拿一張砂紙把邊緣磨圓。"],
+  "blood": ["The nurse checked his blood pressure before the exam.", "護理師在檢查前量了他的血壓。"],
+  "ear": ["She whispered the answer in my ear.", "她在我耳邊悄聲說出答案。"],
+  "hearing": ["His hearing improved after the treatment.", "接受治療後，他的聽力改善了。"],
+  "illness": ["She stayed home because of her illness.", "她因為生病而待在家裡。"],
+  "index": ["Use the index to find a topic quickly.", "利用索引可以快速找到主題。"],
+  "antibiotic": ["The doctor prescribed an antibiotic for the infection.", "醫生為這次感染開了抗生素。"],
+  "coaching": ["Good coaching helped the team improve.", "良好的指導幫助團隊進步。"],
+  "first aid": ["She learned first aid at school.", "她在學校學過急救。"],
+  "eardrum": ["The loud noise damaged his eardrum.", "巨大的噪音傷害了他的耳膜。"],
+  "sports center": ["We met at the sports center after class.", "下課後我們在運動中心碰面。"],
+  "disability": ["Her disability does not stop her from working.", "她的身心障礙並沒有阻止她工作。"],
+  "vest": ["He wore a vest because the morning was cool.", "早晨有點涼，所以他穿了背心。"],
+  "treatment": ["The treatment relieved her pain.", "這項治療減輕了她的疼痛。"],
+  "hormone": ["This hormone helps control blood sugar.", "這種荷爾蒙有助於控制血糖。"],
+  "pathogen": ["The pathogen can spread through contaminated water.", "這種病原體可透過受污染的水傳播。"],
+  "physician": ["The physician explained the treatment options clearly.", "醫師清楚說明了治療選項。"],
+  "desktop": ["She saved the file on her desktop.", "她把檔案存到桌面上。"],
+  "cholesterol": ["Regular exercise can help lower cholesterol.", "規律運動有助於降低膽固醇。"],
+  "fracture": ["The X-ray revealed a fracture in his wrist.", "X 光片顯示他的手腕有骨折。"],
   "requested service": ["We completed the requested service on time.", "我們按時完成了所要求的服務。"],
   "glass": ["Please handle the glass carefully because it may break.", "請小心拿取這個玻璃杯，因為它可能會破。"],
   "plate": ["Please place the plate on the table.", "請把盤子放在桌上。"],
@@ -8473,6 +8552,76 @@ var QUALITY_WORD_EXAMPLES = {
   "final project": ["The final project will begin after funding is confirmed.", "資金確認後，這項最終專案就會開始。"],
   "international documentation": ["The company prepared the international documentation for its overseas partners.", "公司為海外合作夥伴準備了國際文件。"]
 };
+
+// No generic classroom, report, project, or record-keeping frames below.
+// Each of these cards was found by the modular-example audit and replaced with
+// a sentence that gives the word a concrete, learnable context.
+Object.assign(QUALITY_WORD_EXAMPLES, {
+  "geography": ["Geography helps us understand how people and places are connected.", "地理學幫助我們了解人與地方如何連結。"],
+  "haircut": ["I got a haircut before the wedding.", "我在婚禮前去理了頭髮。"],
+  "word": ["I looked up the word in a dictionary.", "我在字典裡查了這個單字。"],
+  "assistant manager": ["The assistant manager will open the store this morning.", "副理今天早上會開店。"],
+  "diploma": ["She received her diploma at the graduation ceremony.", "她在畢業典禮上拿到文憑。"],
+  "first name": ["Please write your first name at the top of the form.", "請在表格最上方填寫你的名字。"],
+  "mineral": ["Milk contains minerals that help keep our bones strong.", "牛奶含有幫助維持骨骼強健的礦物質。"],
+  "science fiction": ["He enjoys reading science fiction about life on other planets.", "他喜歡閱讀描述其他星球生命的科幻小說。"],
+  "shopping bag": ["She brought a reusable shopping bag to the market.", "她帶了一個可重複使用的購物袋去市場。"],
+  "accounting": ["She studies accounting because she enjoys working with numbers.", "她讀會計，因為她喜歡和數字打交道。"],
+  "algebra": ["We used algebra to solve the equation.", "我們用代數解這個方程式。"],
+  "archaeology": ["Archaeology can tell us how people lived long ago.", "考古學能告訴我們古人如何生活。"],
+  "civilization": ["Ancient Egyptian civilization developed along the Nile River.", "古埃及文明沿著尼羅河發展。"],
+  "cognition": ["Sleep is important for memory and cognition.", "睡眠對記憶與認知很重要。"],
+  "economics": ["He is studying economics at university.", "他在大學讀經濟學。"],
+  "essay": ["Please write a short essay about your favorite book.", "請寫一篇關於你最喜歡的書的短文。"],
+  "biomass": ["The power plant burns biomass to produce renewable energy.", "這座發電廠燃燒生物質來產生再生能源。"],
+  "enzyme": ["This enzyme helps the body digest food.", "這種酵素幫助身體消化食物。"],
+  "fertilizer": ["Farmers use fertilizer to help crops grow.", "農民使用肥料幫助作物生長。"],
+  "mold": ["The baker poured chocolate into a mold and let it cool.", "麵包師把巧克力倒進模具，讓它冷卻。"],
+  "pesticide": ["This pesticide protects crops from insects.", "這種農藥保護作物免受昆蟲侵害。"],
+  "pipeline": ["Oil travels through a pipeline from the field to the refinery.", "石油透過管線從油田輸送到煉油廠。"],
+  "amplifier": ["He connected the guitar to an amplifier.", "他把吉他接到擴大機上。"],
+  "acidity": ["Lemon juice has a high level of acidity.", "檸檬汁的酸度很高。"],
+  "analysis": ["Her analysis of the results was clear and logical.", "她對結果的分析清楚而有邏輯。"],
+  "context": ["You need to read the whole paragraph to understand the word in context.", "你需要讀完整段落，才能理解這個單字在語境中的意思。"],
+  "contrast": ["The contrast between the two photos is easy to see.", "這兩張照片之間的差異很容易看出來。"],
+  "illustration": ["The illustration shows how the machine works.", "這張說明圖展示這台機器如何運作。"],
+  "introduction": ["The introduction explains what the book is about.", "導言說明這本書的內容。"],
+  "logic": ["Your argument is based on clear logic.", "你的論點建立在清楚的邏輯上。"],
+  "principle": ["Honesty is an important principle in our family.", "誠實是我們家很重要的原則。"],
+  "product review": ["I read several product reviews before buying the headphones.", "我在買耳機前讀了幾篇產品評論。"],
+  "conversion": ["The website makes currency conversion quick and easy.", "這個網站讓貨幣換算既快又方便。"],
+  "project management": ["Good project management keeps a team organized and on schedule.", "良好的專案管理讓團隊有條理並如期完成工作。"],
+  "governance": ["Good governance helps a city serve its residents fairly.", "良好的治理能讓一座城市公平地服務居民。"],
+  "hydrogen": ["Hydrogen is the lightest chemical element.", "氫是最輕的化學元素。"],
+  "species": ["This national park protects several endangered species.", "這座國家公園保護數種瀕危物種。"],
+  "substance": ["Water is a substance made of hydrogen and oxygen.", "水是一種由氫和氧組成的物質。"],
+  "barter": ["In the past, people used barter to trade goods without money.", "過去人們以物易物，不使用金錢交易。"],
+  "consultancy": ["She works for a consultancy that advises small businesses.", "她任職於一家為小型企業提供建議的顧問公司。"],
+  "fossil": ["The museum displays a dinosaur fossil.", "博物館展示了一具恐龍化石。"],
+  "molecule": ["A water molecule contains two hydrogen atoms and one oxygen atom.", "一個水分子含有兩個氫原子和一個氧原子。"],
+  "adjacency": ["The hotel is popular because of its adjacency to the train station.", "這家旅館因為緊鄰火車站而很受歡迎。"],
+  "adjective": ["In 'a red car,' 'red' is an adjective.", "在 'a red car' 中，'red' 是形容詞。"],
+  "amphibian": ["A frog is an amphibian that can live on land and in water.", "青蛙是能在陸地和水中生活的兩棲動物。"],
+  "denominator": ["In the fraction 3/4, 4 is the denominator.", "在分數 3/4 中，4 是分母。"],
+  "magnitude": ["The magnitude of the earthquake surprised local residents.", "這場地震的規模讓當地居民感到驚訝。"],
+  "specialty": ["Fresh seafood is the restaurant's specialty.", "新鮮海鮮是這家餐廳的招牌菜。"],
+  "correlation": ["The study found a correlation between exercise and better sleep.", "研究發現運動與較好的睡眠之間有相關性。"],
+  "friction": ["Friction between the tires and the road helps the car stop.", "輪胎與路面之間的摩擦力幫助汽車停下來。"],
+  "aggravation": ["The doctor warned that running could cause an aggravation of his knee injury.", "醫師警告跑步可能使他的膝傷惡化。"],
+  "math": ["Math was my favorite subject at school.", "數學是我在學校最喜歡的科目。"],
+  "measurement": ["Please check the measurement before cutting the fabric.", "裁剪布料前，請先確認尺寸。"],
+  "tech": ["New tech has made it easier to work from home.", "新科技讓在家工作更容易。"],
+  "parameter": ["The technician adjusted the temperature parameter.", "技術人員調整了溫度參數。"],
+  "vocabulary": ["Reading every day can expand your vocabulary.", "每天閱讀可以擴充你的詞彙量。"],
+  "axis": ["The vertical axis shows the number of students.", "縱軸顯示學生人數。"],
+  "matrix": ["The data can be arranged in a matrix.", "這些資料可以排成一個矩陣。"]
+});
+QUALITY_WORD_MEANINGS["tech"] = "科技；技術";
+Object.assign(QUALITY_WORD_EXAMPLES, {
+  "final training": ["The marathon runner is in his final training before the big race.", "這位馬拉松選手正在進行大賽前最後的訓練。"],
+  "draft project": ["The manager reviewed the draft project yesterday.", "經理昨天審閱了專案草案。"],
+  "digital payment": ["Many stores now accept digital payments for convenience.", "許多商店現在為了方便而接受數位支付。"]
+});
 
 // These pairs give ordinary nouns varied, grammatical contexts.  The second
 // sentence varies as well, so a daily study set does not repeat one frame.
@@ -8694,6 +8843,21 @@ var QUALITY_CONTEXT_TEMPLATES = {
   ]
 };
 
+// Refine three broad contexts so that their fallback sentences still make
+// sense for time words, books/stories, and larger objects.
+QUALITY_CONTEXT_TEMPLATES.time = [
+  ["The {word} passed more quickly than we expected.", "「{meaning}」過得比我們預期更快。"],
+  ["We made plans for the {word} ahead of time.", "我們事先為「{meaning}」安排了計畫。"]
+];
+QUALITY_CONTEXT_TEMPLATES.media = [
+  ["We enjoyed the {word} together after dinner.", "晚餐後我們一起欣賞了「{meaning}」。"],
+  ["The {word} held our attention from beginning to end.", "這個「{meaning}」從頭到尾都吸引著我們的注意力。"]
+];
+QUALITY_CONTEXT_TEMPLATES.thing = [
+  ["We noticed the {word} nearby.", "我們注意到附近有這個「{meaning}」。"],
+  ["The {word} was easy to recognize.", "這個「{meaning}」很容易辨認。"]
+];
+
 function qualityContextHas(group, word){
   return (QUALITY_CONTEXT_WORD_GROUPS[group] || []).indexOf(word) !== -1;
 }
@@ -8736,13 +8900,28 @@ function qualityContextFormat(template, word, meaning){
   return qualityFormat(template, word, meaning).replace(/\{article\}/g, qualityArticle(word));
 }
 
-function qualityGenericNounExample(word, meaning){
+function qualityGenericNounExample(word, meaning, preferredGroup){
   var normalizedWord = String(word || "").trim().toLowerCase();
-  var group = qualityContextGroup(normalizedWord, meaning);
+  var group = preferredGroup || qualityContextGroup(normalizedWord, meaning);
   var templates = QUALITY_CONTEXT_TEMPLATES[group] || QUALITY_CONTEXT_TEMPLATES.thing;
   var pair = templates[qualityHash(normalizedWord) % templates.length];
   return [qualityContextFormat(pair[0], word, meaning), qualityContextFormat(pair[1], word, meaning)];
 }
+
+// Concrete objects need a specific action rather than a generic "noticed it"
+// sentence.  These are retained separately from the source word list so the
+// vocabulary data remains easy to expand.
+var REAL_WORD_EXTENSION_EXAMPLES = {
+  "doll": ["The child carried her doll everywhere.", "那個孩子到哪裡都帶著她的「洋娃娃」。"],
+  "sword": ["The sword was displayed in a glass case.", "那把「劍」展示在玻璃櫃中。"],
+  "chunk": ["She broke off a chunk of bread to share.", "她掰下一大塊「麵包」來分享。"],
+  "fragment": ["A fragment of the old vase was found in the garden.", "花園裡找到那個舊花瓶的一塊「碎片」。"],
+  "marker": ["Use a marker to label each box clearly.", "用「麥克筆」清楚標示每個箱子。"],
+  "footstep": ["I heard a footstep outside the door.", "我聽見門外傳來一聲「腳步聲」。"],
+  "plaque": ["A bronze plaque marks the entrance to the museum.", "博物館入口有一塊青銅「牌匾」。"],
+  "fixture": ["The electrician replaced the broken light fixture.", "電工更換了壞掉的照明「裝置」。"],
+  "palette": ["The artist mixed blue and yellow on her palette.", "畫家在她的「調色盤」上混合藍色與黃色。"]
+};
 
 var QUALITY_WORK_MODIFIER_CONTEXTS = {
   annual: ["The {word} is prepared once a year to support long-term planning.", "這份「{meaning}」每年準備一次，以支援長期規劃。"],
@@ -8832,9 +9011,11 @@ function applyExampleQualityPass(){
       var word = String(card[0] || "").toLowerCase();
       if(QUALITY_WORD_MEANINGS[word]) card[1] = QUALITY_WORD_MEANINGS[word];
       if(QUALITY_WORD_POS[word]) card[4] = QUALITY_WORD_POS[word];
-      var replacement = QUALITY_WORD_EXAMPLES[word];
+      var replacement = QUALITY_WORD_EXAMPLES[word] || REAL_WORD_EXTENSION_EXAMPLES[word];
+      var extensionContext = REAL_WORD_EXTENSION_CONTEXTS[word];
       var workModifier = qualityFindModifier(word, workModifiers);
       var advancedModifier = qualityFindModifier(word, advancedModifiers);
+      if(!replacement && card[2] === "__REAL_WORD_EXTENSION__") replacement = qualityGenericNounExample(card[0], card[1], extensionContext);
       if(!replacement && workModifier && level === "intermediate") replacement = qualityModifierExample(card[0], card[1], workModifier, QUALITY_WORK_MODIFIER_CONTEXTS);
       if(!replacement && advancedModifier && level === "advanced" && isQualityLegacyFillerExample(card[2])) replacement = qualityModifierExample(card[0], card[1], advancedModifier, QUALITY_ADVANCED_MODIFIER_CONTEXTS);
       if(!replacement && isQualityLegacyFillerExample(card[2])) replacement = qualityGenericNounExample(card[0], card[1]);
@@ -8847,10 +9028,110 @@ function applyExampleQualityPass(){
 }
 applyExampleQualityPass();
 
+// The card teaches both word classes, while its primary example specifically
+// uses the noun sense.  Keep import/filter metadata aligned with that design.
+PARTS_OF_SPEECH["sandpaper"] = "n.／v.";
+
 // Some cards benefit from multiple examples—either separate word senses or
 // useful real-world contexts. The first pair above remains the primary one;
 // the alternatives appear alongside it with a short, clear label.
 var EXAMPLE_VARIANTS = {
+  "atom": {
+    primarySense: "科學：化學元素的最小單位",
+    alternatives: [
+      {
+        sense: "慣用語：not an atom of truth（毫無真實性）",
+        example: "There is not an atom of truth in his story.",
+        exampleZh: "他的話毫無真實性。",
+        pos: "n."
+      }
+    ]
+  },
+  "melody": {
+    primarySense: "旋律；曲調",
+    alternatives: [
+      {
+        sense: "演奏的旋律",
+        example: "He played a cheerful melody on the piano.",
+        exampleZh: "他用鋼琴彈奏了一首輕快的曲子。",
+        pos: "n."
+      },
+      {
+        sense: "腦中迴盪的旋律",
+        example: "A simple melody keeps running through my mind.",
+        exampleZh: "一段簡單的旋律一直在我腦中迴盪。",
+        pos: "n."
+      }
+    ]
+  },
+  "final training": {
+    primarySense: "賽前的最後集訓",
+    alternatives: [
+      {
+        sense: "職場：上崗前的最後培訓",
+        example: "New pilots must pass the final training session.",
+        exampleZh: "新飛行員必須通過最後的培訓課程。",
+        pos: "n."
+      },
+      {
+        sense: "科技：模型的最終訓練階段",
+        example: "The engineers are running the final training for the AI model today.",
+        exampleZh: "工程師今天正在進行 AI 模型的最終訓練。",
+        pos: "n."
+      }
+    ]
+  },
+  "draft project": {
+    primarySense: "名詞：專案草案／初步計畫",
+    alternatives: [
+      {
+        sense: "工作溝通：寄送初稿",
+        example: "Please send me the draft project by Friday.",
+        exampleZh: "請在星期五前把專案初稿寄給我。",
+        pos: "n."
+      },
+      {
+        sense: "修改階段：仍待補充",
+        example: "This draft project still needs more details.",
+        exampleZh: "這個專案草案還需要更多細節。",
+        pos: "n."
+      }
+    ]
+  },
+  "digital payment": {
+    primarySense: "數位支付／電子支付",
+    alternatives: [
+      {
+        sense: "日常消費：小額購物",
+        example: "I usually use digital payment for small purchases.",
+        exampleZh: "我通常用數位支付進行小額購物。",
+        pos: "n."
+      },
+      {
+        sense: "取代現金：付款方式改變",
+        example: "People have switched to digital payment instead of using cash.",
+        exampleZh: "人們已改用數位支付，不再使用現金。",
+        pos: "n."
+      },
+      {
+        sense: "遠端交易：跨距付款",
+        example: "Digital payment makes remote transactions possible.",
+        exampleZh: "數位支付使遠端交易成為可能。",
+        pos: "n."
+      }
+    ]
+  },
+  "sandpaper": {
+    primarySense: "名詞：砂紙",
+    alternatives: [
+      {
+        sense: "動詞：用砂紙打磨",
+        example: "You should sandpaper the wall smooth before painting.",
+        exampleZh: "油漆前，你應該先用砂紙把牆面磨平。",
+        pos: "v."
+      }
+    ]
+  },
   "requested service": {
     primarySense: "被要求的服務；已請求的服務",
     alternatives: [
@@ -9066,6 +9347,17 @@ var BUILTIN_WORD_RENAMES = {
 // opens older built-in cards, so a clearer replacement reaches existing users
 // without changing their review schedule or any custom card.
 var CURATED_EXAMPLE_UPDATES = {
+  "absence": true,
+  "atom": true,
+  "census": true,
+  "ideology": true,
+  "melody": true,
+  "sandpaper": true,
+  "blood": true, "ear": true, "hearing": true, "illness": true, "index": true,
+  "antibiotic": true, "coaching": true, "first aid": true, "eardrum": true,
+  "sports center": true, "disability": true, "vest": true, "treatment": true,
+  "hormone": true, "pathogen": true, "physician": true, "desktop": true,
+  "cholesterol": true, "fracture": true,
   "requested service": true,
   "isolation": true,
   "regulatory expenditure": true,
@@ -9077,6 +9369,9 @@ var CURATED_EXAMPLE_UPDATES = {
   "conservation": true,
   "flight schedule": true,
   "amplitude": true,
+  "final training": true,
+  "draft project": true,
+  "digital payment": true,
   "tourism": true,
   "capacitor": true,
   "dilemma": true,
@@ -9090,6 +9385,21 @@ var CURATED_EXAMPLE_UPDATES = {
   "compliance with confidentiality requirements": true,
   "chest": true
 };
+
+// Refresh the audited cards for people who already have them in local storage;
+// only wording changes, so the existing review stage and due date stay intact.
+[
+  "geography", "haircut", "word", "assistant manager", "diploma", "first name",
+  "mineral", "science fiction", "shopping bag", "accounting", "algebra",
+  "archaeology", "civilization", "cognition", "economics", "essay", "biomass",
+  "enzyme", "fertilizer", "mold", "pesticide", "pipeline", "amplifier",
+  "acidity", "analysis", "context", "contrast", "illustration", "introduction",
+  "logic", "principle", "product review", "conversion", "project management",
+  "governance", "hydrogen", "species", "substance", "barter", "consultancy",
+  "fossil", "molecule", "adjacency", "adjective", "amphibian", "denominator",
+  "magnitude", "specialty", "correlation", "friction", "aggravation", "math",
+  "measurement", "tech", "parameter", "vocabulary", "axis", "matrix"
+].forEach(function(word){ CURATED_EXAMPLE_UPDATES[word] = true; });
 
 DECKS.advanced.forEach(function(card){
   PARTS_OF_SPEECH[String(card[0]).trim().toLowerCase()] = card[4];
@@ -11186,7 +11496,7 @@ var EXAMPLE_POS_AUDIT = {
   "robot": "n.",
   "runway": "n.",
   "saddle": "n.",
-  "sandpaper": "n.",
+  "sandpaper": "n.／v.",
   "saucepan": "n.",
   "scanner": "n.",
   "scooter": "n.",
@@ -16102,6 +16412,9 @@ var EXAMPLE_POS_AUDIT = {
   "technological distribution": "n.",
   "custom-made": "adj."
 };
+// The primary card sentence uses sandpaper as a noun; the verb is listed as a
+// separate labelled alternative in EXAMPLE_VARIANTS above.
+EXAMPLE_POS_AUDIT["sandpaper"] = "n.";
 var POS_LABEL_OVERRIDES = {
   "a little": "quant.",
   "a lot of": "quant.",
