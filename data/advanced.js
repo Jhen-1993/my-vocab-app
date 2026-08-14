@@ -8188,9 +8188,41 @@ DECKS.advanced = [
 // 先檢查全字庫，再加入 500 筆不重複的專業名詞片語。
 var ADVANCED_BUSINESS_MODIFIERS = [["strategic","策略性"],["regulatory","監管性"],["contractual","合約性"],["operational","營運性"],["financial","財務性"],["corporate","企業"],["executive","高階主管"],["confidential","機密"],["international","國際"],["competitive","競爭性"],["sustainable","永續"],["comprehensive","全面性"],["preliminary","初步"],["prospective","未來潛在"],["mandatory","強制"],["alternative","替代"],["commercial","商業"],["administrative","行政"],["analytical","分析"],["technological","技術"],["organizational","組織"],["legislative","立法"]];
 var ADVANCED_BUSINESS_NOUNS = [["initiative","倡議"],["compliance","遵循"],["framework","架構"],["negotiation","談判"],["assessment","評估"],["proposal","提案"],["allocation","分配"],["expenditure","支出"],["acquisition","收購"],["expansion","擴張"],["implementation","執行"],["collaboration","合作"],["infrastructure","基礎設施"],["regulation","規範"],["liability","責任"],["contingency","應變方案"],["compensation","補償"],["productivity","生產力"],["procurement","採購"],["investment","投資"],["forecast","預測"],["evaluation","評量"],["documentation","文件"],["transaction","交易"],["distribution","配送"]];
+// These combinations were mechanically generated to increase the card count.
+// They are grammatical strings, but most are not established TOEIC phrases and
+// should not be learned as independent headwords.
+var GENERATED_NONSTANDARD_TERMS = {};
+ADVANCED_BUSINESS_MODIFIERS.forEach(function(modifier){
+  ADVANCED_BUSINESS_NOUNS.forEach(function(noun){
+    GENERATED_NONSTANDARD_TERMS[modifier[0] + " " + noun[0]] = true;
+  });
+});
+
+// Earlier hand-added combinations with the same issue are retired as well.
+// Common fixed phrases such as "flight schedule" are intentionally not listed.
+var RETIRED_BUILTIN_TERMS = {
+  "requested service": true,
+  "requested process": true,
+  "urgent survey": true,
+  "regular review": true,
+  "monthly record": true,
+  "future review": true,
+  "important update": true,
+  "final project": true,
+  "international documentation": true,
+  "compliance with confidentiality requirements": true
+};
+
+function isRetiredBuiltinTerm(term){
+  var normalized = String(term || "").trim().toLowerCase();
+  return !!RETIRED_BUILTIN_TERMS[normalized] || !!GENERATED_NONSTANDARD_TERMS[normalized];
+}
+
 var advancedKnownWords = {};
 Object.keys(DECKS).forEach(function(level){ DECKS[level].forEach(function(card){ advancedKnownWords[String(card[0]).toLowerCase()] = true; }); });
 var ADVANCED_7000_EXTENSION = [];
+// Disabled: this was an automatic adjective+noun phrase generator.
+if(false){
 ADVANCED_BUSINESS_MODIFIERS.forEach(function(modifier){
   ADVANCED_BUSINESS_NOUNS.forEach(function(noun){
     var phrase = modifier[0] + " " + noun[0];
@@ -8200,6 +8232,7 @@ ADVANCED_BUSINESS_MODIFIERS.forEach(function(modifier){
     }
   });
 });
+}
 DECKS.advanced.push.apply(DECKS.advanced, ADVANCED_7000_EXTENSION);
 
 // "Confidential compliance" is not an idiomatic legal or business term.
@@ -8212,6 +8245,14 @@ DECKS.advanced.forEach(function(card){
     card[3] = "公司在處理敏感客戶資料時，確保嚴格遵守保密要求。";
     card[4] = "n.";
   }
+});
+
+// Keep fixed phrases and phrasal verbs, but remove generated combinations and
+// the small retired list above from every built-in level before the app loads.
+Object.keys(DECKS).forEach(function(level){
+  DECKS[level] = DECKS[level].filter(function(card){
+    return !isRetiredBuiltinTerm(card[0]);
+  });
 });
 
 // Example-quality pass ------------------------------------------------------
