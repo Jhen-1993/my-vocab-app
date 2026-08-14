@@ -8232,11 +8232,20 @@ var RETIRED_BUILTIN_TERMS = {
   "compliance with confidentiality requirements": true
 };
 
+// Quality gate -------------------------------------------------------------
+// This map is filled after the example-quality pass.  A word enters it only
+// when its current example is still one of the programmatically assembled
+// context templates below.  Those cards are intentionally kept out of the
+// built-in learning pool until a natural English sentence and Chinese
+// translation have been curated for them.  Custom cards are never affected.
+var UNCURATED_TEMPLATE_TERMS = {};
+
 function isRetiredBuiltinTerm(term){
   var normalized = String(term || "").trim().toLowerCase();
   return !!RETIRED_BUILTIN_TERMS[normalized] ||
     !!GENERATED_NONSTANDARD_TERMS[normalized] ||
-    !!INTERMEDIATE_GENERATED_NONSTANDARD_TERMS[normalized];
+    !!INTERMEDIATE_GENERATED_NONSTANDARD_TERMS[normalized] ||
+    !!UNCURATED_TEMPLATE_TERMS[normalized];
 }
 
 var advancedKnownWords = {};
@@ -8303,7 +8312,7 @@ if(typeof REAL_WORD_EXTENSION !== "undefined" && Array.isArray(REAL_WORD_EXTENSI
 // Earlier expansion batches used a few repeated filler sentences (for example,
 // "We discussed ... during class").  This pass replaces only those generated
 // sentences.  It leaves hand-written examples and all card scheduling data alone.
-var EXAMPLE_QUALITY_VERSION = "2026-08-14-context-v45";
+var EXAMPLE_QUALITY_VERSION = "2026-08-14-quality-gate-v48";
 var QUALITY_LEGACY_EXAMPLE_PATTERNS = [
   /^We discussed the .+ during class\.$/,
   /^We discussed the .+ during today's lesson\.$/,
@@ -8690,6 +8699,7 @@ QUALITY_WORD_EXAMPLES["truck driver"] = ["The truck driver delivered the goods t
 QUALITY_WORD_EXAMPLES["implementation"] = ["The successful implementation of the new policy requires everyone's cooperation.", "新政策的成功實施需要大家的合作。"];
 QUALITY_WORD_EXAMPLES["victory"] = ["They are celebrating their victory.", "他們正在慶祝自己的勝利。"];
 QUALITY_WORD_EXAMPLES["nomination"] = ["The film received four Oscar nominations.", "這部電影獲得了四項奧斯卡提名。"];
+QUALITY_WORD_EXAMPLES["skillet"] = ["She heated some olive oil in a cast-iron skillet.", "她在鑄鐵平底煎鍋裡加熱了一些橄欖油。"];
 
 // These pairs give ordinary nouns varied, grammatical contexts.  The second
 // sentence varies as well, so a daily study set does not repeat one frame.
@@ -9079,11 +9089,14 @@ function applyExampleQualityPass(){
       var word = String(card[0] || "").toLowerCase();
       if(QUALITY_WORD_MEANINGS[word]) card[1] = QUALITY_WORD_MEANINGS[word];
       if(QUALITY_WORD_POS[word]) card[4] = QUALITY_WORD_POS[word];
+      if(typeof CURATED_NATURAL_MEANINGS !== "undefined" && CURATED_NATURAL_MEANINGS[word]) card[1] = CURATED_NATURAL_MEANINGS[word];
+      if(typeof CURATED_NATURAL_POS !== "undefined" && CURATED_NATURAL_POS[word]) card[4] = CURATED_NATURAL_POS[word];
       // Prefer an individually curated example.  A verified Tatoeba pair may
       // replace an old automatic template, but never overrides a hand-written
       // card example in this file.
       var corpusExample = (typeof TATOEBA_EXAMPLES !== "undefined") ? TATOEBA_EXAMPLES[word] : null;
-      var replacement = QUALITY_WORD_EXAMPLES[word] || REAL_WORD_EXTENSION_EXAMPLES[word] || corpusExample;
+      var naturalExample = (typeof CURATED_NATURAL_EXAMPLES !== "undefined") ? CURATED_NATURAL_EXAMPLES[word] : null;
+      var replacement = QUALITY_WORD_EXAMPLES[word] || naturalExample || REAL_WORD_EXTENSION_EXAMPLES[word] || corpusExample;
       var extensionContext = REAL_WORD_EXTENSION_CONTEXTS[word];
       var workModifier = qualityFindModifier(word, workModifiers);
       var advancedModifier = qualityFindModifier(word, advancedModifiers);
@@ -9099,6 +9112,49 @@ function applyExampleQualityPass(){
   });
 }
 applyExampleQualityPass();
+
+// Do not replace one generic template with another.  The old expansion used
+// `qualityGenericNounExample` as a temporary fallback; it can produce an
+// grammatical-looking sentence that is still wrong for the word (for example,
+// treating a steak or a ghost like a person).  Compare each card with every
+// possible generated context sentence.  If it matches and has no individually
+// curated or bilingual-corpus replacement, remove it from the built-in deck.
+// The same map is read by index.html during local-storage migration, so older
+// saved built-in cards with template examples disappear automatically while
+// the learner's custom cards and all valid review records remain untouched.
+function isGeneratedContextTemplateExample(word, meaning, example){
+  var normalizedWord = String(word || "").trim().toLowerCase();
+  var currentExample = String(example || "").trim();
+  if(!normalizedWord || !currentExample) return false;
+  var groups = Object.keys(QUALITY_CONTEXT_TEMPLATES);
+  for(var index = 0; index < groups.length; index++){
+    var generated = qualityGenericNounExample(word, meaning, groups[index])[0];
+    if(currentExample === generated) return true;
+  }
+  return false;
+}
+
+function hasCuratedExampleSource(word){
+  var normalizedWord = String(word || "").trim().toLowerCase();
+  var corpusExample = (typeof TATOEBA_EXAMPLES !== "undefined") ? TATOEBA_EXAMPLES[normalizedWord] : null;
+  return !!QUALITY_WORD_EXAMPLES[normalizedWord] ||
+    !!((typeof CURATED_NATURAL_EXAMPLES !== "undefined") && CURATED_NATURAL_EXAMPLES[normalizedWord]) ||
+    !!REAL_WORD_EXTENSION_EXAMPLES[normalizedWord] ||
+    !!corpusExample;
+}
+
+Object.keys(DECKS).forEach(function(level){
+  DECKS[level] = DECKS[level].filter(function(card){
+    var word = String(card[0] || "").trim();
+    var normalizedWord = word.toLowerCase();
+    if(!hasCuratedExampleSource(normalizedWord) &&
+      isGeneratedContextTemplateExample(word, card[1], card[2])){
+      UNCURATED_TEMPLATE_TERMS[normalizedWord] = true;
+      return false;
+    }
+    return true;
+  });
+});
 
 // The card teaches both word classes, while its primary example specifically
 // uses the noun sense.  Keep import/filter metadata aligned with that design.
@@ -9635,9 +9691,18 @@ var CURATED_EXAMPLE_UPDATES = {
   "truck driver": true,
   "implementation": true,
   "victory": true,
-  "nomination": true
+  "nomination": true,
+  "skillet": true
 };
 delete CURATED_EXAMPLE_UPDATES["final training"];
+
+// New natural-example batches should refresh wording for people who already
+// imported the corresponding built-in cards, without changing their schedule.
+if(typeof CURATED_NATURAL_EXAMPLES !== "undefined"){
+  Object.keys(CURATED_NATURAL_EXAMPLES).forEach(function(word){
+    CURATED_EXAMPLE_UPDATES[word] = true;
+  });
+}
 
 // Refresh the audited cards for people who already have them in local storage;
 // only wording changes, so the existing review stage and due date stay intact.

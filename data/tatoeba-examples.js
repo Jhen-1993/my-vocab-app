@@ -27,7 +27,7 @@ var TATOEBA_EXAMPLES = {
   ],
   "afternoon": [
     "Good afternoon!",
-    "早上好！"
+    "午安！"
   ],
   "airplane": [
     "Look! An airplane!",
