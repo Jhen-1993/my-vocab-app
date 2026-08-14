@@ -648,23 +648,11 @@
   </footer>
 </div>
 
-<!-- 先載入所有字庫與集中例句，再由 decks.js 合併、去重並套用例句；主程式最後才讀取 DECKS。 -->
-<!-- 字庫依程度分成三個檔案，便於日後直接維護。 -->
-<script src="data/beginner.js"></script>
+<!-- 字庫依程度整理為三個檔案；advanced.js 內含例句、授權來源與擴充資料。 -->
+<script src="data/beginner.js?v=20260814-v52"></script>
 <script src="data/intermediate.js"></script>
-<!-- 以真正單字補回移除的自動拼接片語；必須在 advanced.js 前載入。 -->
-<script src="data/real-word-extension.js"></script>
-<!-- Free, attribution-tracked bilingual examples that replace eligible old template sentences. -->
-<script src="data/tatoeba-examples.js?v=20260814-tatoeba-v1"></script>
-<!-- 分批補寫的自然例句；須在 quality gate 執行前載入。 -->
-<script src="data/natural-examples-batch-01.js?v=20260814-natural-b01"></script>
-<script src="data/natural-examples-batch-02.js?v=20260814-natural-b02"></script>
-<script src="data/natural-examples-batch-03.js?v=20260814-natural-b03"></script>
-<script src="data/natural-examples-batch-04.js?v=20260814-natural-b04"></script>
-<!-- 從使用者保留的初階備份還原 489 組非模板例句。 -->
-<script src="data/natural-examples-beginner-restored.js?v=20260814-beginner-restored-v1"></script>
-<!-- 版本參數可避免 GitHub Pages 或瀏覽器繼續使用舊的例句資料快取。 -->
-<script src="data/advanced.js?v=20260814-quality-gate-v48"></script>
+<!-- 版本參數可避免 GitHub Pages 或瀏覽器繼續使用舊的整合資料快取。 -->
+<script src="data/advanced.js?v=20260814-bundled-v52"></script>
 <script>
 (function(){
   "use strict";
