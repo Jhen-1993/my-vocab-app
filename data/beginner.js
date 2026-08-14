@@ -4292,7 +4292,7 @@ DECKS.beginner = [
   ],
   [
     "some",
-    "若干",
+    "一些",
     "Could you give me some water, please?",
     "可以請你給我一些水嗎？",
     "adj.／adv."

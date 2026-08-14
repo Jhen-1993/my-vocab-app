@@ -1,3 +1,9250 @@
+// Consolidated vocabulary data file.
+// This file intentionally bundles auxiliary example data so data/ stays easy to upload: beginner.js, intermediate.js, advanced.js.
+
+
+// ===== ???????? (real-word-extension.js) =====
+// 508 single-word replacements for retired synthetic phrase cards.
+// Generated at build time from selected ECDICT entries (MIT); no library is loaded by the website.
+var REAL_WORD_EXTENSION = [
+  [
+    "night",
+    "夜；夜晚；晚上",
+    "n.",
+    "time"
+  ],
+  [
+    "story",
+    "故事；小說；傳奇",
+    "n.",
+    "media"
+  ],
+  [
+    "parent",
+    "父母；父母親；根源",
+    "n.",
+    "person"
+  ],
+  [
+    "door",
+    "門",
+    "n.",
+    "structure"
+  ],
+  [
+    "morning",
+    "早晨；早上；初期",
+    "n.",
+    "time"
+  ],
+  [
+    "girl",
+    "女孩；少女；女傭",
+    "n.",
+    "person"
+  ],
+  [
+    "brother",
+    "兄弟",
+    "n.",
+    "person"
+  ],
+  [
+    "politics",
+    "政治；政治學；政見",
+    "n.",
+    "abstract"
+  ],
+  [
+    "reality",
+    "實在；事實；實體",
+    "n.",
+    "abstract"
+  ],
+  [
+    "threat",
+    "恐嚇；惡兆；威脅",
+    "n.",
+    "abstract"
+  ],
+  [
+    "majority",
+    "多數；大半",
+    "n.",
+    "abstract"
+  ],
+  [
+    "afternoon",
+    "午後；下午",
+    "n.",
+    "time"
+  ],
+  [
+    "christmas",
+    "聖誕節",
+    "n.",
+    "time"
+  ],
+  [
+    "presence",
+    "出席；面前；存在",
+    "n.",
+    "abstract"
+  ],
+  [
+    "reader",
+    "讀者；讀物；文選",
+    "n.",
+    "person"
+  ],
+  [
+    "text",
+    "文本；正文；課文",
+    "n.",
+    "media"
+  ],
+  [
+    "protection",
+    "保護；防衛；貿易保護制度",
+    "n.",
+    "abstract"
+  ],
+  [
+    "affair",
+    "事件；事務；戀愛事件",
+    "n.",
+    "abstract"
+  ],
+  [
+    "voter",
+    "選民；投票人",
+    "n.",
+    "person"
+  ],
+  [
+    "county",
+    "縣；郡",
+    "n.",
+    "place"
+  ],
+  [
+    "session",
+    "期間；開庭期；會議",
+    "n.",
+    "activity"
+  ],
+  [
+    "danger",
+    "危險；威脅",
+    "n.",
+    "abstract"
+  ],
+  [
+    "farmer",
+    "農夫；農場主",
+    "n.",
+    "person"
+  ],
+  [
+    "difficulty",
+    "困難；難點",
+    "n.",
+    "abstract"
+  ],
+  [
+    "extent",
+    "範圍；程度；區域",
+    "n.",
+    "abstract"
+  ],
+  [
+    "politician",
+    "政客；政治家；從事黨派政治的人",
+    "n.",
+    "person"
+  ],
+  [
+    "meat",
+    "肉；餐；食物",
+    "n.",
+    "food"
+  ],
+  [
+    "combination",
+    "組合；合併；聯合",
+    "n.",
+    "abstract"
+  ],
+  [
+    "user",
+    "使用者",
+    "n.",
+    "person"
+  ],
+  [
+    "debt",
+    "債務；罪過",
+    "n.",
+    "abstract"
+  ],
+  [
+    "winner",
+    "勝利者；優勝者",
+    "n.",
+    "person"
+  ],
+  [
+    "explanation",
+    "解釋；說明；辯解",
+    "n.",
+    "abstract"
+  ],
+  [
+    "scholar",
+    "學者；獎學金獲得者；有文化者",
+    "n.",
+    "person"
+  ],
+  [
+    "bike",
+    "自行車；腳踏車",
+    "n.",
+    "transport"
+  ],
+  [
+    "territory",
+    "領土；領地；版圖",
+    "n.",
+    "place"
+  ],
+  [
+    "tale",
+    "故事；謊言；謠言",
+    "n.",
+    "media"
+  ],
+  [
+    "coalition",
+    "結合體；結合；聯合",
+    "n.",
+    "organization"
+  ],
+  [
+    "involvement",
+    "捲入；牽連；包含",
+    "n.",
+    "abstract"
+  ],
+  [
+    "mystery",
+    "秘密；神秘；奧秘",
+    "n.",
+    "abstract"
+  ],
+  [
+    "maker",
+    "製造者；上帝",
+    "n.",
+    "person"
+  ],
+  [
+    "emphasis",
+    "強調；加強；重點",
+    "n.",
+    "abstract"
+  ],
+  [
+    "commander",
+    "司令官；指揮官",
+    "n.",
+    "person"
+  ],
+  [
+    "prisoner",
+    "囚犯；犯人；戰俘",
+    "n.",
+    "person"
+  ],
+  [
+    "educator",
+    "教育家",
+    "n.",
+    "person"
+  ],
+  [
+    "birthday",
+    "生日",
+    "n.",
+    "time"
+  ],
+  [
+    "supporter",
+    "支持者；後盾；迫隨者",
+    "n.",
+    "person"
+  ],
+  [
+    "observer",
+    "觀察者；遵守者；觀察員",
+    "n.",
+    "person"
+  ],
+  [
+    "administrator",
+    "管理人；行政官",
+    "n.",
+    "person"
+  ],
+  [
+    "mayor",
+    "市長",
+    "n.",
+    "person"
+  ],
+  [
+    "consideration",
+    "考慮；原因",
+    "n.",
+    "abstract"
+  ],
+  [
+    "poem",
+    "詩；詩般美的事物",
+    "n.",
+    "media"
+  ],
+  [
+    "grandmother",
+    "祖母；女祖先",
+    "n.",
+    "person"
+  ],
+  [
+    "historian",
+    "歷史學家；記事者",
+    "n.",
+    "person"
+  ],
+  [
+    "depth",
+    "深度；深處；深奧",
+    "n.",
+    "abstract"
+  ],
+  [
+    "deputy",
+    "副手；代理人",
+    "n.",
+    "person"
+  ],
+  [
+    "activist",
+    "激進主義分子",
+    "n.",
+    "person"
+  ],
+  [
+    "refugee",
+    "難民；流亡者",
+    "n.",
+    "person"
+  ],
+  [
+    "bell",
+    "鈴；鍾",
+    "n.",
+    "tool"
+  ],
+  [
+    "darkness",
+    "黑暗；暗；深色",
+    "n.",
+    "abstract"
+  ],
+  [
+    "portrait",
+    "肖像；人像；半身像",
+    "n.",
+    "media"
+  ],
+  [
+    "lawsuit",
+    "訴訟",
+    "n.",
+    "abstract"
+  ],
+  [
+    "statistics",
+    "統計學；統計資料",
+    "n.",
+    "schoolScience"
+  ],
+  [
+    "spokesman",
+    "發言人；代言者",
+    "n.",
+    "person"
+  ],
+  [
+    "elite",
+    "精華；精銳；中堅分子",
+    "n.",
+    "person"
+  ],
+  [
+    "scenario",
+    "劇本提綱；情節；劇本",
+    "n.",
+    "abstract"
+  ],
+  [
+    "tournament",
+    "比賽；競賽；錦標賽",
+    "n.",
+    "activity"
+  ],
+  [
+    "senator",
+    "參議員；(某些大學的)理事",
+    "n.",
+    "person"
+  ],
+  [
+    "lover",
+    "愛人；愛好者",
+    "n.",
+    "person"
+  ],
+  [
+    "mode",
+    "模態；調式；樣式",
+    "n.",
+    "abstract"
+  ],
+  [
+    "offense",
+    "犯罪；傷感情；攻擊",
+    "n.",
+    "abstract"
+  ],
+  [
+    "deer",
+    "鹿",
+    "n.",
+    "animal"
+  ],
+  [
+    "poet",
+    "詩人",
+    "n.",
+    "person"
+  ],
+  [
+    "grandfather",
+    "祖父；始祖",
+    "n.",
+    "person"
+  ],
+  [
+    "buyer",
+    "買主；買方",
+    "n.",
+    "person"
+  ],
+  [
+    "poetry",
+    "詩；韻文；詩歌藝術",
+    "n.",
+    "media"
+  ],
+  [
+    "celebrity",
+    "名聲；名人",
+    "n.",
+    "person"
+  ],
+  [
+    "math",
+    "數學",
+    "n.",
+    "schoolScience"
+  ],
+  [
+    "economist",
+    "經濟學者；經濟家",
+    "n.",
+    "person"
+  ],
+  [
+    "survivor",
+    "生還者；倖存者",
+    "n.",
+    "person"
+  ],
+  [
+    "fighter",
+    "鬥士；戰士；好戰者",
+    "n.",
+    "person"
+  ],
+  [
+    "hunter",
+    "獵人；獵犬；追求者",
+    "n.",
+    "person"
+  ],
+  [
+    "aide",
+    "助手；副官",
+    "n.",
+    "person"
+  ],
+  [
+    "scholarship",
+    "學問；學術成就；獎學金",
+    "n.",
+    "abstract"
+  ],
+  [
+    "scandal",
+    "醜聞；中傷；恥辱",
+    "n.",
+    "abstract"
+  ],
+  [
+    "publisher",
+    "出版者；發行人",
+    "n.",
+    "person"
+  ],
+  [
+    "myth",
+    "神話；虛構的事；虛構的人",
+    "n.",
+    "media"
+  ],
+  [
+    "provider",
+    "供應者；供養人；伙食承辦人",
+    "n.",
+    "person"
+  ],
+  [
+    "scope",
+    "範圍；機會；廣度",
+    "n.",
+    "abstract"
+  ],
+  [
+    "punishment",
+    "處罰；刑罰；懲罰",
+    "n.",
+    "abstract"
+  ],
+  [
+    "girlfriend",
+    "女朋友",
+    "n.",
+    "person"
+  ],
+  [
+    "taxpayer",
+    "納稅人",
+    "n.",
+    "person"
+  ],
+  [
+    "restriction",
+    "限制；限定；約束",
+    "n.",
+    "abstract"
+  ],
+  [
+    "auto",
+    "汽車",
+    "n.",
+    "transport"
+  ],
+  [
+    "legacy",
+    "祖先傳下來之物；遺贈物",
+    "n.",
+    "abstract"
+  ],
+  [
+    "instructor",
+    "教員；講師",
+    "n.",
+    "person"
+  ],
+  [
+    "measurement",
+    "尺寸；度量；度量單位",
+    "n.",
+    "schoolScience"
+  ],
+  [
+    "province",
+    "省；地方；職權",
+    "n.",
+    "place"
+  ],
+  [
+    "nomination",
+    "提名；任命；提名權",
+    "n.",
+    "abstract"
+  ],
+  [
+    "miracle",
+    "奇蹟；奇事",
+    "n.",
+    "abstract"
+  ],
+  [
+    "confusion",
+    "混亂；混淆；無秩序",
+    "n.",
+    "abstract"
+  ],
+  [
+    "virtue",
+    "德行；美德；優點",
+    "n.",
+    "abstract"
+  ],
+  [
+    "inquiry",
+    "質詢；探索；調查",
+    "n.",
+    "activity"
+  ],
+  [
+    "boyfriend",
+    "男朋友",
+    "n.",
+    "person"
+  ],
+  [
+    "organ",
+    "風琴；器官；元件",
+    "n.",
+    "bodyHealth"
+  ],
+  [
+    "counseling",
+    "諮詢服務",
+    "n.",
+    "activity"
+  ],
+  [
+    "receiver",
+    "接收器；接受者；收信機",
+    "n.",
+    "technology"
+  ],
+  [
+    "presidency",
+    "總統職權；總裁職位",
+    "n.",
+    "abstract"
+  ],
+  [
+    "integrity",
+    "正直；廉正；完整",
+    "n.",
+    "abstract"
+  ],
+  [
+    "weakness",
+    "虛弱；薄弱；弱點",
+    "n.",
+    "abstract"
+  ],
+  [
+    "humanity",
+    "人性；人類；博愛",
+    "n.",
+    "abstract"
+  ],
+  [
+    "developer",
+    "開發者",
+    "n.",
+    "person"
+  ],
+  [
+    "airplane",
+    "飛機",
+    "n.",
+    "transport"
+  ],
+  [
+    "mainstream",
+    "主流",
+    "n.",
+    "abstract"
+  ],
+  [
+    "cloth",
+    "布料；織品；布",
+    "n.",
+    "material"
+  ],
+  [
+    "effectiveness",
+    "效力",
+    "n.",
+    "abstract"
+  ],
+  [
+    "fraud",
+    "欺騙；欺詐；詭計",
+    "n.",
+    "abstract"
+  ],
+  [
+    "possession",
+    "擁有；佔有；所有",
+    "n.",
+    "abstract"
+  ],
+  [
+    "playoff",
+    "雙方得分相等時的最後決賽；複賽；季後賽",
+    "n.",
+    "activity"
+  ],
+  [
+    "freshman",
+    "新手；生手；大學一年級學生",
+    "n.",
+    "person"
+  ],
+  [
+    "wilderness",
+    "荒野；荒地；大量",
+    "n.",
+    "place"
+  ],
+  [
+    "trait",
+    "特徵；特性；一筆",
+    "n.",
+    "abstract"
+  ],
+  [
+    "corruption",
+    "腐敗；墮落；貪汙",
+    "n.",
+    "abstract"
+  ],
+  [
+    "astronomer",
+    "天文學家",
+    "n.",
+    "person"
+  ],
+  [
+    "complexity",
+    "複雜；複雜性；複雜的事物",
+    "n.",
+    "abstract"
+  ],
+  [
+    "christianity",
+    "基督教；基督教精神",
+    "n.",
+    "abstract"
+  ],
+  [
+    "promotion",
+    "晉級；創建；增進",
+    "n.",
+    "business"
+  ],
+  [
+    "pickup",
+    "拾起；加速；刺激",
+    "n.",
+    "person"
+  ],
+  [
+    "noon",
+    "正午；中午；全盛期",
+    "n.",
+    "time"
+  ],
+  [
+    "doll",
+    "洋娃娃；無頭腦的美麗女人",
+    "n.",
+    "thing"
+  ],
+  [
+    "liberty",
+    "自由；特權；許可",
+    "n.",
+    "abstract"
+  ],
+  [
+    "indicator",
+    "指示器；指示劑；指標",
+    "n.",
+    "technology"
+  ],
+  [
+    "laser",
+    "激光",
+    "n.",
+    "technology"
+  ],
+  [
+    "realm",
+    "王國；領土；領域",
+    "n.",
+    "place"
+  ],
+  [
+    "metaphor",
+    "隱喻",
+    "n.",
+    "abstract"
+  ],
+  [
+    "entity",
+    "實體；實存物；存在",
+    "n.",
+    "abstract"
+  ],
+  [
+    "servant",
+    "僕人；有用物；公務員",
+    "n.",
+    "person"
+  ],
+  [
+    "racism",
+    "種族主義；種族偏見",
+    "n.",
+    "abstract"
+  ],
+  [
+    "starter",
+    "開端者；在起跑線上的人；參加賽跑的人",
+    "n.",
+    "person"
+  ],
+  [
+    "broker",
+    "掮客；經紀人",
+    "n.",
+    "person"
+  ],
+  [
+    "grief",
+    "傷心；憂愁；悲痛",
+    "n.",
+    "abstract"
+  ],
+  [
+    "inmate",
+    "同住者；被收容者",
+    "n.",
+    "person"
+  ],
+  [
+    "sword",
+    "刀；劍；戰爭",
+    "n.",
+    "thing"
+  ],
+  [
+    "buddy",
+    "好朋友；夥伴",
+    "n.",
+    "person"
+  ],
+  [
+    "lane",
+    "小路；巷；弄",
+    "n.",
+    "place"
+  ],
+  [
+    "homeland",
+    "本國；故國",
+    "n.",
+    "place"
+  ],
+  [
+    "revelation",
+    "揭露；洩露；發覺",
+    "n.",
+    "abstract"
+  ],
+  [
+    "willingness",
+    "樂意；心甘情願；願意",
+    "n.",
+    "abstract"
+  ],
+  [
+    "wagon",
+    "四輪馬車；貨車",
+    "n.",
+    "transport"
+  ],
+  [
+    "bull",
+    "公牛",
+    "n.",
+    "animal"
+  ],
+  [
+    "sheep",
+    "羊；膽小者",
+    "n.",
+    "animal"
+  ],
+  [
+    "teammate",
+    "隊友",
+    "n.",
+    "person"
+  ],
+  [
+    "verdict",
+    "裁決；判決；判斷性意見",
+    "n.",
+    "abstract"
+  ],
+  [
+    "touchdown",
+    "觸地；觸地得分；著地",
+    "n.",
+    "activity"
+  ],
+  [
+    "translation",
+    "翻譯；譯文；轉化",
+    "n.",
+    "media"
+  ],
+  [
+    "hockey",
+    "冰球；曲棍球",
+    "n.",
+    "activity"
+  ],
+  [
+    "elephant",
+    "象",
+    "n.",
+    "animal"
+  ],
+  [
+    "grandchild",
+    "孫；外孫女；外孫",
+    "n.",
+    "person"
+  ],
+  [
+    "columnist",
+    "專欄作家",
+    "n.",
+    "person"
+  ],
+  [
+    "workout",
+    "試驗；試用；鍛鍊",
+    "n.",
+    "activity"
+  ],
+  [
+    "frontier",
+    "邊界；邊境",
+    "n.",
+    "place"
+  ],
+  [
+    "banker",
+    "銀行家；莊家",
+    "n.",
+    "person"
+  ],
+  [
+    "speculation",
+    "沉思；推測；投機",
+    "n.",
+    "abstract"
+  ],
+  [
+    "behalf",
+    "利益；方面",
+    "n.",
+    "abstract"
+  ],
+  [
+    "stance",
+    "準備擊球姿勢；站立的姿勢；位置",
+    "n.",
+    "abstract"
+  ],
+  [
+    "sensitivity",
+    "敏感；靈敏度",
+    "n.",
+    "abstract"
+  ],
+  [
+    "trainer",
+    "訓練員；馴馬師",
+    "n.",
+    "person"
+  ],
+  [
+    "confrontation",
+    "對抗；對質；面對",
+    "n.",
+    "abstract"
+  ],
+  [
+    "thanksgiving",
+    "感謝",
+    "n.",
+    "time"
+  ],
+  [
+    "wheat",
+    "小麥",
+    "n.",
+    "food"
+  ],
+  [
+    "terrain",
+    "地帶；地區；地形",
+    "n.",
+    "nature"
+  ],
+  [
+    "genre",
+    "類型；流派",
+    "n.",
+    "media"
+  ],
+  [
+    "planner",
+    "計劃者；設計者；安排者",
+    "n.",
+    "person"
+  ],
+  [
+    "chunk",
+    "大塊；矮胖的人(或物)",
+    "n.",
+    "thing"
+  ],
+  [
+    "jungle",
+    "叢林；雜亂的一堆；弱肉強食的地方",
+    "n.",
+    "nature"
+  ],
+  [
+    "persian",
+    "波斯人；波斯語",
+    "n.",
+    "person"
+  ],
+  [
+    "builder",
+    "建立者",
+    "n.",
+    "person"
+  ],
+  [
+    "oscar",
+    "奧斯卡金像獎；錢；現金",
+    "n.",
+    "media"
+  ],
+  [
+    "listener",
+    "收聽者；聽眾",
+    "n.",
+    "person"
+  ],
+  [
+    "mentor",
+    "指導者；良師益友",
+    "n.",
+    "person"
+  ],
+  [
+    "parish",
+    "教區；堂區",
+    "n.",
+    "place"
+  ],
+  [
+    "likelihood",
+    "可能；可能性",
+    "n.",
+    "abstract"
+  ],
+  [
+    "calculation",
+    "計算；考慮；計算的結果",
+    "n.",
+    "schoolScience"
+  ],
+  [
+    "constraint",
+    "強制；約束",
+    "n.",
+    "abstract"
+  ],
+  [
+    "interval",
+    "間隔；距離；間歇",
+    "n.",
+    "time"
+  ],
+  [
+    "patron",
+    "贊助人；顧客；保護人",
+    "n.",
+    "person"
+  ],
+  [
+    "tolerance",
+    "寬容；忍受；容忍",
+    "n.",
+    "abstract"
+  ],
+  [
+    "banana",
+    "香蕉",
+    "n.",
+    "food"
+  ],
+  [
+    "peasant",
+    "農夫；鄉下人",
+    "n.",
+    "person"
+  ],
+  [
+    "forum",
+    "論壇；公開討論的廣場；法庭",
+    "n.",
+    "place"
+  ],
+  [
+    "threshold",
+    "門檻；入口；開端",
+    "n.",
+    "structure"
+  ],
+  [
+    "suite",
+    "隨員；套房；(一)組",
+    "n.",
+    "place"
+  ],
+  [
+    "objection",
+    "異議；反對；不喜歡",
+    "n.",
+    "abstract"
+  ],
+  [
+    "fragment",
+    "碎片；破片；片段",
+    "n.",
+    "thing"
+  ],
+  [
+    "warmth",
+    "溫暖；溫情；暖和",
+    "n.",
+    "abstract"
+  ],
+  [
+    "projection",
+    "發射；計劃；突出部分",
+    "n.",
+    "abstract"
+  ],
+  [
+    "invention",
+    "發明；創作能力；虛構的故事",
+    "n.",
+    "abstract"
+  ],
+  [
+    "youngster",
+    "小孩；年輕人；少年",
+    "n.",
+    "person"
+  ],
+  [
+    "marker",
+    "作記號的人；記分員；書籤",
+    "n.",
+    "thing"
+  ],
+  [
+    "confession",
+    "承認；坦白；招供",
+    "n.",
+    "abstract"
+  ],
+  [
+    "defender",
+    "防衛者；防護者；辯護者",
+    "n.",
+    "person"
+  ],
+  [
+    "daddy",
+    "爸爸",
+    "n.",
+    "person"
+  ],
+  [
+    "contributor",
+    "貢獻者；捐助者；贈送者",
+    "n.",
+    "person"
+  ],
+  [
+    "electronics",
+    "電子學",
+    "n.",
+    "technology"
+  ],
+  [
+    "foreigner",
+    "外國人；外地人",
+    "n.",
+    "person"
+  ],
+  [
+    "plea",
+    "懇求；辯解；抗辯",
+    "n.",
+    "abstract"
+  ],
+  [
+    "narrator",
+    "講述者；敘述者",
+    "n.",
+    "person"
+  ],
+  [
+    "diplomat",
+    "外交官；有外交手腕的人",
+    "n.",
+    "person"
+  ],
+  [
+    "sensor",
+    "傳感器",
+    "n.",
+    "technology"
+  ],
+  [
+    "dean",
+    "院長；主持牧師",
+    "n.",
+    "person"
+  ],
+  [
+    "scrutiny",
+    "細看；仔細檢查；監視",
+    "n.",
+    "abstract"
+  ],
+  [
+    "tech",
+    "技術學院或學校",
+    "n.",
+    "schoolScience"
+  ],
+  [
+    "loser",
+    "失敗者；遺失者",
+    "n.",
+    "person"
+  ],
+  [
+    "critique",
+    "評論文章；評論",
+    "n.",
+    "media"
+  ],
+  [
+    "congregation",
+    "集合；聚集",
+    "n.",
+    "organization"
+  ],
+  [
+    "composer",
+    "作曲家；作家；調停者",
+    "n.",
+    "person"
+  ],
+  [
+    "tenure",
+    "享有；保有期",
+    "n.",
+    "abstract"
+  ],
+  [
+    "completion",
+    "完成",
+    "n.",
+    "abstract"
+  ],
+  [
+    "trader",
+    "商人；商船",
+    "n.",
+    "person"
+  ],
+  [
+    "sailor",
+    "水手；船員；海員",
+    "n.",
+    "person"
+  ],
+  [
+    "commentary",
+    "註釋；評論；說明",
+    "n.",
+    "media"
+  ],
+  [
+    "trout",
+    "鮭魚",
+    "n.",
+    "animal"
+  ],
+  [
+    "cowboy",
+    "牛仔；牛郎；牧童",
+    "n.",
+    "person"
+  ],
+  [
+    "learner",
+    "學習者；初學者",
+    "n.",
+    "person"
+  ],
+  [
+    "dragon",
+    "龍；兇暴的人",
+    "n.",
+    "animal"
+  ],
+  [
+    "creator",
+    "上帝；創造者；創作者",
+    "n.",
+    "person"
+  ],
+  [
+    "inability",
+    "無能；無力",
+    "n.",
+    "abstract"
+  ],
+  [
+    "memo",
+    "備忘錄",
+    "n.",
+    "media"
+  ],
+  [
+    "philosopher",
+    "哲學家；哲人；思想開創人",
+    "n.",
+    "person"
+  ],
+  [
+    "goodness",
+    "仁慈；善良",
+    "n.",
+    "abstract"
+  ],
+  [
+    "destiny",
+    "命運；定數",
+    "n.",
+    "abstract"
+  ],
+  [
+    "trillion",
+    "大量",
+    "n.",
+    "abstract"
+  ],
+  [
+    "migrant",
+    "候鳥；移居者",
+    "n.",
+    "person"
+  ],
+  [
+    "homeowner",
+    "私房屋主；自己擁有住房者",
+    "n.",
+    "person"
+  ],
+  [
+    "hostility",
+    "敵意；敵對；反對",
+    "n.",
+    "abstract"
+  ],
+  [
+    "spectator",
+    "觀眾；目擊者；旁觀者",
+    "n.",
+    "person"
+  ],
+  [
+    "hatred",
+    "憎恨；仇恨；憎惡",
+    "n.",
+    "abstract"
+  ],
+  [
+    "rookie",
+    "新手",
+    "n.",
+    "person"
+  ],
+  [
+    "dinosaur",
+    "恐龍",
+    "n.",
+    "animal"
+  ],
+  [
+    "insider",
+    "內部的人；權威人士；知道內情的人",
+    "n.",
+    "person"
+  ],
+  [
+    "assertion",
+    "斷言；主張",
+    "n.",
+    "abstract"
+  ],
+  [
+    "commentator",
+    "評論員；實況廣播員；註釋者",
+    "n.",
+    "person"
+  ],
+  [
+    "believer",
+    "信徒",
+    "n.",
+    "person"
+  ],
+  [
+    "vanilla",
+    "香草；香子蘭",
+    "n.",
+    "food"
+  ],
+  [
+    "innocence",
+    "無罪；無知；天真無邪",
+    "n.",
+    "abstract"
+  ],
+  [
+    "parameter",
+    "參變數；參變量；參數",
+    "n.",
+    "schoolScience"
+  ],
+  [
+    "regression",
+    "退步；迴歸",
+    "n.",
+    "abstract"
+  ],
+  [
+    "inclusion",
+    "包含；內含物",
+    "n.",
+    "abstract"
+  ],
+  [
+    "rehearsal",
+    "預演；排演；練習",
+    "n.",
+    "activity"
+  ],
+  [
+    "successor",
+    "繼承者；接任者",
+    "n.",
+    "person"
+  ],
+  [
+    "hometown",
+    "故鄉；家鄉",
+    "n.",
+    "place"
+  ],
+  [
+    "detector",
+    "發現者；檢驗器；檢波器",
+    "n.",
+    "technology"
+  ],
+  [
+    "grid",
+    "格子；柵格",
+    "n.",
+    "technology"
+  ],
+  [
+    "superintendent",
+    "監督人；主管人；主日學校校長",
+    "n.",
+    "person"
+  ],
+  [
+    "sadness",
+    "悲哀；悲傷",
+    "n.",
+    "abstract"
+  ],
+  [
+    "supper",
+    "晚餐",
+    "n.",
+    "food"
+  ],
+  [
+    "salvation",
+    "拯救；救助；救世",
+    "n.",
+    "abstract"
+  ],
+  [
+    "certainty",
+    "確定；確實的事情",
+    "n.",
+    "abstract"
+  ],
+  [
+    "vocabulary",
+    "詞彙(量)；詞彙表",
+    "n.",
+    "schoolScience"
+  ],
+  [
+    "maple",
+    "楓；楓木；淡棕色",
+    "n.",
+    "nature"
+  ],
+  [
+    "salesman",
+    "售貨員；推銷員",
+    "n.",
+    "person"
+  ],
+  [
+    "axis",
+    "軸",
+    "n.",
+    "schoolScience"
+  ],
+  [
+    "newcomer",
+    "新來者",
+    "n.",
+    "person"
+  ],
+  [
+    "indictment",
+    "起訴；控告；起訴狀",
+    "n.",
+    "person"
+  ],
+  [
+    "collision",
+    "碰撞；衝突；牴觸",
+    "n.",
+    "abstract"
+  ],
+  [
+    "astronaut",
+    "太空旅行者；宇航員",
+    "n.",
+    "person"
+  ],
+  [
+    "altar",
+    "聖壇；祭壇",
+    "n.",
+    "place"
+  ],
+  [
+    "millennium",
+    "千禧年；一千年",
+    "n.",
+    "time"
+  ],
+  [
+    "monopoly",
+    "壟斷；專賣權；獨佔事業",
+    "n.",
+    "business"
+  ],
+  [
+    "miner",
+    "礦工；開礦機；坑道工兵",
+    "n.",
+    "person"
+  ],
+  [
+    "delegation",
+    "代表團；派遣代表團；代表的地位(或權力)",
+    "n.",
+    "organization"
+  ],
+  [
+    "emergence",
+    "出現；浮現；發生",
+    "n.",
+    "abstract"
+  ],
+  [
+    "preacher",
+    "傳道士；講道者；牧師",
+    "n.",
+    "person"
+  ],
+  [
+    "sunset",
+    "日落；晚年",
+    "n.",
+    "time"
+  ],
+  [
+    "legitimacy",
+    "合法；正統；正當",
+    "n.",
+    "abstract"
+  ],
+  [
+    "resignation",
+    "辭職；辭呈；聽從",
+    "n.",
+    "abstract"
+  ],
+  [
+    "reconciliation",
+    "和解；和好；復交",
+    "n.",
+    "abstract"
+  ],
+  [
+    "impairment",
+    "削弱；減少；損害",
+    "n.",
+    "abstract"
+  ],
+  [
+    "ignorance",
+    "無知；愚味",
+    "n.",
+    "abstract"
+  ],
+  [
+    "wetland",
+    "溼地；沼澤地",
+    "n.",
+    "nature"
+  ],
+  [
+    "skier",
+    "滑雪的人",
+    "n.",
+    "person"
+  ],
+  [
+    "mosque",
+    "清真寺",
+    "n.",
+    "place"
+  ],
+  [
+    "excellence",
+    "優秀；卓越；優點",
+    "n.",
+    "abstract"
+  ],
+  [
+    "resentment",
+    "怨恨；憤恨",
+    "n.",
+    "abstract"
+  ],
+  [
+    "repetition",
+    "重複；背誦；循環",
+    "n.",
+    "activity"
+  ],
+  [
+    "spectacle",
+    "引人羨慕的東西；景象；眼鏡",
+    "n.",
+    "media"
+  ],
+  [
+    "setup",
+    "裝備；組織；計劃",
+    "n.",
+    "technology"
+  ],
+  [
+    "cleanup",
+    "清除；暴利",
+    "n.",
+    "activity"
+  ],
+  [
+    "matrix",
+    "母體；子宮；基質",
+    "n.",
+    "schoolScience"
+  ],
+  [
+    "lineup",
+    "陣容；陣形；佈陣",
+    "n.",
+    "organization"
+  ],
+  [
+    "easter",
+    "復活節",
+    "n.",
+    "time"
+  ],
+  [
+    "advisor",
+    "顧問；勸告者；指導教師",
+    "n.",
+    "person"
+  ],
+  [
+    "footage",
+    "英尺長度；英板尺；(影片的)連續鏡頭",
+    "n.",
+    "media"
+  ],
+  [
+    "temptation",
+    "誘惑；誘惑物",
+    "n.",
+    "abstract"
+  ],
+  [
+    "tiger",
+    "老虎；虎；兇暴的人",
+    "n.",
+    "animal"
+  ],
+  [
+    "toddler",
+    "蹣跚行走的人；學步的小孩；學步的幼兒",
+    "n.",
+    "person"
+  ],
+  [
+    "refusal",
+    "拒絕；推卻；優先決定權",
+    "n.",
+    "abstract"
+  ],
+  [
+    "navy",
+    "海軍；海軍人員；海軍軍力",
+    "n.",
+    "organization"
+  ],
+  [
+    "fairness",
+    "晴朗；光明正大；美麗",
+    "n.",
+    "abstract"
+  ],
+  [
+    "curator",
+    "管理者；經理；主管人",
+    "n.",
+    "person"
+  ],
+  [
+    "grower",
+    "栽培者；生長物",
+    "n.",
+    "person"
+  ],
+  [
+    "nonsense",
+    "無意義的事；荒謬言行；荒唐",
+    "n.",
+    "abstract"
+  ],
+  [
+    "fishery",
+    "漁業",
+    "n.",
+    "business"
+  ],
+  [
+    "thesis",
+    "論題；論文",
+    "n.",
+    "media"
+  ],
+  [
+    "coefficient",
+    "係數",
+    "n.",
+    "schoolScience"
+  ],
+  [
+    "sanctuary",
+    "聖所(指教堂、寺院等)；耶路撒冷的神殿；避難所",
+    "n.",
+    "place"
+  ],
+  [
+    "tuna",
+    "金槍魚；金槍魚肉",
+    "n.",
+    "food"
+  ],
+  [
+    "battlefield",
+    "戰場；沙場",
+    "n.",
+    "place"
+  ],
+  [
+    "staffer",
+    "(一名)職員(尤指編輯或記者)",
+    "n.",
+    "person"
+  ],
+  [
+    "robbery",
+    "搶掠；搶奪",
+    "n.",
+    "abstract"
+  ],
+  [
+    "footstep",
+    "腳步；腳步聲；足跡",
+    "n.",
+    "thing"
+  ],
+  [
+    "predictor",
+    "預言者",
+    "n.",
+    "person"
+  ],
+  [
+    "lottery",
+    "獎券；彩票；運氣",
+    "n.",
+    "activity"
+  ],
+  [
+    "princess",
+    "公主；王妃；女巨頭",
+    "n.",
+    "person"
+  ],
+  [
+    "maid",
+    "少女；未婚女子；女僕",
+    "n.",
+    "person"
+  ],
+  [
+    "circus",
+    "馬戲團；馬戲；競技場",
+    "n.",
+    "activity"
+  ],
+  [
+    "lieutenant",
+    "中尉；助理人員；副官",
+    "n.",
+    "person"
+  ],
+  [
+    "injustice",
+    "不公平；非正義的行為",
+    "n.",
+    "abstract"
+  ],
+  [
+    "motorcycle",
+    "摩托車",
+    "n.",
+    "transport"
+  ],
+  [
+    "oversight",
+    "勘漏；失察；失敗",
+    "n.",
+    "abstract"
+  ],
+  [
+    "slogan",
+    "吶喊聲；標語；口號",
+    "n.",
+    "media"
+  ],
+  [
+    "halloween",
+    "(基督教)萬聖節前夕",
+    "n.",
+    "time"
+  ],
+  [
+    "buffalo",
+    "水牛",
+    "n.",
+    "animal"
+  ],
+  [
+    "controller",
+    "控制器；管理者",
+    "n.",
+    "person"
+  ],
+  [
+    "villager",
+    "村民",
+    "n.",
+    "person"
+  ],
+  [
+    "watercolor",
+    "水彩顏料；水彩畫",
+    "n.",
+    "media"
+  ],
+  [
+    "garment",
+    "衣服；衣裝；外表",
+    "n.",
+    "wearable"
+  ],
+  [
+    "caregiver",
+    "照料者；護理者",
+    "n.",
+    "person"
+  ],
+  [
+    "boulder",
+    "大圓石",
+    "n.",
+    "nature"
+  ],
+  [
+    "bachelor",
+    "單身漢；學士",
+    "n.",
+    "person"
+  ],
+  [
+    "filmmaker",
+    "電影製作人",
+    "n.",
+    "person"
+  ],
+  [
+    "livestock",
+    "家畜",
+    "n.",
+    "animal"
+  ],
+  [
+    "heir",
+    "繼承人；嗣子；後嗣",
+    "n.",
+    "person"
+  ],
+  [
+    "honesty",
+    "誠實；公正；正直",
+    "n.",
+    "abstract"
+  ],
+  [
+    "meditation",
+    "沉思；冥想",
+    "n.",
+    "activity"
+  ],
+  [
+    "protester",
+    "抗議者；持異議者；拒付者",
+    "n.",
+    "person"
+  ],
+  [
+    "transcript",
+    "抄本；副本；成績單",
+    "n.",
+    "media"
+  ],
+  [
+    "standpoint",
+    "立場；觀點",
+    "n.",
+    "abstract"
+  ],
+  [
+    "mainland",
+    "大陸；本土",
+    "n.",
+    "place"
+  ],
+  [
+    "lobster",
+    "龍蝦",
+    "n.",
+    "food"
+  ],
+  [
+    "solidarity",
+    "團結；團結一致；共同一致",
+    "n.",
+    "abstract"
+  ],
+  [
+    "detection",
+    "發現；察覺；探測",
+    "n.",
+    "abstract"
+  ],
+  [
+    "freeman",
+    "自由民；公民；正會員",
+    "n.",
+    "person"
+  ],
+  [
+    "burial",
+    "埋葬；葬禮",
+    "n.",
+    "activity"
+  ],
+  [
+    "spokeswoman",
+    "女發言人；女代言人",
+    "n.",
+    "person"
+  ],
+  [
+    "archaeologist",
+    "考古學家",
+    "n.",
+    "person"
+  ],
+  [
+    "prototype",
+    "原型",
+    "n.",
+    "technology"
+  ],
+  [
+    "lender",
+    "出借人；貸方",
+    "n.",
+    "person"
+  ],
+  [
+    "anthropologist",
+    "人類學家",
+    "n.",
+    "person"
+  ],
+  [
+    "module",
+    "組件；模數",
+    "n.",
+    "technology"
+  ],
+  [
+    "dominance",
+    "優勢；顯性；統治",
+    "n.",
+    "abstract"
+  ],
+  [
+    "theorist",
+    "理論家；理論工作者",
+    "n.",
+    "person"
+  ],
+  [
+    "oyster",
+    "牡蠣；蠔；沉默者",
+    "n.",
+    "food"
+  ],
+  [
+    "rebellion",
+    "謀反；叛亂；反抗",
+    "n.",
+    "abstract"
+  ],
+  [
+    "usage",
+    "用法；使用；習慣",
+    "n.",
+    "abstract"
+  ],
+  [
+    "novelist",
+    "小說家",
+    "n.",
+    "person"
+  ],
+  [
+    "nephew",
+    "侄子；外甥",
+    "n.",
+    "person"
+  ],
+  [
+    "urgency",
+    "緊急；催促",
+    "n.",
+    "abstract"
+  ],
+  [
+    "racist",
+    "種族主義者",
+    "n.",
+    "person"
+  ],
+  [
+    "succession",
+    "連續；繼承權；繼位",
+    "n.",
+    "abstract"
+  ],
+  [
+    "waitress",
+    "女侍者；女服務員",
+    "n.",
+    "person"
+  ],
+  [
+    "thinker",
+    "思想者；思想家",
+    "n.",
+    "person"
+  ],
+  [
+    "interference",
+    "衝突；干涉",
+    "n.",
+    "abstract"
+  ],
+  [
+    "mama",
+    "媽媽",
+    "n.",
+    "person"
+  ],
+  [
+    "spacecraft",
+    "航天飛船",
+    "n.",
+    "transport"
+  ],
+  [
+    "devotion",
+    "熱愛；投入",
+    "n.",
+    "abstract"
+  ],
+  [
+    "roster",
+    "花名冊",
+    "n.",
+    "media"
+  ],
+  [
+    "turtle",
+    "海龜",
+    "n.",
+    "animal"
+  ],
+  [
+    "trio",
+    "三重唱",
+    "n.",
+    "organization"
+  ],
+  [
+    "ferry",
+    "渡船；渡口",
+    "n.",
+    "transport"
+  ],
+  [
+    "comeback",
+    "復原；復辟；復位",
+    "n.",
+    "abstract"
+  ],
+  [
+    "perfection",
+    "完美；完成；極端",
+    "n.",
+    "abstract"
+  ],
+  [
+    "rite",
+    "儀式；典禮；慣例",
+    "n.",
+    "activity"
+  ],
+  [
+    "offspring",
+    "子孫；後代；產物",
+    "n.",
+    "person"
+  ],
+  [
+    "underwear",
+    "內衣",
+    "n.",
+    "wearable"
+  ],
+  [
+    "appropriation",
+    "撥用；挪用；撥款",
+    "n.",
+    "business"
+  ],
+  [
+    "disappearance",
+    "看不見；失蹤；消失",
+    "n.",
+    "abstract"
+  ],
+  [
+    "hitter",
+    "打手；打擊的人",
+    "n.",
+    "person"
+  ],
+  [
+    "relevance",
+    "中肯；關聯；相關性",
+    "n.",
+    "abstract"
+  ],
+  [
+    "motif",
+    "主題；基調；動機",
+    "n.",
+    "media"
+  ],
+  [
+    "policymaker",
+    "政策制定者；決策人",
+    "n.",
+    "person"
+  ],
+  [
+    "proximity",
+    "接近；親近",
+    "n.",
+    "abstract"
+  ],
+  [
+    "sermon",
+    "說教；啟示；佈道",
+    "n.",
+    "media"
+  ],
+  [
+    "goddess",
+    "女神；美女；受崇拜的女性",
+    "n.",
+    "person"
+  ],
+  [
+    "grandson",
+    "孫子；外孫",
+    "n.",
+    "person"
+  ],
+  [
+    "smoker",
+    "吸菸者；吸菸的人；吸菸車廂",
+    "n.",
+    "person"
+  ],
+  [
+    "liar",
+    "說謊者",
+    "n.",
+    "person"
+  ],
+  [
+    "fascination",
+    "令人著迷的事物；入迷；魅力",
+    "n.",
+    "abstract"
+  ],
+  [
+    "contender",
+    "參賽者；爭論者；鬥爭者",
+    "n.",
+    "person"
+  ],
+  [
+    "prestige",
+    "聲望；威望；威信",
+    "n.",
+    "abstract"
+  ],
+  [
+    "elevation",
+    "海拔；提高；仰角",
+    "n.",
+    "abstract"
+  ],
+  [
+    "backdrop",
+    "背景幕；背景",
+    "n.",
+    "media"
+  ],
+  [
+    "interrogation",
+    "審問；疑問句；問號",
+    "n.",
+    "activity"
+  ],
+  [
+    "shooter",
+    "射手；狩獵者；手槍",
+    "n.",
+    "person"
+  ],
+  [
+    "greed",
+    "貪慾；貪婪",
+    "n.",
+    "abstract"
+  ],
+  [
+    "referendum",
+    "（就重大政治或社會問題進行的）全民公決；全民投票",
+    "n.",
+    "activity"
+  ],
+  [
+    "millionaire",
+    "百萬富翁；大富豪",
+    "n.",
+    "person"
+  ],
+  [
+    "disruption",
+    "分裂；崩潰；瓦解",
+    "n.",
+    "abstract"
+  ],
+  [
+    "strategist",
+    "戰略家",
+    "n.",
+    "person"
+  ],
+  [
+    "angler",
+    "釣魚；攫取；追逐",
+    "n.",
+    "person"
+  ],
+  [
+    "paradise",
+    "天堂；樂園；伊甸園",
+    "n.",
+    "place"
+  ],
+  [
+    "theologian",
+    "神學者",
+    "n.",
+    "person"
+  ],
+  [
+    "paperwork",
+    "文書工作",
+    "n.",
+    "business"
+  ],
+  [
+    "prairie",
+    "大草原；草甸",
+    "n.",
+    "nature"
+  ],
+  [
+    "boomer",
+    "往來無定的臨時工",
+    "n.",
+    "person"
+  ],
+  [
+    "landfill",
+    "垃圾堆；垃圾填埋地",
+    "n.",
+    "place"
+  ],
+  [
+    "patio",
+    "屋子與花園之間的一片供晴天休息用的石砌空地",
+    "n.",
+    "place"
+  ],
+  [
+    "roommate",
+    "住在同室的人",
+    "n.",
+    "person"
+  ],
+  [
+    "exploitation",
+    "開發；開採；剝削",
+    "n.",
+    "abstract"
+  ],
+  [
+    "clown",
+    "小丑；鄉下人",
+    "n.",
+    "person"
+  ],
+  [
+    "salon",
+    "大會客室；大廳；客廳",
+    "n.",
+    "place"
+  ],
+  [
+    "bureaucrat",
+    "官僚作風的人；官僚；官僚主義者",
+    "n.",
+    "person"
+  ],
+  [
+    "laborer",
+    "體力勞動者；輔助工",
+    "n.",
+    "person"
+  ],
+  [
+    "reliance",
+    "信任；信賴；受信賴的人(或事)",
+    "n.",
+    "abstract"
+  ],
+  [
+    "nucleus",
+    "核心；核子；原子核",
+    "n.",
+    "schoolScience"
+  ],
+  [
+    "tornado",
+    "旋風；龍捲風；大雷雨",
+    "n.",
+    "nature"
+  ],
+  [
+    "admiration",
+    "讚賞；欽佩；引人讚賞的對象",
+    "n.",
+    "abstract"
+  ],
+  [
+    "sedan",
+    "轎車；轎子",
+    "n.",
+    "transport"
+  ],
+  [
+    "overview",
+    "概述；概觀；總的看法",
+    "n.",
+    "abstract"
+  ],
+  [
+    "earring",
+    "耳環；耳飾",
+    "n.",
+    "wearable"
+  ],
+  [
+    "reluctance",
+    "不情願；勉強",
+    "n.",
+    "abstract"
+  ],
+  [
+    "forgiveness",
+    "寬恕；寬仁之心",
+    "n.",
+    "abstract"
+  ],
+  [
+    "dedication",
+    "奉獻；獻身；獻辭",
+    "n.",
+    "abstract"
+  ],
+  [
+    "simplicity",
+    "單純；簡樸；樸素",
+    "n.",
+    "abstract"
+  ],
+  [
+    "plaque",
+    "匾；飾板；名牌",
+    "n.",
+    "thing"
+  ],
+  [
+    "superstar",
+    "超級明星",
+    "n.",
+    "person"
+  ],
+  [
+    "fixture",
+    "固定(狀態)；固定物；設備",
+    "n.",
+    "thing"
+  ],
+  [
+    "negotiator",
+    "磋商者；交涉者；議定者",
+    "n.",
+    "person"
+  ],
+  [
+    "emperor",
+    "皇帝；君主",
+    "n.",
+    "person"
+  ],
+  [
+    "plaza",
+    "廣場；市場；購物區",
+    "n.",
+    "place"
+  ],
+  [
+    "informant",
+    "提供消息者；密告者；被調查者",
+    "n.",
+    "person"
+  ],
+  [
+    "metro",
+    "地鐵",
+    "n.",
+    "transport"
+  ],
+  [
+    "folder",
+    "文件夾；摺紙機；摺疊式書本",
+    "n.",
+    "person"
+  ],
+  [
+    "subcommittee",
+    "小組委員會",
+    "n.",
+    "person"
+  ],
+  [
+    "secrecy",
+    "秘密；保密",
+    "n.",
+    "abstract"
+  ],
+  [
+    "ethic",
+    "道德規範；倫理",
+    "n.",
+    "person"
+  ],
+  [
+    "grader",
+    "把東西分類別的人/機器；平路機；推土機",
+    "n.",
+    "person"
+  ],
+  [
+    "precinct",
+    "區域；管理區；管轄區域",
+    "n.",
+    "place"
+  ],
+  [
+    "shrub",
+    "矮樹；灌木；果汁甜酒",
+    "n.",
+    "animal"
+  ],
+  [
+    "grove",
+    "小樹林",
+    "n.",
+    "nature"
+  ],
+  [
+    "tribunal",
+    "法庭；法官席；裁決",
+    "n.",
+    "organization"
+  ],
+  [
+    "nationalist",
+    "國家主義者；民族主義者",
+    "n.",
+    "person"
+  ],
+  [
+    "takeover",
+    "接管；接收",
+    "n.",
+    "person"
+  ],
+  [
+    "innings",
+    "局；回合；盤",
+    "n.",
+    "activity"
+  ],
+  [
+    "realism",
+    "寫實主義；現實；實在論",
+    "n.",
+    "abstract"
+  ],
+  [
+    "spinach",
+    "菠菜；貨幣；胡說八道",
+    "n.",
+    "animal"
+  ],
+  [
+    "mistress",
+    "主婦；女主人；情婦",
+    "n.",
+    "person"
+  ],
+  [
+    "baptist",
+    "施洗禮者；浸禮會教友",
+    "n.",
+    "person"
+  ],
+  [
+    "platter",
+    "大淺盤；主菜盤",
+    "n.",
+    "person"
+  ],
+  [
+    "allegiance",
+    "忠貞；效忠",
+    "n.",
+    "place"
+  ],
+  [
+    "felony",
+    "重罪",
+    "n.",
+    "abstract"
+  ],
+  [
+    "retiree",
+    "退休人員；退休者",
+    "n.",
+    "person"
+  ],
+  [
+    "socialism",
+    "社會主義；社會主義運動",
+    "n.",
+    "abstract"
+  ],
+  [
+    "fingertip",
+    "指尖；指套",
+    "n.",
+    "bodyHealth"
+  ],
+  [
+    "puppet",
+    "傀儡；木偶",
+    "n.",
+    "person"
+  ],
+  [
+    "throne",
+    "王座；君主",
+    "n.",
+    "person"
+  ],
+  [
+    "gunman",
+    "槍手；持槍的歹徒；製造槍械者",
+    "n.",
+    "person"
+  ],
+  [
+    "chick",
+    "小雞；小鳥；竹簾",
+    "n.",
+    "animal"
+  ],
+  [
+    "mankind",
+    "人類；男性",
+    "n.",
+    "abstract"
+  ],
+  [
+    "betrayal",
+    "背叛；辜負",
+    "n.",
+    "abstract"
+  ],
+  [
+    "condo",
+    "共同統治；共管下的政府；共管",
+    "n.",
+    "place"
+  ],
+  [
+    "showcase",
+    "陳列櫥",
+    "n.",
+    "media"
+  ],
+  [
+    "setback",
+    "挫折；退步；逆流",
+    "n.",
+    "abstract"
+  ],
+  [
+    "insistence",
+    "堅持；堅決主張",
+    "n.",
+    "abstract"
+  ],
+  [
+    "severity",
+    "嚴格；樸素；激烈",
+    "n.",
+    "abstract"
+  ],
+  [
+    "sunrise",
+    "日出；黎明；拂曉",
+    "n.",
+    "time"
+  ],
+  [
+    "competency",
+    "足以使人過舒適生活的富裕收入；充裕的生活條件",
+    "n.",
+    "abstract"
+  ],
+  [
+    "openness",
+    "公開；寬闊；率真",
+    "n.",
+    "abstract"
+  ],
+  [
+    "diagram",
+    "圖表；圖解",
+    "n.",
+    "schoolScience"
+  ],
+  [
+    "foliage",
+    "樹葉；植物",
+    "n.",
+    "nature"
+  ],
+  [
+    "domination",
+    "支配；控制；管轄",
+    "n.",
+    "abstract"
+  ],
+  [
+    "cohort",
+    "一群；步兵大隊；支持者",
+    "n.",
+    "familyGroup"
+  ],
+  [
+    "multimedia",
+    "多媒體",
+    "n.",
+    "media"
+  ],
+  [
+    "palette",
+    "調色板；顏料",
+    "n.",
+    "thing"
+  ],
+  [
+    "keeper",
+    "監護人；管理人；看守人",
+    "n.",
+    "person"
+  ],
+  [
+    "arsenal",
+    "兵工廠；軍械庫",
+    "n.",
+    "technology"
+  ],
+  [
+    "disbelief",
+    "不信；懷疑",
+    "n.",
+    "abstract"
+  ],
+  [
+    "alumnus",
+    "男畢業生；男校友",
+    "n.",
+    "person"
+  ],
+  [
+    "madame",
+    "夫人；小姐；太太",
+    "n.",
+    "person"
+  ],
+  [
+    "comrade",
+    "同志；夥伴",
+    "n.",
+    "person"
+  ],
+  [
+    "rancher",
+    "大農場經營者；牧場工人",
+    "n.",
+    "person"
+  ],
+  [
+    "niece",
+    "侄女；甥女",
+    "n.",
+    "person"
+  ],
+  [
+    "readiness",
+    "預備；準備；敏捷",
+    "n.",
+    "abstract"
+  ],
+  [
+    "persistence",
+    "固執；堅持不懈；持續(性)",
+    "n.",
+    "time"
+  ],
+  [
+    "desperation",
+    "絕望",
+    "n.",
+    "abstract"
+  ],
+  [
+    "morale",
+    "士氣；道德",
+    "n.",
+    "person"
+  ],
+  [
+    "distortion",
+    "扭曲；變形；曲解",
+    "n.",
+    "abstract"
+  ],
+  [
+    "announcer",
+    "節目報告員；宣告者",
+    "n.",
+    "person"
+  ],
+  [
+    "prophet",
+    "預言者；先知；提倡者",
+    "n.",
+    "person"
+  ],
+  [
+    "dime",
+    "10分硬幣(美、加)",
+    "n.",
+    "money"
+  ],
+  [
+    "protagonist",
+    "主人公；主角；領導者",
+    "n.",
+    "person"
+  ],
+  [
+    "comedian",
+    "喜劇演員",
+    "n.",
+    "person"
+  ],
+  [
+    "cruiser",
+    "巡洋艦；巡航飛機；警察巡邏車",
+    "n.",
+    "person"
+  ],
+  [
+    "rubble",
+    "粗石；碎磚；粗石堆",
+    "n.",
+    "nature"
+  ],
+  [
+    "resemblance",
+    "相似處；類似；肖像",
+    "n.",
+    "abstract"
+  ],
+  [
+    "conjunction",
+    "連接詞；聯合；結合",
+    "n.",
+    "abstract"
+  ],
+  [
+    "novice",
+    "新手；初學者",
+    "n.",
+    "person"
+  ],
+  [
+    "runoff",
+    "逕流(量)；決賽；決定性競選",
+    "n.",
+    "nature"
+  ],
+  [
+    "ranger",
+    "王室守林人；騎警；漫遊者",
+    "n.",
+    "person"
+  ],
+  [
+    "mastery",
+    "征服；統治權；優勢",
+    "n.",
+    "person"
+  ],
+  [
+    "facade",
+    "建築物的正面；外觀；表面",
+    "n.",
+    "place"
+  ],
+  [
+    "playwright",
+    "劇作家",
+    "n.",
+    "person"
+  ],
+  [
+    "poultry",
+    "家禽",
+    "n.",
+    "food"
+  ],
+  [
+    "enjoyment",
+    "享樂；快樂；享受",
+    "n.",
+    "time"
+  ],
+  [
+    "automaker",
+    "<美>汽車製造商",
+    "n.",
+    "person"
+  ],
+  [
+    "cracker",
+    "餅乾；爆竹",
+    "n.",
+    "person"
+  ],
+  [
+    "advertiser",
+    "做廣告者；廣告客戶",
+    "n.",
+    "person"
+  ],
+  [
+    "procession",
+    "隊伍；連續；列隊行進",
+    "n.",
+    "abstract"
+  ],
+  [
+    "dictatorship",
+    "獨裁者之職位；獨裁；獨裁政權",
+    "n.",
+    "abstract"
+  ],
+  [
+    "caterer",
+    "外燴業者；餐飲承辦人",
+    "n.",
+    "person"
+  ],
+  [
+    "franchisee",
+    "加盟業主；特許經營者",
+    "n.",
+    "person"
+  ],
+  [
+    "proofreader",
+    "校對員",
+    "n.",
+    "person"
+  ],
+  [
+    "notary",
+    "公證人",
+    "n.",
+    "person"
+  ],
+  [
+    "paramedic",
+    "救護技術員；急救人員",
+    "n.",
+    "person"
+  ],
+  [
+    "keynote",
+    "主題演講；核心主旨",
+    "n.",
+    "event"
+  ]
+];
+
+
+// ===== Tatoeba ??????? (tatoeba-examples.js) =====
+// Free bilingual examples from Tatoeba. See TATOEBA_EXAMPLE_SOURCES for individual attribution.
+// Do not remove the source registry: entries may be CC BY 2.0 FR or CC0 1.0.
+var TATOEBA_EXAMPLES = {
+  "abundance": [
+    "She lives in abundance.",
+    "她過著富足的日子。"
+  ],
+  "acne": [
+    "Oliver has an acne problem.",
+    "奧利弗有粉刺。"
+  ],
+  "activist": [
+    "Tom is an environmental activist.",
+    "湯姆是激進的環保主義者。"
+  ],
+  "administrator": [
+    "Ask an administrator.",
+    "去問問管理員看看。"
+  ],
+  "adulthood": [
+    "The graduation from elementary school to middle school is regarded by some as the first step towards adulthood.",
+    "有些人認為從小學升到中學是踏入成年的第一步。"
+  ],
+  "affection": [
+    "He wants affection.",
+    "他要愛。"
+  ],
+  "afternoon": [
+    "Good afternoon!",
+    "午安！"
+  ],
+  "airplane": [
+    "Look! An airplane!",
+    "看！飛機！"
+  ],
+  "anthem": [
+    "Esperanto has its own anthem.",
+    "世界語有自己的聖歌。"
+  ],
+  "apple": [
+    "Buy an apple.",
+    "買一顆蘋果。"
+  ],
+  "arcade": [
+    "I have a lot of arcade machines.",
+    "我有很多電玩。"
+  ],
+  "archery": [
+    "Mr. Sato practices archery on weekends.",
+    "佐藤先生在週末練習射箭。"
+  ],
+  "arsenal": [
+    "Their arsenal is very powerful.",
+    "他們的軍火庫好強啊。"
+  ],
+  "asphalt": [
+    "The street is paved with asphalt.",
+    "這條街鋪上了柏油。"
+  ],
+  "assumption": [
+    "That's an assumption.",
+    "這是個假設。"
+  ],
+  "asthma": [
+    "He has asthma.",
+    "他有哮喘。"
+  ],
+  "automaker": [
+    "The rules now under review require an average of 54.5 miles per gallon (23 kilometers per liter) from an automaker's entire fleet by 2025.",
+    "目前正在審查的規則要求，到 2025 年，汽車製造商所製造的所有汽車，平均續航須達到每加侖 54.5 英里 (每公升 23 公里)。"
+  ],
+  "bachelor": [
+    "Are you a bachelor?",
+    "你是單身嗎？"
+  ],
+  "backache": [
+    "I have a backache.",
+    "我背痛。"
+  ],
+  "baggage": [
+    "Here is my baggage.",
+    "這是我的行李。"
+  ],
+  "bamboo": [
+    "Bamboo grows in the garden.",
+    "花園裡有竹子在生長。"
+  ],
+  "barbecue": [
+    "I love barbecue.",
+    "我喜歡燒烤食物。"
+  ],
+  "bathroom": [
+    "Bathroom's free.",
+    "洗手間沒人。"
+  ],
+  "battlefield": [
+    "He died on the battlefield.",
+    "他戰死沙場。"
+  ],
+  "bedroom": [
+    "Is this your bedroom?",
+    "這是你的臥室嗎？"
+  ],
+  "beef": [
+    "Beef, please.",
+    "請給我牛肉。"
+  ],
+  "bell": [
+    "The bell rang.",
+    "鈴響了。"
+  ],
+  "beverage": [
+    "What's your favorite beverage?",
+    "你最喜歡的飲料是什麼？"
+  ],
+  "birthday": [
+    "Happy birthday.",
+    "生日快樂！"
+  ],
+  "blouse": [
+    "The blouse is clean.",
+    "襯衣是乾淨的。"
+  ],
+  "bookcase": [
+    "John assembled the bookcase.",
+    "約翰組裝了書架。"
+  ],
+  "bookkeeping": [
+    "Can you do bookkeeping?",
+    "你會記帳嗎?"
+  ],
+  "booklet": [
+    "This booklet is free of charge.",
+    "這本小冊子是免費的。"
+  ],
+  "bookmark": [
+    "Bookmark this site.",
+    "將此網站存入書籤。"
+  ],
+  "boomer": [
+    "OK boomer.",
+    "好啦，老古董。"
+  ],
+  "booth": [
+    "Where's the nearest phone booth?",
+    "最近的電話亭在哪裡？"
+  ],
+  "buckle": [
+    "Buckle your seatbelts.",
+    "繫上安全帶吧。"
+  ],
+  "buffer": [
+    "During the Great Game, Afghanistan was a buffer state.",
+    "在大博弈期間，阿富汗是一個緩衝國。"
+  ],
+  "bushel": [
+    "Hide not your light under a bushel.",
+    "不要把你的燈藏在斗笠下。"
+  ],
+  "calligraphy": [
+    "Are you good at calligraphy?",
+    "你擅長書法嗎？"
+  ],
+  "cancer": [
+    "They research cancer.",
+    "他們從事癌症研究工作。"
+  ],
+  "canteen": [
+    "Is the canteen open yet?",
+    "食堂開了嗎？"
+  ],
+  "canvas": [
+    "He swept his brush across the canvas.",
+    "他將畫筆在畫布上輕輕一揮。"
+  ],
+  "capital city": [
+    "Reykjavík is the northernmost capital city.",
+    "雷克雅維克是緯度最高的首都。"
+  ],
+  "capitalism": [
+    "Capitalism is poverty.",
+    "資本主義是貧窮。"
+  ],
+  "carcass": [
+    "They found a giraffe carcass.",
+    "他們發現了一具長頸鹿的屍體。"
+  ],
+  "cardboard": [
+    "This is a cardboard box.",
+    "這是一個紙箱。"
+  ],
+  "carnival": [
+    "Not all Brazilians enjoy Carnival.",
+    "不是所有巴西人都喜歡狂歡節。"
+  ],
+  "cartridge": [
+    "Please replace the empty ink cartridge in the printer.",
+    "請把打印機裡面的空的墨粉鼓換掉。"
+  ],
+  "champagne": [
+    "Champagne, please.",
+    "給我香檳，謝謝。"
+  ],
+  "charcoal": [
+    "Tom does not know the difference between charcoal and carbon.",
+    "Tom不知道碳和煤的差別。"
+  ],
+  "charger": [
+    "My smartphone charger fell.",
+    "我的手機充電器掉了。"
+  ],
+  "cheer": [
+    "Cheer up.",
+    "打起精神來。"
+  ],
+  "cheese": [
+    "Say cheese.",
+    "茄子！"
+  ],
+  "chemistry": [
+    "I hate chemistry.",
+    "我討厭化學。"
+  ],
+  "chief executive": [
+    "I got acquainted with the chief executive.",
+    "我認識了這位行政長官。"
+  ],
+  "chin": [
+    "Chin up!",
+    "振奮起來！"
+  ],
+  "chopsticks": [
+    "Lucy cannot use chopsticks.",
+    "露西不會用筷子。"
+  ],
+  "christmas": [
+    "Merry Christmas.",
+    "聖誕節快樂！"
+  ],
+  "cinema": [
+    "This is a new cinema.",
+    "這是一家新電影院。"
+  ],
+  "circus": [
+    "That is a circus!",
+    "那是個馬戲團！"
+  ],
+  "classroom": [
+    "Keep your classroom tidy.",
+    "請保持大家的課室整潔。"
+  ],
+  "clock": [
+    "The clock stopped.",
+    "鐘停了。"
+  ],
+  "coffee shop": [
+    "Mother has a coffee shop.",
+    "媽媽有一個咖啡廳。"
+  ],
+  "column": [
+    "I found this column interesting.",
+    "我發現這個專欄很有趣。"
+  ],
+  "columnist": [
+    "Ali works as a sports columnist for the newspaper.",
+    "阿里是報社的體育專欄作家。"
+  ],
+  "comedian": [
+    "He is a comedian.",
+    "他是喜劇演員。"
+  ],
+  "compass": [
+    "Bring your compass along.",
+    "拿上你們的指南針。"
+  ],
+  "computer virus": [
+    "Tom got a computer virus while he was watching videos on dubious Internet sites.",
+    "湯姆在可疑的網站上看視頻的時候中了電腦病毒。"
+  ],
+  "condom": [
+    "The condom broke.",
+    "避孕套壞了。"
+  ],
+  "console": [
+    "Who will console her?",
+    "誰去安慰她？"
+  ],
+  "contraception": [
+    "What methods of contraception are you using?",
+    "你們採取什麼措施避孕？"
+  ],
+  "cosmos": [
+    "To date nobody knows the actual size of the cosmos.",
+    "宇宙的實際大小至今無人知道。"
+  ],
+  "couch": [
+    "Sleep on the couch.",
+    "睡在沙發上。"
+  ],
+  "courtyard": [
+    "The window overlooks the courtyard.",
+    "窗戶俯瞰著院子。"
+  ],
+  "craft": [
+    "Tom drinks craft beer.",
+    "湯姆喝精釀啤酒。"
+  ],
+  "curtain": [
+    "The curtain fell.",
+    "謝幕了。"
+  ],
+  "cycling": [
+    "He loves cycling.",
+    "他可喜歡騎車了。"
+  ],
+  "daddy": [
+    "Daddy's working.",
+    "爸爸在工作。"
+  ],
+  "danger": [
+    "Danger ahead.",
+    "前面有危險。"
+  ],
+  "daylight": [
+    "Daylight savings is over today.",
+    "今天夏令時結束了。"
+  ],
+  "daytime": [
+    "It was daytime.",
+    "那時是白天。"
+  ],
+  "dean": [
+    "He used to be a professor, but now he is the dean.",
+    "他以前是教授，後來當了系主任。"
+  ],
+  "debugging": [
+    "Most developers hate debugging; it's more fun to create bugs than to correct them.",
+    "大部分程序員討厭調試，設置故障比糾正它們有意思多了。"
+  ],
+  "decay": [
+    "Extreme is my decay.",
+    "我是多麼的衰弱啊！（請核對原文是否有誤）"
+  ],
+  "democracy": [
+    "What is democracy?",
+    "什麼是民主？"
+  ],
+  "deputy": [
+    "I'm your deputy.",
+    "我是你的代理人。"
+  ],
+  "diamond": [
+    "Diamond cuts diamond.",
+    "以毒攻毒。"
+  ],
+  "dictionary": [
+    "Check your dictionary.",
+    "查詞典。"
+  ],
+  "digital camera": [
+    "Can I borrow your digital camera tonight?",
+    "我今晚能借你的數碼相機嗎？"
+  ],
+  "dinosaur": [
+    "Dinosaur!",
+    "恐龍！"
+  ],
+  "diplomacy": [
+    "English is useful in diplomacy and tourism.",
+    "英語在外交和旅遊業方面很有用。"
+  ],
+  "directory": [
+    "May I see the telephone directory?",
+    "我能看看電話簿嗎？"
+  ],
+  "disco": [
+    "The disco is empty.",
+    "罐子是空的。"
+  ],
+  "documentation": [
+    "Learn about this documentation.",
+    "瞭解這份文件。"
+  ],
+  "dragon": [
+    "A dragon appears!",
+    "一條龍出現了！"
+  ],
+  "dryer": [
+    "Somebody has stolen my hair dryer.",
+    "有人偷了我的吹風機。"
+  ],
+  "easter": [
+    "Happy Easter!",
+    "復活節快樂。"
+  ],
+  "elastic": [
+    "This swimming suit is made of elastic material.",
+    "這件泳衣是用彈性面料做的。"
+  ],
+  "electricity": [
+    "Please save electricity.",
+    "請節約用電。"
+  ],
+  "embassy": [
+    "Where's the US embassy?",
+    "美國使館在哪兒呀？"
+  ],
+  "emergency exit": [
+    "Where is the emergency exit?",
+    "緊急出口在哪裡？"
+  ],
+  "emoji": [
+    "Sami sent Layla a flower emoji.",
+    "薩米給萊拉傳了一個鮮花表情符號。"
+  ],
+  "emphasis": [
+    "This point deserves special emphasis.",
+    "這個論點值得強調。"
+  ],
+  "entrance fee": [
+    "How much is the entrance fee?",
+    "門票多少錢？"
+  ],
+  "environmental protection": [
+    "Which is more important, economic development or environmental protection?",
+    "發展經濟和保護環境哪一個更重要?"
+  ],
+  "epidemic": [
+    "An epidemic disease broke out.",
+    "傳染病爆發了。"
+  ],
+  "estate": [
+    "Tom is an estate agent.",
+    "湯姆是中介。"
+  ],
+  "evening": [
+    "Good evening!",
+    "晚上好！"
+  ],
+  "exam": [
+    "When is your exam?",
+    "你什麼時候考試？"
+  ],
+  "exchange rate": [
+    "What is the exchange rate?",
+    "匯率是多少？"
+  ],
+  "failure": [
+    "He realized his failure.",
+    "他接受了他的失敗。"
+  ],
+  "farewell": [
+    "Farewell.",
+    "再見。"
+  ],
+  "ferry": [
+    "Your ferry is not big.",
+    "你的船不大。"
+  ],
+  "fiction": [
+    "Sometimes reality surpasses fiction.",
+    "有時候，現實比科幻還奇妙。"
+  ],
+  "final report": [
+    "As requested, we are submitting our final report.",
+    "將按照要求提交最終報告書。"
+  ],
+  "fingertip": [
+    "I burned my fingertip.",
+    "我把我的指尖給燒傷了。"
+  ],
+  "fire alarm": [
+    "The fire alarm rang.",
+    "火警警報響了。"
+  ],
+  "fireplace": [
+    "They gathered about the fireplace.",
+    "他們圍在壁爐旁邊。"
+  ],
+  "fisherman": [
+    "He's a fisherman.",
+    "他是一名漁夫。"
+  ],
+  "flask": [
+    "Someone has stolen my flask.",
+    "我的熱水瓶被人偷了。"
+  ],
+  "flight": [
+    "Enjoy your flight.",
+    "飛行愉快！"
+  ],
+  "flight attendant": [
+    "Tom is a flight attendant.",
+    "湯姆是空服員。"
+  ],
+  "fluency": [
+    "Fluency in English is a must.",
+    "流利的英語是必須的。"
+  ],
+  "foreign currency": [
+    "The exchange rates for foreign currency change daily.",
+    "外幣的匯率天天都變。"
+  ],
+  "fragrance": [
+    "These flowers have a really nice fragrance.",
+    "花真的好香。"
+  ],
+  "freeman": [
+    "Hello, is Mr. Freeman here?",
+    "哈囉, Freeman先生在嗎?"
+  ],
+  "fridge": [
+    "The fridge is dirty.",
+    "冰箱髒了。"
+  ],
+  "frying pan": [
+    "Where's the frying pan?",
+    "炒鍋在哪裡？"
+  ],
+  "funeral": [
+    "Many attended his funeral.",
+    "很多人都參加了他的葬禮。"
+  ],
+  "game": [
+    "Game over.",
+    "遊戲結束。"
+  ],
+  "gender": [
+    "What is your gender?",
+    "你的性別是什麼？"
+  ],
+  "girlfriend": [
+    "My girlfriend cried.",
+    "我女朋友哭了。"
+  ],
+  "goddess": [
+    "My goddess!",
+    "我的女神啊！"
+  ],
+  "grandchild": [
+    "Where's your grandchild?",
+    "你的孫女在哪裡？"
+  ],
+  "grass": [
+    "Tom smokes grass.",
+    "湯姆抽大麻。"
+  ],
+  "greed": [
+    "Greed is always hungry.",
+    "吃著碗裡，看著鍋裡。"
+  ],
+  "ground floor": [
+    "I live on the ground floor.",
+    "我住在一樓。"
+  ],
+  "guarantor": [
+    "I will be your guarantor.",
+    "我當你的擔保人."
+  ],
+  "guest room": [
+    "Layla slept in the guest room.",
+    "蕾拉在客房睡覺。"
+  ],
+  "halloween": [
+    "Happy Halloween!",
+    "萬聖節快樂！"
+  ],
+  "handbag": [
+    "That's my handbag.",
+    "這是我的包。"
+  ],
+  "homeland": [
+    "I love my homeland.",
+    "我愛我的祖國。"
+  ],
+  "homeowner": [
+    "I became a homeowner.",
+    "我買房了。"
+  ],
+  "homework": [
+    "Do your homework.",
+    "做你的作業。"
+  ],
+  "house": [
+    "A house!",
+    "家！"
+  ],
+  "hunter": [
+    "I am Tom Hunter.",
+    "我是Tom Hunter。"
+  ],
+  "husband": [
+    "Call my husband.",
+    "給我老公打電話。"
+  ],
+  "iceberg": [
+    "The Titanic hit an iceberg.",
+    "泰坦尼克號撞到了冰山。"
+  ],
+  "identification": [
+    "Do you have your student identification card?",
+    "你有學生證嗎？"
+  ],
+  "important meeting": [
+    "This is a very important meeting.",
+    "這是個很重要的會議。"
+  ],
+  "inability": [
+    "Excessive choice results in the inability to choose.",
+    "選擇太多導致無法選擇。"
+  ],
+  "infancy": [
+    "Space science is still in its infancy.",
+    "空間科學還在起步階段。"
+  ],
+  "information desk": [
+    "Where's the information desk?",
+    "詢問處在哪裡？"
+  ],
+  "interface": [
+    "The reimagined user interface allows smoother play across devices.",
+    "全新設計的操作介面能讓玩家在各種裝置上享受更流暢的體驗。"
+  ],
+  "internet access": [
+    "Why is my internet access so slow?",
+    "我的網怎麼會這麼慢？"
+  ],
+  "intersection": [
+    "This intersection is dangerous.",
+    "這個十字路口很危險。"
+  ],
+  "jeep": [
+    "Tom got out of the jeep.",
+    "湯姆從吉普車上下來了。"
+  ],
+  "jersey": [
+    "Jersey has beautiful scenery.",
+    "澤西島的景色很美。"
+  ],
+  "job offer": [
+    "The job offer still stands.",
+    "這份工作錄取仍然有效。"
+  ],
+  "jury": [
+    "The jury looked shocked.",
+    "陪審團看起來很震驚。"
+  ],
+  "kindergarten": [
+    "We go to kindergarten.",
+    "我們上幼兒園。"
+  ],
+  "kingdom": [
+    "Our army attacked the kingdom.",
+    "我們的軍隊進攻了王國。"
+  ],
+  "laptop computer": [
+    "Someone stole my laptop computer.",
+    "有人把我的筆記本電腦偷掉了。"
+  ],
+  "leaf": [
+    "A leaf is falling.",
+    "一片葉子正在掉下來。"
+  ],
+  "lettuce": [
+    "She shredded the lettuce.",
+    "她把生菜切絲。"
+  ],
+  "library": [
+    "At the library.",
+    "在圖書館。"
+  ],
+  "likelihood": [
+    "In all likelihood, this means war.",
+    "這很可能意味著戰爭。"
+  ],
+  "loneliness": [
+    "What causes loneliness?",
+    "什麼引起孤獨？"
+  ],
+  "longitude": [
+    "This line shows the longitude.",
+    "這條線代表經度。"
+  ],
+  "lottery": [
+    "I won the lottery.",
+    "我中獎了。"
+  ],
+  "lounge": [
+    "It is a lounge.",
+    "這是客廳。"
+  ],
+  "maid": [
+    "My maid is amazing.",
+    "我的丫鬟可厲害了。"
+  ],
+  "maker": [
+    "Grease the waffle maker.",
+    "給鬆餅機塗上油。"
+  ],
+  "malnutrition": [
+    "Half a million children still face malnutrition in Niger.",
+    "尼日爾仍然有50萬孩子面臨著營養不良。"
+  ],
+  "mama": [
+    "Mama cried.",
+    "媽媽哭了。"
+  ],
+  "mankind": [
+    "Our true nationality is mankind.",
+    "我們真正的國籍是人類。"
+  ],
+  "maple": [
+    "That's a maple.",
+    "那是一棵楓樹。"
+  ],
+  "mastery": [
+    "Use makes mastery.",
+    "熟能生巧。"
+  ],
+  "mathematics": [
+    "I study mathematics.",
+    "我讀數學。"
+  ],
+  "mayor": [
+    "He was mayor.",
+    "他曾是市長。"
+  ],
+  "meat": [
+    "Eat meat.",
+    "吃肉。"
+  ],
+  "meditation": [
+    "Thoughts disturb meditation.",
+    "思考會打擾冥想。"
+  ],
+  "midnight": [
+    "It's midnight.",
+    "現在半夜。"
+  ],
+  "millennium": [
+    "We've already prepared for the millennium bug.",
+    "我們已經準備好應付千年蟲。"
+  ],
+  "mobile phone": [
+    "His mobile phone was stolen.",
+    "他的手機被偷了。"
+  ],
+  "money": [
+    "Steal money.",
+    "偷錢。"
+  ],
+  "moon": [
+    "Happy Moon Festival!",
+    "中秋節快樂。"
+  ],
+  "morning": [
+    "Morning!",
+    "早！"
+  ],
+  "motif": [
+    "The girl, her eyes shining brightly from that single hint, makes her cute cat-motif automatic pencil run across her notebook.",
+    "這女孩的眼睛閃爍著光亮, 這個暗示讓她可愛的貓圖案自動鉛筆越過了她的筆記本。"
+  ],
+  "necessity": [
+    "Necessity knows no law.",
+    "鋌而走險。"
+  ],
+  "newcomer": [
+    "Tom is a newcomer.",
+    "湯姆是新來的。"
+  ],
+  "night": [
+    "Good night.",
+    "晚安。"
+  ],
+  "nonsense": [
+    "Nonsense.",
+    "瞎說！"
+  ],
+  "noodle soup": [
+    "I could eat some beef noodle soup, or some reheated rice with soybean paste like that, no problem.",
+    "我可以不慌不忙吃牛奶麵包雞蛋，或者泡飯醬菜。"
+  ],
+  "notebook": [
+    "I like this notebook.",
+    "我喜歡這本筆記本。"
+  ],
+  "nucleus": [
+    "You two are the nucleus of the team.",
+    "你們倆是團隊的核心。"
+  ],
+  "offense": [
+    "No offense!",
+    "無意冒犯！"
+  ],
+  "office equipment": [
+    "We ought to buy some new office equipment: the stuff we've got is out of date.",
+    "我們現在的辦公室用品都過時了，得去買點新的了。"
+  ],
+  "office hours": [
+    "The professor has office hours every Tuesday afternoon.",
+    "每個星期二下午是這個教授的辦公時間。"
+  ],
+  "opening ceremony": [
+    "The opening ceremony took place yesterday.",
+    "昨天舉辦了開幕式。"
+  ],
+  "operating system": [
+    "What is your favourite operating system?",
+    "你最喜歡的操作系統是哪個？"
+  ],
+  "ordinance": [
+    "From today on this ordinance is history.",
+    "從今天開始，這項規定成為了歷史。"
+  ],
+  "oversight": [
+    "He reprimanded me for my oversight.",
+    "他責備了我的疏忽。"
+  ],
+  "painter": [
+    "The painter illustrates.",
+    "畫家畫畫。"
+  ],
+  "paragraph": [
+    "This paragraph is vague.",
+    "這一個段落是模糊不清的。"
+  ],
+  "parcel": [
+    "Where's my parcel?",
+    "我的包裹到哪裡了？"
+  ],
+  "park": [
+    "Park your bicycle.",
+    "把你的自行車放好。"
+  ],
+  "parking": [
+    "No parking!",
+    "禁止停車！"
+  ],
+  "parliament": [
+    "The President cannot disband the Parliament.",
+    "總統不得解散國會。"
+  ],
+  "password": [
+    "Password?",
+    "密碼？"
+  ],
+  "path": [
+    "Follow his path.",
+    "跟隨他的道路。"
+  ],
+  "patio": [
+    "Go to the patio.",
+    "去露臺。"
+  ],
+  "pavement": [
+    "Walk on the pavement.",
+    "在人行道上走。"
+  ],
+  "payroll tax": [
+    "In Japan, the payroll tax is usually withheld from the monthly salary.",
+    "在日本，一般來說所得稅是從工資直接扣的。"
+  ],
+  "pedal": [
+    "This pedal is stiff.",
+    "這個腳踏不好用。"
+  ],
+  "perception": [
+    "Perception is reality.",
+    "感知即現實。"
+  ],
+  "piano": [
+    "He plays piano.",
+    "他會彈鋼琴。"
+  ],
+  "picnic": [
+    "It's no picnic.",
+    "這一點都不容易。"
+  ],
+  "piston": [
+    "The piston does not come into contact with the cylinder cover.",
+    "這個活塞不接觸汽缸蓋。"
+  ],
+  "plea": [
+    "God, hear my plea.",
+    "上帝，請聽我的祈願。"
+  ],
+  "pocket money": [
+    "Don't waste your pocket money.",
+    "零用錢不要亂花。"
+  ],
+  "policymaker": [
+    "We need at least one policymaker on the committee to provide the perspective of someone who can help make decisions about the research.",
+    "我們需要至少一個關於委員會的政策制定者，提供有助於做出關於該研究的決策者觀點。"
+  ],
+  "pollen": [
+    "I am allergic to pollen.",
+    "我對花粉過敏。"
+  ],
+  "port": [
+    "The ships reached port.",
+    "船進港了。"
+  ],
+  "pottery": [
+    "I'm interested in oriental pottery.",
+    "我對東方陶瓷有興趣。"
+  ],
+  "poverty": [
+    "Capitalism is poverty.",
+    "資本主義是貧窮。"
+  ],
+  "prairie": [
+    "Laura Ingalls grew up on the prairie.",
+    "勞拉英戈爾斯是在草原上長大的。"
+  ],
+  "prejudice": [
+    "I have no prejudice.",
+    "我沒有偏見。"
+  ],
+  "prescription": [
+    "Please read the prescription.",
+    "請閱讀處方。"
+  ],
+  "presentation skills": [
+    "I'll keep the tips you shared for improving my presentation skills.",
+    "你對提升我演講能力的建議，我會記下來。"
+  ],
+  "prestige": [
+    "His prestige is fading.",
+    "他的威信日漸衰落。"
+  ],
+  "professor": [
+    "The professor grinned.",
+    "教授微微笑了一下。"
+  ],
+  "project proposal": [
+    "I'll keep all the ideas we discussed for the upcoming project proposal.",
+    "對於下一個專案提案，我們討論過的所有想法，我都會記下來。"
+  ],
+  "province": [
+    "Where is Zhejiang Province?",
+    "浙江省在哪裡？"
+  ],
+  "proximity": [
+    "Blind people sometimes develop a compensatory ability to sense the proximity of objects around them.",
+    "某些失明者會產生一個彌補性的能力，這個能力讓他們察覺到他們與離他們很近的物體的距離。"
+  ],
+  "pumpkin": [
+    "What a big pumpkin!",
+    "好大的一個南瓜！"
+  ],
+  "puzzle": [
+    "What a puzzle.",
+    "多讓人不解呀！"
+  ],
+  "qr code": [
+    "What does the QR code say?",
+    "這個二維碼說什麼？"
+  ],
+  "quantity": [
+    "Quality, not quantity.",
+    "數量不如質量。"
+  ],
+  "racism": [
+    "He opposes racism.",
+    "他反對種族歧視。"
+  ],
+  "rainbow": [
+    "The rainbow has seven colours.",
+    "彩虹有七種顏色。"
+  ],
+  "rainfall": [
+    "We had a heavy rainfall last night.",
+    "昨晚雨勢很大。"
+  ],
+  "reader": [
+    "Let the reader judge.",
+    "讓讀者去評判。"
+  ],
+  "reality": [
+    "Face reality.",
+    "正視現實吧。"
+  ],
+  "rebellion": [
+    "The army quelled the rebellion.",
+    "軍隊鎮壓了叛亂。"
+  ],
+  "reduction": [
+    "Harm reduction saves lives.",
+    "減少傷害，拯救生命。"
+  ],
+  "regression": [
+    "It is not progress but regression.",
+    "這不是進步，而是倒退。"
+  ],
+  "reservoir": [
+    "Swimming in this reservoir is prohibited.",
+    "人們不能在這片水域游泳。"
+  ],
+  "reunion": [
+    "I will go to the reunion.",
+    "我將會出席會議。"
+  ],
+  "ribbon": [
+    "Tom untied the ribbon.",
+    "湯姆解開了絲帶。"
+  ],
+  "rice": [
+    "Eat rice.",
+    "吃米飯。"
+  ],
+  "router": [
+    "How can a router be used to limit network speed?",
+    "怎麼用路由器限制網速？"
+  ],
+  "sanctuary": [
+    "Sanctuary!",
+    "願你平安！"
+  ],
+  "sand": [
+    "I ate sand.",
+    "我吃了沙子。"
+  ],
+  "scandal": [
+    "What a scandal!",
+    "真是個醜聞！"
+  ],
+  "screw": [
+    "Screw you!",
+    "去死吧！"
+  ],
+  "seafood": [
+    "She likes seafood.",
+    "她喜歡海鮮。"
+  ],
+  "secrecy": [
+    "This plan requires secrecy.",
+    "這個計劃必須保持秘密。"
+  ],
+  "sermon": [
+    "This isn't a sermon.",
+    "這不是神的旨意。"
+  ],
+  "server": [
+    "Sami is a server.",
+    "薩米是個服務員。"
+  ],
+  "service desk": [
+    "I am going to enquire at the service desk if there are any restaurants around here.",
+    "我要去櫃臺打聽這裡附近有沒有餐廳。"
+  ],
+  "sewage": [
+    "The sewage pipe is obstructed.",
+    "下水道堵了。"
+  ],
+  "sky": [
+    "The sky darkened.",
+    "天色變暗了。"
+  ],
+  "smartphone": [
+    "My smartphone charger fell.",
+    "我的手機充電器掉了。"
+  ],
+  "smoker": [
+    "Are you a smoker?",
+    "你吸菸嗎?"
+  ],
+  "snowman": [
+    "Who built this snowman?",
+    "是誰堆的雪人？"
+  ],
+  "sociology": [
+    "The student is studying sociology.",
+    "那個學生正在學習社會學。"
+  ],
+  "sofa": [
+    "I have a sofa.",
+    "我有一個沙發。"
+  ],
+  "solar power": [
+    "Solar power is environmentally friendly.",
+    "太陽能有益於環保。"
+  ],
+  "spacecraft": [
+    "A spacecraft appeared.",
+    "一艘太空船出現了。"
+  ],
+  "spinach": [
+    "Tom hates spinach.",
+    "湯姆討厭吃菠菜。"
+  ],
+  "standpoint": [
+    "From a practical standpoint, his plan is lacking.",
+    "從現實的角度看，他的計劃有很多缺點。"
+  ],
+  "student id": [
+    "Bring your student ID.",
+    "帶上你的學生卡。"
+  ],
+  "subsidy": [
+    "She turned down the subsidy that I offered.",
+    "她拒絕了我的資助。"
+  ],
+  "subway station": [
+    "Weigongcun subway station has three exits.",
+    "魏公村地鐵站有3個出口。"
+  ],
+  "sun": [
+    "The sun sets.",
+    "夕陽西下。"
+  ],
+  "supermarket": [
+    "The supermarket is open.",
+    "這超市是開著的。"
+  ],
+  "supper": [
+    "Supper's ready.",
+    "晚飯好了。"
+  ],
+  "takeover": [
+    "We, ACME Ltd., hereby announce that we will resist with all our strength this hostile takeover.",
+    "我們ACME有限公司，特此宣佈，我們將盡我們的力量抵制這種惡意收購。"
+  ],
+  "tale": [
+    "What a bizarre tale!",
+    "多麼荒唐的故事！"
+  ],
+  "taxi driver": [
+    "She's a taxi driver.",
+    "她是出租車司機。"
+  ],
+  "team leader": [
+    "Thirdly, each team leader please report your progress.",
+    "第三，請每個項目主管報告進度。"
+  ],
+  "thermometer": [
+    "The thermometer reads 10C.",
+    "溫度計指向十度。"
+  ],
+  "threshold": [
+    "Tom has a high threshold for pain.",
+    "湯姆很耐痛。"
+  ],
+  "throne": [
+    "The prince acceded to the throne.",
+    "王子繼承了王位。"
+  ],
+  "toaster": [
+    "She has broken the toaster again.",
+    "她再次弄壞了烤麵包機。"
+  ],
+  "touchdown": [
+    "In American football, a touchdown scores six points.",
+    "美式足球中，攻方持球觸地得分值6分。"
+  ],
+  "tournament": [
+    "He might win the tournament.",
+    "他有可能贏得比賽。"
+  ],
+  "tractor": [
+    "Can I drive the tractor?",
+    "我能開拖拉機嗎？"
+  ],
+  "transmission": [
+    "Can you drive a manual transmission?",
+    "你會開手排車嗎?"
+  ],
+  "travel agency": [
+    "I work at a travel agency.",
+    "我在旅行社工作."
+  ],
+  "travel insurance": [
+    "Why did you buy travel insurance?",
+    "為什麼你買了旅行保險？"
+  ],
+  "tribunal": [
+    "The process of creating a “tribunal for Putin” has been launched.",
+    "設立「普丁法庭」的程序已經啟動。"
+  ],
+  "tripod": [
+    "Your tripod is in my office.",
+    "你的三腳架在我的辦公室裡。"
+  ],
+  "truck driver": [
+    "Tom is a truck driver.",
+    "湯姆現在從事卡車駕駛."
+  ],
+  "turtle": [
+    "Free Turtle Island!",
+    "解放龜島！"
+  ],
+  "typewriter": [
+    "Is this typewriter yours?",
+    "這是你的打字機嗎？"
+  ],
+  "underwear": [
+    "My underwear is black.",
+    "我的內褲是黑色的。"
+  ],
+  "unity": [
+    "Strength through unity.",
+    "三個臭皮匠，賽過諸葛亮。"
+  ],
+  "university": [
+    "I miss university.",
+    "我想念大學。"
+  ],
+  "university campus": [
+    "In the center of the university campus stands the statue of the founder.",
+    "創校人的雕像在大學校園的中心矗立著。"
+  ],
+  "urgency": [
+    "This matter is of incredible urgency!",
+    "這件事十萬火急！"
+  ],
+  "user manual": [
+    "If only I read the user manual properly.",
+    "要是當時有好好讀說明書就好了。"
+  ],
+  "vacuum cleaner": [
+    "Turn off the vacuum cleaner!",
+    "把吸塵器關掉！"
+  ],
+  "vending machine": [
+    "This vending machine isn't working.",
+    "這臺自動販賣機故障了。"
+  ],
+  "ventilation": [
+    "This room has fine ventilation.",
+    "這房間的通風設備很好。"
+  ],
+  "virtual reality": [
+    "Have you ever tried virtual reality?",
+    "你有沒有體驗過虛擬實境？"
+  ],
+  "waiter": [
+    "Waiter needed.",
+    "招聘服務員。"
+  ],
+  "waiting room": [
+    "The waiting room is empty.",
+    "等候室裡什麼人都沒有。"
+  ],
+  "washer": [
+    "We bought a new washer.",
+    "我們買了臺新的洗衣機。"
+  ],
+  "weakness": [
+    "Overcome weakness.",
+    "克服弱點。"
+  ],
+  "wealth": [
+    "Harmony brings wealth.",
+    "家和萬事興。"
+  ],
+  "wi-fi": [
+    "What's the Wi-Fi password?",
+    "Wifi的密碼是什麼？"
+  ],
+  "window": [
+    "Close the window!",
+    "關上窗戶！"
+  ],
+  "winter coat": [
+    "I must buy a new winter coat.",
+    "我得買一件新冬天外套"
+  ],
+  "wisdom": [
+    "Experience brings wisdom.",
+    "實踐出真知。"
+  ],
+  "wood": [
+    "Wood floats.",
+    "木頭會漂浮。"
+  ],
+  "workflow": [
+    "The workflow is illustrated in the following chart.",
+    "下面的圖標顯示了這個流程圖"
+  ],
+  "youth": [
+    "Youth is an asset.",
+    "年輕就是本錢。"
+  ],
+  "zipper": [
+    "My zipper got stuck.",
+    "我的拉鏈卡住了。"
+  ]
+};
+var TATOEBA_EXAMPLE_SOURCES = {
+  "abundance": {
+    "sentenceId": 317305,
+    "author": "Swift",
+    "license": "CC BY 2.0 FR",
+    "translationId": 1394925,
+    "translationAuthor": "mtdot",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "acne": {
+    "sentenceId": 1397730,
+    "author": "Spamster",
+    "license": "CC BY 2.0 FR",
+    "translationId": 5698043,
+    "translationAuthor": "verdastelo9604",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "activist": {
+    "sentenceId": 6972539,
+    "author": "Eccles17",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13180226,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "administrator": {
+    "sentenceId": 10766987,
+    "author": "sundown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13969936,
+    "translationAuthor": "jan_OkulaJu",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "adulthood": {
+    "sentenceId": 400869,
+    "author": "Grayster",
+    "license": "CC BY 2.0 FR",
+    "translationId": 433554,
+    "translationAuthor": "nickyeow",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "affection": {
+    "sentenceId": 293463,
+    "author": "CM",
+    "license": "CC BY 2.0 FR",
+    "translationId": 780246,
+    "translationAuthor": "Martha",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "afternoon": {
+    "sentenceId": 3552554,
+    "author": "Meruert",
+    "license": "CC BY 2.0 FR",
+    "translationId": 335381,
+    "translationAuthor": "fucongcong",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "airplane": {
+    "sentenceId": 6746522,
+    "author": "swolesuki",
+    "license": "CC BY 2.0 FR",
+    "translationId": 6081855,
+    "translationAuthor": "xjjAstrus",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "anthem": {
+    "sentenceId": 9227251,
+    "author": "Nylez",
+    "license": "CC BY 2.0 FR",
+    "translationId": 10192364,
+    "translationAuthor": "iiujik",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "apple": {
+    "sentenceId": 12816880,
+    "author": "Igider",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13166870,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "arcade": {
+    "sentenceId": 13684028,
+    "author": "frpzzd",
+    "license": "CC BY 2.0 FR",
+    "translationId": 12888795,
+    "translationAuthor": "Josephlingo",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "archery": {
+    "sentenceId": 519985,
+    "author": "CN",
+    "license": "CC BY 2.0 FR",
+    "translationId": 850387,
+    "translationAuthor": "Martha",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "arsenal": {
+    "sentenceId": 7829896,
+    "author": "sharris123",
+    "license": "CC BY 2.0 FR",
+    "translationId": 869821,
+    "translationAuthor": "U2FS",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "asphalt": {
+    "sentenceId": 44985,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 872208,
+    "translationAuthor": "Martha",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "assumption": {
+    "sentenceId": 10564953,
+    "author": "ddnktr",
+    "license": "CC0 1.0",
+    "translationId": 11521701,
+    "translationAuthor": "megamanenm",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "asthma": {
+    "sentenceId": 8476538,
+    "author": "CH",
+    "license": "CC BY 2.0 FR",
+    "translationId": 10270550,
+    "translationAuthor": "DaoSeng",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "automaker": {
+    "sentenceId": 12271859,
+    "author": "Cangarejo",
+    "license": "CC0 1.0",
+    "translationId": 13175424,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "bachelor": {
+    "sentenceId": 2762869,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 4956716,
+    "translationAuthor": "musclegirlxyp",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "backache": {
+    "sentenceId": 436619,
+    "author": "lukaszpp",
+    "license": "CC BY 2.0 FR",
+    "translationId": 4493476,
+    "translationAuthor": "egg0073",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "baggage": {
+    "sentenceId": 435096,
+    "author": "lukaszpp",
+    "license": "CC BY 2.0 FR",
+    "translationId": 481345,
+    "translationAuthor": "fucongcong",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "bamboo": {
+    "sentenceId": 5793076,
+    "author": "Joseph",
+    "license": "CC BY 2.0 FR",
+    "translationId": 801334,
+    "translationAuthor": "Martha",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "barbecue": {
+    "sentenceId": 1635960,
+    "author": "Spamster",
+    "license": "CC BY 2.0 FR",
+    "translationId": 2595832,
+    "translationAuthor": "iMaple",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "bathroom": {
+    "sentenceId": 2469512,
+    "author": "raggione",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13751781,
+    "translationAuthor": "_LoLa_",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "battlefield": {
+    "sentenceId": 6831855,
+    "author": "Eccles17",
+    "license": "CC BY 2.0 FR",
+    "translationId": 884718,
+    "translationAuthor": "Tajfun",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "bedroom": {
+    "sentenceId": 13558956,
+    "author": "LeviHighway",
+    "license": "CC BY 2.0 FR",
+    "translationId": 9035489,
+    "translationAuthor": "xjjAstrus",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "beef": {
+    "sentenceId": 19483,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 724174,
+    "translationAuthor": "tatomeimei",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "bell": {
+    "sentenceId": 385375,
+    "author": "Mouseneb",
+    "license": "CC BY 2.0 FR",
+    "translationId": 332971,
+    "translationAuthor": "fucongcong",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "beverage": {
+    "sentenceId": 906695,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 2186246,
+    "translationAuthor": "sadhen",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "birthday": {
+    "sentenceId": 8324073,
+    "author": "brandur",
+    "license": "CC BY 2.0 FR",
+    "translationId": 346492,
+    "translationAuthor": "sysko",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "blouse": {
+    "sentenceId": 462584,
+    "author": "lukaszpp",
+    "license": "CC BY 2.0 FR",
+    "translationId": 1314334,
+    "translationAuthor": "vicch",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "bookcase": {
+    "sentenceId": 10812274,
+    "author": "sundown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 8866913,
+    "translationAuthor": "crescat",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "bookkeeping": {
+    "sentenceId": 8389,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 771577,
+    "translationAuthor": "Martha",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "booklet": {
+    "sentenceId": 58503,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 769840,
+    "translationAuthor": "Martha",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "bookmark": {
+    "sentenceId": 1334793,
+    "author": "CM",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13138921,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "boomer": {
+    "sentenceId": 10693672,
+    "author": "AutoBot",
+    "license": "CC BY 2.0 FR",
+    "translationId": 12173451,
+    "translationAuthor": "valhentai",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "booth": {
+    "sentenceId": 12823205,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 838546,
+    "translationAuthor": "Martha",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "buckle": {
+    "sentenceId": 1522178,
+    "author": "Spamster",
+    "license": "CC BY 2.0 FR",
+    "translationId": 7774752,
+    "translationAuthor": "jiangche",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "buffer": {
+    "sentenceId": 814501,
+    "author": "U2FS",
+    "license": "CC BY 2.0 FR",
+    "translationId": 816920,
+    "translationAuthor": "Martha",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "bushel": {
+    "sentenceId": 279872,
+    "author": "unknown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 793564,
+    "translationAuthor": "Martha",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "calligraphy": {
+    "sentenceId": 10372267,
+    "author": "DaoSeng",
+    "license": "CC BY 2.0 FR",
+    "translationId": 9989886,
+    "translationAuthor": "GlossaMatik",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "cancer": {
+    "sentenceId": 11505379,
+    "author": "mollydot",
+    "license": "CC BY 2.0 FR",
+    "translationId": 349560,
+    "translationAuthor": "nickyeow",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "canteen": {
+    "sentenceId": 10657335,
+    "author": "sundown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 10657918,
+    "translationAuthor": "DaoSeng",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "canvas": {
+    "sentenceId": 327938,
+    "author": "CM",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13873640,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "capital city": {
+    "sentenceId": 10245047,
+    "author": "sundown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 6141388,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "capitalism": {
+    "sentenceId": 7865536,
+    "author": "shekitten",
+    "license": "CC0 1.0",
+    "translationId": 8930187,
+    "translationAuthor": "iiujik",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "carcass": {
+    "sentenceId": 8546911,
+    "author": "Amastan",
+    "license": "CC BY 2.0 FR",
+    "translationId": 10713944,
+    "translationAuthor": "AwabiJan",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "cardboard": {
+    "sentenceId": 13922472,
+    "author": "frpzzd",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13912883,
+    "translationAuthor": "jan_OkulaJu",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "carnival": {
+    "sentenceId": 4424536,
+    "author": "Objectivesea",
+    "license": "CC BY 2.0 FR",
+    "translationId": 9961671,
+    "translationAuthor": "GlossaMatik",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "cartridge": {
+    "sentenceId": 481732,
+    "author": "Benjameno",
+    "license": "CC BY 2.0 FR",
+    "translationId": 1735612,
+    "translationAuthor": "sadhen",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "champagne": {
+    "sentenceId": 987485,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 5092411,
+    "translationAuthor": "mirrorvan",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "charcoal": {
+    "sentenceId": 4584813,
+    "author": "LeeSooHa",
+    "license": "CC BY 2.0 FR",
+    "translationId": 4264438,
+    "translationAuthor": "egg0073",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "charger": {
+    "sentenceId": 7758466,
+    "author": "pokeonimac",
+    "license": "CC BY 2.0 FR",
+    "translationId": 6183604,
+    "translationAuthor": "yuiyu",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "cheer": {
+    "sentenceId": 2946394,
+    "author": "alvations",
+    "license": "CC BY 2.0 FR",
+    "translationId": 3859471,
+    "translationAuthor": "rickjiang",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "cheese": {
+    "sentenceId": 1852269,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 4789653,
+    "translationAuthor": "400S",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "chemistry": {
+    "sentenceId": 1445,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 335051,
+    "translationAuthor": "fucongcong",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "chief executive": {
+    "sentenceId": 254455,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 804580,
+    "translationAuthor": "Martha",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "chin": {
+    "sentenceId": 1618579,
+    "author": "Benjameno",
+    "license": "CC BY 2.0 FR",
+    "translationId": 10484061,
+    "translationAuthor": "BobbyLee",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "chopsticks": {
+    "sentenceId": 29564,
+    "author": "TRANG",
+    "license": "CC BY 2.0 FR",
+    "translationId": 901895,
+    "translationAuthor": "Tximist",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "christmas": {
+    "sentenceId": 10485139,
+    "author": "hecko",
+    "license": "CC BY 2.0 FR",
+    "translationId": 73,
+    "translationAuthor": "nickyeow",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "cinema": {
+    "sentenceId": 11926869,
+    "author": "sundown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13881530,
+    "translationAuthor": "jan_OkulaJu",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "circus": {
+    "sentenceId": 4779062,
+    "author": "garborg",
+    "license": "CC BY 2.0 FR",
+    "translationId": 4504362,
+    "translationAuthor": "egg0073",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "classroom": {
+    "sentenceId": 11123229,
+    "author": "newtonlkh",
+    "license": "CC BY 2.0 FR",
+    "translationId": 11123233,
+    "translationAuthor": "newtonlkh",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "clock": {
+    "sentenceId": 448956,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 832939,
+    "translationAuthor": "Martha",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "coffee shop": {
+    "sentenceId": 320705,
+    "author": "CN",
+    "license": "CC BY 2.0 FR",
+    "translationId": 881141,
+    "translationAuthor": "Martha",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "column": {
+    "sentenceId": 61091,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13523596,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "columnist": {
+    "sentenceId": 13225755,
+    "author": "ddnktr",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13940180,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "comedian": {
+    "sentenceId": 5296370,
+    "author": "katalex",
+    "license": "CC BY 2.0 FR",
+    "translationId": 808215,
+    "translationAuthor": "fucongcong",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "compass": {
+    "sentenceId": 11298161,
+    "author": "Aphima",
+    "license": "CC BY 2.0 FR",
+    "translationId": 10450760,
+    "translationAuthor": "DaoSeng",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "computer virus": {
+    "sentenceId": 8743632,
+    "author": "RobOwenKing",
+    "license": "CC BY 2.0 FR",
+    "translationId": 8744726,
+    "translationAuthor": "slo_oth",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "condom": {
+    "sentenceId": 3445181,
+    "author": "mervert1",
+    "license": "CC BY 2.0 FR",
+    "translationId": 8857216,
+    "translationAuthor": "iiujik",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "console": {
+    "sentenceId": 3670926,
+    "author": "luci",
+    "license": "CC BY 2.0 FR",
+    "translationId": 6475458,
+    "translationAuthor": "xjjAstrus",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "contraception": {
+    "sentenceId": 10259103,
+    "author": "bekindtoall",
+    "license": "CC BY 2.0 FR",
+    "translationId": 9054812,
+    "translationAuthor": "xjjAstrus",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "cosmos": {
+    "sentenceId": 7841337,
+    "author": "basilhan",
+    "license": "CC BY 2.0 FR",
+    "translationId": 6141373,
+    "translationAuthor": "soueihin",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "couch": {
+    "sentenceId": 10475669,
+    "author": "Amastan",
+    "license": "CC BY 2.0 FR",
+    "translationId": 10484433,
+    "translationAuthor": "BobbyLee",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "courtyard": {
+    "sentenceId": 7834145,
+    "author": "sharris123",
+    "license": "CC BY 2.0 FR",
+    "translationId": 884666,
+    "translationAuthor": "Tajfun",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "craft": {
+    "sentenceId": 10190094,
+    "author": "ddnktr",
+    "license": "CC0 1.0",
+    "translationId": 13579989,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "curtain": {
+    "sentenceId": 322492,
+    "author": "CM",
+    "license": "CC BY 2.0 FR",
+    "translationId": 1411569,
+    "translationAuthor": "asosan",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "cycling": {
+    "sentenceId": 12266960,
+    "author": "sundown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 10276249,
+    "translationAuthor": "DaoSeng",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "daddy": {
+    "sentenceId": 2609464,
+    "author": "CN",
+    "license": "CC BY 2.0 FR",
+    "translationId": 10269067,
+    "translationAuthor": "DaoSeng",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "danger": {
+    "sentenceId": 58164,
+    "author": "AlanF_US",
+    "license": "CC BY 2.0 FR",
+    "translationId": 362345,
+    "translationAuthor": "nickyeow",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "daylight": {
+    "sentenceId": 5573273,
+    "author": "n1ls",
+    "license": "CC BY 2.0 FR",
+    "translationId": 5563132,
+    "translationAuthor": "xjjAstrus",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "daytime": {
+    "sentenceId": 9116537,
+    "author": "Amastan",
+    "license": "CC BY 2.0 FR",
+    "translationId": 10484361,
+    "translationAuthor": "BobbyLee",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "dean": {
+    "sentenceId": 8645578,
+    "author": "hamsolo474",
+    "license": "CC BY 2.0 FR",
+    "translationId": 8645573,
+    "translationAuthor": "hamsolo474",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "debugging": {
+    "sentenceId": 367133,
+    "author": "sysko",
+    "license": "CC BY 2.0 FR",
+    "translationId": 368549,
+    "translationAuthor": "fucongcong",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "decay": {
+    "sentenceId": 965136,
+    "author": "shanghainese",
+    "license": "CC BY 2.0 FR",
+    "translationId": 979548,
+    "translationAuthor": "Albert",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "democracy": {
+    "sentenceId": 10711109,
+    "author": "xhlulu",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13202215,
+    "translationAuthor": "atitarev",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "deputy": {
+    "sentenceId": 3374193,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 10513310,
+    "translationAuthor": "GlossaMatik",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "diamond": {
+    "sentenceId": 280560,
+    "author": "rul",
+    "license": "CC BY 2.0 FR",
+    "translationId": 344811,
+    "translationAuthor": "zhouj1955",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "dictionary": {
+    "sentenceId": 2245081,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 6073917,
+    "translationAuthor": "verdastelo9604",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "digital camera": {
+    "sentenceId": 1169630,
+    "author": "cruzedu73",
+    "license": "CC BY 2.0 FR",
+    "translationId": 5698045,
+    "translationAuthor": "verdastelo9604",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "dinosaur": {
+    "sentenceId": 12761450,
+    "author": "ataraxy",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13111534,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "diplomacy": {
+    "sentenceId": 26284,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 798318,
+    "translationAuthor": "Martha",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "directory": {
+    "sentenceId": 279366,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 844210,
+    "translationAuthor": "edelyn90",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "disco": {
+    "sentenceId": 2008176,
+    "author": "AlanF_US",
+    "license": "CC BY 2.0 FR",
+    "translationId": 433930,
+    "translationAuthor": "nickyeow",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "documentation": {
+    "sentenceId": 13328393,
+    "author": "Nicat",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13736366,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "dragon": {
+    "sentenceId": 11697667,
+    "author": "shekitten",
+    "license": "CC0 1.0",
+    "translationId": 13153711,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "dryer": {
+    "sentenceId": 1184699,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 2595823,
+    "translationAuthor": "egg0073",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "easter": {
+    "sentenceId": 66762,
+    "author": "papabear",
+    "license": "CC BY 2.0 FR",
+    "translationId": 4063182,
+    "translationAuthor": "carenas",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "elastic": {
+    "sentenceId": 58285,
+    "author": "Lumi_alt",
+    "license": "CC BY 2.0 FR",
+    "translationId": 510658,
+    "translationAuthor": "fucongcong",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "electricity": {
+    "sentenceId": 10540297,
+    "author": "sundown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 1750423,
+    "translationAuthor": "sadhen",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "embassy": {
+    "sentenceId": 7948736,
+    "author": "AlanF_US",
+    "license": "CC BY 2.0 FR",
+    "translationId": 10516068,
+    "translationAuthor": "DaoSeng",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "emergency exit": {
+    "sentenceId": 450773,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 616424,
+    "translationAuthor": "nickyeow",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "emoji": {
+    "sentenceId": 7989975,
+    "author": "OsoHombre",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13561231,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "emphasis": {
+    "sentenceId": 57717,
+    "author": "CM",
+    "license": "CC BY 2.0 FR",
+    "translationId": 805708,
+    "translationAuthor": "cherylting",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "entrance fee": {
+    "sentenceId": 281941,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 457644,
+    "translationAuthor": "GlossaMatik",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "environmental protection": {
+    "sentenceId": 461603,
+    "author": "nickyeow",
+    "license": "CC BY 2.0 FR",
+    "translationId": 395052,
+    "translationAuthor": "Mouseneb",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "epidemic": {
+    "sentenceId": 279066,
+    "author": "unknown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 1575774,
+    "translationAuthor": "Gustav249",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "estate": {
+    "sentenceId": 11867109,
+    "author": "sundown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 10503994,
+    "translationAuthor": "DaoSeng",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "evening": {
+    "sentenceId": 2265983,
+    "author": "_undertoad",
+    "license": "CC BY 2.0 FR",
+    "translationId": 6559016,
+    "translationAuthor": "xjjAstrus",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "exam": {
+    "sentenceId": 11982676,
+    "author": "sundown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 10485560,
+    "translationAuthor": "DaoSeng",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "exchange rate": {
+    "sentenceId": 464594,
+    "author": "lukaszpp",
+    "license": "CC BY 2.0 FR",
+    "translationId": 465003,
+    "translationAuthor": "fucongcong",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "failure": {
+    "sentenceId": 9149172,
+    "author": "rafaeldejesus8199",
+    "license": "CC BY 2.0 FR",
+    "translationId": 512118,
+    "translationAuthor": "fucongcong",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "farewell": {
+    "sentenceId": 7869885,
+    "author": "shekitten",
+    "license": "CC BY 2.0 FR",
+    "translationId": 2030795,
+    "translationAuthor": "sadhen",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "ferry": {
+    "sentenceId": 7796499,
+    "author": "sharris123",
+    "license": "CC BY 2.0 FR",
+    "translationId": 3376512,
+    "translationAuthor": "go_oo",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "fiction": {
+    "sentenceId": 12720865,
+    "author": "Aghanim",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13180265,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "final report": {
+    "sentenceId": 324911,
+    "author": "CM",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13940589,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "fingertip": {
+    "sentenceId": 13661822,
+    "author": "Tom9358",
+    "license": "CC BY 2.0 FR",
+    "translationId": 10350373,
+    "translationAuthor": "DaoSeng",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "fire alarm": {
+    "sentenceId": 23849,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 334258,
+    "translationAuthor": "fucongcong",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "fireplace": {
+    "sentenceId": 307124,
+    "author": "unknown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 735323,
+    "translationAuthor": "sherryyyf",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "fisherman": {
+    "sentenceId": 7931464,
+    "author": "shekitten",
+    "license": "CC BY 2.0 FR",
+    "translationId": 10314335,
+    "translationAuthor": "DaoSeng",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "flask": {
+    "sentenceId": 11966040,
+    "author": "sundown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 1759593,
+    "translationAuthor": "sadhen",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "flight": {
+    "sentenceId": 735877,
+    "author": "cruzedu73",
+    "license": "CC BY 2.0 FR",
+    "translationId": 333197,
+    "translationAuthor": "fucongcong",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "flight attendant": {
+    "sentenceId": 6635270,
+    "author": "Hybrid",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13668346,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "fluency": {
+    "sentenceId": 21096,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 811913,
+    "translationAuthor": "Martha",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "foreign currency": {
+    "sentenceId": 21981,
+    "author": "Swift",
+    "license": "CC BY 2.0 FR",
+    "translationId": 10460820,
+    "translationAuthor": "DaoSeng",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "fragrance": {
+    "sentenceId": 2347862,
+    "author": "FeuDRenais2",
+    "license": "CC BY 2.0 FR",
+    "translationId": 2347863,
+    "translationAuthor": "GlossaMatik",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "freeman": {
+    "sentenceId": 12135613,
+    "author": "yujiang",
+    "license": "CC BY 2.0 FR",
+    "translationId": 766416,
+    "translationAuthor": "Martha",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "fridge": {
+    "sentenceId": 12231581,
+    "author": "sundown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 9096093,
+    "translationAuthor": "xjjAstrus",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "frying pan": {
+    "sentenceId": 11276034,
+    "author": "ddnktr",
+    "license": "CC BY 2.0 FR",
+    "translationId": 6959622,
+    "translationAuthor": "xjjAstrus",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "funeral": {
+    "sentenceId": 2065200,
+    "author": "halfb1t",
+    "license": "CC BY 2.0 FR",
+    "translationId": 2065349,
+    "translationAuthor": "sadhen",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "game": {
+    "sentenceId": 757089,
+    "author": "U2FS",
+    "license": "CC BY 2.0 FR",
+    "translationId": 3608247,
+    "translationAuthor": "DennisGiusti",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "gender": {
+    "sentenceId": 12080463,
+    "author": "FishlandicFishy",
+    "license": "CC BY 2.0 FR",
+    "translationId": 5836295,
+    "translationAuthor": "xjjAstrus",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "girlfriend": {
+    "sentenceId": 7770417,
+    "author": "sharris123",
+    "license": "CC BY 2.0 FR",
+    "translationId": 3701816,
+    "translationAuthor": "egg0073",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "goddess": {
+    "sentenceId": 9408757,
+    "author": "BobbyLee",
+    "license": "CC BY 2.0 FR",
+    "translationId": 4625753,
+    "translationAuthor": "Yashanti",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "grandchild": {
+    "sentenceId": 7467317,
+    "author": "CM",
+    "license": "CC BY 2.0 FR",
+    "translationId": 10362480,
+    "translationAuthor": "DaoSeng",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "grass": {
+    "sentenceId": 12187677,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13549677,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "greed": {
+    "sentenceId": 11236398,
+    "author": "klzlueylx",
+    "license": "CC BY 2.0 FR",
+    "translationId": 1413094,
+    "translationAuthor": "U2FS",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "ground floor": {
+    "sentenceId": 675878,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 748265,
+    "translationAuthor": "Vortarulo",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "guarantor": {
+    "sentenceId": 16909,
+    "author": "Zifre",
+    "license": "CC BY 2.0 FR",
+    "translationId": 1406484,
+    "translationAuthor": "sirpoot",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "guest room": {
+    "sentenceId": 6086070,
+    "author": "OsoHombre",
+    "license": "CC BY 2.0 FR",
+    "translationId": 8591236,
+    "translationAuthor": "easononizuka",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "halloween": {
+    "sentenceId": 34980,
+    "author": "gin",
+    "license": "CC BY 2.0 FR",
+    "translationId": 343668,
+    "translationAuthor": "fucongcong",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "handbag": {
+    "sentenceId": 10739482,
+    "author": "sundown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 335623,
+    "translationAuthor": "fucongcong",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "homeland": {
+    "sentenceId": 1218472,
+    "author": "AlanF_US",
+    "license": "CC BY 2.0 FR",
+    "translationId": 507219,
+    "translationAuthor": "GlossaMatik",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "homeowner": {
+    "sentenceId": 5753424,
+    "author": "CM",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13890319,
+    "translationAuthor": "jan_OkulaJu",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "homework": {
+    "sentenceId": 266698,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 8934257,
+    "translationAuthor": "iiujik",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "house": {
+    "sentenceId": 7532005,
+    "author": "shekitten",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13138833,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "hunter": {
+    "sentenceId": 12213740,
+    "author": "Adelpa",
+    "license": "CC BY 2.0 FR",
+    "translationId": 788651,
+    "translationAuthor": "bfsutian",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "husband": {
+    "sentenceId": 1730012,
+    "author": "CM",
+    "license": "CC BY 2.0 FR",
+    "translationId": 10199327,
+    "translationAuthor": "slo_oth",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "iceberg": {
+    "sentenceId": 1534378,
+    "author": "Spamster",
+    "license": "CC BY 2.0 FR",
+    "translationId": 5359621,
+    "translationAuthor": "xjjAstrus",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "identification": {
+    "sentenceId": 9402022,
+    "author": "BobbyLee",
+    "license": "CC BY 2.0 FR",
+    "translationId": 6284495,
+    "translationAuthor": "xjjAstrus",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "important meeting": {
+    "sentenceId": 55874,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 3742504,
+    "translationAuthor": "egg0073",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "inability": {
+    "sentenceId": 1689020,
+    "author": "shanghainese",
+    "license": "CC BY 2.0 FR",
+    "translationId": 1672239,
+    "translationAuthor": "sadhen",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "infancy": {
+    "sentenceId": 27031,
+    "author": "shekitten",
+    "license": "CC BY 2.0 FR",
+    "translationId": 5581593,
+    "translationAuthor": "verdastelo9604",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "information desk": {
+    "sentenceId": 28397,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 346675,
+    "translationAuthor": "nickyeow",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "interface": {
+    "sentenceId": 13511546,
+    "author": "LeviHighway",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13511543,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "internet access": {
+    "sentenceId": 9535977,
+    "author": "iiujik",
+    "license": "CC BY 2.0 FR",
+    "translationId": 9526045,
+    "translationAuthor": "jin1",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "intersection": {
+    "sentenceId": 3226540,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 9176191,
+    "translationAuthor": "xjjAstrus",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "jeep": {
+    "sentenceId": 2545811,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 8800715,
+    "translationAuthor": "crescat",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "jersey": {
+    "sentenceId": 10551431,
+    "author": "sundown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 9990141,
+    "translationAuthor": "GlossaMatik",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "job offer": {
+    "sentenceId": 68356,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 793944,
+    "translationAuthor": "Martha",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "jury": {
+    "sentenceId": 3721521,
+    "author": "CM",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13504855,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "kindergarten": {
+    "sentenceId": 12136679,
+    "author": "yujiang",
+    "license": "CC BY 2.0 FR",
+    "translationId": 12059094,
+    "translationAuthor": "DaoSeng",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "kingdom": {
+    "sentenceId": 29218,
+    "author": "Yepthatscool",
+    "license": "CC BY 2.0 FR",
+    "translationId": 335856,
+    "translationAuthor": "fucongcong",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "laptop computer": {
+    "sentenceId": 9069536,
+    "author": "antonb",
+    "license": "CC BY 2.0 FR",
+    "translationId": 9057863,
+    "translationAuthor": "xjjAstrus",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "leaf": {
+    "sentenceId": 1148283,
+    "author": "cntrational",
+    "license": "CC BY 2.0 FR",
+    "translationId": 6057771,
+    "translationAuthor": "xjjAstrus",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "lettuce": {
+    "sentenceId": 12925158,
+    "author": "Amghar",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13539356,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "library": {
+    "sentenceId": 2210463,
+    "author": "FeuDRenais2",
+    "license": "CC BY 2.0 FR",
+    "translationId": 2200423,
+    "translationAuthor": "johannjunge",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "likelihood": {
+    "sentenceId": 10515984,
+    "author": "sundown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 335256,
+    "translationAuthor": "fucongcong",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "loneliness": {
+    "sentenceId": 3822977,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13145505,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "longitude": {
+    "sentenceId": 2705105,
+    "author": "WestofEden",
+    "license": "CC BY 2.0 FR",
+    "translationId": 1151491,
+    "translationAuthor": "cherylting",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "lottery": {
+    "sentenceId": 320982,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 1411695,
+    "translationAuthor": "asosan",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "lounge": {
+    "sentenceId": 456117,
+    "author": "lukaszpp",
+    "license": "CC BY 2.0 FR",
+    "translationId": 9037047,
+    "translationAuthor": "xjjAstrus",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "maid": {
+    "sentenceId": 11406531,
+    "author": "21violins",
+    "license": "CC BY 2.0 FR",
+    "translationId": 11380978,
+    "translationAuthor": "Aphima",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "maker": {
+    "sentenceId": 825463,
+    "author": "unknown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 827654,
+    "translationAuthor": "Martha",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "malnutrition": {
+    "sentenceId": 1732,
+    "author": "Zifre",
+    "license": "CC BY 2.0 FR",
+    "translationId": 501707,
+    "translationAuthor": "fucongcong",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "mama": {
+    "sentenceId": 1447977,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 349505,
+    "translationAuthor": "zhouj1955",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "mankind": {
+    "sentenceId": 23381,
+    "author": "Zifre",
+    "license": "CC BY 2.0 FR",
+    "translationId": 795774,
+    "translationAuthor": "fucongcong",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "maple": {
+    "sentenceId": 11291852,
+    "author": "tatoebater",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13573821,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "mastery": {
+    "sentenceId": 812209,
+    "author": "Zaphod",
+    "license": "CC BY 2.0 FR",
+    "translationId": 358986,
+    "translationAuthor": "rmgao",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "mathematics": {
+    "sentenceId": 2920711,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 3713615,
+    "translationAuthor": "egg0073",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "mayor": {
+    "sentenceId": 842900,
+    "author": "J_S",
+    "license": "CC BY 2.0 FR",
+    "translationId": 345947,
+    "translationAuthor": "fucongcong",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "meat": {
+    "sentenceId": 8108701,
+    "author": "haukie",
+    "license": "CC BY 2.0 FR",
+    "translationId": 6092439,
+    "translationAuthor": "xjjAstrus",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "meditation": {
+    "sentenceId": 12317072,
+    "author": "carlosalberto",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13144691,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "midnight": {
+    "sentenceId": 456183,
+    "author": "lukaszpp",
+    "license": "CC BY 2.0 FR",
+    "translationId": 3179105,
+    "translationAuthor": "GlossaMatik",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "millennium": {
+    "sentenceId": 2149825,
+    "author": "FeuDRenais2",
+    "license": "CC BY 2.0 FR",
+    "translationId": 389894,
+    "translationAuthor": "nickyeow",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "mobile phone": {
+    "sentenceId": 7798474,
+    "author": "sharris123",
+    "license": "CC BY 2.0 FR",
+    "translationId": 5254710,
+    "translationAuthor": "xjjAstrus",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "money": {
+    "sentenceId": 2833963,
+    "author": "shekitten",
+    "license": "CC BY 2.0 FR",
+    "translationId": 512070,
+    "translationAuthor": "fucongcong",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "moon": {
+    "sentenceId": 1878445,
+    "author": "shanghainese",
+    "license": "CC BY 2.0 FR",
+    "translationId": 1878299,
+    "translationAuthor": "sadhen",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "morning": {
+    "sentenceId": 2751743,
+    "author": "Hybrid",
+    "license": "CC BY 2.0 FR",
+    "translationId": 2032292,
+    "translationAuthor": "ydcok",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "motif": {
+    "sentenceId": 328192,
+    "author": "unknown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 778754,
+    "translationAuthor": "Martha",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "necessity": {
+    "sentenceId": 416289,
+    "author": "Scott",
+    "license": "CC BY 2.0 FR",
+    "translationId": 346901,
+    "translationAuthor": "nickyeow",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "newcomer": {
+    "sentenceId": 3413287,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 4971569,
+    "translationAuthor": "wzhd",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "night": {
+    "sentenceId": 2362724,
+    "author": "NotApplicable",
+    "license": "CC BY 2.0 FR",
+    "translationId": 4463431,
+    "translationAuthor": "maple",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "nonsense": {
+    "sentenceId": 971791,
+    "author": "FeuDRenais2",
+    "license": "CC BY 2.0 FR",
+    "translationId": 790432,
+    "translationAuthor": "U2FS",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "noodle soup": {
+    "sentenceId": 5901294,
+    "author": "peterius",
+    "license": "CC BY 2.0 FR",
+    "translationId": 420028,
+    "translationAuthor": "sysko",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "notebook": {
+    "sentenceId": 12259788,
+    "author": "sundown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 9054610,
+    "translationAuthor": "xjjAstrus",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "nucleus": {
+    "sentenceId": 17624,
+    "author": "Zifre",
+    "license": "CC BY 2.0 FR",
+    "translationId": 4262068,
+    "translationAuthor": "egg0073",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "offense": {
+    "sentenceId": 1532936,
+    "author": "mccarras",
+    "license": "CC BY 2.0 FR",
+    "translationId": 10064220,
+    "translationAuthor": "CreeperVLin",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "office equipment": {
+    "sentenceId": 269173,
+    "author": "sundown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 1361752,
+    "translationAuthor": "nickyeow",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "office hours": {
+    "sentenceId": 4261679,
+    "author": "orcrist",
+    "license": "CC BY 2.0 FR",
+    "translationId": 4262377,
+    "translationAuthor": "mng",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "opening ceremony": {
+    "sentenceId": 22053,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 6142013,
+    "translationAuthor": "xjjAstrus",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "operating system": {
+    "sentenceId": 12080416,
+    "author": "FishlandicFishy",
+    "license": "CC BY 2.0 FR",
+    "translationId": 7774751,
+    "translationAuthor": "jiangche",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "ordinance": {
+    "sentenceId": 12225049,
+    "author": "Miktsoanit",
+    "license": "CC BY 2.0 FR",
+    "translationId": 6146028,
+    "translationAuthor": "xjjAstrus",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "oversight": {
+    "sentenceId": 7885825,
+    "author": "basilhan",
+    "license": "CC BY 2.0 FR",
+    "translationId": 842131,
+    "translationAuthor": "U2FS",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "painter": {
+    "sentenceId": 13233324,
+    "author": "LeviHighway",
+    "license": "CC BY 2.0 FR",
+    "translationId": 9700539,
+    "translationAuthor": "Ivanovb",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "paragraph": {
+    "sentenceId": 57952,
+    "author": "CM",
+    "license": "CC BY 2.0 FR",
+    "translationId": 778548,
+    "translationAuthor": "Martha",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "parcel": {
+    "sentenceId": 12231663,
+    "author": "sundown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 10913660,
+    "translationAuthor": "xjjAstrus",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "park": {
+    "sentenceId": 10794590,
+    "author": "sundown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 332686,
+    "translationAuthor": "fucongcong",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "parking": {
+    "sentenceId": 9473934,
+    "author": "Adelpa",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13177722,
+    "translationAuthor": "atitarev",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "parliament": {
+    "sentenceId": 12080353,
+    "author": "FishlandicFishy",
+    "license": "CC BY 2.0 FR",
+    "translationId": 6142335,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "password": {
+    "sentenceId": 1172670,
+    "author": "marcelostockle",
+    "license": "CC BY 2.0 FR",
+    "translationId": 4970121,
+    "translationAuthor": "wzhd",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "path": {
+    "sentenceId": 12677895,
+    "author": "anzart",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13138965,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "patio": {
+    "sentenceId": 434798,
+    "author": "lukaszpp",
+    "license": "CC BY 2.0 FR",
+    "translationId": 1397108,
+    "translationAuthor": "mtdot",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "pavement": {
+    "sentenceId": 320525,
+    "author": "sundown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 345830,
+    "translationAuthor": "fucongcong",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "payroll tax": {
+    "sentenceId": 281192,
+    "author": "unknown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 8700791,
+    "translationAuthor": "crescat",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "pedal": {
+    "sentenceId": 10534786,
+    "author": "sundown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 9524596,
+    "translationAuthor": "xjjAstrus",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "perception": {
+    "sentenceId": 2464842,
+    "author": "Hybrid",
+    "license": "CC BY 2.0 FR",
+    "translationId": 5581761,
+    "translationAuthor": "verdastelo9604",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "piano": {
+    "sentenceId": 5490899,
+    "author": "robmen",
+    "license": "CC BY 2.0 FR",
+    "translationId": 398359,
+    "translationAuthor": "ver",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "picnic": {
+    "sentenceId": 12881932,
+    "author": "rul",
+    "license": "CC BY 2.0 FR",
+    "translationId": 10184254,
+    "translationAuthor": "slo_oth",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "piston": {
+    "sentenceId": 1582776,
+    "author": "eastasiastudent",
+    "license": "CC BY 2.0 FR",
+    "translationId": 1582772,
+    "translationAuthor": "eastasiastudent",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "plea": {
+    "sentenceId": 269665,
+    "author": "shekitten",
+    "license": "CC BY 2.0 FR",
+    "translationId": 1185724,
+    "translationAuthor": "dericteng",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "pocket money": {
+    "sentenceId": 1806942,
+    "author": "Christophe",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13850760,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "policymaker": {
+    "sentenceId": 8987965,
+    "author": "mccarras",
+    "license": "CC BY 2.0 FR",
+    "translationId": 11841623,
+    "translationAuthor": "Verna0072001",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "pollen": {
+    "sentenceId": 256550,
+    "author": "frpzzd",
+    "license": "CC BY 2.0 FR",
+    "translationId": 1895539,
+    "translationAuthor": "sysko",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "port": {
+    "sentenceId": 273445,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 2029449,
+    "translationAuthor": "ydcok",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "pottery": {
+    "sentenceId": 1023151,
+    "author": "ellasevia",
+    "license": "CC BY 2.0 FR",
+    "translationId": 4761589,
+    "translationAuthor": "DrWinters",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "poverty": {
+    "sentenceId": 7865536,
+    "author": "shekitten",
+    "license": "CC0 1.0",
+    "translationId": 8930187,
+    "translationAuthor": "iiujik",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "prairie": {
+    "sentenceId": 29397,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 802073,
+    "translationAuthor": "Martha",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "prejudice": {
+    "sentenceId": 2912868,
+    "author": "astyng",
+    "license": "CC BY 2.0 FR",
+    "translationId": 8928654,
+    "translationAuthor": "iiujik",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "prescription": {
+    "sentenceId": 13121420,
+    "author": "atitarev",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13519254,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "presentation skills": {
+    "sentenceId": 13151220,
+    "author": "LeviHighway",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13151232,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "prestige": {
+    "sentenceId": 11263528,
+    "author": "weihaiping",
+    "license": "CC BY 2.0 FR",
+    "translationId": 1982653,
+    "translationAuthor": "olyalya",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "professor": {
+    "sentenceId": 1499145,
+    "author": "weihaiping",
+    "license": "CC BY 2.0 FR",
+    "translationId": 348506,
+    "translationAuthor": "zhouj1955",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "project proposal": {
+    "sentenceId": 13151223,
+    "author": "LeviHighway",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13151235,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "province": {
+    "sentenceId": 13953754,
+    "author": "jan_OkulaJu",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13953752,
+    "translationAuthor": "jan_OkulaJu",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "proximity": {
+    "sentenceId": 1965,
+    "author": "AlanF_US",
+    "license": "CC BY 2.0 FR",
+    "translationId": 457033,
+    "translationAuthor": "minshirui",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "pumpkin": {
+    "sentenceId": 36069,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 6940064,
+    "translationAuthor": "xjjAstrus",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "puzzle": {
+    "sentenceId": 6581071,
+    "author": "Eccles17",
+    "license": "CC BY 2.0 FR",
+    "translationId": 10334974,
+    "translationAuthor": "DaoSeng",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "qr code": {
+    "sentenceId": 8610737,
+    "author": "Amastan",
+    "license": "CC BY 2.0 FR",
+    "translationId": 9955391,
+    "translationAuthor": "Akh2403",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "quantity": {
+    "sentenceId": 931510,
+    "author": "FeuDRenais2",
+    "license": "CC BY 2.0 FR",
+    "translationId": 565744,
+    "translationAuthor": "GlossaMatik",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "racism": {
+    "sentenceId": 600849,
+    "author": "baisong",
+    "license": "CC BY 2.0 FR",
+    "translationId": 464747,
+    "translationAuthor": "fucongcong",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "rainbow": {
+    "sentenceId": 12356291,
+    "author": "sundown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 759060,
+    "translationAuthor": "Martha",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "rainfall": {
+    "sentenceId": 512177,
+    "author": "blay_paul",
+    "license": "CC BY 2.0 FR",
+    "translationId": 796072,
+    "translationAuthor": "Martha",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "reader": {
+    "sentenceId": 12114617,
+    "author": "sundown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 4789603,
+    "translationAuthor": "400S",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "reality": {
+    "sentenceId": 11051440,
+    "author": "sundown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 10193820,
+    "translationAuthor": "GlossaMatik",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "rebellion": {
+    "sentenceId": 480044,
+    "author": "arbaro",
+    "license": "CC BY 2.0 FR",
+    "translationId": 463905,
+    "translationAuthor": "fucongcong",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "reduction": {
+    "sentenceId": 12390983,
+    "author": "Miktsoanit",
+    "license": "CC0 1.0",
+    "translationId": 13180312,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "regression": {
+    "sentenceId": 3126555,
+    "author": "lavenir",
+    "license": "CC BY 2.0 FR",
+    "translationId": 463891,
+    "translationAuthor": "fucongcong",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "reservoir": {
+    "sentenceId": 10921829,
+    "author": "sundown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13967352,
+    "translationAuthor": "jan_OkulaJu",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "reunion": {
+    "sentenceId": 12187548,
+    "author": "DJ_Saidez",
+    "license": "CC BY 2.0 FR",
+    "translationId": 4060571,
+    "translationAuthor": "egg0073",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "ribbon": {
+    "sentenceId": 1092600,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13109406,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "rice": {
+    "sentenceId": 13112406,
+    "author": "LeviHighway",
+    "license": "CC BY 2.0 FR",
+    "translationId": 10961144,
+    "translationAuthor": "xjjAstrus",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "router": {
+    "sentenceId": 1406431,
+    "author": "sysko",
+    "license": "CC BY 2.0 FR",
+    "translationId": 1406427,
+    "translationAuthor": "sysko",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "sanctuary": {
+    "sentenceId": 13402216,
+    "author": "rul",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13904646,
+    "translationAuthor": "jan_OkulaJu",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "sand": {
+    "sentenceId": 2117539,
+    "author": "unknown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 10559123,
+    "translationAuthor": "DaoSeng",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "scandal": {
+    "sentenceId": 9795555,
+    "author": "DJ_Saidez",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13139011,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "screw": {
+    "sentenceId": 515086,
+    "author": "tamsanh",
+    "license": "CC BY 2.0 FR",
+    "translationId": 340115,
+    "translationAuthor": "nickyeow",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "seafood": {
+    "sentenceId": 2855359,
+    "author": "Amastan",
+    "license": "CC BY 2.0 FR",
+    "translationId": 4638687,
+    "translationAuthor": "yuiyu",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "secrecy": {
+    "sentenceId": 59521,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 343103,
+    "translationAuthor": "nickyeow",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "sermon": {
+    "sentenceId": 13915124,
+    "author": "rul",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13904724,
+    "translationAuthor": "jan_OkulaJu",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "server": {
+    "sentenceId": 7205416,
+    "author": "OsoHombre",
+    "license": "CC BY 2.0 FR",
+    "translationId": 9400785,
+    "translationAuthor": "BobbyLee",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "service desk": {
+    "sentenceId": 1964683,
+    "author": "jjbraam",
+    "license": "CC BY 2.0 FR",
+    "translationId": 1964680,
+    "translationAuthor": "jjbraam",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "sewage": {
+    "sentenceId": 1229347,
+    "author": "Scott",
+    "license": "CC BY 2.0 FR",
+    "translationId": 11371520,
+    "translationAuthor": "DaoSeng",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "sky": {
+    "sentenceId": 5360480,
+    "author": "Hybrid",
+    "license": "CC BY 2.0 FR",
+    "translationId": 765998,
+    "translationAuthor": "Martha",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "smartphone": {
+    "sentenceId": 7758466,
+    "author": "pokeonimac",
+    "license": "CC BY 2.0 FR",
+    "translationId": 6183604,
+    "translationAuthor": "yuiyu",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "smoker": {
+    "sentenceId": 2650953,
+    "author": "meerkat",
+    "license": "CC BY 2.0 FR",
+    "translationId": 406354,
+    "translationAuthor": "fucongcong",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "snowman": {
+    "sentenceId": 13589862,
+    "author": "LeviHighway",
+    "license": "CC BY 2.0 FR",
+    "translationId": 1502328,
+    "translationAuthor": "fenfang557",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "sociology": {
+    "sentenceId": 13939050,
+    "author": "teto",
+    "license": "CC BY 2.0 FR",
+    "translationId": 429352,
+    "translationAuthor": "aliene",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "sofa": {
+    "sentenceId": 12319355,
+    "author": "sivelock",
+    "license": "CC BY 2.0 FR",
+    "translationId": 9139559,
+    "translationAuthor": "xjjAstrus",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "solar power": {
+    "sentenceId": 5695938,
+    "author": "shea",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13180231,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "spacecraft": {
+    "sentenceId": 11696744,
+    "author": "Amastan",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13153714,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "spinach": {
+    "sentenceId": 6606805,
+    "author": "DanielDaniel",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13540065,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "standpoint": {
+    "sentenceId": 13837610,
+    "author": "JK_Summerlin",
+    "license": "CC BY 2.0 FR",
+    "translationId": 347422,
+    "translationAuthor": "nickyeow",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "student id": {
+    "sentenceId": 1435670,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 5451949,
+    "translationAuthor": "xjjAstrus",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "subsidy": {
+    "sentenceId": 432828,
+    "author": "aliene",
+    "license": "CC BY 2.0 FR",
+    "translationId": 334379,
+    "translationAuthor": "fucongcong",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "subway station": {
+    "sentenceId": 1605003,
+    "author": "Tximist",
+    "license": "CC BY 2.0 FR",
+    "translationId": 1605000,
+    "translationAuthor": "Tximist",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "sun": {
+    "sentenceId": 4436135,
+    "author": "shekitten",
+    "license": "CC BY 2.0 FR",
+    "translationId": 9501214,
+    "translationAuthor": "BobbyLee",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "supermarket": {
+    "sentenceId": 462940,
+    "author": "lukaszpp",
+    "license": "CC BY 2.0 FR",
+    "translationId": 5550034,
+    "translationAuthor": "verdastelo9604",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "supper": {
+    "sentenceId": 11821437,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 884710,
+    "translationAuthor": "Tajfun",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "takeover": {
+    "sentenceId": 328392,
+    "author": "fcbond",
+    "license": "CC BY 2.0 FR",
+    "translationId": 881840,
+    "translationAuthor": "Martha",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "tale": {
+    "sentenceId": 5340981,
+    "author": "Objectivesea",
+    "license": "CC BY 2.0 FR",
+    "translationId": 5691274,
+    "translationAuthor": "verdastelo9604",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "taxi driver": {
+    "sentenceId": 13046131,
+    "author": "Adelpa",
+    "license": "CC BY 2.0 FR",
+    "translationId": 614443,
+    "translationAuthor": "sysko",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "team leader": {
+    "sentenceId": 2938695,
+    "author": "vicch",
+    "license": "CC BY 2.0 FR",
+    "translationId": 2938694,
+    "translationAuthor": "vicch",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "thermometer": {
+    "sentenceId": 25467,
+    "author": "boink",
+    "license": "CC BY 2.0 FR",
+    "translationId": 2442232,
+    "translationAuthor": "ydcok",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "threshold": {
+    "sentenceId": 1415699,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 10472677,
+    "translationAuthor": "DaoSeng",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "throne": {
+    "sentenceId": 9130899,
+    "author": "gluis",
+    "license": "CC BY 2.0 FR",
+    "translationId": 845127,
+    "translationAuthor": "fucongcong",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "toaster": {
+    "sentenceId": 312224,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 850364,
+    "translationAuthor": "Martha",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "touchdown": {
+    "sentenceId": 326828,
+    "author": "mamat",
+    "license": "CC BY 2.0 FR",
+    "translationId": 466049,
+    "translationAuthor": "fucongcong",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "tournament": {
+    "sentenceId": 10708201,
+    "author": "sundown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 332558,
+    "translationAuthor": "fucongcong",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "tractor": {
+    "sentenceId": 4144648,
+    "author": "Hybrid",
+    "license": "CC BY 2.0 FR",
+    "translationId": 6109357,
+    "translationAuthor": "verdastelo9604",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "transmission": {
+    "sentenceId": 601741,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 780047,
+    "translationAuthor": "Martha",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "travel agency": {
+    "sentenceId": 7156430,
+    "author": "Kiwi",
+    "license": "CC BY 2.0 FR",
+    "translationId": 180706,
+    "translationAuthor": "Kiwi",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "travel insurance": {
+    "sentenceId": 6953275,
+    "author": "Eccles17",
+    "license": "CC BY 2.0 FR",
+    "translationId": 9932501,
+    "translationAuthor": "SbrAkr",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "tribunal": {
+    "sentenceId": 13212754,
+    "author": "atitarev",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13519184,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "tripod": {
+    "sentenceId": 6116857,
+    "author": "nickyeow",
+    "license": "CC BY 2.0 FR",
+    "translationId": 6100202,
+    "translationAuthor": "xjjAstrus",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "truck driver": {
+    "sentenceId": 1025142,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 2694196,
+    "translationAuthor": "michaelkyb",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "turtle": {
+    "sentenceId": 8892889,
+    "author": "shekitten",
+    "license": "CC0 1.0",
+    "translationId": 8892936,
+    "translationAuthor": "iiujik",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "typewriter": {
+    "sentenceId": 60922,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 1176915,
+    "translationAuthor": "treskro3",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "underwear": {
+    "sentenceId": 10320024,
+    "author": "iiujik",
+    "license": "CC BY 2.0 FR",
+    "translationId": 10311942,
+    "translationAuthor": "DaoSeng",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "unity": {
+    "sentenceId": 1068373,
+    "author": "tomalrussell",
+    "license": "CC BY 2.0 FR",
+    "translationId": 2416282,
+    "translationAuthor": "U2FS",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "university": {
+    "sentenceId": 11864489,
+    "author": "sundown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 8860683,
+    "translationAuthor": "iiujik",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "university campus": {
+    "sentenceId": 275620,
+    "author": "unknown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 542595,
+    "translationAuthor": "nickyeow",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "urgency": {
+    "sentenceId": 10372309,
+    "author": "DaoSeng",
+    "license": "CC BY 2.0 FR",
+    "translationId": 9990192,
+    "translationAuthor": "GlossaMatik",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "user manual": {
+    "sentenceId": 11046506,
+    "author": "DaoSeng",
+    "license": "CC BY 2.0 FR",
+    "translationId": 8703952,
+    "translationAuthor": "crescat",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "vacuum cleaner": {
+    "sentenceId": 9345690,
+    "author": "Nylez",
+    "license": "CC BY 2.0 FR",
+    "translationId": 10368418,
+    "translationAuthor": "DaoSeng",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "vending machine": {
+    "sentenceId": 58870,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 840431,
+    "translationAuthor": "Martha",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "ventilation": {
+    "sentenceId": 57298,
+    "author": "unknown",
+    "license": "CC BY 2.0 FR",
+    "translationId": 479560,
+    "translationAuthor": "nickyeow",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "virtual reality": {
+    "sentenceId": 6025325,
+    "author": "mailohilohi",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13109193,
+    "translationAuthor": "LeviHighway",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "waiter": {
+    "sentenceId": 464320,
+    "author": "lukaszpp",
+    "license": "CC BY 2.0 FR",
+    "translationId": 1737894,
+    "translationAuthor": "sadhen",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "waiting room": {
+    "sentenceId": 4902786,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 13882478,
+    "translationAuthor": "jan_OkulaJu",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "washer": {
+    "sentenceId": 4779502,
+    "author": "Joseph",
+    "license": "CC BY 2.0 FR",
+    "translationId": 10256758,
+    "translationAuthor": "DaoSeng",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "weakness": {
+    "sentenceId": 1159469,
+    "author": "tinytina",
+    "license": "CC BY 2.0 FR",
+    "translationId": 353882,
+    "translationAuthor": "ruicong",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "wealth": {
+    "sentenceId": 13277866,
+    "author": "Drwhooooo",
+    "license": "CC BY 2.0 FR",
+    "translationId": 2555373,
+    "translationAuthor": "fenfang557",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "wi-fi": {
+    "sentenceId": 6063929,
+    "author": "mailohilohi",
+    "license": "CC BY 2.0 FR",
+    "translationId": 6158453,
+    "translationAuthor": "xjjAstrus",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "window": {
+    "sentenceId": 9819200,
+    "author": "Adelpa",
+    "license": "CC BY 2.0 FR",
+    "translationId": 3976893,
+    "translationAuthor": "xinyuan0604",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "winter coat": {
+    "sentenceId": 258811,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 1314275,
+    "translationAuthor": "chatparle",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "wisdom": {
+    "sentenceId": 3882005,
+    "author": "Hybrid",
+    "license": "CC BY 2.0 FR",
+    "translationId": 1750390,
+    "translationAuthor": "sadhen",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "wood": {
+    "sentenceId": 1869662,
+    "author": "ghoti",
+    "license": "CC BY 2.0 FR",
+    "translationId": 5102316,
+    "translationAuthor": "mirrorvan",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "workflow": {
+    "sentenceId": 2072269,
+    "author": "testonit",
+    "license": "CC BY 2.0 FR",
+    "translationId": 2072274,
+    "translationAuthor": "testonit",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "youth": {
+    "sentenceId": 11406547,
+    "author": "21violins",
+    "license": "CC BY 2.0 FR",
+    "translationId": 11406546,
+    "translationAuthor": "21violins",
+    "translationLicense": "CC BY 2.0 FR"
+  },
+  "zipper": {
+    "sentenceId": 2647637,
+    "author": "CK",
+    "license": "CC BY 2.0 FR",
+    "translationId": 8795191,
+    "translationAuthor": "slo_oth",
+    "translationLicense": "CC BY 2.0 FR"
+  }
+};
+
+
+// ===== ??????? 01 ? (natural-examples-batch-01.js) =====
+// Natural example restoration — batch 01
+//
+// Each pair is written for this word and its stated sense.  Do not replace
+// these entries with category templates: the purpose of this file is to bring
+// held-back cards into the learning pool only after they have a real context.
+var CURATED_NATURAL_EXAMPLES = (typeof CURATED_NATURAL_EXAMPLES !== "undefined")
+  ? CURATED_NATURAL_EXAMPLES
+  : {};
+
+Object.assign(CURATED_NATURAL_EXAMPLES, {
+  "abacus": ["The shopkeeper used an abacus to add the prices quickly.", "店主用算盤快速計算價格。"],
+  "abbreviation": ["FYI is a common abbreviation for \"for your information.\"", "FYI 是 for your information（供你參考）的常見縮寫。"],
+  "abdomen": ["The doctor pressed my abdomen to check for pain.", "醫師按壓我的腹部，檢查是否疼痛。"],
+  "abnormality": ["The scan showed no abnormality in her lungs.", "掃描結果顯示她的肺部沒有異常。"],
+  "abrasion": ["He cleaned the abrasion on his knee after falling off his bike.", "他從自行車上摔下來後，清理膝蓋上的擦傷。"],
+  "absenteeism": ["High absenteeism can make it hard for a small team to meet deadlines.", "缺勤率過高會讓小型團隊難以如期完成工作。"],
+  "absorption": ["This fabric has good moisture absorption.", "這種布料有良好的吸濕性。"],
+  "abuse": ["The organization has a policy against the abuse of power.", "該組織訂有禁止濫用權力的政策。"],
+  "academy": ["She studied design at a small art academy in Taipei.", "她在臺北一所小型藝術學院學習設計。"],
+  "acceleration": ["The car's acceleration pushed us back into our seats.", "汽車加速時讓我們向後靠在座椅上。"],
+  "acceptance": ["The committee gave its acceptance to the revised plan.", "委員會同意了修訂後的計畫。"],
+  "accession": ["The accession of the new king was marked by a public ceremony.", "新國王登基時舉行了公開儀式。"],
+  "accessory": ["This phone case is a useful accessory for travelers.", "這個手機殼是旅行者實用的配件。"],
+  "accordion": ["He played a lively tune on the accordion at the festival.", "他在節慶上用手風琴演奏輕快的曲子。"],
+  "accountability": ["Clear accountability helps everyone know who must make the final decision.", "明確的責任歸屬能讓每個人知道誰必須作最後決定。"],
+  "achievement": ["Finishing her first marathon was a major achievement.", "完成第一場馬拉松是她的重要成就。"],
+  "acknowledgment": ["Please send an acknowledgment when you receive the package.", "收到包裹後請回覆確認。"],
+  "acoustics": ["The hall has excellent acoustics for live concerts.", "這個大廳的音響效果很適合現場音樂會。"],
+  "acquaintance": ["I ran into an old acquaintance at the train station.", "我在火車站巧遇一位老熟人。"],
+  "acreage": ["The farm's acreage was large enough to grow rice and vegetables.", "那座農場的土地面積足以種植稻米和蔬菜。"],
+  "acronym": ["NASA is an acronym formed from the agency's full name.", "NASA 是由該機構全名組成的縮寫。"],
+  "acrylic": ["The artist painted the landscape with acrylic paints.", "這名藝術家用壓克力顏料畫風景。"],
+  "activism": ["Student activism helped bring attention to the issue.", "學生行動主義讓這個議題受到關注。"],
+  "actress": ["The actress thanked her family during the award speech.", "這名女演員在得獎感言中感謝家人。"],
+  "actuality": ["In actuality, the trip took much less time than we expected.", "實際上，這趟旅程花的時間比我們預期少得多。"],
+  "adaptation": ["The film is an adaptation of a popular novel.", "這部電影改編自一本熱門小說。"],
+  "adapter": ["You will need a plug adapter to use the charger in Europe.", "你在歐洲使用充電器時會需要插頭轉接器。"],
+  "addition": ["The addition of a ramp made the building easier to enter.", "加裝坡道後，這棟建築更容易進入。"],
+  "adequacy": ["The inspector checked the adequacy of the emergency exits.", "檢查員確認緊急出口是否足夠。"],
+  "adhesion": ["Poor adhesion caused the paint to peel from the wall.", "附著力不佳導致油漆從牆上剝落。"],
+  "adhesive": ["Use a strong adhesive to repair the broken handle.", "請用強力黏著劑修理斷掉的把手。"],
+  "administration": ["The school administration announced the new safety rules.", "學校行政單位公布了新的安全規定。"],
+  "admiration": ["Her patience and courage earned everyone's admiration.", "她的耐心和勇氣贏得所有人的欽佩。"],
+  "adolescence": ["Many people become more independent during adolescence.", "許多人在青春期變得更加獨立。"],
+  "adolescent": ["The book was written for adolescent readers.", "這本書是為青少年讀者寫的。"],
+  "adoption": ["The adoption of electric buses reduced noise in the city.", "採用電動公車降低了城市裡的噪音。"],
+  "adulteration": ["The test found adulteration in the olive oil.", "檢驗發現這批橄欖油摻了其他物質。"],
+  "advertiser": ["The advertiser bought space in the weekend newspaper.", "這名廣告主購買了週末報紙的廣告版位。"],
+  "adviser": ["Ask your academic adviser before you change your course schedule.", "更改課表前，請先詢問你的學業顧問。"],
+  "advisor": ["Her financial advisor suggested saving more each month.", "她的財務顧問建議她每月多存一些錢。"],
+  "aeration": ["Aeration helps keep the water in a fish tank healthy.", "通氣有助於維持魚缸水質健康。"],
+  "aerodynamics": ["Engineers tested the car's aerodynamics in a wind tunnel.", "工程師在風洞中測試這輛車的空氣動力學表現。"],
+  "aeronautics": ["She hopes to study aeronautics after high school.", "她希望高中畢業後研讀航空學。"],
+  "aerosol": ["Shake the aerosol can well before spraying the paint.", "噴漆前請先充分搖勻噴霧罐。"],
+  "affair": ["The meeting was a private affair, with only family members present.", "那場會議是私人事務，只有家人出席。"],
+  "affiliation": ["Her affiliation with the university is listed on the research paper.", "論文上列有她與該大學的隸屬關係。"],
+  "aftermath": ["In the aftermath of the storm, volunteers delivered food to residents.", "暴風雨過後，志工為居民送去食物。"],
+  "aggregation": ["The chart shows the aggregation of data from five surveys.", "這張圖表呈現五項調查資料的聚合結果。"],
+  "aggression": ["The coach told the players to compete with energy, not aggression.", "教練告訴球員要有衝勁地比賽，而不是帶著攻擊性。"],
+  "agreement": ["Both sides signed the agreement after months of talks.", "雙方經過數月協商後簽署了協議。"],
+  "aide": ["The senator's aide arranged the meeting.", "這位參議員的助理安排了會議。"],
+  "ailment": ["She visited the clinic for a minor stomach ailment.", "她因輕微的胃部不適去診所看診。"],
+  "air conditioner": ["Please turn off the air conditioner before you leave the room.", "離開房間前請關掉冷氣機。"],
+  "aircraft": ["The aircraft landed safely despite strong winds.", "儘管風勢強勁，這架飛機仍安全降落。"],
+  "alarm clock": ["My alarm clock rang before sunrise.", "我的鬧鐘在日出前響了。"],
+  "alcohol": ["Alcohol can affect your ability to drive safely.", "酒精會影響你安全駕駛的能力。"],
+  "algae": ["Green algae covered the surface of the pond.", "綠藻覆蓋了池塘表面。"],
+  "alkalinity": ["The aquarium owner tested the water's alkalinity.", "水族箱主人測試了水的鹼度。"],
+  "allegation": ["The company denied the allegation of unsafe working conditions.", "該公司否認工作環境不安全的指控。"],
+  "allegiance": ["The soldiers swore allegiance to their country.", "士兵宣誓效忠他們的國家。"]
+});
+
+
+// ===== ??????? 02 ? (natural-examples-batch-02.js) =====
+// Natural example restoration — batch 02
+// Every sentence is independently written for the target word and displayed
+// sense.  It deliberately does not use the old category-template system.
+var CURATED_NATURAL_EXAMPLES = (typeof CURATED_NATURAL_EXAMPLES !== "undefined")
+  ? CURATED_NATURAL_EXAMPLES
+  : {};
+var CURATED_NATURAL_MEANINGS = (typeof CURATED_NATURAL_MEANINGS !== "undefined")
+  ? CURATED_NATURAL_MEANINGS
+  : {};
+var CURATED_NATURAL_POS = (typeof CURATED_NATURAL_POS !== "undefined")
+  ? CURATED_NATURAL_POS
+  : {};
+
+Object.assign(CURATED_NATURAL_EXAMPLES, {
+  "allergy": ["She carries medicine in case her peanut allergy causes a reaction.", "她隨身帶藥，以防花生過敏引起反應。"],
+  "allocation": ["The committee approved a larger allocation for library books.", "委員會核准撥出更多經費購買圖書館藏書。"],
+  "allotment": ["Each team received an equal allotment of tickets.", "每個團隊都分到相同配額的票券。"],
+  "alloy": ["The bike frame is made from a light aluminum alloy.", "這輛自行車的車架由輕量鋁合金製成。"],
+  "almond": ["She sprinkled sliced almonds over the salad.", "她在沙拉上撒了切片杏仁。"],
+  "alphabet": ["Children learn the alphabet before they begin to read.", "孩子開始閱讀前會先學字母表。"],
+  "altar": ["Flowers were placed beside the altar before the ceremony.", "儀式開始前，祭壇旁擺放了鮮花。"],
+  "altitude": ["At this altitude, some hikers feel short of breath.", "在這個海拔高度，有些登山客會覺得呼吸急促。"],
+  "alumnus": ["He is an alumnus of National Taiwan University.", "他是國立臺灣大學的男性校友。"],
+  "amenities": ["The hotel offers amenities such as free Wi-Fi and a fitness room.", "這間飯店提供免費 Wi-Fi 和健身房等便利設施。"],
+  "ammunition": ["The soldiers checked their ammunition before the training exercise.", "士兵在訓練演習前檢查了彈藥。"],
+  "amusement park": ["The children spent the afternoon riding roller coasters at the amusement park.", "孩子們在遊樂園玩了一下午的雲霄飛車。"],
+  "analog": ["The engineer compared the analog signal with the digital one.", "工程師將類比訊號與數位訊號作比較。"],
+  "anatomy": ["The anatomy class used a model of the human heart.", "解剖學課使用人體心臟模型教學。"],
+  "ancestry": ["She traced her ancestry back to a village in Ireland.", "她追溯自己的祖先血統到愛爾蘭的一座村莊。"],
+  "anchovy": ["He added anchovies to the pizza for a salty flavor.", "他在披薩上加了鯷魚來增添鹹香。"],
+  "anemia": ["The doctor ordered a blood test to check for anemia.", "醫師安排驗血以檢查是否貧血。"],
+  "anesthesia": ["The surgeon explained how the anesthesia would work.", "外科醫師說明麻醉將如何進行。"],
+  "angle": ["The photographer changed the angle to include the whole bridge.", "攝影師改變角度，好把整座橋都拍進畫面。"],
+  "angler": ["The angler released the fish after taking a photo.", "這名釣客拍照後將魚放回水裡。"],
+  "animation": ["The studio used hand-drawn animation for the opening scene.", "工作室在開場場景使用手繪動畫。"],
+  "anniversary": ["They celebrated their tenth anniversary with a quiet dinner.", "他們以一頓安靜的晚餐慶祝十週年紀念日。"],
+  "announcer": ["The announcer introduced the next performer.", "播報員介紹下一位表演者。"],
+  "annuity": ["After retiring, she receives a monthly annuity from her pension plan.", "退休後，她從退休金計畫中每月領取年金。"],
+  "ant": ["An ant carried a crumb across the kitchen floor.", "一隻螞蟻拖著麵包屑穿過廚房地板。"],
+  "anthropologist": ["The anthropologist spent years studying the community's traditions.", "這名人類學家花了數年研究該社群的傳統。"],
+  "anthropology": ["She chose anthropology because she enjoys learning about different cultures.", "她選擇人類學，因為喜歡了解不同文化。"],
+  "antibody": ["The vaccine helps the body produce antibodies.", "疫苗有助於身體產生抗體。"],
+  "antivirus": ["Install antivirus software before connecting the new computer to the internet.", "新電腦連上網路前，請先安裝防毒軟體。"],
+  "anxiety": ["Deep breathing can help reduce anxiety before an exam.", "深呼吸有助於減輕考試前的焦慮。"],
+  "apartment building": ["The elevator in our apartment building is being repaired.", "我們公寓大樓的電梯正在維修。"],
+  "aperture": ["A wider aperture lets more light into the camera.", "較大的光圈能讓更多光線進入相機。"],
+  "apology": ["He offered a sincere apology for arriving late.", "他為遲到誠懇地道歉。"],
+  "appendix": ["The chart is included in the appendix at the end of the report.", "這張圖表收錄在報告末尾的附錄中。"],
+  "applause": ["The audience gave the singer a long round of applause.", "觀眾為歌手報以長時間的掌聲。"],
+  "apprentice": ["The apprentice watched the mechanic repair the engine.", "學徒看著技師修理引擎。"],
+  "appropriation": ["The legislature approved an appropriation for flood prevention.", "立法機關核准了一筆用於防洪的撥款。"],
+  "aptitude": ["She has a natural aptitude for learning languages.", "她有學習語言的天賦。"],
+  "aquarium": ["We watched colorful fish swim through the tunnel at the aquarium.", "我們在水族館看著色彩繽紛的魚游過隧道。"],
+  "arbitrator": ["The arbitrator listened to both sides before making a decision.", "仲裁人在作出決定前聽取雙方說法。"],
+  "arch": ["The old stone arch framed the entrance to the garden.", "古老的石拱門框住了花園入口。"],
+  "archaeologist": ["The archaeologist carefully brushed sand from the pottery.", "考古學家小心地刷去陶器上的沙土。"],
+  "architect": ["The architect designed a library with large windows.", "建築師設計了一座有大片窗戶的圖書館。"],
+  "architecture": ["The city's modern architecture attracts many visitors.", "這座城市的現代建築吸引許多遊客。"],
+  "argument": ["Their argument started over something very small.", "他們因一件小事起了爭論。"],
+  "armor": ["The museum displayed a suit of medieval armor.", "博物館展示了一套中世紀盔甲。"],
+  "army": ["The army sent engineers to repair the damaged bridge.", "軍隊派遣工程人員修復受損的橋梁。"],
+  "aroma": ["The aroma of fresh bread filled the kitchen.", "新鮮麵包的香氣充滿廚房。"],
+  "arrow": ["The arrow on the sign points toward the exit.", "標誌上的箭頭指向出口。"],
+  "art gallery": ["Her paintings will be shown at a local art gallery.", "她的畫作將在當地藝廊展出。"],
+  "artery": ["The doctor found a blockage in one of his arteries.", "醫師在他的一條動脈中發現阻塞。"],
+  "arthritis": ["My grandmother uses a warm compress to ease her arthritis.", "我的祖母用溫熱敷來減輕關節炎的不適。"],
+  "artifact": ["The museum displayed an ancient artifact found near the river.", "博物館展示了一件在河邊發現的古代人工製品。"],
+  "artisan": ["An artisan carved the bowl from a single piece of wood.", "一名工匠用一整塊木頭雕出這個碗。"],
+  "assemblage": ["The exhibit is an assemblage of photographs, letters, and maps.", "這場展覽是一組由照片、信件和地圖構成的集合。"],
+  "assertion": ["His assertion that the train was late was easy to verify.", "他聲稱火車誤點，這個說法很容易查證。"],
+  "assessment": ["The teacher gave each student a short reading assessment.", "老師給每位學生一份簡短的閱讀評估。"],
+  "assessor": ["The property assessor visited the house last week.", "不動產評估員上週查看了這棟房子。"],
+  "association": ["She joined a professional association for young engineers.", "她加入了青年工程師的專業協會。"],
+  "assurance": ["The manager gave us an assurance that the problem would be fixed.", "經理向我們保證這個問題會被解決。"]
+});
+
+// Correct the displayed headword data when the original expansion assigned an
+// inaccurate meaning or part of speech.  The example above uses these senses.
+Object.assign(CURATED_NATURAL_MEANINGS, {
+  "angler": "釣客；釣魚者",
+  "analog": "類比式；類比裝置"
+});
+Object.assign(CURATED_NATURAL_POS, {
+  "analog": "adj.／n."
+});
+
+
+// ===== ??????? 03 ? (natural-examples-batch-03.js) =====
+// Natural example restoration — batch 03
+// Each example is independently written and tied to the displayed sense.
+var CURATED_NATURAL_EXAMPLES = (typeof CURATED_NATURAL_EXAMPLES !== "undefined")
+  ? CURATED_NATURAL_EXAMPLES
+  : {};
+var CURATED_NATURAL_MEANINGS = (typeof CURATED_NATURAL_MEANINGS !== "undefined")
+  ? CURATED_NATURAL_MEANINGS
+  : {};
+
+Object.assign(CURATED_NATURAL_EXAMPLES, {
+  "astronaut": ["The astronaut described what it felt like to see Earth from space.", "這名太空人描述從太空看見地球的感受。"],
+  "astronomer": ["The astronomer used a telescope to observe a distant galaxy.", "天文學家用望遠鏡觀測遙遠的星系。"],
+  "astronomy": ["Astronomy helps us understand the stars and planets.", "天文學幫助我們了解恆星和行星。"],
+  "asylum": ["The family applied for asylum after fleeing the war.", "這個家庭逃離戰爭後申請庇護。"],
+  "athlete": ["The athlete trained every morning before work.", "這名運動員每天上班前都訓練。"],
+  "athletics": ["She won a medal in athletics at the school competition.", "她在校際田徑比賽中贏得獎牌。"],
+  "attachment": ["I included the receipt as an attachment to the email.", "我把收據當作電子郵件附件附上。"],
+  "attorney": ["The attorney explained the contract in plain language.", "律師用淺顯的語言說明合約。"],
+  "attraction": ["The night market is a popular attraction for visitors.", "夜市是遊客喜愛的景點。"],
+  "auction": ["The painting was sold at auction for more than expected.", "這幅畫在拍賣會上以高於預期的價格售出。"],
+  "auctioneer": ["The auctioneer raised the price with each new bid.", "拍賣師隨著每次新出價提高價格。"],
+  "auditorium": ["The graduation ceremony was held in the school auditorium.", "畢業典禮在學校禮堂舉行。"],
+  "aunt": ["My aunt brings homemade cookies whenever she visits.", "我阿姨每次來訪都會帶自製餅乾。"],
+  "authentication": ["Two-factor authentication protects your account from unauthorized access.", "雙重身分驗證可保護你的帳戶免於未授權存取。"],
+  "authorization": ["You need written authorization before using the company's logo.", "使用公司標誌前需要書面授權。"],
+  "auto": ["The vintage auto was restored by its owner.", "這輛老式汽車由車主修復。"],
+  "autobiography": ["Her autobiography describes her childhood in the countryside.", "她的自傳描述了在鄉下度過的童年。"],
+  "awareness": ["The campaign raised awareness of road safety.", "這項活動提升了大眾對道路安全的意識。"],
+  "backdrop": ["Snow-covered mountains formed a dramatic backdrop for the photo.", "白雪覆蓋的山脈成為照片醒目的背景。"],
+  "backlog": ["The support team worked late to clear the backlog of requests.", "客服團隊加班處理積壓的請求。"],
+  "backpacker": ["The backpacker stayed in a hostel near the station.", "這名背包客住在車站附近的青年旅館。"],
+  "bacteria": ["Some bacteria are useful for making yogurt.", "有些細菌可用來製作優格。"],
+  "bacterium": ["A single bacterium can multiply quickly under the right conditions.", "在適當條件下，單一細菌能迅速繁殖。"],
+  "balloon": ["The child let go of the balloon and watched it float away.", "那個孩子放開氣球，看著它飄走。"],
+  "ballot": ["Voters marked their choices on a secret ballot.", "選民在不記名選票上標示自己的選擇。"],
+  "banana": ["He sliced a banana into his bowl of oatmeal.", "他把一根香蕉切片放進燕麥粥裡。"],
+  "bandage": ["The nurse placed a clean bandage over the cut.", "護理師在傷口上覆蓋乾淨的繃帶。"],
+  "bank account": ["She opened a bank account after starting her first job.", "她開始第一份工作後開了一個銀行帳戶。"],
+  "banker": ["The banker explained the loan options to the couple.", "銀行家向這對夫妻說明貸款選項。"],
+  "baptist": ["She was raised as a Baptist and still attends church regularly.", "她從小是浸禮會教友，現在仍固定去教堂。"],
+  "barcode": ["The cashier scanned the barcode on the package.", "收銀員掃描包裝上的條碼。"],
+  "basket": ["She carried the vegetables home in a woven basket.", "她用編織籃子把蔬菜帶回家。"],
+  "beach": ["We walked along the beach before sunset.", "日落前我們沿著海灘散步。"],
+  "beacon": ["The lighthouse beacon guided the boat through the fog.", "燈塔的信標引導船隻穿過濃霧。"],
+  "beaker": ["The students measured the liquid in a glass beaker.", "學生在玻璃燒杯中量取液體。"],
+  "bearing": ["The mechanic replaced a worn bearing in the wheel.", "技師更換了車輪中磨損的軸承。"],
+  "beauty": ["The beauty of the lake made us stop and take pictures.", "湖泊的美景讓我們停下來拍照。"],
+  "beer": ["He ordered a cold beer with his dinner.", "他晚餐時點了一杯冰啤酒。"],
+  "behalf": ["On behalf of the team, I would like to thank our volunteers.", "我謹代表團隊感謝志工們。"],
+  "belief": ["Her belief in herself helped her speak confidently.", "她對自己的信念幫助她自信地發言。"],
+  "believer": ["He is a strong believer in learning from mistakes.", "他深信人能從錯誤中學習。"],
+  "betrayal": ["She felt a deep sense of betrayal after reading the message.", "讀完那則訊息後，她感到深深的背叛。"],
+  "bike": ["She rides her bike to work when the weather is nice.", "天氣好時，她騎自行車去上班。"],
+  "binoculars": ["We used binoculars to watch birds across the lake.", "我們用雙筒望遠鏡觀察湖對岸的鳥。"],
+  "biology": ["Biology was his favorite subject in high school.", "生物學是他高中時最喜歡的科目。"],
+  "blade": ["Be careful because the blade on this knife is very sharp.", "小心，這把刀的刀刃很鋒利。"],
+  "blender": ["Use a blender to make a smooth fruit drink.", "用果汁機打出滑順的水果飲品。"],
+  "bluetooth": ["I connected the speakers to my phone through Bluetooth.", "我透過藍牙將喇叭連接到手機。"],
+  "board game": ["We played a board game after dinner.", "晚餐後我們玩了一款桌上遊戲。"],
+  "boarding": ["Boarding begins thirty minutes before the flight leaves.", "登機會在班機起飛前三十分鐘開始。"],
+  "boat": ["They rented a small boat to explore the lake.", "他們租了一艘小船探索湖面。"],
+  "body": ["Regular exercise keeps your body strong.", "規律運動能讓身體保持強壯。"],
+  "boiler": ["The boiler provides hot water for the whole building.", "鍋爐為整棟建築供應熱水。"],
+  "bolt": ["Tighten the bolt before using the new shelf.", "使用新層架前先把螺栓鎖緊。"],
+  "bookstore": ["I found the novel at a small bookstore near campus.", "我在校園附近的一間小書店找到這本小說。"],
+  "boulder": ["A large boulder blocked part of the hiking trail.", "一塊大圓石擋住了部分登山步道。"],
+  "boulevard": ["The boulevard is lined with trees and outdoor cafés.", "這條林蔭大道兩旁有樹木和露天咖啡館。"],
+  "bowling": ["Our coworkers went bowling after the meeting.", "我們的同事會議後去打保齡球。"],
+  "boyfriend": ["She introduced her boyfriend to her parents.", "她把男朋友介紹給父母。"],
+  "bracelet": ["He gave her a silver bracelet for her birthday.", "他送給她一條銀手鍊作為生日禮物。"]
+});
+
+Object.assign(CURATED_NATURAL_MEANINGS, {
+  "auto": "汽車（尤指美式用語）"
+});
+
+
+// ===== ??????? 04 ? (natural-examples-batch-04.js) =====
+// Natural example restoration — batch 04
+// Every pair has a word-specific context; no category sentence is reused.
+var CURATED_NATURAL_EXAMPLES = (typeof CURATED_NATURAL_EXAMPLES !== "undefined")
+  ? CURATED_NATURAL_EXAMPLES
+  : {};
+var CURATED_NATURAL_MEANINGS = (typeof CURATED_NATURAL_MEANINGS !== "undefined")
+  ? CURATED_NATURAL_MEANINGS
+  : {};
+
+Object.assign(CURATED_NATURAL_EXAMPLES, {
+  "brand": ["This brand is known for making durable hiking shoes.", "這個品牌以製造耐穿的登山鞋聞名。"],
+  "bravery": ["Her bravery helped the children stay calm during the fire drill.", "她的勇氣幫助孩子們在消防演練時保持冷靜。"],
+  "brewery": ["The brewery offers tours that explain how its beer is made.", "這間啤酒廠提供導覽，說明啤酒如何釀造。"],
+  "briefcase": ["He kept the signed contract in his briefcase.", "他把已簽署的合約放在公事包裡。"],
+  "broadband": ["Reliable broadband is important for people who work from home.", "穩定的寬頻對在家工作的人很重要。"],
+  "broadcaster": ["The broadcaster reported the election results live.", "這名播報員現場報導選舉結果。"],
+  "broccoli": ["She steamed broccoli to serve with the chicken.", "她蒸了花椰菜搭配雞肉。"],
+  "broker": ["The broker helped them find an apartment within their budget.", "這名經紀人協助他們在預算內找到公寓。"],
+  "brother": ["My brother taught me how to ride a bicycle.", "我哥哥教我騎自行車。"],
+  "browser": ["Open the link in your browser to read the article.", "在瀏覽器中開啟連結以閱讀文章。"],
+  "buddy": ["My hiking buddy always brings an extra bottle of water.", "我的登山夥伴總會多帶一瓶水。"],
+  "budgeting": ["Budgeting helped her save enough money for a trip.", "預算編列幫助她存到足夠的旅費。"],
+  "buffalo": ["A herd of buffalo crossed the grassland at dawn.", "一群水牛在黎明時穿越草原。"],
+  "builder": ["The builder checked the foundation before the walls were raised.", "建造商在砌牆前檢查地基。"],
+  "bull": ["The bull stood quietly in the field beside the fence.", "那頭公牛安靜地站在柵欄旁的田地裡。"],
+  "bullion": ["The bank keeps gold bullion in a secure vault.", "銀行把金條保存在安全金庫中。"],
+  "bungalow": ["They rented a small bungalow near the beach.", "他們在海灘附近租了一間小平房。"],
+  "bureau": ["The tourism bureau published a map of local attractions.", "觀光局出版了一份當地景點地圖。"],
+  "bureaucrat": ["The bureaucrat reviewed the application before approving the permit.", "這名官員在核准許可前審閱申請文件。"],
+  "burger": ["He ordered a burger with extra onions.", "他點了一個加很多洋蔥的漢堡。"],
+  "burial": ["The family held a quiet burial for their grandfather.", "家人為祖父舉行了安靜的葬禮。"],
+  "bus driver": ["The bus driver waited until everyone was seated.", "公車司機等到所有人都坐好才開車。"],
+  "butter": ["Spread a little butter on the warm toast.", "在熱吐司上抹一點奶油。"],
+  "buyer": ["The buyer inspected the house before making an offer.", "買方在出價前查看了房子。"],
+  "bylaw": ["The city council changed a bylaw about parking near schools.", "市議會修改了一項關於校園附近停車的附則。"],
+  "cabbage": ["She added shredded cabbage to the soup.", "她在湯裡加入切絲的高麗菜。"],
+  "cabin crew": ["The cabin crew demonstrated how to use the safety equipment.", "機組人員示範如何使用安全設備。"],
+  "cabinet": ["The glasses are stored in the cabinet above the sink.", "玻璃杯放在水槽上方的櫥櫃裡。"],
+  "cable": ["The charging cable is too short to reach the outlet.", "充電線太短，搆不到插座。"],
+  "cactus": ["The cactus needs very little water to survive.", "仙人掌只需要很少的水就能存活。"],
+  "cafe": ["We met at a quiet cafe near the library.", "我們在圖書館附近的一間安靜咖啡館見面。"],
+  "cafeteria": ["Students lined up for lunch in the school cafeteria.", "學生在學校餐廳排隊吃午餐。"],
+  "cake": ["They brought a chocolate cake to the birthday party.", "他們帶了一個巧克力蛋糕去生日派對。"],
+  "calculation": ["A small calculation showed that the train would arrive late.", "簡單計算後發現火車會誤點。"],
+  "calculator": ["Use a calculator to check your answer.", "用計算機檢查你的答案。"],
+  "calorie": ["The label shows how many calories are in one serving.", "標籤顯示一份食物含有多少卡路里。"],
+  "camel": ["The camel carried supplies across the desert.", "駱駝載著補給品穿越沙漠。"],
+  "campsite": ["We found a campsite beside a clear mountain stream.", "我們在清澈的山澗旁找到一處露營地。"],
+  "canal": ["Small boats moved slowly along the canal.", "小船沿著運河緩慢行駛。"],
+  "candy": ["The children were allowed one piece of candy after dinner.", "孩子們晚餐後可以吃一顆糖果。"],
+  "capitalization": ["The company increased its capitalization before expanding overseas.", "公司在海外擴張前提高了資本額。"],
+  "capsule": ["Take one capsule with water after breakfast.", "早餐後配水服用一粒膠囊。"],
+  "captain": ["The captain announced that the ship would leave at noon.", "船長宣布船隻將在中午出發。"],
+  "car wash": ["We stopped at a car wash after driving through the mud.", "開過泥濘路段後，我們在洗車場停下來洗車。"],
+  "carbon": ["Trees absorb carbon dioxide from the air.", "樹木吸收空氣中的二氧化碳。"],
+  "caregiver": ["The caregiver helped him prepare breakfast each morning.", "照護者每天早上協助他準備早餐。"],
+  "cargo": ["The ship carried cargo from Taiwan to Japan.", "這艘船把貨物從臺灣運往日本。"],
+  "carpenter": ["The carpenter built a wooden table for the kitchen.", "木匠為廚房做了一張木桌。"],
+  "carriage": ["The horses pulled a carriage through the old town.", "馬匹拉著馬車穿過老城區。"],
+  "carrot": ["He cut the carrot into thin slices for the salad.", "他把胡蘿蔔切成薄片做沙拉。"],
+  "cartoon": ["The children watched a cartoon before bed.", "孩子們睡前看了一部卡通。"],
+  "castle": ["The castle overlooks the river from the top of the hill.", "這座城堡從山頂俯瞰河流。"],
+  "catering": ["The hotel provides catering for weddings and business events.", "這家飯店為婚禮和商務活動提供餐飲服務。"],
+  "cathedral": ["Visitors admired the stained-glass windows in the cathedral.", "訪客欣賞大教堂裡的彩繪玻璃窗。"],
+  "cavalry": ["The museum has an exhibit about the history of the cavalry.", "博物館有一個介紹騎兵歷史的展覽。"],
+  "celebrity": ["The celebrity greeted fans outside the theater.", "這位名人在劇院外向粉絲打招呼。"],
+  "cellar": ["The restaurant stores its wine in a cool cellar.", "這間餐廳把酒存放在涼爽的地窖裡。"],
+  "cellphone": ["Please silence your cellphone during the movie.", "看電影時請把手機調成靜音。"],
+  "cement": ["The workers poured cement to make a new sidewalk.", "工人灌注水泥鋪設新的行人道。"],
+  "cemetery": ["They left flowers at the cemetery on the anniversary.", "他們在週年紀念日到墓園獻花。"]
+});
+
+Object.assign(CURATED_NATURAL_MEANINGS, {
+  "builder": "建造商；建築工人",
+  "bureaucrat": "官員；官僚",
+  "capitalization": "資本額；資本化"
+});
+
+
+// ===== ???????? (natural-examples-beginner-restored.js) =====
+// Restored natural beginner examples from the user-provided beginner.js backup.
+// These 489 entries replace the old class-discussion template sentences.
+// Existing hand-curated batches are intentionally kept when they overlap.
+var BEGINNER_SOURCE_RESTORED_EXAMPLES = {
+  "absence": [
+    "Her absence from the meeting worried her coworkers.",
+    "她沒有出席會議讓同事們很擔心。"
+  ],
+  "acquaintance": [
+    "He's just an acquaintance, not a close friend.",
+    "他只是個熟人，不是親密的朋友。"
+  ],
+  "aircraft": [
+    "The aircraft landed safely despite the storm.",
+    "那架飛機儘管遇到暴風雨仍安全降落。"
+  ],
+  "alcohol": [
+    "He avoids alcohol because it upsets his stomach.",
+    "他因為喝酒會胃不舒服而避免飲酒。"
+  ],
+  "angle": [
+    "Measure the angle between the two lines.",
+    "量出這兩條線之間的角度。"
+  ],
+  "ant": [
+    "A line of ants marched across the kitchen floor.",
+    "一列螞蟻在廚房地板上排隊前進。"
+  ],
+  "apology": [
+    "He wrote a sincere apology to his teacher.",
+    "他寫了一封誠懇的道歉信給老師。"
+  ],
+  "apple": [
+    "She packed an apple for her lunch.",
+    "她把一顆蘋果裝進午餐盒裡。"
+  ],
+  "army": [
+    "He joined the army right after high school.",
+    "他高中一畢業就從軍了。"
+  ],
+  "aunt": [
+    "My aunt lives just down the street from us.",
+    "我阿姨就住在我們家附近。"
+  ],
+  "balloon": [
+    "The child let go of the balloon by accident.",
+    "那個孩子不小心讓氣球飛走了。"
+  ],
+  "bandage": [
+    "She put a bandage on the small cut.",
+    "她在小傷口上貼了繃帶。"
+  ],
+  "barbecue": [
+    "We're having a barbecue in the backyard this weekend.",
+    "我們這個週末要在後院烤肉。"
+  ],
+  "basket": [
+    "He put the dirty clothes in the basket.",
+    "他把髒衣服放進籃子裡。"
+  ],
+  "beach": [
+    "We spent the whole afternoon at the beach.",
+    "我們整個下午都待在海灘上。"
+  ],
+  "beauty": [
+    "Everyone admired the beauty of the mountain view.",
+    "每個人都讚嘆這片山景的美麗。"
+  ],
+  "bedroom": [
+    "She painted her bedroom a soft blue color.",
+    "她把臥室漆成柔和的藍色。"
+  ],
+  "beef": [
+    "The restaurant is famous for its grilled beef.",
+    "這家餐廳以烤牛肉聞名。"
+  ],
+  "beer": [
+    "He ordered a cold beer with his dinner.",
+    "他點了一杯冰啤酒配晚餐。"
+  ],
+  "binoculars": [
+    "She used binoculars to watch the birds nesting.",
+    "她用雙筒望遠鏡觀察築巢的鳥。"
+  ],
+  "blood": [
+    "The nurse drew a small sample of blood.",
+    "護理師抽了一小管血液。"
+  ],
+  "boat": [
+    "They rented a small boat to explore the lake.",
+    "他們租了一艘小船去探索那座湖。"
+  ],
+  "body": [
+    "Regular exercise keeps the body strong and healthy.",
+    "規律運動能讓身體保持強壯健康。"
+  ],
+  "boiler": [
+    "The boiler broke down in the middle of winter.",
+    "鍋爐在隆冬時故障了。"
+  ],
+  "bookcase": [
+    "He built a wooden bookcase for his study.",
+    "他為書房打造了一個木製書櫃。"
+  ],
+  "bookstore": [
+    "She spent an hour browsing the bookstore.",
+    "她在書店逛了一個小時。"
+  ],
+  "bravery": [
+    "The firefighter was praised for his bravery.",
+    "那位消防員因為勇氣而受到讚揚。"
+  ],
+  "burger": [
+    "He ordered a burger and fries for lunch.",
+    "他午餐點了一個漢堡和薯條。"
+  ],
+  "cable": [
+    "The technician replaced the broken cable.",
+    "技師更換了損壞的電纜。"
+  ],
+  "cafe": [
+    "We met at a small cafe near the station.",
+    "我們在車站附近的一間小咖啡館碰面。"
+  ],
+  "cake": [
+    "She baked a chocolate cake for his birthday.",
+    "她為他的生日烤了一個巧克力蛋糕。"
+  ],
+  "calculator": [
+    "He forgot to bring his calculator to the exam.",
+    "他忘了把計算機帶去考試。"
+  ],
+  "camel": [
+    "The camel can survive for days without water.",
+    "駱駝可以好幾天不喝水也能存活。"
+  ],
+  "candy": [
+    "The children traded candy after trick-or-treating.",
+    "孩子們討糖後互相交換糖果。"
+  ],
+  "captain": [
+    "The captain guided the ship through the storm.",
+    "船長帶領這艘船穿過暴風雨。"
+  ],
+  "cartoon": [
+    "My little brother watches cartoons every morning.",
+    "我弟弟每天早上都看卡通。"
+  ],
+  "castle": [
+    "Tourists lined up to visit the old castle.",
+    "遊客們排隊參觀那座古老的城堡。"
+  ],
+  "cellphone": [
+    "She left her cellphone at home by mistake.",
+    "她不小心把手機忘在家裡了。"
+  ],
+  "center": [
+    "The library is right in the center of town.",
+    "圖書館就在市中心。"
+  ],
+  "champion": [
+    "She became the champion after three tough matches.",
+    "她在三場艱難的比賽後成為冠軍。"
+  ],
+  "cheese": [
+    "He melted some cheese over the pasta.",
+    "他在義大利麵上融了些起司。"
+  ],
+  "chicken": [
+    "We had roasted chicken for Sunday dinner.",
+    "我們星期天晚餐吃了烤雞。"
+  ],
+  "chocolate": [
+    "She gave him a box of chocolate for Valentine's Day.",
+    "她在情人節送他一盒巧克力。"
+  ],
+  "church": [
+    "They got married in a small church by the sea.",
+    "他們在海邊的一座小教堂結婚。"
+  ],
+  "cinema": [
+    "We watched the new movie at the cinema.",
+    "我們在電影院看了那部新電影。"
+  ],
+  "classroom": [
+    "The teacher decorated the classroom for the holidays.",
+    "老師為了節日佈置了教室。"
+  ],
+  "clock": [
+    "The clock on the wall stopped working.",
+    "牆上的時鐘停止走動了。"
+  ],
+  "coin": [
+    "He dropped a coin into the fountain and made a wish.",
+    "他往噴泉裡丟了一枚硬幣許願。"
+  ],
+  "college": [
+    "She's applying to several colleges this fall.",
+    "她今年秋天要申請好幾所大學。"
+  ],
+  "column": [
+    "He writes a weekly column for the newspaper.",
+    "他每週為報紙寫一篇專欄。"
+  ],
+  "concert": [
+    "Tickets for the concert sold out in minutes.",
+    "音樂會的票幾分鐘內就賣光了。"
+  ],
+  "conclusion": [
+    "The report reached a clear conclusion.",
+    "這份報告得出了明確的結論。"
+  ],
+  "cooking": [
+    "He took a cooking class to learn Italian food.",
+    "他上了一堂烹飪課學做義大利菜。"
+  ],
+  "countryside": [
+    "They moved to the countryside to escape the city noise.",
+    "他們搬到鄉村以逃離城市的喧囂。"
+  ],
+  "craft": [
+    "She sells handmade craft items online.",
+    "她在網路上販售手工工藝品。"
+  ],
+  "curtain": [
+    "She closed the curtain to block out the sunlight.",
+    "她拉上窗簾遮擋陽光。"
+  ],
+  "cycling": [
+    "Cycling to work saves him a lot of money.",
+    "騎自行車上班替他省下不少錢。"
+  ],
+  "daughter": [
+    "Their daughter just started kindergarten this year.",
+    "他們的女兒今年剛開始上幼兒園。"
+  ],
+  "daytime": [
+    "The road is much busier during the daytime.",
+    "這條路在白天時車流量大得多。"
+  ],
+  "desert": [
+    "The temperature in the desert drops sharply at night.",
+    "沙漠的氣溫在夜間會急遽下降。"
+  ],
+  "dictionary": [
+    "She looked up the word in a dictionary.",
+    "她在字典裡查了那個單字。"
+  ],
+  "dish": [
+    "This is my favorite dish at the restaurant.",
+    "這是我在這家餐廳最喜歡的菜餚。"
+  ],
+  "dollar": [
+    "The ticket costs about ten dollars.",
+    "這張票大概要十美元。"
+  ],
+  "doorway": [
+    "He stood in the doorway waiting for a reply.",
+    "他站在門口等待回覆。"
+  ],
+  "drawing": [
+    "The child showed her mother a drawing of a cat.",
+    "那個孩子給媽媽看她畫的一隻貓。"
+  ],
+  "dream": [
+    "Becoming a doctor has been her dream since childhood.",
+    "當醫生一直是她從小的夢想。"
+  ],
+  "ear": [
+    "The loud music hurt his ears.",
+    "大聲的音樂讓他的耳朵很不舒服。"
+  ],
+  "egg": [
+    "She fried an egg for breakfast.",
+    "她煎了一顆蛋當早餐。"
+  ],
+  "evening": [
+    "We usually go for a walk in the evening.",
+    "我們通常在晚上出去散步。"
+  ],
+  "exam": [
+    "She stayed up late studying for the exam.",
+    "她熬夜念書準備考試。"
+  ],
+  "family": [
+    "We're having a big family gathering this weekend.",
+    "我們這個週末要辦一場家庭聚會。"
+  ],
+  "father": [
+    "Her father taught her how to ride a bike.",
+    "她的父親教她怎麼騎腳踏車。"
+  ],
+  "finger": [
+    "He cut his finger while chopping vegetables.",
+    "他切菜時割傷了手指。"
+  ],
+  "flight": [
+    "Our flight was delayed by two hours.",
+    "我們的班機延誤了兩個小時。"
+  ],
+  "forest": [
+    "They hiked through a dense forest.",
+    "他們徒步穿越一片茂密的森林。"
+  ],
+  "fork": [
+    "She dropped her fork on the floor.",
+    "她把叉子掉到地上了。"
+  ],
+  "fortune": [
+    "He made his fortune in the tech industry.",
+    "他在科技業賺得了財富。"
+  ],
+  "fridge": [
+    "There's leftover pizza in the fridge.",
+    "冰箱裡還有剩下的披薩。"
+  ],
+  "gallery": [
+    "The gallery is showing local artists' work this month.",
+    "這間藝廊這個月展出當地藝術家的作品。"
+  ],
+  "game": [
+    "The kids played a board game after dinner.",
+    "孩子們晚餐後玩了一場桌遊。"
+  ],
+  "gentleman": [
+    "The old gentleman held the door open for us.",
+    "那位老紳士替我們扶著門。"
+  ],
+  "geography": [
+    "She's really good at geography and knows every capital city.",
+    "她地理很好，知道每個國家的首都。"
+  ],
+  "glass": [
+    "He poured a glass of orange juice.",
+    "他倒了一杯柳橙汁。"
+  ],
+  "glove": [
+    "She lost one glove somewhere on the way home.",
+    "她在回家路上不知道把一隻手套弄丟了。"
+  ],
+  "grass": [
+    "The dog rolled around happily in the grass.",
+    "那隻狗開心地在草地上打滾。"
+  ],
+  "haircut": [
+    "He got a haircut before the job interview.",
+    "他在面試前去剪了頭髮。"
+  ],
+  "hammer": [
+    "He used a hammer to fix the loose shelf.",
+    "他用鐵鎚修好了鬆脫的層架。"
+  ],
+  "handbag": [
+    "She left her handbag on the train by mistake.",
+    "她不小心把手提包忘在火車上。"
+  ],
+  "hearing": [
+    "His hearing has gotten worse as he's gotten older.",
+    "他的聽力隨著年紀增長變差了。"
+  ],
+  "heaven": [
+    "The old man believed his wife was watching from heaven.",
+    "那位老先生相信他的妻子正從天堂看著他。"
+  ],
+  "homework": [
+    "She finished her homework before dinner.",
+    "她在晚餐前寫完了作業。"
+  ],
+  "house": [
+    "They bought a small house near the park.",
+    "他們在公園附近買了一間小房子。"
+  ],
+  "hunger": [
+    "The soup finally satisfied his hunger.",
+    "那碗湯終於讓他不再飢餓。"
+  ],
+  "husband": [
+    "Her husband cooks dinner every Friday night.",
+    "她的丈夫每週五晚上都煮晚餐。"
+  ],
+  "iceberg": [
+    "Most of an iceberg lies hidden underwater.",
+    "冰山的大部分都藏在水面下。"
+  ],
+  "illness": [
+    "He missed a week of work due to illness.",
+    "他因為生病請了一週的假。"
+  ],
+  "index": [
+    "Check the index at the back of the book.",
+    "查一下書後面的索引。"
+  ],
+  "jury": [
+    "The jury took three hours to reach a verdict.",
+    "陪審團花了三個小時才做出裁決。"
+  ],
+  "kid": [
+    "The kids were playing tag in the yard.",
+    "孩子們在院子裡玩鬼抓人。"
+  ],
+  "king": [
+    "The king ruled the country for over forty years.",
+    "那位國王統治這個國家超過四十年。"
+  ],
+  "laughter": [
+    "Laughter filled the room during the party.",
+    "笑聲在派對期間充滿了整個房間。"
+  ],
+  "leaf": [
+    "A single leaf fell onto the windowsill.",
+    "一片葉子飄落到窗台上。"
+  ],
+  "library": [
+    "She studies at the library every Saturday.",
+    "她每個星期六都在圖書館唸書。"
+  ],
+  "match": [
+    "The two teams played an exciting match last night.",
+    "這兩隊昨晚打了一場精彩的比賽。"
+  ],
+  "meaning": [
+    "He explained the meaning of the idiom to his students.",
+    "他向學生解釋了這個成語的意思。"
+  ],
+  "midnight": [
+    "We watched the fireworks until midnight.",
+    "我們看煙火看到午夜。"
+  ],
+  "money": [
+    "She saved enough money to buy a new laptop.",
+    "她存夠了錢買一台新筆電。"
+  ],
+  "month": [
+    "He'll be moving to Tokyo next month.",
+    "他下個月要搬去東京。"
+  ],
+  "moon": [
+    "The moon was full and bright last night.",
+    "昨晚的月亮又圓又亮。"
+  ],
+  "motor": [
+    "The motor made a strange noise before it stopped.",
+    "馬達停止前發出了奇怪的聲音。"
+  ],
+  "painting": [
+    "She hung a painting of the countryside above the sofa.",
+    "她在沙發上方掛了一幅鄉村風景畫。"
+  ],
+  "pancake": [
+    "He flipped the pancake a little too hard.",
+    "他翻鬆餅時力道有點太大。"
+  ],
+  "paper": [
+    "She wrote her name at the top of the paper.",
+    "她在紙的最上方寫下自己的名字。"
+  ],
+  "park": [
+    "The kids ran around the park after school.",
+    "孩子們放學後在公園裡跑來跑去。"
+  ],
+  "party": [
+    "They threw a surprise party for her birthday.",
+    "他們為她的生日辦了一場驚喜派對。"
+  ],
+  "path": [
+    "A narrow path led up to the old temple.",
+    "一條狹窄的小徑通往那座古老的寺廟。"
+  ],
+  "peace": [
+    "The two countries finally signed a peace agreement.",
+    "這兩個國家終於簽署了和平協議。"
+  ],
+  "piano": [
+    "She has been learning the piano for five years.",
+    "她已經學鋼琴五年了。"
+  ],
+  "plate": [
+    "He piled his plate high with vegetables.",
+    "他把盤子堆滿了蔬菜。"
+  ],
+  "police": [
+    "The police arrived at the scene within minutes.",
+    "警察在幾分鐘內就抵達了現場。"
+  ],
+  "port": [
+    "The ship arrived at the port early in the morning.",
+    "那艘船在清晨抵達港口。"
+  ],
+  "pound": [
+    "She lost about ten pounds after changing her diet.",
+    "她改變飲食後大約瘦了十磅。"
+  ],
+  "pride": [
+    "He felt a deep sense of pride watching his daughter graduate.",
+    "看著女兒畢業，他感到深深的驕傲。"
+  ],
+  "professor": [
+    "The professor gave an interesting lecture on ancient history.",
+    "那位教授講了一堂很有趣的古代史課。"
+  ],
+  "rain": [
+    "The rain kept us indoors all afternoon.",
+    "雨讓我們整個下午都待在室內。"
+  ],
+  "refrigerator": [
+    "He checked the refrigerator for something to eat.",
+    "他打開冰箱找東西吃。"
+  ],
+  "rice": [
+    "She cooked a big pot of rice for the family.",
+    "她煮了一大鍋米飯給全家人吃。"
+  ],
+  "sand": [
+    "The children built a castle out of sand.",
+    "孩子們用沙子堆了一座城堡。"
+  ],
+  "sea": [
+    "The house has a beautiful view of the sea.",
+    "這間房子擁有美麗的海景。"
+  ],
+  "shop": [
+    "She opened a small shop selling handmade jewelry.",
+    "她開了一家販售手工飾品的小商店。"
+  ],
+  "sister": [
+    "My sister and I share an apartment downtown.",
+    "我姊妹和我在市中心合租一間公寓。"
+  ],
+  "sky": [
+    "The sky turned orange as the sun set.",
+    "太陽下山時天空變成了橘色。"
+  ],
+  "skirt": [
+    "She wore a long skirt to the wedding.",
+    "她穿了一件長裙去參加婚禮。"
+  ],
+  "soap": [
+    "He washed his hands with soap before dinner.",
+    "他晚餐前用肥皂洗了手。"
+  ],
+  "sun": [
+    "The sun rose over the mountains.",
+    "太陽從山頭升起。"
+  ],
+  "supermarket": [
+    "I need to stop by the supermarket after work.",
+    "我下班後得去一趟超市。"
+  ],
+  "university": [
+    "She's studying biology at the university.",
+    "她在大學裡主修生物學。"
+  ],
+  "weather": [
+    "The weather is supposed to improve by the weekend.",
+    "天氣預計在週末前會好轉。"
+  ],
+  "window": [
+    "She opened the window to let in some fresh air.",
+    "她打開窗戶讓新鮮空氣進來。"
+  ],
+  "wood": [
+    "The table is made entirely of wood.",
+    "這張桌子完全是用木材做的。"
+  ],
+  "word": [
+    "He couldn't remember the exact word he wanted to use.",
+    "他想不起來他想用的那個確切單字。"
+  ],
+  "worker": [
+    "The factory hired ten new workers this month.",
+    "那家工廠這個月新聘了十名工作者。"
+  ],
+  "wound": [
+    "The doctor cleaned the wound carefully.",
+    "醫生小心地清理了傷口。"
+  ],
+  "year": [
+    "She's lived in this city for over a year.",
+    "她已經在這座城市住了超過一年。"
+  ],
+  "youth": [
+    "He spent most of his youth traveling around Europe.",
+    "他大部分的青年時期都在歐洲各地旅行。"
+  ],
+  "antibiotic": [
+    "The doctor prescribed an antibiotic for the infection.",
+    "醫生開了抗生素治療感染。"
+  ],
+  "architecture": [
+    "She studied architecture in graduate school.",
+    "她在研究所主修建築學。"
+  ],
+  "authentication": [
+    "The app now requires two-step authentication.",
+    "這個應用程式現在需要兩步驟身分驗證。"
+  ],
+  "barcode": [
+    "The cashier scanned the barcode on each item.",
+    "收銀員逐一掃描了每件商品的條碼。"
+  ],
+  "bluetooth": [
+    "He connected his headphones to the phone via Bluetooth.",
+    "他透過藍牙把耳機連接到手機。"
+  ],
+  "broadband": [
+    "Our building just installed high-speed broadband.",
+    "我們大樓剛裝了高速寬頻。"
+  ],
+  "chief executive": [
+    "The chief executive announced the company's new strategy.",
+    "執行長宣布了公司的新策略。"
+  ],
+  "client base": [
+    "The company expanded its client base overseas.",
+    "這家公司把客戶群拓展到海外。"
+  ],
+  "command": [
+    "The soldier followed every command without question.",
+    "那名士兵毫不質疑地服從每一道指令。"
+  ],
+  "compression": [
+    "The software reduces file size through compression.",
+    "這套軟體透過壓縮縮小檔案大小。"
+  ],
+  "computer virus": [
+    "A computer virus wiped out all his files.",
+    "一個電腦病毒把他所有的檔案都刪除了。"
+  ],
+  "content creator": [
+    "She works as a content creator on social media.",
+    "她是社群媒體上的內容創作者。"
+  ],
+  "cryptocurrency": [
+    "He invested a small amount in cryptocurrency last year.",
+    "他去年投資了一小筆加密貨幣。"
+  ],
+  "cyberattack": [
+    "The bank suffered a major cyberattack last month.",
+    "那家銀行上個月遭受了一次重大的網路攻擊。"
+  ],
+  "dashboard": [
+    "The manager checks the sales dashboard every morning.",
+    "經理每天早上都會查看銷售儀表板。"
+  ],
+  "debugging": [
+    "He spent the whole night debugging the program.",
+    "他整晚都在為那個程式除錯。"
+  ],
+  "decorator": [
+    "They hired a decorator to redesign the living room.",
+    "他們請了一位室內設計師重新規劃客廳。"
+  ],
+  "delivery service": [
+    "The restaurant added a delivery service last year.",
+    "這家餐廳去年新增了外送服務。"
+  ],
+  "device driver": [
+    "The printer stopped working after a device driver update.",
+    "印表機在裝置驅動程式更新後就無法運作了。"
+  ],
+  "digital camera": [
+    "She bought a digital camera for the trip.",
+    "她為了這趟旅行買了一台數位相機。"
+  ],
+  "download link": [
+    "He sent me the download link for the file.",
+    "他把檔案的下載連結傳給我了。"
+  ],
+  "emoji": [
+    "She replied to the text with a laughing emoji.",
+    "她用一個大笑的表情符號回覆了那則訊息。"
+  ],
+  "ethernet": [
+    "He connected his computer with an Ethernet cable for a faster connection.",
+    "他用乙太網路線連接電腦以獲得更快的連線。"
+  ],
+  "file format": [
+    "Make sure the document is saved in the right file format.",
+    "請確認文件是以正確的檔案格式儲存。"
+  ],
+  "fire alarm": [
+    "The fire alarm went off during the meeting.",
+    "會議進行到一半時火災警報器響了。"
+  ],
+  "firefighter": [
+    "The firefighter rescued a cat from the tree.",
+    "那位消防員把一隻貓從樹上救了下來。"
+  ],
+  "gps": [
+    "We used the GPS to find the hotel.",
+    "我們用全球定位系統找到了那間飯店。"
+  ],
+  "hardware store": [
+    "He bought some nails at the hardware store.",
+    "他在五金行買了一些釘子。"
+  ],
+  "interface": [
+    "The new app has a much simpler interface.",
+    "這款新應用程式的介面簡單多了。"
+  ],
+  "internet access": [
+    "The hotel offers free internet access to guests.",
+    "這間飯店為房客提供免費的網路存取。"
+  ],
+  "keyboard shortcut": [
+    "Learning a few keyboard shortcuts can save a lot of time.",
+    "學會幾個鍵盤快速鍵能省下不少時間。"
+  ],
+  "laptop computer": [
+    "She carries her laptop computer to work every day.",
+    "她每天都帶著筆記型電腦去上班。"
+  ],
+  "metadata": [
+    "The photo's metadata shows exactly when it was taken.",
+    "這張照片的中繼資料顯示出確切的拍攝時間。"
+  ],
+  "navigation": [
+    "The car's navigation guided us around the traffic jam.",
+    "車上的導航帶我們繞過了塞車路段。"
+  ],
+  "operating system": [
+    "He updated his operating system before installing the new app.",
+    "他在安裝新程式之前先更新了作業系統。"
+  ],
+  "outage": [
+    "A power outage left the whole street in darkness.",
+    "一場停電讓整條街都陷入黑暗。"
+  ],
+  "peripheral": [
+    "The store sells computers and various peripherals.",
+    "這家店販售電腦和各種周邊設備。"
+  ],
+  "pixel": [
+    "Each pixel on the screen represents one tiny dot of color.",
+    "螢幕上的每個像素代表一個微小的色點。"
+  ],
+  "protocol": [
+    "The hospital follows a strict protocol during surgery.",
+    "醫院在手術期間遵循嚴格的協定。"
+  ],
+  "qr code": [
+    "Scan the QR code to see the menu.",
+    "掃描這個 QR 碼就能看到菜單。"
+  ],
+  "search engine": [
+    "He used a search engine to find the article.",
+    "他用搜尋引擎找到了那篇文章。"
+  ],
+  "setting": [
+    "She changed the setting so the phone wouldn't ring at night.",
+    "她改了設定讓手機晚上不會響。"
+  ],
+  "smartwatch": [
+    "His smartwatch tracks his heart rate all day.",
+    "他的智慧手錶整天都在追蹤他的心率。"
+  ],
+  "software update": [
+    "A software update fixed the bug in the app.",
+    "一次軟體更新修復了這個應用程式的錯誤。"
+  ],
+  "spreadsheet": [
+    "She created a spreadsheet to track monthly expenses.",
+    "她做了一張試算表來追蹤每月的開銷。"
+  ],
+  "streaming": [
+    "Most people watch movies through streaming now.",
+    "現在大多數人都透過串流觀看電影。"
+  ],
+  "tablet computer": [
+    "He draws sketches on his tablet computer.",
+    "他用平板電腦畫草圖。"
+  ],
+  "url": [
+    "Copy the URL and paste it into the browser.",
+    "複製這個網址並貼到瀏覽器裡。"
+  ],
+  "user account": [
+    "She forgot the password to her user account.",
+    "她忘了自己使用者帳號的密碼。"
+  ],
+  "virtual reality": [
+    "The museum added a virtual reality exhibit this year.",
+    "這間博物館今年新增了一個虛擬實境展覽。"
+  ],
+  "webcam": [
+    "He turned on his webcam for the video call.",
+    "他為了視訊通話打開了網路攝影機。"
+  ],
+  "wi-fi": [
+    "The cafe offers free Wi-Fi to customers.",
+    "這間咖啡館為顧客提供免費無線網路。"
+  ],
+  "baggage": [
+    "Her baggage didn't arrive with her flight.",
+    "她的行李沒有隨著班機一起抵達。"
+  ],
+  "beverage": [
+    "The waiter recommended a cold beverage for the hot day.",
+    "服務生在炎熱的天氣推薦了一杯冷飲。"
+  ],
+  "brand": [
+    "She only buys clothes from this brand.",
+    "她只買這個品牌的衣服。"
+  ],
+  "briefcase": [
+    "He carried a leather briefcase to every meeting.",
+    "他每次開會都帶著一個皮製公事包。"
+  ],
+  "budgeting": [
+    "Careful budgeting helped them save for a house.",
+    "謹慎的預算編列幫助他們存到買房子的錢。"
+  ],
+  "cabin crew": [
+    "The cabin crew handed out snacks during the flight.",
+    "機組人員在飛行途中發放點心。"
+  ],
+  "check-in": [
+    "Check-in opens two hours before the flight.",
+    "報到手續在班機起飛前兩小時開始。"
+  ],
+  "citizenship": [
+    "She applied for citizenship after living there for ten years.",
+    "她在那裡住了十年後申請了公民身分。"
+  ],
+  "clinic": [
+    "He went to the clinic for a routine checkup.",
+    "他去診所做例行健康檢查。"
+  ],
+  "coaching": [
+    "She offers career coaching to recent graduates.",
+    "她為應屆畢業生提供職涯指導。"
+  ],
+  "compliment": [
+    "He blushed at the unexpected compliment.",
+    "他因為那個意外的稱讚而臉紅了。"
+  ],
+  "consultation": [
+    "The lawyer offers a free first consultation.",
+    "這位律師提供第一次免費諮詢。"
+  ],
+  "consumer behavior": [
+    "The study looked at how prices affect consumer behavior.",
+    "這項研究探討了價格如何影響消費者行為。"
+  ],
+  "currency exchange": [
+    "We found a currency exchange booth at the airport.",
+    "我們在機場找到了一個貨幣兌換櫃檯。"
+  ],
+  "customer feedback": [
+    "The company changed its packaging based on customer feedback.",
+    "這家公司根據顧客回饋改變了包裝。"
+  ],
+  "database management": [
+    "He took a course in database management last semester.",
+    "他上學期修了一門資料庫管理的課。"
+  ],
+  "declaration": [
+    "Passengers must fill out a customs declaration.",
+    "旅客必須填寫海關申報單。"
+  ],
+  "delayed flight": [
+    "The delayed flight caused her to miss the connection.",
+    "延誤的班機讓她錯過了轉機。"
+  ],
+  "department store": [
+    "She bought a new coat at the department store.",
+    "她在百貨公司買了一件新外套。"
+  ],
+  "deposit account": [
+    "He opened a deposit account to save for retirement.",
+    "他開了一個存款帳戶為退休存錢。"
+  ],
+  "discount code": [
+    "She used a discount code to save twenty percent.",
+    "她用了一組折扣碼省下百分之二十。"
+  ],
+  "documentary": [
+    "We watched a documentary about ocean life.",
+    "我們看了一部關於海洋生物的紀錄片。"
+  ],
+  "elevator button": [
+    "He pressed the wrong elevator button by accident.",
+    "他不小心按錯了電梯按鈕。"
+  ],
+  "emergency exit": [
+    "The emergency exit was blocked by boxes.",
+    "緊急出口被箱子擋住了。"
+  ],
+  "entrance fee": [
+    "The entrance fee for the museum is quite low.",
+    "這間博物館的入場費相當便宜。"
+  ],
+  "environmental protection": [
+    "The company invests heavily in environmental protection.",
+    "這家公司大力投資於環境保護。"
+  ],
+  "exchange rate": [
+    "The exchange rate changes slightly every day.",
+    "匯率每天都會有些微變動。"
+  ],
+  "express delivery": [
+    "She paid extra for express delivery.",
+    "她多付了錢選擇快捷配送。"
+  ],
+  "first aid": [
+    "He learned basic first aid at the community center.",
+    "他在社區中心學了基本的急救。"
+  ],
+  "flight attendant": [
+    "The flight attendant offered us extra blankets.",
+    "空服員給我們提供了額外的毯子。"
+  ],
+  "flight delay": [
+    "The flight delay was caused by bad weather.",
+    "這次航班延誤是天氣不佳造成的。"
+  ],
+  "foreign currency": [
+    "He exchanged some foreign currency before the trip.",
+    "他在出發前換了一些外幣。"
+  ],
+  "fuel cost": [
+    "Rising fuel cost has affected airline ticket prices.",
+    "上升的燃料成本影響了機票價格。"
+  ],
+  "gift card": [
+    "She received a gift card for her birthday.",
+    "她生日時收到了一張禮品卡。"
+  ],
+  "ground floor": [
+    "Our office is on the ground floor of the building.",
+    "我們的辦公室在這棟大樓的一樓。"
+  ],
+  "guest room": [
+    "They turned the spare bedroom into a guest room.",
+    "他們把多餘的臥室改成了客房。"
+  ],
+  "identification": [
+    "You need identification to enter the building.",
+    "你需要身分證明才能進入這棟大樓。"
+  ],
+  "import": [
+    "The country relies heavily on food import.",
+    "這個國家高度仰賴糧食進口。"
+  ],
+  "information desk": [
+    "Ask at the information desk if you get lost.",
+    "如果迷路了就去服務台問問看。"
+  ],
+  "instruction manual": [
+    "He couldn't assemble the desk without the instruction manual.",
+    "沒有使用說明書他就無法組裝那張書桌。"
+  ],
+  "international flight": [
+    "This airport handles mostly international flights.",
+    "這座機場主要處理國際班機。"
+  ],
+  "job interview": [
+    "She wore a suit to her job interview.",
+    "她穿了一套西裝去參加求職面試。"
+  ],
+  "work schedule": [
+    "He asked his manager to adjust his work schedule.",
+    "他請經理調整他的工作排程。"
+  ],
+  "accordion": [
+    "The street musician played a lively tune on the accordion.",
+    "那位街頭音樂家用手風琴演奏了一首歡快的曲子。"
+  ],
+  "alarm clock": [
+    "She forgot to set her alarm clock and overslept.",
+    "她忘了設鬧鐘，結果睡過頭了。"
+  ],
+  "anniversary": [
+    "They celebrated their tenth wedding anniversary in Paris.",
+    "他們在巴黎慶祝結婚十週年紀念日。"
+  ],
+  "antique": [
+    "He collects antique clocks from the nineteenth century.",
+    "他收藏十九世紀的古董時鐘。"
+  ],
+  "apartment building": [
+    "A new apartment building is going up next door.",
+    "隔壁正在蓋一棟新的公寓大樓。"
+  ],
+  "arch": [
+    "Tourists took photos under the stone arch.",
+    "遊客們在那座石拱門下拍照。"
+  ],
+  "assistant manager": [
+    "She was promoted to assistant manager last month.",
+    "她上個月升職為副理。"
+  ],
+  "athlete": [
+    "The young athlete trains six days a week.",
+    "這位年輕的運動員一週訓練六天。"
+  ],
+  "bank account": [
+    "He transferred the money into his bank account.",
+    "他把錢轉進他的銀行帳戶。"
+  ],
+  "biology": [
+    "She's fascinated by biology, especially marine life.",
+    "她對生物學很著迷，尤其是海洋生物。"
+  ],
+  "board game": [
+    "We played a board game to pass the rainy afternoon.",
+    "我們玩了一場桌上遊戲打發這個雨天的下午。"
+  ],
+  "booklet": [
+    "The museum gives visitors a free booklet about its history.",
+    "博物館會給訪客一本關於其歷史的免費小冊子。"
+  ],
+  "bowling": [
+    "We went bowling with some friends on Friday night.",
+    "我們星期五晚上和朋友去打保齡球。"
+  ],
+  "cafeteria": [
+    "Students usually eat lunch in the school cafeteria.",
+    "學生通常在學校自助餐廳吃午餐。"
+  ],
+  "campsite": [
+    "They found a quiet campsite near the river.",
+    "他們在河邊找到一個安靜的露營地。"
+  ],
+  "canteen": [
+    "The workers grab lunch at the company canteen.",
+    "員工們在公司餐廳吃午餐。"
+  ],
+  "capital city": [
+    "The capital city is home to most government offices.",
+    "這座首都是大多數政府機關的所在地。"
+  ],
+  "car wash": [
+    "He took the car to a car wash before the trip.",
+    "他在出發前把車開去洗車場清洗。"
+  ],
+  "checklist": [
+    "She made a checklist before packing for the trip.",
+    "她在打包行李前列了一份檢查清單。"
+  ],
+  "cheer": [
+    "The crowd let out a loud cheer when he scored.",
+    "他得分時觀眾發出了一陣歡呼。"
+  ],
+  "choir": [
+    "She sings soprano in the school choir.",
+    "她在學校合唱團唱女高音。"
+  ],
+  "collar": [
+    "He straightened his collar before the interview.",
+    "他在面試前整理了一下衣領。"
+  ],
+  "collection": [
+    "He has an impressive collection of vinyl records.",
+    "他有一批令人印象深刻的黑膠唱片收藏。"
+  ],
+  "compass": [
+    "The hikers used a compass to find their way back.",
+    "登山客用指南針找回了路。"
+  ],
+  "concert hall": [
+    "The orchestra performed at the new concert hall.",
+    "那個管弦樂團在新的音樂廳演出。"
+  ],
+  "congratulation": [
+    "She sent a card of congratulation for the new baby.",
+    "她寄了一張祝賀卡祝賀新生兒。"
+  ],
+  "cooking oil": [
+    "Add a spoonful of cooking oil to the pan.",
+    "在鍋裡加一匙食用油。"
+  ],
+  "cornerstone": [
+    "Trust is the cornerstone of any good relationship.",
+    "信任是任何良好關係的基石。"
+  ],
+  "council": [
+    "The city council approved the new park proposal.",
+    "市議會通過了這項新公園的提案。"
+  ],
+  "courtyard": [
+    "Students often study in the shaded courtyard.",
+    "學生們常在有遮蔭的庭院裡讀書。"
+  ],
+  "cycling route": [
+    "The city built a new cycling route along the river.",
+    "這座城市沿著河邊建了一條新的自行車路線。"
+  ],
+  "dance floor": [
+    "The dance floor was packed by midnight.",
+    "到午夜時舞池已經擠滿了人。"
+  ],
+  "daycare": [
+    "They dropped their son off at daycare on the way to work.",
+    "他們上班途中把兒子送去日間照顧中心。"
+  ],
+  "detective": [
+    "The detective examined every clue at the crime scene.",
+    "那位偵探仔細檢查了犯罪現場的每個線索。"
+  ],
+  "diamond": [
+    "He proposed with a small diamond ring.",
+    "他用一枚小鑽戒求婚。"
+  ],
+  "diploma": [
+    "She proudly hung her diploma on the wall.",
+    "她驕傲地把文憑掛在牆上。"
+  ],
+  "domestic flight": [
+    "Domestic flights are usually cheaper than international ones.",
+    "國內班機通常比國際航班便宜。"
+  ],
+  "dress code": [
+    "The restaurant has a strict dress code.",
+    "這間餐廳有嚴格的服裝規定。"
+  ],
+  "dryer": [
+    "She threw the wet towels into the dryer.",
+    "她把濕毛巾丟進烘衣機裡。"
+  ],
+  "eardrum": [
+    "Loud concerts can damage your eardrum over time.",
+    "長期聽大聲的演唱會可能會傷害耳膜。"
+  ],
+  "economy": [
+    "The country's economy grew steadily last year.",
+    "這個國家的經濟去年穩定成長。"
+  ],
+  "editorial": [
+    "The newspaper published an editorial criticizing the new law.",
+    "這家報社刊登了一篇批評新法律的社論。"
+  ],
+  "electronic mail": [
+    "He prefers electronic mail to phone calls for work.",
+    "他工作上比較喜歡用電子郵件而不是打電話。"
+  ],
+  "elevator operator": [
+    "In old buildings, an elevator operator used to run the lift.",
+    "在老建築裡，過去是由電梯操作員來操作電梯。"
+  ],
+  "emergency room": [
+    "She was rushed to the emergency room after the accident.",
+    "她在事故後被緊急送往急診室。"
+  ],
+  "epidemic": [
+    "The city took quick action to control the epidemic.",
+    "這座城市迅速採取行動控制這場流行病。"
+  ],
+  "escalator": [
+    "He stood still on the escalator while it carried him up.",
+    "他站在手扶梯上讓它載他上樓。"
+  ],
+  "explorer": [
+    "The explorer spent months mapping the uncharted island.",
+    "那位探險家花了好幾個月繪製那座未知島嶼的地圖。"
+  ],
+  "factory worker": [
+    "Her father was a factory worker for over thirty years.",
+    "她的父親當了三十多年的工廠作業員。"
+  ],
+  "farewell": [
+    "They threw a farewell party for their retiring colleague.",
+    "他們為即將退休的同事辦了一場歡送派對。"
+  ],
+  "fire engine": [
+    "A fire engine rushed past with its siren blaring.",
+    "一輛消防車鳴著警笛疾駛而過。"
+  ],
+  "fire extinguisher": [
+    "Every kitchen should have a fire extinguisher.",
+    "每間廚房都應該備有滅火器。"
+  ],
+  "first class": [
+    "He upgraded to first class for the long flight.",
+    "他為了這趟長途飛行升級到頭等艙。"
+  ],
+  "first name": [
+    "Just call me by my first name.",
+    "叫我的名字就好了。"
+  ],
+  "florist": [
+    "The florist arranged a beautiful bouquet for the wedding.",
+    "那位花店店員為婚禮準備了一束美麗的花束。"
+  ],
+  "folklore": [
+    "The story is based on local folklore.",
+    "這個故事取材自當地的民間傳說。"
+  ],
+  "frying pan": [
+    "She heated some oil in the frying pan.",
+    "她在平底鍋裡熱了一些油。"
+  ],
+  "game show": [
+    "He won a car on a popular game show.",
+    "他在一個熱門的遊戲節目上贏得了一輛車。"
+  ],
+  "gas station": [
+    "We stopped at a gas station to fill up the tank.",
+    "我們在加油站停下來加滿油箱。"
+  ],
+  "gatekeeper": [
+    "The editor acts as a gatekeeper for what gets published.",
+    "這位編輯扮演著決定什麼內容能發表的把關者角色。"
+  ],
+  "grandparent": [
+    "We visit our grandparents every Chinese New Year.",
+    "我們每年農曆新年都會去看祖父母。"
+  ],
+  "graph": [
+    "The graph shows sales rising steadily over five years.",
+    "這張圖表顯示銷售額在五年間穩定上升。"
+  ],
+  "grocery store": [
+    "She stopped by the grocery store on her way home.",
+    "她回家路上順道去了雜貨店。"
+  ],
+  "guesthouse": [
+    "We stayed at a cozy guesthouse near the beach.",
+    "我們住在海邊一間舒適的民宿。"
+  ],
+  "gymnasium": [
+    "The school built a new gymnasium last year.",
+    "這所學校去年蓋了一座新的體育館。"
+  ],
+  "hairdresser": [
+    "She has been going to the same hairdresser for years.",
+    "她多年來都找同一位髮型師。"
+  ],
+  "hardware": [
+    "The old computer's hardware couldn't run the new software.",
+    "那台舊電腦的硬體跑不動新軟體。"
+  ],
+  "hospitality": [
+    "We were impressed by the hotel staff's hospitality.",
+    "我們對這間飯店員工的好客款待印象深刻。"
+  ],
+  "humidity": [
+    "The high humidity made the summer feel unbearable.",
+    "高濕度讓這個夏天感覺難以忍受。"
+  ],
+  "hygiene": [
+    "Good hygiene helps prevent the spread of illness.",
+    "良好的衛生習慣有助於防止疾病傳播。"
+  ],
+  "income tax": [
+    "He filed his income tax return before the deadline.",
+    "他在截止日前申報了所得稅。"
+  ],
+  "insurance agent": [
+    "She spoke with an insurance agent about the claim.",
+    "她和一位保險業務員討論了理賠事宜。"
+  ],
+  "interior": [
+    "The interior of the house was recently renovated.",
+    "這棟房子的室內最近才剛翻修過。"
+  ],
+  "interpreter": [
+    "An interpreter helped the two leaders communicate.",
+    "一位口譯員協助這兩位領袖溝通。"
+  ],
+  "intersection": [
+    "The accident happened at a busy intersection.",
+    "這起事故發生在一個繁忙的十字路口。"
+  ],
+  "island tour": [
+    "They booked an island tour for their honeymoon.",
+    "他們為蜜月訂了一趟島嶼旅遊行程。"
+  ],
+  "jogging": [
+    "He goes jogging in the park every morning.",
+    "他每天早上都去公園慢跑。"
+  ],
+  "journalist": [
+    "The journalist interviewed several witnesses at the scene.",
+    "那位記者在現場採訪了幾位目擊者。"
+  ],
+  "jury duty": [
+    "He was called for jury duty next month.",
+    "他下個月被傳喚去履行陪審義務。"
+  ],
+  "kindergarten": [
+    "Her daughter just started kindergarten this fall.",
+    "她的女兒今年秋天剛開始上幼兒園。"
+  ],
+  "kingdom": [
+    "The story is set in a fictional kingdom.",
+    "這個故事發生在一個虛構的王國。"
+  ],
+  "knife": [
+    "He used a sharp knife to slice the bread.",
+    "他用一把鋒利的刀子切麵包。"
+  ],
+  "laundry room": [
+    "The washing machine is in the laundry room.",
+    "洗衣機在洗衣間裡。"
+  ],
+  "lemonade": [
+    "She sold homemade lemonade at the summer fair.",
+    "她在夏日園遊會上賣自製檸檬水。"
+  ],
+  "license plate": [
+    "A witness noted down the car's license plate.",
+    "一位目擊者記下了那輛車的車牌。"
+  ],
+  "lobby": [
+    "We waited for him in the hotel lobby.",
+    "我們在飯店大廳等他。"
+  ],
+  "luggage cart": [
+    "He pushed the luggage cart toward the taxi stand.",
+    "他把行李推車推向計程車招呼站。"
+  ],
+  "lunchbox": [
+    "She packs her son's lunchbox every morning.",
+    "她每天早上都幫兒子準備便當盒。"
+  ],
+  "makeup": [
+    "She only wears light makeup to work.",
+    "她上班只化淡妝。"
+  ],
+  "marathon": [
+    "He trained for six months before running the marathon.",
+    "他訓練了六個月才跑那場馬拉松。"
+  ],
+  "microwave": [
+    "He heated the leftovers in the microwave.",
+    "他用微波爐加熱了剩菜。"
+  ],
+  "midterm": [
+    "She stayed up late studying for the midterm.",
+    "她熬夜念書準備期中考。"
+  ],
+  "mineral": [
+    "Bananas are a good source of the mineral potassium.",
+    "香蕉是礦物質鉀的良好來源。"
+  ],
+  "mobile phone": [
+    "He dropped his mobile phone on the sidewalk.",
+    "他把行動電話掉在人行道上了。"
+  ],
+  "mortgage": [
+    "They took out a mortgage to buy their first home.",
+    "他們貸了一筆房屋貸款來買第一間房子。"
+  ],
+  "museum guide": [
+    "The museum guide explained the history behind each painting.",
+    "那位博物館導覽員解說了每幅畫作背後的歷史。"
+  ],
+  "nightclub": [
+    "They danced all night at a nightclub downtown.",
+    "他們在市中心的一間夜店跳舞跳了一整晚。"
+  ],
+  "noodle soup": [
+    "She ordered a bowl of noodle soup for lunch.",
+    "她午餐點了一碗湯麵。"
+  ],
+  "notebook": [
+    "He jotted down the idea in his notebook.",
+    "他把這個想法記在筆記本裡。"
+  ],
+  "office building": [
+    "The company moved into a taller office building downtown.",
+    "這家公司搬進了市中心一棟更高的辦公大樓。"
+  ],
+  "office hours": [
+    "The professor's office hours are on Tuesday afternoons.",
+    "這位教授的辦公時間是星期二下午。"
+  ],
+  "opening ceremony": [
+    "Thousands watched the Olympic opening ceremony.",
+    "數千人觀看了奧運的開幕典禮。"
+  ],
+  "orchestra": [
+    "She plays the violin in the city orchestra.",
+    "她在市立管弦樂團拉小提琴。"
+  ],
+  "outlet": [
+    "Plug the lamp into the outlet by the door.",
+    "把檯燈插到門邊的插座上。"
+  ],
+  "outlook": [
+    "Economists have a positive outlook for next year.",
+    "經濟學家對明年的展望持樂觀態度。"
+  ],
+  "packing": [
+    "She left the packing until the night before the trip.",
+    "她把打包行李的事拖到出發前一晚才做。"
+  ],
+  "parking": [
+    "Parking is hard to find near the stadium.",
+    "體育場附近很難找到停車位。"
+  ],
+  "passport control": [
+    "The line at passport control moved quickly.",
+    "護照查驗的隊伍移動得很快。"
+  ],
+  "password": [
+    "He forgot the password to his email account.",
+    "他忘了他電子郵件帳號的密碼。"
+  ],
+  "pathway": [
+    "A stone pathway led through the garden.",
+    "一條石頭小徑穿過花園。"
+  ],
+  "pedestrian": [
+    "The driver stopped to let the pedestrian cross.",
+    "駕駛停下來讓行人通過。"
+  ],
+  "perfume": [
+    "She wore a light floral perfume.",
+    "她擦了淡淡的花香香水。"
+  ],
+  "photographer": [
+    "The photographer captured the sunset perfectly.",
+    "那位攝影師完美地捕捉了日落景色。"
+  ],
+  "physics": [
+    "He struggled with physics in high school.",
+    "他高中時物理學一直學得很吃力。"
+  ],
+  "picnic": [
+    "We had a picnic by the lake on Sunday.",
+    "我們星期天在湖邊野餐。"
+  ],
+  "pizza": [
+    "They ordered a large pizza for the party.",
+    "他們為派對點了一份大披薩。"
+  ],
+  "pocket money": [
+    "She saves half of her pocket money every week.",
+    "她每週會存下一半的零用錢。"
+  ],
+  "pottery": [
+    "She took a pottery class over the summer.",
+    "她暑假上了一堂陶藝課。"
+  ],
+  "power outage": [
+    "The storm caused a power outage across the city.",
+    "這場暴風雨導致全市停電。"
+  ],
+  "practice room": [
+    "The pianist reserved a practice room for two hours.",
+    "那位鋼琴家預約了兩個小時的練習室。"
+  ],
+  "prison": [
+    "He spent five years in prison for the crime.",
+    "他因為這起罪行在監獄裡待了五年。"
+  ],
+  "producer": [
+    "The producer decided to cancel the show after one season.",
+    "那位製作人決定在播出一季後取消這個節目。"
+  ],
+  "public library": [
+    "She borrowed three books from the public library.",
+    "她從公共圖書館借了三本書。"
+  ],
+  "pumpkin": [
+    "They carved a pumpkin for Halloween.",
+    "他們雕刻了一顆南瓜過萬聖節。"
+  ],
+  "puzzle": [
+    "The kids spent the afternoon putting together a puzzle.",
+    "孩子們花了一個下午拼一幅拼圖。"
+  ],
+  "rainbow": [
+    "A rainbow appeared right after the rain stopped.",
+    "雨一停就出現了一道彩虹。"
+  ],
+  "raincoat": [
+    "She grabbed her raincoat before heading out.",
+    "她出門前拿了雨衣。"
+  ],
+  "receptionist": [
+    "The receptionist greeted us with a warm smile.",
+    "接待人員用溫暖的笑容迎接我們。"
+  ],
+  "recycling": [
+    "The city introduced a new recycling program.",
+    "這座城市推出了一項新的回收計畫。"
+  ],
+  "registration": [
+    "Registration for the course closes on Friday.",
+    "這門課程的登記在星期五截止。"
+  ],
+  "residence": [
+    "The ambassador's official residence is near the park.",
+    "那位大使的官邸就在公園附近。"
+  ],
+  "retirement": [
+    "He's been saving for retirement since his twenties.",
+    "他從二十幾歲就開始為退休存錢。"
+  ],
+  "reunion": [
+    "She's looking forward to the high school reunion.",
+    "她很期待這次的高中同學會。"
+  ],
+  "rice cooker": [
+    "The rice cooker makes it easy to cook a perfect batch of rice.",
+    "電鍋讓煮出一鍋完美的米飯變得很容易。"
+  ],
+  "riverbank": [
+    "They sat on the riverbank and watched the sunset.",
+    "他們坐在河岸邊看日落。"
+  ],
+  "roadwork": [
+    "Roadwork on the main street caused a long delay.",
+    "主要街道上的道路施工造成了長時間的延誤。"
+  ],
+  "rooftop": [
+    "The restaurant has a rooftop with a great city view.",
+    "這間餐廳有個能欣賞城市美景的屋頂平台。"
+  ],
+  "router": [
+    "He restarted the router to fix the slow connection.",
+    "他重新啟動路由器來修復緩慢的網路連線。"
+  ],
+  "safety belt": [
+    "Make sure your safety belt is fastened before takeoff.",
+    "起飛前請確認你的安全帶已經繫好。"
+  ],
+  "sandwich": [
+    "She made a sandwich with turkey and cheese.",
+    "她做了一份火雞肉和起司的三明治。"
+  ],
+  "scarf": [
+    "He wrapped a warm scarf around his neck.",
+    "他在脖子上圍了一條保暖的圍巾。"
+  ],
+  "science fiction": [
+    "He loves reading science fiction novels.",
+    "他喜歡讀科幻小說。"
+  ],
+  "seafood": [
+    "The restaurant specializes in fresh seafood.",
+    "這間餐廳專精於新鮮海鮮。"
+  ],
+  "security guard": [
+    "The security guard checked everyone's ID at the door.",
+    "保全人員在門口檢查了每個人的身分證。"
+  ],
+  "senior citizen": [
+    "Senior citizens get a discount on the bus.",
+    "高齡者搭公車享有優惠。"
+  ],
+  "service center": [
+    "He took his laptop to the service center for repair.",
+    "他把筆電送到服務中心維修。"
+  ],
+  "shopping bag": [
+    "She carried three heavy shopping bags up the stairs.",
+    "她提著三個沉重的購物袋爬上樓梯。"
+  ],
+  "shopping list": [
+    "He checked his shopping list before entering the store.",
+    "他進商店前先看了一下購物清單。"
+  ],
+  "skating": [
+    "The kids went skating at the indoor rink.",
+    "孩子們去室內滑冰場溜冰。"
+  ],
+  "skiing": [
+    "They went skiing in the Alps last winter.",
+    "他們去年冬天去阿爾卑斯山滑雪。"
+  ],
+  "skyscraper": [
+    "The skyscraper is the tallest building in the city.",
+    "這棟摩天大樓是這座城市裡最高的建築。"
+  ],
+  "sleeping bag": [
+    "He zipped himself into the sleeping bag to stay warm.",
+    "他把自己拉進睡袋裡保暖。"
+  ],
+  "slipper": [
+    "She lost one slipper somewhere in the house.",
+    "她在家裡不知道弄丟了一隻拖鞋。"
+  ],
+  "smartphone": [
+    "He checks his smartphone first thing every morning.",
+    "他每天早上第一件事就是查看智慧型手機。"
+  ],
+  "smoke alarm": [
+    "The smoke alarm went off while she was cooking.",
+    "她在煮飯時煙霧警報器響了。"
+  ],
+  "snowman": [
+    "The children built a snowman in the front yard.",
+    "孩子們在前院堆了一個雪人。"
+  ],
+  "soil": [
+    "The farmer tested the soil before planting.",
+    "農夫在種植前先檢測了土壤。"
+  ],
+  "solar power": [
+    "The house runs entirely on solar power.",
+    "這棟房子完全靠太陽能運作。"
+  ],
+  "souvenir": [
+    "She bought a small souvenir to remember the trip.",
+    "她買了一個小紀念品來紀念這趟旅行。"
+  ],
+  "sports center": [
+    "He goes to the sports center every evening after work.",
+    "他每天下班後都去運動中心。"
+  ],
+  "stadium": [
+    "Fans filled the stadium before the game even started.",
+    "球迷們在比賽開始前就把體育場擠滿了。"
+  ],
+  "steak": [
+    "He ordered his steak medium rare.",
+    "他點了三分熟的牛排。"
+  ],
+  "sticker": [
+    "She decorated her notebook with colorful stickers.",
+    "她用彩色貼紙裝飾了自己的筆記本。"
+  ],
+  "storefront": [
+    "The old storefront was renovated into a coffee shop.",
+    "那間老舊的店面被翻修成了一間咖啡店。"
+  ],
+  "student union": [
+    "The event was held at the student union.",
+    "這場活動在學生會舉辦。"
+  ],
+  "suburb": [
+    "They moved to a quiet suburb outside the city.",
+    "他們搬到市郊一個安靜的郊區。"
+  ],
+  "subway station": [
+    "The subway station is just a five-minute walk from here.",
+    "捷運站離這裡只要走五分鐘。"
+  ],
+  "suitcase": [
+    "She packed her suitcase the night before the flight.",
+    "她在班機起飛前一晚打包好行李箱。"
+  ],
+  "sunglasses": [
+    "He put on sunglasses to block the bright sun.",
+    "他戴上太陽眼鏡遮擋刺眼的陽光。"
+  ],
+  "surgeon": [
+    "The surgeon explained the risks before the operation.",
+    "外科醫師在手術前解釋了風險。"
+  ],
+  "swimming pool": [
+    "The hotel has an outdoor swimming pool.",
+    "這間飯店有一座室外游泳池。"
+  ],
+  "symptom": [
+    "A fever is often the first symptom of the flu.",
+    "發燒通常是流感的第一個症狀。"
+  ],
+  "tablecloth": [
+    "She spread a white tablecloth over the table.",
+    "她在桌上鋪了一塊白色桌巾。"
+  ],
+  "tailor": [
+    "He took his suit to a tailor for alterations.",
+    "他把西裝送去給裁縫師修改。"
+  ],
+  "taxi driver": [
+    "The taxi driver knew a shortcut to the airport.",
+    "那位計程車司機知道一條通往機場的捷徑。"
+  ],
+  "tea bag": [
+    "She dropped a tea bag into the hot water.",
+    "她把一個茶包放進熱水裡。"
+  ],
+  "team leader": [
+    "He was chosen as the team leader for the project.",
+    "他被選為這個專案的組長。"
+  ],
+  "technician": [
+    "A technician came to fix the printer.",
+    "一位技術員來修理印表機。"
+  ],
+  "telescope": [
+    "He set up his telescope to watch the meteor shower.",
+    "他架好望遠鏡觀看流星雨。"
+  ],
+  "text message": [
+    "She sent a quick text message to confirm the plan.",
+    "她傳了一則簡訊確認計畫。"
+  ],
+  "theater ticket": [
+    "He bought two theater tickets for Saturday night.",
+    "他買了兩張星期六晚上的戲票。"
+  ],
+  "thermometer": [
+    "She used a thermometer to check the child's fever.",
+    "她用溫度計量了孩子的體溫。"
+  ],
+  "thunderstorm": [
+    "A sudden thunderstorm forced them to cancel the picnic.",
+    "一場突如其來的雷雨迫使他們取消了野餐。"
+  ],
+  "ticket machine": [
+    "He bought his ticket from the machine at the station.",
+    "他在車站用售票機買了票。"
+  ],
+  "tissue": [
+    "She grabbed a tissue to wipe her nose.",
+    "她拿了一張衛生紙擦鼻子。"
+  ],
+  "toolbox": [
+    "He keeps a toolbox in the garage for repairs.",
+    "他在車庫裡放了一個工具箱以備維修之用。"
+  ],
+  "tour guide": [
+    "Our tour guide spoke three languages fluently.",
+    "我們的導遊能流利地說三種語言。"
+  ],
+  "tourism": [
+    "Tourism is a major source of income for the island.",
+    "觀光業是這座島嶼主要的收入來源。"
+  ],
+  "tourist attraction": [
+    "The old bridge became a popular tourist attraction.",
+    "那座老橋成了熱門的觀光景點。"
+  ],
+  "towel": [
+    "She hung the wet towel on the rack to dry.",
+    "她把濕毛巾掛在架子上晾乾。"
+  ],
+  "tower": [
+    "Visitors can climb to the top of the tower.",
+    "遊客可以爬到那座塔的頂端。"
+  ],
+  "traffic light": [
+    "The car stopped at the red traffic light.",
+    "那輛車在紅綠燈前停了下來。"
+  ],
+  "traffic jam": [
+    "They were stuck in a traffic jam for an hour.",
+    "他們被塞車困了一個小時。"
+  ],
+  "training course": [
+    "New employees must complete a training course.",
+    "新員工必須完成一項培訓課程。"
+  ],
+  "translator": [
+    "She works as a translator for a publishing house.",
+    "她在一家出版社擔任筆譯員。"
+  ],
+  "travel agency": [
+    "He booked the trip through a local travel agency.",
+    "他透過當地一家旅行社訂了這趟旅行。"
+  ],
+  "travel guide": [
+    "She packed a travel guide for the trip to Kyoto.",
+    "她為這趟京都之旅準備了一本旅遊指南。"
+  ],
+  "travel voucher": [
+    "He used a travel voucher to cover part of the hotel cost.",
+    "他用旅遊憑證支付了部分飯店費用。"
+  ],
+  "tripod": [
+    "She set the camera on a tripod for a steady shot.",
+    "她把相機架在三腳架上以拍出穩定的畫面。"
+  ],
+  "trousers": [
+    "He ironed his trousers before the interview.",
+    "他在面試前燙了長褲。"
+  ],
+  "truck driver": [
+    "The truck driver had been on the road for ten hours.",
+    "那位卡車司機已經開車十個小時了。"
+  ],
+  "tunnel": [
+    "The train passed through a long tunnel under the mountain.",
+    "火車穿過山下一條長長的隧道。"
+  ],
+  "typewriter": [
+    "The museum displays an old typewriter from the 1950s.",
+    "這間博物館展示了一台一九五零年代的舊打字機。"
+  ],
+  "umbrella stand": [
+    "He left his wet umbrella in the umbrella stand by the door.",
+    "他把濕的雨傘放進門邊的傘架裡。"
+  ],
+  "university campus": [
+    "The university campus is famous for its old library.",
+    "這座大學校園以其古老的圖書館聞名。"
+  ],
+  "vacuum cleaner": [
+    "She used the vacuum cleaner to clean the carpet.",
+    "她用吸塵器清潔了地毯。"
+  ],
+  "vending machine": [
+    "He bought a drink from the vending machine.",
+    "他從自動販賣機買了一瓶飲料。"
+  ],
+  "viewpoint": [
+    "From the viewpoint, you can see the whole valley.",
+    "從這個觀景點可以看見整片山谷。"
+  ],
+  "waiter": [
+    "The waiter recommended the fish for dinner.",
+    "服務生推薦了晚餐吃魚。"
+  ],
+  "waiting room": [
+    "She read a magazine in the waiting room.",
+    "她在候診室裡看了一本雜誌。"
+  ],
+  "wallet": [
+    "He left his wallet on the kitchen counter.",
+    "他把皮夾忘在廚房流理台上了。"
+  ],
+  "wardrobe": [
+    "She organized her wardrobe by color.",
+    "她按顏色整理了她的衣櫃。"
+  ],
+  "waterfall": [
+    "They hiked two hours to reach the waterfall.",
+    "他們健行了兩個小時才抵達那座瀑布。"
+  ],
+  "windshield": [
+    "The rain made it hard to see through the windshield.",
+    "雨勢讓人很難透過擋風玻璃看清楚。"
+  ],
+  "wine glass": [
+    "He filled her wine glass halfway.",
+    "他把她的酒杯倒了半滿。"
+  ],
+  "winter coat": [
+    "She bought a thick winter coat before the trip.",
+    "她在出發前買了一件厚重的冬季大衣。"
+  ],
+  "witness": [
+    "The witness described the accident in detail.",
+    "那位目擊者詳細描述了這起事故。"
+  ],
+  "abdomen": [
+    "He felt a sharp pain in his abdomen.",
+    "他感到腹部一陣劇痛。"
+  ],
+  "abuse": [
+    "The organization helps children who have suffered abuse.",
+    "這個組織幫助遭受虐待的兒童。"
+  ],
+  "accounting": [
+    "She's studying accounting at university.",
+    "她在大學主修會計。"
+  ],
+  "algebra": [
+    "He struggled with algebra in middle school.",
+    "他國中時代數學得很吃力。"
+  ],
+  "archaeology": [
+    "She's always been interested in archaeology and ancient ruins.",
+    "她一直對考古學和古代遺跡很感興趣。"
+  ],
+  "astronomy": [
+    "He took an astronomy class to learn about the stars.",
+    "他修了一堂天文學課來了解星星。"
+  ],
+  "bacteria": [
+    "Washing your hands kills most harmful bacteria.",
+    "洗手能殺死大部分有害的細菌。"
+  ],
+  "calorie": [
+    "She checked the calorie count before ordering dessert.",
+    "她在點甜點前先看了卡路里含量。"
+  ],
+  "capitalism": [
+    "The professor compared capitalism and socialism in class.",
+    "教授在課堂上比較了資本主義和社會主義。"
+  ],
+  "carbon": [
+    "The company aims to reduce its carbon emissions.",
+    "這家公司致力於減少碳排放。"
+  ],
+  "chemistry": [
+    "She loved chemistry class because of the experiments.",
+    "她因為實驗而喜歡化學課。"
+  ],
+  "civilization": [
+    "The museum has artifacts from an ancient civilization.",
+    "這間博物館收藏了一個古老文明的文物。"
+  ],
+  "cognition": [
+    "The study focuses on how aging affects cognition.",
+    "這項研究聚焦於老化如何影響認知。"
+  ],
+  "computation": [
+    "The task required complex mathematical computation.",
+    "這項任務需要複雜的數學計算。"
+  ],
+  "concentration": [
+    "Loud noise made it hard to keep his concentration.",
+    "吵雜的噪音讓他很難保持專注。"
+  ],
+  "conflict": [
+    "The two neighbors resolved their conflict peacefully.",
+    "這兩位鄰居和平地解決了他們的衝突。"
+  ],
+  "consumerism": [
+    "The documentary criticizes modern consumerism.",
+    "這部紀錄片批評了現代的消費主義。"
+  ],
+  "counselor": [
+    "She met with a school counselor about her college plans.",
+    "她和一位學校輔導員討論了她的大學規劃。"
+  ],
+  "courtesy": [
+    "He held the door open out of courtesy.",
+    "他出於禮貌替對方扶著門。"
+  ],
+  "depression": [
+    "He sought help after struggling with depression for months.",
+    "他在與憂鬱奮鬥了好幾個月後尋求了協助。"
+  ],
+  "diagnosis": [
+    "The doctor gave a diagnosis after reviewing the test results.",
+    "醫生在檢視檢驗結果後給出了診斷。"
+  ],
+  "disability": [
+    "The building was redesigned to be accessible for people with disability.",
+    "這棟建築經過重新設計，讓身心障礙人士能夠無障礙進出。"
+  ],
+  "discrimination": [
+    "The company was fined for workplace discrimination.",
+    "這家公司因職場歧視而被罰款。"
+  ],
+  "economics": [
+    "He majored in economics before switching to law.",
+    "他原本主修經濟學，後來轉讀法律。"
+  ],
+  "election": [
+    "Millions of people voted in last month's election.",
+    "上個月的選舉有數百萬人投票。"
+  ],
+  "essay": [
+    "She spent the weekend writing her college essay.",
+    "她花了整個週末寫大學申請的文章。"
+  ],
+  "ethics": [
+    "The class discussed the ethics of animal testing.",
+    "這堂課討論了動物實驗的倫理議題。"
+  ],
+  "evolution": [
+    "The textbook explains the evolution of language over centuries.",
+    "這本教科書解釋了語言在幾世紀間的演化。"
+  ],
+  "fertility": [
+    "Poor soil fertility makes farming difficult in the region.",
+    "這個地區土壤肥沃度不佳，使耕作變得困難。"
+  ],
+  "fiction": [
+    "She prefers fiction over nonfiction when reading for pleasure.",
+    "她閱讀消遣時比較喜歡小說而不是非小說類作品。"
+  ],
+  "fluency": [
+    "It took her years to reach fluency in Spanish.",
+    "她花了好幾年才達到西班牙語的流利程度。"
+  ],
+  "genetics": [
+    "Genetics plays a role in determining eye color.",
+    "遺傳學在決定眼睛顏色上扮演著一定角色。"
+  ]
+};
+
+Object.keys(BEGINNER_SOURCE_RESTORED_EXAMPLES).forEach(function(word){
+  if(!CURATED_NATURAL_EXAMPLES[word]){
+    CURATED_NATURAL_EXAMPLES[word] = BEGINNER_SOURCE_RESTORED_EXAMPLES[word];
+  }
+});
+
+
+// ===== ????????? (advanced.js) =====
 /*
  * ??????? 1168 ???
  * ??????[??, ????, ????, ????, ??]?
@@ -8312,7 +17559,7 @@ if(typeof REAL_WORD_EXTENSION !== "undefined" && Array.isArray(REAL_WORD_EXTENSI
 // Earlier expansion batches used a few repeated filler sentences (for example,
 // "We discussed ... during class").  This pass replaces only those generated
 // sentences.  It leaves hand-written examples and all card scheduling data alone.
-var EXAMPLE_QUALITY_VERSION = "2026-08-14-quality-gate-v48";
+var EXAMPLE_QUALITY_VERSION = "2026-08-14-bundled-v52";
 var QUALITY_LEGACY_EXAMPLE_PATTERNS = [
   /^We discussed the .+ during class\.$/,
   /^We discussed the .+ during today's lesson\.$/,
@@ -8402,7 +17649,8 @@ var QUALITY_WORD_POS = {
   "spring": "n.／v.",
   "sandpaper": "n.／v.",
   "console": "n.／v.",
-  "vacuum": "n.／v."
+  "vacuum": "n.／v.",
+  "some": "det.／pron."
 };
 var QUALITY_WORD_EXAMPLES = {
   "absence": ["Her absence from the meeting was noticed by everyone.", "大家都注意到她沒有出席會議。"],
@@ -9607,6 +18855,16 @@ var REVIEW_EXAMPLE_VARIANTS = {
     ]
   }
 };
+// All three dilemma examples express the same core sense: a difficult choice.
+// Keep one example on the card and rotate the other two only in later reviews;
+// they are contexts, not separate dictionary meanings.
+REVIEW_EXAMPLE_VARIANTS["dilemma"] = {
+  alternatives: [
+    { example: "Many working mothers face a difficult dilemma balancing work and home.", exampleZh: "許多職業婦女面臨工作與家庭難以兼顧的兩難。", pos: "n." },
+    { example: "The doctor faced an ethical dilemma regarding patient treatment.", exampleZh: "這位醫師在病患治療上遇到了道德倫理的抉擇。", pos: "n." }
+  ]
+};
+delete EXAMPLE_VARIANTS["dilemma"];
 delete REVIEW_EXAMPLE_VARIANTS["draft project"];
 
 // Rename the generated non-idiomatic phrase in saved built-in cards while
@@ -9695,6 +18953,8 @@ var CURATED_EXAMPLE_UPDATES = {
   "skillet": true
 };
 delete CURATED_EXAMPLE_UPDATES["final training"];
+// Prefer everyday Taiwanese wording for the determiner/pronoun "some".
+CURATED_EXAMPLE_UPDATES["some"] = true;
 
 // New natural-example batches should refresh wording for people who already
 // imported the corresponding built-in cards, without changing their schedule.
