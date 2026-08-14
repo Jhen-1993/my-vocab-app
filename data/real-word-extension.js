@@ -3048,5 +3048,41 @@ var REAL_WORD_EXTENSION = [
     "獨裁者之職位；獨裁；獨裁政權",
     "n.",
     "abstract"
+  ],
+  [
+    "caterer",
+    "外燴業者；餐飲承辦人",
+    "n.",
+    "person"
+  ],
+  [
+    "franchisee",
+    "加盟業主；特許經營者",
+    "n.",
+    "person"
+  ],
+  [
+    "proofreader",
+    "校對員",
+    "n.",
+    "person"
+  ],
+  [
+    "notary",
+    "公證人",
+    "n.",
+    "person"
+  ],
+  [
+    "paramedic",
+    "救護技術員；急救人員",
+    "n.",
+    "person"
+  ],
+  [
+    "keynote",
+    "主題演講；核心主旨",
+    "n.",
+    "event"
   ]
 ];

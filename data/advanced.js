@@ -8198,24 +8198,45 @@ ADVANCED_BUSINESS_MODIFIERS.forEach(function(modifier){
   });
 });
 
+// The intermediate 6,500-card batch also generated a fixed 500-item
+// adjective+noun matrix.  The source list is available after intermediate.js
+// loads, so retire exactly those generated cards while retaining ordinary
+// single words and established fixed expressions elsewhere in the decks.
+var INTERMEDIATE_GENERATED_NONSTANDARD_TERMS = {};
+if(typeof INTERMEDIATE_6500_EXTENSION !== "undefined"){
+  INTERMEDIATE_6500_EXTENSION.forEach(function(card){
+    INTERMEDIATE_GENERATED_NONSTANDARD_TERMS[String(card[0] || "").toLowerCase()] = true;
+  });
+}
+
 // Earlier hand-added combinations with the same issue are retired as well.
 // Common fixed phrases such as "flight schedule" are intentionally not listed.
 var RETIRED_BUILTIN_TERMS = {
   "requested service": true,
   "requested process": true,
   "urgent survey": true,
+  "urgent system": true,
   "regular review": true,
+  "regular service": true,
   "monthly record": true,
   "future review": true,
   "important update": true,
+  // "final training" describes one possible training situation, not a
+  // standalone vocabulary headword. Learners study the base word "training".
+  "final training": true,
+  "draft project": true,
   "final project": true,
+  "final request": true,
+  "digital program": true,
   "international documentation": true,
   "compliance with confidentiality requirements": true
 };
 
 function isRetiredBuiltinTerm(term){
   var normalized = String(term || "").trim().toLowerCase();
-  return !!RETIRED_BUILTIN_TERMS[normalized] || !!GENERATED_NONSTANDARD_TERMS[normalized];
+  return !!RETIRED_BUILTIN_TERMS[normalized] ||
+    !!GENERATED_NONSTANDARD_TERMS[normalized] ||
+    !!INTERMEDIATE_GENERATED_NONSTANDARD_TERMS[normalized];
 }
 
 var advancedKnownWords = {};
@@ -8282,7 +8303,7 @@ if(typeof REAL_WORD_EXTENSION !== "undefined" && Array.isArray(REAL_WORD_EXTENSI
 // Earlier expansion batches used a few repeated filler sentences (for example,
 // "We discussed ... during class").  This pass replaces only those generated
 // sentences.  It leaves hand-written examples and all card scheduling data alone.
-var EXAMPLE_QUALITY_VERSION = "2026-08-14-context-v7";
+var EXAMPLE_QUALITY_VERSION = "2026-08-14-context-v34";
 var QUALITY_LEGACY_EXAMPLE_PATTERNS = [
   /^We discussed the .+ during class\.$/,
   /^We discussed the .+ during today's lesson\.$/,
@@ -8370,7 +8391,9 @@ var QUALITY_WORD_MEANINGS = {
 var QUALITY_WORD_POS = {
   "cognitive": "adj.",
   "spring": "n.／v.",
-  "sandpaper": "n.／v."
+  "sandpaper": "n.／v.",
+  "console": "n.／v.",
+  "vacuum": "n.／v."
 };
 var QUALITY_WORD_EXAMPLES = {
   "absence": ["Her absence from the meeting was noticed by everyone.", "大家都注意到她沒有出席會議。"],
@@ -8622,6 +8645,41 @@ Object.assign(QUALITY_WORD_EXAMPLES, {
   "draft project": ["The manager reviewed the draft project yesterday.", "經理昨天審閱了專案草案。"],
   "digital payment": ["Many stores now accept digital payments for convenience.", "許多商店現在為了方便而接受數位支付。"]
 });
+// Replacement for the retired generated phrase "final training".  This is a
+// normal standalone noun and keeps the built-in vocabulary total unchanged.
+QUALITY_WORD_EXAMPLES["caterer"] = ["The caterer prepared lunch for the conference.", "外燴業者為這場會議準備午餐。"];
+QUALITY_WORD_EXAMPLES["franchisee"] = ["The franchisee follows the brand's operating standards.", "加盟業主遵守品牌的營運標準。"];
+QUALITY_WORD_EXAMPLES["calibration"] = ["The calibration of the instrument ensures accurate experimental results.", "這台儀器的校準確保實驗結果的準確性。"];
+QUALITY_WORD_EXAMPLES["hydraulics"] = ["The mechanic checked the hydraulics before operating the heavy crane.", "技工在操作重型起重機之前，檢查了液壓系統。"];
+QUALITY_WORD_EXAMPLES["console"] = ["The pilot checked the switches on the console.", "飛行員檢查了控制台上的開關。"];
+QUALITY_WORD_EXAMPLES["grief"] = ["She was overcome with grief after her dog died.", "她的狗過世後，她悲痛不已。"];
+QUALITY_WORD_EXAMPLES["pathology"] = ["The pathology report confirmed the tumor was benign.", "病理報告證實該腫瘤為良性。"];
+QUALITY_WORD_EXAMPLES["journalism"] = ["She decided to go into journalism after college.", "她大學畢業後決定投入新聞工作。"];
+QUALITY_WORD_EXAMPLES["explorer"] = ["Magellan was a famous 16th-century explorer.", "麥哲倫是一位著名的十六世紀探險家。"];
+QUALITY_WORD_EXAMPLES["vacuum"] = ["I bought a new vacuum yesterday.", "我昨天買了一台新的吸塵器。"];
+QUALITY_WORD_EXAMPLES["dealer"] = ["We bought our new car from a local car dealer.", "我們向當地的汽車經銷商買了新車。"];
+QUALITY_WORD_EXAMPLES["software license"] = ["Please read the software license carefully before you click agree and install the program.", "請在點擊同意並安裝程式之前，仔細閱讀軟體授權條款。"];
+QUALITY_WORD_EXAMPLES["exchange rate"] = ["Changes in the exchange rate can affect the cost of imports.", "匯率的變動會影響進口商品的成本。"];
+QUALITY_WORD_EXAMPLES["proofreader"] = ["The proofreader found several errors before the book was published.", "校對員在書籍出版前發現了幾處錯誤。"];
+QUALITY_WORD_EXAMPLES["notary"] = ["The notary witnessed the signing of the contract.", "公證人見證了合約的簽署。"];
+QUALITY_WORD_EXAMPLES["reader"] = ["She is an avid reader of historical novels.", "她特別喜歡閱讀歷史小說。"];
+QUALITY_WORD_EXAMPLES["hockey"] = ["Ice hockey is a very popular sport in Canada.", "冰上曲棍球在加拿大是一項非常受歡迎的運動。"];
+QUALITY_WORD_EXAMPLES["antenna"] = ["The technician adjusted the antenna on the roof to improve the television signal.", "技術人員調整了屋頂上的天線以改善電視訊號。"];
+QUALITY_WORD_EXAMPLES["axle"] = ["The mechanic replaced the bent axle on the truck.", "技師更換了卡車上彎曲的車軸。"];
+QUALITY_WORD_EXAMPLES["paramedic"] = ["The paramedic treated the injured cyclist at the scene.", "救護技術員在現場治療受傷的自行車騎士。"];
+QUALITY_WORD_MEANINGS["princess"] = "公主；王妃";
+QUALITY_WORD_EXAMPLES["princess"] = ["The princess wore a beautiful dress to the party.", "公主穿著一件漂亮的禮服去參加派對。"];
+QUALITY_WORD_EXAMPLES["comparison"] = ["A careful comparison between the two phones shows many small differences.", "仔細比較這兩款手機後，會發現許多細微差異。"];
+QUALITY_WORD_EXAMPLES["disclosure"] = ["The company made a full disclosure of its financial records.", "該公司完全公開了其財務紀錄。"];
+QUALITY_WORD_EXAMPLES["emergency room"] = ["The injured man was taken to the emergency room for immediate care.", "受傷的男子被送到急診室接受立即照護。"];
+QUALITY_WORD_EXAMPLES["revenue growth"] = ["The company achieved strong revenue growth this quarter.", "公司本季實現了強勁的營收成長。"];
+QUALITY_WORD_EXAMPLES["accreditation"] = ["The college received full accreditation last year.", "這所學院去年獲得完整的官方認證。"];
+QUALITY_WORD_EXAMPLES["compression"] = ["Data compression helps save storage space on your computer.", "資料壓縮有助於節省電腦的儲存空間。"];
+QUALITY_WORD_EXAMPLES["circuit"] = ["A short circuit caused a sudden power outage in the whole building.", "短路導致整棟建築物突然停電。"];
+QUALITY_WORD_EXAMPLES["keynote"] = ["The keynote opened the conference with a message about innovation.", "這場主題演講以創新為題揭開會議序幕。"];
+QUALITY_WORD_EXAMPLES["afternoon"] = ["Good afternoon!", "午安！"];
+QUALITY_WORD_EXAMPLES["digital signature"] = ["Please add your digital signature before submitting the form.", "請在提交表格前加上你的數位簽章。"];
+QUALITY_WORD_EXAMPLES["digital transformation"] = ["The company began its digital transformation by moving customer records online.", "公司從將客戶紀錄數位化開始推動數位轉型。"];
 
 // These pairs give ordinary nouns varied, grammatical contexts.  The second
 // sentence varies as well, so a daily study set does not repeat one frame.
@@ -9011,7 +9069,11 @@ function applyExampleQualityPass(){
       var word = String(card[0] || "").toLowerCase();
       if(QUALITY_WORD_MEANINGS[word]) card[1] = QUALITY_WORD_MEANINGS[word];
       if(QUALITY_WORD_POS[word]) card[4] = QUALITY_WORD_POS[word];
-      var replacement = QUALITY_WORD_EXAMPLES[word] || REAL_WORD_EXTENSION_EXAMPLES[word];
+      // Prefer an individually curated example.  A verified Tatoeba pair may
+      // replace an old automatic template, but never overrides a hand-written
+      // card example in this file.
+      var corpusExample = (typeof TATOEBA_EXAMPLES !== "undefined") ? TATOEBA_EXAMPLES[word] : null;
+      var replacement = QUALITY_WORD_EXAMPLES[word] || REAL_WORD_EXTENSION_EXAMPLES[word] || corpusExample;
       var extensionContext = REAL_WORD_EXTENSION_CONTEXTS[word];
       var workModifier = qualityFindModifier(word, workModifiers);
       var advancedModifier = qualityFindModifier(word, advancedModifiers);
@@ -9337,6 +9399,138 @@ var EXAMPLE_VARIANTS = {
   }
 };
 
+// "final training" has been retired as a generated phrase card.  Keep its
+// wording out of the variant catalogue as well, so an old saved card can
+// never display it as a separate vocabulary item.
+delete EXAMPLE_VARIANTS["melody"];
+delete EXAMPLE_VARIANTS["final training"];
+delete EXAMPLE_VARIANTS["draft project"];
+delete EXAMPLE_VARIANTS["digital payment"];
+EXAMPLE_VARIANTS["console"] = {
+  primarySense: "n.：控制台／儀表板",
+  alternatives: [
+    {
+      sense: "n.：遊戲機",
+      example: "He bought a new video game console for his birthday.",
+      exampleZh: "他在生日那天買了一台新的電玩主機。",
+      pos: "n."
+    },
+    {
+      sense: "v.：安慰",
+      example: "Her friends tried to console her after she lost the game.",
+      exampleZh: "她輸掉比賽後，朋友試著安慰她。",
+      pos: "v."
+    }
+  ]
+};
+PARTS_OF_SPEECH["console"] = "n.／v.";
+EXAMPLE_VARIANTS["circuit"] = {
+  primarySense: "電路：短路",
+  alternatives: [
+    {
+      sense: "賽道；環形路線",
+      example: "The race cars sped around the circuit at an amazing speed.",
+      exampleZh: "賽車以驚人的速度繞著賽道疾馳。",
+      pos: "n."
+    },
+    {
+      sense: "巡迴活動；圈子",
+      example: "The author is travelling on the book-promotion circuit.",
+      exampleZh: "這位作家正忙著展開新書宣傳巡迴活動。",
+      pos: "n."
+    }
+  ]
+};
+EXAMPLE_VARIANTS["vacuum"] = {
+  primarySense: "n.：吸塵器",
+  alternatives: [
+    {
+      sense: "n.：真空（沒有空氣的空間）",
+      example: "In space, there is a complete vacuum.",
+      exampleZh: "太空中是一片完全的真空。",
+      pos: "n."
+    },
+    {
+      sense: "v.：用吸塵器打掃",
+      example: "I need to vacuum the carpet today.",
+      exampleZh: "我今天需要用吸塵器清理地毯。",
+      pos: "v."
+    }
+  ]
+};
+PARTS_OF_SPEECH["vacuum"] = "n.／v.";
+EXAMPLE_VARIANTS["dealer"] = {
+  primarySense: "n.：經銷商／買賣商",
+  alternatives: [
+    {
+      sense: "n.：發牌者／莊家",
+      example: "It is your turn to be the dealer.",
+      exampleZh: "輪到你當發牌者了。",
+      pos: "n."
+    }
+  ]
+};
+EXAMPLE_VARIANTS["unrelenting"] = {
+  primarySense: "adj.：持續不斷的（天氣）",
+  alternatives: [
+    {
+      sense: "adj.：不懈的（努力）",
+      example: "Her unrelenting efforts made the project a great success.",
+      exampleZh: "她不懈的努力使該專案獲得巨大成功。",
+      pos: "adj."
+    },
+    {
+      sense: "adj.：堅定不移的（態度）",
+      example: "She is an unrelenting opponent of racial discrimination.",
+      exampleZh: "她是反對種族歧視、立場堅定不移的人。",
+      pos: "adj."
+    }
+  ]
+};
+EXAMPLE_VARIANTS["antenna"] = {
+  primarySense: "n.：訊號天線",
+  alternatives: [
+    {
+      sense: "n.：昆蟲的觸角",
+      example: "Each antenna on the moth helps it sense its surroundings.",
+      exampleZh: "蛾的每一根觸角都能幫助牠感知周遭環境。",
+      pos: "n."
+    },
+    {
+      sense: "n.：敏銳嗅覺（比喻）",
+      example: "She has a sharp political antenna that helps her sense upcoming changes.",
+      exampleZh: "她有敏銳的政治嗅覺，能察覺即將到來的變化。",
+      pos: "n."
+    }
+  ]
+};
+
+// These sentences use the same meaning as the primary card sentence.  They
+// must never be shown as a list on the card, but the review screen can choose
+// one later to give a learner fresh practice in the same word sense.
+var REVIEW_EXAMPLE_VARIANTS = {
+  "melody": {
+    alternatives: [
+      { example: "He played a cheerful melody on the piano.", exampleZh: "他用鋼琴彈奏了一首輕快的旋律。", pos: "n." },
+      { example: "A simple melody keeps running through my mind.", exampleZh: "一段簡單的旋律一直在我腦中迴盪。", pos: "n." }
+    ]
+  },
+  "draft project": {
+    alternatives: [
+      { example: "Please send me the draft project by Friday.", exampleZh: "請在星期五前把專案草案寄給我。", pos: "n." },
+      { example: "This draft project still needs more details.", exampleZh: "這份專案草案還需要更多細節。", pos: "n." }
+    ]
+  },
+  "digital payment": {
+    alternatives: [
+      { example: "I usually use digital payment for small purchases.", exampleZh: "我通常用數位支付購買小額商品。", pos: "n." },
+      { example: "People have switched to digital payment instead of using cash.", exampleZh: "人們已改用數位支付，而非現金。", pos: "n." },
+      { example: "Digital payment makes remote transactions possible.", exampleZh: "數位支付讓遠端交易成為可能。", pos: "n." }
+    ]
+  }
+};
+delete REVIEW_EXAMPLE_VARIANTS["draft project"];
+
 // Rename the generated non-idiomatic phrase in saved built-in cards while
 // preserving each learner's card ID, review history, and schedule.
 var BUILTIN_WORD_RENAMES = {
@@ -9371,9 +9565,28 @@ var CURATED_EXAMPLE_UPDATES = {
   "amplitude": true,
   "final training": true,
   "draft project": true,
+  "digital program": true,
   "digital payment": true,
   "tourism": true,
   "capacitor": true,
+  "calibration": true,
+  "hydraulics": true,
+  "console": true,
+  "grief": true,
+  "pathology": true,
+  "journalism": true,
+  "explorer": true,
+  "vacuum": true,
+  "dealer": true,
+  "unrelenting": true,
+  "software license": true,
+  "exchange rate": true,
+  "comparison": true,
+  "reader": true,
+  "hockey": true,
+  "antenna": true,
+  "axle": true,
+  "princess": true,
   "dilemma": true,
   "capability": true,
   "requested process": true,
@@ -9383,8 +9596,17 @@ var CURATED_EXAMPLE_UPDATES = {
   "regular review": true,
   "safety belt": true,
   "compliance with confidentiality requirements": true,
-  "chest": true
+  "chest": true,
+  "disclosure": true,
+  "emergency room": true,
+  "revenue growth": true,
+  "accreditation": true,
+  "compression": true,
+  "circuit": true,
+  "digital signature": true,
+  "digital transformation": true
 };
+delete CURATED_EXAMPLE_UPDATES["final training"];
 
 // Refresh the audited cards for people who already have them in local storage;
 // only wording changes, so the existing review stage and due date stay intact.
