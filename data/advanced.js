@@ -8303,7 +8303,7 @@ if(typeof REAL_WORD_EXTENSION !== "undefined" && Array.isArray(REAL_WORD_EXTENSI
 // Earlier expansion batches used a few repeated filler sentences (for example,
 // "We discussed ... during class").  This pass replaces only those generated
 // sentences.  It leaves hand-written examples and all card scheduling data alone.
-var EXAMPLE_QUALITY_VERSION = "2026-08-14-context-v34";
+var EXAMPLE_QUALITY_VERSION = "2026-08-14-context-v45";
 var QUALITY_LEGACY_EXAMPLE_PATTERNS = [
   /^We discussed the .+ during class\.$/,
   /^We discussed the .+ during today's lesson\.$/,
@@ -8675,11 +8675,21 @@ QUALITY_WORD_EXAMPLES["emergency room"] = ["The injured man was taken to the eme
 QUALITY_WORD_EXAMPLES["revenue growth"] = ["The company achieved strong revenue growth this quarter.", "公司本季實現了強勁的營收成長。"];
 QUALITY_WORD_EXAMPLES["accreditation"] = ["The college received full accreditation last year.", "這所學院去年獲得完整的官方認證。"];
 QUALITY_WORD_EXAMPLES["compression"] = ["Data compression helps save storage space on your computer.", "資料壓縮有助於節省電腦的儲存空間。"];
-QUALITY_WORD_EXAMPLES["circuit"] = ["A short circuit caused a sudden power outage in the whole building.", "短路導致整棟建築物突然停電。"];
+QUALITY_WORD_EXAMPLES["circuit"] = ["A loose wire in the circuit stopped the lamp from working.", "電路裡有一條鬆脫的電線，導致燈泡無法運作。"];
 QUALITY_WORD_EXAMPLES["keynote"] = ["The keynote opened the conference with a message about innovation.", "這場主題演講以創新為題揭開會議序幕。"];
 QUALITY_WORD_EXAMPLES["afternoon"] = ["Good afternoon!", "午安！"];
 QUALITY_WORD_EXAMPLES["digital signature"] = ["Please add your digital signature before submitting the form.", "請在提交表格前加上你的數位簽章。"];
 QUALITY_WORD_EXAMPLES["digital transformation"] = ["The company began its digital transformation by moving customer records online.", "公司從將客戶紀錄數位化開始推動數位轉型。"];
+QUALITY_WORD_MEANINGS["ghost"] = "鬼；幽靈；（文學）揮之不去的陰影／記憶";
+QUALITY_WORD_EXAMPLES["ghost"] = ["Do you believe in ghosts?", "你相信有鬼嗎？"];
+QUALITY_WORD_EXAMPLES["steak"] = ["I ordered a steak with vegetables for dinner.", "我晚餐點了一份搭配蔬菜的牛排。"];
+QUALITY_WORD_EXAMPLES["apple"] = ["An apple a day keeps the doctor away.", "一天一蘋果，醫生遠離我。"];
+QUALITY_WORD_EXAMPLES["avocado"] = ["Avocados are rich in healthy fats.", "酪梨含有健康的脂肪。"];
+QUALITY_WORD_EXAMPLES["strategist"] = ["He is the president's chief political strategist.", "他是該總統的首席政治策略師。"];
+QUALITY_WORD_EXAMPLES["truck driver"] = ["The truck driver delivered the goods to the store.", "這名卡車司機把貨物送到了店裡。"];
+QUALITY_WORD_EXAMPLES["implementation"] = ["The successful implementation of the new policy requires everyone's cooperation.", "新政策的成功實施需要大家的合作。"];
+QUALITY_WORD_EXAMPLES["victory"] = ["They are celebrating their victory.", "他們正在慶祝自己的勝利。"];
+QUALITY_WORD_EXAMPLES["nomination"] = ["The film received four Oscar nominations.", "這部電影獲得了四項奧斯卡提名。"];
 
 // These pairs give ordinary nouns varied, grammatical contexts.  The second
 // sentence varies as well, so a daily study set does not repeat one frame.
@@ -9429,14 +9439,26 @@ EXAMPLE_VARIANTS["circuit"] = {
   alternatives: [
     {
       sense: "賽道；環形路線",
-      example: "The race cars sped around the circuit at an amazing speed.",
-      exampleZh: "賽車以驚人的速度繞著賽道疾馳。",
+      example: "The race cars go fast on the circuit.",
+      exampleZh: "賽車在環形賽道上開得很快。",
       pos: "n."
     },
     {
-      sense: "巡迴活動；圈子",
-      example: "The author is travelling on the book-promotion circuit.",
-      exampleZh: "這位作家正忙著展開新書宣傳巡迴活動。",
+      sense: "巡迴賽",
+      example: "She plays tennis on the global circuit.",
+      exampleZh: "她在全球各地參加網球巡迴賽。",
+      pos: "n."
+    }
+  ]
+};
+EXAMPLE_VARIANTS["circuit"].primarySense = "電路";
+EXAMPLE_VARIANTS["ghost"] = {
+  primarySense: "鬼；幽靈",
+  alternatives: [
+    {
+      sense: "文學：揮之不去的陰影／記憶",
+      example: "The ghost of the accident still haunted her.",
+      exampleZh: "那場事故的陰影仍纏繞著她。",
       pos: "n."
     }
   ]
@@ -9604,7 +9626,16 @@ var CURATED_EXAMPLE_UPDATES = {
   "compression": true,
   "circuit": true,
   "digital signature": true,
-  "digital transformation": true
+  "digital transformation": true,
+  "ghost": true,
+  "steak": true,
+  "apple": true,
+  "avocado": true,
+  "strategist": true,
+  "truck driver": true,
+  "implementation": true,
+  "victory": true,
+  "nomination": true
 };
 delete CURATED_EXAMPLE_UPDATES["final training"];
 
