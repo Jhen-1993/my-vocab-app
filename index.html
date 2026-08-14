@@ -861,6 +861,13 @@
     if(!Array.isArray(data.reviewLog)) data.reviewLog = [];
     if(!data.importedDecks || typeof data.importedDecks !== "object") data.importedDecks = {};
     if(typeof data.studyCompletedDate !== "string") data.studyCompletedDate = "";
+    // Remove only retired built-in generated combinations.  Custom cards are
+    // always preserved, and all remaining cards keep their review history.
+    if(typeof isRetiredBuiltinTerm === "function"){
+      data.words = data.words.filter(function(word){
+        return word.category === "custom" || !isRetiredBuiltinTerm(word.en);
+      });
+    }
     // Correct earlier card data without touching review dates or answer history.
     data.words.forEach(function(word){
       if(word.en === "custommade"){
