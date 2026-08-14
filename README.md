@@ -9,8 +9,6 @@
 - `THIRD_PARTY_NOTICES.md`：詞性索引使用的 WordNet 參考與授權聲明。
 - `ai-relay-worker/`：可選的 Cloudflare Worker，僅供口說 AI 功能使用。
 
-目前字庫共有 5,500 個唯一單字：初階 1,954、中階 2,378、高階 1,168。本次新增的 500 張卡皆有英文例句與詞性。
-
 ## 詞性標籤
 
 單字卡會顯示詞性，並可在「我的單字卡」依詞性篩選。多詞性單字會並列，例如 `record` 可標示為 `n.／v.`。支援的標籤包括 `n.`、`v.`、`adj.`、`adv.`、`prep.`、`conj.`、`pron.`、`quant.`、`phr.v.` 與 `idiom`。
