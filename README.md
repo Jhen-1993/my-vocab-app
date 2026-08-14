@@ -2,9 +2,9 @@
 ## 檔案結構
 
 - `index.html`：網站介面、複習排程與本機學習紀錄。
-- `data/beginner.js`：初階字庫，共 2,204 字。
-- `data/intermediate.js`：中階字庫，共 3,128 字。
-- `data/advanced.js`：高階字庫，共 1,668 字。
+- `data/beginner.js`：初階字庫。
+- `data/intermediate.js`：中階字庫。
+- `data/advanced.js`：高階字庫。
 - 三個字庫檔都使用相同格式：`英文、中文、英文例句、例句翻譯、詞性`；詞性索引會在載入時自動建立。
 - `THIRD_PARTY_NOTICES.md`：詞性索引使用的 WordNet 參考與授權聲明。
 - `ai-relay-worker/`：可選的 Cloudflare Worker，僅供口說 AI 功能使用。
