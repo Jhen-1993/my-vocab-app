@@ -632,7 +632,10 @@
 <!-- 字庫依程度分成三個檔案，便於日後直接維護。 -->
 <script src="data/beginner.js"></script>
 <script src="data/intermediate.js"></script>
-<script src="data/advanced.js"></script>
+<!-- 以真正單字補回移除的自動拼接片語；必須在 advanced.js 前載入。 -->
+<script src="data/real-word-extension.js"></script>
+<!-- 版本參數可避免 GitHub Pages 或瀏覽器繼續使用舊的例句資料快取。 -->
+<script src="data/advanced.js?v=20260814-context-v7"></script>
 <script>
 (function(){
   "use strict";
@@ -737,8 +740,9 @@
       '</div>';
     }).join("");
   }
-  // Vocabulary is maintained in data/beginner.js, data/intermediate.js, and data/advanced.js.
-  // Current total: beginner (2204) + intermediate (3128) + advanced (1668) = 7000 words.
+  // Vocabulary is maintained in data/beginner.js, data/intermediate.js,
+  // data/real-word-extension.js, and data/advanced.js.
+  // Current total: beginner (2204) + intermediate (3120) + advanced (1676) = 7000 words.
   // A correctly recalled word is maintained every two weeks.  An incorrect
   // answer starts the recovery sequence: day 1 -> 2 -> 4 -> 7 -> 15 -> 30.
   // Values are gaps between reviews after the initial incorrect answer.
@@ -922,6 +926,30 @@
         word.zh = match[1];
       }
     });
+
+    // Learners who had already imported the previous advanced deck should not
+    // have to re-import it after synthetic phrases are retired. Add only the
+    // 508 new replacement cards; keep every existing card and its progress.
+    var hadAdvancedDeck = !!data.importedDecks.advanced || data.words.filter(function(word){
+      return word.category === "advanced";
+    }).length >= 1000;
+    if(hadAdvancedDeck && typeof REAL_WORD_EXTENSION !== "undefined"){
+      var existingWords = {};
+      data.words.forEach(function(word){ existingWords[String(word.en || "").toLowerCase()] = true; });
+      REAL_WORD_EXTENSION.forEach(function(entry){
+        var key = String(entry[0] || "").toLowerCase();
+        if(key && !existingWords[key]){
+          var replacementCard = DECKS.advanced.find(function(card){
+            return String(card[0] || "").toLowerCase() === key;
+          });
+          data.words.push(makeWord(
+            entry[0], entry[1], replacementCard ? replacementCard[2] : "", todayStr(), "advanced",
+            replacementCard ? replacementCard[3] : "", entry[2]
+          ));
+          existingWords[key] = true;
+        }
+      });
+    }
   }
 
   // 依可用性載入資料；雲端失敗時自動改用本機或記憶體暫存。
