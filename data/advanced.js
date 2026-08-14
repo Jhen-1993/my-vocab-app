@@ -8202,11 +8202,23 @@ ADVANCED_BUSINESS_MODIFIERS.forEach(function(modifier){
 });
 DECKS.advanced.push.apply(DECKS.advanced, ADVANCED_7000_EXTENSION);
 
+// "Confidential compliance" is not an idiomatic legal or business term.
+// Replace the generated combination with the standard, precise expression.
+DECKS.advanced.forEach(function(card){
+  if(card[0] === "confidential compliance"){
+    card[0] = "compliance with confidentiality requirements";
+    card[1] = "遵守保密要求；保密法遵";
+    card[2] = "The company ensures strict compliance with confidentiality requirements when handling sensitive client data.";
+    card[3] = "公司在處理敏感客戶資料時，確保嚴格遵守保密要求。";
+    card[4] = "n.";
+  }
+});
+
 // Example-quality pass ------------------------------------------------------
 // Earlier expansion batches used a few repeated filler sentences (for example,
 // "We discussed ... during class").  This pass replaces only those generated
 // sentences.  It leaves hand-written examples and all card scheduling data alone.
-var EXAMPLE_QUALITY_VERSION = "2026-08-14-context-v2";
+var EXAMPLE_QUALITY_VERSION = "2026-08-14-context-v3";
 var QUALITY_LEGACY_EXAMPLE_PATTERNS = [
   /^We discussed the .+ during class\.$/,
   /^We discussed the .+ during today's lesson\.$/,
@@ -8217,7 +8229,17 @@ var QUALITY_LEGACY_EXAMPLE_PATTERNS = [
   /^The report includes an? .+ example\.$/,
   /^The report includes information about the .+\.$/,
   /^The report was .+ reviewed\.$/,
-  /^The team reviewed the .+ during the meeting\.$/
+  /^The team reviewed the .+ during the meeting\.$/,
+  /^The briefing covered the .+ in detail\.?/,
+  /^The study focused on the .+\.?/,
+  /^The staff kept a record of the .+\.?/,
+  /^The plan takes the .+ into account\.?/,
+  /^The team identified the .+ as an important factor\.?/,
+  /^The next step depends on the .+\.?/,
+  /^The .+ was easy to use in daily life\.?/,
+  /^She put the .+ away after using it\.?/,
+  /^I picked up the .+ from the table\.?/,
+  /^The .+ was kept in a safe place\.?/
 ];
 
 function isQualityLegacyFillerExample(example){
@@ -8240,7 +8262,47 @@ function qualityFormat(template, word, meaning){
 
 // Carefully written examples for every generated verb, adverb, and adjective
 // that previously had a classroom/report filler sentence.
+var QUALITY_WORD_MEANINGS = {
+  "abstraction": "抽象；空泛",
+  "conservation": "保育；保存；節約（資源）",
+  "tourism": "旅遊業；觀光業",
+  "dilemma": "進退兩難；困境",
+  "requested process": "被要求的流程；已請求的程序",
+  "spring": "春天；彈簧；泉水；跳躍／湧現",
+  "urgent survey": "緊急調查",
+  "monthly record": "月度紀錄；單月紀錄",
+  "regular review": "例行審查"
+};
+var QUALITY_WORD_POS = {
+  "cognitive": "adj.",
+  "spring": "n.／v."
+};
 var QUALITY_WORD_EXAMPLES = {
+  "requested service": ["We completed the requested service on time.", "我們按時完成了所要求的服務。"],
+  "glass": ["Please handle the glass carefully because it may break.", "請小心拿取這個玻璃杯，因為它可能會破。"],
+  "plate": ["Please place the plate on the table.", "請把盤子放在桌上。"],
+  "antique": ["The antique was displayed in a small museum.", "這件古董在一間小型博物館展出。"],
+  "checklist": ["Use the checklist to make sure nothing is missing.", "使用檢查清單確認沒有遺漏任何事項。"],
+  "perfume": ["This perfume has a light floral scent.", "這款香水有淡淡的花香。"],
+  "sleeping bag": ["She unrolled her sleeping bag inside the tent.", "她在帳篷裡攤開睡袋。"],
+  "towel": ["Please dry your hands with a clean towel.", "請用乾淨的毛巾擦乾雙手。"],
+  "coaster": ["Put your cup on the coaster to protect the table.", "把杯子放在杯墊上，保護桌面。"],
+  "crate": ["The apples were packed in a wooden crate.", "蘋果被裝在一個木箱裡。"],
+  "decal": ["She put a colorful decal on her laptop.", "她在筆電上貼了一張彩色貼紙。"],
+  "detergent": ["Add detergent before starting the washing machine.", "啟動洗衣機前先加入洗衣精。"],
+  "dustbin": ["Please throw the paper into the dustbin.", "請把紙丟進垃圾桶。"],
+  "medal": ["She wore her medal proudly after the race.", "比賽後她自豪地戴著獎牌。"],
+  "napkin": ["Use a napkin to wipe the sauce from your hands.", "用餐巾擦掉手上的醬汁。"],
+  "bouquet": ["He gave her a bouquet of fresh flowers.", "他送給她一束新鮮的花。"],
+  "chandelier": ["A crystal chandelier hung above the dining table.", "一盞水晶吊燈掛在餐桌上方。"],
+  "kiln": ["The pottery was fired in a hot kiln.", "這些陶器是在高溫窯中燒製的。"],
+  "magnet": ["The magnet sticks to the refrigerator door.", "磁鐵會吸在冰箱門上。"],
+  "pawn": ["She moved a pawn forward on the chessboard.", "她在棋盤上把一個兵往前移。"],
+  "pen": ["Please sign your name with a blue pen.", "請用藍色原子筆簽名。"],
+  "pencil": ["He wrote the answer with a pencil.", "他用鉛筆寫下答案。"],
+  "cognitive": ["Cognitive skills help us learn and solve problems.", "認知技能幫助我們學習並解決問題。"],
+  "isolation": ["The patient was placed in isolation to prevent the spread of the virus.", "病人被安置在隔離病房，以防止病毒擴散。"],
+  "regulatory expenditure": ["The company increased its regulatory expenditure to meet the new environmental standards.", "這家公司增加了合規支出，以符合新的環境標準。"],
   "abandon": ["The company decided to abandon the outdated plan.", "公司決定放棄那項過時的計畫。"],
   "activate": ["Press this button to activate the security system.", "按下這個按鈕即可啟動保全系統。"],
   "approve": ["The director approved the revised budget yesterday.", "主管昨天核准了修訂後的預算。"],
@@ -8345,6 +8407,27 @@ var QUALITY_WORD_EXAMPLES = {
   "electoral": ["The electoral commission announced the voting schedule.", "選舉委員會公布了投票時程。"],
   "acoustic": ["The hall has acoustic panels to reduce echo.", "大廳設有吸音板以減少回音。"],
   "touchscreen": ["The new smartphone has a very responsive touchscreen.", "這款新智慧型手機的觸控螢幕反應非常靈敏。"],
+  "factory": ["There are many workers in this factory.", "這間工廠裡有很多工人。"],
+  "important update": ["Please read this important update before you log in.", "請在登入之前閱讀這則重要的系統更新公告。"],
+  "technological expenditure": ["The company increased its technological expenditure to upgrade the software and improve work speed.", "這家公司增加科技支出來升級軟體並提升工作速度。"],
+  "slider": ["Move the slider to the right to increase the volume.", "向右移動滑桿來增加音量。"],
+  "abstraction": ["She's always talking in abstractions.", "她說話總是很空泛。"],
+  "conservation": ["Wildlife conservation is crucial for maintaining biodiversity.", "野生動物保育對於維持生物多樣性至關重要。"],
+  "flight schedule": ["Please check the flight schedule before you go to the airport.", "請在去機場前先查看航班時刻表。"],
+  "amplitude": ["The amplitude of the wave increases during the storm.", "風暴期間，海浪的波幅增大。"],
+  "tourism": ["Tourism is the main source of income for this island.", "旅遊業是這個島嶼的主要收入來源。"],
+  "capacitor": ["A capacitor stores and releases electrical energy in the circuit.", "電容器在電路中負責儲存與釋放電能。"],
+  "dilemma": ["She is facing a dilemma about whether to change jobs.", "她正面臨是否要換工作的兩難抉擇。"],
+  "capability": ["She has the capability to finish the project on time.", "她有能力按時完成這個專案。"],
+  "requested process": ["Please follow the requested process to submit your report.", "請按照要求的流程提交您的報告。"],
+  "spring": ["Spring is my favorite season of the year.", "春天是我一年中最喜歡的季節。"],
+  "urgent survey": ["The company launched an urgent survey after the product issue.", "產品出問題後，公司發起了一項緊急調查。"],
+  "monthly record": ["Please submit your monthly record of expenses by Friday.", "請在週五前提交你的每月費用紀錄。"],
+  "regular review": ["A regular review helps us stay on track.", "例行審查幫助我們保持進度。"],
+  "safety belt": ["Drivers should remind passengers to wear their safety belt at all times.", "駕駛人應該隨時提醒乘客繫好安全帶。"],
+  "chest": ["He has a pain in his chest.", "他胸口痛。"],
+  "editor": ["The editor corrected several errors before the article was published.", "文章出版前，編輯更正了幾個錯誤。"],
+  "editorial": ["The newspaper published an editorial about the proposed policy.", "這家報紙刊登了一篇關於擬議政策的社論。"],
   "future review": ["The budget plan has been approved, but it remains subject to future review.", "預算計畫已通過，但仍需在未來進行審查。"],
   "final project": ["The final project will begin after funding is confirmed.", "資金確認後，這項最終專案就會開始。"],
   "international documentation": ["The company prepared the international documentation for its overseas partners.", "公司為海外合作夥伴準備了國際文件。"]
@@ -8401,12 +8484,223 @@ var QUALITY_NOUN_FOLLOW_UPS = [
   ["The team raised it early to avoid surprises.", "團隊及早提出這個議題，以避免意外。"]
 ];
 
+// The older noun fallback used work-report wording for every kind of word.
+// Classify a word first, then choose a short everyday context that fits it.
+// This deliberately favours clear, learnable sentences over a single template.
+var QUALITY_CONTEXT_WORD_GROUPS = {
+  person: "aunt|captain|father|kid|king|professor|sister|worker|youth|content creator|flight attendant|elevator operator|explorer|florist|grandparent|hairdresser|photographer|receptionist|surgeon|tailor|taxi driver|truck driver|witness|counselor|fisherman|golfer|monk|producer|dealer|editor|auctioneer|accountant|actor|architect|artist|athlete|author|chef|coach|dentist|doctor|engineer|farmer|firefighter|journalist|lawyer|librarian|manager|musician|nurse|pilot|police officer|scientist|teacher|tour guide".split("|"),
+  animal: "ant|crocodile|eagle|dolphin|frog|lion|mammal|mosquito|pet|pony|wildlife|bacteria|algae|embryo|fish|bird|butterfly|cat|dog|horse|insect|rabbit|whale".split("|"),
+  food: "apple|cake|candy|dish|egg|barbecue|beverage|grape|jam|noodle soup|olive|pizza|sandwich|tea bag|avocado|bread|coffee|fruit|meal|rice|salad|soup|vegetable".split("|"),
+  place: "church|countryside|port|supermarket|campsite|concert hall|daycare|department store|embassy|gas station|grocery store|gymnasium|kindergarten|lobby|mall|mansion|office building|parking|practice room|residence|riverbank|service center|stadium|student union|suburb|theater|waiting room|aquarium|bungalow|cathedral|chalet|chapel|courthouse|diner|gazebo|lagoon|ranch|reservoir|rooftop|sidewalk|tunnel|canal|creek|dock|moat".split("|"),
+  transport: "aircraft|boat|delayed flight|flight|international flight|scooter|taxi|truck|vehicle|vessel|raft|trailer|train|bus|bicycle|ship".split("|"),
+  wearable: "glove|handbag|sunglasses|slipper|helmet|goggles|cloak|necklace|lipstick|makeup|safety belt|coat|dress|jacket|shirt|shoe|watch".split("|"),
+  technology: "barcode|bluetooth|broadband|browser|cellphone|computer virus|cryptocurrency|debugging|delivery service|download link|file format|gps|keyboard shortcut|laptop computer|navigation|outage|peripheral|pixel|protocol|search engine|setting|smartphone|spreadsheet|tablet computer|virtual reality|router|scanner|typewriter|calculator|database|password|software|website".split("|"),
+  tool: "abacus|accordion|alarm clock|binoculars|boiler|cable|cartridge|clipboard|clock|coil|compass|conveyor|coupon|crane|dispenser|flashlight|freezer|funnel|furnace|gadget|gearbox|hose|joystick|jug|leaflet|lifeboat|microscope|mixer|mower|pallet|paperclip|pouch|radar|relay|robot|sandpaper|skillet|sofa|toaster|token|turbine|vacuum|valve|washer|wallet|windshield|bandage|basket|dictionary|refrigerator|rice cooker|telescope|thermometer|fork".split("|"),
+  bodyHealth: "abdomen|acne|antibiotic|blood|body|ear|eardrum|hearing|hygiene|anatomy|depression|disability|anesthesia|health|medicine|treatment|disease|virus|isolation".split("|"),
+  nature: "carbon|drought|flood|glacier|gravity|pollen|pollution|rain|rainfall|rainbow|sea|sky|snowman|soil|sun|thunder|thunderstorm|wildlife|altitude|electricity|geology|latitude|longitude|weather|climate|forest|river|mountain|beach|moon|comet".split("|"),
+  activity: "bowling|cooking|cycling|dance floor|drawing|game|party|piano|puzzle|skating|barbecue|concert|exam|homework|jogging|shopping|swimming|travel|workout".split("|"),
+  time: "daytime|evening|morning|afternoon|night|weekend|weekday|holiday|anniversary|day|month|year".split("|"),
+  media: "cartoon|documentary|book|magazine|newspaper|poster|movie|film|music|story".split("|"),
+  money: "dollar|pound|coin|currency|pocket money|income tax|entrance fee".split("|"),
+  structure: "arch|angle|bookcase|castle|column|countertop|doorway|elevator|fence|fireplace|pavement|roadwork|wall|window|building|bridge".split("|"),
+  familyGroup: "army|family|champion|daughter|son|parent|couple|crowd|group|class|audience".split("|"),
+  material: "alcohol|asphalt|cardboard|diesel|foil|linen|nickel|paper|plastic|plywood|sandpaper|soap|wood".split("|"),
+  schoolScience: "accounting|algebra|archaeology|architecture|capitalism|civilization|cognition|economics|evolution|geography|illustration|introduction|logic|physics|principle|questionnaire|analysis|acidity|aerodynamics|aerosol|amplifier|capacitor|correlation|friction|enzyme|fertilizer|pesticide|pipeline|plywood|asphalt|diesel|mold".split("|"),
+  organization: "academy|corporation|council|company|government|hospital|school|university|factory|jury|orchestra|police|committee|department|agency".split("|"),
+  business: "acknowledgment|administration|assessment|collaboration|comparison|coordination|designation|distribution|encouragement|engagement|finance|intention|justification|motivation|profession|quantity|recommendation|reduction|reliability|revision|signature|significance|taxation|variation|volume|acceptance|attachment|auction|dependence|failure|generosity|independence|intelligence|necessity|poverty|satisfaction|similarity|unity|victory|wealth|wisdom|consultation|currency exchange|customer feedback|database management|deposit account|environmental protection|exchange rate|identification|information desk|instruction manual|job interview|license plate|office hours|passport control|pocket money|shopping list|income tax|regulatory expenditure|technological expenditure|monthly record|regular review|requested process|future review|important update|international documentation".split("|"),
+  abstract: "abstraction|beauty|bravery|dream|fortune|meaning|abundance|affection|alphabet|argument|conscience|consistency|discrimination|economy|epidemic|freedom|independence|opportunity|progress|quality|respect|responsibility|safety|success|value|ability|capability|compatibility|dilemma|isolation|conservation|tourism".split("|")
+};
+
+// Additional coverage for short, everyday words from the first expansion.
+// Keeping these lists explicit prevents a fridge, person, place, or idea from
+// falling back to a sentence intended for a small portable object.
+QUALITY_CONTEXT_WORD_GROUPS.person = QUALITY_CONTEXT_WORD_GROUPS.person.concat("gentleman|husband|waiter|detective|elf|ghost|messenger|carpenter|chairman|importer|wholesaler|potential customer|service provider".split("|"));
+QUALITY_CONTEXT_WORD_GROUPS.animal = QUALITY_CONTEXT_WORD_GROUPS.animal.concat("camel|chicken|cricket|duck|fox|parrot|bacterium".split("|"));
+QUALITY_CONTEXT_WORD_GROUPS.food = QUALITY_CONTEXT_WORD_GROUPS.food.concat("pancake|lemonade|pumpkin|almond|cocoa|cream|mushroom|peanut|pear|pie|butter|orange|pastry|sauce|strawberry|yogurt|carrot|champagne|cookie|herb|nutrient".split("|"));
+QUALITY_CONTEXT_WORD_GROUPS.place = QUALITY_CONTEXT_WORD_GROUPS.place.concat("gallery|house|clinic|guest room|prison|swimming pool|art gallery|cellar|auditorium|arcade|asylum|cockpit|corridor|estate|palace|kennel|kiosk|lighthouse|runway|silo|bookstore|cinema|classroom|college|disco".split("|"));
+QUALITY_CONTEXT_WORD_GROUPS.transport = QUALITY_CONTEXT_WORD_GROUPS.transport.concat("first class|transit".split("|"));
+QUALITY_CONTEXT_WORD_GROUPS.wearable = QUALITY_CONTEXT_WORD_GROUPS.wearable.concat("skirt|scarf|jersey|buckle|zipper".split("|"));
+QUALITY_CONTEXT_WORD_GROUPS.technology = QUALITY_CONTEXT_WORD_GROUPS.technology.concat("interface|operating system|streaming|text message|traffic light|antenna|handset|icon|semaphore|socket|directory|inbox|plugin|endpoint|gateway".split("|"));
+QUALITY_CONTEXT_WORD_GROUPS.tool = QUALITY_CONTEXT_WORD_GROUPS.tool.concat("fridge|hammer|match|frying pan|lunchbox|microwave|knife|tripod|umbrella stand|arrow|beacon|beaker|blade|bolt|chassis|cylinder|drill|flask|hinge|hook|needle|nozzle|parachute|pedal|piston|pulley|rifle|saucepan|screw|spotlight|tire|chopsticks|aperture|bearing|cabinet".split("|"));
+QUALITY_CONTEXT_WORD_GROUPS.bodyHealth = QUALITY_CONTEXT_WORD_GROUPS.bodyHealth.concat("wound|first aid|diagnosis|capsule|condom|backache|hormone|insomnia|cholesterol|dosage|fatigue|cancer|artery|appendix|deficiency|disorder|recovery".split("|"));
+QUALITY_CONTEXT_WORD_GROUPS.nature = QUALITY_CONTEXT_WORD_GROUPS.nature.concat("grass|leaf|waterfall|bamboo|crater|horizon|coral|habitat|cosmos|galaxy|universe|decay|sewage|solar power".split("|"));
+QUALITY_CONTEXT_WORD_GROUPS.activity = QUALITY_CONTEXT_WORD_GROUPS.activity.concat("farewell|opening ceremony|picnic|recycling|funeral|applause|archery|commuting|fireworks".split("|"));
+QUALITY_CONTEXT_WORD_GROUPS.time = QUALITY_CONTEXT_WORD_GROUPS.time.concat("daytime|evening".split("|"));
+QUALITY_CONTEXT_WORD_GROUPS.media = QUALITY_CONTEXT_WORD_GROUPS.media.concat("booklet|game show|melody|paragraph".split("|"));
+QUALITY_CONTEXT_WORD_GROUPS.money = QUALITY_CONTEXT_WORD_GROUPS.money.concat("gift card|theater ticket|travel voucher|mortgage|debit|sales receipt|volume discount".split("|"));
+QUALITY_CONTEXT_WORD_GROUPS.structure = QUALITY_CONTEXT_WORD_GROUPS.structure.concat("curtain|emergency exit|pathway|tablecloth|cornerstone|duct|runway|statue|gateway|drainage|enclosure".split("|"));
+QUALITY_CONTEXT_WORD_GROUPS.familyGroup = QUALITY_CONTEXT_WORD_GROUPS.familyGroup.concat("army|family|society|cavalry|assemblage".split("|"));
+QUALITY_CONTEXT_WORD_GROUPS.material = QUALITY_CONTEXT_WORD_GROUPS.material.concat("diamond|charcoal|clay|fiber|limestone|copper|emerald|gemstone|adhesive".split("|"));
+QUALITY_CONTEXT_WORD_GROUPS.schoolScience = QUALITY_CONTEXT_WORD_GROUPS.schoolScience.concat("word|first name|diploma|context|contrast|acronym|adjacency|adjective|denominator|magnitude|atom|molecule|hydrogen|specialty".split("|"));
+QUALITY_CONTEXT_WORD_GROUPS.organization = QUALITY_CONTEXT_WORD_GROUPS.organization.concat("client base|service desk|bureau".split("|"));
+QUALITY_CONTEXT_WORD_GROUPS.business = QUALITY_CONTEXT_WORD_GROUPS.business.concat("brand|budgeting|express delivery|import|mortgage|recycling|client base|job opening|reference number|room service|safety check|sales receipt|security check|service desk|client service|customer care|insurance coverage|manufacturing cost|product line|production cost|project proposal|promotion campaign|quality standard|rejection letter|renewal notice|sales strategy|signature line|supplier contract|transportation cost|volume discount|ballot|bylaw|debit|directory|leasing|ledger|underwriting|housing|acreage|bookkeeping|goodwill|penalty|margin|dismissal|visa".split("|"));
+QUALITY_CONTEXT_WORD_GROUPS.abstract = QUALITY_CONTEXT_WORD_GROUPS.abstract.concat("heaven|hunger|laughter|peace|abuse|conflict|courtesy|cheer|anxiety|disadvantage|heritage|loyalty|denial|reform|crime|prejudice|religion|aptitude|dependency|deficiency|disorder|goodwill|penalty|adjacency|decay|magnitude".split("|"));
+
+var QUALITY_CONTEXT_TEMPLATES = {
+  person: [
+    ["The {word} answered our questions patiently.", "這位「{meaning}」耐心回答了我們的問題。"],
+    ["We asked the {word} for help when we arrived.", "我們抵達時向這位「{meaning}」尋求協助。"],
+    ["The {word} greeted us with a smile.", "這位「{meaning}」微笑著向我們打招呼。"],
+    ["Everyone thanked the {word} for the advice.", "大家都感謝這位「{meaning}」提供建議。"]
+  ],
+  animal: [
+    ["We saw {article} {word} near the water this morning.", "今天早上我們在水邊看到一隻「{meaning}」。"],
+    ["The {word} moved quietly through the grass.", "這隻「{meaning}」安靜地穿過草地。"],
+    ["The children watched the {word} from a safe distance.", "孩子們在安全距離外觀察這隻「{meaning}」。"],
+    ["A picture of the {word} appeared in the nature guide.", "自然指南中出現了「{meaning}」的圖片。"]
+  ],
+  food: [
+    ["The {word} tasted fresh and delicious.", "這份「{meaning}」嚐起來新鮮可口。"],
+    ["She served the {word} at lunch.", "她在午餐時端上這道「{meaning}」。"],
+    ["We ordered the {word} to share.", "我們點了這份「{meaning}」一起分享。"],
+    ["The recipe calls for {word} as the main ingredient.", "這份食譜以「{meaning}」作為主要食材。"]
+  ],
+  place: [
+    ["They visited the {word} during their trip.", "他們在旅途中參觀了這個「{meaning}」。"],
+    ["We met near the {word} before the event.", "活動前我們在「{meaning}」附近碰面。"],
+    ["The {word} was busy on Saturday afternoon.", "星期六下午這個「{meaning}」很熱鬧。"],
+    ["A map showed us how to reach the {word}.", "地圖告訴我們如何抵達「{meaning}」。"]
+  ],
+  transport: [
+    ["The {word} arrived safely despite the rain.", "這個「{meaning}」儘管下雨仍安全抵達。"],
+    ["We took the {word} to get there on time.", "我們搭乘「{meaning}」準時抵達。"]
+  ],
+  wearable: [
+    ["She put on the {word} before going outside.", "她出門前戴上／穿上「{meaning}」。"],
+    ["The {word} was comfortable enough to use all day.", "這個「{meaning}」舒適到可以使用一整天。"]
+  ],
+  technology: [
+    ["The {word} made the task easier to complete.", "「{meaning}」讓這項工作更容易完成。"],
+    ["She checked the {word} before continuing.", "她繼續之前先檢查了「{meaning}」。"],
+    ["We updated the {word} to improve security.", "我們更新了「{meaning}」以提升安全性。"],
+    ["The guide shows beginners how to use the {word}.", "這份指南說明初學者如何使用「{meaning}」。"]
+  ],
+  tool: [
+    ["Use the {word} carefully and follow the instructions.", "請小心使用這個「{meaning}」，並遵循使用說明。"],
+    ["The {word} was useful during the repair.", "這個「{meaning}」在修理時很有幫助。"],
+    ["He reached for the {word} when the job began.", "工作開始時，他伸手拿取這個「{meaning}」。"],
+    ["Keep the {word} clean after each use.", "每次使用後請保持這個「{meaning}」清潔。"]
+  ],
+  bodyHealth: [
+    ["The doctor explained the {word} in simple terms.", "醫師以簡單方式說明了「{meaning}」。"],
+    ["Regular care can protect the {word}.", "定期照護可以保護「{meaning}」。"],
+    ["The nurse asked about the {word} during the visit.", "護理師在看診時詢問「{meaning}」的情況。"],
+    ["The guide explains how the {word} affects our health.", "這份指南說明「{meaning}」如何影響健康。"]
+  ],
+  nature: [
+    ["We noticed the {word} during our walk.", "散步時我們注意到「{meaning}」。"],
+    ["The {word} changed the view around us.", "「{meaning}」改變了我們周遭的景象。"],
+    ["The guide explained why the {word} is important.", "導覽員說明了「{meaning}」為何重要。"],
+    ["We took a photo of the {word} before leaving.", "離開前，我們拍下了「{meaning}」。"]
+  ],
+  activity: [
+    ["We enjoyed the {word} with our friends.", "我們和朋友一起享受「{meaning}」。"],
+    ["She practices {word} every weekend.", "她每個週末都練習「{meaning}」。"],
+    ["The {word} brought people together.", "這項「{meaning}」讓大家聚在一起。"],
+    ["We planned the {word} weeks in advance.", "我們提前好幾週規劃這項「{meaning}」。"]
+  ],
+  time: [
+    ["We will meet again in the {word}.", "我們會在「{meaning}」再次見面。"],
+    ["The {word} passed more quickly than we expected.", "「{meaning}」過得比我們預期更快。"]
+  ],
+  media: [
+    ["We enjoyed the {word} together after dinner.", "晚餐後我們一起欣賞了這個「{meaning}」。"],
+    ["The {word} told a story that stayed with us.", "這個「{meaning}」講述了一個讓我們印象深刻的故事。"]
+  ],
+  money: [
+    ["She counted the {word} before paying.", "付款前她先清點了「{meaning}」。"],
+    ["The price was shown in {word}.", "價格以「{meaning}」標示。"]
+  ],
+  structure: [
+    ["The {word} was part of the old building.", "這個「{meaning}」是老建築的一部分。"],
+    ["We stopped to look at the {word} closely.", "我們停下來仔細看這個「{meaning}」。"]
+  ],
+  familyGroup: [
+    ["The {word} worked together to reach their goal.", "這個「{meaning}」一起合作達成目標。"],
+    ["Everyone in the {word} had a role to play.", "「{meaning}」中的每個人都有自己的角色。"]
+  ],
+  material: [
+    ["The {word} was used to make the product.", "這項產品使用了「{meaning}」製作。"],
+    ["We chose the {word} because it was durable.", "我們選擇「{meaning}」是因為它很耐用。"]
+  ],
+  schoolScience: [
+    ["Students learned about {word} in class.", "學生在課堂上學習「{meaning}」。"],
+    ["The lesson used {word} to explain the topic.", "課程以「{meaning}」說明這個主題。"],
+    ["She used {word} to solve the problem.", "她運用「{meaning}」來解決這個問題。"],
+    ["The textbook gives a clear example of {word}.", "課本提供了「{meaning}」的清楚例子。"]
+  ],
+  organization: [
+    ["The {word} opened its doors early this morning.", "這個「{meaning}」今天一早就開始營運。"],
+    ["Many people visited the {word} that day.", "那天有許多人來到這個「{meaning}」。"]
+  ],
+  business: [
+    ["Good {word} can make daily work run more smoothly.", "良好的「{meaning}」能讓日常工作更順暢。"],
+    ["Her experience showed the value of {word}.", "她的經驗顯示「{meaning}」的價值。"],
+    ["The company reviewed its {word} at the end of the month.", "公司在月底檢視了它的「{meaning}」。"],
+    ["Clear {word} helps customers know what to expect.", "清楚的「{meaning}」有助於顧客了解預期內容。"],
+    ["They discussed {word} before making a decision.", "他們在做決定前討論了「{meaning}」。"]
+  ],
+  abstract: [
+    ["The meaning of {word} became clearer after the discussion.", "討論後，「{meaning}」的意義變得更清楚。"],
+    ["Her experience showed the importance of {word}.", "她的經驗顯示「{meaning}」的重要性。"],
+    ["The story gives us a new view of {word}.", "這個故事讓我們以新的角度看待「{meaning}」。"],
+    ["We often learn about {word} through real experience.", "我們常透過真實經驗學習「{meaning}」。"],
+    ["Her choices were guided by {word}.", "她的選擇受到「{meaning}」的引導。"]
+  ],
+  thing: [
+    ["I picked up the {word} from the table.", "我從桌上拿起這個「{meaning}」。"],
+    ["The {word} was kept in a safe place.", "這個「{meaning}」被放在安全的地方。"]
+  ]
+};
+
+function qualityContextHas(group, word){
+  return (QUALITY_CONTEXT_WORD_GROUPS[group] || []).indexOf(word) !== -1;
+}
+
+function qualityContextGroup(word, meaning){
+  var groups = ["technology", "tool", "bodyHealth", "animal", "food", "place", "transport", "wearable", "nature", "activity", "time", "media", "money", "structure", "familyGroup", "material", "schoolScience", "organization", "person", "business", "abstract"];
+  for(var i = 0; i < groups.length; i++){
+    if(qualityContextHas(groups[i], word)) return groups[i];
+  }
+  // Most expansion cards include a precise Traditional-Chinese meaning.  These
+  // lightweight cues cover uncommon words without putting a person, a place,
+  // or food into the generic physical-object sentence.
+  var zh = String(meaning || "");
+  if(/[店館院室站場園國區島洲街路岸灣城村鎮樓]/.test(zh)) return "place";
+  if(/[鳥獸魚蟲馬牛羊犬貓駝象猴蛙]/.test(zh)) return "animal";
+  if(/[食肉酒飲湯果菜糖蛋麵茶咖啡漢堡起司巧克力]/.test(zh)) return "food";
+  if(/[醫藥病血骨肌腦心肺牙眼耳指]/.test(zh)) return "bodyHealth";
+  if(/[車機航班船艇自行車]/.test(zh)) return "transport";
+  if(/[衣褲鞋帽鏡包帶飾]/.test(zh)) return "wearable";
+  if(/[器具工具裝置設備儀表鑰匙鐘]/.test(zh)) return "tool";
+  if(/[網站軟體網路資料密碼程式數位電腦手機]/.test(zh)) return "technology";
+  if(/[雨雪風雷雲海河山湖沙漠森林氣候自然]/.test(zh)) return "nature";
+  if(/[時間早晨下午晚上日期週月年季]/.test(zh)) return "time";
+  if(/[電影影片漫畫書籍雜誌報紙音樂故事]/.test(zh)) return "media";
+  if(/[金錢貨幣美元英鎊費稅價]/.test(zh)) return "money";
+  if(/[公司政府學校醫院軍隊組織機構團隊家庭]/.test(zh)) return "familyGroup";
+  if(/[人員者師長員家手官民眾]/.test(zh)) return "person";
+  if(/[學問理論科學數學物理化學研究]/.test(zh)) return "schoolScience";
+  if(/[性度力感義率論制權觀概念狀態現象問題方法過程關係]/.test(zh)) return "abstract";
+  if(/(tion|sion|ment|ness|ity|ship|hood|ism|ence|ance|ology|ics)$/.test(word)) return "abstract";
+  return "thing";
+}
+
+function qualityArticle(word){
+  var first = String(word || "").trim().charAt(0).toLowerCase();
+  return /^[aeiou]/.test(first) ? "an" : "a";
+}
+
+function qualityContextFormat(template, word, meaning){
+  return qualityFormat(template, word, meaning).replace(/\{article\}/g, qualityArticle(word));
+}
+
 function qualityGenericNounExample(word, meaning){
-  var hash = qualityHash(word);
-  var context = QUALITY_NOUN_CONTEXTS[hash % QUALITY_NOUN_CONTEXTS.length];
-  var followUpHash = ((hash >>> 16) ^ Math.imul(hash, 2246822519)) >>> 0;
-  var followUp = QUALITY_NOUN_FOLLOW_UPS[followUpHash % QUALITY_NOUN_FOLLOW_UPS.length];
-  return [qualityFormat(context[0], word, meaning) + " " + followUp[0], qualityFormat(context[1], word, meaning) + followUp[1]];
+  var normalizedWord = String(word || "").trim().toLowerCase();
+  var group = qualityContextGroup(normalizedWord, meaning);
+  var templates = QUALITY_CONTEXT_TEMPLATES[group] || QUALITY_CONTEXT_TEMPLATES.thing;
+  var pair = templates[qualityHash(normalizedWord) % templates.length];
+  return [qualityContextFormat(pair[0], word, meaning), qualityContextFormat(pair[1], word, meaning)];
 }
 
 var QUALITY_WORK_MODIFIER_CONTEXTS = {
@@ -8495,6 +8789,8 @@ function applyExampleQualityPass(){
   Object.keys(DECKS).forEach(function(level){
     DECKS[level].forEach(function(card){
       var word = String(card[0] || "").toLowerCase();
+      if(QUALITY_WORD_MEANINGS[word]) card[1] = QUALITY_WORD_MEANINGS[word];
+      if(QUALITY_WORD_POS[word]) card[4] = QUALITY_WORD_POS[word];
       var replacement = QUALITY_WORD_EXAMPLES[word];
       var workModifier = qualityFindModifier(word, workModifiers);
       var advancedModifier = qualityFindModifier(word, advancedModifiers);
@@ -8509,6 +8805,250 @@ function applyExampleQualityPass(){
   });
 }
 applyExampleQualityPass();
+
+// Some cards benefit from multiple examples—either separate word senses or
+// useful real-world contexts. The first pair above remains the primary one;
+// the alternatives appear alongside it with a short, clear label.
+var EXAMPLE_VARIANTS = {
+  "requested service": {
+    primarySense: "被要求的服務；已請求的服務",
+    alternatives: [
+      {
+        sense: "費用與服務項目",
+        example: "The fee depends on the requested service.",
+        exampleZh: "費用取決於所要求的服務。",
+        pos: "n."
+      },
+      {
+        sense: "客戶滿意度",
+        example: "The client was satisfied with the requested service.",
+        exampleZh: "客戶對所要求的服務感到滿意。",
+        pos: "n."
+      }
+    ]
+  },
+  "isolation": {
+    primarySense: "隔離（疾病或防疫）",
+    alternatives: [
+      {
+        sense: "孤立、脫離外界",
+        example: "North Korea has remained in almost total isolation.",
+        exampleZh: "北韓幾乎一直處於完全孤立的狀態。",
+        pos: "n."
+      },
+      {
+        sense: "孤獨感、孤立狀態",
+        example: "She felt a deep sense of isolation after moving to the new city.",
+        exampleZh: "搬到新城市後，她感到深深的孤獨感。",
+        pos: "n."
+      },
+      {
+        sense: "單獨地看待（in isolation）",
+        example: "We cannot judge this event in isolation.",
+        exampleZh: "我們不能孤立地看待這件事。",
+        pos: "n."
+      }
+    ]
+  },
+  "regulatory expenditure": {
+    primarySense: "合規／監管支出",
+    alternatives: [
+      {
+        sense: "政府與小型企業",
+        example: "The government aims to reduce unnecessary regulatory expenditure for small businesses.",
+        exampleZh: "政府希望為小型企業減少不必要的監管支出。",
+        pos: "n."
+      },
+      {
+        sense: "市場進入成本",
+        example: "High regulatory expenditure can sometimes discourage new firms from entering the market.",
+        exampleZh: "高昂的合規支出有時會阻礙新公司進入市場。",
+        pos: "n."
+      }
+    ]
+  },
+  "amplitude": {
+    primarySense: "波的振幅",
+    alternatives: [
+      {
+        sense: "地震訊號",
+        example: "Sensors measure the amplitude of seismic waves during an earthquake.",
+        exampleZh: "感測器會測量地震期間地震波的振幅。",
+        pos: "n."
+      }
+    ]
+  },
+  "tourism": {
+    primarySense: "產業收入",
+    alternatives: [
+      {
+        sense: "政策推動",
+        example: "The local government wants to boost tourism in the area.",
+        exampleZh: "當地政府想要促進該地區的觀光業。",
+        pos: "n."
+      },
+      {
+        sense: "環境衝擊",
+        example: "Mass tourism can damage the natural environment.",
+        exampleZh: "過度的大眾旅遊會破壞自然環境。",
+        pos: "n."
+      }
+    ]
+  },
+  "spring": {
+    primarySense: "季節（n.）",
+    alternatives: [
+      {
+        sense: "彈簧（n.）",
+        example: "The spring in the mattress is broken.",
+        exampleZh: "床墊裡的彈簧壞了。",
+        pos: "n."
+      },
+      {
+        sense: "泉水（n.）",
+        example: "They drank fresh water from a mountain spring.",
+        exampleZh: "他們喝了山泉水。",
+        pos: "n."
+      },
+      {
+        sense: "湧現（v.）",
+        example: "New coffee shops spring up everywhere in the city.",
+        exampleZh: "城市裡處處湧現新的咖啡廳。",
+        pos: "phr.v."
+      }
+    ]
+  },
+  "urgent survey": {
+    primarySense: "產品問題",
+    alternatives: [
+      {
+        sense: "顧客滿意度",
+        example: "We need your help with an urgent survey on customer satisfaction.",
+        exampleZh: "我們需要你協助一項關於客戶滿意度的緊急調查。",
+        pos: "n."
+      }
+    ]
+  },
+  "monthly record": {
+    primarySense: "費用紀錄",
+    alternatives: [
+      {
+        sense: "銷售紀錄",
+        example: "The store set a new monthly record for total sales.",
+        exampleZh: "這家店創下了單月總銷售額的新紀錄。",
+        pos: "n."
+      },
+      {
+        sense: "專案追蹤",
+        example: "She checks the monthly record of the project progress.",
+        exampleZh: "她查看專案進度的每月紀錄。",
+        pos: "n."
+      }
+    ]
+  },
+  "dilemma": {
+    primarySense: "職涯抉擇",
+    alternatives: [
+      {
+        sense: "工作與家庭",
+        example: "Many working mothers face a difficult dilemma balancing work and home.",
+        exampleZh: "許多職業婦女面臨工作與家庭難以兼顧的兩難。",
+        pos: "n."
+      },
+      {
+        sense: "醫療倫理",
+        example: "The doctor faced an ethical dilemma regarding patient treatment.",
+        exampleZh: "這位醫師在病患治療上遇到了道德倫理的抉擇。",
+        pos: "n."
+      }
+    ]
+  },
+  "abstraction": {
+    primarySense: "空泛說法",
+    alternatives: [
+      {
+        sense: "抽象概念",
+        example: "Justice and freedom are ideas of abstraction.",
+        exampleZh: "正義與自由都是抽象的概念。",
+        pos: "n."
+      }
+    ]
+  },
+  "conservation": {
+    primarySense: "野生動物保育",
+    alternatives: [
+      {
+        sense: "資源節約",
+        example: "We must promote the conservation of water resources during the drought.",
+        exampleZh: "在乾旱期間，我們必須推廣水資源的節約。",
+        pos: "n."
+      }
+    ]
+  },
+  "chest": {
+    primarySense: "胸部",
+    alternatives: [
+      {
+        sense: "木箱",
+        example: "The old chest is full of books.",
+        exampleZh: "那個舊木箱裝滿了書。",
+        pos: "n."
+      }
+    ]
+  },
+  "technological expenditure": {
+    primarySense: "企業營運",
+    alternatives: [
+      {
+        sense: "政府政策",
+        example: "Higher technological expenditure helps the country build a smart city.",
+        exampleZh: "更高的科技支出有助於該國打造智慧城市。",
+        pos: "n."
+      },
+      {
+        sense: "未來投資",
+        example: "Wise technological expenditure can bring long-term profits.",
+        exampleZh: "明智的科技支出能帶來長遠的利潤。",
+        pos: "n."
+      }
+    ]
+  }
+};
+
+// Rename the generated non-idiomatic phrase in saved built-in cards while
+// preserving each learner's card ID, review history, and schedule.
+var BUILTIN_WORD_RENAMES = {
+  "confidential compliance": "compliance with confidentiality requirements"
+};
+
+// These are individually reviewed examples.  The app uses this list when it
+// opens older built-in cards, so a clearer replacement reaches existing users
+// without changing their review schedule or any custom card.
+var CURATED_EXAMPLE_UPDATES = {
+  "requested service": true,
+  "isolation": true,
+  "regulatory expenditure": true,
+  "factory": true,
+  "important update": true,
+  "technological expenditure": true,
+  "slider": true,
+  "abstraction": true,
+  "conservation": true,
+  "flight schedule": true,
+  "amplitude": true,
+  "tourism": true,
+  "capacitor": true,
+  "dilemma": true,
+  "capability": true,
+  "requested process": true,
+  "spring": true,
+  "urgent survey": true,
+  "monthly record": true,
+  "regular review": true,
+  "safety belt": true,
+  "compliance with confidentiality requirements": true,
+  "chest": true
+};
 
 DECKS.advanced.forEach(function(card){
   PARTS_OF_SPEECH[String(card[0]).trim().toLowerCase()] = card[4];
@@ -15194,6 +15734,7 @@ var EXAMPLE_POS_AUDIT = {
   "executive transaction": "n.",
   "executive distribution": "n.",
   "confidential initiative": "n.",
+  "compliance with confidentiality requirements": "n.",
   "confidential compliance": "n.",
   "confidential framework": "n.",
   "confidential negotiation": "n.",

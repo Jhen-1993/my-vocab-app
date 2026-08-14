@@ -10663,8 +10663,8 @@ DECKS.beginner = [
   [
     "editor",
     "編輯",
-    "We discussed the editor during class.",
-    "我們在課堂上討論了這個「編輯」。",
+    "The editor corrected several errors before the article was published.",
+    "文章出版前，編輯更正了幾個錯誤。",
     "n."
   ],
   [
@@ -10691,8 +10691,8 @@ DECKS.beginner = [
   [
     "factory",
     "工廠",
-    "We discussed the factory during class.",
-    "我們在課堂上討論了這個「工廠」。",
+    "There are many workers in this factory.",
+    "這間工廠裡有很多工人。",
     "n."
   ],
   [
@@ -11152,10 +11152,10 @@ DECKS.beginner = [
   ],
   [
     "spring",
-    "春天；彈簧",
-    "We discussed the spring during class.",
-    "我們在課堂上討論了這個「春天；彈簧」。",
-    "n."
+    "春天；彈簧；泉水；跳躍／湧現",
+    "Spring is my favorite season of the year.",
+    "春天是我一年中最喜歡的季節。",
+    "n.／v."
   ],
   [
     "sun",
@@ -11846,8 +11846,8 @@ DECKS.beginner = [
   [
     "flight schedule",
     "航班時刻表",
-    "We discussed the flight schedule during class.",
-    "我們在課堂上討論了這個「航班時刻表」。",
+    "Please check the flight schedule before you go to the airport.",
+    "請在去機場前先查看航班時刻表。",
     "n."
   ],
   [
@@ -13567,9 +13567,9 @@ DECKS.beginner = [
   ],
   [
     "conservation",
-    "保育；保存",
-    "We discussed the conservation during today's lesson.",
-    "我們在今天的課程中討論了「保育；保存」。",
+    "保育；保存；節約（資源）",
+    "Wildlife conservation is crucial for maintaining biodiversity.",
+    "野生動物保育對於維持生物多樣性至關重要。",
     "n."
   ],
   [
