@@ -63,3 +63,15 @@ and contributors. ECDICT is provided under the MIT License.
 Only selected headwords and concise Chinese glosses are included in this
 project. The original ECDICT dataset and its build tooling are not loaded by
 the published website.
+
+## Tatoeba bilingual example sentences
+
+`data/tatoeba-examples.js` contains selected bilingual example pairs from the
+[Tatoeba Project](https://tatoeba.org/). The source registry stored in that
+file records the sentence ID, author, translation ID, and licence for every
+included pair. Individual entries are licensed either **CC BY 2.0 FR** or
+**CC0 1.0**, as shown in that registry.
+
+These examples are used only to replace older automatic template sentences.
+They are static data in the published site: no visitor data is sent to
+Tatoeba, and the website makes no runtime request to the Tatoeba API.

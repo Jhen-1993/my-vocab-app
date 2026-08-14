@@ -214,6 +214,16 @@
   }
   .flip-card-front{background:var(--panel-alt);}
   .flip-card-back{background:var(--panel-alt); transform:rotateY(180deg); overflow:auto;}
+  /* 多義字卡在圖書館橫跨兩欄，並按例句文字量自動加高。
+     不再把數個不同詞義硬塞進固定高度的小卡。 */
+  .flip-card.multi-sense-card{height:var(--sense-card-height,340px); grid-column:span 2;}
+  .flip-card.multi-sense-card .flip-card-front{justify-content:center; gap:9px;}
+  .flip-card.multi-sense-card .flip-card-back{justify-content:flex-start; padding:15px 18px; overflow:auto;}
+  .flip-card.multi-sense-card .fc-top-row{margin-bottom:6px;}
+  .flip-card.multi-sense-card .fc-zh{font-size:17px; margin:0 0 7px;}
+  .flip-card.multi-sense-card .fc-example{font-size:13px; line-height:1.6;}
+  .flip-card.multi-sense-card .fc-example-zh{font-size:11.5px; line-height:1.55; margin-top:4px;}
+  .flip-card.multi-sense-card .fc-example-group + .fc-example-group{margin-top:11px; padding-top:11px;}
   .flip-card.status-new .flip-card-front{background:var(--goose-soft); border-color:var(--goose-border);}
   .flip-card.status-known .flip-card-front{background:var(--mint-soft); border-color:var(--mint);}
   .status-row{margin-bottom:6px;}
@@ -241,6 +251,7 @@
   .fc-example-zh{font-size:10.5px; color:var(--ink-faint); line-height:1.4; margin-top:3px;}
   .fc-example-group + .fc-example-group{margin-top:8px; padding-top:8px; border-top:1px solid rgba(68,121,245,.18);}
   .fc-example-sense{display:inline-flex; align-items:center; margin:0 0 3px; padding:2px 7px; border-radius:999px; background:var(--blue-pale); color:var(--blue-deep); font-family:var(--font-ui); font-size:9px; font-weight:800; letter-spacing:.03em;}
+  .fc-sense-count{display:inline-flex; align-items:center; align-self:flex-start; gap:4px; padding:4px 8px; border-radius:999px; background:var(--lavender-soft); color:var(--blue-deep); font-family:var(--font-ui); font-size:10px; font-weight:800;}
   .fc-example-empty{color:var(--ink-faint); font-weight:400;}
   .hl-word{color:var(--blue-deep);}
   .box-badge{
@@ -502,6 +513,10 @@
     .word-grid{grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px;}
     .flip-card{height:174px;}
     .flip-card-front,.flip-card-back{padding:10px;}
+    .flip-card.multi-sense-card{grid-column:1/-1; min-height:320px;}
+    .flip-card.multi-sense-card .flip-card-back{padding:14px 16px;}
+    .flip-card.multi-sense-card .fc-example{font-size:12.5px;}
+    .flip-card.multi-sense-card .fc-example-zh{font-size:11.5px;}
     .fc-word{font-size:18px;}
     .fc-zh{font-size:14px;}
     .fc-example{font-size:10.5px;}
@@ -547,7 +562,8 @@
     box-shadow:var(--shadow); padding:26px 24px; display:flex; flex-direction:column;
     align-items:center; justify-content:center; text-align:center; gap:12px;
   }
-  .study-card-back{background:var(--yellow-soft); transform:rotateY(180deg); overflow:auto;}
+  /* 預習卡一次只呈現主例句；其他備用句留給後續複習隨機使用，避免卡片內捲動。 */
+  .study-card-back{background:var(--yellow-soft); transform:rotateY(180deg); overflow:hidden;}
   .study-word{font-family:var(--font-display); font-size:30px; color:var(--ink); font-weight:600;}
   .study-flip-hint{font-family:var(--font-ui); font-size:11.5px; color:var(--ink-soft); font-weight:600;}
   .study-zh{font-family:var(--font-display); font-size:22px; color:var(--ink); font-weight:600;}
@@ -634,8 +650,10 @@
 <script src="data/intermediate.js"></script>
 <!-- 以真正單字補回移除的自動拼接片語；必須在 advanced.js 前載入。 -->
 <script src="data/real-word-extension.js"></script>
+<!-- Free, attribution-tracked bilingual examples that replace eligible old template sentences. -->
+<script src="data/tatoeba-examples.js?v=20260814-tatoeba-v1"></script>
 <!-- 版本參數可避免 GitHub Pages 或瀏覽器繼續使用舊的例句資料快取。 -->
-<script src="data/advanced.js?v=20260814-context-v7"></script>
+<script src="data/advanced.js?v=20260814-context-v34"></script>
 <script>
 (function(){
   "use strict";
@@ -685,6 +703,11 @@
   // examples here so learners never have to infer which sense is being used.
   var EXAMPLE_VARIANTS = (typeof window !== "undefined" && window.EXAMPLE_VARIANTS && typeof window.EXAMPLE_VARIANTS === "object")
     ? window.EXAMPLE_VARIANTS : Object.create(null);
+  // Extra sentences with the same meaning are for later review only.  They
+  // are deliberately separate from EXAMPLE_VARIANTS, which controls what is
+  // visibly shown on a card.
+  var REVIEW_EXAMPLE_VARIANTS = (typeof window !== "undefined" && window.REVIEW_EXAMPLE_VARIANTS && typeof window.REVIEW_EXAMPLE_VARIANTS === "object")
+    ? window.REVIEW_EXAMPLE_VARIANTS : Object.create(null);
   var CURATED_EXAMPLE_UPDATES = (typeof window !== "undefined" && window.CURATED_EXAMPLE_UPDATES && typeof window.CURATED_EXAMPLE_UPDATES === "object")
     ? window.CURATED_EXAMPLE_UPDATES : Object.create(null);
   var BUILTIN_WORD_RENAMES = (typeof window !== "undefined" && window.BUILTIN_WORD_RENAMES && typeof window.BUILTIN_WORD_RENAMES === "object")
@@ -719,6 +742,42 @@
     });
     return variants;
   }
+  // Estimate a readable height for the expanded multi-sense card.  The back
+  // remains scrollable only as a safe fallback for unusually long custom text.
+  function getMultiSenseCardHeight(examples){
+    if(!examples || examples.length < 2) return 0;
+    var estimatedLines = 0;
+    examples.forEach(function(item){
+      estimatedLines += item.sense ? 1 : 0;
+      estimatedLines += Math.max(1, Math.ceil(String(item.example || "").length / 32));
+      estimatedLines += item.pos ? 1 : 0;
+      estimatedLines += item.exampleZh ? Math.max(1, Math.ceil(String(item.exampleZh).length / 20)) : 0;
+    });
+    return Math.max(320, 82 + estimatedLines * 19 + (examples.length - 1) * 16);
+  }
+  // Start with the one visible card example, then add same-sense alternatives
+  // only when a later review question is generated.  This keeps cards clean
+  // while still preventing practice from becoming repetitive.
+  function getReviewExamples(word){
+    var key = String(word.en || "").trim().toLowerCase();
+    var variants = getCardExamples(word).slice();
+    var settings = REVIEW_EXAMPLE_VARIANTS[key] || {};
+    var alternatives = Array.isArray(settings.alternatives) ? settings.alternatives : [];
+    alternatives.forEach(function(item){
+      if(!item || !item.example) return;
+      var example = String(item.example);
+      var duplicate = variants.some(function(current){ return current.example === example; });
+      if(!duplicate){
+        variants.push({
+          sense: "",
+          example: example,
+          exampleZh: String(item.exampleZh || ""),
+          pos: String(item.pos || getExamplePartOfSpeech(word.en) || word.pos || "")
+        });
+      }
+    });
+    return variants;
+  }
   function renderCardExamples(word, display){
     var examples = getCardExamples(word);
     if(!examples.length){
@@ -731,7 +790,10 @@
     var exampleClass = isStudy ? "study-example" : "fc-example";
     var posClass = isStudy ? "study-example-pos" : "fc-example-zh";
     var zhClass = isStudy ? "study-example-zh" : "fc-example-zh";
-    return examples.map(function(item){
+    // 預習字卡只顯示主例句，讓單字、中文意思與一句自然英文保持清楚。
+    // 其他備用句仍保留在資料中，複習題會在之後的循環隨機選用它們。
+    var visibleExamples = isStudy ? examples.slice(0, 1) : examples;
+    return visibleExamples.map(function(item){
       return '<div class="' + groupClass + '">' +
         (item.sense ? '<div class="' + senseClass + '">' + escapeHtml(item.sense) + '</div>' : "") +
         '<div class="' + exampleClass + '">' + highlightWord(item.example, word.en) + '</div>' +
@@ -1089,7 +1151,7 @@
   // 存在本輪 queue item 中，因此按提示或重畫畫面時不會突然換句子；
   // 下一次複習建立新 queue 後，才會重新隨機選擇。
   function getReviewExample(w, item){
-    var examples = getCardExamples(w);
+    var examples = getReviewExamples(w);
     if(!examples.length) return null;
     if(examples.length === 1) return examples[0];
     if(!item) return examples[Math.floor(Math.random() * examples.length)];
@@ -1566,8 +1628,16 @@
         var helpBadge = w.helpCount ? '<span class="fc-help">💡×' + w.helpCount + '</span>' : "";
         /* 只有真的使用過提示時才建立頁尾，避免空白區塊佔用字卡空間。 */
         var frontFooter = helpBadge ? '<div class="fc-bottom-row">' + helpBadge + '</div>' : "";
+        // Multi-sense cards use an expanded two-column layout.  Estimate their
+        // height from the examples so each sense gets enough reading space.
+        var cardExamples = getCardExamples(w);
+        var exampleCount = cardExamples.length;
+        var isMultiSense = exampleCount > 1;
+        var multiSenseClass = isMultiSense ? ' multi-sense-card' : "";
+        var multiSenseStyle = isMultiSense ? ' style="--sense-card-height:' + getMultiSenseCardHeight(cardExamples) + 'px"' : "";
+        var senseBadge = isMultiSense ? '<span class="fc-sense-count">✦ ' + exampleCount + ' 種用法</span>' : "";
         var backExample = renderCardExamples(w, "bank");
-        return '<div class="flip-card ' + statusClass + '" data-id="' + w.id + '">' +
+        return '<div class="flip-card ' + statusClass + multiSenseClass + '" data-id="' + w.id + '"' + multiSenseStyle + '>' +
           '<div class="flip-card-inner">' +
             '<div class="flip-card-front">' +
               '<div class="fc-top-row">' +
@@ -1579,6 +1649,7 @@
               '</div>' +
               '<div class="fc-word">' + escapeHtml(w.en) + '</div>' +
               '<span class="pos-tag' + posClass + '">' + escapeHtml(posLabel) + '</span>' +
+              senseBadge +
               frontFooter +
               '<div class="fc-hint">點卡片看意思</div>' +
             '</div>' +
