@@ -652,7 +652,7 @@
 <script src="data/beginner.js?v=20260814-v52"></script>
 <script src="data/intermediate.js"></script>
 <!-- 版本參數可避免 GitHub Pages 或瀏覽器繼續使用舊的整合資料快取。 -->
-<script src="data/advanced.js?v=20260814-bundled-v52"></script>
+<script src="data/advanced.js?v=20260818-bundled-v66"></script>
 <script>
 (function(){
   "use strict";
@@ -1165,13 +1165,102 @@
     }
     return examples[item.exampleIndex];
   }
-  // Match a regular plural as well as the base word. This keeps a sentence
-  // such as "talking in abstractions" grammatically complete after the learner
-  // fills the blank, while the card itself remains filed under "abstraction".
+  // Fill-in-the-blank must recognise the form used in the example sentence,
+  // not just the dictionary headword.  For example, a card filed as "advise"
+  // should still blank "advised", and "look forward to" should blank
+  // "looking forward to".  This covers common inflections without changing
+  // the stored word or any review schedule.
+  function appendUniqueWordForm(forms, value){
+    value = String(value || "").trim();
+    if(!value) return;
+    var normalized = value.toLowerCase();
+    if(!forms.some(function(item){ return item.toLowerCase() === normalized; })){
+      forms.push(value);
+    }
+  }
+  function getRegularWordForms(token){
+    var base = String(token || "").trim().toLowerCase();
+    var forms = [];
+    if(!/^[a-z]+$/i.test(base)) return forms;
+    appendUniqueWordForm(forms, base);
+
+    // Noun/adjective plural or third-person singular.
+    if(/[^aeiou]y$/i.test(base)) appendUniqueWordForm(forms, base.slice(0, -1) + "ies");
+    else if(/(?:s|x|z|ch|sh)$/i.test(base)) appendUniqueWordForm(forms, base + "es");
+    else if(/fe$/i.test(base)) appendUniqueWordForm(forms, base.slice(0, -2) + "ves");
+    else if(/f$/i.test(base)) appendUniqueWordForm(forms, base.slice(0, -1) + "ves");
+    else appendUniqueWordForm(forms, base + "s");
+
+    // Regular past tense and present participle.
+    var doubled = /[^aeiou][aeiou][^aeiouwxy]$/i.test(base);
+    if(/e$/i.test(base)) appendUniqueWordForm(forms, base + "d");
+    else if(/[^aeiou]y$/i.test(base)) appendUniqueWordForm(forms, base.slice(0, -1) + "ied");
+    else {
+      // Keep the undoubled spelling as well: longer verbs such as consider,
+      // offer, and happen do not double their final consonant.
+      if(doubled) appendUniqueWordForm(forms, base + base.charAt(base.length - 1) + "ed");
+      appendUniqueWordForm(forms, base + "ed");
+    }
+    if(/ie$/i.test(base)) appendUniqueWordForm(forms, base.slice(0, -2) + "ying");
+    else if(/e$/i.test(base)) appendUniqueWordForm(forms, base.slice(0, -1) + "ing");
+    else {
+      if(doubled) appendUniqueWordForm(forms, base + base.charAt(base.length - 1) + "ing");
+      appendUniqueWordForm(forms, base + "ing");
+    }
+    return forms;
+  }
+  function getPromptWordForms(word){
+    var text = String(word || "").trim().toLowerCase();
+    var forms = [];
+    var irregular = {
+      "be": ["am", "is", "are", "was", "were", "been", "being"],
+      "become": ["became"], "break": ["broke", "broken"],
+      "bring": ["brought"], "choose": ["chose", "chosen"],
+      "come": ["came"], "do": ["did", "done", "doing"],
+      "draw": ["drew", "drawn"], "drink": ["drank", "drunk"],
+      "drive": ["drove", "driven"], "eat": ["ate", "eaten"],
+      "fall": ["fell", "fallen"], "feel": ["felt"], "find": ["found"],
+      "fly": ["flew", "flown"], "forget": ["forgot", "forgotten"],
+      "get": ["got", "gotten"], "give": ["gave", "given"],
+      "go": ["went", "gone"], "grow": ["grew", "grown"],
+      "have": ["has", "had", "having"], "hear": ["heard"], "hold": ["held"],
+      "keep": ["kept"], "know": ["knew", "known"], "leave": ["left"],
+      "lose": ["lost"], "make": ["made", "making"], "meet": ["met"],
+      "pay": ["paid"], "run": ["ran"], "say": ["said"], "see": ["saw", "seen"],
+      "send": ["sent"], "shine": ["shone"], "speak": ["spoke", "spoken"],
+      "spend": ["spent"], "stand": ["stood"], "swim": ["swam", "swum"],
+      "take": ["took", "taken"], "teach": ["taught"], "think": ["thought"],
+      "wear": ["wore", "worn"], "weave": ["wove", "woven"], "win": ["won"],
+      "write": ["wrote", "written"], "person": ["people"], "tooth": ["teeth"]
+    };
+    // A slash in a headword explicitly denotes alternatives, e.g. person／people.
+    var alternatives = text.split(/\s*\uFF0F\s*/);
+    alternatives.forEach(function(base){
+      if(!base || /\.\.\.|\bsb\.?\b|\bsth\.?\b/i.test(base)) return;
+      appendUniqueWordForm(forms, base);
+      if(base.indexOf(" ") === -1){
+        getRegularWordForms(base).forEach(function(item){ appendUniqueWordForm(forms, item); });
+        (irregular[base] || []).forEach(function(item){ appendUniqueWordForm(forms, item); });
+        return;
+      }
+      var words = base.split(/\s+/);
+      var first = words[0];
+      var last = words[words.length - 1];
+      // Verb phrases: take up → takes/took/taking up.
+      getRegularWordForms(first).concat(irregular[first] || []).forEach(function(item){
+        appendUniqueWordForm(forms, [item].concat(words.slice(1)).join(" "));
+      });
+      // Noun phrases: ticket machine → ticket machines.
+      getRegularWordForms(last).slice(0, 2).forEach(function(item){
+        appendUniqueWordForm(forms, words.slice(0, -1).concat([item]).join(" "));
+      });
+    });
+    return forms.sort(function(a, b){ return b.length - a.length; });
+  }
   function getPromptWordRegExp(word){
-    var text = String(word || "").trim();
-    var optionalPlural = text.indexOf(" ") === -1 && !/s$/i.test(text) ? "s?" : "";
-    return new RegExp("\\b" + escapeRegExp(text) + optionalPlural + "\\b", "i");
+    var forms = getPromptWordForms(word);
+    if(!forms.length) throw new Error("No blankable word form");
+    return new RegExp("\\b(?:" + forms.map(escapeRegExp).join("|") + ")\\b", "i");
   }
   // 優先用例句挖空出題；沒有例句時退回「中文意思＋字首提示」模式。
   function buildPrompt(w, selectedExample){
@@ -1190,6 +1279,12 @@
       var htmlSentence = escapeHtml(exampleText).replace(re,
         '<span class="blank-slot">&nbsp;</span>');
       return { kind: "sentence", html: htmlSentence, hint: hintText, zhSentence: exampleZh || "", answer: matchedAnswer };
+    }
+    // A few imported headwords are intentionally written as patterns (such as
+    // "either ... or") and cannot safely be turned into one blank.  Keep the
+    // example visible instead of discarding it and falling back to Chinese only.
+    if(exampleText){
+      return { kind: "context", html: escapeHtml(exampleText), hint: hintText, zhSentence: exampleZh || "", answer: w.en };
     }
     return { kind: "meaning", zh: w.zh, hint: hintText };
   }
@@ -1389,12 +1484,12 @@
     var itemLabel = item.bonus ? " · 額外練習" : (item.redrill ? " · 當日加強複習" : " · 到期複習");
 
     var promptHtml;
-    if(prompt.kind === "sentence"){
+    if(prompt.kind === "sentence" || prompt.kind === "context"){
       var zhLine = prompt.zhSentence
         ? '<div class="sentence-zh">' + escapeHtml(prompt.zhSentence) + '</div>'
         : '<div class="sentence-zh sentence-zh-fallback">（' + escapeHtml(w.zh) + '）</div>';
       promptHtml =
-        '<div class="prompt-kind">例句填空 · Fill in the blank</div>' +
+        '<div class="prompt-kind">' + (prompt.kind === "sentence" ? "例句填空 · Fill in the blank" : "例句提示 · Context question") + '</div>' +
         '<div class="sentence">' + prompt.html + '</div>' +
         zhLine;
     } else {
