@@ -9243,6 +9243,308 @@ Object.keys(BEGINNER_SOURCE_RESTORED_EXAMPLES).forEach(function(word){
   }
 });
 
+// Natural example restoration — batch 05.  Every entry below is a
+// word-specific context, never a category-based fill-in-the-blank sentence.
+Object.assign(CURATED_NATURAL_EXAMPLES, {
+  "censorship": ["The film was delayed because of government censorship.", "這部電影因政府審查而延後上映。"],
+  "certainty": ["There is no certainty that the weather will improve tomorrow.", "無法確定明天天氣會變好。"],
+  "chairman": ["The chairman opened the meeting with a brief welcome.", "主席以簡短的歡迎詞揭開會議序幕。"],
+  "chalet": ["They rented a chalet in the mountains for the weekend.", "他們租了一間山間小屋度過週末。"],
+  "championship": ["Our school team won the regional championship.", "我們學校的隊伍贏得區域冠軍賽。"],
+  "chapel": ["The couple chose a small chapel for their wedding.", "這對新人選了一間小教堂舉行婚禮。"],
+  "chassis": ["The mechanic inspected the car's chassis for damage.", "技師檢查汽車底盤是否受損。"],
+  "chauffeur": ["The chauffeur waited outside the hotel with the car.", "司機開著車在飯店外等候。"],
+  "checkpoint": ["Drivers had to stop at a checkpoint near the border.", "駕駛必須在邊境附近的檢查站停車。"],
+  "chick": ["The chick followed its mother across the yard.", "小雞跟著母雞穿過院子。"],
+  "chief financial officer": ["The chief financial officer presented the annual budget to the board.", "財務長向董事會說明年度預算。"],
+  "chipset": ["This motherboard uses a chipset designed for fast processing.", "這塊主機板使用專為快速處理而設計的晶片組。"],
+  "christianity": ["Christianity has influenced art and architecture for centuries.", "基督教數世紀以來影響了藝術與建築。"],
+  "circuitry": ["The repair shop replaced the damaged circuitry inside the camera.", "維修店更換了相機內部損壞的電路系統。"],
+  "circulation": ["Regular walking improves blood circulation in the legs.", "規律步行能改善腿部的血液循環。"],
+  "citation": ["Please include a citation for every source you use.", "請為每一個使用的資料來源附上引用。"],
+  "classification": ["The library uses a clear classification system for its books.", "圖書館用清楚的分類系統整理館藏。"],
+  "clay": ["The children shaped clay into small animals.", "孩子們把黏土塑造成小動物。"],
+  "cleanup": ["Volunteers organized a beach cleanup after the festival.", "節慶結束後，志工組織了一次海灘清理活動。"],
+  "client service": ["Good client service can turn first-time buyers into loyal customers.", "良好的客戶服務能讓首次購買者成為忠實顧客。"],
+  "clipboard": ["The nurse wrote the patient's temperature on a clipboard.", "護理師把病人的體溫寫在寫字板上。"],
+  "cloak": ["He wore a warm cloak during the winter parade.", "他在冬季遊行時披著保暖斗篷。"],
+  "cloth": ["Use a soft cloth to clean the screen.", "請用柔軟的布清潔螢幕。"],
+  "clown": ["The clown made the children laugh at the birthday party.", "小丑讓生日派對上的孩子們開懷大笑。"],
+  "coalition": ["Several parties formed a coalition to support the new law.", "幾個政黨組成聯盟支持新法案。"],
+  "cockpit": ["The pilot checked the instruments in the cockpit before takeoff.", "飛行員在起飛前檢查駕駛艙內的儀器。"],
+  "cocktail": ["She ordered a nonalcoholic cocktail with dinner.", "她晚餐時點了一杯無酒精雞尾酒。"],
+  "cocoa": ["A cup of hot cocoa warmed us after the walk.", "散步後，一杯熱可可讓我們暖和起來。"],
+  "codec": ["The video will not play because the device lacks the correct codec.", "影片無法播放，因為裝置缺少正確的編解碼器。"],
+  "coefficient": ["In the expression 3x, the number 3 is the coefficient.", "在算式 3x 中，數字 3 是係數。"],
+  "cohort": ["The researchers followed a cohort of 500 students for five years.", "研究人員追蹤了一組五百名學生長達五年。"],
+  "coil": ["The copper coil became hot when the machine was running.", "機器運轉時，銅線圈變熱了。"],
+  "collaboration": ["The project required close collaboration between the two teams.", "這個專案需要兩個團隊密切合作。"],
+  "collision": ["The collision at the intersection blocked traffic for an hour.", "路口的碰撞事故讓交通受阻一小時。"],
+  "colony": ["A colony of ants built tunnels beneath the stones.", "一群螞蟻在石頭下築起隧道。"],
+  "combination": ["The combination of rain and wind made the hike difficult.", "雨和風的組合讓健行變得困難。"],
+  "comeback": ["After a knee injury, the player made a strong comeback.", "膝傷後，這名球員強勢復出。"],
+  "comet": ["The comet appeared as a bright streak in the night sky.", "彗星在夜空中像一道明亮的光痕。"],
+  "commander": ["The commander gave the rescue team their next instructions.", "指揮官向救援隊下達下一步指示。"],
+  "commentary": ["The commentary explained the key moments of the match.", "賽事評論解說了比賽的關鍵時刻。"],
+  "commentator": ["The commentator described the action as it happened.", "實況評論員即時描述場上的動作。"],
+  "commitment": ["Her commitment to daily practice helped her improve quickly.", "她對每日練習的投入讓她進步很快。"],
+  "commuter": ["Every commuter on the train was checking a phone.", "火車上的每位通勤者都在看手機。"],
+  "commuting": ["Commuting by train gives him time to read each morning.", "搭火車通勤讓他每天早上有時間閱讀。"],
+  "compatibility": ["Check the compatibility of the charger before you buy it.", "購買前請確認充電器是否相容。"],
+  "competency": ["The job requires competency in both writing and data analysis.", "這份工作需要具備寫作與資料分析能力。"],
+  "compilation": ["This album is a compilation of her early songs.", "這張專輯是她早期歌曲的彙編。"],
+  "completion": ["The completion of the bridge will shorten the trip to town.", "這座橋完成後，前往市區的時間會縮短。"],
+  "complexity": ["The complexity of the instructions confused new users.", "說明內容的複雜性讓新使用者感到困惑。"],
+  "composer": ["The composer wrote music for the film.", "這名作曲家為這部電影寫配樂。"],
+  "composite": ["The boat is made from a lightweight composite material.", "這艘船由輕量複合材料製成。"],
+  "computer keyboard": ["Coffee spilled on my computer keyboard during the meeting.", "會議期間咖啡灑在我的電腦鍵盤上。"],
+  "comrade": ["He wrote a letter to an old comrade from the army.", "他寫信給一位軍中舊夥伴。"],
+  "concierge": ["The concierge recommended a quiet restaurant nearby.", "禮賓員推薦了一間附近安靜的餐廳。"],
+  "condo": ["They bought a condo near the subway station.", "他們在捷運站附近買了一間共管公寓。"],
+  "condominium": ["The condominium has a shared gym and swimming pool.", "這棟公寓大廈有共用健身房和游泳池。"],
+  "conductor": ["Copper is an excellent conductor of electricity.", "銅是極佳的導電體。"],
+  "confession": ["His confession surprised everyone in the room.", "他的坦白讓房間裡的每個人都很驚訝。"],
+  "confidence": ["Practice gave her the confidence to speak in public.", "練習讓她有信心在公開場合發言。"],
+  "configuration": ["The technician changed the printer configuration to fix the problem.", "技師調整印表機設定以解決問題。"]
+});
+
+Object.assign(CURATED_NATURAL_MEANINGS, {
+  "chick": "小雞；雛鳥",
+  "circulation": "循環；流通",
+  "cleanup": "清理；清掃",
+  "commentary": "評論；解說",
+  "competency": "能力；勝任能力",
+  "condo": "共管公寓；公寓住宅"
+});
+
+// Natural example restoration — batch 06.  Each sentence was written for
+// the precise word below; none is generated from a reusable context frame.
+Object.assign(CURATED_NATURAL_EXAMPLES, {
+  "conformity": ["The uniforms were chosen to encourage conformity at the ceremony.", "儀式選用制服以強調一致性。"],
+  "confrontation": ["The disagreement ended in a tense confrontation outside the office.", "這場分歧最後在辦公室外演變成緊張的對峙。"],
+  "confusion": ["The last-minute change caused confusion among the passengers.", "最後一刻的變動讓乘客感到混亂。"],
+  "congregation": ["The congregation gathered quietly before the service began.", "禮拜開始前，會眾安靜地聚集。"],
+  "conjunction": ["In the sentence \"I stayed because it was raining,\" because is a conjunction.", "在句子 I stayed because it was raining 中，because 是連接詞。"],
+  "connectivity": ["Poor connectivity made it difficult to join the video call.", "連線品質不佳使人難以加入視訊通話。"],
+  "conscience": ["His conscience would not let him keep the lost wallet.", "他的良心不允許他留下撿到的錢包。"],
+  "consideration": ["Cost was an important consideration when they chose a new car.", "成本是他們挑選新車時的重要考量。"],
+  "consistency": ["The sauce needs more stirring to reach a smooth consistency.", "這個醬汁需要再攪拌，才能達到滑順的一致質地。"],
+  "constituency": ["The representative met voters in her constituency every weekend.", "這名代表每週末都和選區內的選民見面。"],
+  "constraint": ["Limited space was the main constraint on the kitchen redesign.", "空間有限是廚房重新設計的主要限制。"],
+  "contender": ["She is a strong contender for the national title.", "她是全國冠軍頭銜的有力競爭者。"],
+  "continent": ["Africa is the second-largest continent on Earth.", "非洲是地球上第二大的洲。"],
+  "contributor": ["Each contributor added a chapter to the science book.", "每位投稿者都為這本科學書寫了一個章節。"],
+  "controller": ["Use the controller to adjust the temperature of the machine.", "使用控制器調整機器的溫度。"],
+  "convenience": ["Online banking offers the convenience of paying bills at home.", "網路銀行讓人在家繳費更方便。"],
+  "conveyor": ["Boxes moved slowly along the conveyor at the factory.", "箱子在工廠的輸送帶上緩慢移動。"],
+  "cookie": ["She baked chocolate-chip cookies for the school sale.", "她為學校義賣烤了巧克力豆餅乾。"],
+  "coordination": ["The event required careful coordination between volunteers.", "這場活動需要志工之間仔細協調。"],
+  "copper": ["The electrician used copper wire to repair the circuit.", "電工用銅線修理電路。"],
+  "coral": ["Divers avoided touching the coral near the reef.", "潛水員避免觸碰礁石附近的珊瑚。"],
+  "corporate culture": ["A friendly corporate culture can help new employees settle in.", "友善的企業文化能幫助新員工融入。"],
+  "corporation": ["The corporation opened a new office in Singapore.", "這家公司在新加坡設立新辦公室。"],
+  "corridor": ["Please keep the corridor clear for emergency access.", "請保持走廊暢通，以便緊急通行。"],
+  "corrosion": ["Salt water can cause corrosion on metal surfaces.", "鹽水會使金屬表面腐蝕。"],
+  "corruption": ["The official resigned after allegations of corruption.", "這名官員在被指控貪汙後辭職。"],
+  "counseling": ["The school offers counseling to students under stress.", "學校為壓力大的學生提供諮詢服務。"],
+  "countertop": ["She placed the groceries on the kitchen countertop.", "她把雜貨放在廚房檯面上。"],
+  "county": ["The county repaired the road after the heavy rain.", "大雨後，該郡修復了道路。"],
+  "coupon": ["Use this coupon to get ten percent off your next purchase.", "使用這張優惠券可在下次購物享九折。"],
+  "courthouse": ["The trial will take place at the downtown courthouse.", "審判將在市中心法院進行。"],
+  "cousin": ["My cousin is coming to visit during the holiday.", "我的表親會在假期來拜訪。"],
+  "cowboy": ["The cowboy rode across the field to check the cattle.", "牛仔騎馬穿過田野去查看牛群。"],
+  "cracker": ["She served cheese and crackers before dinner.", "晚餐前她端上起司和餅乾。"],
+  "crane": ["The crane lifted the steel beams onto the new building.", "起重機把鋼梁吊到新建築上。"],
+  "crater": ["The moon's surface is covered with craters.", "月球表面布滿隕石坑。"],
+  "cream": ["She applied cream to her dry hands before bed.", "睡前她在乾燥的手上擦乳霜。"],
+  "creator": ["The creator of the app explained why she built it.", "這個應用程式的創作者說明她為何開發它。"],
+  "credibility": ["The witness lost credibility after changing his story.", "這名證人改變說法後失去可信度。"],
+  "creek": ["We followed a small creek through the forest.", "我們沿著一條小溪穿過森林。"],
+  "cricket": ["He plays cricket with his friends every Sunday.", "他每週日都和朋友打板球。"],
+  "crime": ["The police are investigating the crime.", "警方正在調查這起犯罪案件。"],
+  "critique": ["Her critique of the design offered several useful suggestions.", "她對這份設計的評論提出幾項實用建議。"],
+  "crocodile": ["The crocodile lay still beside the riverbank.", "鱷魚一動也不動地躺在河岸邊。"],
+  "cruiser": ["A police cruiser stopped beside the broken-down car.", "一輛警用巡邏車停在故障汽車旁。"],
+  "curator": ["The curator selected paintings for the museum's new exhibition.", "策展人為博物館的新展覽挑選畫作。"],
+  "curiosity": ["Her curiosity led her to ask many questions about space.", "她的好奇心讓她問了許多關於太空的問題。"],
+  "cushion": ["He placed a cushion on the chair for extra comfort.", "他在椅子上放一個軟墊，坐起來更舒服。"],
+  "custody": ["The judge granted custody of the child to her mother.", "法官將孩子的監護權判給母親。"],
+  "customer care": ["Contact customer care if your order has not arrived.", "若訂單尚未送達，請聯絡顧客服務。"],
+  "customer satisfaction": ["The survey measures customer satisfaction after each visit.", "這份調查測量每次造訪後的顧客滿意度。"],
+  "customization": ["The software allows customization of the home screen.", "這套軟體允許使用者自訂主畫面。"],
+  "cyclist": ["The cyclist wore a helmet on the busy road.", "這名自行車騎士在繁忙道路上戴著安全帽。"],
+  "cylinder": ["The mechanic replaced a damaged cylinder in the engine.", "技師更換引擎中損壞的汽缸。"],
+  "darkness": ["We used a flashlight to find the path in the darkness.", "我們用手電筒在黑暗中找路。"],
+  "data analysis": ["Data analysis revealed a clear increase in online sales.", "資料分析顯示線上銷售明顯增加。"],
+  "data collection": ["The researchers began data collection in April.", "研究人員於四月開始蒐集資料。"],
+  "data security": ["Strong passwords are essential for data security.", "強密碼對資料安全至關重要。"],
+  "dealership": ["She bought her car from a local Toyota dealership.", "她向當地的豐田經銷商買車。"],
+  "debit": ["The bank recorded the payment as a debit from her account.", "銀行將這筆付款記為從她帳戶扣除的借記款項。"]
+});
+
+Object.assign(CURATED_NATURAL_MEANINGS, {
+  "congregation": "會眾；聚集",
+  "consideration": "考量；因素",
+  "constraint": "限制；約束",
+  "contender": "競爭者；參賽者",
+  "contributor": "貢獻者；投稿人；捐款者",
+  "controller": "控制器；管理者",
+  "curator": "策展人；館長",
+  "dealership": "汽車經銷商；經銷據點",
+  "debit": "借記；扣款"
+});
+
+// Natural example restoration — batch 07.  These are individual examples,
+// not variations of a shared sentence pattern.
+Object.assign(CURATED_NATURAL_EXAMPLES, {
+  "debt": ["He is paying off his student debt a little each month.", "他每月償還一部分學生貸款債務。"],
+  "dedication": ["Her dedication to teaching inspired her students.", "她對教學的奉獻精神激勵了學生。"],
+  "deer": ["A deer stepped out of the woods at dusk.", "黃昏時，一隻鹿從樹林裡走出來。"],
+  "defender": ["The defender blocked the shot just before the final whistle.", "終場哨響前，防守球員擋下了那一球。"],
+  "deficiency": ["A vitamin D deficiency can make people feel tired.", "維生素 D 缺乏可能讓人感到疲倦。"],
+  "delegation": ["The delegation met with local leaders during the visit.", "代表團在訪問期間與當地領袖會面。"],
+  "demolition": ["The old stadium is scheduled for demolition next month.", "這座舊體育場預定下個月拆除。"],
+  "denial": ["His denial of the accusation did not convince the judge.", "他否認這項指控，但沒有說服法官。"],
+  "dentistry": ["She chose dentistry because she enjoys helping patients smile.", "她選擇牙醫學，因為喜歡幫助病患重拾笑容。"],
+  "dependence": ["The country wants to reduce its dependence on imported oil.", "該國希望減少對進口石油的依賴。"],
+  "dependency": ["The program has a dependency on an older software library.", "這個程式相依於一個舊版軟體函式庫。"],
+  "depth": ["The divers measured the depth of the lake before entering.", "潛水員下水前測量了湖泊深度。"],
+  "derivation": ["The teacher explained the derivation of the formula step by step.", "老師一步一步說明公式的推導過程。"],
+  "designation": ["Her new designation is senior project manager.", "她的新職稱是資深專案經理。"],
+  "desperation": ["In desperation, he called every hospital in the city.", "在絕望之下，他打電話給城裡每一家醫院。"],
+  "destiny": ["She believes that hard work shapes her destiny.", "她相信努力能塑造自己的命運。"],
+  "detection": ["Early detection of the disease can improve treatment outcomes.", "及早發現疾病能改善治療結果。"],
+  "detector": ["The smoke detector beeped when the battery was low.", "電池電量不足時，煙霧偵測器發出嗶聲。"],
+  "detention": ["He received detention for repeatedly arriving late to class.", "他因多次上課遲到而被留校。"],
+  "developer": ["The developer released an update to fix the app's error.", "開發者發布更新來修正應用程式錯誤。"],
+  "devotion": ["Her devotion to her family was clear to everyone.", "她對家庭的投入大家都看得見。"],
+  "diagram": ["The diagram shows how water moves through the pipes.", "這張圖解顯示水如何流經管線。"],
+  "dial": ["Turn the dial slowly to lower the oven temperature.", "慢慢轉動刻度盤以降低烤箱溫度。"],
+  "dictatorship": ["The country struggled under a military dictatorship for years.", "這個國家多年來在軍事獨裁統治下掙扎。"],
+  "diesel": ["The truck runs on diesel rather than gasoline.", "這輛卡車使用柴油而非汽油。"],
+  "dietitian": ["The dietitian helped him plan healthier meals.", "營養師協助他規劃更健康的餐點。"],
+  "difficulty": ["She had difficulty hearing the speaker in the back row.", "她坐在後排時聽不清楚講者的聲音。"],
+  "digitalization": ["Digitalization has made it easier to store patient records securely.", "數位化讓安全保存病歷資料更容易。"],
+  "dignity": ["The nurse treated every patient with dignity and respect.", "護理師以尊嚴與尊重對待每位病患。"],
+  "dime": ["He found a dime under the sofa cushion.", "他在沙發軟墊下找到一枚十美分硬幣。"],
+  "diner": ["We had breakfast at a small diner by the highway.", "我們在高速公路旁的小餐館吃早餐。"],
+  "diplomat": ["The diplomat worked to improve relations between the two countries.", "這名外交官努力改善兩國關係。"],
+  "disadvantage": ["The main disadvantage of this apartment is its long commute.", "這間公寓最大的缺點是通勤時間很長。"],
+  "disagreement": ["Their disagreement was resolved after a calm discussion.", "他們在冷靜討論後化解了歧見。"],
+  "disappearance": ["The sudden disappearance of the boat worried the coast guard.", "船隻突然失蹤讓海巡人員感到擔憂。"],
+  "disbelief": ["She stared at the message in disbelief.", "她難以置信地盯著那則訊息。"],
+  "discipline": ["The coach taught the team that discipline matters as much as talent.", "教練教導球隊，紀律和天賦一樣重要。"],
+  "discovery": ["The discovery of a new planet excited the scientists.", "發現一顆新行星讓科學家感到振奮。"],
+  "dishwasher": ["Please put the plates in the dishwasher after dinner.", "晚餐後請把盤子放進洗碗機。"],
+  "dismissal": ["His dismissal from the company came as a shock.", "他遭公司解雇令人震驚。"],
+  "disorder": ["The doctor explained that the sleep disorder can be treated.", "醫師說明這種睡眠失調可以治療。"],
+  "dispenser": ["The soap dispenser is empty and needs to be refilled.", "給皂器空了，需要補充。"],
+  "disposal": ["Proper disposal of batteries prevents soil pollution.", "妥善處置電池可防止土壤污染。"],
+  "disruption": ["The storm caused a disruption to train services.", "暴風雨造成火車服務中斷。"],
+  "distinction": ["There is an important distinction between price and value.", "價格與價值之間有重要差異。"],
+  "distortion": ["The mirror's curve created a funny distortion of his face.", "鏡面的彎曲讓他的臉產生有趣的變形。"],
+  "distribution": ["The company improved the distribution of products to rural stores.", "公司改善了產品配送到鄉村商店的方式。"],
+  "diversity": ["The festival celebrates the cultural diversity of the city.", "這個節慶慶祝城市的文化多樣性。"],
+  "dock": ["The fishermen tied their boat to the dock before sunset.", "漁民在日落前把船繫在碼頭。"],
+  "doctrine": ["The party's doctrine shaped its position on education.", "該政黨的教義影響了它對教育的立場。"],
+  "dolphin": ["A dolphin jumped beside the boat.", "一隻海豚在船邊跳躍。"],
+  "domestic market": ["The company built a strong domestic market before exporting overseas.", "這家公司在海外出口前先建立穩固的國內市場。"],
+  "dominance": ["The team's dominance became clear in the second half of the game.", "比賽下半場，這支隊伍的優勢顯而易見。"],
+  "domination": ["The empire maintained domination over the region for decades.", "這個帝國數十年來控制著該地區。"],
+  "donation": ["Her donation paid for new books at the community library.", "她的捐款支付了社區圖書館的新書費用。"],
+  "door": ["Please close the door quietly because the baby is asleep.", "寶寶正在睡覺，請輕輕關門。"],
+  "dosage": ["Follow the dosage on the label when taking the medicine.", "服藥時請遵照標籤上的劑量。"],
+  "drainage": ["The engineers improved the drainage to prevent flooding.", "工程師改善排水系統以防止淹水。"],
+  "drill": ["He used a drill to make a hole in the wall.", "他用鑽頭在牆上鑽了一個洞。"],
+  "drought": ["The drought damaged crops across the region.", "乾旱損害了整個地區的農作物。"]
+});
+
+Object.assign(CURATED_NATURAL_MEANINGS, {
+  "defender": "防守球員；辯護者",
+  "delegation": "代表團；授權",
+  "detector": "偵測器；探測器",
+  "developer": "開發者；開發商",
+  "dial": "刻度盤；撥號盤",
+  "disruption": "中斷；擾亂"
+});
+
+// Natural example restoration — batch 08.  Each entry is independently
+// authored for this headword and its selected sense.
+Object.assign(CURATED_NATURAL_EXAMPLES, {
+  "duck": ["The duck swam across the pond with her ducklings.", "這隻鴨子帶著小鴨游過池塘。"],
+  "duct": ["The technician cleaned dust from the air-conditioning duct.", "技師清除了空調導管中的灰塵。"],
+  "eagle": ["An eagle circled high above the valley.", "一隻老鷹在山谷上空盤旋。"],
+  "earphone": ["She put on one earphone so she could still hear the doorbell.", "她只戴上一邊耳機，這樣仍能聽到門鈴。"],
+  "earring": ["She wore silver earrings to the party.", "她戴著銀耳環去參加派對。"],
+  "economist": ["The economist predicted that prices would rise slowly next year.", "這名經濟學家預測明年物價會緩慢上漲。"],
+  "educator": ["The educator designed lessons that encourage children to ask questions.", "這名教育工作者設計課程，鼓勵孩子提問。"],
+  "effectiveness": ["The study measured the effectiveness of the new treatment.", "這項研究測量新療法的有效性。"],
+  "elasticity": ["The elasticity of the rubber allows the band to stretch.", "橡膠的彈性讓橡皮筋可以拉長。"],
+  "electronics": ["He studies electronics and enjoys building small robots.", "他研讀電子學，也喜歡製作小型機器人。"],
+  "elephant": ["The elephant used its trunk to pick up a branch.", "大象用鼻子撿起一根樹枝。"],
+  "elevation": ["The town's elevation keeps the summer weather cool.", "這座城鎮的海拔讓夏季天氣保持涼爽。"],
+  "elf": ["The story describes an elf who protects the forest.", "這個故事描述一位守護森林的精靈。"],
+  "elite": ["Only elite runners qualified for the final race.", "只有菁英跑者取得決賽資格。"],
+  "embarkation": ["Passengers waited near the gate for embarkation.", "乘客在登機口附近等候登機。"],
+  "embryo": ["The scientist observed the embryo under a microscope.", "科學家在顯微鏡下觀察胚胎。"],
+  "emerald": ["The ring was set with a bright green emerald.", "這枚戒指鑲著一顆明亮的祖母綠。"],
+  "emergence": ["The emergence of online shopping changed how people buy clothes.", "網路購物的出現改變了人們買衣服的方式。"],
+  "emperor": ["The emperor ordered the construction of a new palace.", "皇帝下令建造一座新宮殿。"],
+  "enactment": ["The enactment of the law gave workers stronger protection.", "這項法律的制定為勞工提供更強保障。"],
+  "enclosure": ["Please see the enclosure for a copy of the signed agreement.", "請參閱附件中的已簽署協議副本。"],
+  "encyclopedia": ["The encyclopedia contains articles on history, science, and art.", "這本百科全書收錄歷史、科學和藝術的條目。"],
+  "endpoint": ["The API endpoint returns a list of available products.", "這個 API 端點會回傳可用產品清單。"],
+  "enjoyment": ["Reading for enjoyment helped her relax after work.", "為了享受而閱讀讓她下班後放鬆。"],
+  "enlargement": ["The doctor requested an enlargement of the X-ray image.", "醫師要求放大 X 光影像。"],
+  "entity": ["Each company is treated as a separate legal entity.", "每家公司都被視為獨立的法律實體。"],
+  "equation": ["The teacher wrote the equation on the board.", "老師把方程式寫在黑板上。"],
+  "escort": ["A security officer escorted the visitor to the meeting room.", "一名保全人員護送訪客到會議室。"],
+  "ethic": ["Honesty is an important ethic in scientific research.", "誠實是科學研究的重要道德規範。"],
+  "ethnicity": ["The survey asked about language and ethnicity.", "這份調查詢問語言和族群背景。"],
+  "examiner": ["The examiner asked each candidate to explain an answer.", "考官請每位考生說明一個答案。"],
+  "excavation": ["The excavation uncovered part of an ancient wall.", "挖掘工作發現了一部分古代城牆。"],
+  "excellence": ["The award recognizes excellence in customer service.", "這個獎項表彰卓越的顧客服務。"],
+  "excursion": ["Our class took an excursion to the science museum.", "我們班到科學博物館進行短途校外教學。"],
+  "exemption": ["Students with disabilities may apply for an exemption from the fee.", "身心障礙學生可以申請免繳這項費用。"],
+  "expedition": ["The expedition spent two weeks exploring the desert.", "探險隊花了兩週探索沙漠。"],
+  "explanation": ["His explanation made the complicated rule easier to understand.", "他的說明讓複雜的規則更容易理解。"],
+  "exploitation": ["The report warned against the exploitation of child labor.", "報告警告不要剝削童工。"],
+  "extent": ["We still do not know the full extent of the damage.", "我們仍不知道損害的完整程度。"],
+  "facade": ["The old theater has a beautifully restored stone facade.", "這座老劇院有修復得很漂亮的石造正面。"],
+  "faculty": ["The university faculty voted on the new academic policy.", "大學教職員對新的學術政策進行投票。"],
+  "fairness": ["The referee's fairness earned the players' respect.", "裁判的公平贏得球員的尊重。"],
+  "farmer": ["The farmer checked the fields before the rain arrived.", "下雨前，農夫查看了田地。"],
+  "fascination": ["Her fascination with space began when she was a child.", "她對太空的著迷始於童年。"],
+  "fatigue": ["Long hours of driving can cause fatigue.", "長時間開車可能造成疲勞。"],
+  "federation": ["The national sports federation announced the competition dates.", "全國體育聯盟公布了比賽日期。"],
+  "felony": ["Stealing a car can be charged as a felony.", "偷車可能會被以重罪起訴。"],
+  "fiber": ["Vegetables are a good source of dietary fiber.", "蔬菜是膳食纖維的良好來源。"],
+  "fighter": ["She is a determined fighter who never gives up easily.", "她是一位堅定的鬥士，從不輕易放棄。"],
+  "filmmaker": ["The filmmaker interviewed local residents for the documentary.", "這名電影製作人為紀錄片訪問當地居民。"],
+  "filtration": ["Water filtration removes many harmful particles.", "水過濾能去除許多有害微粒。"],
+  "fireworks": ["Fireworks lit up the sky at the end of the festival.", "節慶結束時，煙火照亮天空。"],
+  "fishery": ["The fishery limits the number of boats during breeding season.", "這個漁業在繁殖季節限制船隻數量。"],
+  "flashlight": ["Keep a flashlight by the bed in case the power goes out.", "把手電筒放在床邊，以防停電。"],
+  "foil": ["Cover the dish with foil before putting it in the oven.", "把菜餚放進烤箱前先用鋁箔蓋住。"],
+  "folder": ["Save the report in the shared folder so everyone can find it.", "請把報告存到共用資料夾，讓每個人都能找到。"],
+  "foliage": ["The autumn foliage turned the hills red and gold.", "秋天的樹葉把山丘染成紅色和金色。"],
+  "footage": ["The news showed footage of the storm from the coast.", "新聞播放了海岸地區暴風雨的影像。"],
+  "foreclosure": ["The family faced foreclosure after missing several mortgage payments.", "這個家庭錯過幾期房貸後面臨法拍。"],
+  "foreigner": ["As a foreigner, he needed help filling out the local forms.", "身為外國人，他需要協助填寫當地表格。"]
+});
+
+Object.assign(CURATED_NATURAL_MEANINGS, {
+  "effectiveness": "有效性；效能",
+  "electronics": "電子學；電子設備",
+  "elite": "菁英；精銳人士",
+  "endpoint": "端點；終點",
+  "ethic": "道德規範；倫理",
+  "faculty": "教職員；院系",
+  "fairness": "公平；公正",
+  "folder": "資料夾；文件夾",
+  "footage": "影片片段；影像素材"
+});
+
 
 // ===== ????????? (advanced.js) =====
 /*
@@ -9250,6 +9552,2040 @@ Object.keys(BEGINNER_SOURCE_RESTORED_EXAMPLES).forEach(function(word){
  * ??????[??, ????, ????, ????, ??]?
  * ??????????????????????
  */
+
+// Restored natural intermediate examples from the user-provided intermediate.js backup.
+// These 498 entries replace the prior automated classroom-template sentences.
+// Earlier hand-curated examples continue to take precedence when they overlap.
+var INTERMEDIATE_SOURCE_RESTORED_EXAMPLES = {
+  "acknowledgment": [
+    "She sent an acknowledgment confirming the payment was received.",
+    "她發送了一份確認函，確認已收到付款。"
+  ],
+  "adaptation": [
+    "The movie is a loose adaptation of the novel.",
+    "這部電影是那本小說相當自由的改編。"
+  ],
+  "administration": [
+    "The new administration promised to lower taxes.",
+    "新政府承諾要降低稅收。"
+  ],
+  "adviser": [
+    "She met with her academic adviser to plan next semester.",
+    "她與學術顧問見面規劃下學期的課程。"
+  ],
+  "affiliation": [
+    "The researcher listed her university affiliation on the paper.",
+    "這位研究員在論文上列出了她的大學隸屬單位。"
+  ],
+  "allocation": [
+    "The budget allocation for marketing was cut this year.",
+    "今年行銷的預算分配被削減了。"
+  ],
+  "assessment": [
+    "The teacher gave a written assessment at the end of the term.",
+    "老師在學期末做了一份書面評估。"
+  ],
+  "authorization": [
+    "He needed his manager's authorization to access the file.",
+    "他需要經理的授權才能存取那份檔案。"
+  ],
+  "collaboration": [
+    "The project succeeded thanks to close collaboration between the two teams.",
+    "這個專案的成功要歸功於兩個團隊之間緊密的合作。"
+  ],
+  "comparison": [
+    "The article makes a comparison between the two smartphones.",
+    "這篇文章對這兩支智慧型手機做了比較。"
+  ],
+  "convenience": [
+    "He values the convenience of shopping online.",
+    "他很重視網路購物的便利。"
+  ],
+  "coordination": [
+    "The event required careful coordination between several departments.",
+    "這場活動需要各部門之間仔細的協調。"
+  ],
+  "corporation": [
+    "She works for a large multinational corporation.",
+    "她在一家大型跨國公司工作。"
+  ],
+  "designation": [
+    "His official designation is Senior Project Manager.",
+    "他的正式職稱是高級專案經理。"
+  ],
+  "digitalization": [
+    "The company invested heavily in digitalization last year.",
+    "這家公司去年大力投資於數位化。"
+  ],
+  "distribution": [
+    "The company handles distribution across the entire region.",
+    "這家公司負責整個地區的配送。"
+  ],
+  "documentation": [
+    "Please keep all the documentation for the tax return.",
+    "報稅時請保留所有的文件記錄。"
+  ],
+  "encouragement": [
+    "Her coach's encouragement helped her finish the race.",
+    "教練的鼓勵幫助她完成了這場比賽。"
+  ],
+  "engagement": [
+    "The new policy increased employee engagement noticeably.",
+    "這項新政策明顯提升了員工的參與度。"
+  ],
+  "enrollment": [
+    "School enrollment dropped slightly this year.",
+    "今年的學校註冊人數略微下降。"
+  ],
+  "evaluation": [
+    "He received a positive evaluation from his supervisor.",
+    "他從主管那裡得到了正面的評價。"
+  ],
+  "finance": [
+    "She studied finance before starting her own investment firm.",
+    "她在創立自己的投資公司之前主修財務。"
+  ],
+  "indication": [
+    "There was no indication that anything was wrong.",
+    "沒有任何跡象顯示有什麼不對勁。"
+  ],
+  "integration": [
+    "The software allows smooth integration with other tools.",
+    "這套軟體能與其他工具順暢地整合。"
+  ],
+  "intention": [
+    "It was never his intention to hurt her feelings.",
+    "傷害她的感情從來不是他的本意。"
+  ],
+  "justification": [
+    "He couldn't offer a reasonable justification for the delay.",
+    "他無法為這次延誤提出合理的理由。"
+  ],
+  "motivation": [
+    "Winning the award boosted her motivation to keep training.",
+    "獲獎提升了她繼續訓練的動機。"
+  ],
+  "possibility": [
+    "There's still a possibility that the trip will be canceled.",
+    "這趟旅行仍有被取消的可能性。"
+  ],
+  "profession": [
+    "Teaching is a demanding but rewarding profession.",
+    "教書是一份要求高但很有成就感的職業。"
+  ],
+  "prohibition": [
+    "The city enforced a strict prohibition on smoking in parks.",
+    "這座城市嚴格禁止在公園吸菸。"
+  ],
+  "quantity": [
+    "The factory produces a large quantity of goods each month.",
+    "這家工廠每個月生產大量的商品。"
+  ],
+  "recommendation": [
+    "The doctor gave a recommendation for a specialist.",
+    "醫生給了一個專科醫師的建議。"
+  ],
+  "reduction": [
+    "The company announced a reduction in staff.",
+    "這家公司宣布了裁員（人員減少）的消息。"
+  ],
+  "rejection": [
+    "He faced several rejections before landing the job.",
+    "他在找到這份工作前遭遇了好幾次拒絕。"
+  ],
+  "reliability": [
+    "Customers trust the brand for its reliability.",
+    "顧客信賴這個品牌的可靠性。"
+  ],
+  "retention": [
+    "The company improved employee retention with better benefits.",
+    "這家公司透過更好的福利提升了員工留任率。"
+  ],
+  "revision": [
+    "She made a final revision to the essay before submitting it.",
+    "她在提交論文前做了最後一次修訂。"
+  ],
+  "selection": [
+    "The store offers a wide selection of cheeses.",
+    "這家店提供多樣的起司選擇。"
+  ],
+  "signature": [
+    "Please provide your signature at the bottom of the form.",
+    "請在表格底部簽名。"
+  ],
+  "significance": [
+    "The discovery has huge significance for medical research.",
+    "這項發現對醫學研究有巨大的重要性。"
+  ],
+  "supervision": [
+    "The children played under the supervision of a lifeguard.",
+    "孩子們在救生員的監督下玩耍。"
+  ],
+  "taxation": [
+    "The new law changed the taxation of small businesses.",
+    "這項新法律改變了小型企業的課稅方式。"
+  ],
+  "treatment": [
+    "He is undergoing treatment for a knee injury.",
+    "他正在接受膝蓋傷勢的治療。"
+  ],
+  "validity": [
+    "Experts questioned the validity of the survey results.",
+    "專家質疑這項調查結果的有效性。"
+  ],
+  "variation": [
+    "There's a wide variation in prices between the two stores.",
+    "這兩家店的價格有很大的變化。"
+  ],
+  "verification": [
+    "The bank requires identity verification for large transactions.",
+    "銀行要求大額交易進行身分驗證。"
+  ],
+  "volume": [
+    "Please turn down the volume on the TV.",
+    "請把電視的音量調小一點。"
+  ],
+  "workstation": [
+    "Each employee has their own workstation in the office.",
+    "每位員工在辦公室都有自己的工作站。"
+  ],
+  "workflow": [
+    "The new software streamlined the team's workflow.",
+    "這套新軟體簡化了團隊的工作流程。"
+  ],
+  "abbreviation": [
+    "ASAP is a common abbreviation for 'as soon as possible.'",
+    "ASAP 是「盡快」的常見縮寫。"
+  ],
+  "abundance": [
+    "The region has an abundance of fresh seafood.",
+    "這個地區擁有豐富的新鮮海鮮。"
+  ],
+  "academy": [
+    "He was accepted into a prestigious music academy.",
+    "他被一所著名的音樂學院錄取了。"
+  ],
+  "acceptance": [
+    "Her acceptance to the university arrived by email.",
+    "她收到大學錄取通知的電子郵件。"
+  ],
+  "accessory": [
+    "She added a bright scarf as an accessory to her outfit.",
+    "她加了一條鮮豔的圍巾作為服裝的配件。"
+  ],
+  "achievement": [
+    "Graduating with honors was a proud achievement for her.",
+    "以優異成績畢業對她來說是一項值得驕傲的成就。"
+  ],
+  "acidity": [
+    "The wine has a pleasant acidity that balances its sweetness.",
+    "這款酒有宜人的酸度，平衡了它的甜味。"
+  ],
+  "adapter": [
+    "He needed an adapter to charge his phone abroad.",
+    "他在國外需要一個轉接器來替手機充電。"
+  ],
+  "addition": [
+    "In addition to her salary, she receives a monthly bonus.",
+    "除了薪水之外，她每個月還會收到一筆獎金。"
+  ],
+  "adhesive": [
+    "He used a strong adhesive to fix the broken vase.",
+    "他用了強力黏著劑修補破掉的花瓶。"
+  ],
+  "adulthood": [
+    "Many people move out of their parents' house in early adulthood.",
+    "許多人在成年初期就搬出父母家。"
+  ],
+  "affection": [
+    "The dog showed great affection toward its new owner.",
+    "那隻狗對新主人展現出深厚的喜愛。"
+  ],
+  "allergy": [
+    "She discovered she had a severe allergy to peanuts.",
+    "她發現自己對花生有嚴重的過敏。"
+  ],
+  "alphabet": [
+    "Children learn the alphabet before they start reading.",
+    "孩子們在開始閱讀前會先學字母表。"
+  ],
+  "analysis": [
+    "The report includes a detailed analysis of last year's sales.",
+    "這份報告包含對去年銷售的詳細分析。"
+  ],
+  "anatomy": [
+    "Medical students spend a full year studying human anatomy.",
+    "醫學生要花整整一年學習人體解剖學。"
+  ],
+  "animation": [
+    "The studio is known for its hand-drawn animation.",
+    "這間工作室以手繪動畫聞名。"
+  ],
+  "architect": [
+    "The architect designed a building shaped like a wave.",
+    "那位建築師設計了一棟形狀像波浪的建築。"
+  ],
+  "argument": [
+    "They had an argument about who should do the dishes.",
+    "他們為了誰該洗碗而起了爭論。"
+  ],
+  "armor": [
+    "The knight's armor was heavy but offered good protection.",
+    "那位騎士的盔甲很重，但能提供良好的防護。"
+  ],
+  "attachment": [
+    "Please open the attachment for the full report.",
+    "請開啟附件查看完整報告。"
+  ],
+  "attraction": [
+    "The waterfall is the town's biggest tourist attraction.",
+    "這座瀑布是這個城鎮最大的觀光景點。"
+  ],
+  "auction": [
+    "The painting sold for a record price at auction.",
+    "那幅畫在拍賣會上以創紀錄的價格賣出。"
+  ],
+  "adolescent": [
+    "The counselor specializes in helping adolescents deal with stress.",
+    "這位輔導員專門協助青少年應對壓力。"
+  ],
+  "anxiety": [
+    "Public speaking still gives her a lot of anxiety.",
+    "公開演講仍然讓她感到很焦慮。"
+  ],
+  "awareness": [
+    "The campaign aims to raise awareness about climate change.",
+    "這項活動旨在提升人們對氣候變遷的認知。"
+  ],
+  "belief": [
+    "It's her belief that hard work always pays off.",
+    "她相信努力工作總會有回報。"
+  ],
+  "confidence": [
+    "Winning the match gave the team more confidence.",
+    "贏得這場比賽讓這支隊伍更有信心。"
+  ],
+  "curiosity": [
+    "Her curiosity led her to explore every corner of the museum.",
+    "她的好奇心讓她探索了博物館的每個角落。"
+  ],
+  "dependence": [
+    "Doctors warned him about his growing dependence on painkillers.",
+    "醫生警告他對止痛藥的依賴日益加深。"
+  ],
+  "disadvantage": [
+    "Being shorter than his opponents was a real disadvantage in the game.",
+    "比對手矮在這場比賽中確實是個缺點。"
+  ],
+  "discipline": [
+    "Playing the violin well takes years of discipline.",
+    "把小提琴拉好需要多年的紀律訓練。"
+  ],
+  "discovery": [
+    "The discovery of the ancient tomb surprised archaeologists.",
+    "這座古墓的發現讓考古學家們驚訝不已。"
+  ],
+  "diversity": [
+    "The company values diversity in its hiring practices.",
+    "這家公司在招聘上重視多樣性。"
+  ],
+  "equality": [
+    "The movement fights for equality in the workplace.",
+    "這場運動為職場平等而努力。"
+  ],
+  "failure": [
+    "He learned more from failure than from success.",
+    "他從失敗中學到的比從成功中學到的還多。"
+  ],
+  "funeral": [
+    "Hundreds of people attended the former mayor's funeral.",
+    "數百人出席了這位前市長的葬禮。"
+  ],
+  "generosity": [
+    "We were touched by the generosity of our neighbors.",
+    "我們被鄰居們的慷慨所感動。"
+  ],
+  "happiness": [
+    "Money alone doesn't guarantee happiness.",
+    "金錢本身無法保證幸福。"
+  ],
+  "heritage": [
+    "The old town is proud of its cultural heritage.",
+    "這座老城以其文化遺產為傲。"
+  ],
+  "independence": [
+    "She moved abroad to gain more independence.",
+    "她搬到國外以獲得更多的獨立。"
+  ],
+  "insecurity": [
+    "His constant need for approval revealed his insecurity.",
+    "他總是需要別人肯定，顯露出他的不安全感。"
+  ],
+  "intelligence": [
+    "The test measures several types of intelligence.",
+    "這項測驗衡量了好幾種智力。"
+  ],
+  "kindness": [
+    "A small act of kindness can brighten someone's whole day.",
+    "一個小小的善意舉動就能點亮某人的一整天。"
+  ],
+  "loneliness": [
+    "Living alone in a new city, she often felt loneliness.",
+    "獨自住在新城市裡，她常常感到孤獨。"
+  ],
+  "loyalty": [
+    "The company rewards customer loyalty with special discounts.",
+    "這家公司用特別折扣來回饋顧客的忠誠。"
+  ],
+  "movement": [
+    "The dancer's every movement was graceful.",
+    "那位舞者的每個動作都很優雅。"
+  ],
+  "necessity": [
+    "Clean water is a basic necessity, not a luxury.",
+    "乾淨的水是基本必需品，而非奢侈品。"
+  ],
+  "poverty": [
+    "The charity works to reduce poverty in rural areas.",
+    "這個慈善機構致力於減少農村地區的貧窮。"
+  ],
+  "satisfaction": [
+    "She smiled with satisfaction after finishing the project.",
+    "完成這個專案後，她滿意地笑了。"
+  ],
+  "similarity": [
+    "There's a striking similarity between the two paintings.",
+    "這兩幅畫之間有著驚人的相似性。"
+  ],
+  "society": [
+    "Technology has changed the way society communicates.",
+    "科技改變了社會溝通的方式。"
+  ],
+  "unity": [
+    "The team showed real unity during the crisis.",
+    "這個團隊在危機中展現出真正的團結。"
+  ],
+  "victory": [
+    "The team celebrated their victory long into the night.",
+    "這支隊伍慶祝勝利慶祝到深夜。"
+  ],
+  "violence": [
+    "The film was criticized for its excessive violence.",
+    "這部電影因暴力過多而受到批評。"
+  ],
+  "wealth": [
+    "He built his wealth through smart investments.",
+    "他透過聰明的投資累積了財富。"
+  ],
+  "wisdom": [
+    "Her grandmother's wisdom guided her through tough decisions.",
+    "她祖母的智慧引導她度過艱難的抉擇。"
+  ],
+  "altitude": [
+    "The plane climbed to a cruising altitude of 35,000 feet.",
+    "飛機爬升到三萬五千英尺的巡航高度。"
+  ],
+  "continent": [
+    "Africa is the second largest continent in the world.",
+    "非洲是世界第二大洲。"
+  ],
+  "electricity": [
+    "The storm knocked out electricity across the whole town.",
+    "這場暴風雨讓整個城鎮的電力都中斷了。"
+  ],
+  "flood": [
+    "Heavy rain caused a flood in the low-lying areas.",
+    "豪雨在低窪地區造成洪水。"
+  ],
+  "geology": [
+    "She's studying geology to understand rock formations.",
+    "她主修地質學以了解岩層的形成。"
+  ],
+  "gravity": [
+    "Astronauts experience almost no gravity in space.",
+    "太空人在太空中幾乎感受不到重力。"
+  ],
+  "hurricane": [
+    "The hurricane forced thousands of residents to evacuate.",
+    "這場颶風迫使數千名居民撤離。"
+  ],
+  "latitude": [
+    "The city is located at a latitude close to the equator.",
+    "這座城市位於接近赤道的緯度。"
+  ],
+  "longitude": [
+    "Sailors used longitude to calculate their position at sea.",
+    "水手利用經度來計算他們在海上的位置。"
+  ],
+  "pollution": [
+    "Air pollution has gotten worse in the city center.",
+    "市中心的空氣污染變得更嚴重了。"
+  ],
+  "rainfall": [
+    "The region gets very little rainfall in summer.",
+    "這個地區夏天的降雨量非常少。"
+  ],
+  "thunder": [
+    "A loud clap of thunder woke the baby up.",
+    "一聲響亮的雷聲把嬰兒吵醒了。"
+  ],
+  "wildlife": [
+    "The park is home to a wide variety of wildlife.",
+    "這座公園棲息著各式各樣的野生動物。"
+  ],
+  "assumption": [
+    "He made the wrong assumption about her intentions.",
+    "他對她的意圲做了錯誤的假設。"
+  ],
+  "citation": [
+    "The paper included a citation for every source.",
+    "這篇論文為每個資料來源都附上了引用。"
+  ],
+  "context": [
+    "The joke only makes sense in context.",
+    "這個笑話只有在特定背景下才說得通。"
+  ],
+  "contrast": [
+    "There's a sharp contrast between the two cities' lifestyles.",
+    "這兩座城市的生活方式有著鮮明的對比。"
+  ],
+  "illustration": [
+    "The book includes an illustration on almost every page.",
+    "這本書幾乎每一頁都有插圖。"
+  ],
+  "interpretation": [
+    "Her interpretation of the poem surprised the teacher.",
+    "她對這首詩的解讀讓老師感到驚訝。"
+  ],
+  "introduction": [
+    "The professor gave a brief introduction before the lecture.",
+    "教授在演講前做了簡短的介紹。"
+  ],
+  "logic": [
+    "His argument followed a clear and simple logic.",
+    "他的論點遵循著清晰簡單的邏輯。"
+  ],
+  "paragraph": [
+    "She rewrote the opening paragraph three times.",
+    "她把開頭段落重寫了三次。"
+  ],
+  "principle": [
+    "Honesty is one of his core principles.",
+    "誠實是他的核心原則之一。"
+  ],
+  "questionnaire": [
+    "Please fill out this short questionnaire before your visit.",
+    "請在來訪前填寫這份簡短的問卷。"
+  ],
+  "broccoli": [
+    "She steamed some broccoli to go with dinner.",
+    "她蒸了一些花椰菜配晚餐。"
+  ],
+  "butter": [
+    "He spread butter on the warm toast.",
+    "他在溫熱的吐司上塗了奶油。"
+  ],
+  "lettuce": [
+    "The salad had fresh lettuce and tomatoes.",
+    "這份沙拉裡有新鮮的萵苣和番茄。"
+  ],
+  "noodle": [
+    "She slurped the noodle happily.",
+    "她開心地吸溜著麵條。"
+  ],
+  "orange": [
+    "He peeled an orange for a quick snack.",
+    "他剝了一顆柳橙當作快速的點心。"
+  ],
+  "pastry": [
+    "The bakery sells fresh pastry every morning.",
+    "這間麵包店每天早上都賣新鮮的糕點。"
+  ],
+  "potato": [
+    "She boiled a potato for the salad.",
+    "她水煮了一顆馬鈴薯做沙拉。"
+  ],
+  "sauce": [
+    "He added extra sauce to his noodles.",
+    "他在麵裡加了額外的醬汁。"
+  ],
+  "strawberry": [
+    "The kids picked strawberry after strawberry in the field.",
+    "孩子們在田裡一顆接一顆地摘草莓。"
+  ],
+  "yogurt": [
+    "She has yogurt with granola for breakfast.",
+    "她早餐吃優格配燕麥片。"
+  ],
+  "absolute": [
+    "There's no absolute answer to this question.",
+    "這個問題沒有絕對的答案。"
+  ],
+  "acceptable": [
+    "Being a few minutes late is generally acceptable.",
+    "遲到幾分鐘通常是可以接受的。"
+  ],
+  "advanced": [
+    "She's taking an advanced course in machine learning.",
+    "她正在修一門機器學習的進階課程。"
+  ],
+  "applicable": [
+    "This rule is applicable to all new employees.",
+    "這條規定適用於所有新進員工。"
+  ],
+  "common": [
+    "It's common for people to feel nervous before a job interview.",
+    "人們在面試前感到緊張是很常見的。"
+  ],
+  "consistent": [
+    "He's been consistent with his workout schedule all year.",
+    "他整年都保持一致的健身計畫。"
+  ],
+  "constant": [
+    "The constant noise from construction kept her awake.",
+    "工地持續不斷的噪音讓她無法入睡。"
+  ],
+  "current": [
+    "The current version of the app fixed most of the bugs.",
+    "目前的應用程式版本修正了大部分的錯誤。"
+  ],
+  "custom": [
+    "It's a local custom to remove your shoes before entering.",
+    "進屋前脫鞋是當地的習俗。"
+  ],
+  "electronic": [
+    "He recycled his old electronic devices.",
+    "他回收了他的舊電子設備。"
+  ],
+  "estimated": [
+    "The estimated cost of the repair was much higher than expected.",
+    "估計的維修費用比預期高出許多。"
+  ],
+  "experienced": [
+    "They hired an experienced chef for the new restaurant.",
+    "他們為新餐廳聘請了一位有經驗的主廚。"
+  ],
+  "frequent": [
+    "He's a frequent visitor to this coffee shop.",
+    "他是這間咖啡店的常客。"
+  ],
+  "functional": [
+    "The old radio is still fully functional.",
+    "那台舊收音機仍然完全可以運作。"
+  ],
+  "governmental": [
+    "The project needs approval from several governmental agencies.",
+    "這項計畫需要多個政府機構的核准。"
+  ],
+  "immediate": [
+    "The doctor said the injury needed immediate attention.",
+    "醫生說這個傷勢需要立即處理。"
+  ],
+  "individual": [
+    "Each individual student received personal feedback.",
+    "每位個別學生都收到了個人化的回饋。"
+  ],
+  "manual": [
+    "He read the manual before assembling the shelf.",
+    "他在組裝層架之前先讀了說明手冊。"
+  ],
+  "national": [
+    "The festival has become a national tradition.",
+    "這個節慶已經成為全國性的傳統。"
+  ],
+  "negative": [
+    "Try not to focus only on the negative side of things.",
+    "試著不要只關注事情負面的一面。"
+  ],
+  "official": [
+    "The official announcement will be made tomorrow.",
+    "官方公告將於明天發布。"
+  ],
+  "optional": [
+    "Attendance at the workshop is optional.",
+    "參加這場工作坊是自由參加，非必要。"
+  ],
+  "rapid": [
+    "The city has seen rapid growth over the past decade.",
+    "這座城市在過去十年間經歷了快速的成長。"
+  ],
+  "regional": [
+    "The company opened a new regional office in the south.",
+    "這家公司在南部開設了一個新的區域辦公室。"
+  ],
+  "relevant": [
+    "Only include information that's relevant to the job.",
+    "只放入與這份工作相關的資訊。"
+  ],
+  "required": [
+    "A valid ID is required to enter the building.",
+    "進入這棟大樓需要有效的身分證件。"
+  ],
+  "residential": [
+    "The area is mostly residential, with few shops.",
+    "這個地區大部分是住宅區，商店很少。"
+  ],
+  "secure": [
+    "Make sure your password is secure.",
+    "請確保你的密碼是安全的。"
+  ],
+  "stable": [
+    "After the surgery, his condition was stable.",
+    "手術後，他的狀況穩定了。"
+  ],
+  "successful": [
+    "She had a successful career as a lawyer.",
+    "她的律師生涯相當成功。"
+  ],
+  "sufficient": [
+    "We didn't have sufficient time to finish the project.",
+    "我們沒有足夠的時間完成這個專案。"
+  ],
+  "actively": [
+    "The company is actively looking for new investors.",
+    "這家公司正積極尋找新的投資人。"
+  ],
+  "actually": [
+    "I actually enjoyed the movie more than I expected.",
+    "我其實比預期的更喜歡這部電影。"
+  ],
+  "additionally": [
+    "Additionally, the report highlights a drop in sales.",
+    "此外，這份報告還指出銷售額下滑。"
+  ],
+  "appropriately": [
+    "Please dress appropriately for the interview.",
+    "請為這場面試穿著得體。"
+  ],
+  "certainly": [
+    "This is certainly one of her best paintings.",
+    "這確實是她最好的畫作之一。"
+  ],
+  "clearly": [
+    "She clearly explained the reasons for the delay.",
+    "她清楚地解釋了延誤的原因。"
+  ],
+  "commonly": [
+    "This herb is commonly used in Thai cooking.",
+    "這種香草常用於泰式料理。"
+  ],
+  "constantly": [
+    "He's constantly checking his phone during meetings.",
+    "他在開會時不斷查看手機。"
+  ],
+  "currently": [
+    "She's currently working on her second novel.",
+    "她目前正在寫她的第二本小說。"
+  ],
+  "directly": [
+    "Please contact the manager directly with any questions.",
+    "有任何問題請直接聯絡經理。"
+  ],
+  "finally": [
+    "After months of practice, she finally passed the exam.",
+    "經過幾個月的練習，她終於通過了考試。"
+  ],
+  "globally": [
+    "The brand is recognized globally.",
+    "這個品牌在全球都受到認可。"
+  ],
+  "independently": [
+    "The two teams worked independently on the same problem.",
+    "這兩個團隊各自獨立處理同一個問題。"
+  ],
+  "initially": [
+    "Initially, she was hesitant to take the job.",
+    "起初，她對於接下這份工作有些猶豫。"
+  ],
+  "internationally": [
+    "The singer became famous internationally after the tour.",
+    "這位歌手在巡演後在國際間走紅。"
+  ],
+  "locally": [
+    "The bakery sources its flour locally.",
+    "這間麵包店的麵粉是在當地採購的。"
+  ],
+  "mainly": [
+    "The class is mainly made up of first-year students.",
+    "這個班級主要是由大一新生組成的。"
+  ],
+  "normally": [
+    "He normally leaves for work around eight.",
+    "他通常八點左右出門上班。"
+  ],
+  "originally": [
+    "The building was originally used as a warehouse.",
+    "這棟建築最初是用作倉庫。"
+  ],
+  "particularly": [
+    "She's particularly good at solving logic puzzles.",
+    "她特別擅長解邏輯謎題。"
+  ],
+  "personally": [
+    "I personally think the second option is better.",
+    "我個人認為第二個選項比較好。"
+  ],
+  "previously": [
+    "He previously worked as a software engineer.",
+    "他之前是一名軟體工程師。"
+  ],
+  "primarily": [
+    "The funding is primarily used for research.",
+    "這筆資金主要用於研究。"
+  ],
+  "professionally": [
+    "She's dealt with difficult clients professionally for years.",
+    "她多年來都以專業的態度應對難搞的客戶。"
+  ],
+  "promptly": [
+    "He promptly replied to every email.",
+    "他迅速回覆了每一封電子郵件。"
+  ],
+  "quickly": [
+    "She quickly finished her homework before dinner.",
+    "她在晚餐前迅速完成了作業。"
+  ],
+  "recently": [
+    "He recently moved to a new apartment.",
+    "他最近搬到了一間新公寓。"
+  ],
+  "regularly": [
+    "She regularly volunteers at the animal shelter.",
+    "她定期在動物收容所擔任志工。"
+  ],
+  "remotely": [
+    "Most of the team now works remotely.",
+    "這個團隊現在大多都遠端工作。"
+  ],
+  "separately": [
+    "The two issues should be handled separately.",
+    "這兩個問題應該分開處理。"
+  ],
+  "seriously": [
+    "He took her advice seriously and changed his plan.",
+    "他認真看待她的建議並改變了計畫。"
+  ],
+  "significantly": [
+    "Sales significantly increased after the ad campaign.",
+    "廣告活動之後，銷售額顯著增加。"
+  ],
+  "similarly": [
+    "Similarly, the second study found no major difference.",
+    "同樣地，第二項研究也沒有發現重大差異。"
+  ],
+  "specifically": [
+    "She asked specifically for a window seat.",
+    "她特別要求了靠窗的座位。"
+  ],
+  "successfully": [
+    "The team successfully launched the app on time.",
+    "這個團隊成功按時推出了這款應用程式。"
+  ],
+  "traditionally": [
+    "The dish is traditionally served during the New Year.",
+    "這道菜傳統上會在新年時上桌。"
+  ],
+  "typically": [
+    "Meetings typically last about an hour.",
+    "會議通常大約持續一個小時。"
+  ],
+  "urgently": [
+    "The hospital urgently needs more blood donors.",
+    "醫院急需更多的捐血者。"
+  ],
+  "virtually": [
+    "Virtually everyone in the office uses the new software now.",
+    "現在辦公室裡幾乎每個人都在使用這套新軟體。"
+  ],
+  "widely": [
+    "The book has been widely translated into other languages.",
+    "這本書已被廣泛翻譯成其他語言。"
+  ],
+  "job opening": [
+    "She applied for a job opening at the design firm.",
+    "她應徵了那間設計公司的一個職缺。"
+  ],
+  "key card": [
+    "He used his key card to open the hotel room.",
+    "他用房卡打開了飯店房間。"
+  ],
+  "luggage allowance": [
+    "Check your luggage allowance before packing for the flight.",
+    "打包行李前請先確認你的行李額度。"
+  ],
+  "membership card": [
+    "She showed her membership card to get the discount.",
+    "她出示會員卡以獲得折扣。"
+  ],
+  "mobile payment": [
+    "Mobile payment has become common at small shops.",
+    "行動支付在小商店已變得很普遍。"
+  ],
+  "network connection": [
+    "A weak network connection kept interrupting the call.",
+    "微弱的網路連線一直中斷通話。"
+  ],
+  "online booking": [
+    "She made an online booking for the restaurant.",
+    "她在線上訂了那間餐廳的位子。"
+  ],
+  "online course": [
+    "He signed up for an online course on photography.",
+    "他報名了一堂攝影的線上課程。"
+  ],
+  "passenger seat": [
+    "She slept in the passenger seat during the long drive.",
+    "在這段長途車程中，她在乘客座上睡著了。"
+  ],
+  "payment method": [
+    "Please select your preferred payment method at checkout.",
+    "請在結帳時選擇你偏好的付款方式。"
+  ],
+  "phone number": [
+    "He wrote his phone number on a napkin.",
+    "他把電話號碼寫在餐巾紙上。"
+  ],
+  "price tag": [
+    "She checked the price tag before adding it to her cart.",
+    "她在放進購物車前先看了一下價格標籤。"
+  ],
+  "product review": [
+    "He read several product reviews before buying the laptop.",
+    "他在買筆電前讀了好幾篇產品評論。"
+  ],
+  "public transport": [
+    "Public transport in the city is fast and reliable.",
+    "這座城市的大眾運輸既快速又可靠。"
+  ],
+  "receipt number": [
+    "You'll need the receipt number to process a refund.",
+    "辦理退款需要收據號碼。"
+  ],
+  "reference number": [
+    "Keep the reference number for your order confirmation.",
+    "請保留你的訂單確認參考編號。"
+  ],
+  "rental car": [
+    "They picked up a rental car at the airport.",
+    "他們在機場取了租賃車。"
+  ],
+  "reservation number": [
+    "Please provide your reservation number at check-in.",
+    "報到時請提供你的訂位編號。"
+  ],
+  "return flight": [
+    "Her return flight was delayed by two hours.",
+    "她的回程班機延誤了兩個小時。"
+  ],
+  "room service": [
+    "They ordered breakfast through room service.",
+    "他們透過客房服務點了早餐。"
+  ],
+  "safety check": [
+    "The mechanic performed a safety check before the road trip.",
+    "技師在這趟公路旅行前做了安全檢查。"
+  ],
+  "sales receipt": [
+    "Keep your sales receipt in case you need to return it.",
+    "請保留銷售收據以備退貨之需。"
+  ],
+  "security check": [
+    "Passengers went through a security check before boarding.",
+    "乘客在登機前經過了安檢。"
+  ],
+  "service desk": [
+    "Ask at the service desk if you have any questions.",
+    "如果有任何問題請到服務櫃檯詢問。"
+  ],
+  "shopping cart": [
+    "She left her shopping cart to grab one more item.",
+    "她離開購物車去拿多一樣東西。"
+  ],
+  "shopping mall": [
+    "They spent the afternoon at the shopping mall.",
+    "他們在購物中心度過了一個下午。"
+  ],
+  "social media": [
+    "She announced the news on social media first.",
+    "她先在社群媒體上宣布了這則消息。"
+  ],
+  "software license": [
+    "The company purchased a software license for the whole team.",
+    "這家公司為整個團隊購買了軟體授權。"
+  ],
+  "staff member": [
+    "Every staff member received a copy of the new policy.",
+    "每位員工都收到了一份新政策的副本。"
+  ],
+  "store manager": [
+    "The store manager approved the refund immediately.",
+    "店長立刻批准了退款。"
+  ],
+  "student id": [
+    "She showed her student ID to get the discount.",
+    "她出示了學生證以獲得折扣。"
+  ],
+  "survey form": [
+    "Please fill out the survey form before you leave.",
+    "請在離開前填寫這份問卷表。"
+  ],
+  "travel insurance": [
+    "She bought travel insurance in case her flight was canceled.",
+    "她買了旅遊保險以防班機被取消。"
+  ],
+  "travel itinerary": [
+    "He shared the travel itinerary with the whole family.",
+    "他把旅行行程表分享給了全家人。"
+  ],
+  "user manual": [
+    "The user manual explains how to reset the device.",
+    "使用手冊解釋了如何重設這個裝置。"
+  ],
+  "waiting area": [
+    "He sat in the waiting area until his name was called.",
+    "他坐在等候區直到叫到他的名字。"
+  ],
+  "work permit": [
+    "She needed a work permit to take the job abroad.",
+    "她需要一張工作許可證才能到國外任職。"
+  ],
+  "academic": [
+    "She has an impressive academic record.",
+    "她有著令人印象深刻的學術成績。"
+  ],
+  "appreciative": [
+    "He was appreciative of all the support he received.",
+    "他很感激自己得到的所有支持。"
+  ],
+  "civil": [
+    "They had a civil discussion despite disagreeing.",
+    "儘管意見不合，他們仍進行了一場有禮貌的討論。"
+  ],
+  "clinical": [
+    "The drug is still in clinical trials.",
+    "這種藥物仍在臨床試驗階段。"
+  ],
+  "decent": [
+    "He earns a decent salary at his new job.",
+    "他在新工作賺得一份不錯的薪水。"
+  ],
+  "defensive": [
+    "The team switched to a more defensive strategy in the second half.",
+    "這支隊伍在下半場轉為較為防禦性的策略。"
+  ],
+  "dramatic": [
+    "There was a dramatic drop in sales last quarter.",
+    "上一季的銷售額出現了顯著的下滑。"
+  ],
+  "ethical": [
+    "The company faced an ethical dilemma over the layoffs.",
+    "這家公司在裁員議題上面臨倫理上的兩難。"
+  ],
+  "experimental": [
+    "The lab is testing an experimental treatment for the disease.",
+    "這間實驗室正在測試這種疾病的實驗性療法。"
+  ],
+  "virtual": [
+    "The conference was held as a virtual event this year.",
+    "這場研討會今年以線上虛擬形式舉辦。"
+  ],
+  "abandon": [
+    "They had to abandon the project due to lack of funding.",
+    "他們因為資金不足而不得不放棄這個專案。"
+  ],
+  "activate": [
+    "Press this button to activate the alarm system.",
+    "按下這個按鈕以啟動警報系統。"
+  ],
+  "approve": [
+    "The board voted to approve the new budget.",
+    "董事會投票核准了新的預算。"
+  ],
+  "classify": [
+    "Scientists classify the animal as a mammal.",
+    "科學家將這種動物歸類為哺乳類。"
+  ],
+  "disagree": [
+    "The two managers disagree on how to handle the client.",
+    "這兩位經理對於如何應對這個客戶有不同意見。"
+  ],
+  "execute": [
+    "The team executed the plan without any major issues.",
+    "團隊順利執行了這項計畫，沒有任何重大問題。"
+  ],
+  "maximize": [
+    "The company wants to maximize profit while cutting costs.",
+    "這家公司想要在降低成本的同時使利潤最大化。"
+  ],
+  "occupy": [
+    "The new tenants will occupy the building next month.",
+    "新的租戶下個月將入住這棟大樓。"
+  ],
+  "persuade": [
+    "She tried to persuade her boss to give her more time.",
+    "她試圖說服老闆給她更多時間。"
+  ],
+  "prioritize": [
+    "He learned to prioritize tasks based on deadlines.",
+    "他學會了根據截止日期來排定任務的優先順序。"
+  ],
+  "propose": [
+    "The committee will propose a new plan next week.",
+    "委員會下週將提出一項新計畫。"
+  ],
+  "reflect": [
+    "Take a moment to reflect on what went wrong.",
+    "花點時間反思一下哪裡出了問題。"
+  ],
+  "regulate": [
+    "The agency regulates food safety across the country.",
+    "這個機構在全國範圍內管理食品安全。"
+  ],
+  "reject": [
+    "The bank rejected his loan application.",
+    "銀行拒絕了他的貸款申請。"
+  ],
+  "relate": [
+    "Her story related closely to my own experience.",
+    "她的故事和我自己的經歷密切相關。"
+  ],
+  "simplify": [
+    "The new interface simplifies the checkout process.",
+    "新的介面簡化了結帳流程。"
+  ],
+  "specify": [
+    "Please specify your dietary restrictions when booking.",
+    "訂位時請明確說明你的飲食限制。"
+  ],
+  "supervise": [
+    "She supervises a team of ten engineers.",
+    "她監督著一支十人的工程師團隊。"
+  ],
+  "vary": [
+    "Prices vary depending on the season.",
+    "價格會依季節而有所不同。"
+  ],
+  "accountability": [
+    "The new policy increases accountability among managers.",
+    "這項新政策提高了管理階層的責任歸屬。"
+  ],
+  "accreditation": [
+    "The hospital received accreditation from a national board.",
+    "這間醫院獲得了一個全國性委員會的認證。"
+  ],
+  "adequacy": [
+    "The report questioned the adequacy of the current safety measures.",
+    "這份報告質疑了目前安全措施的充足性。"
+  ],
+  "assurance": [
+    "She gave her assurance that the project would be finished on time.",
+    "她保證這個專案會準時完成。"
+  ],
+  "chief financial officer": [
+    "The chief financial officer presented the annual budget.",
+    "財務長報告了年度預算。"
+  ],
+  "client service": [
+    "The company improved its client service after the complaints.",
+    "這家公司在收到客訴後改善了客戶服務。"
+  ],
+  "commitment": [
+    "He showed real commitment to finishing the marathon.",
+    "他展現出完成這場馬拉松的真正決心。"
+  ],
+  "conversion": [
+    "The website redesign improved the conversion rate.",
+    "網站重新設計提升了轉換率。"
+  ],
+  "corporate culture": [
+    "The startup prides itself on a relaxed corporate culture.",
+    "這家新創公司以其輕鬆的企業文化自豪。"
+  ],
+  "customer care": [
+    "The company invests heavily in customer care.",
+    "這家公司大力投資於顧客服務。"
+  ],
+  "customer satisfaction": [
+    "Customer satisfaction improved after the new policy.",
+    "實施新政策後，顧客滿意度提升了。"
+  ],
+  "customization": [
+    "The software allows a high level of customization.",
+    "這套軟體允許高度的客製化。"
+  ],
+  "data analysis": [
+    "She specializes in data analysis for marketing teams.",
+    "她專精於為行銷團隊做資料分析。"
+  ],
+  "data security": [
+    "The company updated its data security policy after the breach.",
+    "這家公司在資料外洩事件後更新了資料安全政策。"
+  ],
+  "digital signature": [
+    "Please add your digital signature before submitting the form.",
+    "請在提交表格前加上你的數位簽章。"
+  ],
+  "digital transformation": [
+    "The company began its digital transformation last year.",
+    "這家公司去年開始了數位轉型。"
+  ],
+  "disclosure": [
+    "The company made a full disclosure of its financial records.",
+    "這家公司完全公開了它的財務紀錄。"
+  ],
+  "domestic market": [
+    "The brand focused first on the domestic market.",
+    "這個品牌一開始專注於國內市場。"
+  ],
+  "electronic payment": [
+    "More stores now accept electronic payment.",
+    "現在更多商店接受電子支付。"
+  ],
+  "emergency contact": [
+    "Please list an emergency contact on the form.",
+    "請在表格上填寫一位緊急聯絡人。"
+  ],
+  "equity": [
+    "The company promotes equity across all departments.",
+    "這家公司在所有部門推動公平。"
+  ],
+  "filing": [
+    "The lawyer helped with the filing of the paperwork.",
+    "律師協助處理了文件的申報。"
+  ],
+  "finance department": [
+    "The finance department reviews every expense report.",
+    "財務部門會審查每一份支出報告。"
+  ],
+  "human resource department": [
+    "She sent her resignation letter to the human resource department.",
+    "她把辭職信寄給了人力資源部門。"
+  ],
+  "identification number": [
+    "Enter your identification number to access the account.",
+    "輸入你的身分識別號碼以存取帳戶。"
+  ],
+  "implementation": [
+    "The implementation of the new system took three months.",
+    "這套新系統的實施花了三個月。"
+  ],
+  "innovation": [
+    "The company is known for its innovation in clean energy.",
+    "這家公司以其在潔淨能源方面的創新聞名。"
+  ],
+  "insurance coverage": [
+    "She checked her insurance coverage before the surgery.",
+    "她在手術前確認了保險保障範圍。"
+  ],
+  "inventory control": [
+    "The store improved its inventory control with new software.",
+    "這家店用新軟體改善了庫存管理。"
+  ],
+  "investment plan": [
+    "He met with an advisor to review his investment plan.",
+    "他與顧問見面檢視他的投資計畫。"
+  ],
+  "issue date": [
+    "Check the issue date printed on the ticket.",
+    "請查看票券上印的發行日期。"
+  ],
+  "job applicant": [
+    "The recruiter interviewed five job applicants this week.",
+    "招聘人員這週面試了五位求職者。"
+  ],
+  "job description": [
+    "The job description didn't mention weekend shifts.",
+    "這份職務說明沒有提到週末班。"
+  ],
+  "job offer": [
+    "She accepted the job offer after negotiating her salary.",
+    "她在協商薪水後接受了這份工作邀約。"
+  ],
+  "job requirement": [
+    "Fluency in Japanese is a job requirement for this role.",
+    "流利的日語是這個職位的條件。"
+  ],
+  "launch date": [
+    "The product's launch date was pushed back a month.",
+    "這項產品的推出日期延後了一個月。"
+  ],
+  "legal advice": [
+    "He sought legal advice before signing the contract.",
+    "他在簽合約前尋求了法律建議。"
+  ],
+  "legal document": [
+    "Every legal document must be signed in front of a witness.",
+    "每份法律文件都必須在見證人面前簽署。"
+  ],
+  "license agreement": [
+    "Read the license agreement carefully before clicking accept.",
+    "點擊同意前請仔細閱讀授權協議。"
+  ],
+  "maintenance fee": [
+    "The apartment charges a monthly maintenance fee.",
+    "這間公寓每月收取維護費。"
+  ],
+  "management team": [
+    "The management team met to discuss the budget cuts.",
+    "管理團隊開會討論預算刪減事宜。"
+  ],
+  "manufacturing cost": [
+    "Rising material prices increased the manufacturing cost.",
+    "原物料價格上漲提高了製造成本。"
+  ],
+  "marketing campaign": [
+    "The marketing campaign boosted sales by twenty percent.",
+    "這場行銷活動讓銷售額提升了百分之二十。"
+  ],
+  "network security": [
+    "The company hired an expert to strengthen its network security.",
+    "這家公司聘請了專家來強化網路安全。"
+  ],
+  "occupancy rate": [
+    "The hotel's occupancy rate dropped during the off-season.",
+    "這間飯店的入住率在淡季下降了。"
+  ],
+  "office equipment": [
+    "The company ordered new office equipment for the new hires.",
+    "這家公司為新進員工訂購了新的辦公設備。"
+  ],
+  "office manager": [
+    "The office manager scheduled the maintenance visit.",
+    "辦公室經理安排了這次維修訪視。"
+  ],
+  "online application": [
+    "He submitted his online application before the deadline.",
+    "他在截止日期前送出了線上申請。"
+  ],
+  "operation manual": [
+    "The operation manual explains how to restart the machine.",
+    "操作手冊解釋了如何重新啟動這台機器。"
+  ],
+  "outsourcing": [
+    "The company reduced costs through outsourcing.",
+    "這家公司透過外包降低了成本。"
+  ],
+  "payment deadline": [
+    "The payment deadline for the invoice is next Friday.",
+    "這張發票的付款截止日是下週五。"
+  ],
+  "payroll tax": [
+    "The company calculates payroll tax for every employee.",
+    "這家公司為每位員工計算薪資稅。"
+  ],
+  "personnel department": [
+    "The personnel department handles all new hire paperwork.",
+    "人事部門處理所有新進員工的文件。"
+  ],
+  "policy change": [
+    "The policy change affected how vacation days are calculated.",
+    "這項政策變更影響了假期天數的計算方式。"
+  ],
+  "portfolio management": [
+    "She took a course in portfolio management.",
+    "她修了一堂投資組合管理的課。"
+  ],
+  "position description": [
+    "The position description outlines the required skills.",
+    "這份職位說明列出了所需的技能。"
+  ],
+  "potential customer": [
+    "The salesperson followed up with every potential customer.",
+    "業務員跟進了每一位潛在顧客。"
+  ],
+  "presentation skills": [
+    "The workshop helped her improve her presentation skills.",
+    "這場工作坊幫助她提升了簡報技巧。"
+  ],
+  "process improvement": [
+    "The team suggested several process improvements.",
+    "這個團隊提出了幾項流程改善建議。"
+  ],
+  "product line": [
+    "The company expanded its product line last year.",
+    "這家公司去年拓展了它的產品線。"
+  ],
+  "product launch": [
+    "The product launch attracted a lot of media attention.",
+    "這次產品上市吸引了許多媒體關注。"
+  ],
+  "production cost": [
+    "Automation helped lower the production cost.",
+    "自動化幫助降低了生產成本。"
+  ],
+  "professional development": [
+    "The company offers funding for professional development.",
+    "這家公司提供資金支持員工的專業發展。"
+  ],
+  "project management": [
+    "She earned a certificate in project management.",
+    "她取得了一張專案管理的證書。"
+  ],
+  "project proposal": [
+    "He submitted a detailed project proposal to the board.",
+    "他向董事會提交了一份詳細的專案提案。"
+  ],
+  "promotion campaign": [
+    "The store launched a promotion campaign for the holidays.",
+    "這家店為了節日推出了一場促銷活動。"
+  ],
+  "property insurance": [
+    "They renewed their property insurance before the storm season.",
+    "他們在暴風季前續了財產保險。"
+  ],
+  "proposal deadline": [
+    "The proposal deadline was extended by one week.",
+    "提案截止日延長了一週。"
+  ],
+  "quality standard": [
+    "The factory follows a strict quality standard.",
+    "這家工廠遵循嚴格的品質標準。"
+  ],
+  "quarterly report": [
+    "The CEO presented the quarterly report to investors.",
+    "執行長向投資人報告了季報。"
+  ],
+  "recruitment process": [
+    "The recruitment process took nearly two months.",
+    "這次招募流程花了將近兩個月。"
+  ],
+  "reference check": [
+    "The company completed a reference check before making an offer.",
+    "這家公司在發出工作邀約前完成了推薦人查核。"
+  ],
+  "regional office": [
+    "He was transferred to the regional office in Osaka.",
+    "他被調派到大阪的區域辦公室。"
+  ],
+  "registration fee": [
+    "The registration fee covers meals and materials.",
+    "這筆報名費包含餐點和資料費用。"
+  ],
+  "rejection letter": [
+    "She received a polite rejection letter from the company.",
+    "她收到了那家公司一封有禮貌的拒絕信。"
+  ],
+  "reliability test": [
+    "The product passed every reliability test.",
+    "這項產品通過了每一項可靠度測試。"
+  ],
+  "renewal notice": [
+    "The renewal notice arrived a month before the contract expired.",
+    "續約通知在合約到期前一個月寄達。"
+  ],
+  "research project": [
+    "She's leading a research project on renewable energy.",
+    "她正在主導一項關於再生能源的研究計畫。"
+  ],
+  "resource allocation": [
+    "The manager reviewed resource allocation across departments.",
+    "經理審視了各部門的資源分配。"
+  ],
+  "response time": [
+    "The company improved its customer service response time.",
+    "這家公司改善了客服的回應時間。"
+  ],
+  "retention rate": [
+    "The company's employee retention rate improved this year.",
+    "這家公司今年的員工留任率提升了。"
+  ],
+  "revenue growth": [
+    "The company reported strong revenue growth this quarter.",
+    "這家公司本季報告了強勁的營收成長。"
+  ],
+  "risk management": [
+    "The firm hired a specialist in risk management.",
+    "這家公司聘請了一位風險管理專家。"
+  ],
+  "role description": [
+    "The role description was updated to include new duties.",
+    "這份角色說明已更新，加入了新的職責。"
+  ],
+  "safety regulation": [
+    "The factory follows strict safety regulations.",
+    "這家工廠遵守嚴格的安全規範。"
+  ],
+  "sales commission": [
+    "Her salary includes a sales commission.",
+    "她的薪水包含銷售佣金。"
+  ],
+  "sales report": [
+    "He submitted the monthly sales report on Friday.",
+    "他在星期五提交了月度銷售報告。"
+  ],
+  "sales strategy": [
+    "The team revised their sales strategy for the new year.",
+    "這個團隊為新的一年修訂了銷售策略。"
+  ],
+  "schedule conflict": [
+    "A schedule conflict forced them to cancel the meeting.",
+    "時程衝突迫使他們取消了這場會議。"
+  ],
+  "selection process": [
+    "The selection process for the scholarship is very competitive.",
+    "這項獎學金的遴選流程競爭非常激烈。"
+  ],
+  "service provider": [
+    "They switched to a cheaper internet service provider.",
+    "他們換成了一家較便宜的網路服務供應商。"
+  ],
+  "shipping cost": [
+    "Free shipping cost is offered on orders over fifty dollars.",
+    "訂單滿五十美元可享免運費。"
+  ],
+  "short-term goal": [
+    "Her short-term goal is to save enough for a new car.",
+    "她的短期目標是存夠錢買新車。"
+  ],
+  "signature line": [
+    "Sign your name on the signature line at the bottom.",
+    "請在底部的簽名欄簽名。"
+  ],
+  "software development": [
+    "He has ten years of experience in software development.",
+    "他有十年的軟體開發經驗。"
+  ],
+  "staff training": [
+    "The company scheduled staff training for next Monday.",
+    "這家公司把員工訓練排在下週一。"
+  ],
+  "stock market": [
+    "The stock market fell sharply after the announcement.",
+    "股票市場在這則消息公布後大幅下跌。"
+  ],
+  "storage space": [
+    "The new phone offers more storage space.",
+    "這支新手機提供了更多的儲存空間。"
+  ],
+  "strategic plan": [
+    "The board approved the company's five-year strategic plan.",
+    "董事會核准了公司的五年策略計畫。"
+  ],
+  "submission deadline": [
+    "The submission deadline for the essay is Friday.",
+    "這篇論文的提交截止日是星期五。"
+  ],
+  "supplier contract": [
+    "They renegotiated the supplier contract to lower costs.",
+    "他們重新協商了供應商合約以降低成本。"
+  ],
+  "supply chain management": [
+    "She studied supply chain management in graduate school.",
+    "她在研究所主修供應鏈管理。"
+  ],
+  "survey result": [
+    "The survey result showed most customers were satisfied.",
+    "問卷結果顯示大多數顧客感到滿意。"
+  ],
+  "tax return": [
+    "He filed his tax return a week before the deadline.",
+    "他在截止日前一週申報了報稅表。"
+  ],
+  "team meeting": [
+    "The team meeting was rescheduled to Thursday afternoon.",
+    "團隊會議改到星期四下午。"
+  ],
+  "temporary position": [
+    "She took a temporary position while job hunting.",
+    "她在找工作期間接了一份臨時職位。"
+  ],
+  "tender document": [
+    "The company submitted the tender document before the deadline.",
+    "這家公司在截止前提交了投標文件。"
+  ],
+  "terms of payment": [
+    "The terms of payment were outlined in the contract.",
+    "合約中列出了付款條件。"
+  ],
+  "training program": [
+    "New hires must complete a two-week training program.",
+    "新進員工必須完成一個為期兩週的培訓計畫。"
+  ],
+  "transaction fee": [
+    "The bank charges a small transaction fee for transfers.",
+    "銀行對轉帳收取一筆小額的交易手續費。"
+  ],
+  "transportation cost": [
+    "Rising fuel prices increased the transportation cost.",
+    "油價上漲提高了運輸成本。"
+  ],
+  "travel expense": [
+    "She submitted her travel expense receipts to accounting.",
+    "她把差旅費的收據交給了會計部門。"
+  ],
+  "turnover rate": [
+    "The restaurant has a high staff turnover rate.",
+    "這間餐廳的員工流動率很高。"
+  ],
+  "unit price": [
+    "The unit price drops when you buy in bulk.",
+    "大量購買時單價會下降。"
+  ],
+  "user feedback": [
+    "The app was redesigned based on user feedback.",
+    "這款應用程式根據使用者回饋重新設計。"
+  ],
+  "validity period": [
+    "Check the validity period printed on the coupon.",
+    "請查看優惠券上印的有效期間。"
+  ],
+  "value-added tax": [
+    "The price already includes value-added tax.",
+    "這個價格已經包含加值型營業稅。"
+  ],
+  "vendor management": [
+    "Her job focuses on vendor management for the store.",
+    "她的工作專注於店裡的供應商管理。"
+  ],
+  "verification process": [
+    "The bank's verification process took several days.",
+    "銀行的驗證流程花了好幾天。"
+  ],
+  "volume discount": [
+    "The supplier offers a volume discount for large orders.",
+    "供應商對大宗訂單提供大量折扣。"
+  ],
+  "warranty period": [
+    "The laptop is still within its warranty period.",
+    "這台筆電仍在保固期間內。"
+  ],
+  "workforce planning": [
+    "The department is responsible for long-term workforce planning.",
+    "這個部門負責長期的人力規劃。"
+  ],
+  "workload balance": [
+    "The manager tried to keep a fair workload balance among the team.",
+    "經理試著在團隊之間維持公平的工作量平衡。"
+  ],
+  "workflow automation": [
+    "The company invested in workflow automation to save time.",
+    "這家公司投資工作流程自動化以節省時間。"
+  ],
+  "workplace safety": [
+    "The factory reviewed its workplace safety procedures after the accident.",
+    "這家工廠在事故後檢討了職場安全流程。"
+  ],
+  "criminal": [
+    "He was charged with a criminal offense.",
+    "他被控犯下刑事罪行。"
+  ],
+  "data collection": [
+    "The study relies on careful data collection.",
+    "這項研究仰賴嚴謹的資料蒐集。"
+  ],
+  "democracy": [
+    "The country transitioned to democracy in the 1990s.",
+    "這個國家在一九九零年代轉型為民主政體。"
+  ],
+  "denial": [
+    "His denial of the accusation surprised everyone.",
+    "他對這項指控的否認讓所有人都很驚訝。"
+  ],
+  "diplomacy": [
+    "The crisis was resolved through careful diplomacy.",
+    "這場危機透過謹慎的外交手腕得到解決。"
+  ],
+  "electoral": [
+    "The country is preparing for the electoral season.",
+    "這個國家正在為選舉季做準備。"
+  ],
+  "governance": [
+    "The report criticized the company's poor corporate governance.",
+    "這份報告批評了這家公司糟糕的企業治理。"
+  ],
+  "graduation": [
+    "Her whole family came to her graduation.",
+    "她的全家人都來參加她的畢業典禮。"
+  ],
+  "habitat": [
+    "Deforestation destroyed the animals' natural habitat.",
+    "森林砍伐破壞了這些動物的天然棲地。"
+  ],
+  "histogram": [
+    "The report used a histogram to show the age distribution.",
+    "這份報告用直方圖來呈現年齡分布。"
+  ],
+  "hormone": [
+    "Stress can affect hormone levels in the body.",
+    "壓力會影響體內的荷爾蒙濃度。"
+  ],
+  "hydrogen": [
+    "Hydrogen is the lightest element on the periodic table.",
+    "氫是元素週期表上最輕的元素。"
+  ],
+  "immunity": [
+    "A healthy diet can boost your immunity.",
+    "健康的飲食能提升你的免疫力。"
+  ],
+  "infection": [
+    "The wound became infected because it wasn't cleaned properly.",
+    "這個傷口因為沒有妥善清潔而感染了。"
+  ],
+  "inflation": [
+    "Inflation has made everyday groceries more expensive.",
+    "通貨膨脹讓日常雜貨變得更貴了。"
+  ],
+  "insomnia": [
+    "He struggled with insomnia after the stressful move.",
+    "在那次壓力很大的搬家之後，他一直為失眠所苦。"
+  ],
+  "interaction": [
+    "The app is designed to encourage social interaction.",
+    "這款應用程式的設計是為了鼓勵社交互動。"
+  ],
+  "isolation": [
+    "Working from home for months left her feeling isolation.",
+    "在家工作了好幾個月讓她感到孤立。"
+  ],
+  "journalism": [
+    "She studied journalism before becoming a news anchor.",
+    "她在成為新聞主播之前主修新聞學。"
+  ],
+  "jurisdiction": [
+    "The case falls outside this court's jurisdiction.",
+    "這起案件不在這個法院的管轄權範圍內。"
+  ],
+  "magnetism": [
+    "The experiment demonstrates basic principles of magnetism.",
+    "這項實驗展示了磁力的基本原理。"
+  ],
+  "malnutrition": [
+    "Malnutrition remains a serious problem in the region.",
+    "營養不良在這個地區仍是個嚴重的問題。"
+  ],
+  "mathematics": [
+    "She's always been talented at mathematics.",
+    "她一直都很有數學天分。"
+  ],
+  "medication": [
+    "The doctor adjusted her medication to reduce side effects.",
+    "醫生調整了她的藥物以減少副作用。"
+  ],
+  "migration": [
+    "The documentary follows the annual migration of birds.",
+    "這部紀錄片記錄了候鳥每年的遷移。"
+  ],
+  "ministry": [
+    "The ministry announced new guidelines for schools.",
+    "該部會宣布了學校的新指導方針。"
+  ],
+  "mobility": [
+    "The surgery greatly improved his mobility.",
+    "這次手術大幅改善了他的行動能力。"
+  ],
+  "mortality": [
+    "Better healthcare has lowered infant mortality rates.",
+    "更好的醫療照護降低了嬰兒死亡率。"
+  ],
+  "narrative": [
+    "The film tells its narrative through flashbacks.",
+    "這部電影透過倒敘來講述它的故事。"
+  ],
+  "nationalism": [
+    "The rise of nationalism affected the election results.",
+    "民族主義的興起影響了選舉結果。"
+  ],
+  "neurology": [
+    "He decided to specialize in neurology after medical school.",
+    "他在醫學院畢業後決定專攻神經學。"
+  ],
+  "nutrient": [
+    "Spinach is rich in nutrients like iron.",
+    "菠菜富含鐵等營養素。"
+  ],
+  "opposition": [
+    "The bill faced strong opposition in parliament.",
+    "這項法案在國會遭遇強烈的反對。"
+  ],
+  "pathogen": [
+    "The lab identified the pathogen responsible for the outbreak.",
+    "這間實驗室鑑定出了造成這次疫情的病原體。"
+  ],
+  "perception": [
+    "Advertising can shape the public's perception of a brand.",
+    "廣告能夠塑造大眾對品牌的看法。"
+  ],
+  "pharmacy": [
+    "She picked up her prescription at the pharmacy.",
+    "她在藥局領了她的處方藥。"
+  ],
+  "physician": [
+    "Her physician recommended more exercise.",
+    "她的醫師建議她多做運動。"
+  ],
+  "physiology": [
+    "The course covers the physiology of the human heart.",
+    "這門課程涵蓋人類心臟的生理學。"
+  ],
+  "prediction": [
+    "His prediction about the election turned out to be right.",
+    "他對這次選舉的預測結果證明是對的。"
+  ],
+  "prevention": [
+    "Prevention is often cheaper than treatment.",
+    "預防往往比治療便宜。"
+  ],
+  "probability": [
+    "The probability of rain tomorrow is quite high.",
+    "明天下雨的機率相當高。"
+  ],
+  "radiation": [
+    "The workers wore suits to protect against radiation.",
+    "工人們穿著防護服以抵禦輻射。"
+  ],
+  "recovery": [
+    "Her recovery from surgery took several weeks.",
+    "她從手術中恢復花了好幾週。"
+  ],
+  "reflection": [
+    "The lake offered a perfect reflection of the mountains.",
+    "這座湖完美倒映出山巒的景色。"
+  ],
+  "reform": [
+    "The government promised tax reform this year.",
+    "政府承諾今年進行稅制改革。"
+  ],
+  "rehabilitation": [
+    "He underwent months of rehabilitation after the injury.",
+    "他在受傷後接受了好幾個月的復健。"
+  ],
+  "chopsticks": [
+    "Lucy still can't use chopsticks very well.",
+    "露西還不太會用筷子。"
+  ],
+  "cocktail": [
+    "The bartender mixed a colorful cocktail.",
+    "調酒師調製了一杯色彩繽紛的雞尾酒。"
+  ],
+  "coffee shop": [
+    "They caught up over coffee at a small coffee shop.",
+    "他們在一間小咖啡店喝咖啡敘舊。"
+  ],
+  "commuter": [
+    "The train was packed with commuters during rush hour.",
+    "尖峰時段火車擠滿了通勤者。"
+  ],
+  "computer keyboard": [
+    "He spilled coffee on his computer keyboard.",
+    "他把咖啡灑在電腦鍵盤上了。"
+  ],
+  "cookie": [
+    "She baked a batch of chocolate chip cookies.",
+    "她烤了一批巧克力豆餅乾。"
+  ],
+  "sensation": [
+    "He felt a strange tingling sensation in his arm.",
+    "他手臂感到一陣奇怪的刺痛感。"
+  ],
+  "sociology": [
+    "She's writing her thesis on urban sociology.",
+    "她正在寫關於都市社會學的論文。"
+  ],
+  "species": [
+    "Scientists discovered a new species of frog.",
+    "科學家發現了一種新的青蛙物種。"
+  ],
+  "substance": [
+    "The bag contained an unknown white substance.",
+    "這個袋子裡裝著一種不明的白色物質。"
+  ],
+  "surgery": [
+    "He's recovering well after his knee surgery.",
+    "他膝蓋手術後恢復得很好。"
+  ],
+  "therapy": [
+    "She's been going to therapy since last year.",
+    "她從去年開始接受治療。"
+  ],
+  "transmission": [
+    "The virus's transmission slowed after the lockdown.",
+    "在封鎖措施實施後，這種病毒的傳播速度減緩了。"
+  ],
+  "copper": [
+    "The wires are made of copper.",
+    "這些電線是用銅做的。"
+  ],
+  "coral": [
+    "Rising ocean temperatures have damaged the coral reef.",
+    "海洋溫度上升已對珊瑚礁造成損害。"
+  ],
+  "vaccination": [
+    "Vaccination rates rose sharply after the campaign.",
+    "在這次宣導活動後，疫苗接種率大幅上升。"
+  ],
+  "violation": [
+    "The company was fined for a safety violation.",
+    "這家公司因違反安全規定而被罰款。"
+  ],
+  "absorption": [
+    "This fabric has excellent moisture absorption.",
+    "這種布料有極佳的吸濕性。"
+  ],
+  "acoustic": [
+    "He performed an acoustic version of the song.",
+    "他表演了這首歌的原音版本。"
+  ],
+  "agreement": [
+    "The two companies signed an agreement to work together.",
+    "這兩家公司簽署了合作協議。"
+  ],
+  "championship": [
+    "Their team won the championship for the third year in a row.",
+    "他們的隊伍連續第三年贏得冠軍。"
+  ],
+  "disagreement": [
+    "There was a slight disagreement over the budget.",
+    "他們對預算有些微的意見不合。"
+  ],
+  "actress": [
+    "The actress won an award for her latest film.",
+    "這位女演員因她最新的電影獲獎。"
+  ],
+  "air conditioner": [
+    "He turned on the air conditioner because it was so hot.",
+    "因為天氣太熱，他打開了冷氣機。"
+  ],
+  "amusement park": [
+    "The kids begged to go to the amusement park.",
+    "孩子們央求要去遊樂園。"
+  ],
+  "anchovy": [
+    "The pizza was topped with anchovies and olives.",
+    "這份披薩上放了鯷魚和橄欖。"
+  ],
+  "applause": [
+    "The speech ended with loud applause.",
+    "這場演講在響亮的掌聲中結束。"
+  ],
+  "archery": [
+    "She took up archery as a new hobby.",
+    "她開始學射箭作為新的興趣。"
+  ],
+  "art gallery": [
+    "They spent the afternoon wandering through an art gallery.",
+    "他們花了一個下午在一間藝廊裡閒逛。"
+  ],
+  "asthma": [
+    "Cold weather often triggers his asthma.",
+    "寒冷的天氣常常誘發他的氣喘。"
+  ],
+  "attorney": [
+    "She hired an attorney to review the contract.",
+    "她請了一位律師來審閱這份合約。"
+  ],
+  "backache": [
+    "Sitting all day gave him a bad backache.",
+    "整天坐著讓他背痛得很厲害。"
+  ],
+  "bathroom": [
+    "The bathroom needs a new coat of paint.",
+    "浴室需要重新粉刷一次。"
+  ],
+  "blender": [
+    "She used a blender to make the smoothie.",
+    "她用果汁機打了這杯冰沙。"
+  ],
+  "blouse": [
+    "She wore a white blouse to the interview.",
+    "她穿了一件白色上衣去面試。"
+  ],
+  "booth": [
+    "They set up a small booth at the fair.",
+    "他們在園遊會上設了一個小攤位。"
+  ],
+  "boulevard": [
+    "They strolled along the tree-lined boulevard.",
+    "他們沿著林蔭大道散步。"
+  ],
+  "bracelet": [
+    "She wore a silver bracelet her mother gave her.",
+    "她戴著媽媽送她的一條銀手鍊。"
+  ],
+  "bus driver": [
+    "The bus driver waited patiently for the elderly passenger.",
+    "公車司機耐心等待那位年長的乘客。"
+  ],
+  "cactus": [
+    "He keeps a cactus on his desk because it needs little water.",
+    "他在桌上養了一盆仙人掌，因為它幾乎不太需要澆水。"
+  ],
+  "canvas": [
+    "The artist stretched a fresh canvas before painting.",
+    "這位藝術家在作畫前先撐好了一塊新畫布。"
+  ],
+  "carnival": [
+    "The whole town gathers for the annual carnival.",
+    "全鎮的人都會聚在一起參加一年一度的嘉年華會。"
+  ],
+  "carpenter": [
+    "The carpenter built a wooden table by hand.",
+    "這位木匠親手打造了一張木桌。"
+  ],
+  "carriage": [
+    "Tourists rode in a horse-drawn carriage through the old town.",
+    "遊客乘著馬車穿過老城區。"
+  ],
+  "carrot": [
+    "She chopped a carrot for the soup.",
+    "她切了一根胡蘿蔔放進湯裡。"
+  ],
+  "cellar": [
+    "They store their wine in the cellar.",
+    "他們把酒存放在地窖裡。"
+  ],
+  "champagne": [
+    "They toasted with champagne at midnight.",
+    "他們在午夜時舉杯以香檳慶祝。"
+  ],
+  "charger": [
+    "He forgot to pack his phone charger.",
+    "他忘了帶手機充電器。"
+  ],
+  "chest": [
+    "He felt a tightness in his chest.",
+    "他感到胸口一陣緊繃。"
+  ],
+  "chin": [
+    "He rested his chin on his hands while thinking.",
+    "他思考時用手托著下巴。"
+  ]
+};
+
+Object.keys(INTERMEDIATE_SOURCE_RESTORED_EXAMPLES).forEach(function(word){
+  if(!CURATED_NATURAL_EXAMPLES[word]){
+    CURATED_NATURAL_EXAMPLES[word] = INTERMEDIATE_SOURCE_RESTORED_EXAMPLES[word];
+  }
+});
+
+// Common epidemiology, medical, and academic terms requested for the advanced
+// deck.  The quality pass below supplies the individual example for each one.
+[
+  ["presumed to", "被推定為；被假設為", "v. phr.", "abstract"],
+  ["cigarettes", "香菸", "n.（複數）", "thing"],
+  ["leach from", "從……中溶出；滲出", "v. phr.", "abstract"],
+  ["harsh", "嚴厲的；惡劣的；刺耳的", "adj.", "abstract"],
+  ["temporal", "時間的；世俗的", "adj.", "abstract"],
+  ["pathogenesis", "發病機制；發病過程", "n.", "schoolScience"],
+  ["incubation", "（疾病的）潛伏期；孵化", "n.", "schoolScience"],
+  ["vantage", "視角；有利位置", "n.", "place"],
+  ["secular trend", "長期趨勢", "n. phr.", "abstract"],
+  ["retardation", "遲緩；阻礙；減速", "n.", "abstract"],
+  ["schizophrenia", "思覺失調症", "n.", "bodyHealth"],
+  ["psychiatric", "精神科的；精神病學的", "adj.", "bodyHealth"],
+  ["enumerated", "列舉；枚舉", "v.（過去式／過去分詞）", "abstract"],
+  ["dengue fever", "登革熱", "n.", "bodyHealth"],
+  ["vector", "病媒；媒介", "n.", "bodyHealth"],
+  ["mosquito", "蚊子", "n.", "animal"],
+  ["asbestos", "石綿", "n.", "thing"],
+  ["metric", "指標；公制的", "n.／adj.", "abstract"],
+  ["regardless", "不管；無論；無論如何", "adv.", "abstract"]
+].forEach(function(entry){
+  var exists = REAL_WORD_EXTENSION.some(function(item){
+    return String(item[0] || "").toLowerCase() === String(entry[0]).toLowerCase();
+  });
+  if(!exists) REAL_WORD_EXTENSION.push(entry);
+});
+
 var DECKS = (typeof DECKS === "object" && DECKS) ? DECKS : {};
 var PARTS_OF_SPEECH = (typeof PARTS_OF_SPEECH === "object" && PARTS_OF_SPEECH) ? PARTS_OF_SPEECH : Object.create(null);
 DECKS.advanced = [
@@ -17559,7 +19895,7 @@ if(typeof REAL_WORD_EXTENSION !== "undefined" && Array.isArray(REAL_WORD_EXTENSI
 // Earlier expansion batches used a few repeated filler sentences (for example,
 // "We discussed ... during class").  This pass replaces only those generated
 // sentences.  It leaves hand-written examples and all card scheduling data alone.
-var EXAMPLE_QUALITY_VERSION = "2026-08-14-bundled-v52";
+var EXAMPLE_QUALITY_VERSION = "2026-08-18-bundled-v66";
 var QUALITY_LEGACY_EXAMPLE_PATTERNS = [
   /^We discussed the .+ during class\.$/,
   /^We discussed the .+ during today's lesson\.$/,
@@ -17634,6 +19970,15 @@ function qualityFormat(template, word, meaning){
 // Carefully written examples for every generated verb, adverb, and adjective
 // that previously had a classroom/report filler sentence.
 var QUALITY_WORD_MEANINGS = {
+  "surrogate": "代理人；替代物；代替的",
+  "extent": "程度；範圍",
+  "intensity": "強度；強烈",
+  "ambiguity": "模稜兩可；含糊不清",
+  "latent": "潛伏的；潛在的",
+  "dynamic": "動態的；有活力的",
+  "abuse": "濫用；虐待",
+  "feasible": "可行的；行得通的",
+  "artificial": "人工的；人造的；不自然的；矯飾的",
   "abstraction": "抽象；空泛",
   "conservation": "保育；保存；節約（資源）",
   "tourism": "旅遊業；觀光業",
@@ -17645,6 +19990,14 @@ var QUALITY_WORD_MEANINGS = {
   "regular review": "例行審查"
 };
 var QUALITY_WORD_POS = {
+  "surrogate": "n.／adj.",
+  "extent": "n.",
+  "intensity": "n.",
+  "ambiguity": "n.",
+  "latent": "adj.",
+  "dynamic": "adj.／n.",
+  "abuse": "n.／v.",
+  "feasible": "adj.",
   "cognitive": "adj.",
   "spring": "n.／v.",
   "sandpaper": "n.／v.",
@@ -17653,6 +20006,28 @@ var QUALITY_WORD_POS = {
   "some": "det.／pron."
 };
 var QUALITY_WORD_EXAMPLES = {
+  "surrogate": ["The grandmother became a surrogate mother to the child.", "祖母成了這個孩子的替代母親。"],
+  "presumed to": ["The missing passengers are presumed to be dead.", "失蹤的乘客被推定已經死亡。"],
+  "cigarettes": ["Smoking cigarettes is bad for your health.", "抽香菸對你的健康有害。"],
+  "extent": ["We do not know the full extent of the damage yet.", "我們還不知道損害的全部程度。"],
+  "intensity": ["The light increased in intensity.", "光線的強度增加了。"],
+  "leach from": ["Chemicals can leach from plastics into food.", "化學物質可能會從塑膠中溶出到食物裡。"],
+  "harsh": ["He faces harsh criticism for his mistakes.", "他因為自己的錯誤而面臨嚴厲的批評。"],
+  "ambiguity": ["Please write clearly to avoid ambiguity.", "請寫清楚以避免模稜兩可。"],
+  "temporal": ["The report shows the temporal sequence of events.", "這份報告顯示了事件的時間順序。"],
+  "pathogenesis": ["Scientists are studying the pathogenesis of the virus.", "科學家們正在研究該病毒的發病機制。"],
+  "latent": ["The virus can remain latent in the body for years.", "這種病毒可以在體內潛伏多年。"],
+  "incubation": ["The flu has an incubation period of two days.", "流感有兩天的潛伏期。"],
+  "vantage": ["From this vantage point, we can see the entire city clearly.", "從這個視角，我們可以清楚看見整座城市。"],
+  "secular trend": ["The data shows a secular trend of rising temperatures.", "數據顯示氣溫上升的長期趨勢。"],
+  "dynamic": ["The business world is fast and dynamic.", "商業世界變化快速且充滿活力。"],
+  "retardation": ["Poor nutrition can cause growth retardation.", "營養不良會導致發育遲緩。"],
+  "schizophrenia": ["He was diagnosed with schizophrenia last year.", "他去年被診斷為思覺失調症。"],
+  "abuse": ["Drug abuse is a serious social problem.", "藥物濫用是一個嚴重的社會問題。"],
+  "psychiatric": ["She works in a psychiatric hospital.", "她在一家精神科醫院工作。"],
+  "feasible": ["Your plan sounds feasible and effective.", "你的計畫聽起來可行且有效。"],
+  "enumerated": ["She enumerated all the reasons for her choice.", "她列舉了做出這個選擇的所有原因。"],
+  "artificial": ["The beauty of this painting lies in genuine skill, not in artificial embellishment.", "這幅畫的美來自真實的技藝，而非矯揉造作。"],
   "absence": ["Her absence from the meeting was noticed by everyone.", "大家都注意到她沒有出席會議。"],
   "atom": ["An atom is the smallest unit of a chemical element.", "原子是化學元素的最小單位。"],
   "census": ["The census revealed a declining birth rate.", "人口普查結果顯示出生率正在下降。"],
@@ -17948,6 +20323,32 @@ QUALITY_WORD_EXAMPLES["implementation"] = ["The successful implementation of the
 QUALITY_WORD_EXAMPLES["victory"] = ["They are celebrating their victory.", "他們正在慶祝自己的勝利。"];
 QUALITY_WORD_EXAMPLES["nomination"] = ["The film received four Oscar nominations.", "這部電影獲得了四項奧斯卡提名。"];
 QUALITY_WORD_EXAMPLES["skillet"] = ["She heated some olive oil in a cast-iron skillet.", "她在鑄鐵平底煎鍋裡加熱了一些橄欖油。"];
+
+// "Consideration" has a general decision-making sense and a distinct legal
+// sense.  The study card shows those two meanings separately below.
+QUALITY_WORD_MEANINGS["consideration"] = "考量；考慮；（法律）對價";
+QUALITY_WORD_POS["consideration"] = "n.";
+QUALITY_WORD_EXAMPLES["consideration"] = ["Price is our primary consideration when buying this instrument.", "價格是我們購買這台儀器時最主要的考量。"];
+if(typeof CURATED_NATURAL_MEANINGS !== "undefined"){
+  CURATED_NATURAL_MEANINGS["consideration"] = "考量；考慮；（法律）對價";
+}
+
+// "Metric" is the singular headword; "metrics" is its common plural form.
+QUALITY_WORD_MEANINGS["metric"] = "指標；公制的";
+QUALITY_WORD_POS["metric"] = "n.／adj.";
+QUALITY_WORD_EXAMPLES["metric"] = ["Customer satisfaction is an important metric for our success.", "顧客滿意度是我們成功的重要指標。"];
+
+// The common pattern is "regardless of + noun/pronoun".
+QUALITY_WORD_MEANINGS["regardless"] = "不管；無論；無論如何";
+QUALITY_WORD_POS["regardless"] = "adv.";
+QUALITY_WORD_EXAMPLES["regardless"] = ["My little brother always wears shorts, regardless of the weather.", "不管天氣怎麼樣，我弟弟總是穿短褲。"];
+
+// Epidemiology and environmental-health vocabulary.  These are direct,
+// domain-appropriate examples rather than a generic noun template.
+QUALITY_WORD_EXAMPLES["dengue fever"] = ["Dengue fever is transmitted to humans through mosquito bites.", "登革熱是透過蚊子叮咬傳播給人類的。"];
+QUALITY_WORD_EXAMPLES["vector"] = ["Mosquitoes are the primary vector for this tropical disease.", "蚊子是這種熱帶疾病的主要病媒。"];
+QUALITY_WORD_EXAMPLES["mosquito"] = ["You should wear long sleeves to prevent mosquito bites.", "你應該穿長袖，以防止蚊子叮咬。"];
+QUALITY_WORD_EXAMPLES["asbestos"] = ["Inhaling asbestos fibers can cause serious lung diseases.", "吸入石綿纖維會導致嚴重的肺部疾病。"];
 
 // These pairs give ordinary nouns varied, grammatical contexts.  The second
 // sentence varies as well, so a daily study set does not repeat one frame.
@@ -18412,6 +20813,17 @@ PARTS_OF_SPEECH["sandpaper"] = "n.／v.";
 // useful real-world contexts. The first pair above remains the primary one;
 // the alternatives appear alongside it with a short, clear label.
 var EXAMPLE_VARIANTS = {
+  "artificial": {
+    primarySense: "不自然的；矯飾的",
+    alternatives: [
+      {
+        sense: "人工的；人造的",
+        example: "The lake has artificial waterfalls for tourists.",
+        exampleZh: "這座湖有供遊客觀賞的人工瀑布。",
+        pos: "adj."
+      }
+    ]
+  },
   "atom": {
     primarySense: "科學：化學元素的最小單位",
     alternatives: [
@@ -18831,10 +21243,66 @@ EXAMPLE_VARIANTS["antenna"] = {
   ]
 };
 
+// These are two grammar patterns for the same core adverb.  Display one of
+// each because "regardless of" and standalone "regardless" are both common.
+EXAMPLE_VARIANTS["regardless"] = {
+  primarySense: "adv. 不管；無論（regardless of + 名詞／代名詞）",
+  alternatives: [
+    {
+      sense: "adv. 單獨使用：無論如何；總之",
+      example: "It might rain, but we are going regardless.",
+      exampleZh: "可能會下雨，但我們無論如何都要去。",
+      pos: "adv."
+    }
+  ]
+};
+
+// The adjective refers specifically to the metric system, so keep it as a
+// separate card section from the noun "performance indicator" meaning.
+EXAMPLE_VARIANTS["metric"] = {
+  primarySense: "n. 指標（複數：metrics）",
+  alternatives: [
+    {
+      sense: "adj. 公制的",
+      example: "Most countries in the world use the metric system.",
+      exampleZh: "世界上大多數國家都使用公制。",
+      pos: "adj."
+    }
+  ]
+};
+
+// Keep the legal-contract meaning separate because it is not the same as
+// ordinary "考量" in a decision.
+EXAMPLE_VARIANTS["consideration"] = {
+  primarySense: "考量；考慮",
+  alternatives: [
+    {
+      sense: "（法律）對價",
+      example: "The company paid millions of dollars as consideration for the technology license.",
+      exampleZh: "這家公司支付了數百萬美元，作為取得技術授權的對價。",
+      pos: "n."
+    }
+  ]
+};
+
 // These sentences use the same meaning as the primary card sentence.  They
 // must never be shown as a list on the card, but the review screen can choose
 // one later to give a learner fresh practice in the same word sense.
 var REVIEW_EXAMPLE_VARIANTS = {
+  "consideration": {
+    alternatives: [
+      {
+        example: "All research involving patients must address ethical considerations.",
+        exampleZh: "所有涉及病患的研究都必須納入倫理考量。",
+        pos: "n."
+      },
+      {
+        example: "We must take the mosquito population into consideration when assessing dengue fever risk.",
+        exampleZh: "我們評估登革熱風險時，必須把病媒蚊數量納入考量。",
+        pos: "n."
+      }
+    ]
+  },
   "melody": {
     alternatives: [
       { example: "He played a cheerful melody on the piano.", exampleZh: "他用鋼琴彈奏了一首輕快的旋律。", pos: "n." },
@@ -18953,6 +21421,12 @@ var CURATED_EXAMPLE_UPDATES = {
   "skillet": true
 };
 delete CURATED_EXAMPLE_UPDATES["final training"];
+[
+  "surrogate", "extent", "intensity", "ambiguity", "latent", "dynamic",
+  "abuse", "feasible"
+].forEach(function(word){ CURATED_EXAMPLE_UPDATES[word] = true; });
+CURATED_EXAMPLE_UPDATES["artificial"] = true;
+CURATED_EXAMPLE_UPDATES["consideration"] = true;
 // Prefer everyday Taiwanese wording for the determiner/pronoun "some".
 CURATED_EXAMPLE_UPDATES["some"] = true;
 
