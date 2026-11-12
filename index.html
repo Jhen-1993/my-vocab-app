@@ -2870,9 +2870,13 @@
       ? ' style="--study-sense-card-height:' + Math.max(340, getMultiSenseCardHeight(studyExamples) + 42) + 'px"'
       : "";
     var backContent = renderCardExamples(w, "study");
+    var studyPet = data.companion;
+    var studyStage = BabyCore.summary(studyPet,todayStr(),function(d){return addDays(d,-1);}).index;
+    var studyWelcome = '<div class="study-welcome"><div class="study-baby" aria-hidden="true">'+BabyAvatar.render(studyStage,studyPet.gender)+'</div><div><h2>陪 '+escapeHtml(studyPet.name)+' 認識新單字</h2><p>慢慢翻，一起把英文記起來。</p></div></div>';
+
 
     screen.innerHTML =
-      '<div class="study-wrap">' +
+      '<div class="study-wrap">' + studyWelcome +
         '<div class="study-progress-row">' +
           '<span class="study-progress-label">學習階段 · ' + (studyIndex+1) + ' / ' + studyWords.length + '</span>' +
           '<button class="ghost study-skip" id="study-skip">跳過，直接複習</button>' +
@@ -2933,13 +2937,27 @@
       document.getElementById("main-app").hidden=true;renderStudyScreen();
     }
   });
+  function showInitialScreen(){
+    if(needsStudyToday()){
+      studyWords = buildStudyWords();
+      studyIndex = 0;
+      studyFlipped = false;
+      if(studyWords.length){
+        document.getElementById("main-app").hidden = true;
+        renderStudyScreen();
+        return;
+      }
+    }
+    showMainApp();
+    switchTab("home");
+  }
   loadData().then(function(){
     data.companion = BabyCore.normalize(data.companion);
     // 保存首次抽到的性別，舊帳號即使不需要補新字也會保留。
     return performSave();
   }).then(function(){
     return topUpNewWordsIfNeeded();
-  }).then(function(){showMainApp();switchTab("home");});
+  }).then(function(){showInitialScreen();});
   // Keep daily progress current when the page stays open across midnight.
   var gardenDate=todayStr();
   document.addEventListener("visibilitychange",function(){
