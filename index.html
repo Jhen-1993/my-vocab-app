@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>字卡圖書館 · Word Card Library</title>
+<title>字卡小日子 · 和寶寶一起學英文</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <!-- 英文保留圓潤閱讀感；Noto Sans TC 專責繁體中文，避免不同裝置自動替補的字形不一致。 -->
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Noto+Sans+TC:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -607,26 +607,32 @@
     .study-complete{padding:28px 18px;}
   }
 </style>
+<link rel="stylesheet" href="baby-garden.css">
+<link rel="stylesheet" href="baby-avatar.css">
 </head>
 <body>
 <div class="study-screen" id="study-screen"></div>
 <div class="app" id="main-app" hidden>
   <header class="drawer">
-    <div class="drawer-label">
-      <span class="eyebrow">Spaced Recall System</span>
-      <h1>字卡圖書館</h1>
-      <span class="subtitle">Word Card Library — 借出去的單字，會用複習把它們找回來</span>
-    </div>
+    <div class="brand-row"><span class="brand-mark" aria-hidden="true">♧</span><div class="drawer-label">
+      <span class="eyebrow">LITTLE WORDS, LITTLE WONDERS</span>
+      <h1>字卡小日子</h1>
+      <span class="subtitle">和寶寶一起，把英文慢慢學起來。</span>
+    </div></div><span class="header-note">a little progress, every day. ✦</span>
   </header>
 
   <nav class="tabs">
-    <button data-tab="review" class="active">今日複習 Review</button>
-    <button data-tab="bank">單字庫 Word Bank</button>
-    <button data-tab="speak">口說練習 Speak</button>
-    <button data-tab="stats">學習紀錄 Stats</button>
+    <button data-tab="home" class="active">⌂ 寶寶的小屋</button>
+    <button data-tab="review">今日複習</button>
+    <button data-tab="games">小遊戲</button>
+    <button data-tab="bank">單字收藏</button>
+    <button data-tab="speak">口說練習</button>
+    <button data-tab="stats">學習紀錄</button>
   </nav>
 
-  <section class="panel" id="panel-review"></section>
+  <section class="panel garden-panel" id="panel-home"></section>
+  <section class="panel garden-panel" id="panel-games" hidden></section>
+  <section class="panel" id="panel-review" hidden></section>
   <section class="panel" id="panel-bank" hidden></section>
   <section class="panel" id="panel-speak" hidden></section>
   <section class="panel" id="panel-stats" hidden></section>
@@ -641,7 +647,7 @@
       </div>
     </div>
     <div class="footer-meta">
-      <a class="footer-tool" href="https://jhen-1993.github.io/CramGoose/" target="_blank" rel="noopener noreferrer" title="開啟溫書鵝讀書計畫工具">🦢 溫書鵝 · Study Companion <span aria-hidden="true">↗</span></a>
+      <a class="footer-tool" href="https://jhen-1993.github.io/CramGoose/" target="_blank" rel="noopener noreferrer" title="開啟溫書鵝讀書計畫工具">🦢 溫書鵝 · Study Companion </a>
       <span class="footer-copy">資料只儲存在你自己的帳號下，僅你可見（personal storage）。</span>
       <span class="footer-copyright">© 2026 Jhen-1993 · Personal vocabulary project</span>
     </div>
@@ -653,6 +659,10 @@
 <script src="data/intermediate.js"></script>
 <!-- 版本參數可避免 GitHub Pages 或瀏覽器繼續使用舊的整合資料快取。 -->
 <script src="data/advanced.js?v=20260818-bundled-v66"></script>
+<div id="garden-toast" class="garden-toast" role="status" aria-live="polite" hidden></div>
+<script src="baby-core.js"></script>
+<script src="baby-avatar.js"></script>
+<script src="baby-garden.js"></script>
 <script>
 (function(){
   "use strict";
@@ -825,7 +835,7 @@
   // ---------------- 畫面與學習狀態：只存在目前分頁記憶體 ----------------
   var data = null;      // { words: [...], reviewLog: [...] }
   var loaded = false;
-  var currentTab = "review";
+  var currentTab = "home";
   var bankFilter = "all";
   var bankStatusFilter = "all"; // all | new | known
   var bankPosFilter = "all"; // all | n. | v. | adj. | adv. | prep. | conj. | pron. | quant. | phr.v. | idiom
@@ -892,7 +902,7 @@
 
   // ---------------- 儲存層：優先雲端 Artifact storage，其次瀏覽器 localStorage ----------------
   // 建立新使用者或讀取失敗時使用的最小資料結構。
-  function defaultData(){ return { words: [], reviewLog: [], importedDecks: {}, studyCompletedDate: "" }; }
+  function defaultData(){ return { words: [], reviewLog: [], importedDecks: {}, studyCompletedDate: "", companion: BabyCore.normalize() }; }
 
   // In-memory fallback used only if window.storage isn't available (e.g. the file
   // was opened outside Claude.ai). Keeps the app usable for the session, though
@@ -924,6 +934,7 @@
 
   // 向下相容舊資料：補齊新版欄位，避免舊 localStorage 導致畫面錯誤。
   function normalizeLoadedData(){
+    data.companion = BabyCore.normalize(data.companion);
     if(!Array.isArray(data.words)) data.words = [];
     if(!Array.isArray(data.reviewLog)) data.reviewLog = [];
     if(!data.importedDecks || typeof data.importedDecks !== "object") data.importedDecks = {};
@@ -1437,6 +1448,8 @@
     if(!log){ log = { date: t, correct: 0, total: 0 }; data.reviewLog.push(log); }
     log.total++;
     if(correct) log.correct++;
+    var growthResult = correct && !opts.forceReview ? garden.record(w.en) : {xp:0};
+    if(session.finished) session.growthReward = garden.finishRoutine(growthResult.xp);
 
     await saveData();
     return correct;
@@ -1467,6 +1480,7 @@
         '<div class="center-note">' +
           '<div class="big">今天的複習完成了 ✓</div>' +
           '<p>本次共練習 ' + session.totalSession + ' 題（到期複習 ' + session.totalDue + ' 題、額外練習 ' + session.totalBonus + ' 題），答對率 ' + acc + '%。</p>' +
+          (session.growthReward ? '<p class="routine-reward">✨ 例行任務完成，成長值 +20 已存入！</p>' : '<p class="routine-reward">今日填空完成獎勵已領取，繼續練習也很棒。</p>') +
           '<button class="ghost" id="restart-session">再練習一輪</button>' +
         '</div>';
       document.getElementById("restart-session").onclick = function(){
@@ -1545,10 +1559,11 @@
       input.disabled = true;
       hintBtn.disabled = true;
       answerBtn.disabled = true;
-      btn.textContent = "下一題 →";
+      btn.textContent = "下一題";
     };
 
     function doSubmit(){
+      if(btn.disabled) return;
       var val = input.value;
       if(!val.trim()) return;
       btn.disabled = true; input.disabled = true; hintBtn.disabled = true; answerBtn.disabled = true;
@@ -2144,7 +2159,7 @@
 
     speakEl.innerHTML =
       '<div class="speak-setup">' +
-        '<button class="ghost" id="speak-setup-back">← 返回口說情境</button>' +
+        '<button class="ghost" id="speak-setup-back">返回口說情境</button>' +
         '<div class="speak-setup-card">' +
           '<h2>連接我的 AI</h2>' +
           '<p class="speak-setup-lead">跟著三步完成一次設定；之後只要按「開始口說」。這個網站不會接收或儲存 API key。</p>' +
@@ -2154,9 +2169,9 @@
             '<button class="speak-provider-btn' + (provider === "anthropic" ? ' active' : '') + '" data-provider="anthropic">Claude / Anthropic</button>' +
           '</div>' +
           '<div class="speak-setup-steps">' +
-            '<div class="speak-setup-step"><span class="speak-setup-step-num">1</span><div><strong>取得自己的 API key</strong><br>這是 AI 供應商用來計算你個人額度的金鑰。<a href="' + apiKeyUrl + '" target="_blank" rel="noopener">前往 ' + speakProviderLabel(provider) + ' 建立 API key ↗</a></div></div>' +
+            '<div class="speak-setup-step"><span class="speak-setup-step-num">1</span><div><strong>取得自己的 API key</strong><br>這是 AI 供應商用來計算你個人額度的金鑰。<a href="' + apiKeyUrl + '" target="_blank" rel="noopener">前往 ' + speakProviderLabel(provider) + ' 建立 API key</a></div></div>' +
             '<div class="speak-setup-step"><span class="speak-setup-step-num">2</span><div><strong>一鍵建立你的私有連線</strong><br>會部署到你自己的 Cloudflare 帳號，API key 不會交給這個單字網站。</div></div>' +
-            '<a class="primary speak-deploy-link" href="' + deployUrl + '" target="_blank" rel="noopener">在 Cloudflare 一鍵部署 →</a>' +
+            '<a class="primary speak-deploy-link" href="' + deployUrl + '" target="_blank" rel="noopener">在 Cloudflare 一鍵部署</a>' +
             '<div class="speak-setup-step"><span class="speak-setup-step-num">3</span><div><strong>貼回 Cloudflare 給你的網址</strong><br>部署完成會得到 <code>https://...workers.dev</code>，貼到下方並按測試。</div></div>' +
           '</div>' +
           '<label for="speak-relay-url">我的 AI Relay 網址</label>' +
@@ -2257,7 +2272,7 @@
         '<div class="speak-topic-icon">' + s.icon + '</div>' +
         '<div class="speak-topic-title">' + s.title + '</div>' +
         '<p class="speak-topic-desc">' + s.desc + '</p>' +
-        '<button class="primary speak-start-btn" data-scenario="' + key + '">開始對話 →</button>' +
+        '<button class="primary speak-start-btn" data-scenario="' + key + '">開始對話</button>' +
       '</div>';
     }).join("");
 
@@ -2639,7 +2654,7 @@
       document.body.appendChild(a);
       a.click();
       a.remove();
-      URL.revokeObjectURL(url);
+      setTimeout(function(){ URL.revokeObjectURL(url); }, 30000);
     };
 
     var importInput = document.getElementById("import-backup-input");
@@ -2658,12 +2673,15 @@
             }
             if(!confirm("匯入備份會覆蓋目前的單字與紀錄，確定要繼續嗎？")) return;
             data = parsed;
+            normalizeLoadedData();
+            garden.reset();
             if(!Array.isArray(data.reviewLog)) data.reviewLog = [];
             if(!data.importedDecks || typeof data.importedDecks !== "object") data.importedDecks = {};
             if(typeof data.studyCompletedDate !== "string") data.studyCompletedDate = "";
             session = null;
             await saveData();
             renderAll();
+            resultEl = document.getElementById("backup-result");
             if(resultEl) resultEl.textContent = "已成功匯入備份（" + data.words.length + " 個單字）。";
           } catch(err){
             if(resultEl) resultEl.textContent = "讀取這個檔案時發生錯誤，匯入失敗。";
@@ -2676,6 +2694,7 @@
     document.getElementById("reset-data").onclick = async function(){
       if(!confirm("確定要清除所有單字與紀錄嗎？此動作無法復原。")) return;
       data = defaultData();
+      garden.reset();
       session = null;
       await saveData();
       renderAll();
@@ -2684,6 +2703,7 @@
 
   // 重新渲染所有主要分頁；資料變動後以此同步 UI。
   function renderAll(){
+    if(garden) garden.render();
     renderReview();
     renderBank();
     renderStats();
@@ -2693,6 +2713,8 @@
   // 切換分頁時只重繪目前分頁，避免不必要的 DOM 更新。
   function switchTab(tab){
     currentTab = tab;
+    document.getElementById("panel-home").hidden = tab !== "home";
+    document.getElementById("panel-games").hidden = tab !== "games";
     Array.prototype.forEach.call(document.querySelectorAll("nav.tabs button"), function(b){
       b.classList.toggle("active", b.getAttribute("data-tab") === tab);
     });
@@ -2700,6 +2722,8 @@
     bankEl.hidden = currentTab !== "bank";
     speakEl.hidden = currentTab !== "speak";
     statsEl.hidden = currentTab !== "stats";
+    if(currentTab === "home") garden.renderHome();
+    if(currentTab === "games") garden.renderGames();
     if(currentTab === "review") renderReview();
     if(currentTab === "bank") renderBank();
     if(currentTab === "speak") renderSpeak();
@@ -2808,6 +2832,7 @@
     data.studyCompletedDate = todayStr();
     await saveData();
     showMainApp();
+    switchTab("review");
   }
 
   // 渲染每日預習卡與翻面操作；完成後才讓使用者進入主應用程式。
@@ -2826,7 +2851,7 @@
           '<div class="study-complete">' +
             '<div class="study-complete-big">🎉 今天的字卡都看過一遍了！</div>' +
             '<p class="study-complete-sub">總共預習了 ' + studyWords.length + ' 個單字，現在進入「今日複習」實際測驗一下吧。</p>' +
-            '<button class="primary" id="study-start-review">開始今日複習 →</button>' +
+            '<button class="primary" id="study-start-review">開始今日複習</button>' +
           '</div>' +
         '</div>';
       document.getElementById("study-start-review").onclick = finishStudy;
@@ -2850,7 +2875,7 @@
       '<div class="study-wrap">' +
         '<div class="study-progress-row">' +
           '<span class="study-progress-label">學習階段 · ' + (studyIndex+1) + ' / ' + studyWords.length + '</span>' +
-          '<button class="ghost study-skip" id="study-skip">跳過，直接複習 →</button>' +
+          '<button class="ghost study-skip" id="study-skip">跳過，直接複習</button>' +
         '</div>' +
         '<div class="mascot-progress-track"><div class="mascot-progress-fill" style="width:' + pct + '%"></div></div>' +
         '<div class="study-card' + studyCardClass + (studyFlipped ? ' flipped' : '') + '" id="study-card"' + studyCardStyle + '>' +
@@ -2860,7 +2885,7 @@
               '<div class="study-word">' + escapeHtml(w.en) + '</div>' +
               '<span class="pos-tag' + posClass + '">' + escapeHtml(posLabel) + '</span>' +
               '<button class="speak-btn" id="study-speak" title="播放發音">🔊</button>' +
-              '<div class="study-flip-hint">點卡片看意思 →</div>' +
+              '<div class="study-flip-hint">點卡片看意思</div>' +
             '</div>' +
             '<div class="study-card-back">' +
               '<div class="study-zh">' + escapeHtml(w.zh) + '</div>' +
@@ -2869,8 +2894,8 @@
           '</div>' +
         '</div>' +
         '<div class="study-nav">' +
-          '<button class="ghost" id="study-prev"' + (studyIndex===0 ? " disabled" : "") + '>← 上一張</button>' +
-          '<button class="primary" id="study-next">認識了，下一張 →</button>' +
+          '<button class="ghost" id="study-prev"' + (studyIndex===0 ? " disabled" : "") + '>上一張</button>' +
+          '<button class="primary" id="study-next">認識了，下一張</button>' +
         '</div>' +
       '</div>';
 
@@ -2898,16 +2923,28 @@
   document.getElementById("study-screen").innerHTML =
     '<div class="study-wrap"><div class="center-note"><span class="spinner"></span>載入單字資料中…</div></div>';
 
+  var garden = BabyGarden.create({
+    data: function(){ return data; }, save: saveData, today: todayStr,
+    addDays: addDays, escape: escapeHtml, decks: DECKS,
+    shuffle: function(list){ shuffle(list); return list; },
+    speak: speak, tab: switchTab, wordCount: function(){ return data.words.length; },
+    preview: function(){
+      studyWords = buildStudyWords(); studyIndex=0; studyFlipped=false;
+      document.getElementById("main-app").hidden=true;renderStudyScreen();
+    }
+  });
   loadData().then(function(){
-    if(needsStudyToday()){
-      return topUpNewWordsIfNeeded().then(function(){
-        studyWords = buildStudyWords();
-        studyIndex = 0;
-        studyFlipped = false;
-        renderStudyScreen();
-      });
-    } else {
-      showMainApp();
+    data.companion = BabyCore.normalize(data.companion);
+    // 保存首次抽到的性別，舊帳號即使不需要補新字也會保留。
+    return performSave();
+  }).then(function(){
+    return topUpNewWordsIfNeeded();
+  }).then(function(){showMainApp();switchTab("home");});
+  // Keep daily progress current when the page stays open across midnight.
+  var gardenDate=todayStr();
+  document.addEventListener("visibilitychange",function(){
+    if(!document.hidden && loaded && gardenDate!==todayStr()){
+      gardenDate=todayStr();garden.renderHome();
     }
   });
 

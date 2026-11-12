@@ -1,0 +1,61 @@
+.baby-illustration.baby-painted{position:relative;display:block;width:100%;aspect-ratio:8/9;height:auto;animation:none;filter:none;isolation:isolate}
+.painted-motion{display:block;position:absolute;inset:0;transform-origin:50% 92%;animation:painted-rest 4.4s ease-in-out infinite}
+
+.painted-stage-1 .painted-motion{animation:painted-crawl 3.8s ease-in-out infinite}
+.painted-stage-2 .painted-motion{animation:painted-walk 3.2s ease-in-out infinite}
+.painted-stage-3 .painted-motion{animation:cel-hop 2250ms ease-in-out infinite}
+.painted-stage-4 .painted-motion{animation:painted-play 4s ease-in-out infinite}
+.painted-stage-5 .painted-motion{animation:painted-greet 3.6s ease-in-out infinite}
+.painted-love{position:absolute;right:12%;top:12%;color:#d68f9a;font-size:38px;opacity:0;pointer-events:none}
+.baby-button.is-delighted .painted-motion{animation:painted-delight .6s ease-in-out 4}
+.baby-button.is-delighted .painted-love{animation:painted-heart 1.2s ease-out 2}
+.motion-paused .baby-painted *{animation-play-state:paused!important}
+.baby-motion{border:1px solid #d6ccba;background:#fffaf0cc;border-radius:99px;padding:5px 9px;color:#7c705c;font-size:11px;cursor:pointer;min-height:32px}
+.room-top-actions{display:flex;align-items:center;gap:10px}
+.baby-caption .baby-touch-hint{font-size:11px;margin:6px 0 14px;color:#85765d}
+.baby-look-pair .baby-painted{width:min(100%,240px);margin:auto}
+.baby-look-pair p{font-size:13px;line-height:1.6;margin:0 0 12px;color:#536776}
+/* Rigid translation/rotation only: no scaling, skewing or pose blending. */
+@keyframes painted-rest{0%,100%{transform:translateY(0) rotate(-.25deg)}50%{transform:translateY(-1.5px) rotate(.25deg)}}
+@keyframes painted-crawl{0%,100%{transform:translateX(-4px) rotate(-.5deg)}50%{transform:translateX(4px) rotate(.5deg)}}
+@keyframes painted-walk{0%,100%{transform:translateX(-2px) rotate(-1.2deg)}50%{transform:translateX(2px) rotate(1.2deg)}}
+@keyframes painted-hop{0%,20%,55%,85%,100%{transform:translateY(0) rotate(0)}36%{transform:translateY(-9px) rotate(-2deg)}70%{transform:translateY(-5px) rotate(1.5deg)}}
+@keyframes painted-play{0%,100%{transform:rotate(-.7deg)}50%{transform:rotate(.7deg)}}
+@keyframes painted-greet{0%,100%{transform:rotate(-1deg)}50%{transform:rotate(1deg)}}
+
+
+
+@keyframes painted-delight{0%,100%{transform:translateY(0) rotate(0)}35%{transform:translateY(-7px) rotate(-2deg)}70%{transform:translateY(-3px) rotate(2deg)}}
+@keyframes painted-heart{0%{opacity:0;transform:translateY(10px)}25%{opacity:1}100%{opacity:0;transform:translateY(-22px)}}
+@media(prefers-reduced-motion:reduce){.baby-painted *{animation:none!important}}
+@media(max-width:620px){.room-top{padding:16px}.room-top-actions{gap:7px}.baby-motion{font-size:10px}.baby-button{width:275px}.nursery{min-height:435px}}
+
+/* Sprite-window movement uses discrete steps: exactly one whole pose is visible. */
+.painted-window,.painted-idle-anchor{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.painted-strip,.painted-anchor{display:block!important;position:absolute;top:0;left:0;width:var(--cel-width)!important;max-width:none!important;height:100%!important;object-fit:fill;pointer-events:none;user-select:none;opacity:1;transition:none!important}
+.painted-stage-0 .painted-strip{animation:cel-action-0 19380ms steps(1,end) infinite}
+@keyframes cel-action-0{0.000000%{left:0%}9.287926%{left:-100%}17.027864%{left:-200%}23.219814%{left:-100%}29.411765%{left:0%}36.635707%{left:-500%}38.183695%{left:-300%}39.525284%{left:-400%}51.909185%{left:-300%}53.250774%{left:-400%}62.538700%{left:-300%}63.880289%{left:-500%}65.944272%{left:0%}76.264190%{left:-100%}84.520124%{left:0%}100%{left:0%}}
+.painted-stage-1 .painted-strip{animation:cel-action-1 1240ms steps(1,end) infinite}
+@keyframes cel-action-1{0.000000%{left:0%}15.322581%{left:-100%}28.225806%{left:-200%}43.548387%{left:-300%}56.451613%{left:-200%}71.774194%{left:-100%}84.677419%{left:0%}100%{left:0%}}
+.painted-stage-2 .painted-strip{animation:cel-action-2 1940ms steps(1,end) infinite}
+@keyframes cel-action-2{0.000000%{left:0%}13.402062%{left:-100%}24.742268%{left:-200%}38.144330%{left:-300%}49.484536%{left:-200%}62.886598%{left:-100%}74.226804%{left:0%}100%{left:0%}}
+.painted-stage-3 .painted-strip{animation:cel-action-3 2250ms steps(1,end) infinite}
+@keyframes cel-action-3{0.000000%{left:0%}35.555556%{left:-100%}42.222222%{left:-200%}52.000000%{left:-300%}60.000000%{left:0%}100%{left:0%}}
+.painted-stage-4 .painted-strip{animation:cel-action-4 4860ms steps(1,end) infinite}
+@keyframes cel-action-4{0.000000%{left:0%}20.576132%{left:-100%}28.395062%{left:-200%}35.596708%{left:-300%}64.403292%{left:-200%}71.604938%{left:-100%}79.423868%{left:0%}100%{left:0%}}
+.painted-stage-5 .painted-strip{animation:cel-action-5 4070ms steps(1,end) infinite}
+@keyframes cel-action-5{0.000000%{left:0%}24.570025%{left:-100%}29.975430%{left:-200%}35.380835%{left:-100%}40.786241%{left:-200%}46.191646%{left:-300%}54.791155%{left:-200%}60.196560%{left:-100%}65.601966%{left:0%}100%{left:0%}}
+.painted-stage-6 .painted-strip{animation:cel-action-6 5550ms steps(1,end) infinite}
+@keyframes cel-action-6{0.000000%{left:0%}27.027027%{left:-100%}33.333333%{left:-200%}44.144144%{left:-300%}54.954955%{left:-200%}61.261261%{left:-100%}67.567568%{left:0%}100%{left:0%}}
+.painted-stage-7 .painted-strip{animation:cel-action-7 5250ms steps(1,end) infinite}
+@keyframes cel-action-7{0.000000%{left:0%}19.047619%{left:-100%}25.714286%{left:-200%}33.333333%{left:-100%}40.000000%{left:-200%}47.619048%{left:-100%}54.285714%{left:-300%}80.952381%{left:0%}100%{left:0%}}
+.painted-stage-8 .painted-strip{animation:cel-action-8 5900ms steps(1,end) infinite}
+@keyframes cel-action-8{0.000000%{left:0%}25.423729%{left:-100%}31.355932%{left:-200%}39.830508%{left:-100%}45.762712%{left:0%}62.711864%{left:-300%}79.661017%{left:0%}100%{left:0%}}
+.painted-stage-9 .painted-strip{animation:cel-action-9 5800ms steps(1,end) infinite}
+@keyframes cel-action-9{0.000000%{left:0%}20.689655%{left:-100%}25.862069%{left:0%}31.034483%{left:-100%}36.206897%{left:-200%}53.448276%{left:-300%}65.517241%{left:-200%}74.137931%{left:-100%}79.310345%{left:0%}100%{left:0%}}
+.painted-stage-0 .painted-idle-anchor{animation:cel-idle 19380ms steps(1,end) infinite}
+.painted-stage-0 .painted-window{animation:cel-mouth-region 19380ms steps(1,end) infinite}
+@keyframes cel-idle{0.000000%{visibility:visible}9.287926%{visibility:visible}17.027864%{visibility:visible}23.219814%{visibility:visible}29.411765%{visibility:visible}36.635707%{visibility:hidden}38.183695%{visibility:hidden}39.525284%{visibility:hidden}51.909185%{visibility:hidden}53.250774%{visibility:hidden}62.538700%{visibility:hidden}63.880289%{visibility:hidden}65.944272%{visibility:visible}76.264190%{visibility:visible}84.520124%{visibility:visible}100%{visibility:visible}}
+@keyframes cel-mouth-region{0.000000%{mask-image:radial-gradient(ellipse 17% 10% at 50% 46%,#000 55%,transparent 100%)}9.287926%{mask-image:radial-gradient(ellipse 17% 10% at 50% 46%,#000 55%,transparent 100%)}17.027864%{mask-image:radial-gradient(ellipse 17% 10% at 50% 46%,#000 55%,transparent 100%)}23.219814%{mask-image:radial-gradient(ellipse 17% 10% at 50% 46%,#000 55%,transparent 100%)}29.411765%{mask-image:radial-gradient(ellipse 17% 10% at 50% 46%,#000 55%,transparent 100%)}36.635707%{mask-image:none}38.183695%{mask-image:none}39.525284%{mask-image:none}51.909185%{mask-image:none}53.250774%{mask-image:none}62.538700%{mask-image:none}63.880289%{mask-image:none}65.944272%{mask-image:radial-gradient(ellipse 17% 10% at 50% 46%,#000 55%,transparent 100%)}76.264190%{mask-image:radial-gradient(ellipse 17% 10% at 50% 46%,#000 55%,transparent 100%)}84.520124%{mask-image:radial-gradient(ellipse 17% 10% at 50% 46%,#000 55%,transparent 100%)}100%{mask-image:radial-gradient(ellipse 17% 10% at 50% 46%,#000 55%,transparent 100%)}}
+@keyframes cel-hop{0%,35.555556%,56%,100%{transform:translateY(0)}42.222222%{transform:translateY(-8px)}50%{transform:translateY(-12px)}60%{transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){.baby-painted .painted-strip{left:0!important}.baby-painted .painted-idle-anchor{visibility:hidden!important}.baby-painted .painted-window{mask-image:none!important}}
