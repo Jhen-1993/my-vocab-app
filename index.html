@@ -1519,12 +1519,12 @@
         ? '<div class="sentence-zh">' + escapeHtml(prompt.zhSentence) + '</div>'
         : '<div class="sentence-zh sentence-zh-fallback">（' + escapeHtml(w.zh) + '）</div>';
       promptHtml =
-        '<div class="prompt-kind">' + (prompt.kind === "sentence" ? "例句填空 · Fill in the blank" : "例句提示 · Context question") + '</div>' +
+        '<div class="prompt-kind">' + (prompt.kind === "sentence" ? "例句填空" : "例句提示") + '</div>' +
         '<div class="sentence">' + prompt.html + '</div>' +
         zhLine;
     } else {
       promptHtml =
-        '<div class="prompt-kind">中文提示 · Meaning prompt</div>' +
+        '<div class="prompt-kind">中文提示</div>' +
         '<div class="meaning-line">' + escapeHtml(prompt.zh) + '</div>';
     }
 
@@ -1536,7 +1536,7 @@
         statBox(session.totalDue, "到期複習") +
       '</div>' +
       '<div class="card-wrap"><div class="lib-card">' +
-        '<div class="lib-card-head"><span>' + (DECK_META[w.category] || DECK_META.custom).label.toUpperCase() + itemLabel + '</span><span>BOX ' + (w.box===0?"NEW":"KNOWN") + '</span></div>' +
+        '<div class="lib-card-head"><span>' + (DECK_META[w.category] || DECK_META.custom).label.toUpperCase() + itemLabel + '</span><span> ' + (w.box===0?"新單字":"複習中") + '</span></div>' +
         '<div class="lib-card-body">' +
           promptHtml +
           '<div class="hint-line" id="hint-zone" hidden></div>' +
@@ -1545,11 +1545,11 @@
             '<button class="ghost" id="answer-btn">🙈 顯示答案</button>' +
           '</div>' +
           '<div class="answer-row">' +
-            '<input id="answer-input" type="text" autocomplete="off" placeholder="輸入英文單字…" />' +
+            '<input id="answer-input" type="text" autocomplete="off" placeholder="輸入英文單字或片語…" />' +
             '<button class="primary" id="submit-btn">送出</button>' +
           '</div>' +
           '<div id="feedback-zone"></div>' +
-          '<div class="queue-note">此單字目前答對連續次數：' + (w.streak||0) + '　·　目前累積答錯：' + (w.wrongTotal||0) + '　·　使用過提示／答案：' + (w.helpCount||0) + ' 次</div>' +
+          '<div class="queue-note">連續答對次數：' + (w.streak||0) + '　·　累積答錯：' + (w.wrongTotal||0) + '　·　使用提示／答案：' + (w.helpCount||0) + ' 次</div>' +
         '</div>' +
       '</div></div>';
 
