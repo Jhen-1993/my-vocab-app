@@ -642,7 +642,7 @@
     <div class="footer-brand">
       <span class="footer-seal" aria-hidden="true">✦</span>
       <div>
-        <span class="footer-title">Word Card Library</span>
+        <span class="footer-title">Worliya</span>
         <span class="footer-tagline">study steadily · remember longer</span>
       </div>
     </div>
@@ -840,9 +840,9 @@
   var DAILY_TARGET = 30; // number of practice sentences to serve each day
 
   var DECK_META = {
-    beginner: { label: "初階", desc: "生活基礎字彙（CEFR A2 程度），適合打底" },
-    intermediate: { label: "中階", desc: "職場、日常應用字彙（CEFR B1–B2／TOEIC 約 550–700 分）" },
-    advanced: { label: "高階", desc: "學術與抽象論述字彙（TOEFL／IELTS／進階字彙）" },
+    beginner: { label: "初階", desc: "生活基礎字彙" },
+    intermediate: { label: "中階", desc: "職場、日常應用字彙" },
+    advanced: { label: "高階", desc: "學術與抽象論述字彙" },
     bulk: { label: "批次匯入", desc: "" },
     custom: { label: "自訂", desc: "" }
   };
@@ -2864,7 +2864,7 @@
       screen.innerHTML =
         '<div class="study-wrap">' +
           '<div class="study-complete">' +
-            '<div class="study-complete-big">🎉 今天的字卡都看過一遍了！</div>' +
+            '<div class="study-complete-big">哇！已經學習個30單字了！</div>' +
             '<p class="study-complete-sub">總共預習了 ' + studyWords.length + ' 個單字，現在進入「今日複習」實際測驗一下吧。</p>' +
             '<button class="primary" id="study-start-review">開始今日複習</button>' +
           '</div>' +
@@ -2887,13 +2887,13 @@
     var backContent = renderCardExamples(w, "study");
     var studyPet = data.companion;
     var studyLook = BabyCore.appearance(studyPet);
-    var studyWelcome = '<div class="study-welcome"><div class="study-baby" aria-hidden="true">'+BabyAvatar.render(studyLook.stage,studyLook.gender,studyLook.characterId)+'</div><div><h2>陪 '+escapeHtml(studyPet.name)+' 認識新單字</h2><p>慢慢翻，一起把英文記起來。</p></div></div>';
+    var studyWelcome = '<div class="study-welcome"><div class="study-baby" aria-hidden="true">'+BabyAvatar.render(studyLook.stage,studyLook.gender,studyLook.characterId)+'</div><div><h2>和 '+escapeHtml(studyPet.name)+' 一起學單字</h2><p>一張小字卡，一點小進步。</p></div></div>';
 
 
     screen.innerHTML =
       '<div class="study-wrap">' + studyWelcome +
         '<div class="study-progress-row">' +
-          '<span class="study-progress-label">學習階段 · ' + (studyIndex+1) + ' / ' + studyWords.length + '</span>' +
+          '<span class="study-progress-label">今日單字 · ' + (studyIndex+1) + ' / ' + studyWords.length + '</span>' +
           '<button class="ghost study-skip" id="study-skip">跳過，直接複習</button>' +
         '</div>' +
         '<div class="mascot-progress-track"><div class="mascot-progress-fill" style="width:' + pct + '%"></div></div>' +
@@ -2903,8 +2903,8 @@
               '<span class="cat-tag">' + catLabel + '</span>' +
               '<div class="study-word">' + escapeHtml(w.en) + '</div>' +
               '<span class="pos-tag' + posClass + '">' + escapeHtml(posLabel) + '</span>' +
-              '<button class="speak-btn" id="study-speak" title="播放發音">🔊</button>' +
-              '<div class="study-flip-hint">點卡片看意思</div>' +
+              '<button class="speak-btn" id="study-speak" title="聽發音">🔊</button>' +
+              '<div class="study-flip-hint">輕點翻面，有意思和例句唷！</div>' +
             '</div>' +
             '<div class="study-card-back">' +
               '<div class="study-zh">' + escapeHtml(w.zh) + '</div>' +
@@ -2914,7 +2914,7 @@
         '</div>' +
         '<div class="study-nav">' +
           '<button class="ghost" id="study-prev"' + (studyIndex===0 ? " disabled" : "") + '>上一張</button>' +
-          '<button class="primary" id="study-next">認識了，下一張</button>' +
+          '<button class="primary" id="study-next">我記住了，下一張</button>' +
         '</div>' +
       '</div>';
 
