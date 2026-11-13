@@ -107,3 +107,26 @@
 /* Hidden adult: intact painted cels, no warping. */
 .painted-master-boy.painted-stage-9 .painted-strip,.painted-master-girl.painted-stage-9 .painted-strip{animation:cel-master 8350ms steps(1,end) infinite}
 @keyframes cel-master{0.000000%{left:0%}23.952096%{left:-100%}29.940120%{left:-200%}34.131737%{left:-100%}40.119760%{left:0%}61.676647%{left:-300%}76.047904%{left:0%}100%{left:0%}}
+
+
+/* Blue school and adult career actions; complete painted frames only. */
+.painted-blue-boy.painted-stage-5 .painted-strip{animation:cel-blue-boy-5 5000ms steps(1,end) infinite}
+@keyframes cel-blue-boy-5{0.000000%{left:0%}24.000000%{left:-100%}33.000000%{left:-200%}42.000000%{left:-300%}58.000000%{left:-200%}67.000000%{left:-100%}76.000000%{left:0%}100%{left:0%}}
+.painted-blue-boy.painted-stage-6 .painted-strip{animation:cel-blue-boy-6 5000ms steps(1,end) infinite}
+@keyframes cel-blue-boy-6{0.000000%{left:0%}24.000000%{left:-100%}33.000000%{left:-200%}42.000000%{left:-300%}58.000000%{left:-200%}67.000000%{left:-100%}76.000000%{left:0%}100%{left:0%}}
+.painted-blue-boy.painted-stage-7 .painted-strip{animation:cel-blue-boy-7 5000ms steps(1,end) infinite}
+@keyframes cel-blue-boy-7{0.000000%{left:0%}24.000000%{left:-100%}33.000000%{left:-200%}42.000000%{left:-300%}58.000000%{left:-200%}67.000000%{left:-100%}76.000000%{left:0%}100%{left:0%}}
+.painted-blue-boy.painted-stage-8 .painted-strip{animation:cel-blue-boy-8 5000ms steps(1,end) infinite}
+@keyframes cel-blue-boy-8{0.000000%{left:0%}24.000000%{left:-100%}33.000000%{left:-200%}42.000000%{left:-300%}58.000000%{left:-200%}67.000000%{left:-100%}76.000000%{left:0%}100%{left:0%}}
+.painted-blue-boy.painted-stage-9 .painted-strip{animation:cel-blue-boy-9 5000ms steps(1,end) infinite}
+@keyframes cel-blue-boy-9{0.000000%{left:0%}24.000000%{left:-100%}33.000000%{left:-200%}42.000000%{left:-300%}58.000000%{left:-200%}67.000000%{left:-100%}76.000000%{left:0%}100%{left:0%}}
+.painted-blue-girl.painted-stage-5 .painted-strip{animation:cel-blue-girl-5 5000ms steps(1,end) infinite}
+@keyframes cel-blue-girl-5{0.000000%{left:0%}24.000000%{left:-100%}33.000000%{left:-200%}42.000000%{left:-300%}58.000000%{left:-200%}67.000000%{left:-100%}76.000000%{left:0%}100%{left:0%}}
+.painted-blue-girl.painted-stage-6 .painted-strip{animation:cel-blue-girl-6 5000ms steps(1,end) infinite}
+@keyframes cel-blue-girl-6{0.000000%{left:0%}24.000000%{left:-100%}33.000000%{left:-200%}42.000000%{left:-300%}58.000000%{left:-200%}67.000000%{left:-100%}76.000000%{left:0%}100%{left:0%}}
+.painted-blue-girl.painted-stage-7 .painted-strip{animation:cel-blue-girl-7 5000ms steps(1,end) infinite}
+@keyframes cel-blue-girl-7{0.000000%{left:0%}24.000000%{left:-100%}33.000000%{left:-200%}42.000000%{left:-300%}58.000000%{left:-200%}67.000000%{left:-100%}76.000000%{left:0%}100%{left:0%}}
+.painted-blue-girl.painted-stage-8 .painted-strip{animation:cel-blue-girl-8 5000ms steps(1,end) infinite}
+@keyframes cel-blue-girl-8{0.000000%{left:0%}24.000000%{left:-100%}33.000000%{left:-200%}42.000000%{left:-300%}58.000000%{left:-200%}67.000000%{left:-100%}76.000000%{left:0%}100%{left:0%}}
+.painted-blue-girl.painted-stage-9 .painted-strip{animation:cel-blue-girl-9 5000ms steps(1,end) infinite}
+@keyframes cel-blue-girl-9{0.000000%{left:0%}24.000000%{left:-100%}33.000000%{left:-200%}42.000000%{left:-300%}58.000000%{left:-200%}67.000000%{left:-100%}76.000000%{left:0%}100%{left:0%}}

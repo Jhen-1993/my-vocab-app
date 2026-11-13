@@ -3,8 +3,8 @@
   'use strict';
   const goals = [5, 10, 15];
   const characters = [
-    {id:'blue-boy',gender:'boy',asset:'boy',name:'藍衣男寶',career:''},
-    {id:'blue-girl',gender:'girl',asset:'girl',name:'藍衣女寶',career:''},
+    {id:'blue-boy',gender:'boy',asset:'boy',name:'藍衣男寶',career:'小提琴家'},
+    {id:'blue-girl',gender:'girl',asset:'girl',name:'藍衣女寶',career:'太空人'},
     {id:'sunny-girl',gender:'girl',asset:'sunny-girl',name:'黃衣女寶',career:'幹練律師'},
     {id:'sunny-boy',gender:'boy',asset:'sunny-boy',name:'綠衣男寶',career:'籃球國手'},
     {id:'sweet-girl',gender:'girl',asset:'sweet-girl',name:'粉衣女寶',career:'畫廊老闆'},

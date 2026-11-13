@@ -800,17 +800,31 @@
     var exampleClass = isStudy ? "study-example" : "fc-example";
     var posClass = isStudy ? "study-example-pos" : "fc-example-zh";
     var zhClass = isStudy ? "study-example-zh" : "fc-example-zh";
-    // 不同義項必須在卡片上並列；同義的備用句只由 getReviewExamples
-    // 加入後續循環複習，不會使預習卡重複堆疊相同意思。
+    // 預習保留並列義項；單字庫每次顯示一個義項，全部例句仍可切換閱讀。
     var visibleExamples = examples;
-    return visibleExamples.map(function(item){
-      return '<div class="' + groupClass + '">' +
+    var paged = display === "bank" && examples.length > 1;
+    var markup = visibleExamples.map(function(item,index){
+      return '<div class="' + groupClass + '"' + (paged && index ? ' hidden' : '') + '>' +
         (item.sense ? '<div class="' + senseClass + '">' + escapeHtml(item.sense) + '</div>' : "") +
         '<div class="' + exampleClass + '">' + highlightWord(item.example, word.en) + '</div>' +
         (item.pos ? '<div class="' + posClass + '">本句詞性：' + escapeHtml(item.pos) + '</div>' : "") +
         (item.exampleZh ? '<div class="' + zhClass + '">' + escapeHtml(item.exampleZh) + '</div>' : "") +
       '</div>';
     }).join("");
+    return paged ? '<div class="fc-sense-pages" data-sense-index="0">' + markup + '</div><div class="fc-sense-nav"><span class="fc-sense-position" aria-live="polite">用法 1 / ' + examples.length + '</span><button type="button" class="fc-sense-step" data-sense-step="-1" aria-label="上一個字義">上一個</button><button type="button" class="fc-sense-step" data-sense-step="1" aria-label="下一個字義">下一個</button></div>' : markup;
+  }
+  function bindBankSenseControls(root){
+    Array.prototype.forEach.call(root.querySelectorAll('.fc-sense-step'),function(button){
+      button.onclick=function(event){
+        event.stopPropagation();
+        var card=button.closest('.flip-card'),pages=card.querySelector('.fc-sense-pages');
+        var groups=pages.querySelectorAll('.fc-example-group');
+        var index=(Number(pages.getAttribute('data-sense-index'))+Number(button.getAttribute('data-sense-step'))+groups.length)%groups.length;
+        Array.prototype.forEach.call(groups,function(group,i){group.hidden=i!==index;});
+        pages.setAttribute('data-sense-index',String(index));pages.scrollTop=0;
+        card.querySelector('.fc-sense-position').textContent='用法 '+(index+1)+' / '+groups.length;
+      };
+    });
   }
   // Vocabulary is maintained in data/beginner.js, data/intermediate.js,
   // data/real-word-extension.js, and data/advanced.js.
@@ -1745,16 +1759,14 @@
         var helpBadge = w.helpCount ? '<span class="fc-help">💡×' + w.helpCount + '</span>' : "";
         /* 只有真的使用過提示時才建立頁尾，避免空白區塊佔用字卡空間。 */
         var frontFooter = helpBadge ? '<div class="fc-bottom-row">' + helpBadge + '</div>' : "";
-        // Multi-sense cards use an expanded two-column layout.  Estimate their
-        // height from the examples so each sense gets enough reading space.
+        // Keep the library grid uniform; switch senses inside each card.
         var cardExamples = getCardExamples(w);
         var exampleCount = cardExamples.length;
         var isMultiSense = exampleCount > 1;
         var multiSenseClass = isMultiSense ? ' multi-sense-card' : "";
-        var multiSenseStyle = isMultiSense ? ' style="--sense-card-height:' + getMultiSenseCardHeight(cardExamples) + 'px"' : "";
         var senseBadge = isMultiSense ? '<span class="fc-sense-count">✦ ' + exampleCount + ' 種用法</span>' : "";
         var backExample = renderCardExamples(w, "bank");
-        return '<div class="flip-card ' + statusClass + multiSenseClass + '" data-id="' + w.id + '"' + multiSenseStyle + '>' +
+        return '<div class="flip-card ' + statusClass + multiSenseClass + '" data-id="' + w.id + '">' +
           '<div class="flip-card-inner">' +
             '<div class="flip-card-front">' +
               '<div class="fc-top-row">' +
@@ -1891,9 +1903,10 @@
       };
     }
 
+    bindBankSenseControls(bankEl);
     Array.prototype.forEach.call(document.querySelectorAll(".flip-card"), function(card){
       card.addEventListener("click", function(e){
-        if(e.target.closest(".speak-btn") || e.target.closest(".fc-del")) return;
+        if(e.target.closest(".speak-btn") || e.target.closest(".fc-del") || e.target.closest('.fc-sense-step')) return;
         card.classList.toggle("flipped");
       });
     });

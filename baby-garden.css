@@ -82,3 +82,17 @@ footer.note{background:#f0f2e9;border:1px solid #e2e6d7;box-shadow:none;color:#7
 .master-test-controls p{flex-basis:100%;margin:0}
 .nursery #master-resume{position:relative;z-index:2;margin:12px auto}
 @media(max-width:420px){.master-reveal{padding:24px 16px}.master-verse{font-size:17px;letter-spacing:.03em}}
+/* 單字庫等高卡片；多義字保留全部例句，以卡內換頁取代跨欄高卡。 */
+#panel-bank .word-grid{grid-template-columns:repeat(auto-fill,minmax(220px,1fr));align-items:start}
+#panel-bank .flip-card,#panel-bank .flip-card.multi-sense-card{height:280px;min-height:280px;grid-column:auto;min-width:0}
+#panel-bank .flip-card-back{justify-content:flex-start;gap:9px;padding:16px}
+#panel-bank .flip-card-back .fc-top-row{flex-shrink:0;margin:0}
+#panel-bank .flip-card-back .fc-zh{font-size:16px;line-height:1.5;margin:0;flex-shrink:0}
+#panel-bank .multi-sense-card .fc-zh{max-height:48px;overflow:auto}
+#panel-bank .fc-sense-pages{min-height:0;flex:1;overflow:auto;overscroll-behavior:contain;padding-right:3px}
+#panel-bank .fc-sense-pages .fc-example-group{margin:0;padding:0;border:0}
+#panel-bank .fc-sense-nav{display:flex;align-items:center;justify-content:space-between;gap:5px;flex-shrink:0;border-top:1px solid var(--rule);padding-top:6px}
+#panel-bank .fc-sense-position{font-size:11px;color:var(--ink-soft);white-space:nowrap}
+#panel-bank .fc-sense-step{font:12px var(--font-ui);padding:6px 8px;min-height:36px;border:1px solid var(--rule-strong);border-radius:9px;background:var(--panel-alt);color:var(--ink);cursor:pointer}
+@media(pointer:coarse){#panel-bank .fc-sense-step{min-height:44px}}
+@media(max-width:640px){#panel-bank .word-grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr))}}
