@@ -19,7 +19,8 @@ window.BabyGarden = {create:function(app){
     const focusBefore=document.activeElement;
     dialog.classList.toggle('motion-paused',p.motion===false);
     dialog.onclose=()=>{if(!demo&&!p.masterRevealed)deferredMaster=p;if(focusBefore&&focusBefore.isConnected&&focusBefore.focus)focusBefore.focus();};
-    content.innerHTML=`<p class="garden-kicker">${demo?'測試用 · 成年前的相遇':'成年前的相遇'}</p><h2 id="master-reveal-title">一段新的因緣</h2><div class="master-verse">${C.masterVerses[p.masterVerse===1?1:0].map(line=>`<p>${h(line)}</p>`).join('')}</div><button class="garden-primary" id="master-reveal-next">迎接新的成長</button><button class="garden-text" id="master-reveal-later">稍後再看</button>`;
+    const lines=C.masterVerses[p.masterVerse===1?1:0],arrival=lines.length*1800+1400;
+    content.innerHTML=`<div class="master-glow-stage"><div class="master-light-dust" aria-hidden="true">${Array.from({length:8},(_,i)=>`<i style="--dust:${i}"></i>`).join('')}</div><p class="garden-kicker">${demo?'測試用 · 成年前的相遇':'成年前的相遇'}</p><h2 id="master-reveal-title">一段新的因緣</h2><div class="master-verse master-emerging">${lines.map((line,i)=>`<p style="--line-delay:${1000+i*1800}ms">${h(line)}</p>`).join('')}</div><button class="garden-primary master-arrival" style="--reveal-delay:${arrival}ms" id="master-reveal-next">迎接新的成長</button></div><button class="garden-text" id="master-reveal-later">稍後再看</button>`;
     document.getElementById('master-reveal-later').onclick=()=>dialog.close();
     document.getElementById('master-reveal-next').onclick=async function(){
       if(this.disabled)return;this.disabled=true;
@@ -28,7 +29,7 @@ window.BabyGarden = {create:function(app){
       if(!C.revealMaster(p))return;
       if(!demo){await app.save();renderHome();if(app.onAppearanceChange)app.onAppearanceChange();}
       const a=C.appearance(p);
-      content.innerHTML=`<p class="garden-kicker">${demo?'測試用 · 隱藏成長形象':'我們一起走到了這裡'}</p><h2 id="master-reveal-title">弘法大師</h2><div class="master-reveal-avatar">${window.BabyAvatar.render(a.stage,a.gender,a.characterId)}</div><p class="master-message">${h(p.name)}，願以智慧與慈悲，陪你繼續學習。</p><button class="garden-primary" id="master-reveal-done">繼續一起學英文</button>`;
+      content.innerHTML=`<div class="master-glow-stage master-awakened"><p class="master-blessing">恭喜，遇見 2% 的福報因緣</p><h2 id="master-reveal-title">隱藏結局・了卻塵緣 六根清淨</h2><div class="master-reveal-avatar">${window.BabyAvatar.render(a.stage,a.gender,a.characterId)}</div><p class="master-message">${h(p.name)}，願以智慧與慈悲，陪你繼續學習。</p></div><button class="garden-primary" id="master-reveal-done">繼續一起學英文</button>`;
       document.getElementById('master-reveal-done').onclick=()=>dialog.close();
       document.getElementById('master-reveal-done').focus();
     };

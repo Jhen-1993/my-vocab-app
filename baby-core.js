@@ -13,7 +13,7 @@
   const hiddenCharacters = ['boy','girl'].map(gender=>({id:'master-'+gender,gender,asset:'master-'+gender,name:'弘法大師',career:'弘法大師'}));
   const masterVerses = [
     ['無上甚深微妙法','百千萬劫難遭遇','我今見聞得受持','願解如來真實義'],
-    ['一切有為法，如夢幻泡影，','如露亦如電，應作如是觀。']
+    ['一切有為法','如夢幻泡影','如露亦如電','應作如是觀']
   ];
   function character(id){return characters.concat(hiddenCharacters).find(c=>c.id===id);}
   const stages = [

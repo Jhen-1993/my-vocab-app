@@ -71,7 +71,7 @@ footer.note{background:#f0f2e9;border:1px solid #e2e6d7;box-shadow:none;color:#7
 @media(max-width:640px){.study-screen{padding:20px 14px}.study-wrap{padding:0 0 18px}.study-welcome{gap:12px;margin-bottom:20px}.study-welcome h2{font-size:18px}.study-baby{width:56px}.study-card{height:310px;margin:16px 0}.study-card-front,.study-card-back{padding:24px 18px}.study-card.multi-sense-study-card .study-card-back{padding:22px 18px}.study-nav{gap:10px}.study-nav button{font-size:13px}.study-zh{font-size:21px}}
 /* 成年揭曉：沿用小屋色調；長偈語在窄螢幕自然換行。 */
 .master-reveal{width:min(520px,calc(100% - 32px));box-sizing:border-box;border:1px solid #e2dacb;border-radius:26px;padding:30px 24px;background:#fffdf8;color:#4f5b50;text-align:center;box-shadow:0 20px 70px #343b3b30;max-height:calc(100% - 32px);overflow:auto}
-.master-reveal::backdrop{background:#333a3a70}
+.master-reveal::backdrop{background:radial-gradient(ellipse at center,#a1783b60,#2b241ddb)}
 .master-reveal h2{margin:12px 0 20px;font-size:24px}
 .master-verse{margin:30px 0;font-family:"Noto Serif TC",serif;font-size:20px;line-height:2.2;letter-spacing:.08em;overflow-wrap:anywhere}
 .master-verse p{margin:0}
@@ -82,6 +82,35 @@ footer.note{background:#f0f2e9;border:1px solid #e2e6d7;box-shadow:none;color:#7
 .master-test-controls p{flex-basis:100%;margin:0}
 .nursery #master-resume{position:relative;z-index:2;margin:12px auto}
 @media(max-width:420px){.master-reveal{padding:24px 16px}.master-verse{font-size:17px;letter-spacing:.03em}}
+/* MASTER_CEREMONY_START: shared with the isolated reveal preview. */
+.master-glow-stage{position:relative;isolation:isolate;overflow:hidden;box-sizing:border-box;width:100%;border-radius:22px;padding:26px 18px 30px;background:#fff2c7;color:#68491f;text-align:center}
+.master-glow-stage::before,.master-glow-stage::after{content:"";position:absolute;inset:-35%;z-index:-1;pointer-events:none}
+.master-glow-stage::before{background:radial-gradient(ellipse at 50% 50%,#fffef2 0%,#fff8cdeb 27%,#f5cc6375 48%,#e6aa3218 68%,transparent 80%);animation:master-golden-dawn 12s ease-out both}
+.master-glow-stage::after{background:repeating-conic-gradient(from 15deg at 50% 52%,transparent 0deg 19deg,#fffdf047 23deg,transparent 29deg 45deg);mask-image:radial-gradient(ellipse,#0009,transparent 66%);animation:master-sun-rays 16s ease-out both}
+.master-glow-stage .garden-kicker{color:#8a682e;letter-spacing:.16em}
+.master-glow-stage h2,.master-glow-stage h3{color:#68491f}
+.master-glow-stage .master-verse{position:relative;z-index:1;margin:30px auto 34px;font-family:"Noto Serif TC","PMingLiU",serif;font-size:22px;font-weight:500;line-height:2.4;letter-spacing:.09em;text-shadow:0 0 18px #fffdf4;overflow-wrap:anywhere}
+.master-glow-stage .master-verse p{margin:0}
+.master-emerging p{animation:master-word-rise 1500ms cubic-bezier(.2,.65,.3,1) var(--line-delay,1000ms) both}
+.master-arrival{animation:master-button-arrive 900ms ease var(--reveal-delay,8600ms) both}
+.master-glow-stage .garden-primary{background:#876326;color:#fffdf4;box-shadow:0 5px 22px #b9873326}
+.master-light-dust{position:absolute;inset:0;pointer-events:none;z-index:-1}
+.master-light-dust i{position:absolute;width:4px;height:4px;border-radius:50%;background:#fffef6;box-shadow:0 0 12px 3px #f1c96a80;left:calc(8% + var(--dust)*12%);top:75%;animation:master-dust-rise 10s ease-in-out calc(var(--dust)*350ms) both}
+.master-blessing{font-size:18px;line-height:1.8;letter-spacing:.08em;color:#805b23;margin:0 0 10px}
+.master-awakened .master-blessing,.master-awakened h2,.master-awakened h3,.master-awakened .master-reveal-avatar,.master-awakened .master-message{animation:master-word-rise 1400ms ease both}
+.master-awakened .master-reveal-avatar{animation-delay:250ms}
+.master-awakened h2,.master-awakened h3{font-size:22px;line-height:1.7;text-wrap:balance}
+.master-awakened .master-message{animation-delay:700ms}
+@keyframes master-golden-dawn{from{opacity:.15;transform:scale(.85)}to{opacity:1;transform:scale(1.12)}}
+@keyframes master-sun-rays{from{opacity:0;transform:rotate(-9deg)}to{opacity:.8;transform:rotate(9deg)}}
+@keyframes master-word-rise{from{opacity:0;transform:translateY(12px);filter:blur(3px)}to{opacity:1;transform:translateY(0);filter:blur(0)}}
+@keyframes master-button-arrive{from{visibility:hidden;opacity:0;transform:translateY(6px)}to{visibility:visible;opacity:1;transform:translateY(0)}}
+@keyframes master-dust-rise{0%{opacity:0;transform:translateY(15px)}30%{opacity:.65}100%{opacity:0;transform:translateY(-180px)}}
+.motion-paused .master-glow-stage::before,.motion-paused .master-glow-stage::after,.motion-paused .master-glow-stage *,.motion-paused .master-arrival{animation:none!important;opacity:1;visibility:visible;transform:none;filter:none}
+.motion-paused .master-light-dust{display:none}
+@media(prefers-reduced-motion:reduce){.master-glow-stage::before,.master-glow-stage::after,.master-glow-stage *,.master-arrival{animation:none!important;opacity:1;visibility:visible;transform:none;filter:none}.master-light-dust{display:none}}
+@media(max-width:420px){.master-glow-stage{padding:24px 10px}.master-glow-stage .master-verse{font-size:18px;letter-spacing:.03em}.master-blessing{font-size:16px}}
+/* MASTER_CEREMONY_END */
 /* 單字庫等高卡片；多義字保留全部例句，以卡內換頁取代跨欄高卡。 */
 #panel-bank .word-grid{grid-template-columns:repeat(auto-fill,minmax(220px,1fr));align-items:start}
 #panel-bank .flip-card,#panel-bank .flip-card.multi-sense-card{height:280px;min-height:280px;grid-column:auto;min-width:0}
