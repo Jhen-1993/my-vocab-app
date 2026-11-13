@@ -47,9 +47,9 @@ window.BabyGarden = {create:function(app){
         <section class="nursery room-${p.room} ${p.motion===false?'motion-paused':''}" aria-label="寶寶的小屋">
           <div class="room-top"><span class="room-pill">成長第 ${s.days} 天</span><div class="room-top-actions"><button class="baby-motion" id="baby-motion" aria-pressed="${p.motion!==false}" aria-label="寶寶自動動作">${p.motion===false?'播放動作':'暫停動作'}</button><span class="room-star">✦ ${p.stars} 星星</span></div></div>
           <div class="nursery-window"><i></i></div><span class="room-spark spark-one">✧</span><span class="room-spark spark-two">✦</span><div class="room-plant" aria-hidden="true">♧</div>
-          <div class="baby-speech">${d.completed?'今天也一起長大了，謝謝你！':'今天，也陪我學一點英文吧。'}</div>
+          <div class="baby-speech">${d.completed?'咿呀咿呀～小寶寶長大了！':'嘻嘻～陪寶寶學單字。'}</div>
           <button class="baby-button" id="pet-baby" aria-label="摸摸${h(p.name)}">${baby(s.index)}</button>
-          <div class="baby-caption"><h3>${h(p.name)} <span>${p.gender==='girl'?'女寶':'男寶'} · ${s.stage.name}</span></h3><p>${s.stage.note}</p><p class="baby-touch-hint">咿呀～寶寶最喜歡你了！</p></div>
+          <div class="baby-caption"><h3>${h(p.name)} <span>${p.gender==='girl'?'女寶':'男寶'} · ${s.stage.name}</span></h3><p>${s.stage.note}</p><p class="baby-touch-hint">摸摸寶寶的頭嘛～ ♡ </p></div>
           ${C.needsMasterReveal(p)?'<button class="garden-outline" id="master-resume">迎接新的成長</button>':''}<div class="growth-meter"><div><strong>成長值 ${s.xp.toLocaleString()} XP</strong><span>${s.adultLevel?'成人 Lv.'+s.adultLevel:s.stage.name}</span></div><div class="garden-progress" role="progressbar" aria-label="下一個成長階段" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${s.progress}"><span style="width:${s.progress}%"></span></div><p>距離 ${s.next.name} 還差 <b>${(s.next.xp-s.xp).toLocaleString()} XP</b></p></div><div class="room-floor"></div>
         </section>
         <div class="garden-right">
@@ -73,7 +73,7 @@ window.BabyGarden = {create:function(app){
     }
     document.getElementById('pet-baby').onclick=function(){
       const button=this, bubble=home.querySelector('.baby-speech');
-      const messages=['嘿嘿，最喜歡你了！♡','抱抱～我們一起長大！','今天也要陪寶寶玩英文嘛～ ♡'];
+      const messages=['咿呀～寶寶最喜歡你了！','抱抱～我們一起長大！','今天也要陪寶寶玩英文嘛～ ♡'];
       button.classList.remove('is-delighted');void button.offsetWidth;button.classList.add('is-delighted');
       bubble.textContent=messages[Math.floor(Math.random()*messages.length)];
       clearTimeout(delightTimer);
