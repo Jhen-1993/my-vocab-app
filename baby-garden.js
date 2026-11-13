@@ -10,7 +10,31 @@ window.BabyGarden = {create:function(app){
     const el=document.getElementById('garden-toast'); el.textContent=message; el.hidden=false;
     clearTimeout(toastTimer); toastTimer=setTimeout(()=>{el.hidden=true;},4500);
   }
-  function baby(stage){ return window.BabyAvatar.render(stage,pet().gender); }
+  function baby(){const a=C.appearance(pet());return window.BabyAvatar.render(a.stage,a.gender,a.characterId);}
+  let deferredMaster=null;
+  function showMasterReveal(p,demo){
+    const dialog=document.getElementById('master-reveal');
+    if(!dialog||dialog.open||!C.needsMasterReveal(p))return;
+    const content=document.getElementById('master-reveal-content');
+    const focusBefore=document.activeElement;
+    dialog.classList.toggle('motion-paused',p.motion===false);
+    dialog.onclose=()=>{if(!demo&&!p.masterRevealed)deferredMaster=p;if(focusBefore&&focusBefore.isConnected&&focusBefore.focus)focusBefore.focus();};
+    content.innerHTML=`<p class="garden-kicker">${demo?'測試用 · 成年前的相遇':'成年前的相遇'}</p><h2 id="master-reveal-title">一段新的因緣</h2><div class="master-verse">${C.masterVerses[p.masterVerse===1?1:0].map(line=>`<p>${h(line)}</p>`).join('')}</div><button class="garden-primary" id="master-reveal-next">迎接新的成長</button><button class="garden-text" id="master-reveal-later">稍後再看</button>`;
+    document.getElementById('master-reveal-later').onclick=()=>dialog.close();
+    document.getElementById('master-reveal-next').onclick=async function(){
+      if(this.disabled)return;this.disabled=true;
+      // 資料匯入或重設後，不讓舊視窗改動另一位寶寶。
+      if(!demo&&pet()!==p){dialog.close();checkMasterReveal();return;}
+      if(!C.revealMaster(p))return;
+      if(!demo){await app.save();renderHome();if(app.onAppearanceChange)app.onAppearanceChange();}
+      const a=C.appearance(p);
+      content.innerHTML=`<p class="garden-kicker">${demo?'測試用 · 隱藏成長形象':'我們一起走到了這裡'}</p><h2 id="master-reveal-title">弘法大師</h2><div class="master-reveal-avatar">${window.BabyAvatar.render(a.stage,a.gender,a.characterId)}</div><p class="master-message">${h(p.name)}，願以智慧與慈悲，陪你繼續學習。</p><button class="garden-primary" id="master-reveal-done">繼續一起學英文</button>`;
+      document.getElementById('master-reveal-done').onclick=()=>dialog.close();
+      document.getElementById('master-reveal-done').focus();
+    };
+    dialog.showModal();
+  }
+  function checkMasterReveal(){const p=pet();if(p!==deferredMaster&&C.needsMasterReveal(p))showMasterReveal(p,false);}
   let delightTimer;
   function renderHome(){
     if(!app.data()) return;
@@ -25,7 +49,7 @@ window.BabyGarden = {create:function(app){
           <div class="baby-speech">${d.completed?'今天也一起長大了，謝謝你！':'今天，也陪我學一點英文吧。'}</div>
           <button class="baby-button" id="pet-baby" aria-label="摸摸${h(p.name)}">${baby(s.index)}</button>
           <div class="baby-caption"><h3>${h(p.name)} <span>${p.gender==='girl'?'女寶':'男寶'} · ${s.stage.name}</span></h3><p>${s.stage.note}</p><p class="baby-touch-hint">摸摸我的頭，我會開心地笑喔 ♡</p></div>
-          <div class="growth-meter"><div><strong>成長值 ${s.xp.toLocaleString()} XP</strong><span>${s.adultLevel?'成人 Lv.'+s.adultLevel:s.stage.name}</span></div><div class="garden-progress" role="progressbar" aria-label="下一個成長階段" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${s.progress}"><span style="width:${s.progress}%"></span></div><p>距離 ${s.next.name} 還差 <b>${(s.next.xp-s.xp).toLocaleString()} XP</b></p></div><div class="room-floor"></div>
+          ${C.needsMasterReveal(p)?'<button class="garden-outline" id="master-resume">迎接新的成長</button>':''}<div class="growth-meter"><div><strong>成長值 ${s.xp.toLocaleString()} XP</strong><span>${s.adultLevel?'成人 Lv.'+s.adultLevel:s.stage.name}</span></div><div class="garden-progress" role="progressbar" aria-label="下一個成長階段" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${s.progress}"><span style="width:${s.progress}%"></span></div><p>距離 ${s.next.name} 還差 <b>${(s.next.xp-s.xp).toLocaleString()} XP</b></p></div><div class="room-floor"></div>
         </section>
         <div class="garden-right">
           <section class="daily-card"><div class="card-heading"><span class="garden-kicker">TODAY’S LITTLE STEPS</span><span class="soft-badge">${d.completed?'已達標 ✓':'每日任務'}</span></div><h3>${d.completed?'今天的成長養分已滿！':'給寶寶今天的成長養分'}</h3><p>不使用提示，答對 ${d.goal} 個不同的英文單字。</p><div class="goal-number">${d.words.length}<span> / ${d.goal} 個單字</span><span class="goal-percent">${percent}%</span></div><div class="garden-progress" role="progressbar" aria-label="今日學習目標" aria-valuenow="${d.words.length}" aria-valuemin="0" aria-valuemax="${d.goal}"><span style="width:${percent}%"></span></div><div class="reward-note">達標獎勵 <strong>+30 成長值 · ✦ 3 星星</strong></div><button class="garden-primary" id="garden-learn">${d.completed?'再練習一下':'開始今日學習'} </button><button class="garden-text" id="garden-preview">先翻翻單字卡</button></section>
@@ -33,15 +57,19 @@ window.BabyGarden = {create:function(app){
           <div class="little-stats"><div><b>${s.streak}<small> 天</small></b><span>連續達標</span></div><div><b>${s.days}<small> 天</small></b><span>累積成長</span></div><div><b>${app.wordCount()}<small> 個</small></b><span>收藏單字</span></div></div>
         </div>
       </div>
-      ${app.appearancePreview===true?`<details class="baby-looks ${p.motion===false?'motion-paused':''}"><summary>測試用：查看各階段外觀</summary><label for="baby-look-stage">成長階段</label><select id="baby-look-stage">${C.stages.map((st,i)=>`<option value="${i}" ${i===s.index?'selected':''}>${st.name} · ${st.xp.toLocaleString()} XP</option>`).join('')}</select><div id="baby-look-pair" class="baby-look-pair"></div></details>`:''}
+      ${app.appearancePreview===true?`<details class="baby-looks ${p.motion===false?'motion-paused':''}"><summary>測試用：查看各階段外觀</summary><label for="baby-look-stage">成長階段</label><select id="baby-look-stage">${C.stages.map((st,i)=>`<option value="${i}" ${i===s.index?'selected':''}>${st.name} · ${st.xp.toLocaleString()} XP</option>`).join('')}</select><div id="baby-look-pair" class="baby-look-pair"></div><div id="master-test-controls" class="master-test-controls"></div></details>`:''}
       <div class="garden-section-heading"><h3>陪小寶一起玩遊戲</h3><span>每次 5 題，從小小的挑戰開始</span></div>
       <div class="game-shortcuts"><button class="game-shortcut" data-play="choice"><span class="game-icon peach-icon">Aa</span><div><span class="mini-label">WORD PICK</span><h3>單字選選樂</h3><p>看英文，找出正確的中文意思。</p></div></button><button class="game-shortcut" data-play="spell"><span class="game-icon lavender-icon">a_z</span><div><span class="mini-label">SPELL & GROW</span><h3>拼字小花園</h3><p>看中文，把記得的英文拼出來。</p></div></button></div>
       <div class="garden-bottom"><section class="journey-card"><div class="card-heading"><h3>我們的成長旅程</h3><span class="mini-label">GROW TOGETHER</span></div><div class="stage-path">${C.stages.map((st,i)=>`<div class="stage-stop ${i<=s.index?'reached':''}"><span>${['◒','❀','♧','✧','✿','▤','◇','☆','✦','♡'][i]}</span><b>${st.name}</b><small>${st.xp===0?'初次見面':st.xp.toLocaleString()+' XP'}</small></div>`).join('')}</div><p class="journey-note">再累積 ${(s.next.xp-s.xp).toLocaleString()} 成長值，就能到達「${s.next.name}」。<br>成年後每 1,000 XP 再升一級，學習不會到期。偶爾休息也不會倒退。</p><div class="week-row">${week.map(date=>`<div class="${p.days[date]&&p.days[date].completed?'done':''}"><span>${['日','一','二','三','四','五','六'][new Date(date+'T12:00:00').getDay()]}</span><b title="${date}">${p.days[date]&&p.days[date].completed?'✓':date.slice(8)}</b></div>`).join('')}</div></section>
       <section class="personalize-card"><div class="card-heading"><h3>寶寶的小日常</h3><span aria-hidden="true">✿</span></div><form id="baby-settings"><label for="baby-name">寶寶的名字</label><div class="name-row"><input id="baby-name" maxlength="20" required value="${h(p.name)}"><button class="garden-outline" type="submit">儲存</button></div><label for="baby-goal">每天的學習目標</label><select id="baby-goal">${[5,10,15].map(n=>`<option value="${n}" ${p.goal===n?'selected':''}>${n} 個單字${n===5?' · 輕鬆起步':n===10?' · 穩定練習':' · 挑戰自己'}</option>`).join('')}</select><p class="settings-note">開始作答後，更改目標於隔日生效。</p></form><label>換個小屋布置</label><div class="room-options">${C.rooms.map(r=>`<button class="room-option ${p.room===r.id?'selected':''}" data-room="${r.id}" ${!p.owned.includes(r.id)&&p.stars<r.cost?'disabled':''}><span class="swatch room-${r.id}"></span>${r.name}<small>${p.room===r.id?'使用中':p.owned.includes(r.id)?'已擁有':'✦ '+r.cost}</small></button>`).join('')}</div></section></div>
       <p class="garden-footnote">成長從啟用新版後開始計算。複習與遊戲共用每日目標，每日目標與填空完成獎勵各領一次；遊戲新單字每字 +2 XP，每天最多 20 字。</p>`;
     clearTimeout(delightTimer);
-    const renderLooks=()=>{const stage=Number(document.getElementById('baby-look-stage').value)||0;const activities=window.BabyAvatar.actions.map(a=>a.name);document.getElementById('baby-look-pair').innerHTML=['boy','girl'].map(g=>`<div><h4>${g==='girl'?'女寶':'男寶'}</h4>${window.BabyAvatar.render(stage,g)}<p>${activities[stage]}</p></div>`).join('');};
-    if(app.appearancePreview===true){document.getElementById('baby-look-stage').onchange=renderLooks;renderLooks();}
+    const renderLooks=()=>{const stage=Number(document.getElementById('baby-look-stage').value)||0;document.getElementById('baby-look-pair').innerHTML=C.characters.map(c=>`<div><h4>${c.name}${stage===9&&c.career?' · '+c.career:''}</h4>${window.BabyAvatar.render(stage,c.gender,c.id)}<p>${window.BabyAvatar.actionFor(stage,c.id).name}</p></div>`).join('');};
+    if(app.appearancePreview===true){document.getElementById('baby-look-stage').onchange=renderLooks;renderLooks();
+      const preview=document.getElementById('master-test-controls');
+      preview.innerHTML='<p>測試用：隱藏成長揭曉（不影響目前小寶）</p><button class="garden-outline" id="master-test-boy">男寶 · 開經偈</button><button class="garden-outline" id="master-test-girl">女寶 · 金剛經偈</button>';
+      for(const gender of ['boy','girl'])document.getElementById('master-test-'+gender).onclick=()=>showMasterReveal(C.normalize({version:2,characterId:'blue-'+gender,name:'測試小寶',xp:18000,hiddenMaster:true,masterVerse:gender==='girl'?1:0}),true);
+    }
     document.getElementById('pet-baby').onclick=function(){
       const button=this, bubble=home.querySelector('.baby-speech');
       const messages=['嘿嘿，最喜歡你了！♡','抱抱～我們一起長大！','今天也要一起玩英文喔！'];
@@ -65,6 +93,8 @@ window.BabyGarden = {create:function(app){
       p.name=name.slice(0,20);p.goal=Number(document.getElementById('baby-goal').value);await app.save();renderHome();toast('設定已儲存'+(d.words.length?'；學習目標於隔日生效。':'。'));
     };
     home.querySelectorAll('[data-room]').forEach(b=>b.onclick=async()=>{if(C.buy(p,b.dataset.room)){await app.save();renderHome();toast('小屋已換上新的顏色。');}});
+    if(C.needsMasterReveal(p))document.getElementById('master-resume').onclick=()=>showMasterReveal(p,false);
+    if(!home.hidden)checkMasterReveal();
   }
   function shuffled(list){return app.shuffle(list.slice());}
   function pool(){
@@ -154,7 +184,7 @@ window.BabyGarden = {create:function(app){
     if(earned)toast('✨ 填空任務完成！成長值 +'+(20+(extraXP||0))+(extraXP?'（含每日目標獎勵）':'')+'。'+(info().index>before?' 長大成'+info().stage.name+'了！':''));
     return earned;
   }
-  function reset(){game=null;}
+  function reset(){game=null;const dialog=document.getElementById('master-reveal');if(dialog&&dialog.open)dialog.close();}
   function render(){renderHome();if(!games.hidden)renderGames();}
-  return {render,renderHome,renderGames,record,finishRoutine,reset};
+  return {render,renderHome,renderGames,record,finishRoutine,reset,checkMasterReveal};
 }};

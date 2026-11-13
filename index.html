@@ -660,6 +660,7 @@
 <!-- 版本參數可避免 GitHub Pages 或瀏覽器繼續使用舊的整合資料快取。 -->
 <script src="data/advanced.js?v=20260818-bundled-v66"></script>
 <div id="garden-toast" class="garden-toast" role="status" aria-live="polite" hidden></div>
+<dialog id="master-reveal" class="master-reveal" aria-labelledby="master-reveal-title"><div id="master-reveal-content"></div></dialog>
 <script src="baby-core.js"></script>
 <script src="baby-avatar.js"></script>
 <script src="baby-garden.js"></script>
@@ -1150,6 +1151,7 @@
         pendingSaveResolvers = [];
         await performSave();
         resolvers.forEach(function(r){ r(); });
+        if(garden)garden.checkMasterReveal();
       }, 500);
     });
   }
@@ -2871,8 +2873,8 @@
       : "";
     var backContent = renderCardExamples(w, "study");
     var studyPet = data.companion;
-    var studyStage = BabyCore.summary(studyPet,todayStr(),function(d){return addDays(d,-1);}).index;
-    var studyWelcome = '<div class="study-welcome"><div class="study-baby" aria-hidden="true">'+BabyAvatar.render(studyStage,studyPet.gender)+'</div><div><h2>陪 '+escapeHtml(studyPet.name)+' 認識新單字</h2><p>慢慢翻，一起把英文記起來。</p></div></div>';
+    var studyLook = BabyCore.appearance(studyPet);
+    var studyWelcome = '<div class="study-welcome"><div class="study-baby" aria-hidden="true">'+BabyAvatar.render(studyLook.stage,studyLook.gender,studyLook.characterId)+'</div><div><h2>陪 '+escapeHtml(studyPet.name)+' 認識新單字</h2><p>慢慢翻，一起把英文記起來。</p></div></div>';
 
 
     screen.innerHTML =
@@ -2929,6 +2931,7 @@
 
   var garden = BabyGarden.create({
     appearancePreview:false,
+    onAppearanceChange: function(){if(!document.getElementById('study-screen').hidden)renderStudyScreen();},
     data: function(){ return data; }, save: saveData, today: todayStr,
     addDays: addDays, escape: escapeHtml, decks: DECKS,
     shuffle: function(list){ shuffle(list); return list; },
@@ -2958,7 +2961,7 @@
     return performSave();
   }).then(function(){
     return topUpNewWordsIfNeeded();
-  }).then(function(){showInitialScreen();});
+  }).then(function(){showInitialScreen();garden.checkMasterReveal();});
   // Keep daily progress current when the page stays open across midnight.
   var gardenDate=todayStr();
   document.addEventListener("visibilitychange",function(){

@@ -69,3 +69,16 @@ footer.note{background:#f0f2e9;border:1px solid #e2e6d7;box-shadow:none;color:#7
 .study-nav .ghost{background:#fffdf9;border:1px solid #dce2dd;color:#64796d;border-radius:14px;box-shadow:none;min-height:48px;font-size:14px}
 .study-complete{background:#fffdf9;border:1px solid #dfe5e4;border-radius:28px;box-shadow:0 12px 32px #52666c0b}
 @media(max-width:640px){.study-screen{padding:20px 14px}.study-wrap{padding:0 0 18px}.study-welcome{gap:12px;margin-bottom:20px}.study-welcome h2{font-size:18px}.study-baby{width:56px}.study-card{height:310px;margin:16px 0}.study-card-front,.study-card-back{padding:24px 18px}.study-card.multi-sense-study-card .study-card-back{padding:22px 18px}.study-nav{gap:10px}.study-nav button{font-size:13px}.study-zh{font-size:21px}}
+/* 成年揭曉：沿用小屋色調；長偈語在窄螢幕自然換行。 */
+.master-reveal{width:min(520px,calc(100% - 32px));box-sizing:border-box;border:1px solid #e2dacb;border-radius:26px;padding:30px 24px;background:#fffdf8;color:#4f5b50;text-align:center;box-shadow:0 20px 70px #343b3b30;max-height:calc(100% - 32px);overflow:auto}
+.master-reveal::backdrop{background:#333a3a70}
+.master-reveal h2{margin:12px 0 20px;font-size:24px}
+.master-verse{margin:30px 0;font-family:"Noto Serif TC",serif;font-size:20px;line-height:2.2;letter-spacing:.08em;overflow-wrap:anywhere}
+.master-verse p{margin:0}
+.master-reveal .garden-primary,.master-reveal .garden-text{display:block;margin:14px auto 0;max-width:100%}
+.master-reveal-avatar .baby-illustration{width:min(285px,100%);margin:auto}
+.master-message{line-height:1.8;margin:12px 0}
+.master-test-controls{margin-top:24px;display:flex;flex-wrap:wrap;gap:12px}
+.master-test-controls p{flex-basis:100%;margin:0}
+.nursery #master-resume{position:relative;z-index:2;margin:12px auto}
+@media(max-width:420px){.master-reveal{padding:24px 16px}.master-verse{font-size:17px;letter-spacing:.03em}}

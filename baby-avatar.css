@@ -59,3 +59,51 @@
 @keyframes cel-mouth-region{0.000000%{mask-image:radial-gradient(ellipse 17% 10% at 50% 46%,#000 55%,transparent 100%)}9.287926%{mask-image:radial-gradient(ellipse 17% 10% at 50% 46%,#000 55%,transparent 100%)}17.027864%{mask-image:radial-gradient(ellipse 17% 10% at 50% 46%,#000 55%,transparent 100%)}23.219814%{mask-image:radial-gradient(ellipse 17% 10% at 50% 46%,#000 55%,transparent 100%)}29.411765%{mask-image:radial-gradient(ellipse 17% 10% at 50% 46%,#000 55%,transparent 100%)}36.635707%{mask-image:none}38.183695%{mask-image:none}39.525284%{mask-image:none}51.909185%{mask-image:none}53.250774%{mask-image:none}62.538700%{mask-image:none}63.880289%{mask-image:none}65.944272%{mask-image:radial-gradient(ellipse 17% 10% at 50% 46%,#000 55%,transparent 100%)}76.264190%{mask-image:radial-gradient(ellipse 17% 10% at 50% 46%,#000 55%,transparent 100%)}84.520124%{mask-image:radial-gradient(ellipse 17% 10% at 50% 46%,#000 55%,transparent 100%)}100%{mask-image:radial-gradient(ellipse 17% 10% at 50% 46%,#000 55%,transparent 100%)}}
 @keyframes cel-hop{0%,35.555556%,56%,100%{transform:translateY(0)}42.222222%{transform:translateY(-8px)}50%{transform:translateY(-12px)}60%{transform:translateY(0)}}
 @media(prefers-reduced-motion:reduce){.baby-painted .painted-strip{left:0!important}.baby-painted .painted-idle-anchor{visibility:hidden!important}.baby-painted .painted-window{mask-image:none!important}}
+
+/* Six character actions */
+.painted-variant.painted-stage-0 .painted-window{animation:none;mask-image:none}
+.painted-sunny-girl.painted-stage-0 .painted-strip{animation:cel-sunny-girl-0 9000ms steps(1,end) infinite}
+@keyframes cel-sunny-girl-0{0.000000%{left:0%}18.888889%{left:-100%}32.222222%{left:-200%}37.222222%{left:-300%}61.666667%{left:-200%}66.666667%{left:-100%}80.000000%{left:0%}100%{left:0%}}
+.painted-sunny-girl.painted-stage-4 .painted-strip{animation:cel-sunny-girl-4 1450ms steps(1,end) infinite}
+@keyframes cel-sunny-girl-4{0.000000%{left:0%}20.689655%{left:-100%}37.931034%{left:-200%}55.172414%{left:-300%}75.862069%{left:0%}100%{left:0%}}
+.painted-sunny-girl.painted-stage-7 .painted-strip{animation:cel-sunny-girl-7 6400ms steps(1,end) infinite}
+@keyframes cel-sunny-girl-7{0.000000%{left:0%}21.875000%{left:-100%}29.687500%{left:-200%}40.625000%{left:-300%}59.375000%{left:-200%}70.312500%{left:-100%}78.125000%{left:0%}100%{left:0%}}
+.painted-sunny-girl.painted-stage-8 .painted-strip{animation:cel-sunny-girl-8 6400ms steps(1,end) infinite}
+@keyframes cel-sunny-girl-8{0.000000%{left:0%}21.875000%{left:-100%}29.687500%{left:-200%}40.625000%{left:-300%}59.375000%{left:-200%}70.312500%{left:-100%}78.125000%{left:0%}100%{left:0%}}
+.painted-sunny-girl.painted-stage-9 .painted-strip{animation:cel-sunny-girl-9 6400ms steps(1,end) infinite}
+@keyframes cel-sunny-girl-9{0.000000%{left:0%}21.875000%{left:-100%}29.687500%{left:-200%}40.625000%{left:-300%}59.375000%{left:-200%}70.312500%{left:-100%}78.125000%{left:0%}100%{left:0%}}
+.painted-sunny-boy.painted-stage-0 .painted-strip{animation:cel-sunny-boy-0 9000ms steps(1,end) infinite}
+@keyframes cel-sunny-boy-0{0.000000%{left:0%}18.888889%{left:-100%}32.222222%{left:-200%}37.222222%{left:-300%}61.666667%{left:-200%}66.666667%{left:-100%}80.000000%{left:0%}100%{left:0%}}
+.painted-sunny-boy.painted-stage-4 .painted-strip{animation:cel-sunny-boy-4 2650ms steps(1,end) infinite}
+@keyframes cel-sunny-boy-4{0.000000%{left:0%}24.528302%{left:-100%}35.849057%{left:-200%}49.056604%{left:-300%}75.471698%{left:0%}100%{left:0%}}
+.painted-sunny-boy.painted-stage-7 .painted-strip{animation:cel-sunny-boy-7 2890ms steps(1,end) infinite}
+@keyframes cel-sunny-boy-7{0.000000%{left:0%}31.141869%{left:-100%}39.100346%{left:-200%}47.058824%{left:-100%}55.017301%{left:-300%}82.698962%{left:0%}100%{left:0%}}
+.painted-sunny-boy.painted-stage-8 .painted-strip{animation:cel-sunny-boy-8 4550ms steps(1,end) infinite}
+@keyframes cel-sunny-boy-8{0.000000%{left:0%}24.175824%{left:-100%}34.065934%{left:-200%}42.857143%{left:-300%}58.241758%{left:-200%}65.934066%{left:-100%}73.626374%{left:0%}100%{left:0%}}
+.painted-sunny-boy.painted-stage-9 .painted-strip{animation:cel-sunny-boy-9 3850ms steps(1,end) infinite}
+@keyframes cel-sunny-boy-9{0.000000%{left:0%}28.571429%{left:-100%}34.545455%{left:-200%}40.519481%{left:-100%}46.493506%{left:-200%}52.467532%{left:-100%}58.441558%{left:-300%}81.818182%{left:0%}100%{left:0%}}
+.painted-sweet-girl.painted-stage-0 .painted-strip{animation:cel-sweet-girl-0 9000ms steps(1,end) infinite}
+@keyframes cel-sweet-girl-0{0.000000%{left:0%}18.888889%{left:-100%}32.222222%{left:-200%}37.222222%{left:-300%}61.666667%{left:-200%}66.666667%{left:-100%}80.000000%{left:0%}100%{left:0%}}
+.painted-sweet-girl.painted-stage-4 .painted-strip{animation:cel-sweet-girl-4 6400ms steps(1,end) infinite}
+@keyframes cel-sweet-girl-4{0.000000%{left:0%}21.875000%{left:-100%}29.687500%{left:-200%}40.625000%{left:-300%}59.375000%{left:-200%}70.312500%{left:-100%}78.125000%{left:0%}100%{left:0%}}
+.painted-sweet-girl.painted-stage-7 .painted-strip{animation:cel-sweet-girl-7 6400ms steps(1,end) infinite}
+@keyframes cel-sweet-girl-7{0.000000%{left:0%}21.875000%{left:-100%}29.687500%{left:-200%}40.625000%{left:-300%}59.375000%{left:-200%}70.312500%{left:-100%}78.125000%{left:0%}100%{left:0%}}
+.painted-sweet-girl.painted-stage-8 .painted-strip{animation:cel-sweet-girl-8 6400ms steps(1,end) infinite}
+@keyframes cel-sweet-girl-8{0.000000%{left:0%}21.875000%{left:-100%}29.687500%{left:-200%}40.625000%{left:-300%}59.375000%{left:-200%}70.312500%{left:-100%}78.125000%{left:0%}100%{left:0%}}
+.painted-sweet-girl.painted-stage-9 .painted-strip{animation:cel-sweet-girl-9 6400ms steps(1,end) infinite}
+@keyframes cel-sweet-girl-9{0.000000%{left:0%}21.875000%{left:-100%}29.687500%{left:-200%}40.625000%{left:-300%}59.375000%{left:-200%}70.312500%{left:-100%}78.125000%{left:0%}100%{left:0%}}
+.painted-calm-boy.painted-stage-0 .painted-strip{animation:cel-calm-boy-0 9000ms steps(1,end) infinite}
+@keyframes cel-calm-boy-0{0.000000%{left:0%}18.888889%{left:-100%}32.222222%{left:-200%}37.222222%{left:-300%}61.666667%{left:-200%}66.666667%{left:-100%}80.000000%{left:0%}100%{left:0%}}
+.painted-calm-boy.painted-stage-4 .painted-strip{animation:cel-calm-boy-4 6400ms steps(1,end) infinite}
+@keyframes cel-calm-boy-4{0.000000%{left:0%}21.875000%{left:-100%}29.687500%{left:-200%}40.625000%{left:-300%}59.375000%{left:-200%}70.312500%{left:-100%}78.125000%{left:0%}100%{left:0%}}
+.painted-calm-boy.painted-stage-7 .painted-strip{animation:cel-calm-boy-7 6400ms steps(1,end) infinite}
+@keyframes cel-calm-boy-7{0.000000%{left:0%}21.875000%{left:-100%}29.687500%{left:-200%}40.625000%{left:-300%}59.375000%{left:-200%}70.312500%{left:-100%}78.125000%{left:0%}100%{left:0%}}
+.painted-calm-boy.painted-stage-8 .painted-strip{animation:cel-calm-boy-8 6400ms steps(1,end) infinite}
+@keyframes cel-calm-boy-8{0.000000%{left:0%}21.875000%{left:-100%}29.687500%{left:-200%}40.625000%{left:-300%}59.375000%{left:-200%}70.312500%{left:-100%}78.125000%{left:0%}100%{left:0%}}
+.painted-calm-boy.painted-stage-9 .painted-strip{animation:cel-calm-boy-9 6400ms steps(1,end) infinite}
+@keyframes cel-calm-boy-9{0.000000%{left:0%}21.875000%{left:-100%}29.687500%{left:-200%}40.625000%{left:-300%}59.375000%{left:-200%}70.312500%{left:-100%}78.125000%{left:0%}100%{left:0%}}
+@media(prefers-reduced-motion:reduce){.baby-painted.painted-variant .painted-strip{animation:none!important}}
+
+/* Hidden adult: intact painted cels, no warping. */
+.painted-master-boy.painted-stage-9 .painted-strip,.painted-master-girl.painted-stage-9 .painted-strip{animation:cel-master 8350ms steps(1,end) infinite}
+@keyframes cel-master{0.000000%{left:0%}23.952096%{left:-100%}29.940120%{left:-200%}34.131737%{left:-100%}40.119760%{left:0%}61.676647%{left:-300%}76.047904%{left:0%}100%{left:0%}}

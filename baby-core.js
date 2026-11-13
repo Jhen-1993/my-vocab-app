@@ -2,6 +2,20 @@
 (function(root){
   'use strict';
   const goals = [5, 10, 15];
+  const characters = [
+    {id:'blue-boy',gender:'boy',asset:'boy',name:'藍衣男寶',career:''},
+    {id:'blue-girl',gender:'girl',asset:'girl',name:'藍衣女寶',career:''},
+    {id:'sunny-girl',gender:'girl',asset:'sunny-girl',name:'黃衣女寶',career:'幹練律師'},
+    {id:'sunny-boy',gender:'boy',asset:'sunny-boy',name:'綠衣男寶',career:'籃球國手'},
+    {id:'sweet-girl',gender:'girl',asset:'sweet-girl',name:'粉衣女寶',career:'畫廊老闆'},
+    {id:'calm-boy',gender:'boy',asset:'calm-boy',name:'灰衣男寶',career:'機器人工程師'}
+  ];
+  const hiddenCharacters = ['boy','girl'].map(gender=>({id:'master-'+gender,gender,asset:'master-'+gender,name:'弘法大師',career:'弘法大師'}));
+  const masterVerses = [
+    ['無上甚深微妙法','百千萬劫難遭遇','我今見聞得受持','願解如來真實義'],
+    ['一切有為法，如夢幻泡影，','如露亦如電，應作如是觀。']
+  ];
+  function character(id){return characters.concat(hiddenCharacters).find(c=>c.id===id);}
   const stages = [
     {xp:0, name:'初生寶寶', note:'每一個新單字，都是長大的養分。'},
     {xp:90, name:'爬爬寶寶', note:'開始探索世界，也開始認識更多單字。'},
@@ -17,10 +31,21 @@
   const rooms = [{id:'peach',name:'奶油小屋',cost:0},{id:'mint',name:'薄荷花園',cost:3},{id:'lavender',name:'星空夢境',cost:6}];
   function normalize(raw){
     const p = raw && typeof raw === 'object' && !Array.isArray(raw) ? raw : {};
+    const isNew=Object.keys(p).length===0;
     const legacy=p.version!==2;
     p.motion = p.motion !== false;
-    // 只在新建或舊存檔缺少性別時抽取；重繪、改名與成長不會重抽。
-    if(p.gender !== 'boy' && p.gender !== 'girl')p.gender = Math.random() < 0.5 ? 'boy' : 'girl';
+    // 舊寶寶沿用原本藍衣形象；新建時六選一，之後依持久化身分呈現。
+    let identity=characters.find(c=>c.id===p.characterId);
+    if(!identity){
+      if(p.gender==='boy'||p.gender==='girl')identity=character('blue-'+p.gender);
+      else if(Object.keys(p).some(k=>k!=='motion'))identity=character(Math.random()<0.5?'blue-boy':'blue-girl');
+      else identity=characters[Math.floor(Math.random()*characters.length)];
+    }
+    p.characterId=identity.id;p.gender=identity.gender;
+    // 外觀與隱藏成長路線獨立；只在全新寶寶建立時抽取，舊資料不補抽。
+    p.hiddenMaster=isNew?Math.random()<0.02:p.hiddenMaster===true;
+    p.masterRevealed=p.hiddenMaster&&p.masterRevealed===true;
+    p.masterVerse=p.hiddenMaster?(isNew?Math.floor(Math.random()*masterVerses.length):(p.masterVerse===1?1:0)):0;
     p.name = typeof p.name === 'string' && p.name.trim() ? p.name.trim().slice(0,20) : '快樂小寶';
     p.goal = goals.includes(p.goal) ? p.goal : 5;
     p.stars = Number.isSafeInteger(p.stars) && p.stars >= 0 ? p.stars : 0;
@@ -43,6 +68,13 @@
     return p;
   }
   function wordKey(word){ return String(word).trim().toLowerCase().replace(/\s+/g,' '); }
+  function needsMasterReveal(p){return p.hiddenMaster===true&&p.xp>=stages[9].xp&&!p.masterRevealed;}
+  function revealMaster(p){if(!needsMasterReveal(p))return false;p.masterRevealed=true;return true;}
+  function appearance(p){
+    const index=stages.reduce((a,s,i)=>p.xp>=s.xp?i:a,0);
+    // 偈語確認前停留在大學生外觀，不閃現一般職業，也不提前載入隱藏成體。
+    return {stage:needsMasterReveal(p)?8:index,gender:p.gender,characterId:index===9&&p.hiddenMaster&&p.masterRevealed?'master-'+p.gender:p.characterId};
+  }
   function day(p,date){
     if(!p.days[date]) p.days[date] = {words:[],goal:p.goal,completed:false,gameReward:false,routineReward:false,gameWords:[]};
     // 未開始作答前可以變更目標；開始後鎖定當日目標。
@@ -80,7 +112,9 @@
     const adultLevel=index===stages.length-1?1+Math.floor((p.xp-stages[index].xp)/1000):0;
     const start=adultLevel?stages[index].xp+(adultLevel-1)*1000:stages[index].xp;
     const next=stages[index+1] || {xp:start+1000,name:'成人 Lv.'+(adultLevel+1)};
-    return {days:dates.length,streak,index,stage:stages[index],next,adultLevel,xp:p.xp,progress:Math.floor((p.xp-start)/(next.xp-start)*100),today:day(p,date)};
+    const identity=character(appearance(p).characterId);
+    const stage=needsMasterReveal(p)?{...stages[8],name:'成長的轉捩點',note:'一段新的旅程，正等著與你相遇。'}:index===9&&identity&&identity.career?{...stages[index],name:identity.career,...(p.hiddenMaster&&p.masterRevealed?{note:'願以智慧與慈悲，陪你繼續學習。'}:{})}:stages[index];
+    return {days:dates.length,streak,index,stage,next,adultLevel,xp:p.xp,progress:Math.floor((p.xp-start)/(next.xp-start)*100),today:day(p,date)};
   }
   function buy(p,id){
     const room=rooms.find(r=>r.id===id);
@@ -91,7 +125,7 @@
     }
     p.room=id; return true;
   }
-  const api={normalize,day,award,awardGame,finishRoutine,finishGame,summary,buy,wordKey,stages,rooms};
+  const api={normalize,day,award,awardGame,finishRoutine,finishGame,summary,buy,wordKey,stages,rooms,characters,character,hiddenCharacters,masterVerses,needsMasterReveal,revealMaster,appearance};
   if(typeof module==='object' && module.exports) module.exports=api;
   else root.BabyCore=api;
 })(typeof window==='object' ? window : globalThis);
