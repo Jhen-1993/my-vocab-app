@@ -2833,11 +2833,11 @@
     var footerCopy = document.querySelector("footer.note .footer-copy");
     if(footerCopy){
       if(storageBackend === "local"){
-        footerCopy.textContent = "資料儲存在這個瀏覽器裡（localStorage），只有這台裝置、這個瀏覽器看得到，換裝置或清除瀏覽器資料會遺失，建議定期到「學習紀錄」分頁匯出備份。";
+        footerCopy.textContent = "學習紀錄儲存在目前的瀏覽器，換裝置不會自動同步。記得定期匯出備份，保存每一天的小進步。";
       } else if(storageBackend === "memory"){
-        footerCopy.textContent = "⚠️ 目前偵測不到任何可用的儲存功能，這次的學習進度只會保留在這個分頁裡，重新整理或關閉分頁就會消失。強烈建議到「學習紀錄」分頁匯出備份檔。";
+        footerCopy.textContent = "⚠️ 目前無法儲存學習紀錄，重新整理或關閉分頁後，進度可能會消失。建議前往「學習紀錄」匯出備份。";
       } else {
-        footerCopy.textContent = "資料只儲存在你自己的帳號下，僅你可見（personal storage）。";
+        footerCopy.textContent = "學習紀錄保存在你的個人儲存空間，方便繼續累積每一天的小進步。";
       }
     }
   }
@@ -2865,7 +2865,7 @@
         '<div class="study-wrap">' +
           '<div class="study-complete">' +
             '<div class="study-complete-big">哇！已經學習個30單字了！</div>' +
-            '<p class="study-complete-sub">總共預習了 ' + studyWords.length + ' 個單字，現在進入「今日複習」實際測驗一下吧。</p>' +
+            '<p class="study-complete-sub">總共預習了 ' + studyWords.length + ' 個單字，進入「今日複習」來點小測驗。</p>' +
             '<button class="primary" id="study-start-review">開始今日複習</button>' +
           '</div>' +
         '</div>';
@@ -2904,7 +2904,7 @@
               '<div class="study-word">' + escapeHtml(w.en) + '</div>' +
               '<span class="pos-tag' + posClass + '">' + escapeHtml(posLabel) + '</span>' +
               '<button class="speak-btn" id="study-speak" title="聽發音">🔊</button>' +
-              '<div class="study-flip-hint">輕點翻面，有意思和例句唷！</div>' +
+              '<div class="study-flip-hint">翻過來，看看單字的小秘密！</div>' +
             '</div>' +
             '<div class="study-card-back">' +
               '<div class="study-zh">' + escapeHtml(w.zh) + '</div>' +
