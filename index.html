@@ -622,12 +622,12 @@
   </header>
 
   <nav class="tabs">
-    <button data-tab="home" class="active">⌂ 寶寶的小屋</button>
-    <button data-tab="review">今日複習</button>
-    <button data-tab="games">小遊戲</button>
-    <button data-tab="bank">單字收藏</button>
+    <button data-tab="home" class="active">⌂ 寶寶小屋</button>
+    <button data-tab="review">每日複習</button>
+    <button data-tab="games">單字遊戲</button>
+    <button data-tab="bank">我的字庫</button>
     <button data-tab="speak">口說練習</button>
-    <button data-tab="stats">學習紀錄</button>
+    <button data-tab="stats">學習足跡</button>
   </nav>
 
   <section class="panel garden-panel" id="panel-home"></section>
@@ -2628,8 +2628,8 @@
     statsEl.innerHTML =
       '<div class="stat-strip">' +
         statBox(total, "總單字量") +
-        statBox(known, "已進入循環複習") +
-        statBox(due, "今日到期") +
+        statBox(known, "循環複習中") +
+        statBox(due, "今日待複習") +
         statBox(accAll + "%", "累積答對率") +
       '</div>' +
 
@@ -2647,7 +2647,7 @@
 
       '<div class="backup-zone">' +
         '<div class="chart-title">備份與還原（存成檔案，不受雲端存檔功能影響）</div>' +
-        '<p class="form-hint">建議定期匯出備份，尤其如果你看到過「儲存失敗」的提示。備份檔案會下載到你的裝置上，之後可以隨時匯入回來。</p>' +
+        '<p class="form-hint">學習資料儲存在目前的瀏覽器，不會自動同步至其他裝置。建議定期匯出備份，換裝置時可透過匯入功能還原紀錄。</p>' +
         '<div class="backup-actions">' +
           '<button class="ghost" id="export-backup-btn">⬇️ 匯出備份檔</button>' +
           '<label class="ghost backup-import-label">⬆️ 匯入備份檔<input type="file" id="import-backup-input" accept=".json" hidden></label>' +
