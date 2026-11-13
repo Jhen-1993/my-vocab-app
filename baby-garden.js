@@ -33,7 +33,7 @@ window.BabyGarden = {create:function(app){
           <div class="little-stats"><div><b>${s.streak}<small> 天</small></b><span>連續達標</span></div><div><b>${s.days}<small> 天</small></b><span>累積成長</span></div><div><b>${app.wordCount()}<small> 個</small></b><span>收藏單字</span></div></div>
         </div>
       </div>
-      <details class="baby-looks ${p.motion===false?'motion-paused':''}"><summary>看看男寶、女寶長大後的樣子</summary><label for="baby-look-stage">成長階段</label><select id="baby-look-stage">${C.stages.map((st,i)=>`<option value="${i}" ${i===s.index?'selected':''}>${st.name} · ${st.xp.toLocaleString()} XP</option>`).join('')}</select><div id="baby-look-pair" class="baby-look-pair"></div></details>
+      ${app.appearancePreview===true?`<details class="baby-looks ${p.motion===false?'motion-paused':''}"><summary>測試用：查看各階段外觀</summary><label for="baby-look-stage">成長階段</label><select id="baby-look-stage">${C.stages.map((st,i)=>`<option value="${i}" ${i===s.index?'selected':''}>${st.name} · ${st.xp.toLocaleString()} XP</option>`).join('')}</select><div id="baby-look-pair" class="baby-look-pair"></div></details>`:''}
       <div class="garden-section-heading"><h3>陪小寶一起玩遊戲</h3><span>每次 5 題，從小小的挑戰開始</span></div>
       <div class="game-shortcuts"><button class="game-shortcut" data-play="choice"><span class="game-icon peach-icon">Aa</span><div><span class="mini-label">WORD PICK</span><h3>單字選選樂</h3><p>看英文，找出正確的中文意思。</p></div></button><button class="game-shortcut" data-play="spell"><span class="game-icon lavender-icon">a_z</span><div><span class="mini-label">SPELL & GROW</span><h3>拼字小花園</h3><p>看中文，把記得的英文拼出來。</p></div></button></div>
       <div class="garden-bottom"><section class="journey-card"><div class="card-heading"><h3>我們的成長旅程</h3><span class="mini-label">GROW TOGETHER</span></div><div class="stage-path">${C.stages.map((st,i)=>`<div class="stage-stop ${i<=s.index?'reached':''}"><span>${['◒','❀','♧','✧','✿','▤','◇','☆','✦','♡'][i]}</span><b>${st.name}</b><small>${st.xp===0?'初次見面':st.xp.toLocaleString()+' XP'}</small></div>`).join('')}</div><p class="journey-note">再累積 ${(s.next.xp-s.xp).toLocaleString()} 成長值，就能到達「${s.next.name}」。<br>成年後每 1,000 XP 再升一級，學習不會到期。偶爾休息也不會倒退。</p><div class="week-row">${week.map(date=>`<div class="${p.days[date]&&p.days[date].completed?'done':''}"><span>${['日','一','二','三','四','五','六'][new Date(date+'T12:00:00').getDay()]}</span><b title="${date}">${p.days[date]&&p.days[date].completed?'✓':date.slice(8)}</b></div>`).join('')}</div></section>
@@ -41,7 +41,7 @@ window.BabyGarden = {create:function(app){
       <p class="garden-footnote">成長從啟用新版後開始計算。複習與遊戲共用每日目標，每日目標與填空完成獎勵各領一次；遊戲新單字每字 +2 XP，每天最多 20 字。</p>`;
     clearTimeout(delightTimer);
     const renderLooks=()=>{const stage=Number(document.getElementById('baby-look-stage').value)||0;const activities=window.BabyAvatar.actions.map(a=>a.name);document.getElementById('baby-look-pair').innerHTML=['boy','girl'].map(g=>`<div><h4>${g==='girl'?'女寶':'男寶'}</h4>${window.BabyAvatar.render(stage,g)}<p>${activities[stage]}</p></div>`).join('');};
-    document.getElementById('baby-look-stage').onchange=renderLooks;renderLooks();
+    if(app.appearancePreview===true){document.getElementById('baby-look-stage').onchange=renderLooks;renderLooks();}
     document.getElementById('pet-baby').onclick=function(){
       const button=this, bubble=home.querySelector('.baby-speech');
       const messages=['嘿嘿，最喜歡你了！♡','抱抱～我們一起長大！','今天也要一起玩英文喔！'];
@@ -53,7 +53,7 @@ window.BabyGarden = {create:function(app){
     document.getElementById('baby-motion').onclick=async function(){
       p.motion=p.motion===false;
       home.querySelector('.nursery').classList.toggle('motion-paused',!p.motion);
-      home.querySelector('.baby-looks').classList.toggle('motion-paused',!p.motion);
+      const looks=home.querySelector('.baby-looks');if(looks)looks.classList.toggle('motion-paused',!p.motion);
       this.textContent=p.motion?'暫停動作':'播放動作';this.setAttribute('aria-pressed',String(p.motion));
       await app.save();
     };

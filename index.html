@@ -2919,7 +2919,7 @@
       if(studyIndex > 0){ studyIndex--; studyFlipped = false; renderStudyScreen(); }
     };
     document.getElementById("study-skip").onclick = function(){
-      finishStudy();
+      showMainApp();switchTab("review");
     };
   }
 
@@ -2928,6 +2928,7 @@
     '<div class="study-wrap"><div class="center-note"><span class="spinner"></span>載入單字資料中…</div></div>';
 
   var garden = BabyGarden.create({
+    appearancePreview:false,
     data: function(){ return data; }, save: saveData, today: todayStr,
     addDays: addDays, escape: escapeHtml, decks: DECKS,
     shuffle: function(list){ shuffle(list); return list; },
