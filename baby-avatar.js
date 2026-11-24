@@ -12,18 +12,22 @@
   names.forEach((name,i)=>{variants[id][i+5]={name,frames:4,poses:blueCareerPoses};});
  }
  function actionFor(stage,id){if(stage===6&&id==='calm-boy')return {...actions[6],name:'閱讀 · 抬手調整眼鏡'};return variants[id]&&variants[id][stage]||actions[stage];}
- function render(stage,gender,characterId){
+ function render(stage,gender,characterId,accessory){
   stage=Math.max(0,Math.min(9,Math.floor(Number(stage)||0)));
   gender=gender==='girl'?'girl':'boy';
   const identity=root.BabyCore&&root.BabyCore.character(characterId);
   const variant=identity&&variants[identity.id]&&(!identity.id.startsWith('master-')||stage===9)&&(!identity.id.startsWith('blue-')||stage>=5)?identity.id:null;
   if(identity)gender=identity.gender;
-  const action=actionFor(stage,variant),file='assets/painted/'+(identity?identity.asset:gender)+'-'+stage+'-cels.webp';
+  const item=root.BabyCore&&root.BabyCore.accessories.find(a=>a.id===accessory);
+  const wornHat=item&&(item.id==='beret'||item.id==='bucket-hat');
+  const action=actionFor(stage,variant),file=(wornHat?'assets/worn-hats/'+item.id+'/':'assets/painted/')+(identity?identity.asset:gender)+'-'+stage+'-cels.webp';
   const src=root.BABY_ART_ASSETS&&root.BABY_ART_ASSETS[file]||file;
-  const image=cls=>'<img class="'+cls+'" src="'+src+'" width="'+(320*action.frames)+'" height="360" alt="" aria-hidden="true" draggable="false">';
-  return '<span class="baby-illustration baby-painted painted-cels painted-stage-'+stage+(variant?' painted-variant painted-'+variant:'')+'" role="img" aria-label="'+(gender==='girl'?'女寶':'男寶')+' · '+action.name+'" style="--cel-width:'+(action.frames*100)+'%">'+
-   '<span class="painted-motion">'+(stage===0&&!variant?'<span class="painted-idle-anchor">'+image('painted-anchor')+'</span>':'')+
-   '<span class="painted-window">'+image('painted-strip')+'</span></span><span class="painted-love" aria-hidden="true">♡</span></span>';
+  const overlay=item&&!wornHat&&root.BabyAccessories?root.BabyAccessories.render(item.id,stage,identity?identity.id:'blue-'+gender,action.frames):'';
+  const cape=item&&item.id==='hero-cape';
+  const image=cls=>'<img class="'+cls+'" src="'+src+'" width="'+(320*action.frames)+'" height="'+(wornHat?420:360)+'" alt="" aria-hidden="true" draggable="false">';
+  return '<span class="baby-illustration baby-painted painted-cels painted-stage-'+stage+(variant?' painted-variant painted-'+variant:'')+(wornHat?' wearing-painted-hat':'')+'" role="img" aria-label="'+(gender==='girl'?'女寶':'男寶')+' · '+action.name+(item?' · 戴著'+item.name:'')+'" style="--cel-width:'+(action.frames*100)+'%">'+
+   '<span class="painted-motion">'+(cape?overlay:'')+(stage===0&&!variant&&!wornHat?'<span class="painted-idle-anchor">'+image('painted-anchor')+'</span>':'')+
+   '<span class="painted-window">'+image('painted-strip')+'</span>'+(!cape?overlay:'')+'</span><span class="painted-love" aria-hidden="true">♡</span></span>';
  }
  root.BabyAvatar={render,actions,poses,actionFor,variants};
 })(typeof window==='object'?window:globalThis);

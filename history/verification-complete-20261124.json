@@ -1,0 +1,114 @@
+{
+  "date": "2026-11-24",
+  "status": "PASS",
+  "tests": [
+    {
+      "name": "vocabulary",
+      "status": "PASS",
+      "counts": {
+        "beginner": 2067,
+        "intermediate": 2680,
+        "advanced": 1337
+      },
+      "total": 6084,
+      "independentDeckLoading": true,
+      "migrationCardsChecked": 6088,
+      "retiredCardsArchived": 1499,
+      "customAndBulkPreserved": true,
+      "historyPreserved": true,
+      "backupRoundTrip": true,
+      "srsDueDates": [
+        "2026-11-21",
+        "2026-11-23",
+        "2026-11-26",
+        "2026-12-04",
+        "2026-12-19"
+      ],
+      "currentGameRewards": [
+        {
+          "goal": 5,
+          "xp": 30,
+          "stars": 3
+        },
+        {
+          "goal": 10,
+          "xp": 60,
+          "stars": 3
+        },
+        {
+          "goal": 15,
+          "xp": 90,
+          "stars": 3
+        }
+      ]
+    },
+    {
+      "name": "garden",
+      "status": "PASS",
+      "goalXP": [
+        30,
+        60,
+        90
+      ],
+      "shopItems": 6,
+      "loginGiftItems": 3,
+      "renderCases": 558,
+      "purchaseAndEquipHandlers": true,
+      "allCharactersSupported": true,
+      "backupRoundTrip": true,
+      "rewardDeduplication": true,
+      "loginGiftUIHandlers": true
+    },
+    {
+      "name": "wornHats",
+      "status": "PASS",
+      "completeCharacterStrips": 124,
+      "paintedCels": 504,
+      "normalCharacters": 6,
+      "growthStages": 10,
+      "hiddenAdults": 2,
+      "sharedHats": 2,
+      "transparentWebP": true,
+      "noHatOverlay": true,
+      "originalUndressedArtPreserved": true,
+      "browserAnimationTested": false
+    },
+    {
+      "name": "loginRewards",
+      "status": "PASS",
+      "loginMilestones": [
+        7,
+        14,
+        30
+      ],
+      "sameDayDeduplication": true,
+      "noStudyRequirement": true,
+      "brokenStreakRestarts": true,
+      "unlockedGiftsRetained": true,
+      "noRepeatClaims": true,
+      "allGenders": true,
+      "yearAndLeapDay": true,
+      "backupRoundTrip": true,
+      "legacyCollectionsPreserved": true,
+      "lockedPurchaseRejected": true
+    }
+  ],
+  "staticChecks": {
+    "status": "PASS",
+    "javascriptFilesSyntaxChecked": 12,
+    "inlineScriptsSyntaxChecked": 1,
+    "htmlCssLocalReferencesChecked": 11,
+    "originalAssetFilesUnchanged": 62,
+    "browserInteractionAndAnimationTested": false
+  },
+  "visualReview": [
+    "Login gift board and furnished starry room",
+    "Cape placement across six characters and ten stages",
+    "Painted hat atlases, transparency and all growth stages"
+  ],
+  "limitations": [
+    "Real-browser interaction and animation not verified in this environment.",
+    "Not deployed to the live website."
+  ],
+  "originalDownloadFolderModified": false
+}

@@ -28,7 +28,19 @@
     {xp:12000, name:'大學生', note:'帶著學會的英文，去看更大的世界。'},
     {xp:18000, name:'大人', note:'我們一起長大了，學習的故事仍在繼續。'}
   ];
-  const rooms = [{id:'peach',name:'奶油小屋',cost:0},{id:'mint',name:'薄荷花園',cost:3},{id:'lavender',name:'星空夢境',cost:6}];
+  const rooms = [{id:'peach',name:'奶油小屋',cost:0},{id:'mint',name:'薄荷花園',cost:3},{id:'lavender',name:'星空夢境',cost:6},{id:'starry',name:'銀河旋轉木馬小屋',milestone:30}];
+  const accessories = [
+    {id:'rose-bow',name:'莓果蝴蝶結',cost:6},
+    {id:'blue-bow',name:'天空蝴蝶結',cost:9},
+    {id:'star-clip',name:'星星髮夾',cost:12},
+    {id:'beret',name:'奶茶貝雷帽',cost:18},
+    {id:'bucket-hat',name:'薄荷漁夫帽',cost:24},
+    {id:'crown',name:'小星光皇冠',cost:30},
+    {id:'clover-clip',name:'幸運草髮夾',milestone:7,legacy:true},
+    {id:'moon-crown',name:'月光皇冠',milestone:30,legacy:true},
+    {id:'hero-cape',name:'小超人披風',milestone:14}
+  ];
+  const loginRewards=[{days:7,id:'giant-teddy',kind:'decoration',name:'超大可愛泰迪熊'},{days:14,id:'hero-cape',kind:'accessory',name:'小超人披風'},{days:30,id:'starry',kind:'room',name:'銀河旋轉木馬小屋'}];
   function normalize(raw){
     const p = raw && typeof raw === 'object' && !Array.isArray(raw) ? raw : {};
     const isNew=Object.keys(p).length===0;
@@ -65,6 +77,16 @@
     p.version=2;
     p.owned = [...new Set(['peach'].concat(Array.isArray(p.owned) ? p.owned.filter(x=>rooms.some(r=>r.id===x)) : []))];
     p.room = p.owned.includes(p.room) ? p.room : 'peach';
+    p.ownedAccessories = [...new Set((Array.isArray(p.ownedAccessories) ? p.ownedAccessories : []).filter(id=>accessories.some(a=>a.id===id)))];
+    p.accessory = p.ownedAccessories.includes(p.accessory) ? p.accessory : null;
+    // Preserve previously earned items without reissuing retired study-streak rewards.
+    p.claimedStreakRewards = [...new Set((Array.isArray(p.claimedStreakRewards)?p.claimedStreakRewards:[]).filter(n=>n===7||n===30))];
+    const oldVisits=p.loginTrackingVersion===1?[]:Object.keys(p.days);
+    p.loginDays=[...new Set(oldVisits.concat(Array.isArray(p.loginDays)?p.loginDays:[]).filter(validDate))].sort();
+    p.loginTrackingVersion=1;
+    p.claimedLoginRewards=[...new Set((Array.isArray(p.claimedLoginRewards)?p.claimedLoginRewards:[]).filter(n=>loginRewards.some(r=>r.days===n)))];
+    p.ownedDecorations=[...new Set((Array.isArray(p.ownedDecorations)?p.ownedDecorations:[]).filter(id=>id==='giant-teddy'))];
+    p.teddyVisible=p.ownedDecorations.includes('giant-teddy')&&p.teddyVisible!==false;
     return p;
   }
   function wordKey(word){ return String(word).trim().toLowerCase().replace(/\s+/g,' '); }
@@ -86,9 +108,42 @@
     if(!key || d.completed || d.words.includes(key)) return {added:false,grew:false,xp:0};
     d.words.push(key);
     const grew = d.words.length >= d.goal;
-    if(grew){ d.completed = true; p.stars += 3; p.xp+=30; }
-    return {added:true,grew,xp:grew?30:0};
+    if(grew){ d.completed = true; p.stars += 3; p.xp+=goalXP(d.goal); }
+    return {added:true,grew,xp:grew?goalXP(d.goal):0,milestones:[]};
   }
+  function goalXP(goal){return (goals.includes(goal)?goal:5)*6;}
+  function previousDay(date){
+    const d=new Date(date+'T12:00:00Z');d.setUTCDate(d.getUTCDate()-1);
+    return d.toISOString().slice(0,10);
+  }
+  function streakFor(p,date,previousDate=previousDay){
+    let streak=0,cursor=p.days[date]&&p.days[date].completed?date:previousDate(date);
+    while(p.days[cursor]&&p.days[cursor].completed){streak++;cursor=previousDate(cursor);}
+    return streak;
+  }
+  function validDate(value){
+    if(typeof value!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(value))return false;
+    const d=new Date(value+'T12:00:00Z');return Number.isFinite(d.getTime())&&d.toISOString().slice(0,10)===value;
+  }
+  function loginStreak(p,date){
+    const dates=new Set(p.loginDays),start=dates.has(date)?date:previousDay(date);
+    let cursor=start,count=0;while(dates.has(cursor)){count++;cursor=previousDay(cursor);}return count;
+  }
+  function recordLogin(p,date){
+    if(!validDate(date))return {added:false,rewards:[],streak:0};
+    const added=!p.loginDays.includes(date);
+    if(added){p.loginDays.push(date);p.loginDays.sort();}
+    const streak=loginStreak(p,date),rewards=[];
+    for(const reward of loginRewards){
+      if(streak<reward.days||p.claimedLoginRewards.includes(reward.days))continue;
+      const collection=reward.kind==='room'?p.owned:reward.kind==='accessory'?p.ownedAccessories:p.ownedDecorations;
+      if(!collection.includes(reward.id))collection.push(reward.id);
+      if(reward.kind==='decoration')p.teddyVisible=true;
+      p.claimedLoginRewards.push(reward.days);rewards.push(reward);
+    }
+    return {added,rewards,streak};
+  }
+  function toggleTeddy(p){if(!p.ownedDecorations.includes('giant-teddy'))return false;p.teddyVisible=!p.teddyVisible;return true;}
   function awardGame(p,date,word){
     const d=day(p,date),key=wordKey(word);
     if(!key || d.gameWords.includes(key) || d.gameWords.length>=20)return 0;
@@ -106,8 +161,7 @@
   }
   function summary(p,date,previousDate){
     const dates = Object.keys(p.days).filter(k=>k<=date && p.days[k].completed).sort();
-    let streak=0, cursor=p.days[date] && p.days[date].completed ? date : previousDate(date);
-    while(p.days[cursor] && p.days[cursor].completed){streak++;cursor=previousDate(cursor);}
+    const streak=streakFor(p,date,previousDate);
     const index = stages.reduce((a,s,i)=>p.xp>=s.xp ? i : a,0);
     const adultLevel=index===stages.length-1?1+Math.floor((p.xp-stages[index].xp)/1000):0;
     const start=adultLevel?stages[index].xp+(adultLevel-1)*1000:stages[index].xp;
@@ -120,12 +174,26 @@
     const room=rooms.find(r=>r.id===id);
     if(!room) return false;
     if(!p.owned.includes(id)){
+      if(room.milestone)return false;
       if(p.stars < room.cost) return false;
       p.stars -= room.cost; p.owned.push(id);
     }
     p.room=id; return true;
   }
-  const api={normalize,day,award,awardGame,finishRoutine,finishGame,summary,buy,wordKey,stages,rooms,characters,character,hiddenCharacters,masterVerses,needsMasterReveal,revealMaster,appearance};
+  function buyAccessory(p,id){
+    const item=accessories.find(a=>a.id===id);
+    if(!item||item.milestone)return false;
+    if(!p.ownedAccessories.includes(id)){
+      if(p.stars<item.cost)return false;
+      p.stars-=item.cost;p.ownedAccessories.push(id);
+    }
+    p.accessory=id;return true;
+  }
+  function wearAccessory(p,id){
+    if(id!==null&&!p.ownedAccessories.includes(id))return false;
+    p.accessory=id;return true;
+  }
+  const api={normalize,day,award,awardGame,finishRoutine,finishGame,summary,buy,buyAccessory,wearAccessory,accessories,goalXP,recordLogin,loginStreak,loginRewards,toggleTeddy,wordKey,stages,rooms,characters,character,hiddenCharacters,masterVerses,needsMasterReveal,revealMaster,appearance};
   if(typeof module==='object' && module.exports) module.exports=api;
   else root.BabyCore=api;
 })(typeof window==='object' ? window : globalThis);

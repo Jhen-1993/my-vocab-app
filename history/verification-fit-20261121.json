@@ -1,0 +1,63 @@
+{
+  "check-garden": {
+    "status": "PASS",
+    "goalXP": [
+      30,
+      60,
+      90
+    ],
+    "shopItems": 6,
+    "milestoneItems": 2,
+    "renderCases": 640,
+    "purchaseAndEquipHandlers": true,
+    "allCharactersSupported": true,
+    "backupRoundTrip": true,
+    "rewardDeduplication": true,
+    "brokenStreakAndYearBoundary": true
+  },
+  "check-vocabulary": {
+    "status": "PASS",
+    "counts": {
+      "beginner": 2067,
+      "intermediate": 2680,
+      "advanced": 1337
+    },
+    "total": 6084,
+    "independentDeckLoading": true,
+    "migrationCardsChecked": 6088,
+    "retiredCardsArchived": 1499,
+    "customAndBulkPreserved": true,
+    "historyPreserved": true,
+    "backupRoundTrip": true,
+    "srsDueDates": [
+      "2026-11-21",
+      "2026-11-23",
+      "2026-11-26",
+      "2026-12-04",
+      "2026-12-19"
+    ],
+    "currentGameRewards": [
+      {
+        "goal": 5,
+        "xp": 30,
+        "stars": 3
+      },
+      {
+        "goal": 10,
+        "xp": 60,
+        "stars": 3
+      },
+      {
+        "goal": 15,
+        "xp": 90,
+        "stars": 3
+      }
+    ]
+  },
+  "visualChecks": [
+    "six characters across ten growth stages",
+    "all four jumping poses, six characters, bucket hat and crown",
+    "all eight accessories on newborn boy and girl"
+  ],
+  "browserAnimationTest": "Not performed"
+}

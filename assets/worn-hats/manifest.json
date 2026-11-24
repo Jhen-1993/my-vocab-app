@@ -1,0 +1,1242 @@
+[
+  {
+    "character": "boy",
+    "stage": 0,
+    "hat": "beret",
+    "frames": 6,
+    "width": 1920,
+    "height": 420,
+    "file": "assets/worn-hats/beret/boy-0-cels.webp",
+    "sourceAtlas": "boys-0-beret"
+  },
+  {
+    "character": "sunny-boy",
+    "stage": 0,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/sunny-boy-0-cels.webp",
+    "sourceAtlas": "boys-0-beret"
+  },
+  {
+    "character": "calm-boy",
+    "stage": 0,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/calm-boy-0-cels.webp",
+    "sourceAtlas": "boys-0-beret"
+  },
+  {
+    "character": "boy",
+    "stage": 0,
+    "hat": "bucket-hat",
+    "frames": 6,
+    "width": 1920,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/boy-0-cels.webp",
+    "sourceAtlas": "boys-0-bucket-hat"
+  },
+  {
+    "character": "sunny-boy",
+    "stage": 0,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/sunny-boy-0-cels.webp",
+    "sourceAtlas": "boys-0-bucket-hat"
+  },
+  {
+    "character": "calm-boy",
+    "stage": 0,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/calm-boy-0-cels.webp",
+    "sourceAtlas": "boys-0-bucket-hat"
+  },
+  {
+    "character": "girl",
+    "stage": 0,
+    "hat": "beret",
+    "frames": 6,
+    "width": 1920,
+    "height": 420,
+    "file": "assets/worn-hats/beret/girl-0-cels.webp",
+    "sourceAtlas": "girls-0-beret"
+  },
+  {
+    "character": "sunny-girl",
+    "stage": 0,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/sunny-girl-0-cels.webp",
+    "sourceAtlas": "girls-0-beret"
+  },
+  {
+    "character": "sweet-girl",
+    "stage": 0,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/sweet-girl-0-cels.webp",
+    "sourceAtlas": "girls-0-beret"
+  },
+  {
+    "character": "girl",
+    "stage": 0,
+    "hat": "bucket-hat",
+    "frames": 6,
+    "width": 1920,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/girl-0-cels.webp",
+    "sourceAtlas": "girls-0-bucket-hat"
+  },
+  {
+    "character": "sunny-girl",
+    "stage": 0,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/sunny-girl-0-cels.webp",
+    "sourceAtlas": "girls-0-bucket-hat"
+  },
+  {
+    "character": "sweet-girl",
+    "stage": 0,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/sweet-girl-0-cels.webp",
+    "sourceAtlas": "girls-0-bucket-hat"
+  },
+  {
+    "character": "boy",
+    "stage": 1,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/boy-1-cels.webp",
+    "sourceAtlas": "boys-1-beret"
+  },
+  {
+    "character": "sunny-boy",
+    "stage": 1,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/sunny-boy-1-cels.webp",
+    "sourceAtlas": "boys-1-beret"
+  },
+  {
+    "character": "calm-boy",
+    "stage": 1,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/calm-boy-1-cels.webp",
+    "sourceAtlas": "boys-1-beret"
+  },
+  {
+    "character": "boy",
+    "stage": 1,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/boy-1-cels.webp",
+    "sourceAtlas": "boys-1-bucket-hat"
+  },
+  {
+    "character": "sunny-boy",
+    "stage": 1,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/sunny-boy-1-cels.webp",
+    "sourceAtlas": "boys-1-bucket-hat"
+  },
+  {
+    "character": "calm-boy",
+    "stage": 1,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/calm-boy-1-cels.webp",
+    "sourceAtlas": "boys-1-bucket-hat"
+  },
+  {
+    "character": "girl",
+    "stage": 1,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/girl-1-cels.webp",
+    "sourceAtlas": "girls-1-beret"
+  },
+  {
+    "character": "sunny-girl",
+    "stage": 1,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/sunny-girl-1-cels.webp",
+    "sourceAtlas": "girls-1-beret"
+  },
+  {
+    "character": "sweet-girl",
+    "stage": 1,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/sweet-girl-1-cels.webp",
+    "sourceAtlas": "girls-1-beret"
+  },
+  {
+    "character": "girl",
+    "stage": 1,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/girl-1-cels.webp",
+    "sourceAtlas": "girls-1-bucket-hat"
+  },
+  {
+    "character": "sunny-girl",
+    "stage": 1,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/sunny-girl-1-cels.webp",
+    "sourceAtlas": "girls-1-bucket-hat"
+  },
+  {
+    "character": "sweet-girl",
+    "stage": 1,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/sweet-girl-1-cels.webp",
+    "sourceAtlas": "girls-1-bucket-hat"
+  },
+  {
+    "character": "boy",
+    "stage": 2,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/boy-2-cels.webp",
+    "sourceAtlas": "boys-2-beret"
+  },
+  {
+    "character": "sunny-boy",
+    "stage": 2,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/sunny-boy-2-cels.webp",
+    "sourceAtlas": "boys-2-beret"
+  },
+  {
+    "character": "calm-boy",
+    "stage": 2,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/calm-boy-2-cels.webp",
+    "sourceAtlas": "boys-2-beret"
+  },
+  {
+    "character": "boy",
+    "stage": 2,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/boy-2-cels.webp",
+    "sourceAtlas": "boys-2-bucket-hat"
+  },
+  {
+    "character": "sunny-boy",
+    "stage": 2,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/sunny-boy-2-cels.webp",
+    "sourceAtlas": "boys-2-bucket-hat"
+  },
+  {
+    "character": "calm-boy",
+    "stage": 2,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/calm-boy-2-cels.webp",
+    "sourceAtlas": "boys-2-bucket-hat"
+  },
+  {
+    "character": "girl",
+    "stage": 2,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/girl-2-cels.webp",
+    "sourceAtlas": "girls-2-beret"
+  },
+  {
+    "character": "sunny-girl",
+    "stage": 2,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/sunny-girl-2-cels.webp",
+    "sourceAtlas": "girls-2-beret"
+  },
+  {
+    "character": "sweet-girl",
+    "stage": 2,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/sweet-girl-2-cels.webp",
+    "sourceAtlas": "girls-2-beret"
+  },
+  {
+    "character": "girl",
+    "stage": 2,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/girl-2-cels.webp",
+    "sourceAtlas": "girls-2-bucket-hat"
+  },
+  {
+    "character": "sunny-girl",
+    "stage": 2,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/sunny-girl-2-cels.webp",
+    "sourceAtlas": "girls-2-bucket-hat"
+  },
+  {
+    "character": "sweet-girl",
+    "stage": 2,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/sweet-girl-2-cels.webp",
+    "sourceAtlas": "girls-2-bucket-hat"
+  },
+  {
+    "character": "boy",
+    "stage": 3,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/boy-3-cels.webp",
+    "sourceAtlas": "boys-3-beret"
+  },
+  {
+    "character": "sunny-boy",
+    "stage": 3,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/sunny-boy-3-cels.webp",
+    "sourceAtlas": "boys-3-beret"
+  },
+  {
+    "character": "calm-boy",
+    "stage": 3,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/calm-boy-3-cels.webp",
+    "sourceAtlas": "boys-3-beret"
+  },
+  {
+    "character": "boy",
+    "stage": 3,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/boy-3-cels.webp",
+    "sourceAtlas": "boys-3-bucket-hat"
+  },
+  {
+    "character": "sunny-boy",
+    "stage": 3,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/sunny-boy-3-cels.webp",
+    "sourceAtlas": "boys-3-bucket-hat"
+  },
+  {
+    "character": "calm-boy",
+    "stage": 3,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/calm-boy-3-cels.webp",
+    "sourceAtlas": "boys-3-bucket-hat"
+  },
+  {
+    "character": "girl",
+    "stage": 3,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/girl-3-cels.webp",
+    "sourceAtlas": "girls-3-beret"
+  },
+  {
+    "character": "sunny-girl",
+    "stage": 3,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/sunny-girl-3-cels.webp",
+    "sourceAtlas": "girls-3-beret"
+  },
+  {
+    "character": "sweet-girl",
+    "stage": 3,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/sweet-girl-3-cels.webp",
+    "sourceAtlas": "girls-3-beret"
+  },
+  {
+    "character": "girl",
+    "stage": 3,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/girl-3-cels.webp",
+    "sourceAtlas": "girls-3-bucket-hat"
+  },
+  {
+    "character": "sunny-girl",
+    "stage": 3,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/sunny-girl-3-cels.webp",
+    "sourceAtlas": "girls-3-bucket-hat"
+  },
+  {
+    "character": "sweet-girl",
+    "stage": 3,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/sweet-girl-3-cels.webp",
+    "sourceAtlas": "girls-3-bucket-hat"
+  },
+  {
+    "character": "boy",
+    "stage": 4,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/boy-4-cels.webp",
+    "sourceAtlas": "boys-4-beret"
+  },
+  {
+    "character": "sunny-boy",
+    "stage": 4,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/sunny-boy-4-cels.webp",
+    "sourceAtlas": "boys-4-beret"
+  },
+  {
+    "character": "calm-boy",
+    "stage": 4,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/calm-boy-4-cels.webp",
+    "sourceAtlas": "boys-4-beret"
+  },
+  {
+    "character": "boy",
+    "stage": 4,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/boy-4-cels.webp",
+    "sourceAtlas": "boys-4-bucket-hat"
+  },
+  {
+    "character": "sunny-boy",
+    "stage": 4,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/sunny-boy-4-cels.webp",
+    "sourceAtlas": "boys-4-bucket-hat"
+  },
+  {
+    "character": "calm-boy",
+    "stage": 4,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/calm-boy-4-cels.webp",
+    "sourceAtlas": "boys-4-bucket-hat"
+  },
+  {
+    "character": "girl",
+    "stage": 4,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/girl-4-cels.webp",
+    "sourceAtlas": "girls-4-beret"
+  },
+  {
+    "character": "sunny-girl",
+    "stage": 4,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/sunny-girl-4-cels.webp",
+    "sourceAtlas": "girls-4-beret"
+  },
+  {
+    "character": "sweet-girl",
+    "stage": 4,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/sweet-girl-4-cels.webp",
+    "sourceAtlas": "girls-4-beret"
+  },
+  {
+    "character": "girl",
+    "stage": 4,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/girl-4-cels.webp",
+    "sourceAtlas": "girls-4-bucket-hat"
+  },
+  {
+    "character": "sunny-girl",
+    "stage": 4,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/sunny-girl-4-cels.webp",
+    "sourceAtlas": "girls-4-bucket-hat"
+  },
+  {
+    "character": "sweet-girl",
+    "stage": 4,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/sweet-girl-4-cels.webp",
+    "sourceAtlas": "girls-4-bucket-hat"
+  },
+  {
+    "character": "boy",
+    "stage": 5,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/boy-5-cels.webp",
+    "sourceAtlas": "boys-5-beret"
+  },
+  {
+    "character": "sunny-boy",
+    "stage": 5,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/sunny-boy-5-cels.webp",
+    "sourceAtlas": "boys-5-beret"
+  },
+  {
+    "character": "calm-boy",
+    "stage": 5,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/calm-boy-5-cels.webp",
+    "sourceAtlas": "boys-5-beret"
+  },
+  {
+    "character": "boy",
+    "stage": 5,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/boy-5-cels.webp",
+    "sourceAtlas": "boys-5-bucket-hat"
+  },
+  {
+    "character": "sunny-boy",
+    "stage": 5,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/sunny-boy-5-cels.webp",
+    "sourceAtlas": "boys-5-bucket-hat"
+  },
+  {
+    "character": "calm-boy",
+    "stage": 5,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/calm-boy-5-cels.webp",
+    "sourceAtlas": "boys-5-bucket-hat"
+  },
+  {
+    "character": "girl",
+    "stage": 5,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/girl-5-cels.webp",
+    "sourceAtlas": "girls-5-beret"
+  },
+  {
+    "character": "sunny-girl",
+    "stage": 5,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/sunny-girl-5-cels.webp",
+    "sourceAtlas": "girls-5-beret"
+  },
+  {
+    "character": "sweet-girl",
+    "stage": 5,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/sweet-girl-5-cels.webp",
+    "sourceAtlas": "girls-5-beret"
+  },
+  {
+    "character": "girl",
+    "stage": 5,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/girl-5-cels.webp",
+    "sourceAtlas": "girls-5-bucket-hat"
+  },
+  {
+    "character": "sunny-girl",
+    "stage": 5,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/sunny-girl-5-cels.webp",
+    "sourceAtlas": "girls-5-bucket-hat"
+  },
+  {
+    "character": "sweet-girl",
+    "stage": 5,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/sweet-girl-5-cels.webp",
+    "sourceAtlas": "girls-5-bucket-hat"
+  },
+  {
+    "character": "boy",
+    "stage": 6,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/boy-6-cels.webp",
+    "sourceAtlas": "boys-6-beret"
+  },
+  {
+    "character": "sunny-boy",
+    "stage": 6,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/sunny-boy-6-cels.webp",
+    "sourceAtlas": "boys-6-beret"
+  },
+  {
+    "character": "calm-boy",
+    "stage": 6,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/calm-boy-6-cels.webp",
+    "sourceAtlas": "boys-6-beret"
+  },
+  {
+    "character": "boy",
+    "stage": 6,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/boy-6-cels.webp",
+    "sourceAtlas": "boys-6-bucket-hat"
+  },
+  {
+    "character": "sunny-boy",
+    "stage": 6,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/sunny-boy-6-cels.webp",
+    "sourceAtlas": "boys-6-bucket-hat"
+  },
+  {
+    "character": "calm-boy",
+    "stage": 6,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/calm-boy-6-cels.webp",
+    "sourceAtlas": "boys-6-bucket-hat"
+  },
+  {
+    "character": "girl",
+    "stage": 6,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/girl-6-cels.webp",
+    "sourceAtlas": "girls-6-beret"
+  },
+  {
+    "character": "sunny-girl",
+    "stage": 6,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/sunny-girl-6-cels.webp",
+    "sourceAtlas": "girls-6-beret"
+  },
+  {
+    "character": "sweet-girl",
+    "stage": 6,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/sweet-girl-6-cels.webp",
+    "sourceAtlas": "girls-6-beret"
+  },
+  {
+    "character": "girl",
+    "stage": 6,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/girl-6-cels.webp",
+    "sourceAtlas": "girls-6-bucket-hat"
+  },
+  {
+    "character": "sunny-girl",
+    "stage": 6,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/sunny-girl-6-cels.webp",
+    "sourceAtlas": "girls-6-bucket-hat"
+  },
+  {
+    "character": "sweet-girl",
+    "stage": 6,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/sweet-girl-6-cels.webp",
+    "sourceAtlas": "girls-6-bucket-hat"
+  },
+  {
+    "character": "boy",
+    "stage": 7,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/boy-7-cels.webp",
+    "sourceAtlas": "boys-7-beret"
+  },
+  {
+    "character": "sunny-boy",
+    "stage": 7,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/sunny-boy-7-cels.webp",
+    "sourceAtlas": "boys-7-beret"
+  },
+  {
+    "character": "calm-boy",
+    "stage": 7,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/calm-boy-7-cels.webp",
+    "sourceAtlas": "boys-7-beret"
+  },
+  {
+    "character": "boy",
+    "stage": 7,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/boy-7-cels.webp",
+    "sourceAtlas": "boys-7-bucket-hat"
+  },
+  {
+    "character": "sunny-boy",
+    "stage": 7,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/sunny-boy-7-cels.webp",
+    "sourceAtlas": "boys-7-bucket-hat"
+  },
+  {
+    "character": "calm-boy",
+    "stage": 7,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/calm-boy-7-cels.webp",
+    "sourceAtlas": "boys-7-bucket-hat"
+  },
+  {
+    "character": "girl",
+    "stage": 7,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/girl-7-cels.webp",
+    "sourceAtlas": "girls-7-beret"
+  },
+  {
+    "character": "sunny-girl",
+    "stage": 7,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/sunny-girl-7-cels.webp",
+    "sourceAtlas": "girls-7-beret"
+  },
+  {
+    "character": "sweet-girl",
+    "stage": 7,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/sweet-girl-7-cels.webp",
+    "sourceAtlas": "girls-7-beret"
+  },
+  {
+    "character": "girl",
+    "stage": 7,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/girl-7-cels.webp",
+    "sourceAtlas": "girls-7-bucket-hat"
+  },
+  {
+    "character": "sunny-girl",
+    "stage": 7,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/sunny-girl-7-cels.webp",
+    "sourceAtlas": "girls-7-bucket-hat"
+  },
+  {
+    "character": "sweet-girl",
+    "stage": 7,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/sweet-girl-7-cels.webp",
+    "sourceAtlas": "girls-7-bucket-hat"
+  },
+  {
+    "character": "boy",
+    "stage": 8,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/boy-8-cels.webp",
+    "sourceAtlas": "boys-8-beret"
+  },
+  {
+    "character": "sunny-boy",
+    "stage": 8,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/sunny-boy-8-cels.webp",
+    "sourceAtlas": "boys-8-beret"
+  },
+  {
+    "character": "calm-boy",
+    "stage": 8,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/calm-boy-8-cels.webp",
+    "sourceAtlas": "boys-8-beret"
+  },
+  {
+    "character": "boy",
+    "stage": 8,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/boy-8-cels.webp",
+    "sourceAtlas": "boys-8-bucket-hat"
+  },
+  {
+    "character": "sunny-boy",
+    "stage": 8,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/sunny-boy-8-cels.webp",
+    "sourceAtlas": "boys-8-bucket-hat"
+  },
+  {
+    "character": "calm-boy",
+    "stage": 8,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/calm-boy-8-cels.webp",
+    "sourceAtlas": "boys-8-bucket-hat"
+  },
+  {
+    "character": "girl",
+    "stage": 8,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/girl-8-cels.webp",
+    "sourceAtlas": "girls-8-beret"
+  },
+  {
+    "character": "sunny-girl",
+    "stage": 8,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/sunny-girl-8-cels.webp",
+    "sourceAtlas": "girls-8-beret"
+  },
+  {
+    "character": "sweet-girl",
+    "stage": 8,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/sweet-girl-8-cels.webp",
+    "sourceAtlas": "girls-8-beret"
+  },
+  {
+    "character": "girl",
+    "stage": 8,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/girl-8-cels.webp",
+    "sourceAtlas": "girls-8-bucket-hat"
+  },
+  {
+    "character": "sunny-girl",
+    "stage": 8,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/sunny-girl-8-cels.webp",
+    "sourceAtlas": "girls-8-bucket-hat"
+  },
+  {
+    "character": "sweet-girl",
+    "stage": 8,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/sweet-girl-8-cels.webp",
+    "sourceAtlas": "girls-8-bucket-hat"
+  },
+  {
+    "character": "boy",
+    "stage": 9,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/boy-9-cels.webp",
+    "sourceAtlas": "boys-9-beret"
+  },
+  {
+    "character": "sunny-boy",
+    "stage": 9,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/sunny-boy-9-cels.webp",
+    "sourceAtlas": "boys-9-beret"
+  },
+  {
+    "character": "calm-boy",
+    "stage": 9,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/calm-boy-9-cels.webp",
+    "sourceAtlas": "boys-9-beret"
+  },
+  {
+    "character": "master-boy",
+    "stage": 9,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/master-boy-9-cels.webp",
+    "sourceAtlas": "boys-9-beret"
+  },
+  {
+    "character": "boy",
+    "stage": 9,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/boy-9-cels.webp",
+    "sourceAtlas": "boys-9-bucket-hat"
+  },
+  {
+    "character": "sunny-boy",
+    "stage": 9,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/sunny-boy-9-cels.webp",
+    "sourceAtlas": "boys-9-bucket-hat"
+  },
+  {
+    "character": "calm-boy",
+    "stage": 9,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/calm-boy-9-cels.webp",
+    "sourceAtlas": "boys-9-bucket-hat"
+  },
+  {
+    "character": "master-boy",
+    "stage": 9,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/master-boy-9-cels.webp",
+    "sourceAtlas": "boys-9-bucket-hat"
+  },
+  {
+    "character": "girl",
+    "stage": 9,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/girl-9-cels.webp",
+    "sourceAtlas": "girls-9-beret"
+  },
+  {
+    "character": "sunny-girl",
+    "stage": 9,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/sunny-girl-9-cels.webp",
+    "sourceAtlas": "girls-9-beret"
+  },
+  {
+    "character": "sweet-girl",
+    "stage": 9,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/sweet-girl-9-cels.webp",
+    "sourceAtlas": "girls-9-beret"
+  },
+  {
+    "character": "master-girl",
+    "stage": 9,
+    "hat": "beret",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/beret/master-girl-9-cels.webp",
+    "sourceAtlas": "girls-9-beret"
+  },
+  {
+    "character": "girl",
+    "stage": 9,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/girl-9-cels.webp",
+    "sourceAtlas": "girls-9-bucket-hat"
+  },
+  {
+    "character": "sunny-girl",
+    "stage": 9,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/sunny-girl-9-cels.webp",
+    "sourceAtlas": "girls-9-bucket-hat"
+  },
+  {
+    "character": "sweet-girl",
+    "stage": 9,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/sweet-girl-9-cels.webp",
+    "sourceAtlas": "girls-9-bucket-hat"
+  },
+  {
+    "character": "master-girl",
+    "stage": 9,
+    "hat": "bucket-hat",
+    "frames": 4,
+    "width": 1280,
+    "height": 420,
+    "file": "assets/worn-hats/bucket-hat/master-girl-9-cels.webp",
+    "sourceAtlas": "girls-9-bucket-hat"
+  }
+]

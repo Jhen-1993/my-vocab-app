@@ -608,8 +608,9 @@
     .study-complete{padding:28px 18px;}
   }
 </style>
-<link rel="stylesheet" href="baby-garden.css">
-<link rel="stylesheet" href="baby-avatar.css">
+<link rel="stylesheet" href="baby-garden.css?v=20261124-final1">
+<link rel="stylesheet" href="baby-avatar.css?v=20261124-final1">
+<link rel="stylesheet" href="login-rewards.css?v=20261124-final1">
 </head>
 <body>
 <div class="study-screen" id="study-screen"></div>
@@ -655,16 +656,17 @@
   </footer>
 </div>
 
-<!-- 字庫依程度整理為三個檔案；advanced.js 內含例句、授權來源與擴充資料。 -->
-<script src="data/beginner.js?v=20260814-v52"></script>
-<script src="data/intermediate.js"></script>
+<!-- 三個難度各有獨立正式字庫；例句與詞性直接取自所屬檔案。 -->
+<script src="data/beginner.js?v=20261120-clean1"></script>
+<script src="data/intermediate.js?v=20261120-clean1"></script>
 <!-- 版本參數可避免 GitHub Pages 或瀏覽器繼續使用舊的整合資料快取。 -->
-<script src="data/advanced.js?v=20260818-bundled-v66"></script>
+<script src="data/advanced.js?v=20261120-clean1"></script>
 <div id="garden-toast" class="garden-toast" role="status" aria-live="polite" hidden></div>
 <dialog id="master-reveal" class="master-reveal" aria-labelledby="master-reveal-title"><div id="master-reveal-content"></div></dialog>
-<script src="baby-core.js"></script>
-<script src="baby-avatar.js"></script>
-<script src="baby-garden.js"></script>
+<script src="baby-core.js?v=20261124-final1"></script>
+<script src="baby-accessories.js?v=20261124-final1"></script>
+<script src="baby-avatar.js?v=20261124-final1"></script>
+<script src="baby-garden.js?v=20261124-final1"></script>
 <script>
 (function(){
   "use strict";
@@ -696,9 +698,9 @@
 
   // ---------------- 全域常數：所有模組共用的固定設定 ----------------
   var STORAGE_KEY = "vocab-notebook-data";
-  // 詞性稽核表：保留字典的全部詞性，並另外標記例句中的實際詞性。
+  // 詞性稽核表：保留本卡所教詞性，並另外標記例句中的實際詞性。
   // 先收錄已由上下文人工判定的跨詞性卡片；其餘會在後續批次加入。
-  // The audited metadata is defined in data/advanced.js, after all three decks load.
+  // Each difficulty file includes its own audited metadata; the maps merge on load.
   // The fallbacks keep custom cards usable even if that data file is unavailable.
   // Use window.* here because this main script is wrapped in a function scope,
   // while the three deck files intentionally publish their audited data globally.
@@ -719,10 +721,6 @@
   // visibly shown on a card.
   var REVIEW_EXAMPLE_VARIANTS = (typeof window !== "undefined" && window.REVIEW_EXAMPLE_VARIANTS && typeof window.REVIEW_EXAMPLE_VARIANTS === "object")
     ? window.REVIEW_EXAMPLE_VARIANTS : Object.create(null);
-  var CURATED_EXAMPLE_UPDATES = (typeof window !== "undefined" && window.CURATED_EXAMPLE_UPDATES && typeof window.CURATED_EXAMPLE_UPDATES === "object")
-    ? window.CURATED_EXAMPLE_UPDATES : Object.create(null);
-  var BUILTIN_WORD_RENAMES = (typeof window !== "undefined" && window.BUILTIN_WORD_RENAMES && typeof window.BUILTIN_WORD_RENAMES === "object")
-    ? window.BUILTIN_WORD_RENAMES : Object.create(null);
   function getCardExamples(word){
     var key = String(word.en || "").trim().toLowerCase();
     var settings = EXAMPLE_VARIANTS[key] || {};
@@ -827,11 +825,9 @@
       };
     });
   }
-  // Vocabulary is maintained in data/beginner.js, data/intermediate.js,
-  // data/real-word-extension.js, and data/advanced.js.
-  // The displayed count is calculated from the active decks below.  Some
-  // imported expansion cards are intentionally held back by the quality gate
-  // until they have a natural example sentence, so never hard-code this total.
+  // Each difficulty owns its canonical cards and related metadata.
+  // Existing built-in cards refresh from this data; custom and bulk cards remain user-owned.
+  var BUILTIN_VOCABULARY_VERSION = "20261120-clean1";
   // A correctly recalled word is maintained every two weeks.  An incorrect
   // answer starts the recovery sequence: day 1 -> 2 -> 4 -> 7 -> 15 -> 30.
   // Values are gaps between reviews after the initial incorrect answer.
@@ -955,95 +951,55 @@
     if(!Array.isArray(data.reviewLog)) data.reviewLog = [];
     if(!data.importedDecks || typeof data.importedDecks !== "object") data.importedDecks = {};
     if(typeof data.studyCompletedDate !== "string") data.studyCompletedDate = "";
-    // Remove only retired built-in generated combinations.  Custom cards are
-    // always preserved, and all remaining cards keep their review history.
-    if(typeof isRetiredBuiltinTerm === "function"){
-      data.words = data.words.filter(function(word){
-        return word.category === "custom" || !isRetiredBuiltinTerm(word.en);
+    var builtinLevels = ["beginner", "intermediate", "advanced"];
+    var canonical = Object.create(null);
+    builtinLevels.forEach(function(level){
+      (DECKS[level] || []).forEach(function(card){
+        canonical[String(card[0]).trim().toLowerCase()] = { level: level, card: card };
       });
-    }
-    // Correct earlier card data without touching review dates or answer history.
-    data.words.forEach(function(word){
-      if(word.en === "custommade"){
-        word.en = "custom-made";
-        word.zh = "訂製的";
-        word.example = "He wears a custom-made suit for important meetings.";
-        word.exampleZh = "他重要會議都穿訂製西裝。";
-        word.pos = "adj.";
-      }
-      if(word.en === "automatic"){
-        word.zh = "自動的";
-        word.example = "The doors have an automatic sensor.";
-        word.exampleZh = "這扇門有自動感應器。";
-        word.pos = "adj.";
-      }
     });
-    // Update only generated filler examples and missing Chinese translations.
-    // User-created cards keep their wording; all review scheduling fields remain intact.
-    data.words.forEach(function(word){
-      var deck = DECKS[word.category];
-      if(!deck) return;
-      var target = String(word.en || "").toLowerCase();
-      // Correct only built-in generated terminology; custom cards retain the
-      // exact wording that their owner entered.
-      var renamedTarget = BUILTIN_WORD_RENAMES[target];
-      if(word.category !== "custom" && renamedTarget){
-        word.en = renamedTarget;
-        target = String(renamedTarget).toLowerCase();
-      }
-      var match = deck.find(function(card){
-        return String(card[0] || "").toLowerCase() === target;
-      });
-      if(!match) return;
-      if(!String(word.exampleZh || "").trim() && String(match[3] || "").trim()){
-        word.exampleZh = match[3];
-      }
-      var isLegacyFillerExample = (typeof isQualityLegacyFillerExample === "function")
-        ? isQualityLegacyFillerExample(word.example)
-        : /^(We discussed the .+ in today's meeting\.|We discussed the .+ during class\.|We discussed the .+ during today's lesson\.|We discussed the topic of .+ in class today\.|We learned how to .+ during today's lesson\.|The lesson included an? .+ example\.|The report includes information about the .+\.)$/.test(String(word.example || ""));
-      // A curated multi-sense word must also refresh its primary example.
-      // This lets an existing learner see the clarified meaning without
-      // resetting their review history or touching their own custom cards.
-      var hasCuratedVariants = !!EXAMPLE_VARIANTS[target];
-      var hasCuratedExampleUpdate = !!CURATED_EXAMPLE_UPDATES[target];
-      // A curated correction may change only the Chinese meaning or part of
-      // speech (for example, some: 「若干」→「一些」).  Apply it even when
-      // the English example itself is unchanged; review scheduling is kept.
-      var needsCuratedRefresh = isLegacyFillerExample || hasCuratedVariants || hasCuratedExampleUpdate;
-      if(word.category !== "custom" && needsCuratedRefresh && (match[2] !== word.example || hasCuratedExampleUpdate)){
-        word.zh = match[1];
-        word.example = match[2];
-        word.exampleZh = match[3];
-        word.pos = match[4] || word.pos;
-      }
-      if(target.endsWith(" documentation") && String(word.zh || "").endsWith("\u6587\u4ef6\u5316")){
-        word.zh = match[1];
-      }
-    });
-
-    // Learners who had already imported the previous advanced deck should not
-    // have to re-import it after synthetic phrases are retired. Add only the
-    // 508 new replacement cards; keep every existing card and its progress.
     var hadAdvancedDeck = !!data.importedDecks.advanced || data.words.filter(function(word){
       return word.category === "advanced";
     }).length >= 1000;
-    if(hadAdvancedDeck && typeof REAL_WORD_EXTENSION !== "undefined"){
-      var existingWords = {};
-      data.words.forEach(function(word){ existingWords[String(word.en || "").toLowerCase()] = true; });
-      REAL_WORD_EXTENSION.forEach(function(entry){
-        var key = String(entry[0] || "").toLowerCase();
-        if(key && !existingWords[key]){
-          var replacementCard = DECKS.advanced.find(function(card){
-            return String(card[0] || "").toLowerCase() === key;
-          });
-          data.words.push(makeWord(
-            entry[0], entry[1], replacementCard ? replacementCard[2] : "", todayStr(), "advanced",
-            replacementCard ? replacementCard[3] : "", entry[2]
-          ));
-          existingWords[key] = true;
-        }
+    var needsUpgrade = data.builtinVocabularyVersion !== BUILTIN_VOCABULARY_VERSION;
+    // Keep retired cards recoverable in exported backups, outside the active learning pool.
+    if(!Array.isArray(data.retiredBuiltinWords)) data.retiredBuiltinWords = [];
+    data.words = data.words.filter(function(word){
+      if(builtinLevels.indexOf(word.category) === -1) return true;
+      var key = String(word.en || "").trim().toLowerCase();
+      if(typeof BUILTIN_WORD_RENAMES !== "undefined" && BUILTIN_WORD_RENAMES[key]) key = BUILTIN_WORD_RENAMES[key];
+      var current = canonical[key];
+      if(current){
+        // Refresh content and difficulty only. Preserve IDs, answers, dates, and history.
+        word.en = current.card[0];
+        word.zh = current.card[1];
+        word.example = current.card[2];
+        word.exampleZh = current.card[3];
+        word.pos = current.card[4];
+        word.category = current.level;
+        return true;
+      }
+      if(typeof RETIRED_BUILTIN_TERMS !== "undefined" && RETIRED_BUILTIN_TERMS[key]){
+        data.retiredBuiltinWords.push(word);
+        return false;
+      }
+      // Unknown legacy entries are retained rather than silently discarded.
+      return true;
+    });
+    // One-time replacement of retired advanced expansions. Use only current,
+    // complete cards and their reviewed levels; never resurrect a rejected placeholder.
+    if(needsUpgrade && hadAdvancedDeck && typeof BUILTIN_REPLACEMENT_WORDS !== "undefined"){
+      var existing = Object.create(null);
+      data.words.forEach(function(word){ existing[String(word.en || "").trim().toLowerCase()] = true; });
+      BUILTIN_REPLACEMENT_WORDS.forEach(function(key){
+        var current = canonical[key];
+        if(!current || existing[key]) return;
+        var card = current.card;
+        data.words.push(makeWord(card[0], card[1], card[2], todayStr(), current.level, card[3], card[4]));
+        existing[key] = true;
       });
     }
+    data.builtinVocabularyVersion = BUILTIN_VOCABULARY_VERSION;
   }
 
   // 依可用性載入資料；雲端失敗時自動改用本機或記憶體暫存。
@@ -2934,7 +2890,7 @@ function speak(text){
     var backContent = renderCardExamples(w, "study");
     var studyPet = data.companion;
     var studyLook = BabyCore.appearance(studyPet);
-    var studyWelcome = '<div class="study-welcome"><div class="study-baby" aria-hidden="true">'+BabyAvatar.render(studyLook.stage,studyLook.gender,studyLook.characterId)+'</div><div><h2>和 '+escapeHtml(studyPet.name)+' 一起學單字</h2><p>一張小字卡，一點小進步。</p></div></div>';
+    var studyWelcome = '<div class="study-welcome"><div class="study-baby" aria-hidden="true">'+BabyAvatar.render(studyLook.stage,studyLook.gender,studyLook.characterId,studyPet.accessory)+'</div><div><h2>和 '+escapeHtml(studyPet.name)+' 一起學單字</h2><p>一張小字卡，一點小進步。</p></div></div>';
 
 
     screen.innerHTML =
@@ -3017,6 +2973,7 @@ function speak(text){
   }
   loadData().then(function(){
     data.companion = BabyCore.normalize(data.companion);
+    BabyCore.recordLogin(data.companion, todayStr());
     // 保存首次抽到的性別，舊帳號即使不需要補新字也會保留。
     return performSave();
   }).then(function(){
@@ -3024,11 +2981,14 @@ function speak(text){
   }).then(function(){showInitialScreen();garden.checkMasterReveal();});
   // Keep daily progress current when the page stays open across midnight.
   var gardenDate=todayStr();
-  document.addEventListener("visibilitychange",function(){
+  function refreshGardenDate(){
     if(!document.hidden && loaded && gardenDate!==todayStr()){
       gardenDate=todayStr();garden.renderHome();
     }
-  });
+  }
+  document.addEventListener("visibilitychange",refreshGardenDate);
+  document.addEventListener("pointerdown",refreshGardenDate,{passive:true});
+  document.addEventListener("keydown",refreshGardenDate);
 
 })();
 </script>

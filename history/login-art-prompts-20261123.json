@@ -1,0 +1,30 @@
+{
+  "tool": "built-in image_gen",
+  "records": [
+    {
+      "id": "hero-cape-atlas",
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Production game clothing atlas. Reference characters provide watercolor/pencil style only. Create EXACTLY THREE equal square cells in one horizontal row, 3:1 canvas, each containing one soft coral-red little superhero cape, no people or body parts. All capes same design, cream-gold soft piping, a single small embroidered gold star near lower outer hem, natural fabric folds. Cell 1: SHORT baby cape, back view, shoulder neckline at top center, fabric drapes outward to both sides with a gently scalloped hem, central torso area will be occluded by a seated baby's body. Cell 2: SHORT side-view cape flowing back to the left from neckline at upper right for a crawling baby, soft folds and naturally trailing cloth. Cell 3: longer standing-child superhero cape, back view, neckline top center, rounded shoulder drape, flows down to a mid-thigh scalloped hem. Each complete cape entirely inside its own cell with 8% transparent margin. These assets will sit behind the original character body, so show only cape fabric, no head/hands/torso, no mannequins, no collar that constricts neck, no ties, no hats. Preserve delicate hand-painted muted warm storybook style of reference. Transparent alpha everywhere outside cloth, including all gutters. No paper background, no cast shadows, no text, no grid lines.",
+      "path": "/Users/sasa/.codex/generated_images/01a1f7e6-b3fb-7911-8510-c6143c279492/exec-cb934fc2-f387-40e1-a452-67069df5b734.png"
+    },
+    {
+      "id": "hero-cape-atlas",
+      "prompt": "Use case: background-extraction. Remove the white paper background from this three-cell superhero cape clothing atlas. Keep all three coral fabric capes and their cream trim, gold stars, folds, colors and exact positions completely unchanged. Transparent alpha everywhere outside each fabric silhouette. No backdrop or shadow. Keep the entire 3:1 canvas and exact three equal cells, no cropping or rearranging. Output a genuinely transparent PNG.",
+      "path": "/Users/sasa/.codex/generated_images/01a1f7e6-b3fb-7911-8510-c6143c279492/exec-0781825f-7bff-4d04-b7c5-f3b68e1fe7dc.png",
+      "replaces": "/Users/sasa/.codex/generated_images/01a1f7e6-b3fb-7911-8510-c6143c279492/exec-cb934fc2-f387-40e1-a452-67069df5b734.png",
+      "revision": 2
+    },
+    {
+      "id": "starry-room",
+      "transparent": false,
+      "prompt": "Use case: illustration-story. Create one portrait 4:5 game room background, matching the reference characters' soft watercolor/pencil picture-book world. Reference is STYLE ONLY; no people or babies in this background. A magical starry nursery pavilion: huge arched open view into a beautiful indigo, lavender and dusty blue galaxy, softly luminous Milky Way flowing across the upper sky, many delicate warm stars and several beautiful shooting stars with fine luminous tails. On the RIGHT rear of the room stands a clearly recognizable dreamy miniature carousel with an elegant pale pink and cream striped canopy, gold poles and three adorable pastel carousel horses, softly glowing string lights. Cozy curved cream floor and a soft oval rug in the lower center. Keep the CENTER and LEFT foreground open and spacious for overlaying a baby and large teddy bear; carousel fully visible in right middle distance, sky at top, floor in lower third. Whimsical but serene, watercolor paper texture, delicate hand-drawn edges, subtle gold accents, no harsh neon or 3D plastic. Rich yet muted dreamy colors harmonizing with original artwork. Full bleed room, no outer border, no text, no UI, no labels, no watermarks.",
+      "path": "/Users/sasa/.codex/generated_images/01a1f7e6-b3fb-7911-8510-c6143c279492/exec-f1c1286c-a44e-40b2-8e21-f368ed4a6d79.png"
+    },
+    {
+      "id": "teddy",
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Create a production transparent game decoration matching the reference baby's delicate watercolor and colored-pencil storybook illustration style. Reference is STYLE ONLY, do not draw a baby. One enormous adorable honey-beige plush teddy bear seated facing slightly right, full body, rounded fluffy ears, big soft paws, warm brown embroidered eyes, tiny gentle smile, subtle rose cheeks, cream muzzle and belly, a small muted blue fabric bow at the neck. A comforting soft cuddly friend for a baby's room, cozy handcrafted fabric texture. Keep the bear charming and natural, muted warm palette, not plastic or photorealistic. Entire bear visible with margin, paws grounded on same baseline, no furniture or other props, no lettering, no background or floor shadow. Actual transparent alpha cutout.",
+      "path": "/Users/sasa/.codex/generated_images/01a1f7e6-b3fb-7911-8510-c6143c279492/exec-6e136f4a-e873-41cc-b461-e2372d4a291c.png"
+    }
+  ]
+}

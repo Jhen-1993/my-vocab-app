@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "counts": {
+    "beginner": 2067,
+    "intermediate": 2680,
+    "advanced": 1337
+  },
+  "total": 6084,
+  "independentDeckLoading": true,
+  "migrationCardsChecked": 6088,
+  "retiredCardsArchived": 1499,
+  "customAndBulkPreserved": true,
+  "historyPreserved": true,
+  "backupRoundTrip": true,
+  "srsDueDates": [
+    "2026-11-21",
+    "2026-11-23",
+    "2026-11-26",
+    "2026-12-04",
+    "2026-12-19"
+  ],
+  "currentGameRewards": [
+    {
+      "goal": 5,
+      "xp": 30,
+      "stars": 3
+    },
+    {
+      "goal": 10,
+      "xp": 30,
+      "stars": 3
+    },
+    {
+      "goal": 15,
+      "xp": 30,
+      "stars": 3
+    }
+  ],
+  "templateScan": {
+    "primarySentencesScanned": 6084,
+    "alternativeSentencesScanned": 38,
+    "knownTemplateMatches": 0,
+    "hits": []
+  },
+  "syntaxCheckedFiles": [
+    "baby-garden.js",
+    "baby-core.js",
+    "baby-avatar.js",
+    "ai-relay-worker/worker.js",
+    "data/beginner.js",
+    "data/advanced.js",
+    "data/intermediate.js"
+  ],
+  "missingLocalHtmlResources": [],
+  "unchangedGameAndAssetFiles": 67,
+  "browserTest": "Not performed: local HTTP socket unavailable and in-app browser disallows file URLs."
+}

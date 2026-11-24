@@ -1,0 +1,6173 @@
+{
+  "version": "20261120-clean1",
+  "beforeCounts": {
+    "beginner": 2096,
+    "intermediate": 2555,
+    "advanced": 1433
+  },
+  "afterCounts": {
+    "beginner": 2067,
+    "intermediate": 2680,
+    "advanced": 1337
+  },
+  "total": 6084,
+  "reviewedExpansionCards": 584,
+  "reclassifiedCards": 342,
+  "contentChangedCards": 123,
+  "obsoleteExamplePosLabelsRemoved": 1183,
+  "examplePosLabelsAdded": 266,
+  "retiredIdentifiers": 1499,
+  "retainedCorpusPairs": 104,
+  "levelCriteria": {
+    "beginner": "生活基礎與常用具體詞彙",
+    "intermediate": "一般職場、日常進階與常見抽象詞彙",
+    "advanced": "專門學科、低頻用語、較複雜抽象或正式詞彙"
+  },
+  "levelNote": "以此專案的學習用途人工分級；不是官方 CEFR 認證。",
+  "contentChanges": [
+    {
+      "word": "since",
+      "before": [
+        "since",
+        "自從～以來",
+        "We've been friends since high school.",
+        "我們從高中就是朋友。",
+        "prep.?conj.?adv."
+      ],
+      "after": [
+        "since",
+        "自從……以來",
+        "We've been friends since high school.",
+        "我們從高中就是朋友。",
+        "prep.／conj.／adv."
+      ]
+    },
+    {
+      "word": "grape vine",
+      "before": [
+        "grape vine",
+        "葡萄藤",
+        "Grapes hung heavy on the old vine.",
+        "葡萄沉甸甸地掛在這株老葡萄藤上。",
+        "n."
+      ],
+      "after": [
+        "grape vine",
+        "葡萄藤",
+        "A grape vine grows along the fence.",
+        "一株葡萄藤沿著圍籬生長。",
+        "n."
+      ]
+    },
+    {
+      "word": "ticket machine",
+      "before": [
+        "ticket machine",
+        "售票機",
+        "He bought his ticket from the machine at the station.",
+        "他在車站用售票機買了票。",
+        "n."
+      ],
+      "after": [
+        "ticket machine",
+        "售票機",
+        "He bought his ticket from the ticket machine at the station.",
+        "他在車站用售票機買了票。",
+        "n."
+      ]
+    },
+    {
+      "word": "antenna",
+      "before": [
+        "antenna",
+        "天線",
+        "The technician adjusted the antenna on the roof to improve the television signal.",
+        "技術人員調整了屋頂上的天線以改善電視訊號。",
+        "n."
+      ],
+      "after": [
+        "antenna",
+        "天線；觸角",
+        "The technician adjusted the antenna on the roof to improve the television signal.",
+        "技術人員調整了屋頂上的天線以改善電視訊號。",
+        "n."
+      ]
+    },
+    {
+      "word": "biomass",
+      "before": [
+        "biomass",
+        "生物質",
+        "The power plant burns biomass to produce renewable energy.",
+        "這座發電廠燃燒生物質來產生再生能源。",
+        "n."
+      ],
+      "after": [
+        "biomass",
+        "生物質；生質能原料",
+        "The power plant burns biomass to produce renewable energy.",
+        "這座發電廠燃燒生物質來產生再生能源。",
+        "n."
+      ]
+    },
+    {
+      "word": "bookmark",
+      "before": [
+        "bookmark",
+        "書籤",
+        "Bookmark this site.",
+        "將此網站存入書籤。",
+        "n."
+      ],
+      "after": [
+        "bookmark",
+        "書籤",
+        "I put a bookmark between the pages before closing the book.",
+        "闔上書本前，我在書頁之間放了一張書籤。",
+        "n."
+      ]
+    },
+    {
+      "word": "buckle",
+      "before": [
+        "buckle",
+        "扣環",
+        "Buckle your seatbelts.",
+        "繫上安全帶吧。",
+        "n."
+      ],
+      "after": [
+        "buckle",
+        "扣環",
+        "The buckle on my belt is broken.",
+        "我的皮帶扣環壞了。",
+        "n."
+      ]
+    },
+    {
+      "word": "bushel",
+      "before": [
+        "bushel",
+        "蒲式耳",
+        "Hide not your light under a bushel.",
+        "不要把你的燈藏在斗笠下。",
+        "n."
+      ],
+      "after": [
+        "bushel",
+        "蒲式耳（穀物等的容量單位）",
+        "The farmer sold a bushel of wheat at the market.",
+        "農夫在市場賣了一蒲式耳的小麥。",
+        "n."
+      ]
+    },
+    {
+      "word": "circuit",
+      "before": [
+        "circuit",
+        "電路",
+        "A loose wire in the circuit stopped the lamp from working.",
+        "電路裡有一條鬆脫的電線，導致燈泡無法運作。",
+        "n."
+      ],
+      "after": [
+        "circuit",
+        "電路；環形路線；巡迴賽",
+        "A loose wire in the circuit stopped the lamp from working.",
+        "電路裡有一條鬆脫的電線，導致燈泡無法運作。",
+        "n."
+      ]
+    },
+    {
+      "word": "cylinder",
+      "before": [
+        "cylinder",
+        "圓筒",
+        "The mechanic replaced a damaged cylinder in the engine.",
+        "技師更換引擎中損壞的汽缸。",
+        "n."
+      ],
+      "after": [
+        "cylinder",
+        "圓柱體；汽缸",
+        "The mechanic replaced a damaged cylinder in the engine.",
+        "技師更換了引擎中損壞的汽缸。",
+        "n."
+      ]
+    },
+    {
+      "word": "decal",
+      "before": [
+        "decal",
+        "貼花",
+        "She put a colorful decal on her laptop.",
+        "她在筆電上貼了一張彩色貼紙。",
+        "n."
+      ],
+      "after": [
+        "decal",
+        "貼花；轉印貼紙",
+        "She put a colorful decal on her laptop.",
+        "她在筆電上貼了一張彩色貼紙。",
+        "n."
+      ]
+    },
+    {
+      "word": "dispenser",
+      "before": [
+        "dispenser",
+        "分配器",
+        "The soap dispenser is empty and needs to be refilled.",
+        "給皂器空了，需要補充。",
+        "n."
+      ],
+      "after": [
+        "dispenser",
+        "分配器；取用器",
+        "The soap dispenser is empty and needs to be refilled.",
+        "給皂器空了，需要補充。",
+        "n."
+      ]
+    },
+    {
+      "word": "drill",
+      "before": [
+        "drill",
+        "鑽頭",
+        "He used a drill to make a hole in the wall.",
+        "他用鑽頭在牆上鑽了一個洞。",
+        "n."
+      ],
+      "after": [
+        "drill",
+        "鑽孔機；電鑽",
+        "He used a drill to make a hole in the wall.",
+        "他用電鑽在牆上鑽了一個洞。",
+        "n."
+      ]
+    },
+    {
+      "word": "elastic",
+      "before": [
+        "elastic",
+        "鬆緊帶",
+        "This swimming suit is made of elastic material.",
+        "這件泳衣是用彈性面料做的。",
+        "n."
+      ],
+      "after": [
+        "elastic",
+        "鬆緊帶",
+        "The elastic in these shorts has become loose.",
+        "這件短褲的鬆緊帶已經鬆了。",
+        "n."
+      ]
+    },
+    {
+      "word": "escort",
+      "before": [
+        "escort",
+        "護送人員",
+        "A security officer escorted the visitor to the meeting room.",
+        "一名保全人員護送訪客到會議室。",
+        "n."
+      ],
+      "after": [
+        "escort",
+        "護送人員；陪同者",
+        "A security escort accompanied the visitor to the meeting room.",
+        "一名安全護送人員陪同訪客前往會議室。",
+        "n."
+      ]
+    },
+    {
+      "word": "flask",
+      "before": [
+        "flask",
+        "燒瓶",
+        "Someone has stolen my flask.",
+        "我的熱水瓶被人偷了。",
+        "n."
+      ],
+      "after": [
+        "flask",
+        "燒瓶",
+        "The students poured the liquid into a glass flask.",
+        "學生把液體倒進玻璃燒瓶裡。",
+        "n."
+      ]
+    },
+    {
+      "word": "jersey",
+      "before": [
+        "jersey",
+        "運動衫",
+        "Jersey has beautiful scenery.",
+        "澤西島的景色很美。",
+        "n."
+      ],
+      "after": [
+        "jersey",
+        "運動衫；球衣",
+        "She wore her team jersey to the basketball game.",
+        "她穿著隊服去參加籃球比賽。",
+        "n."
+      ]
+    },
+    {
+      "word": "pedal",
+      "before": [
+        "pedal",
+        "踏板",
+        "This pedal is stiff.",
+        "這個腳踏不好用。",
+        "n."
+      ],
+      "after": [
+        "pedal",
+        "踏板",
+        "Press the brake pedal gently as you approach the traffic lights.",
+        "接近紅綠燈時，請輕踩煞車踏板。",
+        "n."
+      ]
+    },
+    {
+      "word": "sandpaper",
+      "before": [
+        "sandpaper",
+        "砂紙",
+        "Take a piece of sandpaper and round off the edges.",
+        "拿一張砂紙把邊緣磨圓。",
+        "n.／v."
+      ],
+      "after": [
+        "sandpaper",
+        "砂紙；用砂紙打磨",
+        "Take a piece of sandpaper and round off the edges.",
+        "拿一張砂紙把邊緣磨圓。",
+        "n.／v."
+      ]
+    },
+    {
+      "word": "screw",
+      "before": [
+        "screw",
+        "螺絲",
+        "Screw you!",
+        "去死吧！",
+        "n."
+      ],
+      "after": [
+        "screw",
+        "螺絲",
+        "Tighten the loose screw with a screwdriver.",
+        "用螺絲起子鎖緊鬆動的螺絲。",
+        "n."
+      ]
+    },
+    {
+      "word": "vacuum",
+      "before": [
+        "vacuum",
+        "真空吸塵器",
+        "I bought a new vacuum yesterday.",
+        "我昨天買了一台新的吸塵器。",
+        "n.／v."
+      ],
+      "after": [
+        "vacuum",
+        "吸塵器；真空；用吸塵器清潔",
+        "I bought a new vacuum yesterday.",
+        "我昨天買了一台新的吸塵器。",
+        "n.／v."
+      ]
+    },
+    {
+      "word": "washer",
+      "before": [
+        "washer",
+        "墊圈",
+        "We bought a new washer.",
+        "我們買了臺新的洗衣機。",
+        "n."
+      ],
+      "after": [
+        "washer",
+        "墊圈",
+        "Place a washer under the nut before tightening it.",
+        "鎖緊螺帽前，先在下面放一個墊圈。",
+        "n."
+      ]
+    },
+    {
+      "word": "zipper",
+      "before": [
+        "zipper",
+        "拉鍊",
+        "My zipper got stuck.",
+        "我的拉鏈卡住了。",
+        "n."
+      ],
+      "after": [
+        "zipper",
+        "拉鍊",
+        "The zipper on my jacket got stuck.",
+        "我外套上的拉鍊卡住了。",
+        "n."
+      ]
+    },
+    {
+      "word": "acne",
+      "before": [
+        "acne",
+        "痤瘡",
+        "Oliver has an acne problem.",
+        "奧利弗有粉刺。",
+        "n."
+      ],
+      "after": [
+        "acne",
+        "痤瘡；青春痘",
+        "She visited a dermatologist for help with her acne.",
+        "她因青春痘問題去看皮膚科醫師。",
+        "n."
+      ]
+    },
+    {
+      "word": "acrylic",
+      "before": [
+        "acrylic",
+        "壓克力",
+        "The artist painted the landscape with acrylic paints.",
+        "這名藝術家用壓克力顏料畫風景。",
+        "n."
+      ],
+      "after": [
+        "acrylic",
+        "壓克力；壓克力顏料",
+        "She prefers acrylic to oil paint because it dries faster.",
+        "她偏好壓克力顏料而非油畫顏料，因為它乾得較快。",
+        "n."
+      ]
+    },
+    {
+      "word": "colony",
+      "before": [
+        "colony",
+        "殖民地",
+        "A colony of ants built tunnels beneath the stones.",
+        "一群螞蟻在石頭下築起隧道。",
+        "n."
+      ],
+      "after": [
+        "colony",
+        "殖民地；（動物或昆蟲的）群體",
+        "A colony of ants built tunnels beneath the stones.",
+        "一群螞蟻在石頭下築起隧道。",
+        "n."
+      ]
+    },
+    {
+      "word": "condom",
+      "before": [
+        "condom",
+        "保險套",
+        "The condom broke.",
+        "避孕套壞了。",
+        "n."
+      ],
+      "after": [
+        "condom",
+        "保險套",
+        "The pharmacy sells condoms near the checkout counter.",
+        "這間藥局在結帳櫃檯附近販售保險套。",
+        "n."
+      ]
+    },
+    {
+      "word": "console",
+      "before": [
+        "console",
+        "控制台",
+        "The pilot checked the switches on the console.",
+        "飛行員檢查了控制台上的開關。",
+        "n.／v."
+      ],
+      "after": [
+        "console",
+        "控制台；遊戲主機；安慰",
+        "The pilot checked the switches on the console.",
+        "飛行員檢查了控制台上的開關。",
+        "n.／v."
+      ]
+    },
+    {
+      "word": "cousin",
+      "before": [
+        "cousin",
+        "表親",
+        "My cousin is coming to visit during the holiday.",
+        "我的表親會在假期來拜訪。",
+        "n."
+      ],
+      "after": [
+        "cousin",
+        "堂兄弟姊妹；表兄弟姊妹",
+        "My cousin is coming to visit during the holiday.",
+        "我的一位堂表親會在假期來拜訪。",
+        "n."
+      ]
+    },
+    {
+      "word": "daylight",
+      "before": [
+        "daylight",
+        "日光",
+        "Daylight savings is over today.",
+        "今天夏令時結束了。",
+        "n."
+      ],
+      "after": [
+        "daylight",
+        "日光；白晝",
+        "We still had enough daylight to finish the walk.",
+        "天色還夠亮，我們可以走完整段路。",
+        "n."
+      ]
+    },
+    {
+      "word": "disco",
+      "before": [
+        "disco",
+        "迪斯可舞廳",
+        "The disco is empty.",
+        "罐子是空的。",
+        "n."
+      ],
+      "after": [
+        "disco",
+        "迪斯可舞廳",
+        "They danced at the disco until midnight.",
+        "他們在迪斯可舞廳跳舞直到午夜。",
+        "n."
+      ]
+    },
+    {
+      "word": "lounge",
+      "before": [
+        "lounge",
+        "休息室",
+        "It is a lounge.",
+        "這是客廳。",
+        "n."
+      ],
+      "after": [
+        "lounge",
+        "休息室；（英式）客廳",
+        "We waited in the airport lounge before our flight.",
+        "登機前，我們在機場休息室等候。",
+        "n."
+      ]
+    },
+    {
+      "word": "painter",
+      "before": [
+        "painter",
+        "畫家",
+        "The painter illustrates.",
+        "畫家畫畫。",
+        "n."
+      ],
+      "after": [
+        "painter",
+        "畫家",
+        "The painter spent three weeks painting a mountain landscape.",
+        "這位畫家花了三週畫一幅山景畫。",
+        "n."
+      ]
+    },
+    {
+      "word": "pen",
+      "before": [
+        "pen",
+        "鋼筆",
+        "Please sign your name with a blue pen.",
+        "請用藍色原子筆簽名。",
+        "n."
+      ],
+      "after": [
+        "pen",
+        "筆（如原子筆、鋼筆）",
+        "Please sign your name with a blue pen.",
+        "請用藍色的筆簽名。",
+        "n."
+      ]
+    },
+    {
+      "word": "hang your hat",
+      "before": [
+        "hang your hat",
+        "告訴你一個號外",
+        "Here's a hang-your-hat moment: the merger deal fell through.",
+        "這裡有個大新聞：這樁併購案破局了。",
+        "idiom"
+      ],
+      "after": [
+        "hang your hat",
+        "落腳；居住（非正式）",
+        "This town is a lovely place to hang your hat.",
+        "這個小鎮是個很適合居住的地方。",
+        "idiom"
+      ]
+    },
+    {
+      "word": "poke fun at",
+      "before": [
+        "poke fun at／of",
+        "嘲笑",
+        "The kids sometimes poke fun at his old-fashioned clothes.",
+        "孩子們有時候會嘲笑他老派的穿著。",
+        "phr.v."
+      ],
+      "after": [
+        "poke fun at",
+        "取笑；嘲弄",
+        "The kids sometimes poke fun at his old-fashioned clothes.",
+        "孩子們有時候會取笑他老派的穿著。",
+        "idiom"
+      ]
+    },
+    {
+      "word": "suspicion",
+      "before": [
+        "suspicion",
+        "懷疑",
+        "Police grew suspicious of his unusual behavior.",
+        "警方對他不尋常的行為起了疑心。",
+        "n."
+      ],
+      "after": [
+        "suspicion",
+        "懷疑",
+        "His unusual behavior raised the officer's suspicion.",
+        "他不尋常的行為引起了警員的懷疑。",
+        "n."
+      ]
+    },
+    {
+      "word": "annual report",
+      "before": [
+        "annual report",
+        "年度報告",
+        "The annual report is prepared once a year to support long-term planning. Any changes must be recorded before implementation.",
+        "這份「年度報告」每年準備一次，以支援長期規劃。執行前必須記錄所有變更。",
+        "n."
+      ],
+      "after": [
+        "annual report",
+        "年度報告",
+        "Shareholders read the annual report carefully.",
+        "股東們仔細閱讀了年度報告。",
+        "n."
+      ]
+    },
+    {
+      "word": "actually",
+      "before": [
+        "actually",
+        "實際上",
+        "The actual cost was lower than we expected.",
+        "實際成本比我們預期的低。",
+        "adv."
+      ],
+      "after": [
+        "actually",
+        "實際上；其實",
+        "The trip was actually cheaper than we expected.",
+        "這趟旅行其實比我們預期的便宜。",
+        "adv."
+      ]
+    },
+    {
+      "word": "infection",
+      "before": [
+        "infection",
+        "感染",
+        "The wound became infected because it wasn't cleaned properly.",
+        "這個傷口因為沒有妥善清潔而感染了。",
+        "n."
+      ],
+      "after": [
+        "infection",
+        "感染",
+        "The doctor treated the infection before it spread.",
+        "醫師在感染擴散前加以治療。",
+        "n."
+      ]
+    },
+    {
+      "word": "abstraction",
+      "before": [
+        "abstraction",
+        "抽象；空泛",
+        "She's always talking in abstractions.",
+        "她說話總是很空泛。",
+        "n."
+      ],
+      "after": [
+        "abstraction",
+        "抽象概念；抽象化；空泛說法",
+        "She's always talking in abstractions.",
+        "她說話總是很空泛。",
+        "n."
+      ]
+    },
+    {
+      "word": "accession",
+      "before": [
+        "accession",
+        "就任",
+        "The accession of the new king was marked by a public ceremony.",
+        "新國王登基時舉行了公開儀式。",
+        "n."
+      ],
+      "after": [
+        "accession",
+        "就任；登基",
+        "The accession of the new king was marked by a public ceremony.",
+        "新國王登基時舉行了公開儀式。",
+        "n."
+      ]
+    },
+    {
+      "word": "bylaw",
+      "before": [
+        "bylaw",
+        "附則",
+        "The city council changed a bylaw about parking near schools.",
+        "市議會修改了一項關於校園附近停車的附則。",
+        "n."
+      ],
+      "after": [
+        "bylaw",
+        "地方自治法規；組織章程",
+        "The city council changed a bylaw about parking near schools.",
+        "市議會修改了一項關於學校附近停車的自治法規。",
+        "n."
+      ]
+    },
+    {
+      "word": "consultancy",
+      "before": [
+        "consultancy",
+        "顧問服務",
+        "She works for a consultancy that advises small businesses.",
+        "她任職於一家為小型企業提供建議的顧問公司。",
+        "n."
+      ],
+      "after": [
+        "consultancy",
+        "顧問公司；顧問服務",
+        "She works for a consultancy that advises small businesses.",
+        "她任職於一家為小型企業提供建議的顧問公司。",
+        "n."
+      ]
+    },
+    {
+      "word": "directory",
+      "before": [
+        "directory",
+        "目錄",
+        "May I see the telephone directory?",
+        "我能看看電話簿嗎？",
+        "n."
+      ],
+      "after": [
+        "directory",
+        "目錄；電話簿",
+        "May I see the telephone directory?",
+        "我能看看電話簿嗎？",
+        "n."
+      ]
+    },
+    {
+      "word": "embarkation",
+      "before": [
+        "embarkation",
+        "登船",
+        "Passengers waited near the gate for embarkation.",
+        "乘客在登機口附近等候登機。",
+        "n."
+      ],
+      "after": [
+        "embarkation",
+        "登船；登機",
+        "Passengers waited at the dock for embarkation.",
+        "乘客在碼頭等候登船。",
+        "n."
+      ]
+    },
+    {
+      "word": "antivirus",
+      "before": [
+        "antivirus",
+        "防毒軟體",
+        "Install antivirus software before connecting the new computer to the internet.",
+        "新電腦連上網路前，請先安裝防毒軟體。",
+        "n."
+      ],
+      "after": [
+        "antivirus",
+        "防毒軟體；防毒的",
+        "Install antivirus software before connecting the new computer to the internet.",
+        "新電腦連上網路前，請先安裝防毒軟體。",
+        "n."
+      ]
+    },
+    {
+      "word": "desktop",
+      "before": [
+        "desktop",
+        "桌上型電腦",
+        "She saved the file on her desktop.",
+        "她把檔案存到桌面上。",
+        "n."
+      ],
+      "after": [
+        "desktop",
+        "（電腦）桌面；桌上型電腦",
+        "She saved the file on her desktop.",
+        "她把檔案存到電腦桌面上。",
+        "n."
+      ]
+    },
+    {
+      "word": "server",
+      "before": [
+        "server",
+        "伺服器",
+        "Sami is a server.",
+        "薩米是個服務員。",
+        "n."
+      ],
+      "after": [
+        "server",
+        "伺服器；服務生",
+        "The server stores our files and backs them up every night.",
+        "這台伺服器儲存我們的檔案，並在每晚進行備份。",
+        "n."
+      ]
+    },
+    {
+      "word": "acoustics",
+      "before": [
+        "acoustics",
+        "聲學",
+        "The hall has excellent acoustics for live concerts.",
+        "這個大廳的音響效果很適合現場音樂會。",
+        "n."
+      ],
+      "after": [
+        "acoustics",
+        "聲學；（場所的）音響效果",
+        "The hall has excellent acoustics for live concerts.",
+        "這個大廳的音響效果很適合現場音樂會。",
+        "n."
+      ]
+    },
+    {
+      "word": "foreclosure",
+      "before": [
+        "foreclosure",
+        "喪失抵押品贖回權",
+        "The family faced foreclosure after missing several mortgage payments.",
+        "這個家庭錯過幾期房貸後面臨法拍。",
+        "n."
+      ],
+      "after": [
+        "foreclosure",
+        "抵押物遭收回或法拍；喪失抵押品贖回權",
+        "The family faced foreclosure after missing several mortgage payments.",
+        "這個家庭錯過幾期房貸後面臨法拍。",
+        "n."
+      ]
+    },
+    {
+      "word": "arcade",
+      "before": [
+        "arcade",
+        "拱廊",
+        "I have a lot of arcade machines.",
+        "我有很多電玩。",
+        "n."
+      ],
+      "after": [
+        "arcade",
+        "拱廊；遊樂場",
+        "We walked through a covered arcade lined with small shops.",
+        "我們穿過一條兩側有小商店的有頂拱廊。",
+        "n."
+      ]
+    },
+    {
+      "word": "artifact",
+      "before": [
+        "artifact",
+        "人工製品",
+        "The museum displayed an ancient artifact found near the river.",
+        "博物館展示了一件在河邊發現的古代人工製品。",
+        "n."
+      ],
+      "after": [
+        "artifact",
+        "人工製品；（考古）文物",
+        "The museum displayed an ancient artifact found near the river.",
+        "博物館展示了一件在河邊發現的古代人工製品。",
+        "n."
+      ]
+    },
+    {
+      "word": "composite",
+      "before": [
+        "composite",
+        "複合材料",
+        "The boat is made from a lightweight composite material.",
+        "這艘船由輕量複合材料製成。",
+        "n."
+      ],
+      "after": [
+        "composite",
+        "複合材料",
+        "The boat is made from a lightweight composite.",
+        "這艘船由一種輕量複合材料製成。",
+        "n."
+      ]
+    },
+    {
+      "word": "decay",
+      "before": [
+        "decay",
+        "腐敗",
+        "Extreme is my decay.",
+        "我是多麼的衰弱啊！（請核對原文是否有誤）",
+        "n."
+      ],
+      "after": [
+        "decay",
+        "腐爛；腐朽；衰敗",
+        "The wooden door showed signs of decay after years of rain.",
+        "多年雨淋之後，木門出現了腐朽的跡象。",
+        "n."
+      ]
+    },
+    {
+      "word": "detention",
+      "before": [
+        "detention",
+        "拘留",
+        "He received detention for repeatedly arriving late to class.",
+        "他因多次上課遲到而被留校。",
+        "n."
+      ],
+      "after": [
+        "detention",
+        "拘留；留校處分",
+        "He received detention for repeatedly arriving late to class.",
+        "他因多次上課遲到而被留校。",
+        "n."
+      ]
+    },
+    {
+      "word": "doctrine",
+      "before": [
+        "doctrine",
+        "教義",
+        "The party's doctrine shaped its position on education.",
+        "該政黨的教義影響了它對教育的立場。",
+        "n."
+      ],
+      "after": [
+        "doctrine",
+        "教義；主義；信條",
+        "The party changed its economic doctrine after the election.",
+        "選舉後，該政黨改變了其經濟主張。",
+        "n."
+      ]
+    },
+    {
+      "word": "expedition",
+      "before": [
+        "expedition",
+        "遠征",
+        "The expedition spent two weeks exploring the desert.",
+        "探險隊花了兩週探索沙漠。",
+        "n."
+      ],
+      "after": [
+        "expedition",
+        "遠征；探險；探險隊",
+        "The expedition spent two weeks exploring the desert.",
+        "探險隊花了兩週探索沙漠。",
+        "n."
+      ]
+    },
+    {
+      "word": "hydraulics",
+      "before": [
+        "hydraulics",
+        "液壓學",
+        "The mechanic checked the hydraulics before operating the heavy crane.",
+        "技工在操作重型起重機之前，檢查了液壓系統。",
+        "n."
+      ],
+      "after": [
+        "hydraulics",
+        "液壓學；液壓系統",
+        "The mechanic checked the hydraulics before operating the heavy crane.",
+        "技師在操作重型起重機之前，檢查了液壓系統。",
+        "n."
+      ]
+    },
+    {
+      "word": "infancy",
+      "before": [
+        "infancy",
+        "嬰兒期",
+        "Space science is still in its infancy.",
+        "空間科學還在起步階段。",
+        "n."
+      ],
+      "after": [
+        "infancy",
+        "嬰兒期；發展初期",
+        "The project is still in its infancy and needs more funding.",
+        "這個專案仍在發展初期，需要更多資金。",
+        "n."
+      ]
+    },
+    {
+      "word": "specialty",
+      "before": [
+        "specialty",
+        "專業",
+        "Fresh seafood is the restaurant's specialty.",
+        "新鮮海鮮是這家餐廳的招牌菜。",
+        "n."
+      ],
+      "after": [
+        "specialty",
+        "專長；特色產品；招牌菜",
+        "Fresh seafood is the restaurant's specialty.",
+        "新鮮海鮮是這家餐廳的招牌菜。",
+        "n."
+      ]
+    },
+    {
+      "word": "consistency",
+      "before": [
+        "consistency",
+        "一致性",
+        "The sauce needs more stirring to reach a smooth consistency.",
+        "這個醬汁需要再攪拌，才能達到滑順的一致質地。",
+        "n."
+      ],
+      "after": [
+        "consistency",
+        "一致性；（液體的）濃稠度、質地",
+        "Stir the sauce until it has a smooth consistency.",
+        "攪拌醬汁，直到質地滑順。",
+        "n."
+      ]
+    },
+    {
+      "word": "abrasion",
+      "before": [
+        "abrasion",
+        "磨損",
+        "He cleaned the abrasion on his knee after falling off his bike.",
+        "他從自行車上摔下來後，清理膝蓋上的擦傷。",
+        "n."
+      ],
+      "after": [
+        "abrasion",
+        "擦傷；磨損",
+        "He cleaned the abrasion on his knee after falling off his bike.",
+        "他從自行車上摔下來後，清理膝蓋上的擦傷。",
+        "n."
+      ]
+    },
+    {
+      "word": "aperture",
+      "before": [
+        "aperture",
+        "孔徑",
+        "A wider aperture lets more light into the camera.",
+        "較大的光圈能讓更多光線進入相機。",
+        "n."
+      ],
+      "after": [
+        "aperture",
+        "孔徑；光圈",
+        "A wider aperture lets more light into the camera.",
+        "較大的光圈能讓更多光線進入相機。",
+        "n."
+      ]
+    },
+    {
+      "word": "buffer",
+      "before": [
+        "buffer",
+        "緩衝區",
+        "During the Great Game, Afghanistan was a buffer state.",
+        "在大博弈期間，阿富汗是一個緩衝國。",
+        "n."
+      ],
+      "after": [
+        "buffer",
+        "緩衝物；緩衝區",
+        "Trees form a buffer between the houses and the busy road.",
+        "樹木在房屋與繁忙道路之間形成一道緩衝。",
+        "n."
+      ]
+    },
+    {
+      "word": "notwithstanding",
+      "before": [
+        "notwithstanding",
+        "儘管；雖然",
+        "Notwithstanding the criticism, she remained confident in her decision.",
+        "儘管受到批評，她依然對自己的決定充滿信心。",
+        "adv."
+      ],
+      "after": [
+        "notwithstanding",
+        "儘管；雖然",
+        "Notwithstanding the criticism, she remained confident in her decision.",
+        "儘管受到批評，她依然對自己的決定充滿信心。",
+        "prep.／conj."
+      ]
+    },
+    {
+      "word": "attenuated",
+      "before": [
+        "attenuated",
+        "減弱的；變薄的",
+        "The signal was attenuated by the thick walls.",
+        "訊號因厚牆而減弱。",
+        "adj."
+      ],
+      "after": [
+        "attenuated",
+        "減弱的；變薄的",
+        "The signal was attenuated by the thick walls.",
+        "訊號因厚牆而減弱。",
+        "v.／adj."
+      ]
+    },
+    {
+      "word": "reality",
+      "before": [
+        "reality",
+        "實在；事實；實體",
+        "Face reality.",
+        "正視現實吧。",
+        "n."
+      ],
+      "after": [
+        "reality",
+        "現實；事實",
+        "Face reality.",
+        "正視現實吧。",
+        "n."
+      ]
+    },
+    {
+      "word": "affair",
+      "before": [
+        "affair",
+        "事件；事務；戀愛事件",
+        "The meeting was a private affair, with only family members present.",
+        "那場會議是私人事務，只有家人出席。",
+        "n."
+      ],
+      "after": [
+        "affair",
+        "事情；事務；戀情",
+        "The meeting was a private affair, with only family members present.",
+        "那場會議是私人事務，只有家人出席。",
+        "n."
+      ]
+    },
+    {
+      "word": "meat",
+      "before": [
+        "meat",
+        "肉；餐；食物",
+        "Eat meat.",
+        "吃肉。",
+        "n."
+      ],
+      "after": [
+        "meat",
+        "肉；肉類",
+        "Please keep raw meat separate from vegetables.",
+        "請將生肉與蔬菜分開放。",
+        "n."
+      ]
+    },
+    {
+      "word": "debt",
+      "before": [
+        "debt",
+        "債務；罪過",
+        "He is paying off his student debt a little each month.",
+        "他每月償還一部分學生貸款債務。",
+        "n."
+      ],
+      "after": [
+        "debt",
+        "債務",
+        "He is paying off his student debt a little each month.",
+        "他每月償還一部分學生貸款債務。",
+        "n."
+      ]
+    },
+    {
+      "word": "coalition",
+      "before": [
+        "coalition",
+        "結合體；結合；聯合",
+        "Several parties formed a coalition to support the new law.",
+        "幾個政黨組成聯盟支持新法案。",
+        "n."
+      ],
+      "after": [
+        "coalition",
+        "聯盟；聯合政府",
+        "Several parties formed a coalition to support the new law.",
+        "幾個政黨組成聯盟支持新法案。",
+        "n."
+      ]
+    },
+    {
+      "word": "maker",
+      "before": [
+        "maker",
+        "製造者；上帝",
+        "Grease the waffle maker.",
+        "給鬆餅機塗上油。",
+        "n."
+      ],
+      "after": [
+        "maker",
+        "製造者；製造商",
+        "The furniture maker built this table by hand.",
+        "這位家具製作者親手打造了這張桌子。",
+        "n."
+      ]
+    },
+    {
+      "word": "educator",
+      "before": [
+        "educator",
+        "教育家",
+        "The educator designed lessons that encourage children to ask questions.",
+        "這名教育工作者設計課程，鼓勵孩子提問。",
+        "n."
+      ],
+      "after": [
+        "educator",
+        "教育工作者；教育家",
+        "The educator designed lessons that encourage children to ask questions.",
+        "這名教育工作者設計課程，鼓勵孩子提問。",
+        "n."
+      ]
+    },
+    {
+      "word": "activist",
+      "before": [
+        "activist",
+        "激進主義分子",
+        "Tom is an environmental activist.",
+        "湯姆是激進的環保主義者。",
+        "n."
+      ],
+      "after": [
+        "activist",
+        "倡議者；社會運動人士",
+        "The environmental activist organized a river cleanup.",
+        "這位環保倡議者組織了一場河川清理活動。",
+        "n."
+      ]
+    },
+    {
+      "word": "bell",
+      "before": [
+        "bell",
+        "鈴；鍾",
+        "The bell rang.",
+        "鈴響了。",
+        "n."
+      ],
+      "after": [
+        "bell",
+        "鈴；鐘",
+        "The school bell rang at the end of the lesson.",
+        "下課時，學校的鐘聲響了。",
+        "n."
+      ]
+    },
+    {
+      "word": "elite",
+      "before": [
+        "elite",
+        "菁英；精銳人士",
+        "Only elite runners qualified for the final race.",
+        "只有菁英跑者取得決賽資格。",
+        "n."
+      ],
+      "after": [
+        "elite",
+        "菁英；精銳人士",
+        "The academy trains a small elite of young athletes.",
+        "這所學院培訓一小群年輕的菁英運動員。",
+        "n."
+      ]
+    },
+    {
+      "word": "offense",
+      "before": [
+        "offense",
+        "犯罪；傷感情；攻擊",
+        "No offense!",
+        "無意冒犯！",
+        "n."
+      ],
+      "after": [
+        "offense",
+        "冒犯；違法行為；進攻",
+        "No offense!",
+        "無意冒犯！",
+        "n."
+      ]
+    },
+    {
+      "word": "celebrity",
+      "before": [
+        "celebrity",
+        "名聲；名人",
+        "The celebrity greeted fans outside the theater.",
+        "這位名人在劇院外向粉絲打招呼。",
+        "n."
+      ],
+      "after": [
+        "celebrity",
+        "名人",
+        "The celebrity greeted fans outside the theater.",
+        "這位名人在劇院外向粉絲打招呼。",
+        "n."
+      ]
+    },
+    {
+      "word": "hunter",
+      "before": [
+        "hunter",
+        "獵人；獵犬；追求者",
+        "I am Tom Hunter.",
+        "我是Tom Hunter。",
+        "n."
+      ],
+      "after": [
+        "hunter",
+        "獵人",
+        "The hunter followed animal tracks through the forest.",
+        "獵人沿著動物足跡穿過森林。",
+        "n."
+      ]
+    },
+    {
+      "word": "province",
+      "before": [
+        "province",
+        "省；地方；職權",
+        "Where is Zhejiang Province?",
+        "浙江省在哪裡？",
+        "n."
+      ],
+      "after": [
+        "province",
+        "省；（職責或知識的）範圍",
+        "Where is Zhejiang Province?",
+        "浙江省在哪裡？",
+        "n."
+      ]
+    },
+    {
+      "word": "doll",
+      "before": [
+        "doll",
+        "洋娃娃；無頭腦的美麗女人",
+        "The child carried her doll everywhere.",
+        "那個孩子到哪裡都帶著她的「洋娃娃」。",
+        "n."
+      ],
+      "after": [
+        "doll",
+        "洋娃娃",
+        "The child carried her doll everywhere.",
+        "那個孩子到哪裡都帶著她的洋娃娃。",
+        "n."
+      ]
+    },
+    {
+      "word": "sword",
+      "before": [
+        "sword",
+        "刀；劍；戰爭",
+        "The sword was displayed in a glass case.",
+        "那把「劍」展示在玻璃櫃中。",
+        "n."
+      ],
+      "after": [
+        "sword",
+        "劍",
+        "The sword was displayed in a glass case.",
+        "那把「劍」展示在玻璃櫃中。",
+        "n."
+      ]
+    },
+    {
+      "word": "grandchild",
+      "before": [
+        "grandchild",
+        "孫；外孫女；外孫",
+        "Where's your grandchild?",
+        "你的孫女在哪裡？",
+        "n."
+      ],
+      "after": [
+        "grandchild",
+        "孫子女；外孫子女",
+        "She reads a story to her grandchild every evening.",
+        "她每天晚上都會讀故事給孫輩聽。",
+        "n."
+      ]
+    },
+    {
+      "word": "behalf",
+      "before": [
+        "behalf",
+        "利益；方面",
+        "On behalf of the team, I would like to thank our volunteers.",
+        "我謹代表團隊感謝志工們。",
+        "n."
+      ],
+      "after": [
+        "behalf",
+        "代表；為了……的利益（常見於 on behalf of）",
+        "On behalf of the team, I would like to thank our volunteers.",
+        "我謹代表團隊感謝我們的志工。",
+        "n."
+      ]
+    },
+    {
+      "word": "chunk",
+      "before": [
+        "chunk",
+        "大塊；矮胖的人(或物)",
+        "She broke off a chunk of bread to share.",
+        "她掰下一大塊「麵包」來分享。",
+        "n."
+      ],
+      "after": [
+        "chunk",
+        "大塊；一大部分",
+        "She broke off a chunk of bread to share.",
+        "她掰下一大塊「麵包」來分享。",
+        "n."
+      ]
+    },
+    {
+      "word": "marker",
+      "before": [
+        "marker",
+        "作記號的人；記分員；書籤",
+        "Use a marker to label each box clearly.",
+        "用「麥克筆」清楚標示每個箱子。",
+        "n."
+      ],
+      "after": [
+        "marker",
+        "麥克筆；標記；標誌",
+        "Use a marker to label each box clearly.",
+        "用麥克筆清楚標示每個箱子。",
+        "n."
+      ]
+    },
+    {
+      "word": "composer",
+      "before": [
+        "composer",
+        "作曲家；作家；調停者",
+        "The composer wrote music for the film.",
+        "這名作曲家為這部電影寫配樂。",
+        "n."
+      ],
+      "after": [
+        "composer",
+        "作曲家",
+        "The composer wrote music for the film.",
+        "這名作曲家為這部電影寫配樂。",
+        "n."
+      ]
+    },
+    {
+      "word": "creator",
+      "before": [
+        "creator",
+        "上帝；創造者；創作者",
+        "The creator of the app explained why she built it.",
+        "這個應用程式的創作者說明她為何開發它。",
+        "n."
+      ],
+      "after": [
+        "creator",
+        "創造者；創作者",
+        "The creator of the app explained why she built it.",
+        "這款應用程式的創作者說明了她開發它的原因。",
+        "n."
+      ]
+    },
+    {
+      "word": "inability",
+      "before": [
+        "inability",
+        "無能；無力",
+        "Excessive choice results in the inability to choose.",
+        "選擇太多導致無法選擇。",
+        "n."
+      ],
+      "after": [
+        "inability",
+        "無法；缺乏能力",
+        "Excessive choice results in the inability to choose.",
+        "選擇太多導致無法選擇。",
+        "n."
+      ]
+    },
+    {
+      "word": "homeowner",
+      "before": [
+        "homeowner",
+        "私房屋主；自己擁有住房者",
+        "I became a homeowner.",
+        "我買房了。",
+        "n."
+      ],
+      "after": [
+        "homeowner",
+        "屋主；自有住宅者",
+        "I became a homeowner.",
+        "我買房了。",
+        "n."
+      ]
+    },
+    {
+      "word": "believer",
+      "before": [
+        "believer",
+        "信徒",
+        "He is a strong believer in learning from mistakes.",
+        "他深信人能從錯誤中學習。",
+        "n."
+      ],
+      "after": [
+        "believer",
+        "相信者；信徒",
+        "He is a strong believer in learning from mistakes.",
+        "他深信人可以從錯誤中學習。",
+        "n."
+      ]
+    },
+    {
+      "word": "astronaut",
+      "before": [
+        "astronaut",
+        "太空旅行者；宇航員",
+        "The astronaut described what it felt like to see Earth from space.",
+        "這名太空人描述從太空看見地球的感受。",
+        "n."
+      ],
+      "after": [
+        "astronaut",
+        "太空人",
+        "The astronaut described what it felt like to see Earth from space.",
+        "這名太空人描述從太空看見地球的感受。",
+        "n."
+      ]
+    },
+    {
+      "word": "matrix",
+      "before": [
+        "matrix",
+        "母體；子宮；基質",
+        "The data can be arranged in a matrix.",
+        "這些資料可以排成一個矩陣。",
+        "n."
+      ],
+      "after": [
+        "matrix",
+        "矩陣；基質",
+        "The data can be arranged in a matrix.",
+        "這些資料可以排列成矩陣。",
+        "n."
+      ]
+    },
+    {
+      "word": "sanctuary",
+      "before": [
+        "sanctuary",
+        "聖所(指教堂、寺院等)；耶路撒冷的神殿；避難所",
+        "Sanctuary!",
+        "願你平安！",
+        "n."
+      ],
+      "after": [
+        "sanctuary",
+        "庇護所；保護區；聖所",
+        "The injured owl was taken to a wildlife sanctuary.",
+        "受傷的貓頭鷹被送往野生動物保護區。",
+        "n."
+      ]
+    },
+    {
+      "word": "maid",
+      "before": [
+        "maid",
+        "少女；未婚女子；女僕",
+        "My maid is amazing.",
+        "我的丫鬟可厲害了。",
+        "n."
+      ],
+      "after": [
+        "maid",
+        "女傭；女僕",
+        "The hotel maid replaced the towels in our room.",
+        "飯店的清潔女服務員更換了我們房間的毛巾。",
+        "n."
+      ]
+    },
+    {
+      "word": "oversight",
+      "before": [
+        "oversight",
+        "勘漏；失察；失敗",
+        "He reprimanded me for my oversight.",
+        "他責備了我的疏忽。",
+        "n."
+      ],
+      "after": [
+        "oversight",
+        "疏忽；監督",
+        "The missing signature was an oversight, so she signed the form again.",
+        "漏簽名字是一時疏忽，因此她重新簽好了表格。",
+        "n."
+      ]
+    },
+    {
+      "word": "freeman",
+      "before": [
+        "freeman",
+        "自由民；公民；正會員",
+        "Hello, is Mr. Freeman here?",
+        "哈囉, Freeman先生在嗎?",
+        "n."
+      ],
+      "after": [
+        "freeman",
+        "自由民（歷史用語）",
+        "As a freeman, he was allowed to own land.",
+        "身為自由民，他被允許擁有土地。",
+        "n."
+      ]
+    },
+    {
+      "word": "spacecraft",
+      "before": [
+        "spacecraft",
+        "航天飛船",
+        "A spacecraft appeared.",
+        "一艘太空船出現了。",
+        "n."
+      ],
+      "after": [
+        "spacecraft",
+        "太空船",
+        "The spacecraft sent pictures of Mars back to Earth.",
+        "這艘太空船將火星照片傳回地球。",
+        "n."
+      ]
+    },
+    {
+      "word": "turtle",
+      "before": [
+        "turtle",
+        "海龜",
+        "Free Turtle Island!",
+        "解放龜島！",
+        "n."
+      ],
+      "after": [
+        "turtle",
+        "龜；海龜",
+        "A turtle rested on a rock beside the pond.",
+        "一隻龜在池塘邊的石頭上休息。",
+        "n."
+      ]
+    },
+    {
+      "word": "ferry",
+      "before": [
+        "ferry",
+        "渡船；渡口",
+        "Your ferry is not big.",
+        "你的船不大。",
+        "n."
+      ],
+      "after": [
+        "ferry",
+        "渡輪；渡船",
+        "Your ferry is not big.",
+        "你的船不大。",
+        "n."
+      ]
+    },
+    {
+      "word": "comeback",
+      "before": [
+        "comeback",
+        "復原；復辟；復位",
+        "After a knee injury, the player made a strong comeback.",
+        "膝傷後，這名球員強勢復出。",
+        "n."
+      ],
+      "after": [
+        "comeback",
+        "復出；東山再起",
+        "After a knee injury, the player made a strong comeback.",
+        "膝傷後，這名球員強勢復出。",
+        "n."
+      ]
+    },
+    {
+      "word": "underwear",
+      "before": [
+        "underwear",
+        "內衣",
+        "My underwear is black.",
+        "我的內褲是黑色的。",
+        "n."
+      ],
+      "after": [
+        "underwear",
+        "內衣褲",
+        "Pack enough clean underwear for the trip.",
+        "為這趟旅行準備足夠的乾淨內衣褲。",
+        "n."
+      ]
+    },
+    {
+      "word": "disappearance",
+      "before": [
+        "disappearance",
+        "看不見；失蹤；消失",
+        "The sudden disappearance of the boat worried the coast guard.",
+        "船隻突然失蹤讓海巡人員感到擔憂。",
+        "n."
+      ],
+      "after": [
+        "disappearance",
+        "消失；失蹤",
+        "The sudden disappearance of the boat worried the coast guard.",
+        "船隻突然失蹤讓海巡人員感到擔憂。",
+        "n."
+      ]
+    },
+    {
+      "word": "motif",
+      "before": [
+        "motif",
+        "主題；基調；動機",
+        "The girl, her eyes shining brightly from that single hint, makes her cute cat-motif automatic pencil run across her notebook.",
+        "這女孩的眼睛閃爍著光亮, 這個暗示讓她可愛的貓圖案自動鉛筆越過了她的筆記本。",
+        "n."
+      ],
+      "after": [
+        "motif",
+        "（藝術作品中反覆出現的）圖案；主題",
+        "A flower motif appears throughout the fabric design.",
+        "這款布料設計中反覆出現花朵圖案。",
+        "n."
+      ]
+    },
+    {
+      "word": "sermon",
+      "before": [
+        "sermon",
+        "說教；啟示；佈道",
+        "This isn't a sermon.",
+        "這不是神的旨意。",
+        "n."
+      ],
+      "after": [
+        "sermon",
+        "講道；說教",
+        "The minister gave a sermon about kindness.",
+        "牧師以善良為主題講道。",
+        "n."
+      ]
+    },
+    {
+      "word": "boomer",
+      "before": [
+        "boomer",
+        "往來無定的臨時工",
+        "OK boomer.",
+        "好啦，老古董。",
+        "n."
+      ],
+      "after": [
+        "boomer",
+        "嬰兒潮世代的人（baby boomer 的簡稱）",
+        "As a boomer, she grew up before personal computers were common.",
+        "身為嬰兒潮世代的一員，她成長時個人電腦還不普及。",
+        "n."
+      ]
+    },
+    {
+      "word": "patio",
+      "before": [
+        "patio",
+        "屋子與花園之間的一片供晴天休息用的石砌空地",
+        "Go to the patio.",
+        "去露臺。",
+        "n."
+      ],
+      "after": [
+        "patio",
+        "露臺；庭院",
+        "Go to the patio.",
+        "去露臺。",
+        "n."
+      ]
+    },
+    {
+      "word": "tribunal",
+      "before": [
+        "tribunal",
+        "法庭；法官席；裁決",
+        "The process of creating a “tribunal for Putin” has been launched.",
+        "設立「普丁法庭」的程序已經啟動。",
+        "n."
+      ],
+      "after": [
+        "tribunal",
+        "特別法庭；裁決機構",
+        "The tribunal heard evidence from both sides of the dispute.",
+        "這個裁決機構聽取了爭議雙方提出的證據。",
+        "n."
+      ]
+    },
+    {
+      "word": "spinach",
+      "before": [
+        "spinach",
+        "菠菜；貨幣；胡說八道",
+        "Tom hates spinach.",
+        "湯姆討厭吃菠菜。",
+        "n."
+      ],
+      "after": [
+        "spinach",
+        "菠菜",
+        "She added fresh spinach to the soup.",
+        "她在湯裡加入新鮮菠菜。",
+        "n."
+      ]
+    },
+    {
+      "word": "mankind",
+      "before": [
+        "mankind",
+        "人類；男性",
+        "Our true nationality is mankind.",
+        "我們真正的國籍是人類。",
+        "n."
+      ],
+      "after": [
+        "mankind",
+        "人類",
+        "Our true nationality is mankind.",
+        "我們真正的國籍是人類。",
+        "n."
+      ]
+    },
+    {
+      "word": "foliage",
+      "before": [
+        "foliage",
+        "樹葉；植物",
+        "The autumn foliage turned the hills red and gold.",
+        "秋天的樹葉把山丘染成紅色和金色。",
+        "n."
+      ],
+      "after": [
+        "foliage",
+        "枝葉；樹葉",
+        "The autumn foliage turned the hills red and gold.",
+        "秋天的樹葉把山丘染成紅色和金色。",
+        "n."
+      ]
+    },
+    {
+      "word": "cohort",
+      "before": [
+        "cohort",
+        "一群；步兵大隊；支持者",
+        "The researchers followed a cohort of 500 students for five years.",
+        "研究人員追蹤了一組五百名學生長達五年。",
+        "n."
+      ],
+      "after": [
+        "cohort",
+        "（具有共同特徵的）一群人；研究群組",
+        "The researchers followed a cohort of 500 students for five years.",
+        "研究人員追蹤了由五百名學生組成的研究群組，為期五年。",
+        "n."
+      ]
+    },
+    {
+      "word": "alumnus",
+      "before": [
+        "alumnus",
+        "男畢業生；男校友",
+        "He is an alumnus of National Taiwan University.",
+        "他是國立臺灣大學的男性校友。",
+        "n."
+      ],
+      "after": [
+        "alumnus",
+        "男校友；男畢業生",
+        "He is an alumnus of National Taiwan University.",
+        "他是國立臺灣大學的男性校友。",
+        "n."
+      ]
+    },
+    {
+      "word": "mastery",
+      "before": [
+        "mastery",
+        "征服；統治權；優勢",
+        "Use makes mastery.",
+        "熟能生巧。",
+        "n."
+      ],
+      "after": [
+        "mastery",
+        "精通；熟練掌握",
+        "Mastery of a musical instrument takes years of practice.",
+        "要精通一種樂器，需要多年的練習。",
+        "n."
+      ]
+    },
+    {
+      "word": "automaker",
+      "before": [
+        "automaker",
+        "<美>汽車製造商",
+        "The rules now under review require an average of 54.5 miles per gallon (23 kilometers per liter) from an automaker's entire fleet by 2025.",
+        "目前正在審查的規則要求，到 2025 年，汽車製造商所製造的所有汽車，平均續航須達到每加侖 54.5 英里 (每公升 23 公里)。",
+        "n."
+      ],
+      "after": [
+        "automaker",
+        "汽車製造商",
+        "The automaker opened a factory to build electric cars.",
+        "這家汽車製造商開設了一座生產電動車的工廠。",
+        "n."
+      ]
+    },
+    {
+      "word": "dictatorship",
+      "before": [
+        "dictatorship",
+        "獨裁者之職位；獨裁；獨裁政權",
+        "The country struggled under a military dictatorship for years.",
+        "這個國家多年來在軍事獨裁統治下掙扎。",
+        "n."
+      ],
+      "after": [
+        "dictatorship",
+        "獨裁統治；獨裁政權",
+        "The country struggled under a military dictatorship for years.",
+        "這個國家多年來在軍事獨裁統治下掙扎。",
+        "n."
+      ]
+    },
+    {
+      "word": "keynote",
+      "before": [
+        "keynote",
+        "主題演講；核心主旨",
+        "The keynote opened the conference with a message about innovation.",
+        "這場主題演講以創新為題揭開會議序幕。",
+        "n."
+      ],
+      "after": [
+        "keynote",
+        "主題演講；主旨",
+        "The keynote opened the conference with a message about innovation.",
+        "這場主題演講以創新為題揭開會議序幕。",
+        "n."
+      ]
+    },
+    {
+      "word": "presumed to",
+      "before": [
+        "presumed to",
+        "被推定為；被假設為",
+        "The missing passengers are presumed to be dead.",
+        "失蹤的乘客被推定已經死亡。",
+        "v. phr."
+      ],
+      "after": [
+        "presumed to",
+        "被推定為；被假設為",
+        "The missing passengers are presumed to be dead.",
+        "失蹤的乘客被推定已經死亡。",
+        "v."
+      ]
+    },
+    {
+      "word": "cigarettes",
+      "before": [
+        "cigarettes",
+        "香菸",
+        "Smoking cigarettes is bad for your health.",
+        "抽香菸對你的健康有害。",
+        "n.（複數）"
+      ],
+      "after": [
+        "cigarettes",
+        "香菸",
+        "Smoking cigarettes is bad for your health.",
+        "抽香菸對你的健康有害。",
+        "n."
+      ]
+    },
+    {
+      "word": "leach from",
+      "before": [
+        "leach from",
+        "從……中溶出；滲出",
+        "Chemicals can leach from plastics into food.",
+        "化學物質可能會從塑膠中溶出到食物裡。",
+        "v. phr."
+      ],
+      "after": [
+        "leach from",
+        "從……中溶出；滲出",
+        "Chemicals can leach from plastics into food.",
+        "化學物質可能會從塑膠中溶出到食物裡。",
+        "v."
+      ]
+    },
+    {
+      "word": "secular trend",
+      "before": [
+        "secular trend",
+        "長期趨勢",
+        "The data shows a secular trend of rising temperatures.",
+        "數據顯示氣溫上升的長期趨勢。",
+        "n. phr."
+      ],
+      "after": [
+        "secular trend",
+        "長期趨勢",
+        "The data shows a secular trend of rising temperatures.",
+        "數據顯示氣溫上升的長期趨勢。",
+        "n."
+      ]
+    },
+    {
+      "word": "enumerated",
+      "before": [
+        "enumerated",
+        "列舉；枚舉",
+        "She enumerated all the reasons for her choice.",
+        "她列舉了做出這個選擇的所有原因。",
+        "v.（過去式／過去分詞）"
+      ],
+      "after": [
+        "enumerated",
+        "列舉；枚舉",
+        "She enumerated all the reasons for her choice.",
+        "她列舉了做出這個選擇的所有原因。",
+        "v."
+      ]
+    }
+  ],
+  "levelChanges": [
+    {
+      "word": "abacus",
+      "from": "beginner",
+      "to": "advanced"
+    },
+    {
+      "word": "algae",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "alloy",
+      "from": "beginner",
+      "to": "advanced"
+    },
+    {
+      "word": "antenna",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "asphalt",
+      "from": "beginner",
+      "to": "advanced"
+    },
+    {
+      "word": "axle",
+      "from": "beginner",
+      "to": "advanced"
+    },
+    {
+      "word": "beacon",
+      "from": "beginner",
+      "to": "advanced"
+    },
+    {
+      "word": "beaker",
+      "from": "beginner",
+      "to": "advanced"
+    },
+    {
+      "word": "biomass",
+      "from": "beginner",
+      "to": "advanced"
+    },
+    {
+      "word": "blade",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "bolt",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "buckle",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "bungalow",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "bushel",
+      "from": "beginner",
+      "to": "advanced"
+    },
+    {
+      "word": "canal",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "capsule",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "cargo",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "cartridge",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "cathedral",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "cement",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "cemetery",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "chalet",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "charcoal",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "chassis",
+      "from": "beginner",
+      "to": "advanced"
+    },
+    {
+      "word": "circuit",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "clipboard",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "cloak",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "coaster",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "coil",
+      "from": "beginner",
+      "to": "advanced"
+    },
+    {
+      "word": "conductor",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "countertop",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "crane",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "crater",
+      "from": "beginner",
+      "to": "advanced"
+    },
+    {
+      "word": "crate",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "cylinder",
+      "from": "beginner",
+      "to": "advanced"
+    },
+    {
+      "word": "decal",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "detergent",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "dial",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "diesel",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "dispenser",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "drill",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "drought",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "duct",
+      "from": "beginner",
+      "to": "advanced"
+    },
+    {
+      "word": "elastic",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "embryo",
+      "from": "beginner",
+      "to": "advanced"
+    },
+    {
+      "word": "enzyme",
+      "from": "beginner",
+      "to": "advanced"
+    },
+    {
+      "word": "escort",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "fertilizer",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "fiber",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "flask",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "foil",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "mold",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "pesticide",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "pipeline",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "piston",
+      "from": "beginner",
+      "to": "advanced"
+    },
+    {
+      "word": "pollen",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "reservoir",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "sandpaper",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "sewage",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "skillet",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "slider",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "tractor",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "washer",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "acne",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "acrylic",
+      "from": "beginner",
+      "to": "advanced"
+    },
+    {
+      "word": "amplifier",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "anthem",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "aroma",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "bouquet",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "brewery",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "chandelier",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "chapel",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "colony",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "comet",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "condom",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "condominium",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "console",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "courthouse",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "creek",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "cricket",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "dealer",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "disco",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "dock",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "elf",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "embassy",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "emerald",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "estate",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "kiln",
+      "from": "beginner",
+      "to": "advanced"
+    },
+    {
+      "word": "lounge",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "pawn",
+      "from": "beginner",
+      "to": "intermediate"
+    },
+    {
+      "word": "accession",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "aggregation",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "allotment",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "bylaw",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "capitalization",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "aptitude",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "embarkation",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "chipset",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "codec",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "acoustics",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "cosmos",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "acreage",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "annuity",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "arbitrator",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "foreclosure",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "ordinance",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "adjacency",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "amphibian",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "asylum",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "bullion",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "calibration",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "carcass",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "cavalry",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "circuitry",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "composite",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "conformity",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "constituency",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "corrosion",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "denominator",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "dentistry",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "doctrine",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "elasticity",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "enactment",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "filtration",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "fireworks",
+      "from": "intermediate",
+      "to": "beginner"
+    },
+    {
+      "word": "hydraulics",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "ideology",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "magnitude",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "pathology",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "allegation",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "amplitude",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "anthropology",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "censorship",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "contraception",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "correlation",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "endpoint",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "abnormality",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "abrasion",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "actuality",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "adhesion",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "adulteration",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "aeration",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "aerodynamics",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "aeronautics",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "aerosol",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "aftermath",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "aggravation",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "alkalinity",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "ammunition",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "anemia",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "anesthesia",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "antibody",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "aperture",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "assemblage",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "bacterium",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "bearing",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "cabinet",
+      "from": "intermediate",
+      "to": "beginner"
+    },
+    {
+      "word": "capacitor",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "conveyor",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "derivation",
+      "from": "intermediate",
+      "to": "advanced"
+    },
+    {
+      "word": "night",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "door",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "morning",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "brother",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "reality",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "afternoon",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "christmas",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "reader",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "affair",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "county",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "danger",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "farmer",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "difficulty",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "extent",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "meat",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "combination",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "debt",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "explanation",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "bike",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "tale",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "maker",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "emphasis",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "commander",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "educator",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "birthday",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "administrator",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "mayor",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "consideration",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "depth",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "deputy",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "activist",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "bell",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "darkness",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "elite",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "tournament",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "offense",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "deer",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "buyer",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "celebrity",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "math",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "economist",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "fighter",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "hunter",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "aide",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "scandal",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "girlfriend",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "auto",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "measurement",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "province",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "nomination",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "confusion",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "boyfriend",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "counseling",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "weakness",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "developer",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "airplane",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "cloth",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "effectiveness",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "corruption",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "astronomer",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "complexity",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "christianity",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "doll",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "racism",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "broker",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "grief",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "sword",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "buddy",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "homeland",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "bull",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "touchdown",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "hockey",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "elephant",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "grandchild",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "columnist",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "banker",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "behalf",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "chunk",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "builder",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "likelihood",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "calculation",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "banana",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "fragment",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "marker",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "confession",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "defender",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "daddy",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "contributor",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "electronics",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "foreigner",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "diplomat",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "dean",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "tech",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "composer",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "completion",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "commentary",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "cowboy",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "dragon",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "creator",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "inability",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "destiny",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "homeowner",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "dinosaur",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "commentator",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "believer",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "detector",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "supper",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "certainty",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "vocabulary",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "maple",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "newcomer",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "collision",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "astronaut",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "excellence",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "cleanup",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "easter",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "advisor",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "footage",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "fairness",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "nonsense",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "battlefield",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "footstep",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "lottery",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "princess",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "maid",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "circus",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "halloween",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "buffalo",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "controller",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "caregiver",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "boulder",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "bachelor",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "filmmaker",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "meditation",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "detection",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "burial",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "archaeologist",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "urgency",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "mama",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "spacecraft",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "devotion",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "turtle",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "ferry",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "comeback",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "underwear",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "disappearance",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "goddess",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "smoker",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "fascination",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "greed",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "patio",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "clown",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "admiration",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "earring",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "dedication",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "emperor",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "folder",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "secrecy",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "takeover",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "spinach",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "fingertip",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "throne",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "chick",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "mankind",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "betrayal",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "condo",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "diagram",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "disbelief",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "announcer",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "dime",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "comedian",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "enjoyment",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "automaker",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "cracker",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "advertiser",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "caterer",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "proofreader",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "paramedic",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "keynote",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "cigarettes",
+      "from": "advanced",
+      "to": "beginner"
+    },
+    {
+      "word": "harsh",
+      "from": "advanced",
+      "to": "intermediate"
+    },
+    {
+      "word": "regardless",
+      "from": "advanced",
+      "to": "intermediate"
+    }
+  ],
+  "renamedHeadwords": {
+    "poke fun at／of": "poke fun at"
+  },
+  "reviewedClassification": [
+    {
+      "word": "abacus",
+      "level": "advanced"
+    },
+    {
+      "word": "abnormality",
+      "level": "advanced"
+    },
+    {
+      "word": "abrasion",
+      "level": "advanced"
+    },
+    {
+      "word": "absenteeism",
+      "level": "intermediate"
+    },
+    {
+      "word": "abstraction",
+      "level": "intermediate"
+    },
+    {
+      "word": "acceleration",
+      "level": "intermediate"
+    },
+    {
+      "word": "accession",
+      "level": "advanced"
+    },
+    {
+      "word": "acne",
+      "level": "intermediate"
+    },
+    {
+      "word": "acoustics",
+      "level": "advanced"
+    },
+    {
+      "word": "acreage",
+      "level": "advanced"
+    },
+    {
+      "word": "acronym",
+      "level": "intermediate"
+    },
+    {
+      "word": "acrylic",
+      "level": "advanced"
+    },
+    {
+      "word": "activism",
+      "level": "intermediate"
+    },
+    {
+      "word": "activist",
+      "level": "intermediate"
+    },
+    {
+      "word": "actuality",
+      "level": "advanced"
+    },
+    {
+      "word": "adhesion",
+      "level": "advanced"
+    },
+    {
+      "word": "adjacency",
+      "level": "advanced"
+    },
+    {
+      "word": "adjective",
+      "level": "intermediate"
+    },
+    {
+      "word": "administrator",
+      "level": "intermediate"
+    },
+    {
+      "word": "admiration",
+      "level": "intermediate"
+    },
+    {
+      "word": "adolescence",
+      "level": "intermediate"
+    },
+    {
+      "word": "adoption",
+      "level": "intermediate"
+    },
+    {
+      "word": "adulteration",
+      "level": "advanced"
+    },
+    {
+      "word": "advertiser",
+      "level": "intermediate"
+    },
+    {
+      "word": "advisor",
+      "level": "intermediate"
+    },
+    {
+      "word": "aeration",
+      "level": "advanced"
+    },
+    {
+      "word": "aerodynamics",
+      "level": "advanced"
+    },
+    {
+      "word": "aeronautics",
+      "level": "advanced"
+    },
+    {
+      "word": "aerosol",
+      "level": "advanced"
+    },
+    {
+      "word": "affair",
+      "level": "intermediate"
+    },
+    {
+      "word": "aftermath",
+      "level": "advanced"
+    },
+    {
+      "word": "afternoon",
+      "level": "beginner"
+    },
+    {
+      "word": "aggravation",
+      "level": "advanced"
+    },
+    {
+      "word": "aggregation",
+      "level": "advanced"
+    },
+    {
+      "word": "aggression",
+      "level": "intermediate"
+    },
+    {
+      "word": "aide",
+      "level": "intermediate"
+    },
+    {
+      "word": "ailment",
+      "level": "intermediate"
+    },
+    {
+      "word": "airplane",
+      "level": "beginner"
+    },
+    {
+      "word": "algae",
+      "level": "intermediate"
+    },
+    {
+      "word": "alkalinity",
+      "level": "advanced"
+    },
+    {
+      "word": "allegation",
+      "level": "advanced"
+    },
+    {
+      "word": "allegiance",
+      "level": "advanced"
+    },
+    {
+      "word": "allotment",
+      "level": "advanced"
+    },
+    {
+      "word": "alloy",
+      "level": "advanced"
+    },
+    {
+      "word": "almond",
+      "level": "beginner"
+    },
+    {
+      "word": "altar",
+      "level": "advanced"
+    },
+    {
+      "word": "alumnus",
+      "level": "advanced"
+    },
+    {
+      "word": "amenities",
+      "level": "intermediate"
+    },
+    {
+      "word": "ammunition",
+      "level": "advanced"
+    },
+    {
+      "word": "amphibian",
+      "level": "advanced"
+    },
+    {
+      "word": "amplifier",
+      "level": "intermediate"
+    },
+    {
+      "word": "amplitude",
+      "level": "advanced"
+    },
+    {
+      "word": "analog",
+      "level": "intermediate"
+    },
+    {
+      "word": "ancestry",
+      "level": "intermediate"
+    },
+    {
+      "word": "anemia",
+      "level": "advanced"
+    },
+    {
+      "word": "anesthesia",
+      "level": "advanced"
+    },
+    {
+      "word": "angler",
+      "level": "advanced"
+    },
+    {
+      "word": "announcer",
+      "level": "intermediate"
+    },
+    {
+      "word": "annuity",
+      "level": "advanced"
+    },
+    {
+      "word": "antenna",
+      "level": "intermediate"
+    },
+    {
+      "word": "anthem",
+      "level": "intermediate"
+    },
+    {
+      "word": "anthropologist",
+      "level": "advanced"
+    },
+    {
+      "word": "anthropology",
+      "level": "advanced"
+    },
+    {
+      "word": "antibody",
+      "level": "advanced"
+    },
+    {
+      "word": "antivirus",
+      "level": "intermediate"
+    },
+    {
+      "word": "aperture",
+      "level": "advanced"
+    },
+    {
+      "word": "appendix",
+      "level": "intermediate"
+    },
+    {
+      "word": "apprentice",
+      "level": "intermediate"
+    },
+    {
+      "word": "appropriation",
+      "level": "advanced"
+    },
+    {
+      "word": "aptitude",
+      "level": "advanced"
+    },
+    {
+      "word": "aquarium",
+      "level": "beginner"
+    },
+    {
+      "word": "arbitrator",
+      "level": "advanced"
+    },
+    {
+      "word": "arcade",
+      "level": "intermediate"
+    },
+    {
+      "word": "archaeologist",
+      "level": "intermediate"
+    },
+    {
+      "word": "aroma",
+      "level": "intermediate"
+    },
+    {
+      "word": "arrow",
+      "level": "beginner"
+    },
+    {
+      "word": "arsenal",
+      "level": "advanced"
+    },
+    {
+      "word": "artery",
+      "level": "intermediate"
+    },
+    {
+      "word": "arthritis",
+      "level": "intermediate"
+    },
+    {
+      "word": "artifact",
+      "level": "intermediate"
+    },
+    {
+      "word": "artisan",
+      "level": "intermediate"
+    },
+    {
+      "word": "asbestos",
+      "level": "advanced"
+    },
+    {
+      "word": "asphalt",
+      "level": "advanced"
+    },
+    {
+      "word": "assemblage",
+      "level": "advanced"
+    },
+    {
+      "word": "assertion",
+      "level": "advanced"
+    },
+    {
+      "word": "assessor",
+      "level": "intermediate"
+    },
+    {
+      "word": "association",
+      "level": "intermediate"
+    },
+    {
+      "word": "astronaut",
+      "level": "intermediate"
+    },
+    {
+      "word": "astronomer",
+      "level": "intermediate"
+    },
+    {
+      "word": "asylum",
+      "level": "advanced"
+    },
+    {
+      "word": "athletics",
+      "level": "intermediate"
+    },
+    {
+      "word": "atom",
+      "level": "intermediate"
+    },
+    {
+      "word": "auctioneer",
+      "level": "intermediate"
+    },
+    {
+      "word": "auditorium",
+      "level": "intermediate"
+    },
+    {
+      "word": "auto",
+      "level": "intermediate"
+    },
+    {
+      "word": "autobiography",
+      "level": "intermediate"
+    },
+    {
+      "word": "automaker",
+      "level": "intermediate"
+    },
+    {
+      "word": "avocado",
+      "level": "beginner"
+    },
+    {
+      "word": "axis",
+      "level": "advanced"
+    },
+    {
+      "word": "axle",
+      "level": "advanced"
+    },
+    {
+      "word": "bachelor",
+      "level": "intermediate"
+    },
+    {
+      "word": "backdrop",
+      "level": "advanced"
+    },
+    {
+      "word": "backlog",
+      "level": "intermediate"
+    },
+    {
+      "word": "backpacker",
+      "level": "intermediate"
+    },
+    {
+      "word": "bacterium",
+      "level": "advanced"
+    },
+    {
+      "word": "ballot",
+      "level": "intermediate"
+    },
+    {
+      "word": "bamboo",
+      "level": "beginner"
+    },
+    {
+      "word": "banana",
+      "level": "beginner"
+    },
+    {
+      "word": "banker",
+      "level": "intermediate"
+    },
+    {
+      "word": "baptist",
+      "level": "advanced"
+    },
+    {
+      "word": "barter",
+      "level": "intermediate"
+    },
+    {
+      "word": "battlefield",
+      "level": "intermediate"
+    },
+    {
+      "word": "beacon",
+      "level": "advanced"
+    },
+    {
+      "word": "beaker",
+      "level": "advanced"
+    },
+    {
+      "word": "bearing",
+      "level": "advanced"
+    },
+    {
+      "word": "behalf",
+      "level": "intermediate"
+    },
+    {
+      "word": "believer",
+      "level": "intermediate"
+    },
+    {
+      "word": "bell",
+      "level": "beginner"
+    },
+    {
+      "word": "betrayal",
+      "level": "intermediate"
+    },
+    {
+      "word": "bike",
+      "level": "beginner"
+    },
+    {
+      "word": "biomass",
+      "level": "advanced"
+    },
+    {
+      "word": "birthday",
+      "level": "beginner"
+    },
+    {
+      "word": "blade",
+      "level": "intermediate"
+    },
+    {
+      "word": "boarding",
+      "level": "beginner"
+    },
+    {
+      "word": "bolt",
+      "level": "intermediate"
+    },
+    {
+      "word": "bookkeeping",
+      "level": "intermediate"
+    },
+    {
+      "word": "bookmark",
+      "level": "beginner"
+    },
+    {
+      "word": "boomer",
+      "level": "advanced"
+    },
+    {
+      "word": "boulder",
+      "level": "intermediate"
+    },
+    {
+      "word": "bouquet",
+      "level": "intermediate"
+    },
+    {
+      "word": "boyfriend",
+      "level": "beginner"
+    },
+    {
+      "word": "brewery",
+      "level": "intermediate"
+    },
+    {
+      "word": "broadcaster",
+      "level": "intermediate"
+    },
+    {
+      "word": "broker",
+      "level": "intermediate"
+    },
+    {
+      "word": "brother",
+      "level": "beginner"
+    },
+    {
+      "word": "browser",
+      "level": "beginner"
+    },
+    {
+      "word": "buckle",
+      "level": "intermediate"
+    },
+    {
+      "word": "buddy",
+      "level": "beginner"
+    },
+    {
+      "word": "buffalo",
+      "level": "intermediate"
+    },
+    {
+      "word": "buffer",
+      "level": "intermediate"
+    },
+    {
+      "word": "builder",
+      "level": "intermediate"
+    },
+    {
+      "word": "bull",
+      "level": "beginner"
+    },
+    {
+      "word": "bullion",
+      "level": "advanced"
+    },
+    {
+      "word": "bungalow",
+      "level": "intermediate"
+    },
+    {
+      "word": "bureau",
+      "level": "intermediate"
+    },
+    {
+      "word": "bureaucrat",
+      "level": "advanced"
+    },
+    {
+      "word": "burial",
+      "level": "intermediate"
+    },
+    {
+      "word": "bushel",
+      "level": "advanced"
+    },
+    {
+      "word": "buyer",
+      "level": "beginner"
+    },
+    {
+      "word": "bylaw",
+      "level": "advanced"
+    },
+    {
+      "word": "cabbage",
+      "level": "beginner"
+    },
+    {
+      "word": "cabinet",
+      "level": "beginner"
+    },
+    {
+      "word": "calculation",
+      "level": "intermediate"
+    },
+    {
+      "word": "calibration",
+      "level": "advanced"
+    },
+    {
+      "word": "canal",
+      "level": "intermediate"
+    },
+    {
+      "word": "cancer",
+      "level": "intermediate"
+    },
+    {
+      "word": "capability",
+      "level": "intermediate"
+    },
+    {
+      "word": "capacitor",
+      "level": "advanced"
+    },
+    {
+      "word": "capitalization",
+      "level": "advanced"
+    },
+    {
+      "word": "capsule",
+      "level": "intermediate"
+    },
+    {
+      "word": "carcass",
+      "level": "advanced"
+    },
+    {
+      "word": "cardboard",
+      "level": "beginner"
+    },
+    {
+      "word": "caregiver",
+      "level": "intermediate"
+    },
+    {
+      "word": "cargo",
+      "level": "intermediate"
+    },
+    {
+      "word": "cartridge",
+      "level": "intermediate"
+    },
+    {
+      "word": "caterer",
+      "level": "intermediate"
+    },
+    {
+      "word": "catering",
+      "level": "intermediate"
+    },
+    {
+      "word": "cathedral",
+      "level": "intermediate"
+    },
+    {
+      "word": "cavalry",
+      "level": "advanced"
+    },
+    {
+      "word": "celebrity",
+      "level": "intermediate"
+    },
+    {
+      "word": "cement",
+      "level": "intermediate"
+    },
+    {
+      "word": "cemetery",
+      "level": "intermediate"
+    },
+    {
+      "word": "censorship",
+      "level": "advanced"
+    },
+    {
+      "word": "census",
+      "level": "intermediate"
+    },
+    {
+      "word": "certainty",
+      "level": "intermediate"
+    },
+    {
+      "word": "chairman",
+      "level": "intermediate"
+    },
+    {
+      "word": "chalet",
+      "level": "intermediate"
+    },
+    {
+      "word": "chandelier",
+      "level": "intermediate"
+    },
+    {
+      "word": "chapel",
+      "level": "intermediate"
+    },
+    {
+      "word": "charcoal",
+      "level": "intermediate"
+    },
+    {
+      "word": "chassis",
+      "level": "advanced"
+    },
+    {
+      "word": "chauffeur",
+      "level": "intermediate"
+    },
+    {
+      "word": "checkpoint",
+      "level": "intermediate"
+    },
+    {
+      "word": "chick",
+      "level": "beginner"
+    },
+    {
+      "word": "chipset",
+      "level": "advanced"
+    },
+    {
+      "word": "cholesterol",
+      "level": "intermediate"
+    },
+    {
+      "word": "christianity",
+      "level": "intermediate"
+    },
+    {
+      "word": "christmas",
+      "level": "beginner"
+    },
+    {
+      "word": "chunk",
+      "level": "intermediate"
+    },
+    {
+      "word": "cigarettes",
+      "level": "beginner"
+    },
+    {
+      "word": "circuit",
+      "level": "intermediate"
+    },
+    {
+      "word": "circuitry",
+      "level": "advanced"
+    },
+    {
+      "word": "circulation",
+      "level": "intermediate"
+    },
+    {
+      "word": "circus",
+      "level": "beginner"
+    },
+    {
+      "word": "classification",
+      "level": "intermediate"
+    },
+    {
+      "word": "clay",
+      "level": "beginner"
+    },
+    {
+      "word": "cleanup",
+      "level": "intermediate"
+    },
+    {
+      "word": "clipboard",
+      "level": "intermediate"
+    },
+    {
+      "word": "cloak",
+      "level": "intermediate"
+    },
+    {
+      "word": "cloth",
+      "level": "beginner"
+    },
+    {
+      "word": "clown",
+      "level": "beginner"
+    },
+    {
+      "word": "coalition",
+      "level": "advanced"
+    },
+    {
+      "word": "coaster",
+      "level": "intermediate"
+    },
+    {
+      "word": "cockpit",
+      "level": "intermediate"
+    },
+    {
+      "word": "cocoa",
+      "level": "beginner"
+    },
+    {
+      "word": "codec",
+      "level": "advanced"
+    },
+    {
+      "word": "coefficient",
+      "level": "advanced"
+    },
+    {
+      "word": "cohort",
+      "level": "advanced"
+    },
+    {
+      "word": "coil",
+      "level": "advanced"
+    },
+    {
+      "word": "collision",
+      "level": "intermediate"
+    },
+    {
+      "word": "colony",
+      "level": "intermediate"
+    },
+    {
+      "word": "columnist",
+      "level": "intermediate"
+    },
+    {
+      "word": "combination",
+      "level": "intermediate"
+    },
+    {
+      "word": "comeback",
+      "level": "intermediate"
+    },
+    {
+      "word": "comedian",
+      "level": "beginner"
+    },
+    {
+      "word": "comet",
+      "level": "intermediate"
+    },
+    {
+      "word": "commander",
+      "level": "intermediate"
+    },
+    {
+      "word": "commentary",
+      "level": "intermediate"
+    },
+    {
+      "word": "commentator",
+      "level": "intermediate"
+    },
+    {
+      "word": "commuting",
+      "level": "intermediate"
+    },
+    {
+      "word": "compatibility",
+      "level": "intermediate"
+    },
+    {
+      "word": "competency",
+      "level": "advanced"
+    },
+    {
+      "word": "compilation",
+      "level": "intermediate"
+    },
+    {
+      "word": "completion",
+      "level": "intermediate"
+    },
+    {
+      "word": "complexity",
+      "level": "intermediate"
+    },
+    {
+      "word": "composer",
+      "level": "intermediate"
+    },
+    {
+      "word": "composite",
+      "level": "advanced"
+    },
+    {
+      "word": "comrade",
+      "level": "advanced"
+    },
+    {
+      "word": "concierge",
+      "level": "intermediate"
+    },
+    {
+      "word": "condo",
+      "level": "intermediate"
+    },
+    {
+      "word": "condom",
+      "level": "intermediate"
+    },
+    {
+      "word": "condominium",
+      "level": "intermediate"
+    },
+    {
+      "word": "conductor",
+      "level": "intermediate"
+    },
+    {
+      "word": "confession",
+      "level": "intermediate"
+    },
+    {
+      "word": "configuration",
+      "level": "intermediate"
+    },
+    {
+      "word": "conformity",
+      "level": "advanced"
+    },
+    {
+      "word": "confrontation",
+      "level": "advanced"
+    },
+    {
+      "word": "confusion",
+      "level": "intermediate"
+    },
+    {
+      "word": "congregation",
+      "level": "advanced"
+    },
+    {
+      "word": "conjunction",
+      "level": "advanced"
+    },
+    {
+      "word": "connectivity",
+      "level": "intermediate"
+    },
+    {
+      "word": "conscience",
+      "level": "intermediate"
+    },
+    {
+      "word": "consideration",
+      "level": "intermediate"
+    },
+    {
+      "word": "consistency",
+      "level": "intermediate"
+    },
+    {
+      "word": "console",
+      "level": "intermediate"
+    },
+    {
+      "word": "constituency",
+      "level": "advanced"
+    },
+    {
+      "word": "constraint",
+      "level": "advanced"
+    },
+    {
+      "word": "consultancy",
+      "level": "intermediate"
+    },
+    {
+      "word": "contender",
+      "level": "advanced"
+    },
+    {
+      "word": "contraception",
+      "level": "advanced"
+    },
+    {
+      "word": "contributor",
+      "level": "intermediate"
+    },
+    {
+      "word": "controller",
+      "level": "intermediate"
+    },
+    {
+      "word": "conveyor",
+      "level": "advanced"
+    },
+    {
+      "word": "correlation",
+      "level": "advanced"
+    },
+    {
+      "word": "corridor",
+      "level": "beginner"
+    },
+    {
+      "word": "corrosion",
+      "level": "advanced"
+    },
+    {
+      "word": "corruption",
+      "level": "intermediate"
+    },
+    {
+      "word": "cosmos",
+      "level": "advanced"
+    },
+    {
+      "word": "couch",
+      "level": "beginner"
+    },
+    {
+      "word": "counseling",
+      "level": "intermediate"
+    },
+    {
+      "word": "countertop",
+      "level": "intermediate"
+    },
+    {
+      "word": "county",
+      "level": "intermediate"
+    },
+    {
+      "word": "coupon",
+      "level": "beginner"
+    },
+    {
+      "word": "courthouse",
+      "level": "intermediate"
+    },
+    {
+      "word": "cousin",
+      "level": "beginner"
+    },
+    {
+      "word": "cowboy",
+      "level": "beginner"
+    },
+    {
+      "word": "cracker",
+      "level": "beginner"
+    },
+    {
+      "word": "crane",
+      "level": "intermediate"
+    },
+    {
+      "word": "crate",
+      "level": "intermediate"
+    },
+    {
+      "word": "crater",
+      "level": "advanced"
+    },
+    {
+      "word": "cream",
+      "level": "beginner"
+    },
+    {
+      "word": "creator",
+      "level": "intermediate"
+    },
+    {
+      "word": "credibility",
+      "level": "intermediate"
+    },
+    {
+      "word": "creek",
+      "level": "intermediate"
+    },
+    {
+      "word": "cricket",
+      "level": "intermediate"
+    },
+    {
+      "word": "crime",
+      "level": "intermediate"
+    },
+    {
+      "word": "critique",
+      "level": "advanced"
+    },
+    {
+      "word": "crocodile",
+      "level": "beginner"
+    },
+    {
+      "word": "cruiser",
+      "level": "advanced"
+    },
+    {
+      "word": "curator",
+      "level": "advanced"
+    },
+    {
+      "word": "cushion",
+      "level": "beginner"
+    },
+    {
+      "word": "custody",
+      "level": "intermediate"
+    },
+    {
+      "word": "cyclist",
+      "level": "beginner"
+    },
+    {
+      "word": "cylinder",
+      "level": "advanced"
+    },
+    {
+      "word": "daddy",
+      "level": "beginner"
+    },
+    {
+      "word": "danger",
+      "level": "beginner"
+    },
+    {
+      "word": "darkness",
+      "level": "beginner"
+    },
+    {
+      "word": "daylight",
+      "level": "beginner"
+    },
+    {
+      "word": "dealer",
+      "level": "intermediate"
+    },
+    {
+      "word": "dealership",
+      "level": "intermediate"
+    },
+    {
+      "word": "dean",
+      "level": "intermediate"
+    },
+    {
+      "word": "debit",
+      "level": "intermediate"
+    },
+    {
+      "word": "debt",
+      "level": "intermediate"
+    },
+    {
+      "word": "decal",
+      "level": "intermediate"
+    },
+    {
+      "word": "decay",
+      "level": "intermediate"
+    },
+    {
+      "word": "dedication",
+      "level": "intermediate"
+    },
+    {
+      "word": "deer",
+      "level": "beginner"
+    },
+    {
+      "word": "defender",
+      "level": "intermediate"
+    },
+    {
+      "word": "deficiency",
+      "level": "intermediate"
+    },
+    {
+      "word": "delegation",
+      "level": "advanced"
+    },
+    {
+      "word": "demolition",
+      "level": "intermediate"
+    },
+    {
+      "word": "dengue fever",
+      "level": "advanced"
+    },
+    {
+      "word": "denominator",
+      "level": "advanced"
+    },
+    {
+      "word": "dentistry",
+      "level": "advanced"
+    },
+    {
+      "word": "dependency",
+      "level": "intermediate"
+    },
+    {
+      "word": "depth",
+      "level": "intermediate"
+    },
+    {
+      "word": "deputy",
+      "level": "intermediate"
+    },
+    {
+      "word": "derivation",
+      "level": "advanced"
+    },
+    {
+      "word": "desktop",
+      "level": "intermediate"
+    },
+    {
+      "word": "desperation",
+      "level": "advanced"
+    },
+    {
+      "word": "destiny",
+      "level": "intermediate"
+    },
+    {
+      "word": "detection",
+      "level": "intermediate"
+    },
+    {
+      "word": "detector",
+      "level": "intermediate"
+    },
+    {
+      "word": "detention",
+      "level": "intermediate"
+    },
+    {
+      "word": "detergent",
+      "level": "intermediate"
+    },
+    {
+      "word": "developer",
+      "level": "intermediate"
+    },
+    {
+      "word": "devotion",
+      "level": "intermediate"
+    },
+    {
+      "word": "diagram",
+      "level": "beginner"
+    },
+    {
+      "word": "dial",
+      "level": "intermediate"
+    },
+    {
+      "word": "dictatorship",
+      "level": "advanced"
+    },
+    {
+      "word": "diesel",
+      "level": "intermediate"
+    },
+    {
+      "word": "dietitian",
+      "level": "intermediate"
+    },
+    {
+      "word": "difficulty",
+      "level": "beginner"
+    },
+    {
+      "word": "dignity",
+      "level": "intermediate"
+    },
+    {
+      "word": "dilemma",
+      "level": "intermediate"
+    },
+    {
+      "word": "dime",
+      "level": "intermediate"
+    },
+    {
+      "word": "diner",
+      "level": "beginner"
+    },
+    {
+      "word": "dinosaur",
+      "level": "beginner"
+    },
+    {
+      "word": "diplomat",
+      "level": "intermediate"
+    },
+    {
+      "word": "directory",
+      "level": "intermediate"
+    },
+    {
+      "word": "disappearance",
+      "level": "intermediate"
+    },
+    {
+      "word": "disbelief",
+      "level": "intermediate"
+    },
+    {
+      "word": "disco",
+      "level": "intermediate"
+    },
+    {
+      "word": "dishwasher",
+      "level": "beginner"
+    },
+    {
+      "word": "dismissal",
+      "level": "intermediate"
+    },
+    {
+      "word": "disorder",
+      "level": "intermediate"
+    },
+    {
+      "word": "dispenser",
+      "level": "intermediate"
+    },
+    {
+      "word": "disposal",
+      "level": "intermediate"
+    },
+    {
+      "word": "disruption",
+      "level": "advanced"
+    },
+    {
+      "word": "distinction",
+      "level": "intermediate"
+    },
+    {
+      "word": "distortion",
+      "level": "advanced"
+    },
+    {
+      "word": "dock",
+      "level": "intermediate"
+    },
+    {
+      "word": "doctrine",
+      "level": "advanced"
+    },
+    {
+      "word": "doll",
+      "level": "beginner"
+    },
+    {
+      "word": "dolphin",
+      "level": "beginner"
+    },
+    {
+      "word": "dominance",
+      "level": "advanced"
+    },
+    {
+      "word": "domination",
+      "level": "advanced"
+    },
+    {
+      "word": "donation",
+      "level": "intermediate"
+    },
+    {
+      "word": "door",
+      "level": "beginner"
+    },
+    {
+      "word": "dosage",
+      "level": "intermediate"
+    },
+    {
+      "word": "dragon",
+      "level": "beginner"
+    },
+    {
+      "word": "drainage",
+      "level": "intermediate"
+    },
+    {
+      "word": "drill",
+      "level": "intermediate"
+    },
+    {
+      "word": "drought",
+      "level": "intermediate"
+    },
+    {
+      "word": "duck",
+      "level": "beginner"
+    },
+    {
+      "word": "duct",
+      "level": "advanced"
+    },
+    {
+      "word": "dustbin",
+      "level": "beginner"
+    },
+    {
+      "word": "eagle",
+      "level": "beginner"
+    },
+    {
+      "word": "earphone",
+      "level": "beginner"
+    },
+    {
+      "word": "earring",
+      "level": "beginner"
+    },
+    {
+      "word": "easter",
+      "level": "beginner"
+    },
+    {
+      "word": "economist",
+      "level": "intermediate"
+    },
+    {
+      "word": "educator",
+      "level": "intermediate"
+    },
+    {
+      "word": "effectiveness",
+      "level": "intermediate"
+    },
+    {
+      "word": "elastic",
+      "level": "intermediate"
+    },
+    {
+      "word": "elasticity",
+      "level": "advanced"
+    },
+    {
+      "word": "electronics",
+      "level": "intermediate"
+    },
+    {
+      "word": "elephant",
+      "level": "beginner"
+    },
+    {
+      "word": "elevation",
+      "level": "advanced"
+    },
+    {
+      "word": "elf",
+      "level": "intermediate"
+    },
+    {
+      "word": "elite",
+      "level": "intermediate"
+    },
+    {
+      "word": "embarkation",
+      "level": "advanced"
+    },
+    {
+      "word": "embassy",
+      "level": "intermediate"
+    },
+    {
+      "word": "embryo",
+      "level": "advanced"
+    },
+    {
+      "word": "emerald",
+      "level": "intermediate"
+    },
+    {
+      "word": "emergence",
+      "level": "advanced"
+    },
+    {
+      "word": "emperor",
+      "level": "intermediate"
+    },
+    {
+      "word": "emphasis",
+      "level": "intermediate"
+    },
+    {
+      "word": "enactment",
+      "level": "advanced"
+    },
+    {
+      "word": "enclosure",
+      "level": "intermediate"
+    },
+    {
+      "word": "encyclopedia",
+      "level": "intermediate"
+    },
+    {
+      "word": "endpoint",
+      "level": "advanced"
+    },
+    {
+      "word": "enjoyment",
+      "level": "intermediate"
+    },
+    {
+      "word": "enlargement",
+      "level": "intermediate"
+    },
+    {
+      "word": "entity",
+      "level": "advanced"
+    },
+    {
+      "word": "enumerated",
+      "level": "advanced"
+    },
+    {
+      "word": "enzyme",
+      "level": "advanced"
+    },
+    {
+      "word": "equation",
+      "level": "intermediate"
+    },
+    {
+      "word": "escort",
+      "level": "intermediate"
+    },
+    {
+      "word": "estate",
+      "level": "intermediate"
+    },
+    {
+      "word": "ethic",
+      "level": "advanced"
+    },
+    {
+      "word": "ethnicity",
+      "level": "intermediate"
+    },
+    {
+      "word": "examiner",
+      "level": "intermediate"
+    },
+    {
+      "word": "excavation",
+      "level": "intermediate"
+    },
+    {
+      "word": "excellence",
+      "level": "intermediate"
+    },
+    {
+      "word": "excursion",
+      "level": "intermediate"
+    },
+    {
+      "word": "exemption",
+      "level": "intermediate"
+    },
+    {
+      "word": "expedition",
+      "level": "intermediate"
+    },
+    {
+      "word": "explanation",
+      "level": "beginner"
+    },
+    {
+      "word": "exploitation",
+      "level": "advanced"
+    },
+    {
+      "word": "extent",
+      "level": "intermediate"
+    },
+    {
+      "word": "facade",
+      "level": "advanced"
+    },
+    {
+      "word": "faculty",
+      "level": "intermediate"
+    },
+    {
+      "word": "fairness",
+      "level": "intermediate"
+    },
+    {
+      "word": "farmer",
+      "level": "beginner"
+    },
+    {
+      "word": "fascination",
+      "level": "intermediate"
+    },
+    {
+      "word": "fatigue",
+      "level": "intermediate"
+    },
+    {
+      "word": "federation",
+      "level": "intermediate"
+    },
+    {
+      "word": "felony",
+      "level": "advanced"
+    },
+    {
+      "word": "ferry",
+      "level": "beginner"
+    },
+    {
+      "word": "fertilizer",
+      "level": "intermediate"
+    },
+    {
+      "word": "fiber",
+      "level": "intermediate"
+    },
+    {
+      "word": "fighter",
+      "level": "intermediate"
+    },
+    {
+      "word": "filmmaker",
+      "level": "intermediate"
+    },
+    {
+      "word": "filtration",
+      "level": "advanced"
+    },
+    {
+      "word": "fingertip",
+      "level": "beginner"
+    },
+    {
+      "word": "fireplace",
+      "level": "beginner"
+    },
+    {
+      "word": "fireworks",
+      "level": "beginner"
+    },
+    {
+      "word": "fisherman",
+      "level": "beginner"
+    },
+    {
+      "word": "fishery",
+      "level": "advanced"
+    },
+    {
+      "word": "fixture",
+      "level": "advanced"
+    },
+    {
+      "word": "flashlight",
+      "level": "beginner"
+    },
+    {
+      "word": "flask",
+      "level": "intermediate"
+    },
+    {
+      "word": "foil",
+      "level": "intermediate"
+    },
+    {
+      "word": "folder",
+      "level": "beginner"
+    },
+    {
+      "word": "foliage",
+      "level": "advanced"
+    },
+    {
+      "word": "footage",
+      "level": "intermediate"
+    },
+    {
+      "word": "footstep",
+      "level": "beginner"
+    },
+    {
+      "word": "foreclosure",
+      "level": "advanced"
+    },
+    {
+      "word": "foreigner",
+      "level": "beginner"
+    },
+    {
+      "word": "fossil",
+      "level": "intermediate"
+    },
+    {
+      "word": "fracture",
+      "level": "intermediate"
+    },
+    {
+      "word": "fragment",
+      "level": "intermediate"
+    },
+    {
+      "word": "fragrance",
+      "level": "intermediate"
+    },
+    {
+      "word": "franchisee",
+      "level": "advanced"
+    },
+    {
+      "word": "freeman",
+      "level": "advanced"
+    },
+    {
+      "word": "friction",
+      "level": "intermediate"
+    },
+    {
+      "word": "gender",
+      "level": "intermediate"
+    },
+    {
+      "word": "ghost",
+      "level": "beginner"
+    },
+    {
+      "word": "girlfriend",
+      "level": "beginner"
+    },
+    {
+      "word": "goddess",
+      "level": "intermediate"
+    },
+    {
+      "word": "grandchild",
+      "level": "beginner"
+    },
+    {
+      "word": "greed",
+      "level": "intermediate"
+    },
+    {
+      "word": "grief",
+      "level": "intermediate"
+    },
+    {
+      "word": "guarantor",
+      "level": "intermediate"
+    },
+    {
+      "word": "halloween",
+      "level": "beginner"
+    },
+    {
+      "word": "harsh",
+      "level": "intermediate"
+    },
+    {
+      "word": "hockey",
+      "level": "intermediate"
+    },
+    {
+      "word": "homeland",
+      "level": "intermediate"
+    },
+    {
+      "word": "homeowner",
+      "level": "intermediate"
+    },
+    {
+      "word": "hunter",
+      "level": "intermediate"
+    },
+    {
+      "word": "hydraulics",
+      "level": "advanced"
+    },
+    {
+      "word": "ideology",
+      "level": "advanced"
+    },
+    {
+      "word": "inability",
+      "level": "intermediate"
+    },
+    {
+      "word": "incubation",
+      "level": "advanced"
+    },
+    {
+      "word": "infancy",
+      "level": "intermediate"
+    },
+    {
+      "word": "intensity",
+      "level": "intermediate"
+    },
+    {
+      "word": "jeep",
+      "level": "beginner"
+    },
+    {
+      "word": "jersey",
+      "level": "beginner"
+    },
+    {
+      "word": "keynote",
+      "level": "intermediate"
+    },
+    {
+      "word": "kiln",
+      "level": "advanced"
+    },
+    {
+      "word": "leach from",
+      "level": "advanced"
+    },
+    {
+      "word": "likelihood",
+      "level": "intermediate"
+    },
+    {
+      "word": "lottery",
+      "level": "intermediate"
+    },
+    {
+      "word": "lounge",
+      "level": "intermediate"
+    },
+    {
+      "word": "magnet",
+      "level": "beginner"
+    },
+    {
+      "word": "magnitude",
+      "level": "advanced"
+    },
+    {
+      "word": "maid",
+      "level": "intermediate"
+    },
+    {
+      "word": "maker",
+      "level": "intermediate"
+    },
+    {
+      "word": "mama",
+      "level": "beginner"
+    },
+    {
+      "word": "mankind",
+      "level": "intermediate"
+    },
+    {
+      "word": "maple",
+      "level": "intermediate"
+    },
+    {
+      "word": "marker",
+      "level": "beginner"
+    },
+    {
+      "word": "mastery",
+      "level": "advanced"
+    },
+    {
+      "word": "math",
+      "level": "beginner"
+    },
+    {
+      "word": "matrix",
+      "level": "advanced"
+    },
+    {
+      "word": "mayor",
+      "level": "intermediate"
+    },
+    {
+      "word": "measurement",
+      "level": "intermediate"
+    },
+    {
+      "word": "meat",
+      "level": "beginner"
+    },
+    {
+      "word": "medal",
+      "level": "beginner"
+    },
+    {
+      "word": "meditation",
+      "level": "intermediate"
+    },
+    {
+      "word": "melody",
+      "level": "beginner"
+    },
+    {
+      "word": "metric",
+      "level": "advanced"
+    },
+    {
+      "word": "millennium",
+      "level": "advanced"
+    },
+    {
+      "word": "mold",
+      "level": "intermediate"
+    },
+    {
+      "word": "molecule",
+      "level": "intermediate"
+    },
+    {
+      "word": "morning",
+      "level": "beginner"
+    },
+    {
+      "word": "mosquito",
+      "level": "beginner"
+    },
+    {
+      "word": "motif",
+      "level": "advanced"
+    },
+    {
+      "word": "napkin",
+      "level": "beginner"
+    },
+    {
+      "word": "newcomer",
+      "level": "intermediate"
+    },
+    {
+      "word": "night",
+      "level": "beginner"
+    },
+    {
+      "word": "nomination",
+      "level": "intermediate"
+    },
+    {
+      "word": "nonsense",
+      "level": "intermediate"
+    },
+    {
+      "word": "notary",
+      "level": "advanced"
+    },
+    {
+      "word": "nucleus",
+      "level": "advanced"
+    },
+    {
+      "word": "offense",
+      "level": "intermediate"
+    },
+    {
+      "word": "ordinance",
+      "level": "advanced"
+    },
+    {
+      "word": "oversight",
+      "level": "advanced"
+    },
+    {
+      "word": "painter",
+      "level": "beginner"
+    },
+    {
+      "word": "palette",
+      "level": "advanced"
+    },
+    {
+      "word": "paramedic",
+      "level": "intermediate"
+    },
+    {
+      "word": "parameter",
+      "level": "advanced"
+    },
+    {
+      "word": "parcel",
+      "level": "beginner"
+    },
+    {
+      "word": "parliament",
+      "level": "intermediate"
+    },
+    {
+      "word": "pathogenesis",
+      "level": "advanced"
+    },
+    {
+      "word": "pathology",
+      "level": "advanced"
+    },
+    {
+      "word": "patio",
+      "level": "intermediate"
+    },
+    {
+      "word": "pavement",
+      "level": "beginner"
+    },
+    {
+      "word": "pawn",
+      "level": "intermediate"
+    },
+    {
+      "word": "pedal",
+      "level": "beginner"
+    },
+    {
+      "word": "pen",
+      "level": "beginner"
+    },
+    {
+      "word": "pencil",
+      "level": "beginner"
+    },
+    {
+      "word": "pesticide",
+      "level": "intermediate"
+    },
+    {
+      "word": "pipeline",
+      "level": "intermediate"
+    },
+    {
+      "word": "piston",
+      "level": "advanced"
+    },
+    {
+      "word": "plaque",
+      "level": "advanced"
+    },
+    {
+      "word": "plea",
+      "level": "advanced"
+    },
+    {
+      "word": "policymaker",
+      "level": "advanced"
+    },
+    {
+      "word": "pollen",
+      "level": "intermediate"
+    },
+    {
+      "word": "prairie",
+      "level": "advanced"
+    },
+    {
+      "word": "prejudice",
+      "level": "intermediate"
+    },
+    {
+      "word": "prescription",
+      "level": "intermediate"
+    },
+    {
+      "word": "prestige",
+      "level": "advanced"
+    },
+    {
+      "word": "presumed to",
+      "level": "advanced"
+    },
+    {
+      "word": "princess",
+      "level": "beginner"
+    },
+    {
+      "word": "proofreader",
+      "level": "intermediate"
+    },
+    {
+      "word": "province",
+      "level": "intermediate"
+    },
+    {
+      "word": "proximity",
+      "level": "advanced"
+    },
+    {
+      "word": "psychiatric",
+      "level": "advanced"
+    },
+    {
+      "word": "racism",
+      "level": "intermediate"
+    },
+    {
+      "word": "reader",
+      "level": "beginner"
+    },
+    {
+      "word": "reality",
+      "level": "intermediate"
+    },
+    {
+      "word": "rebellion",
+      "level": "advanced"
+    },
+    {
+      "word": "regardless",
+      "level": "intermediate"
+    },
+    {
+      "word": "regression",
+      "level": "advanced"
+    },
+    {
+      "word": "reservoir",
+      "level": "intermediate"
+    },
+    {
+      "word": "retardation",
+      "level": "advanced"
+    },
+    {
+      "word": "ribbon",
+      "level": "beginner"
+    },
+    {
+      "word": "sanctuary",
+      "level": "advanced"
+    },
+    {
+      "word": "sandpaper",
+      "level": "intermediate"
+    },
+    {
+      "word": "scandal",
+      "level": "intermediate"
+    },
+    {
+      "word": "schizophrenia",
+      "level": "advanced"
+    },
+    {
+      "word": "screw",
+      "level": "beginner"
+    },
+    {
+      "word": "secrecy",
+      "level": "intermediate"
+    },
+    {
+      "word": "secular trend",
+      "level": "advanced"
+    },
+    {
+      "word": "sermon",
+      "level": "advanced"
+    },
+    {
+      "word": "server",
+      "level": "intermediate"
+    },
+    {
+      "word": "sewage",
+      "level": "intermediate"
+    },
+    {
+      "word": "skillet",
+      "level": "intermediate"
+    },
+    {
+      "word": "slider",
+      "level": "intermediate"
+    },
+    {
+      "word": "smoker",
+      "level": "beginner"
+    },
+    {
+      "word": "sofa",
+      "level": "beginner"
+    },
+    {
+      "word": "spacecraft",
+      "level": "intermediate"
+    },
+    {
+      "word": "specialty",
+      "level": "intermediate"
+    },
+    {
+      "word": "spinach",
+      "level": "beginner"
+    },
+    {
+      "word": "standpoint",
+      "level": "advanced"
+    },
+    {
+      "word": "strategist",
+      "level": "advanced"
+    },
+    {
+      "word": "subsidy",
+      "level": "intermediate"
+    },
+    {
+      "word": "supper",
+      "level": "beginner"
+    },
+    {
+      "word": "sword",
+      "level": "beginner"
+    },
+    {
+      "word": "takeover",
+      "level": "intermediate"
+    },
+    {
+      "word": "tale",
+      "level": "intermediate"
+    },
+    {
+      "word": "tech",
+      "level": "beginner"
+    },
+    {
+      "word": "temporal",
+      "level": "advanced"
+    },
+    {
+      "word": "threshold",
+      "level": "advanced"
+    },
+    {
+      "word": "throne",
+      "level": "intermediate"
+    },
+    {
+      "word": "toaster",
+      "level": "beginner"
+    },
+    {
+      "word": "touchdown",
+      "level": "intermediate"
+    },
+    {
+      "word": "tournament",
+      "level": "intermediate"
+    },
+    {
+      "word": "tractor",
+      "level": "intermediate"
+    },
+    {
+      "word": "tribunal",
+      "level": "advanced"
+    },
+    {
+      "word": "turtle",
+      "level": "beginner"
+    },
+    {
+      "word": "underwear",
+      "level": "beginner"
+    },
+    {
+      "word": "urgency",
+      "level": "intermediate"
+    },
+    {
+      "word": "vacuum",
+      "level": "beginner"
+    },
+    {
+      "word": "vantage",
+      "level": "advanced"
+    },
+    {
+      "word": "vector",
+      "level": "advanced"
+    },
+    {
+      "word": "ventilation",
+      "level": "intermediate"
+    },
+    {
+      "word": "vest",
+      "level": "beginner"
+    },
+    {
+      "word": "vocabulary",
+      "level": "beginner"
+    },
+    {
+      "word": "washer",
+      "level": "intermediate"
+    },
+    {
+      "word": "weakness",
+      "level": "intermediate"
+    },
+    {
+      "word": "zipper",
+      "level": "beginner"
+    }
+  ]
+}

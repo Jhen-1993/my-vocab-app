@@ -54,7 +54,7 @@ let draws=0;
 for(const ch of C.characters.concat(C.hiddenCharacters))for(let stage=0;stage<10;stage++)for(const item of C.accessories){
  if(ch.id.startsWith('master-')&&stage!==9)continue;
  const html=context.BabyAvatar.render(stage,ch.gender,ch.id,item.id),hat=['beret','bucket-hat'].includes(item.id);
- assert.equal(html.includes('accessory-window'),!hat&&item.id!=='hero-cape');assert.ok(html.includes(item.name));assert.ok(!html.includes('NaN'));
+ assert.equal(html.includes('accessory-window'),!hat);assert.ok(html.includes(item.name));assert.ok(!html.includes('NaN'));
  if(hat){
   assert.ok(html.includes('wearing-painted-hat'));assert.ok(!html.includes('painted-idle-anchor'));
   assert.ok(html.includes('height="420"'));assert.ok(html.includes(`assets/worn-hats/${item.id}/${ch.asset}-${stage}-cels.webp`));

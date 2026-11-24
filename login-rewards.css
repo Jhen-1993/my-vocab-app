@@ -1,0 +1,26 @@
+/* Painted login gifts share the nursery's calm palette. */
+.nursery-scene{position:relative;display:flex;align-items:flex-end;justify-content:center;width:100%;height:330px;isolation:isolate;flex:none}
+.nursery-scene .baby-button{margin-top:0;flex:none}
+.nursery-scene.has-teddy .baby-button{position:absolute;right:0;bottom:0;width:54%;max-width:280px}
+.giant-teddy{position:absolute;left:1%;bottom:10px;width:62%;max-width:310px;height:auto;pointer-events:none;z-index:0}
+.room-starry{background:#c9bfd8 url('assets/rewards/starry-room.webp') center top/100% 100% no-repeat;border-color:#c5bdd9}
+.room-starry .nursery-window,.room-starry .room-plant,.room-starry .room-spark,.room-starry .room-floor{display:none}
+.room-starry .room-star{color:#5d496c;background:#fff9edda;padding:6px 10px;border-radius:99px}
+.room-starry .baby-caption{background:#fff8e9ec;border:1px solid #fff5dc;border-radius:14px;margin:0 12px 12px;padding:12px 10px 0;max-width:calc(100% - 24px)}
+.room-starry .growth-meter{background:#fff8eef0}
+.room-starry .baby-caption h3{color:#5f4c6c}
+.starry-meteors{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.starry-meteors i{position:absolute;top:16%;left:82%;width:74px;height:2px;border-radius:50%;background:linear-gradient(90deg,transparent,#fff3cc);box-shadow:2px 0 6px #ffe3a0;opacity:0;transform:rotate(140deg);animation:nursery-meteor 9s linear infinite}
+.starry-meteors i:nth-child(2){left:60%;top:12%;animation-delay:3.4s;width:54px}
+.starry-meteors i:nth-child(3){left:94%;top:27%;animation-delay:6.6s;width:62px}
+@keyframes nursery-meteor{0%,76%,100%{opacity:0;transform:translate(0,0) rotate(140deg)}80%{opacity:.8}92%{opacity:0;transform:translate(-150px,126px) rotate(140deg)}}
+.motion-paused .starry-meteors{display:none}
+.room-options{flex-wrap:wrap}.room-option{flex-basis:40%}.swatch.room-starry{background-size:cover}
+.login-reward-grid{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:16px}
+.login-reward-grid .reward-art{height:180px;background:#eee9f4;overflow:hidden}
+.login-reward-grid .reward-art img{width:100%;height:100%;object-fit:contain}
+.login-reward-grid .soft-badge{margin-bottom:12px}
+@media(max-width:800px){.nursery-scene{height:300px}}
+@media(max-width:620px){.nursery-scene{height:320px}.login-reward-grid{grid-template-columns:1fr}.login-reward-grid .reward-art{height:200px}.giant-teddy{max-width:290px}}
+@media(max-width:380px){.nursery-scene{height:265px}}
+@media(prefers-reduced-motion:reduce){.starry-meteors{display:none}}

@@ -1,4 +1,9 @@
 .baby-illustration.baby-painted{position:relative;display:block;width:100%;aspect-ratio:8/9;height:auto;animation:none;filter:none;isolation:isolate}
+/* Wearing-hat cels include the hat, hairline and complete character in one painting.
+   The additional 60 px above the original 360 px cell keeps the original floor. */
+.baby-painted.wearing-painted-hat .painted-window{top:-16.666667%;bottom:0;animation:none;mask-image:none}
+.accessory-window{position:absolute;inset:-25% 0 0;overflow:hidden;pointer-events:none}
+.accessory-strip{overflow:visible}
 .painted-motion{display:block;position:absolute;inset:0;transform-origin:50% 92%;animation:painted-rest 4.4s ease-in-out infinite}
 
 .painted-stage-1 .painted-motion{animation:painted-crawl 3.8s ease-in-out infinite}

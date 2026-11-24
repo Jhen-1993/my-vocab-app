@@ -55,7 +55,8 @@ not need to install it and the site does not send vocabulary data to Stanza.
 
 ## ECDICT
 
-The 508 single-word replacement cards in `data/real-word-extension.js` use
+Selected replacement cards, now classified into `data/beginner.js`,
+`data/intermediate.js`, and `data/advanced.js`, use
 selected English–Chinese glossary data derived from
 [ECDICT](https://github.com/skywind3000/ecdict), maintained by skywind3000
 and contributors. ECDICT is provided under the MIT License.
@@ -66,12 +67,13 @@ the published website.
 
 ## Tatoeba bilingual example sentences
 
-`data/tatoeba-examples.js` contains selected bilingual example pairs from the
-[Tatoeba Project](https://tatoeba.org/). The source registry stored in that
-file records the sentence ID, author, translation ID, and licence for every
+The three difficulty files contain selected bilingual example pairs from the
+[Tatoeba Project](https://tatoeba.org/). Each file includes a `TATOEBA_EXAMPLE_SOURCES` registry for its retained
+corpus pairs. These registries record the sentence ID, author, translation ID, and licence for every
 included pair. Individual entries are licensed either **CC BY 2.0 FR** or
 **CC0 1.0**, as shown in that registry.
 
-These examples are used only to replace older automatic template sentences.
+These examples are stored directly in the canonical cards. The historical source
+registry is preserved in `history/tatoeba-source-registry-before-cleanup.json`.
 They are static data in the published site: no visitor data is sent to
 Tatoeba, and the website makes no runtime request to the Tatoeba API.
