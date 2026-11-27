@@ -237,7 +237,7 @@ DECKS.intermediate = [
   ],
   [
     "account",
-    "認定",
+    "說明（account for）；帳戶；敘述",
     "We must account for every expense in the budget report.",
     "我們必須在預算報告中說明每一筆支出。",
     "n.／v."
@@ -734,7 +734,7 @@ DECKS.intermediate = [
   ],
   [
     "affiliate",
-    "加上",
+    "附屬機構；使隸屬",
     "The store is an affiliate of a larger retail chain.",
     "這間店隸屬於一個更大的零售連鎖體系。",
     "n.／v."
@@ -874,7 +874,7 @@ DECKS.intermediate = [
   ],
   [
     "alcoholic",
-    "酒精",
+    "含酒精的；酗酒者",
     "The bar serves both alcoholic and non-alcoholic drinks.",
     "這間酒吧供應含酒精和不含酒精的飲料。",
     "n.／adj."
@@ -1735,7 +1735,7 @@ DECKS.intermediate = [
   ],
   [
     "associate",
-    "相關",
+    "聯想；使產生關聯",
     "People often associate the brand with high quality.",
     "人們常把這個品牌跟高品質聯想在一起。",
     "v."
@@ -2890,8 +2890,8 @@ DECKS.intermediate = [
   ],
   [
     "cancellation",
-    "消除",
-    "We received a cancellation fee after changing our booking.",
+    "取消",
+    "We were charged a cancellation fee after changing our booking.",
     "我們更改預約後被收取了取消費用。",
     "n."
   ],
@@ -2932,7 +2932,7 @@ DECKS.intermediate = [
   ],
   [
     "capable",
-    "能力",
+    "有能力的；能勝任的",
     "She is fully capable of managing the project alone.",
     "她完全有能力獨自管理這個專案。",
     "adj."
@@ -3450,7 +3450,7 @@ DECKS.intermediate = [
   ],
   [
     "chemical",
-    "化學",
+    "化學的；化學物質",
     "The factory follows strict rules for handling chemical waste.",
     "這間工廠在處理化學廢棄物時遵循嚴格的規定。",
     "n.／adj."
@@ -3492,7 +3492,7 @@ DECKS.intermediate = [
   ],
   [
     "chip",
-    "切開",
+    "弄缺角；碎片；晶片",
     "Be careful not to chip the edge of the plate.",
     "小心不要把盤子的邊緣弄缺角。",
     "n.／v."
@@ -3513,7 +3513,7 @@ DECKS.intermediate = [
   ],
   [
     "chopped",
-    "斬除",
+    "切碎的",
     "Add the chopped onions to the pan and stir.",
     "把切碎的洋蔥加進鍋裡並攪拌。",
     "adj."
@@ -3793,7 +3793,7 @@ DECKS.intermediate = [
   ],
   [
     "code",
-    "法典",
+    "準則；代碼；法典",
     "Every employee must follow the company's code of conduct.",
     "每位員工都必須遵守公司的行為準則。",
     "n.／v."
@@ -4003,9 +4003,9 @@ DECKS.intermediate = [
   ],
   [
     "committed",
-    "承諾",
+    "投入的；致力於的",
     "She is fully committed to finishing the project on time.",
-    "她全力承諾要準時完成這個專案。",
+    "她全心投入，致力於準時完成這個專案。",
     "adj."
   ],
   [
@@ -4234,7 +4234,7 @@ DECKS.intermediate = [
   ],
   [
     "compound",
-    "合成",
+    "化合物；複合物",
     "Scientists discovered a new chemical compound.",
     "科學家發現了一種新的化合物。",
     "n."
@@ -4633,16 +4633,16 @@ DECKS.intermediate = [
   ],
   [
     "construct",
-    "構造",
+    "建造；構建",
     "Workers will construct a new bridge across the river.",
     "工人們將在河上建造一座新橋。",
     "n.／v."
   ],
   [
     "construction",
-    "結構",
+    "建造；施工",
     "The construction of the new stadium began last spring.",
-    "這座新體育場的建設從去年春天開始。",
+    "這座新體育場的施工從去年春天開始。",
     "n."
   ],
   [
@@ -5172,7 +5172,7 @@ DECKS.intermediate = [
   ],
   [
     "creative",
-    "創作者",
+    "有創意的",
     "The agency is known for its creative advertising campaigns.",
     "這間廣告公司以其富有創意的行銷活動聞名。",
     "adj."
@@ -5333,7 +5333,7 @@ DECKS.intermediate = [
   ],
   [
     "crowd",
-    "群組",
+    "人群；聚集",
     "A large crowd gathered outside the stadium before the game.",
     "比賽前有一大群人聚集在體育場外。",
     "n.／v."
@@ -5529,7 +5529,7 @@ DECKS.intermediate = [
   ],
   [
     "dare",
-    "果敢",
+    "敢於；挑戰",
     "I wouldn't dare to interrupt the CEO during the presentation.",
     "我不敢在執行長簡報時打斷他。",
     "n.／v."
@@ -5543,7 +5543,7 @@ DECKS.intermediate = [
   ],
   [
     "dash",
-    "衝撞",
+    "衝刺；猛衝",
     "He made a quick dash to catch the closing doors.",
     "他快速衝過去想趕上正在關閉的門。",
     "n.／v."
@@ -5816,7 +5816,7 @@ DECKS.intermediate = [
   ],
   [
     "define",
-    "確定",
+    "界定；定義；明確說明",
     "Let's define the project goals before we begin.",
     "開始之前，我們先來確定專案目標。",
     "v."
@@ -5984,9 +5984,9 @@ DECKS.intermediate = [
   ],
   [
     "depressing",
-    "沉悶",
+    "令人沮喪的",
     "The gray weather made the whole day feel depressing.",
-    "陰沉的天氣讓整天都顯得沉悶。",
+    "陰沉的天氣讓整天都令人感到沮喪。",
     "adj."
   ],
   [
@@ -6208,7 +6208,7 @@ DECKS.intermediate = [
   ],
   [
     "digital",
-    "數字",
+    "數位的",
     "The company shifted from print to digital marketing.",
     "這家公司從紙本行銷轉向數位行銷。",
     "adj."
@@ -6586,7 +6586,7 @@ DECKS.intermediate = [
   ],
   [
     "distraction",
-    "娛樂",
+    "分心；使人分心的事物",
     "Turn off your phone to avoid distraction while studying.",
     "讀書時請關掉手機以避免分心。",
     "n."
@@ -6761,7 +6761,7 @@ DECKS.intermediate = [
   ],
   [
     "drain",
-    "排洩",
+    "排水；排水管",
     "The sink is draining slowly and needs to be cleaned.",
     "水槽排水很慢，需要清理一下。",
     "n.／v."
@@ -6831,7 +6831,7 @@ DECKS.intermediate = [
   ],
   [
     "duplicate",
-    "贗品",
+    "複製品；副本",
     "The museum keeps a duplicate of the painting on display.",
     "這間博物館展示了這幅畫的一件複製品。",
     "n."
@@ -7020,7 +7020,7 @@ DECKS.intermediate = [
   ],
   [
     "electrician",
-    "零工",
+    "電工",
     "We called an electrician to fix the wiring.",
     "我們找了一位電工來修理電線。",
     "n."
@@ -7342,7 +7342,7 @@ DECKS.intermediate = [
   ],
   [
     "enjoyable",
-    "和藹可親的",
+    "令人愉快的",
     "The trip was enjoyable despite the bad weather.",
     "儘管天氣不好，這趟旅行還是很愉快。",
     "adj."
@@ -7426,7 +7426,7 @@ DECKS.intermediate = [
   ],
   [
     "entitle",
-    "權利",
+    "使有權享有",
     "This ticket entitles you to a free drink.",
     "這張票讓你有權享有一杯免費飲料。",
     "v."
@@ -8028,7 +8028,7 @@ DECKS.intermediate = [
   ],
   [
     "fantastic",
-    "空想的",
+    "極好的；奇幻的",
     "We had a fantastic time at the beach resort.",
     "我們在海灘度假村玩得非常開心。",
     "adj."
@@ -8266,7 +8266,7 @@ DECKS.intermediate = [
   ],
   [
     "flavor",
-    "喜好的",
+    "口味；風味",
     "This tea comes in several different flavors.",
     "這款茶有好幾種不同的口味。",
     "n.／v."
@@ -8343,7 +8343,7 @@ DECKS.intermediate = [
   ],
   [
     "following",
-    "跟隨",
+    "遵照；跟隨；接下來的",
     "Following the instructions carefully will help avoid mistakes.",
     "仔細遵照指示有助於避免錯誤。",
     "v.／adj.／prep."
@@ -8609,7 +8609,7 @@ DECKS.intermediate = [
   ],
   [
     "fulfilling",
-    "完成",
+    "令人有成就感的",
     "Teaching can be a very fulfilling career.",
     "教書可以是一份非常有成就感的職業。",
     "adj."
@@ -8784,14 +8784,14 @@ DECKS.intermediate = [
   ],
   [
     "give away",
-    "拋棄",
+    "贈送；洩露",
     "She decided to give away her old clothes to charity.",
     "她決定把舊衣服捐給慈善機構。",
     "phr.v."
   ],
   [
     "give credit to someone",
-    "相信～",
+    "肯定某人的功勞；歸功於某人",
     "We should give credit to the whole team for this success.",
     "這次的成功我們應該歸功於整個團隊。",
     "phr.v."
@@ -8910,7 +8910,7 @@ DECKS.intermediate = [
   ],
   [
     "grapefruit",
-    "柚子",
+    "葡萄柚",
     "She starts her morning with half a grapefruit.",
     "她每天早上都以半顆葡萄柚開始。",
     "n."
@@ -9022,7 +9022,7 @@ DECKS.intermediate = [
   ],
   [
     "guidance",
-    "領導",
+    "指導；引導",
     "Under her guidance, the team achieved record sales.",
     "在她的帶領下，這個團隊創下了銷售紀錄。",
     "n."
@@ -9190,7 +9190,7 @@ DECKS.intermediate = [
   ],
   [
     "headquarters",
-    "司令部",
+    "總部；司令部",
     "The company's headquarters is located in downtown Taipei.",
     "這家公司的總部位於台北市中心。",
     "n."
@@ -9316,7 +9316,7 @@ DECKS.intermediate = [
   ],
   [
     "hostel",
-    "宿舍",
+    "青年旅館",
     "We stayed at a cheap hostel during our backpacking trip.",
     "我們背包旅行時住在一間便宜的青年旅館。",
     "n."
@@ -9393,7 +9393,7 @@ DECKS.intermediate = [
   ],
   [
     "identity",
-    "特性",
+    "身分；特質；品牌識別",
     "The brand has built a strong identity over the years.",
     "這個品牌多年來建立了鮮明的品牌形象。",
     "n."
@@ -9435,7 +9435,7 @@ DECKS.intermediate = [
   ],
   [
     "imaginative",
-    "想像的",
+    "富有想像力的",
     "Her imaginative designs stand out in the industry.",
     "她富有想像力的設計在業界十分突出。",
     "adj."
@@ -9470,7 +9470,7 @@ DECKS.intermediate = [
   ],
   [
     "immigration",
-    "遷居",
+    "移民；移入",
     "The city's growth is largely driven by immigration.",
     "這座城市的成長主要是由移民所推動的。",
     "n."
@@ -9484,7 +9484,7 @@ DECKS.intermediate = [
   ],
   [
     "impact",
-    "碰撞",
+    "影響；撞擊",
     "The new policy will have a big impact on small businesses.",
     "這項新政策將對小型企業產生很大的影響。",
     "n.／v."
@@ -9547,7 +9547,7 @@ DECKS.intermediate = [
   ],
   [
     "impose",
-    "禁令；制裁",
+    "徵收；強加；實施",
     "The government decided to impose new import taxes.",
     "政府決定對進口商品課徵新稅。",
     "v."
@@ -9596,7 +9596,7 @@ DECKS.intermediate = [
   ],
   [
     "incense",
-    "香氣",
+    "香（祭拜或薰香用）；激怒",
     "The temple was filled with the smell of incense.",
     "這座寺廟裡瀰漫著香的氣味。",
     "n.／v."
@@ -9792,7 +9792,7 @@ DECKS.intermediate = [
   ],
   [
     "inn",
-    "店面",
+    "小旅館；客棧",
     "We stayed at a charming country inn for the weekend.",
     "我們週末住在一間迷人的鄉村小旅店。",
     "n."
@@ -10275,7 +10275,7 @@ DECKS.intermediate = [
   ],
   [
     "jewel",
-    "鑽石",
+    "寶石；珠寶",
     "The museum displays a collection of rare jewels.",
     "這間博物館展出一系列稀有的珠寶。",
     "n.／v."
@@ -10394,7 +10394,7 @@ DECKS.intermediate = [
   ],
   [
     "kick off",
-    "開球",
+    "開始；揭開序幕；開球",
     "The conference will kick off with a keynote speech.",
     "這場研討會將以一場主題演講揭開序幕。",
     "phr.v."
@@ -10681,7 +10681,7 @@ DECKS.intermediate = [
   ],
   [
     "literary",
-    "文章",
+    "文學的",
     "She has a deep interest in classic literary works.",
     "她對古典文學作品有著濃厚的興趣。",
     "adj."
@@ -10891,7 +10891,7 @@ DECKS.intermediate = [
   ],
   [
     "make sense",
-    "意義",
+    "有道理；能被理解",
     "Her explanation finally made sense to me.",
     "她的解釋終於讓我明白了。",
     "idiom"
@@ -11311,7 +11311,7 @@ DECKS.intermediate = [
   ],
   [
     "mobile",
-    "移動",
+    "行動的；可移動的",
     "The company developed a mobile version of its website.",
     "這家公司開發了網站的行動版本。",
     "n.／adj."
@@ -11472,7 +11472,7 @@ DECKS.intermediate = [
   ],
   [
     "musical",
-    "音樂",
+    "音樂劇；音樂的",
     "We watched a musical on Broadway last night.",
     "我們昨晚在百老匯看了一場音樂劇。",
     "n.／adj."
@@ -11850,7 +11850,7 @@ DECKS.intermediate = [
   ],
   [
     "observe",
-    "查看",
+    "觀察；遵守",
     "Researchers observed the animals in their natural habitat.",
     "研究人員在動物的自然棲息地觀察牠們。",
     "v."
@@ -11948,9 +11948,9 @@ DECKS.intermediate = [
   ],
   [
     "offering",
-    "奉獻",
+    "提供的產品或服務；供品",
     "The company expanded its product offering this year.",
-    "這家公司今年擴充了它的產品項目。",
+    "這家公司今年增加了提供的產品種類。",
     "n."
   ],
   [
@@ -12004,9 +12004,9 @@ DECKS.intermediate = [
   ],
   [
     "on top of that",
-    "最重要的是",
+    "除此之外；而且",
     "The flight was delayed, and on top of that, it started raining.",
-    "班機延誤了，最糟的是，還開始下雨了。",
+    "班機延誤了，而且還開始下雨。",
     "adv."
   ],
   [
@@ -12676,7 +12676,7 @@ DECKS.intermediate = [
   ],
   [
     "physically",
-    "物理",
+    "在身體方面；在物理層面上",
     "The job requires you to be physically fit.",
     "這份工作需要良好的體能。",
     "adv."
@@ -12788,7 +12788,7 @@ DECKS.intermediate = [
   ],
   [
     "plum",
-    "梅子",
+    "李子",
     "The tree produces sweet, juicy plums every summer.",
     "這棵樹每年夏天都會結出香甜多汁的李子。",
     "n.／adv."
@@ -13110,7 +13110,7 @@ DECKS.intermediate = [
   ],
   [
     "presentation",
-    "出示；外觀",
+    "簡報；展示",
     "She gave a confident presentation to the board.",
     "她向董事會做了一場自信的簡報。",
     "n."
@@ -13369,7 +13369,7 @@ DECKS.intermediate = [
   ],
   [
     "productive",
-    "生產的",
+    "有生產力的；有效率的",
     "Working from home makes her more productive.",
     "在家工作讓她更有生產力。",
     "adj."
@@ -13530,7 +13530,7 @@ DECKS.intermediate = [
   ],
   [
     "prompt",
-    "提示",
+    "迅速的；及時的",
     "A prompt reply would be greatly appreciated.",
     "如果能盡快回覆，我們會非常感激。",
     "adj."
@@ -13565,7 +13565,7 @@ DECKS.intermediate = [
   ],
   [
     "property",
-    "屬性",
+    "財產；房地產；屬性",
     "The house is a valuable piece of property.",
     "這棟房子是一項珍貴的資產。",
     "n."
@@ -13789,7 +13789,7 @@ DECKS.intermediate = [
   ],
   [
     "quality",
-    "質量",
+    "品質",
     "The company is known for the quality of its products.",
     "這家公司以其產品的品質聞名。",
     "n.／adj."
@@ -14104,7 +14104,7 @@ DECKS.intermediate = [
   ],
   [
     "red carpet",
-    "隆重",
+    "紅地毯；隆重接待",
     "The company rolled out the red carpet for its biggest client.",
     "公司為最大的客戶準備了隆重的接待。",
     "n.／adj."
@@ -14874,7 +14874,7 @@ DECKS.intermediate = [
   ],
   [
     "roasted",
-    "烘培",
+    "烘焙的；烤過的",
     "The café serves freshly roasted coffee beans.",
     "這間咖啡廳供應新鮮烘焙的咖啡豆。",
     "adj."
@@ -15966,7 +15966,7 @@ DECKS.intermediate = [
   ],
   [
     "sparkle",
-    "火花",
+    "閃耀；閃閃發光",
     "The lake sparkled under the afternoon sun.",
     "這座湖在午後的陽光下閃閃發光。",
     "n.／v."
@@ -16078,7 +16078,7 @@ DECKS.intermediate = [
   ],
   [
     "spiritually",
-    "精神上的",
+    "在精神上；在心靈上",
     "The retreat left her feeling spiritually renewed.",
     "這場靜修讓她感覺精神上煥然一新。",
     "adv."
@@ -16190,7 +16190,7 @@ DECKS.intermediate = [
   ],
   [
     "stale",
-    "過時",
+    "不新鮮的；陳舊的",
     "The bread had gone stale after a few days.",
     "這麵包放了幾天後就變得不新鮮了。",
     "v.／adj."
@@ -16491,7 +16491,7 @@ DECKS.intermediate = [
   ],
   [
     "submission",
-    "屈服；聽從",
+    "提交；投稿；屈服",
     "The deadline for submission has been extended to Friday.",
     "投稿的截止日期已延長至星期五。",
     "n."
@@ -16939,7 +16939,7 @@ DECKS.intermediate = [
   ],
   [
     "tax return",
-    "報稅表；退稅",
+    "報稅表；納稅申報書",
     "He filed his tax return a week before the deadline.",
     "他在截止日前一週申報了報稅表。",
     "n."
@@ -17128,7 +17128,7 @@ DECKS.intermediate = [
   ],
   [
     "the departed",
-    "離去",
+    "已故的人；逝者",
     "The ceremony honored the memory of the departed.",
     "這場儀式是為了緬懷已故的人。",
     "n."
@@ -17254,7 +17254,7 @@ DECKS.intermediate = [
   ],
   [
     "tide",
-    "湖水",
+    "潮汐；潮水",
     "The tide comes in quickly along this part of the coast.",
     "這段海岸潮水漲得很快。",
     "n.／v."
@@ -17352,7 +17352,7 @@ DECKS.intermediate = [
   ],
   [
     "toss",
-    "折騰",
+    "拋；輾轉翻動",
     "She tossed and turned all night, unable to sleep.",
     "她整晚輾轉反側，無法入睡。",
     "n.／v."
@@ -17639,7 +17639,7 @@ DECKS.intermediate = [
   ],
   [
     "tribute",
-    "進貢",
+    "致敬；貢品",
     "The concert was a tribute to the late singer.",
     "這場演唱會是對這位已故歌手的致敬。",
     "n."
@@ -17702,7 +17702,7 @@ DECKS.intermediate = [
   ],
   [
     "tune in",
-    "在調",
+    "收看；收聽",
     "Fans tuned in to watch the live broadcast.",
     "粉絲們收看了這場現場直播。",
     "phr.v."
@@ -18073,7 +18073,7 @@ DECKS.intermediate = [
   ],
   [
     "variety",
-    "品種",
+    "多樣性；種類",
     "The bakery offers a variety of fresh bread every day.",
     "這間麵包店每天都提供多種新鮮麵包。",
     "n."
@@ -18542,7 +18542,7 @@ DECKS.intermediate = [
   ],
   [
     "whip up",
-    "掀起",
+    "迅速做出（餐點等）；激起",
     "The chef whipped up a quick meal for the unexpected guests.",
     "主廚為這些不速之客迅速做了一頓餐。",
     "phr.v."
@@ -18647,7 +18647,7 @@ DECKS.intermediate = [
   ],
   [
     "wonder",
-    "難怪",
+    "感到好奇；驚奇（no wonder：難怪）",
     "No wonder she looked tired after such a long trip.",
     "難怪她經過這麼長的旅程後看起來很累。",
     "n.／v."
@@ -18731,7 +18731,7 @@ DECKS.intermediate = [
   ],
   [
     "worthy",
-    "配稱",
+    "值得的；配得上的",
     "Her dedication makes her a worthy candidate for the award.",
     "她的付出讓她成為這個獎項的實至名歸的人選。",
     "n.／adj."

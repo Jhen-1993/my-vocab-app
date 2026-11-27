@@ -607,6 +607,21 @@
     .study-nav button{min-height:44px; padding:8px 10px; font-size:12px;}
     .study-complete{padding:28px 18px;}
   }
+  .daily-choice-wrap{min-height:85vh;display:flex;align-items:center;justify-content:center;}
+  .daily-choice-panel{width:100%;max-width:620px;text-align:center;padding:32px 20px;border-radius:28px;background:var(--panel);border:1px solid var(--rule-strong);box-shadow:0 12px 40px rgba(60,80,80,.05);}
+  .daily-choice-leaf{font-size:40px;margin-bottom:16px;}
+  .daily-choice-panel h1{font-size:clamp(23px,5vw,32px);margin:0 0 12px;color:var(--ink);}
+  .daily-choice-panel p{color:var(--ink-soft);line-height:1.8;}
+  .daily-choice-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:28px 0;}
+  .daily-choice-option{display:flex;flex-direction:column;align-items:center;gap:7px;padding:22px 6px;border:2px solid var(--rule-strong);border-radius:20px;background:var(--bg);color:var(--ink);cursor:pointer;font:inherit;}
+  .daily-choice-option.preferred{border-color:var(--blue);background:var(--panel-alt);}
+  .daily-choice-option strong{font-size:36px;line-height:1.2;}
+  .daily-choice-option small{color:var(--ink-soft);font-size:12px;}
+  .daily-choice-option:focus-visible{outline:3px solid var(--blue);outline-offset:4px;}
+  .daily-choice-option:hover{border-color:var(--blue);}
+  .daily-choice-option:disabled{opacity:.6;cursor:wait;}
+  .daily-choice-hint{font-size:13px;}
+  @media(max-width:400px){.daily-choice-panel{padding:28px 12px;}.daily-choice-options{gap:8px;}}
 </style>
 <link rel="stylesheet" href="baby-garden.css?v=20261124-final1">
 <link rel="stylesheet" href="baby-avatar.css?v=20261124-final1">
@@ -834,7 +849,16 @@
   var CORRECT_REVIEW_INTERVAL = 14;
   var RECOVERY_INTERVALS = [1, 2, 3, 8, 15];
   var MAX_REDRILL = 2; // how many extra times a missed word re-appears in the same session
-  var DAILY_TARGET = 30; // number of practice sentences to serve each day
+  var DAILY_TARGET_OPTIONS = [15, 20, 30];
+  var dailyChoiceOpen = false;
+  function validDailyTarget(value){ return DAILY_TARGET_OPTIONS.indexOf(value) !== -1; }
+  function getDailyTarget(){
+    return data.dailyPlan && data.dailyPlan.date === todayStr() && validDailyTarget(data.dailyPlan.target)
+      ? data.dailyPlan.target : (validDailyTarget(data.dailyTarget) ? data.dailyTarget : 20);
+  }
+  function needsDailyChoice(){
+    return !data.dailyPlan || data.dailyPlan.date !== todayStr() || !validDailyTarget(data.dailyPlan.target);
+  }
 
   var DECK_META = {
     beginner: { label: "初階", desc: "生活基礎字彙" },
@@ -914,7 +938,7 @@
 
   // ---------------- 儲存層：優先雲端 Artifact storage，其次瀏覽器 localStorage ----------------
   // 建立新使用者或讀取失敗時使用的最小資料結構。
-  function defaultData(){ return { words: [], reviewLog: [], importedDecks: {}, studyCompletedDate: "", companion: BabyCore.normalize() }; }
+  function defaultData(){ return { words: [], reviewLog: [], importedDecks: {}, studyCompletedDate: "", dailyTarget: 20, companion: BabyCore.normalize() }; }
 
   // In-memory fallback used only if window.storage isn't available (e.g. the file
   // was opened outside Claude.ai). Keeps the app usable for the session, though
@@ -951,6 +975,7 @@
     if(!Array.isArray(data.reviewLog)) data.reviewLog = [];
     if(!data.importedDecks || typeof data.importedDecks !== "object") data.importedDecks = {};
     if(typeof data.studyCompletedDate !== "string") data.studyCompletedDate = "";
+    if(!validDailyTarget(data.dailyTarget)) data.dailyTarget = 20;
     var builtinLevels = ["beginner", "intermediate", "advanced"];
     var canonical = Object.create(null);
     builtinLevels.forEach(function(level){
@@ -1039,6 +1064,7 @@
     storageBackend = "memory";
     usingMemoryFallback = true;
     data = (STORAGE_KEY in memoryFallbackStore) ? JSON.parse(memoryFallbackStore[STORAGE_KEY]) : defaultData();
+    normalizeLoadedData();
     loaded = true;
   }
 
@@ -1364,16 +1390,16 @@ function speak(text){
   }
 
   // ---------------- 複習作答：建立今日佇列、評分、重練與排程 ----------------
-  // 建立今日最多 DAILY_TARGET 題的佇列；到期卡優先，不足時以額外練習補滿。
+  // 依當天選擇的份量建立佇列；到期卡優先，不足時以額外練習補滿。
   function startSession(){
     var t = todayStr();
     var due = data.words.filter(function(w){ return w.nextReview <= t; });
     shuffle(due);
-    var dueSelected = due.slice(0, DAILY_TARGET);
+    var dueSelected = due.slice(0, getDailyTarget());
     var queueItems = dueSelected.map(function(w){ return { id: w.id, bonus: false }; });
 
     // top up to the daily target with bonus practice pulled from the rest of the word bank
-    var remainingSlots = DAILY_TARGET - queueItems.length;
+    var remainingSlots = getDailyTarget() - queueItems.length;
     if(remainingSlots > 0){
       var usedIds = {};
       dueSelected.forEach(function(w){ usedIds[w.id] = true; });
@@ -1487,7 +1513,7 @@ function speak(text){
       reviewEl.innerHTML =
         '<div class="center-note">' +
           '<div class="big">單字庫是空的</div>' +
-          '<p>去「單字庫」匯入字庫，或自己新增單字，就能開始每天 ' + DAILY_TARGET + ' 題的例句練習。</p>' +
+          '<p>去「單字庫」匯入字庫，或自己新增單字，就能開始每天 ' + getDailyTarget() + ' 題的例句練習。</p>' +
         '</div>';
       return;
     }
@@ -2649,6 +2675,13 @@ function speak(text){
       '</div>' +
 
       '<div class="backup-zone">' +
+        '<div class="chart-title">每日單字份量</div>' +
+        '<p class="form-hint">今天的份量：' + getDailyTarget() + ' 個。每天首次進入時都可以重新選擇。</p>' +
+        '<label for="daily-target-preference">下次預選份量 </label><select id="daily-target-preference">' +
+        DAILY_TARGET_OPTIONS.map(function(n){ return '<option value="' + n + '"' + (n === data.dailyTarget ? ' selected' : '') + '>' + n + ' 個單字</option>'; }).join('') + '</select>' +
+        '<p class="form-hint" id="daily-target-saved" role="status">調整預選份量不會中斷今天的練習。</p>' +
+      '</div>' +
+      '<div class="backup-zone">' +
         '<div class="chart-title">備份與還原（存成檔案，不受雲端存檔功能影響）</div>' +
         '<p class="form-hint">學習資料儲存在目前的瀏覽器，不會自動同步至其他裝置。建議定期匯出備份，換裝置時可透過匯入功能還原紀錄。</p>' +
         '<div class="backup-actions">' +
@@ -2662,6 +2695,14 @@ function speak(text){
         '<button class="ghost" id="reset-data">清除所有資料（重新開始）</button>' +
       '</div>';
 
+    document.getElementById('daily-target-preference').onchange = async function(event){
+      var target = Number(event.target.value);
+      if(!validDailyTarget(target)) return;
+      data.dailyTarget = target;
+      await saveData();
+      var status = document.getElementById('daily-target-saved');
+      if(status) status.textContent = '已儲存，下次選擇時會預選 ' + target + ' 個。';
+    };
     document.getElementById("export-backup-btn").onclick = function(){
       var blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
       var url = URL.createObjectURL(blob);
@@ -2698,7 +2739,7 @@ function speak(text){
             if(typeof data.studyCompletedDate !== "string") data.studyCompletedDate = "";
             session = null;
             await saveData();
-            renderAll();
+            showInitialScreen();
             resultEl = document.getElementById("backup-result");
             if(resultEl) resultEl.textContent = "已成功匯入備份（" + data.words.length + " 個單字）。";
           } catch(err){
@@ -2715,7 +2756,7 @@ function speak(text){
       garden.reset();
       session = null;
       await saveData();
-      renderAll();
+      showInitialScreen();
     };
   }
 
@@ -2777,14 +2818,14 @@ function speak(text){
   // (box > 0) don't count against this pool and free up room for new ones,
   // and this never touches words that are already due for scheduled review.
   // 尚未學過的字庫最低保有量；不足時才從外部 DECKS 隨機補入。
-  var TOP_UP_TARGET = 30;
-  // 每日 30 張新字的固定分配：以初、中階為主，高階字維持少量穿插。
+  // 新字池大小跟隨當天份量；各程度比例固定為 12:14:4。
+  // 以初、中階為主，高階字維持少量穿插。
   // 這個設定只影響「尚未加入學習清單的新字」，不會變更任何既有卡片的複習排程。
   var DAILY_LEVEL_QUOTA = { beginner: 12, intermediate: 14, advanced: 4 };
   // 逐次少量補入新字，避免一次寫入數千筆資料而造成儲存 API 失敗。
   async function topUpNewWordsIfNeeded(){
     var newCount = data.words.filter(function(w){ return w.box === 0; }).length;
-    var needed = TOP_UP_TARGET - newCount;
+    var needed = getDailyTarget() - newCount;
     if(needed <= 0) return;
 
     var owned = {};
@@ -2809,7 +2850,7 @@ function speak(text){
 
     // 依固定比例取字；若今天只需補部分新字，比例也會等比例縮小。
     Object.keys(DAILY_LEVEL_QUOTA).forEach(function(key){
-      var quota = Math.round(needed * DAILY_LEVEL_QUOTA[key] / TOP_UP_TARGET);
+      var quota = Math.round(needed * DAILY_LEVEL_QUOTA[key] / 30);
       quota = Math.min(quota, pools[key].length);
       picks = picks.concat(pools[key].splice(0, quota));
     });
@@ -2822,14 +2863,15 @@ function speak(text){
       picks = picks.concat(fallbackPool.slice(0, needed - picks.length));
     }
     var t = todayStr();
-    picks.forEach(function(p){
-      data.words.push(makeWord(p.item[0], p.item[1], p.item[2], t, p.key, p.item[3]));
+    picks.slice(0, needed).forEach(function(p){
+      data.words.push(makeWord(p.item[0], p.item[1], p.item[2], t, p.key, p.item[3], p.item[4]));
     });
     await saveData();
   }
 
   // 隱藏預習遮罩並顯示四個主要分頁；這不會自動開始作答。
   function showMainApp(){
+    dailyChoiceOpen = false;
     document.getElementById("study-screen").hidden = true;
     document.getElementById("main-app").hidden = false;
     renderAll();
@@ -2855,6 +2897,7 @@ function speak(text){
 
   // 渲染每日預習卡與翻面操作；完成後才讓使用者進入主應用程式。
   function renderStudyScreen(){
+    if(dailyChoiceOpen) return;
     var screen = document.getElementById("study-screen");
     screen.hidden = false;
 
@@ -2867,7 +2910,7 @@ function speak(text){
       screen.innerHTML =
         '<div class="study-wrap">' +
           '<div class="study-complete">' +
-            '<div class="study-complete-big">哇！已經學習個30單字了！</div>' +
+            '<div class="study-complete-big">太棒了！已經預習 ' + studyWords.length + ' 個單字了！</div>' +
             '<p class="study-complete-sub">總共預習了 ' + studyWords.length + ' 個單字，進入「今日複習」來點小測驗。</p>' +
             '<button class="primary" id="study-start-review">開始今日複習</button>' +
           '</div>' +
@@ -2957,7 +3000,39 @@ function speak(text){
       document.getElementById("main-app").hidden=true;renderStudyScreen();
     }
   });
+  // 每天首次進入先決定份量；同日沿用選擇，隔天可重新選。
+  function renderDailyChoice(){
+    dailyChoiceOpen = true;
+    document.getElementById('main-app').hidden = true;
+    var screen = document.getElementById('study-screen');
+    screen.hidden = false;
+    var preferred = validDailyTarget(data.dailyTarget) ? data.dailyTarget : 20;
+    screen.innerHTML = '<div class="study-wrap daily-choice-wrap"><div class="daily-choice-panel">' +
+      '<div class="daily-choice-leaf" aria-hidden="true">🌿</div><h1>今天想學幾個單字？</h1>' +
+      '<p>選一個剛剛好的份量，慢慢累積小進步。</p>' +
+      '<div class="daily-choice-options">' + DAILY_TARGET_OPTIONS.map(function(n){
+        return '<button type="button" class="daily-choice-option' + (n === preferred ? ' preferred' : '') + '" data-daily-target="' + n + '"><strong>' + n + '</strong><span>個單字</span><small>' + (n === 15 ? '輕鬆學' : n === 20 ? '穩穩學' : '多學一點') + '</small></button>';
+      }).join('') + '</div><p class="daily-choice-hint">點選後開始。到期複習優先，其餘隨機補足；答錯的字會再練習。<br>今天會沿用這個份量，明天可以重新選。</p><p id="daily-choice-status" role="status"></p></div></div>';
+    Array.prototype.forEach.call(screen.querySelectorAll('[data-daily-target]'),function(button){
+      button.onclick = async function(){
+        if(button.disabled) return;
+        var target = Number(button.getAttribute('data-daily-target'));
+        if(!validDailyTarget(target)) return;
+        Array.prototype.forEach.call(screen.querySelectorAll('[data-daily-target]'),function(b){b.disabled=true;});
+        document.getElementById('daily-choice-status').textContent = '正在準備今天的單字…';
+        data.dailyTarget = target;
+        data.dailyPlan = {date: todayStr(), target: target};
+        session = null;
+        await topUpNewWordsIfNeeded();
+        await saveData();
+        dailyChoiceOpen = false;
+        showInitialScreen();
+      };
+    });
+  }
+
   function showInitialScreen(){
+    if(needsDailyChoice()){ renderDailyChoice(); return; }
     if(needsStudyToday()){
       studyWords = buildStudyWords();
       studyIndex = 0;
@@ -2977,13 +3052,13 @@ function speak(text){
     // 保存首次抽到的性別，舊帳號即使不需要補新字也會保留。
     return performSave();
   }).then(function(){
-    return topUpNewWordsIfNeeded();
+    if(!needsDailyChoice()) return topUpNewWordsIfNeeded();
   }).then(function(){showInitialScreen();garden.checkMasterReveal();});
   // Keep daily progress current when the page stays open across midnight.
   var gardenDate=todayStr();
   function refreshGardenDate(){
     if(!document.hidden && loaded && gardenDate!==todayStr()){
-      gardenDate=todayStr();garden.renderHome();
+      gardenDate=todayStr(); session=null; renderDailyChoice();
     }
   }
   document.addEventListener("visibilitychange",refreshGardenDate);

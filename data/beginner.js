@@ -8,7 +8,7 @@ DECKS.beginner = [
     "a few",
     "一些",
     "I only need a few minutes to finish this.",
-    "我只需要一些時間就能完成這件事。",
+    "我只需要幾分鐘就能完成這件事。",
     "adj."
   ],
   [
@@ -615,7 +615,7 @@ DECKS.beginner = [
   ],
   [
     "appreciate",
-    "賞識；鑑賞",
+    "感激；欣賞",
     "I really appreciate your help with this project.",
     "我真的很感激你對這個專案的幫忙。",
     "v."
@@ -909,7 +909,7 @@ DECKS.beginner = [
   ],
   [
     "available",
-    "可獲得的;可行的",
+    "可取得的；可使用的；有空的",
     "Is this room available for the weekend?",
     "這間房間週末可以預訂嗎？",
     "adj."
@@ -1518,7 +1518,7 @@ DECKS.beginner = [
   ],
   [
     "blanket",
-    "毛氈",
+    "毯子",
     "She wrapped the baby in a warm blanket.",
     "她用一條溫暖的毯子把嬰兒包了起來。",
     "n."
@@ -1567,7 +1567,7 @@ DECKS.beginner = [
   ],
   [
     "board",
-    "佈告；登上；板",
+    "登上（飛機、船等）；板子；董事會",
     "Passengers are asked to board the plane now.",
     "請乘客現在登機。",
     "n.／v."
@@ -2533,9 +2533,9 @@ DECKS.beginner = [
   ],
   [
     "CEO",
-    "總裁",
+    "執行長",
     "The CEO announced a new plan for the company.",
-    "這位總裁宣布了公司的新計畫。",
+    "這位執行長宣布了公司的新計畫。",
     "n."
   ],
   [
@@ -3030,7 +3030,7 @@ DECKS.beginner = [
   ],
   [
     "clown",
-    "小丑；鄉下人",
+    "小丑",
     "The clown made the children laugh at the birthday party.",
     "小丑讓生日派對上的孩子們開懷大笑。",
     "n."
@@ -3444,7 +3444,7 @@ DECKS.beginner = [
   [
     "content",
     "內容物",
-    "Please check the content of the box before signing.",
+    "Please check the contents of the box before signing.",
     "請在簽收前檢查箱子裡的內容物。",
     "n."
   ],
@@ -4815,9 +4815,9 @@ DECKS.beginner = [
   ],
   [
     "due",
-    "預定",
+    "到期的；預定應完成的",
     "The report is due by the end of this week.",
-    "這份報告預定要在本週結束前完成。",
+    "這份報告必須在本週結束前交出。",
     "adj."
   ],
   [
@@ -5361,7 +5361,7 @@ DECKS.beginner = [
   ],
   [
     "ever",
-    "無論何時",
+    "曾經；在任何時候",
     "Have you ever tried Thai food before?",
     "你以前有嘗試過泰式料理嗎？",
     "adv."
@@ -8742,7 +8742,7 @@ DECKS.beginner = [
   ],
   [
     "look",
-    "看見",
+    "看；看一看",
     "Take a look at this photo from our trip.",
     "看看這張我們旅行時拍的照片。",
     "n.／v."
@@ -8798,7 +8798,7 @@ DECKS.beginner = [
   ],
   [
     "lower",
-    "次級的；下層的",
+    "較低的；降低",
     "Prices are usually lower during the off-season.",
     "淡季時價格通常比較低。",
     "n.／v.／adj."
@@ -9113,9 +9113,9 @@ DECKS.beginner = [
   ],
   [
     "meeting room",
-    "會客室",
+    "會議室",
     "The interview will take place in meeting room two.",
-    "面試將在二號會客室進行。",
+    "面試將在二號會議室進行。",
     "n."
   ],
   [
@@ -9729,9 +9729,9 @@ DECKS.beginner = [
   ],
   [
     "offer",
-    "提出",
+    "提供；提出",
     "The company offered him a higher salary.",
-    "這家公司向他提出了更高的薪資。",
+    "這家公司願意給他更高的薪資。",
     "n.／v."
   ],
   [
@@ -9890,7 +9890,7 @@ DECKS.beginner = [
   ],
   [
     "outlet",
-    "出口；暢貨中心",
+    "插座；出口；暢貨中心",
     "Plug the lamp into the outlet by the door.",
     "把檯燈插到門邊的插座上。",
     "n."
@@ -10716,7 +10716,7 @@ DECKS.beginner = [
   ],
   [
     "pretty",
-    "非常；漂亮的",
+    "漂亮的；相當",
     "The garden looks pretty in the spring.",
     "這座花園在春天看起來很漂亮。",
     "adj.／adv."
@@ -11269,7 +11269,7 @@ DECKS.beginner = [
   ],
   [
     "require",
-    "必須",
+    "需要；要求",
     "This position requires strong communication skills.",
     "這個職位需要良好的溝通能力。",
     "v."
@@ -11318,7 +11318,7 @@ DECKS.beginner = [
   ],
   [
     "responsibility",
-    "負責",
+    "責任",
     "Taking care of the dog is his responsibility.",
     "照顧這隻狗是他的責任。",
     "n."
@@ -12053,7 +12053,7 @@ DECKS.beginner = [
   ],
   [
     "ski",
-    "滑雪板；雪橇",
+    "滑雪；滑雪板",
     "They went to the mountains to ski last winter.",
     "他們去年冬天去山上滑雪。",
     "n.／v."
@@ -12291,7 +12291,7 @@ DECKS.beginner = [
   ],
   [
     "software",
-    "軟件",
+    "軟體",
     "The company updated its software last week.",
     "這家公司上週更新了他們的軟體。",
     "n."
@@ -12669,7 +12669,7 @@ DECKS.beginner = [
   ],
   [
     "strange",
-    "不可思議的",
+    "奇怪的；陌生的",
     "It was strange that no one answered the phone.",
     "沒有人接電話真是奇怪。",
     "adj."
@@ -12886,7 +12886,7 @@ DECKS.beginner = [
   ],
   [
     "surprising",
-    "出乎意料的;驚訝的",
+    "令人驚訝的；出乎意料的",
     "It was surprising how quickly the year went by.",
     "這一年過得這麼快真是令人驚訝。",
     "adj."
@@ -13040,7 +13040,7 @@ DECKS.beginner = [
   ],
   [
     "tax",
-    "課稅",
+    "稅；課稅",
     "The price already includes tax.",
     "這個價格已經含稅了。",
     "n.／v."
@@ -13460,7 +13460,7 @@ DECKS.beginner = [
   ],
   [
     "trade",
-    "交易；營業額",
+    "貿易；交易",
     "The two countries agreed to increase trade.",
     "這兩個國家同意增加貿易往來。",
     "n.／v."
@@ -14083,7 +14083,7 @@ DECKS.beginner = [
   ],
   [
     "website",
-    "網址",
+    "網站",
     "You can find more information on our website.",
     "你可以在我們的網站上找到更多資訊。",
     "n."
